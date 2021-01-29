@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Amen Zwa's Publications
 
-You can use the [editor on GitHub](https://github.com/amenzwa/amenzwa.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Amen Zwa, Esq.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [Computer Science Curriculum](CSCurriculum.md)
 
-### Markdown
+This article gives an overview of the computer science curriculum. It is aimed primarily at *parents* and *counsellors* advising a graduating high-schooler. The secondary audience is the *high-schooler* who is contemplating a career as a computer scientist.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## [Computer Science Career](CSCareer.md)
 
-```markdown
-Syntax highlighted code block
+This article gives guidance on careers in computer science. The intended audience is computer science *undergraduate* and *graduate* students.
 
-# Header 1
-## Header 2
-### Header 3
+## [Programming Languages](ProgrammingLanguages.md)
 
-- Bulleted
-- List
+This article provides a high-level view of the world of programming languages. It gives an overview of the history of programming languages; describes the declarative and imperative family lines; gives guidance on which languages to study, and what books to read; and explains the nature of programming as an activity. It is written for all STEM *practitioners*: mathematicians, engineers, scientists, programmers, system administrators, and technical managers.
 
-1. Numbered
-2. List
+## [Law and Technology](LawAndTechnology.md)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amenzwa/amenzwa.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This article describes the interaction between law and technology. It covers topics such as regulatory compliance, intellectual property law, and contract law. The target audience is technical *leaders* and *managers*.
