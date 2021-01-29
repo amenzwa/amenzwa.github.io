@@ -432,5 +432,4 @@ On the other hand, in addition to his love for programming, if he wants truly to
 **Reading and Writing**
 
 - *[How to Read a Book: The Classic Guide to Intelligent Reading](https://www.amazon.com/How-Read-Book-Classic-Intelligent/dp/0671212095/ref=sr_1_1?dchild=1&keywords=how+to+read+a+book&qid=1611700577&s=books&sr=1-1)*, Adler
-
 - *[The Elements of Style](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X/ref=sr_1_1?dchild=1&keywords=strunk&qid=1611700548&s=books&sr=1-1)*, Strunk
