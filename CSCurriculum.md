@@ -1,4 +1,14 @@
-# Computer Science Curriculum
+---
+title: "Computer Science Curriculum"
+categories:
+  - computing
+tags:
+  - computer science
+  - education
+  - curriculum
+use_math: true
+published: true
+---
 
 Amen Zwa, Esq.
 
