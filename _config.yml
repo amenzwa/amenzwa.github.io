@@ -1,4 +1,4 @@
-theme: jekyll-theme-modernist
+theme: jekyll-theme-architect
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
