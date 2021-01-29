@@ -45,7 +45,7 @@ It would be becoming if you append the word “please” to your request, but si
 Alternatively, you can send to the library’s catalogue database the following query written in the declarative language SQL:
 
 ```sql
-select Title from Novels where Author = ’Jane Austen’
+select Title from Novels where Author = "Jane Austen"
 ```
 
 Whichever method you choose, you will receive the following result:
@@ -68,7 +68,7 @@ let Novels = {library's novel collection}
 let N = |Novels|
 for n = 1 to N
   let n = Novels{i}
-  if n.Author == ’Jane Austen’
+  if n.Author == "Jane Austen"
     print n.Title
 ```
 
@@ -115,15 +115,12 @@ Now that you understand families and paradigms, we can talk about where on the f
 **Declarative**
 
 - Logical—Programmer defines a set of logical rules, and the language evaluates them, drawing inferences automatically, to reach a conclusion.
-
   - Prolog
 
 - Relational—Programmer creates a query by defining relations between sets of data, and the language selects and returns the desired subset of the data.
-
   - SQL
 
 - Functional—Programmer defines data types and functions that operate on types, and the language evaluates the functions to transform the input data to produce the result.
-
   - Lisp, Scheme, Common Lisp, Clojure, Mathematica, Julia
   - Standard ML, Haskell, OCaml, F#, Reason, Rust, Elm
   - Erlang, Elixir
@@ -131,19 +128,16 @@ Now that you understand families and paradigms, we can talk about where on the f
 **Imperative**
 
 - Object-Oriented—Programmer creates objects that hold data of various types, and the language animates the objects so that they interact with one another in a controlled way, without corrupting each other's internal data.
-
   - Smalltalk, Ruby, Java, C#, Scala, Kotlin
   - Simula, Objective-C, C++, Swift
   - Go, Python, JavaScript, TypeScript
 
 - Procedural—Programmer defines global programme state and procedures that modify that state incrementally, and the language executes the procedures in sequence to reach the final state of the programme.
-
   - C, Perl
   - Cobol, Pascal, Algol, Basic
   - Fortran, Matlab
 
 - Machine Code—Programmer defines step-by-step, low-level instructions that the computer understands, and the hardware executes the instructions in sequence to produce the result.
-
   - Assembly, Hexadecimal, Binary
 
 Languages make much of programming paradigms, but in truth very few languages are paradigmatically pure. For example, Lisp is the seminal functional programming language, and is the matriarch of the declarative line. But it permits the mutation of the programme state, a distinctive trait of the imperative family. C is the perennial procedural programming language, and an honoured member of the imperative family. Simula is the first, true object-oriented language. Smalltalk is the first, pure object-oriented language. Crossing Smalltalk with C yields Objective-C and mixing Simula with C yields C++. C# is a derivative of Java, which in turn is a descendant of Smalltalk and C++. Adding a few functional programming constructs to Java yielded Scala. Python is an object-oriented language but it supports many functional features. JavaScript, another famous object-oriented language, has even stronger ties to functional family.
@@ -278,7 +272,6 @@ The following are the learning resources I recommend, either because they cater 
 **Functional**
 
 - Lisp family
-
   - Scheme
     - [*The Scheme Programming Language*](http://www.amazon.com/Scheme-Programming-Language-Kent-Dybvig/dp/026251298X/ref=sr_1_1?s=books&ie=UTF8&qid=1401772978&sr=1-1&keywords=scheme+language+programming), Dybvig
     - [*Structure and Interpretation of Computer Programs*](http://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_8?s=books&ie=UTF8&qid=1401819781&sr=1-8&keywords=scheme+steele), Abelson
@@ -286,9 +279,7 @@ The following are the learning resources I recommend, either because they cater 
     - [*Programming Languages*](http://cs.brown.edu/courses/cs173/2012/book/book.pdf), Krishnamurthi
   - Clojure
     - [*The Joy of Clojure*](http://www.amazon.com/Joy-Clojure-Michael-Fogus/dp/1617291412/ref=sr_1_2?s=books&ie=UTF8&qid=1401774361&sr=1-2&keywords=clojure), Fogus
-
 - ML family
-
   - Standard ML
     - [*Elements of ML Programming*](https://www.amazon.com/Elements-ML-Programming-ML97-2nd/dp/0137903871/ref=sr_1_2?dchild=1&keywords=standard+ml&qid=1608746865&s=books&sr=1-2), Ullman
     - [*Programming in Standard ML*](http://www.cs.cmu.edu/~rwh/isml/book.pdf), Harper
@@ -312,30 +303,24 @@ The following are the learning resources I recommend, either because they cater 
     - [*Why Functional Programming Matters*](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf), Hughes
 
 - Erlang family
-
   - Erlang
     - [*Introducing Erlang*](http://www.amazon.com/Introducing-Erlang-Getting-Functional-Programming-ebook/dp/B00B634R04/ref=sr_1_5?ie=UTF8&qid=1401805713&sr=8-5&keywords=erlang), St. Laurent
     - [*Programming Erlang*](https://www.amazon.com/Programming-Erlang-Concurrent-Pragmatic-Programmers/dp/193778553X/ref=sr_1_3?dchild=1&keywords=erlang&qid=1608745780&s=books&sr=1-3), Armstrong (Erlang designer)
-
   - Elixir
     - [*Programming Elixir*](https://www.amazon.com/Programming-Elixir-1-6-Functional-Concurrent/dp/1680502999/ref=sr_1_3?dchild=1&keywords=elixir&qid=1608746507&s=books&sr=1-3), Thomas
     - [*Programming Phoenix*](https://www.amazon.com/Programming-Phoenix-1-4-Productive-Reliable/dp/1680502263/ref=sr_1_6?dchild=1&keywords=elixir&qid=1608746547&s=books&sr=1-6), McCord
 
 - Scala (hybrid object-oriented)
-
   - [*Programming in Scala*](http://www.amazon.com/Programming-Scala-Comprehensive-Step---Step-ebook/dp/B004Z1FTXS/ref=sr_1_1?s=books&ie=UTF8&qid=1401774514&sr=1-1&keywords=scala), Odersky (Scala designer)
 
 - Julia
-
   - [*Mastering Julia*](http://www.amazon.com/Mastering-Julia-Malcolm-Sherrington/dp/1783553316/ref=sr_1_2?ie=UTF8&qid=1473245684&sr=8-2&keywords=julia+language), Sherrington
 
 - Mathematica
-
   - [*Wolfram Language and System*](http://reference.wolfram.com/language/), Wolfram (Mathematica designer)
   - [*The Mathematica GuideBook for Programming*](http://www.amazon.com/Mathematica-GuideBook-Programming-Michael-Trott/dp/0387942823/ref=sr_1_6?s=books&ie=UTF8&qid=1401772792&sr=1-6&keywords=mathematica), Trott
 
 - R
-
   - [*The R Book*](http://www.amazon.com/R-Book-Michael-J-Crawley/dp/0470973927/ref=sr_1_16?s=books&ie=UTF8&qid=1401772904&sr=1-16&keywords=r+language+programming), Crawley
 
 **Object-Oriented**
@@ -360,7 +345,6 @@ The following are the learning resources I recommend, either because they cater 
   - Swift (hybrid functional)
     - [*Swift Programming Language*](http://https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097), Apple (Swift designer)
   - Kotlin (hybrid functional)
-
     - [*Kotlin in Action*](https://www.amazon.com/Kotlin-Action-Dmitry-Jemerov/dp/1617293296/ref=sr_1_11?dchild=1&keywords=kotlin&qid=1608747783&sr=8-11), Jemerov
     - [*Learn Kotlin*](https://kotlinlang.org/docs/reference/), JetBrains (Kotlin designer)
 - JavaScript family
@@ -368,9 +352,7 @@ The following are the learning resources I recommend, either because they cater 
     - [*JavaScript: The Definitive Guide*](http://www.amazon.com/JavaScript-Definitive-Most-Used-Programming-Language/dp/1491952024/ref=sr_1_2?dchild=1&keywords=javascript&qid=1608746146&sr=8-2), Flanagan
     - [*Eloquent JavaScript*](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_3?dchild=1&keywords=javascript&qid=1608746146&sr=8-3), Haverbeke
     - [*JavaScript: The Good Parts*](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_11?dchild=1&keywords=javascript&qid=1608746103&sr=8-11), Crockford
-  
   - TypeScript (hybrid functional)
-
     - [*Programming TypeScript*](https://www.amazon.com/Programming-TypeScript-Making-JavaScript-Applications/dp/1492037656/ref=sr_1_2?dchild=1&keywords=typescript&qid=1608746733&s=books&sr=1-2), Cherny
     - [*The TypeScript Handbook*](https://www.typescriptlang.org/docs/handbook/intro.html), Microsoft (TypeScript designer)
 - Python (hybrid functional)
@@ -384,31 +366,23 @@ The following are the learning resources I recommend, either because they cater 
 **Procedural**
 
 - C (pure procedural)
-
   - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan & Ritchie (C designer)
 - Go (object-oriented)
 - *[The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_3?dchild=1&keywords=golang&qid=1611867815&sr=8-3)*, Donovan
   - [*Effective Go*](http://golang.org/doc/effective_go.html), Google (Go designer)
 - Matlab (hybrid object-oriented)
-
   - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
 
 **Shell**
 
 - Unix Bourne shell
-
   - [*The Unix Programming Environment*](http://www.amazon.com/Unix-Programming-Environment-Prentice-Hall-Software/dp/013937681X/ref=sr_1_1?s=books&ie=UTF8&qid=1401775485&sr=1-1&keywords=The+Unix+Programming+Environment), Kernighan (Unix designer)
   - [*UNIX: A History and a Memoir*](https://www.amazon.com/UNIX-History-Memoir-Brian-Kernighan/dp/1695978552/ref=sr_1_1?dchild=1&keywords=kernighan&qid=1608746441&s=books&sr=1-1), Kernighan
 - AWK
-
   - [*The AWK Programming Language*](http://www.amazon.com/The-AWK-Programming-Language-Alfred/dp/020107981X/ref=sr_1_1?ie=UTF8&qid=1401820819&sr=8-1&keywords=awk+programming), Aho (AWK designer)
-
 - Perl
-
   - [*Programming Perl: Unmatched Power for Text Processing and Scripting*](http://www.amazon.com/Programming-Perl-Unmatched-processing-scripting/dp/0596004923/ref=sr_1_1?s=books&ie=UTF8&qid=1401820920&sr=1-1&keywords=Programming+Perl), Wall (Perl designer)
-
 - Windows PowerShell
-
   - [*PowerShell for Sysadmins*](https://www.amazon.com/Automate-Boring-Stuff-PowerShell-Sysadmins/dp/1593279183/ref=sr_1_5?dchild=1&keywords=powershell&qid=1608748061&sr=8-5), Bertram
   - [*PowerShell Documentation*](https://docs.microsoft.com/en-us/powershell/), Microsoft (PowerShell designer)
 
@@ -561,23 +535,16 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 - [*Understanding Arguments: An Introduction to Informal Logic*](http://www.amazon.com/Understanding-Arguments-Introduction-Informal-Logic/dp/0495603953/ref=sr_1_fkmr0_1?ie=UTF8&qid=1433974594&sr=8-1-fkmr0&keywords=walter+sinnot+Armstrong), Armstrong
 - [*Statistics*](http://www.amazon.com/gp/product/0393929728/ref=pd_lpo_sbs_dp_ss_1?pf_rd_p=1944687742&pf_rd_s=lpo-top-stripe-1&pf_rd_t=201&pf_rd_i=0393970833&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=1S1TBWX07JCT43D899C3), Freedman
 - [*Discrete Mathematics with Applications*](http://www.amazon.com/Discrete-Mathematics-Applications-Susanna-Epp/dp/0495391328/ref=sr_1_2?s=books&ie=UTF8&qid=1433950209&sr=1-2&keywords=discrete+structures), Epp
-
 - [*Structure and Interpretation of Computer Programs*](http://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_8?s=books&ie=UTF8&qid=1401819781&sr=1-8&keywords=scheme+steele), Abelson
-
 - [*Introduction to Algorithms*](http://www.amazon.com/Introduction-Algorithms-3rd-Thomas-Cormen/dp/0262033844/ref=sr_1_3?s=books&ie=UTF8&qid=1433949776&sr=1-3&keywords=algorithms), Cormen
-
 - [*The Art of Computer Programming*](http://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?s=books&ie=UTF8&qid=1433949817&sr=1-1&keywords=knuth), Knuth
 - [*Introduction to Graph Theory*](http://www.amazon.com/Introduction-Graph-Theory-Dover-Mathematics/dp/0486678709/ref=sr_1_1?s=books&ie=UTF8&qid=1433975084&sr=1-1&keywords=graph+theory), Trudeau
-
 - [*Theory of Computation: Formal Languages, Automata, and Complexity*](http://www.amazon.com/Theory-Computation-Languages-Automata-Complexity/dp/0805301437/ref=sr_1_2?s=books&ie=UTF8&qid=1433949889&sr=1-2&keywords=automata+theory), Brookshear
 - [*An Introduction to Functional Programming Through Lambda Calculus*](http://www.amazon.com/Introduction-Functional-Programming-Calculus-Mathematics-ebook/dp/B00CWR4USM/ref=sr_1_3?s=books&ie=UTF8&qid=1433950302&sr=1-3&keywords=functional+programming), Michaelson
-
 - [*An Introduction to Mathematical Cryptography*](http://www.amazon.com/Introduction-Mathematical-Cryptography-Undergraduate-Mathematics/dp/1441926747/ref=sr_1_16?s=books&ie=UTF8&qid=1433950146&sr=1-16&keywords=cryptology), Hoffstein
 - [*Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp*](http://www.amazon.com/Paradigms-Artificial-Intelligence-Programming-Studies/dp/1558601910/ref=sr_1_1?s=books&ie=UTF8&qid=1433950620&sr=1-1&keywords=lisp+artificial+intelligence), Norvig
-
 - [*Database in Depth: Relational Theory for Practitioners*](http://www.amazon.com/Database-Depth-Relational-Theory-Practitioners/dp/0596100124/ref=la_B000AQ6OJA_1_4?s=books&ie=UTF8&qid=1433950017&sr=1-4), Date
 - [*Computer Architecture*](http://www.amazon.com/Computer-Architecture-Fifth-Quantitative-Approach/dp/012383872X/ref=la_B000APA2GC_1_2?s=books&ie=UTF8&qid=1433950857&sr=1-2), Hennessy
-
 - [*The Design of the Unix Operating System*](http://www.amazon.com/Design-UNIX-Operating-System/dp/0132017997/ref=sr_1_1?ie=UTF8&qid=1433949574&sr=8-1&keywords=bach+unix), Bach
 - [*Discrete-Event System Simulation*](http://www.amazon.com/Discrete-Event-System-Simulation-Jerry-Banks/dp/0136062121/ref=sr_1_1?s=books&ie=UTF8&qid=1433950986&sr=1-1&keywords=discrete+simulation), Banks
 - [*Computer Graphics: Principles and Practice in C*](http://www.amazon.com/Computer-Graphics-Principles-Practice-2nd/dp/0201848406/ref=sr_1_2?s=books&ie=UTF8&qid=1433949713&sr=1-2&keywords=foley+computer+graphics), Foley
@@ -594,29 +561,21 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 - [*Wolfram Language and System*](http://reference.wolfram.com/language/), Wolfram, Inc. (Mathematica designer)
 - [*The R Book*](http://www.amazon.com/R-Book-Michael-J-Crawley/dp/0470973927/ref=sr_1_16?s=books&ie=UTF8&qid=1401772904&sr=1-16&keywords=r+language+programming), Crawley
 - [*Programming in Prolog: Using the ISO Standard*](http://www.amazon.com/Programming-Prolog-Using-ISO-Standard/dp/3540006788/ref=sr_1_1?ie=UTF8&qid=1401776122&sr=8-1&keywords=prolog), Clocksin
-
 - [*Learning SQL*](http://www.amazon.com/Learning-SQL-Alan-Beaulieu/dp/0596520832/ref=sr_1_3?s=books&ie=UTF8&qid=1401774621&sr=1-3&keywords=sql), Beaulieu
 - [*Smalltalk-80: The Language*](http://www.amazon.com/Smalltalk-80-Language-Adele-Goldberg/dp/0201136880/ref=sr_1_1?s=books&ie=UTF8&qid=1401774209&sr=1-1&keywords=smalltalk), Goldberg (Smalltalk designer)
-
 - [*Programming Ruby: The Pragmatic Programmers' Guide*](http://www.amazon.com/Programming-Ruby-1-9-2-0-Programmers/dp/1937785491/ref=sr_1_5?s=books&ie=UTF8&qid=1401774107&sr=1-5&keywords=ruby), Thomas
-
 - [*The Java Language Specification*](http://www.amazon.com/Java-Language-Specification-SE-ebook/dp/B00BHEY5EU/ref=sr_1_23?s=books&ie=UTF8&qid=1401773907&sr=1-23&keywords=java), Gosling (Java designer)
-
 - [*C# in a Nutshell: The Definitive Reference*](http://www.amazon.com/C-8-0-Nutshell-Definitive-Reference/dp/1492051136/ref=sr_1_4?dchild=1&keywords=C%23&qid=1608772000&s=books&sr=1-4), Albahari
 - [*The C++ Programming Language*](http://www.amazon.com/C-Programming-Language-4th/dp/0321563840/ref=sr_1_1?s=books&ie=UTF8&qid=1401773170&sr=1-1&keywords=C%2B%2B+language+programming), Stroustrup (C++ designer)
 - [*Swift Programming Language*](http://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097), Apple, Inc. (Swift designer)
 - [*JavaScript: The Definitive Guide*](http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides-ebook/dp/B004XQX4K0/ref=sr_1_2?s=books&ie=UTF8&qid=1401775003&sr=1-2&keywords=javascript), Flanagan
 - [*Programming TypeScript: Making Your JavaScript Applications Scale*](https://www.amazon.com/Programming-TypeScript-Making-JavaScript-Applications/dp/1492037656/ref=sr_1_3?dchild=1&keywords=typescript&qid=1608772098&sr=8-3), Cherny
 - [*The Python Tutorial*](http://www.amazon.com/Python-Tutorial-2-7-5-Guido-Rossum-ebook/dp/B00FJRV9QI/ref=sr_1_13?s=books&ie=UTF8&qid=1401775234&sr=1-13&keywords=python), van Rossum (Python designer)
-
 - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan (C designer)
 - [*Effective Go*](http://golang.org/doc/effective_go.html), Google, Inc. (Go designer)
 - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
-
 - [*The AWK Programming Language*](http://www.amazon.com/The-AWK-Programming-Language-Alfred/dp/020107981X/ref=sr_1_1?ie=UTF8&qid=1401820819&sr=8-1&keywords=awk+programming), Aho (AWK designer)
 - [*Programming Perl: Unmatched Power for Text Processing and Scripting*](http://www.amazon.com/Programming-Perl-Unmatched-processing-scripting/dp/0596004923/ref=sr_1_1?s=books&ie=UTF8&qid=1401820920&sr=1-1&keywords=Programming+Perl), Wall (Perl designer)
-
 - [*The Unix Programming Environment*](http://www.amazon.com/Unix-Programming-Environment-Prentice-Hall-Software/dp/013937681X/ref=sr_1_1?s=books&ie=UTF8&qid=1401775485&sr=1-1&keywords=The+Unix+Programming+Environment), Kernighan (Unix designer)
-
 - [*Unix Network Programming*](http://www.amazon.com/Unix-Network-Programming-Sockets-Networking/dp/0131411551/ref=sr_1_1?s=books&ie=UTF8&qid=1433949655&sr=1-1&keywords=stevens+network+programming), Stevens
 - [*LaTeX: A Document Preparation System*](http://www.amazon.com/LaTeX-Document-Preparation-System-2nd/dp/0201529831/ref=sr_1_2?ie=UTF8&qid=1433957749&sr=8-2&keywords=lamport), Lamport
