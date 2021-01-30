@@ -3,10 +3,6 @@ Amen Zwa, Esq.
 
 2021-01-01
 
-
-
-[TOC]
-
 # INTRODUCTION
 
 Over the past several decades, computer science (CS) gradually established itself as an enabler of modern society. It is the "T" in "STEM" (science, technology, engineering, and mathematics). Today's cutting-edge innovations in CS are powered by the computing hardware of the 2020s. The programming languages and software techniques that now run the technology sector were sired by CS in the 1990s. Its prominance notwithstanding, though, CS is a very young field, having matured into an independent discipline only in the 1960s. It was born relatively recently, in the 1930s, as a subfield of mathematics. And when society transitions to quantum computing in the not-so-distant future, CS will incorporate physics of the 1900s.
@@ -359,7 +355,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 
 ## *resources*
 
-**Introduction to CS Curriculum**
+**Overview of CS**
 
 - [*Invitation to Computer Science*](https://www.amazon.com/Invitation-Computer-Science-G-Michael-Schneider/dp/1337561916/ref=sr_1_1?dchild=1&keywords=invitation+to+computer+science&qid=1611695747&sr=8-1), Schneider
 - *[Computer Science: An Interdisciplinary Approach](https://www.amazon.com/Computer-Science-Interdisciplinary-Robert-Sedgewick/dp/0134076427/ref=sr_1_9?dchild=1&keywords=intro+to+computer+science&qid=1611697802&sr=8-9)*, Sedgewick
@@ -367,6 +363,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 **Mathematical Foundations**
 
 - *[Discrete Structures](https://www.amazon.com/Discrete-Structures-Harriet-Fell/dp/1634876466/ref=sr_1_1?dchild=1&keywords=discrete+structures&qid=1611695845&sr=8-1)*, Fell
+- [*Understanding Arguments: An Introduction to Informal Logic*](http://www.amazon.com/Understanding-Arguments-Introduction-Informal-Logic/dp/0495603953/ref=sr_1_fkmr0_1?ie=UTF8&qid=1433974594&sr=8-1-fkmr0&keywords=walter+sinnot+Armstrong), Armstrong
 - *[An Introduction to Mathematical Logic](https://www.amazon.com/Introduction-Mathematical-Logic-Dover-Mathematics/dp/0486497852/ref=sr_1_2?dchild=1&keywords=mathematical+logic&qid=1611695921&sr=8-2)*, Hodel
 - *[Applied Combinatorics](https://www.amazon.com/Applied-Combinatorics-Fred-Roberts/dp/1420099825/ref=sr_1_15?dchild=1&keywords=combinatorics&qid=1611696827&sr=8-15)*, Roberts
 - *[Probability Theory: A Concise Course](https://www.amazon.com/Probability-Theory-Concise-Course-Mathematics/dp/0486635449/ref=sr_1_5?dchild=1&keywords=probability+theory&qid=1611696942&sr=8-5)*, Rozanov
@@ -391,6 +388,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 - *[The Pragmatic Programmer: Your Journey to Mastery](https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1611697963&sr=8-12)*, Thomas
 - *[JavaScript: The Good Parts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_2?dchild=1&keywords=javascript+good+parts&qid=1611698184&sr=8-2)*, Crockford
 - *[OCaml from the Very Beginning](https://www.amazon.com/OCaml-Very-Beginning-John-Whitington/dp/0957671105/ref=sr_1_1?dchild=1&keywords=OCaml+from+the+Very+Beginning&qid=1611698270&sr=8-1)*, Whitington
+- *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)*, Bird
 - *[Programming in Haskell](https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/1316626229/ref=sr_1_1?dchild=1&keywords=hutton+haskell&qid=1611698302&sr=8-1)*, Hutton
 - *[Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.pdf)*, Hughes
 

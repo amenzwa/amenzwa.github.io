@@ -4,10 +4,6 @@ Amen Zwa, Esq.
 
 2021-01-11
 
-
-
-[TOC]
-
 # INTRODUCTION
 
 Although in popular parlance "programming" means writing code on a computer, to a computer scientist, programming is a mathematical activity, with or without a computer. In the recent past, most programmers were mathematically trained computer scientists who also wrote code. But today, the majority of coders in the IT industry are not computer scientists; they write code to automate business processes, relying exclusively on coding skills and without resort to mathematics. They call themselves developers.

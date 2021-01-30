@@ -4,10 +4,6 @@ Amen Zwa, Esq.
 
 2021-01-28
 
-
-
-[TOC]
-
 # INTRODUCTION
 
 Young people often ask me which programming language is the best one to learn. To that, I give a lawyerly answer: it depends. The truth is, there is no such thing as the best programming language. But there are many good languages from which to choose for each endeavour. And choose we must, for there are many languages, and every one was created to solve a specific set of problems. Even those so-called general-purpose languages were designed with a bias toward one set of problems or another. So, no one language can suit every imaginable problem.
@@ -540,6 +536,7 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 - [*The Art of Computer Programming*](http://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?s=books&ie=UTF8&qid=1433949817&sr=1-1&keywords=knuth), Knuth
 - [*Introduction to Graph Theory*](http://www.amazon.com/Introduction-Graph-Theory-Dover-Mathematics/dp/0486678709/ref=sr_1_1?s=books&ie=UTF8&qid=1433975084&sr=1-1&keywords=graph+theory), Trudeau
 - [*Theory of Computation: Formal Languages, Automata, and Complexity*](http://www.amazon.com/Theory-Computation-Languages-Automata-Complexity/dp/0805301437/ref=sr_1_2?s=books&ie=UTF8&qid=1433949889&sr=1-2&keywords=automata+theory), Brookshear
+- *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)*, Bird
 - [*An Introduction to Functional Programming Through Lambda Calculus*](http://www.amazon.com/Introduction-Functional-Programming-Calculus-Mathematics-ebook/dp/B00CWR4USM/ref=sr_1_3?s=books&ie=UTF8&qid=1433950302&sr=1-3&keywords=functional+programming), Michaelson
 - [*An Introduction to Mathematical Cryptography*](http://www.amazon.com/Introduction-Mathematical-Cryptography-Undergraduate-Mathematics/dp/1441926747/ref=sr_1_16?s=books&ie=UTF8&qid=1433950146&sr=1-16&keywords=cryptology), Hoffstein
 - [*Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp*](http://www.amazon.com/Paradigms-Artificial-Intelligence-Programming-Studies/dp/1558601910/ref=sr_1_1?s=books&ie=UTF8&qid=1433950620&sr=1-1&keywords=lisp+artificial+intelligence), Norvig
