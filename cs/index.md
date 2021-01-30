@@ -1,7 +1,5 @@
 # Computing
 
-Amen Zwa, Esq.
-
 This topic is devoted to computing. It covers computer science curriculum, career guide for computer scientists, programming languages, and the interactions between law and technology.
 
 - [Computer Science Curriculum](CSCurriculum.md)
