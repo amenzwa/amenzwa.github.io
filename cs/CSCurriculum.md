@@ -370,6 +370,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 - *[Applied Combinatorics](https://www.amazon.com/Applied-Combinatorics-Fred-Roberts/dp/1420099825/ref=sr_1_15?dchild=1&keywords=combinatorics&qid=1611696827&sr=8-15)*, Roberts
 - *[Probability Theory: A Concise Course](https://www.amazon.com/Probability-Theory-Concise-Course-Mathematics/dp/0486635449/ref=sr_1_5?dchild=1&keywords=probability+theory&qid=1611696942&sr=8-5)*, Rozanov
 - *[Introduction to Automata Theory, Languages, and Computation](https://www.amazon.com/Introduction-Automata-Theory-Languages-Computation/dp/8131720470/ref=sr_1_1?dchild=1&qid=1611697094&refinements=p_27%3AJOHN+E.+HOPCROFT+ET+AL&s=books&sr=1-1&text=JOHN+E.+HOPCROFT+ET+AL)*, Hopcroft
+- *[Basics of Compiler Design](http://hjemmesider.diku.dk/~torbenm/Basics/)*, Mogensen
 - *[Compilers: Principles, Techniques, and Tools](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811/ref=sr_1_4?dchild=1&keywords=compiler+design&qid=1612052157&sr=8-4)*, Aho
 - *[Numerical Analysis](https://www.amazon.com/Numerical-Analysis-Richard-L-Burden/dp/1305253663/ref=sr_1_1?dchild=1&keywords=numerical+analysis&qid=1611697153&s=books&sr=1-1)*, Burden
 
