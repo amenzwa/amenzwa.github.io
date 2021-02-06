@@ -381,6 +381,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 
 **Philosophy of CS**
 
+- *[Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)*, Milewski
 - *[Introduction to the Theory of Computation](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/ref=sr_1_1?dchild=1&keywords=computability+theory&qid=1611697616&s=books&sr=1-1)*, Sipser
 - *[Computational Complexity](https://www.amazon.com/Computational-Complexity-Perspective-Oded-Goldreich/dp/052188473X/ref=sr_1_1?dchild=1&keywords=computational+complexity+theory&qid=1611697663&s=books&sr=1-1)*, Goldreich
 - *[Type Theory and Formal Proof: An Introduction](https://www.amazon.com/Type-Theory-Formal-Proof-Introduction/dp/110703650X/ref=sr_1_2?crid=24G7Z714G8DOX&dchild=1&keywords=type+theory&qid=1611697727&sprefix=computational+complexity+theory%2Cstripbooks%2C150&sr=8-2)*, Nederpelt

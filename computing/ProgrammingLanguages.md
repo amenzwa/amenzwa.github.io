@@ -528,7 +528,9 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 **Theory**
 
 - [*The Little Prover*](http://www.amazon.com/Little-Prover-Daniel-P-Friedman/dp/0262527952/ref=sr_1_4?ie=UTF8&qid=1433974273&sr=8-4&keywords=theorem+proving), Friedman
+- *[The Little Typer](https://www.amazon.com/Little-Typer-MIT-Press/dp/0262536439/ref=sr_1_1?dchild=1&keywords=The+Little+Typer&qid=1612639929&sr=8-1)*, Friedman
 - [*Understanding Arguments: An Introduction to Informal Logic*](http://www.amazon.com/Understanding-Arguments-Introduction-Informal-Logic/dp/0495603953/ref=sr_1_fkmr0_1?ie=UTF8&qid=1433974594&sr=8-1-fkmr0&keywords=walter+sinnot+Armstrong), Armstrong
+- *[Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)*, Milewski
 - [*Statistics*](http://www.amazon.com/gp/product/0393929728/ref=pd_lpo_sbs_dp_ss_1?pf_rd_p=1944687742&pf_rd_s=lpo-top-stripe-1&pf_rd_t=201&pf_rd_i=0393970833&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=1S1TBWX07JCT43D899C3), Freedman
 - [*Discrete Mathematics with Applications*](http://www.amazon.com/Discrete-Mathematics-Applications-Susanna-Epp/dp/0495391328/ref=sr_1_2?s=books&ie=UTF8&qid=1433950209&sr=1-2&keywords=discrete+structures), Epp
 - [*Structure and Interpretation of Computer Programs*](http://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_8?s=books&ie=UTF8&qid=1401819781&sr=1-8&keywords=scheme+steele), Abelson
