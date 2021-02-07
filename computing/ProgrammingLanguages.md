@@ -552,6 +552,10 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 
 **Practice**
 
+- *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)*, Bird
+- *[ML for the Working Programmer](https://www.amazon.com/ML-Working-Programmer-2nd-Paulson/dp/052156543X)*, Paulson
+- *[OCaml from the Very Beginning](https://www.amazon.com/OCaml-Very-Beginning-John-Whitington/dp/0957671105/ref=sr_1_1?dchild=1&keywords=OCaml+from+the+Very+Beginning&qid=1611698270&sr=8-1)*, Whitington
+- *[Programming in Haskell](https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/1316626229/ref=sr_1_1?dchild=1&keywords=hutton+haskell&qid=1611698302&sr=8-1)*, Hutton
 - [*The Joy of Clojure*](http://www.amazon.com/Joy-Clojure-Michael-Fogus/dp/1617291412/ref=sr_1_2?s=books&ie=UTF8&qid=1401774361&sr=1-2&keywords=clojure), Fogus
 - [*Programming in Scala: A Comprehensive Step-by-Step Guide*](http://www.amazon.com/Programming-Scala-Comprehensive-Step---Step-ebook/dp/B004Z1FTXS/ref=sr_1_1?s=books&ie=UTF8&qid=1401774514&sr=1-1&keywords=scala), Odersky (Scala designer)
 - [*Expert F#*](https://www.amazon.com/Expert-F-4-0-Don-Syme/dp/1484207416/ref=sr_1_2?dchild=1&keywords=syme+f#&qid=1608771880&s=books&sr=1-2), Syme
