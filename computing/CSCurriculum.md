@@ -392,6 +392,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 - *[Intro to Python for Computer Science and Data Science](https://www.amazon.com/Intro-Python-Computer-Science-Data/dp/0135404673/ref=sr_1_9?dchild=1&keywords=intro+to+programming&qid=1611697963&sr=8-9)*, Deitel
 - *[The Pragmatic Programmer: Your Journey to Mastery](https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1611697963&sr=8-12)*, Thomas
 - *[JavaScript: The Good Parts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_2?dchild=1&keywords=javascript+good+parts&qid=1611698184&sr=8-2)*, Crockford
+- *[Structure and Interpretation of Computer Programs](https://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_1?dchild=1&keywords=structure+and+interpretation+of+computer+programs&qid=1612730293&s=books&sr=1-1)*, Abelson
 - *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)*, Bird
 - *[ML for the Working Programmer](https://www.amazon.com/ML-Working-Programmer-2nd-Paulson/dp/052156543X)*, Paulson
 - *[OCaml from the Very Beginning](https://www.amazon.com/OCaml-Very-Beginning-John-Whitington/dp/0957671105/ref=sr_1_1?dchild=1&keywords=OCaml+from+the+Very+Beginning&qid=1611698270&sr=8-1)*, Whitington
