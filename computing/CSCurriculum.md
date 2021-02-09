@@ -377,6 +377,7 @@ On the other hand, in addition to his love for programming, if he wants truly to
 **Algorithm Analysis**
 
 - *[Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_4?dchild=1&keywords=algorithms&qid=1611697514&s=books&sr=1-4)*, Cormen
+- *[A Discipline of Programming](https://www.amazon.com/Discipline-Programming-Edsger-W-Dijkstra/dp/013215871X/ref=sr_1_1?dchild=1&keywords=a+discipline+of+programming&qid=1612888876&sr=8-1)*, Dijkstra
 - *[The Art of Computer Programming](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?dchild=1&keywords=knuth&qid=1611697539&s=books&sr=1-1)*, Knuth
 
 **Philosophy of CS**
