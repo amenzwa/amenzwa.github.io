@@ -32,7 +32,7 @@ After earning their PhD, the graduates go off to some other university and becom
 
 ## *full professors*
 
-Everyone in academia is a teacher; even those with strong preference for research have to teach. In addition to teaching, they must publish peer-reviewed scientific papers, regularly. A teacher reaches the pinnacle of his career, when he is appointed a full professor at a university. The other path to a professorship is to do great work in the industry at companies with strong academic cultures, then join academia in later career. Many a [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs) alumna has taken this route.
+Everyone in academia is a teacher; even those with strong preference for research have to teach. In addition to teaching, they must publish peer-reviewed scientific papers, regularly. A teacher reaches the pinnacle of his career, when he is appointed a full professor at a university. The other path to a professorship is to do great work in the industry at companies with strong academic cultures, then join academia in later career. Many a [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs) alumnus has taken this route.
 
 # INDUSTRY
 

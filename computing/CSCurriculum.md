@@ -357,84 +357,143 @@ On the other hand, in addition to his love for programming, if he wants truly to
 
 ## *resources*
 
+In this section, I enumerate a list of books that I recommend for CS students. I can only recommend books that I have read either when I was in school or thereafter. And I may not have read the best books in all the subjects. Moreover, your mode of learning may differ from mine. So, use this list not as the ultimate collection, but a starting point to discover great works in CS. Most of all, remember that you need not read all these works while you are studying CS; many of them should be read over the course of your CS career. For this reason, I provide when you should read a particular book.
+
 **Overview of CS**
 
 - [*Invitation to Computer Science*](https://www.amazon.com/Invitation-Computer-Science-G-Michael-Schneider/dp/1337561916/ref=sr_1_1?dchild=1&keywords=invitation+to+computer+science&qid=1611695747&sr=8-1), Schneider
+  - This book provides a practice-focused exposition of the CS field aimed at high school students. As such, there is no mention of theoretical CS in all its 900-plus pages.
 - *[Computer Science: An Interdisciplinary Approach](https://www.amazon.com/Computer-Science-Interdisciplinary-Robert-Sedgewick/dp/0134076427/ref=sr_1_9?dchild=1&keywords=intro+to+computer+science&qid=1611697802&sr=8-9)*, Sedgewick
+  - This book covers all aspects of CS at a level shallow enough for first-year, first-semester CS student. Sedgewick is a CS professor famous for his books on algorithms.
 
 **Mathematical Foundations**
 
-- *[Discrete Structures](https://www.amazon.com/Discrete-Structures-Harriet-Fell/dp/1634876466/ref=sr_1_1?dchild=1&keywords=discrete+structures&qid=1611695845&sr=8-1)*, Fell
+- *[Discrete Mathematics with Applications](https://www.amazon.com/Discrete-Mathematics-Applications-Susanna-Epp/dp/0495391328/ref=sr_1_1?dchild=1&keywords=epps+discrete+structures&qid=1613084234&sr=8-1)*, Epp
+  - There are many good textbooks on discrete structures, which is a course typically taken during first or second year of the CS curriculum. This book is less rigorous than other texts on discrete mathematics. Nonetheless, it is a splendid first-book for those transitioning from being high schooler to CS collegiate.
 - [*Understanding Arguments: An Introduction to Informal Logic*](http://www.amazon.com/Understanding-Arguments-Introduction-Informal-Logic/dp/0495603953/ref=sr_1_fkmr0_1?ie=UTF8&qid=1433974594&sr=8-1-fkmr0&keywords=walter+sinnot+Armstrong), Armstrong
+  - This book is not the kind read by CS students. But because the authors are philosophers, their explanation of logic and arguments is intuitive and accessible. The knowledge is applicable to all STEM fields, as well as to law and medicine. High school students should read this book.
 - *[An Introduction to Mathematical Logic](https://www.amazon.com/Introduction-Mathematical-Logic-Dover-Mathematics/dp/0486497852/ref=sr_1_2?dchild=1&keywords=mathematical+logic&qid=1611695921&sr=8-2)*, Hodel
+  - This book provides a formal, but accessible, introduction to logic, which is part of the foundation of mathematics.
 - *[Applied Combinatorics](https://www.amazon.com/Applied-Combinatorics-Fred-Roberts/dp/1420099825/ref=sr_1_15?dchild=1&keywords=combinatorics&qid=1611696827&sr=8-15)*, Roberts
+  - This is a theory-heavy exposition of combinatorics. It is appropriate for senior undergraduates or first-year graduate students.
 - *[Probability Theory: A Concise Course](https://www.amazon.com/Probability-Theory-Concise-Course-Mathematics/dp/0486635449/ref=sr_1_5?dchild=1&keywords=probability+theory&qid=1611696942&sr=8-5)*, Rozanov
+  - This book provides a good introduction to probability theory, which is used in every STEM field. This book could be read by a second- or third-year CS student.
 - *[Introduction to Automata Theory, Languages, and Computation](https://www.amazon.com/Introduction-Automata-Theory-Languages-Computation/dp/8131720470/ref=sr_1_1?dchild=1&qid=1611697094&refinements=p_27%3AJOHN+E.+HOPCROFT+ET+AL&s=books&sr=1-1&text=JOHN+E.+HOPCROFT+ET+AL)*, Hopcroft
+  - This book is a classic on the subject, written by a famous CS professor. It gives a comprehensive, yet concise, treatment of automata theory and formal languages. This book is suited to third-year CS students interested in theoretical CS and programming language design.
 - *[Basics of Compiler Design](http://hjemmesider.diku.dk/~torbenm/Basics/)*, Mogensen
+  - This book provides a good introduction to the practical side of compiler design with just enough theory. It could be read by third-year CS students.
 - *[Compilers: Principles, Techniques, and Tools](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811/ref=sr_1_4?dchild=1&keywords=compiler+design&qid=1612052157&sr=8-4)*, Aho
+  - This book is the definitive, comprehensive guide to compiler design, both theory and practice. Because the techniques used in compilers have wide-ranging applications in many specialities, all seniors should read this book. Aho is a giant of theoretical CS.
 - *[Numerical Analysis](https://www.amazon.com/Numerical-Analysis-Richard-L-Burden/dp/1305253663/ref=sr_1_1?dchild=1&keywords=numerical+analysis&qid=1611697153&s=books&sr=1-1)*, Burden
+  - Numerical analysis is useful in just about every STEM field, so there are tonnes of good books on the subject. Many books focus on numerical algorithms and implementation techniques. This book leans toward theory. It could be read by anyone with a background in calculus.
 
 **Algorithm Analysis**
 
-- *[Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_4?dchild=1&keywords=algorithms&qid=1611697514&s=books&sr=1-4)*, Cormen
 - *[A Discipline of Programming](https://www.amazon.com/Discipline-Programming-Edsger-W-Dijkstra/dp/013215871X/ref=sr_1_1?dchild=1&keywords=a+discipline+of+programming&qid=1612888876&sr=8-1)*, Dijkstra
+  - Dijkstra is one of the most famous computer scientists. In this book, he explains the nature of computing to the public. It should be read by high school students.
+- *[The Fun of Programming](https://www.amazon.com/Fun-Programming-Cornerstones-Computing/dp/0333992857/ref=sr_1_2?dchild=1&keywords=The+Fun+of+Programming&qid=1613087255&sr=8-2)*, Gibbons
+  - No one can accuse computer scientists of dullness, for we are a fun crowd. Well, not really. Nevertheless, this is one fun book for CS students to read. It is co-written by several famous CS professors.
+- *[Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_4?dchild=1&keywords=algorithms&qid=1611697514&s=books&sr=1-4)*, Cormen
+  - Of the numerous good books on algorithms, this book stands out for its broad and deep coverage of the subject ands its succinct yet readable style. This textbook is used by many colleges at both undergraduate and graduate levels.
 - *[The Art of Computer Programming](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?dchild=1&keywords=knuth&qid=1611697539&s=books&sr=1-1)*, Knuth
+  - Knuth is one of the founding fathers of modern CS. This series of multi-volume books are the "sacred texts" of CS theology. Knuth is also the designer and author of the [TeX](https://en.wikipedia.org/wiki/TeX) typesetting programme. TeX is used extensively in all STEM fields for drafting reports, papers, and textbooks.
 
 **Philosophy of CS**
 
 - *[Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)*, Milewski
+  - This book is perhaps the most down-to-earth introduction to category theory. It is freely downloadable. Milewski is a physicist turned programmer. His extraordinary insights into theory and practice of programming is of immense value to all CS practitioners.
 - *[Introduction to the Theory of Computation](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/ref=sr_1_1?dchild=1&keywords=computability+theory&qid=1611697616&s=books&sr=1-1)*, Sipser
+  - This book is one of the more readable books on theory of computation. It could be read by senior CS students and graduate students.
 - *[Computational Complexity](https://www.amazon.com/Computational-Complexity-Perspective-Oded-Goldreich/dp/052188473X/ref=sr_1_1?dchild=1&keywords=computational+complexity+theory&qid=1611697663&s=books&sr=1-1)*, Goldreich
+  - Most books on complexity theory tend to be overly complex. This book is an exception in that it is written in an accessible style. It is a good introductory book on the subject, and could be read by senior CS students and graduate students.
 - *[Type Theory and Formal Proof: An Introduction](https://www.amazon.com/Type-Theory-Formal-Proof-Introduction/dp/110703650X/ref=sr_1_2?crid=24G7Z714G8DOX&dchild=1&keywords=type+theory&qid=1611697727&sprefix=computational+complexity+theory%2Cstripbooks%2C150&sr=8-2)*, Nederpelt
+  - Type theory is another highly theoretical subjects in CS. Most textbooks on the subject tend to be written by mathematicians for mathematicians. This book is not; it provides a good introduction to this very important foundational topic in CS. It could be read by senior CS students and graduate students.
 
 **Programming**
 
 - *[The Practice of Programming](https://www.amazon.com/Practice-Programming-Addison-Wesley-Professional-Computing/dp/020161586X/ref=sr_1_1?dchild=1&keywords=kernighan+pike&qid=1611697895&sr=8-1)*, Kernighan
-- *[Intro to Python for Computer Science and Data Science](https://www.amazon.com/Intro-Python-Computer-Science-Data/dp/0135404673/ref=sr_1_9?dchild=1&keywords=intro+to+programming&qid=1611697963&sr=8-9)*, Deitel
+  - This book is a classic text on software practice. It could be read by anyone with background in popular programming languages like C++ and Java. Kernighan is a [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs) alumnus famous for writing sharp, succinct, straightforward books on programming in the Unix environment. His most famous work is *[The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language)* (1978).
 - *[The Pragmatic Programmer: Your Journey to Mastery](https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1611697963&sr=8-12)*, Thomas
+  - This is the manifesto of modern programming, written by authors famous for their pragmatic philosophy of software development. Although the ideas presented are intuitive and comprehensible, they can only be appreciated to their full extent by those who possess adequate industrial experience. Nevertheless, this book should be read by newly minted computer scientists who are entering the IT industry. And it should be reread after they have gained several years' experience in the industry.
+- *[Intro to Python for Computer Science and Data Science](https://www.amazon.com/Intro-Python-Computer-Science-Data/dp/0135404673/ref=sr_1_9?dchild=1&keywords=intro+to+programming&qid=1611697963&sr=8-9)*, Deitel
+  - This book covers all—yes, all—aspects of Python programming in the real world. Despite the "computer science" in the title, this is decidedly a practice-oriented book. There is not a lick of theory in all its 2,500 pages. It would not be an exaggeration to say that one could become a junior data scientist by reading only this book and without pursuing a degree in CS.
 - *[JavaScript: The Good Parts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_2?dchild=1&keywords=javascript+good+parts&qid=1611698184&sr=8-2)*, Crockford
+  - JavaScript is famous for being easy to learn and hard to use. It is a simple language with a small feature set that somehow manages to exhibit a large number of traps. But in the hands of an experienced programmer with a refined sense of judgement, it is a powerful tool. This book teaches how properly to use JavaScript.
 - *[Structure and Interpretation of Computer Programs](https://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_1?dchild=1&keywords=structure+and+interpretation+of+computer+programs&qid=1612730293&s=books&sr=1-1)*, Abelson
+  - Known as SICP, this is the definitive textbook on functional programming in Scheme, written by famous computer scientists. The authors also published a superb set of MIT OpenCourseWare [video lectures](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/), which were recorded in 1986.
 - *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)*, Bird
+  - Although this textbook is no longer in print (because no one is using it to teach), it is undoubtedly the best of its kind. Indeed, many practitioners of functional programming who went on to design their own languages cite this book as their source of learning and inspiration. Its authors are famous for their theoretical works on functional programming as well as their contributions to Haskell programming language. It is aimed at first year CS students with little or no programming experience. The first edition, which is everyone's favourite, was based on Miranda language, a daughter of ML and the mother of Haskell. The second edition, which is almost universally disliked, is based on Haskell.
 - *[ML for the Working Programmer](https://www.amazon.com/ML-Working-Programmer-2nd-Paulson/dp/052156543X)*, Paulson
+  - This book is a great introduction to ML. It covers both theory and practice. It is written for freshman CS students with no programming experience.
 - *[OCaml from the Very Beginning](https://www.amazon.com/OCaml-Very-Beginning-John-Whitington/dp/0957671105/ref=sr_1_1?dchild=1&keywords=OCaml+from+the+Very+Beginning&qid=1611698270&sr=8-1)*, Whitington
+  - This book introduces OCaml, a daughter of ML and the mother of F# and Reason. It is a very basic book aimed at those with no programming experience. OCaml is a pragmatic functional programming language with a strong theoretical tradition.
 - *[Programming in Haskell](https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/1316626229/ref=sr_1_1?dchild=1&keywords=hutton+haskell&qid=1611698302&sr=8-1)*, Hutton
+  - Of the many books on Haskell programming, this is arguably the most balanced. Hutton is a CS professor who is active in the Haskell community and is famous for his succinct, insightful, eloquent explanations, both on paper and in [video](https://www.youtube.com/watch?v=T_IINWzQhow&list=PLF1Z-APd9zK6mud3DkxKBQ4gUfxmU1Asy&ab_channel=Computerphile). All functional programmers should read his paper *[A tutorial on the universality and expressiveness of fold](http://www.cs.nott.ac.uk/~pszgmh/fold.pdf)*.
 - *[Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.pdf)*, Hughes
+  - This is a must-read paper for all functional programmers. It explains in simple terms the nature of functional programming, its inherent power, and the sources of that power. The author is a famous CS professor who is active in the Haskell community.
 
 **Systems**
 
+- *[The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)*, Brooks
+  - For many years, this books has been the required reading for programmers and managers who work on large software projects. The author was a well-known IBMer. He describes in the book his experiences in managing the development of the OS/360 operating system for the hugely successful IBM System/360 mainframe computer from the 1960s. Although the technology of the project is outdated, the lessons learned therefrom are eminently fresh. This book shows how poorly the modern software industry has learned from its past mistakes and how little it has matured since its birth in the 1960s.
 - *[The Unix Programming Environment](https://www.amazon.com/Unix-Programming-Environment-Prentice-Hall-Software/dp/013937681X/ref=sr_1_6?dchild=1&keywords=kernighan&qid=1611697922&sr=8-6)*, Kernighan
+  - This is another one of Kernighan's famous books. It teaches C programmers how effectively to use Unix. Unix was designed not merely as an operating system, but to be a programming environment. Indeed, Unix is the original integrated development environment (IDE).
 - *[Advanced Programming in the Unix Environment](https://www.amazon.com/Advanced-Programming-UNIX-Environment-3rd/dp/0321637739/ref=sr_1_13?dchild=1&keywords=system+programming&qid=1611698537&sr=8-13)*, Stevens
+  - This book provides an in-depth coverage of Unix system programming—file system, system configuration files, process management, threading, networking, and more. The [author is well known](https://en.wikipedia.org/wiki/W._Richard_Stevens) for his books on Unix system and network programming.
 - *[Unix System Programming in OCaml](http://ocaml.github.io/ocamlunix/ocamlunix.pdf)*, Leroy
+  - For many years, OCaml have been used to implement performance-critical system applications. This free book by the designer of OCaml describes how to use the type system to implement safe, efficient system programmes on Unix.
 - *[The Design of the UNIX Operating System](https://www.amazon.com/Design-UNIX-Operating-System/dp/0132017997/ref=sr_1_1?dchild=1&keywords=bach+unix&qid=1611698779&sr=8-1)*, Bach
-- *[The Design and Implementation of the 4.4Bsd Operating System](https://www.amazon.com/Design-Implementation-4-4-Operating-System/dp/0201549794/ref=sr_1_2?dchild=1&keywords=bsd+operating+system&qid=1611698707&sr=8-2)*, Bostic
+  - This book was the first, comprehensive description of AT&T Unix System V. Most commercial Unix versions (Solaris, Ultrix, HP/UX, AIX, etc.) are descendants of System V Release 4 (SVR4). The author was a Bell Labs insider. The book covers the details of the algorithms and data structures used by System V. For many years, this was the go-to book for operating systems course. But today, this course lean more toward the design and implementation of Linux. There are but a few books on Linux design, and none compare well to this book in terms of quality and eloquence.
+- *[The Design and Implementation of the 4.3BSD Operating System](https://www.amazon.com/Design-Implementation-UNIX-Operating-System/dp/0201061961/ref=sr_1_1?dchild=1&keywords=bsd+4.3&qid=1613079697&s=books&sr=1-1)*, Leffler
+  - This book was the first, comprehensive description of Berkeley Unix 4.3BSD. The authors were BSD developers. This was their answer to Bach's book. Although this is an excellent book, it does not rise to the excellence of Bach's book. Whereas the corporate world swear by SVR4, academics and hobbyists adored 4.3BSD. 4.3BSD was a vast improvement over 4.2BSD, the version of BSD that gave the world the Internet. Modern BSDs, like FreeBSD, NetBSD, OpenBSD, etc., descended from 4.3BSD. Today, BSD versions power Netflix, WhatsApp, PlayStation, and others. This book should be read by all system programmers who work with, or are interested in, BSD Unix.
 - *[Unix Network Programming](https://www.amazon.com/UNIX-Network-Programming-Richard-Stevens/dp/0139498761/ref=sr_1_37?dchild=1&keywords=network+programming&qid=1611698845&sr=8-37)*, Stevens
-- *[TCP/IP Illustrated, Volume 1: The Protocols](TCP/IP Illustrated, Volume 1: The Protocols)*, Fall
+  - This is another of the author's well-loved Unix programming books. It covers Sockets, Transport Level Interface, interprocess communications (IPC), and other related APIs used in Unix client/server programming. It is another must-read book for Unix system programmers.
 - *[The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography](https://www.amazon.com/Code-Book-Science-Secrecy-Cryptography/dp/0385495323/ref=sr_1_5?dchild=1&keywords=cryptography&qid=1611699092&sr=8-5)*, Singh
+  - Singh is a physicist and a best-selling science author. The author is famous worldwide for his cogent, coherent explanation of the unexplainable. This book is no different. In it, he explores the science of cryptography, its applications throughout history, and cryptographic techniques. All CS students interested in cryptography should read this little book.
 - *[Applied Cryptography](https://www.amazon.com/Applied-Cryptography-Protocols-Algorithms-Source/dp/1119096723/ref=sr_1_1?dchild=1&keywords=applied+cryptography&qid=1611699656&sr=8-1)*, Schneier
+  - This is the definitive guide for cryptography by a highly respected practitioner. Although it is a practice guide with lots of C code, it does contain the right amount of theory. All CS students interested in cryptography should read this big book.
 - *[An Introduction to Mathematical Cryptography](https://www.amazon.com/Introduction-Mathematical-Cryptography-Undergraduate-Mathematics/dp/1493917102/ref=sr_1_8?dchild=1&keywords=cryptography&qid=1611699092&sr=8-8)*, Hoffstein
+  - This is a good introduction to mathematical techniques used in cryptography. It can be read by senior CS students and graduate students planning to specialise in cryptography.
 - *[Readings in Database Systems](https://www.amazon.com/Readings-Database-Systems-MIT-Press/dp/0262693143/ref=sr_1_1?dchild=1&keywords=Readings+in+Database+Systems&qid=1611699320&s=books&sr=1-1)*, Stonebraker
+  - This book is a collection of research papers on advances in database design. It is intended for graduate-level database researchers. It is not for developers interested in implementing data storage solutions for line-of-business applications.
 - *[Computer Graphics: Principles and Practice](https://www.amazon.com/Computer-Graphics-Principles-Practice-2nd/dp/0201848406/ref=sr_1_2?dchild=1&keywords=Computer+Graphics+foley&qid=1611699435&s=books&sr=1-2)*, Foley
+  - This is the most famous 3D computer graphics textbook. The first edition of this book was written in the days of [mainframe](https://en.wikipedia.org/wiki/Mainframe_computer) and [minicomputers](https://en.wikipedia.org/wiki/Minicomputer) with specialised graphics subsystem attachments, long before the advent of PC-based 3D graphics hardware. The second edition was published in the heyday of [graphics workstations](https://en.wikipedia.org/wiki/Workstation#Graphics_workstations), at the onset of modern PC [gaming computers](https://en.wikipedia.org/wiki/Gaming_computer). Later editions focus on modern graphics hardware. But the significance of this textbook is not in the graphics hardware it covers, but in the fundamental graphics algorithms it teaches. CS students intending to specialise in computer graphics—those who are interested in VR game designers or 3D graphics hardware design—should read this book, cover-to-cover.
 - *[The Visual Display of Quantitative Information](https://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_1?crid=11NG1T2X2T7NR&dchild=1&keywords=edward+tufte&qid=1611699527&sprefix=tufti%2Caps%2C158&sr=8-1)*, Tufte
+  - The author is a professor of statistics with a keen eye for aesthetics. This book is aimed at data presenters, not programmers. Nevertheless, it is a must-read for those interested in data science, information visualisation, and related specialities.
 
 **Information Theory**
 
 - *[An Introduction to Information Theory](https://www.amazon.com/Introduction-Information-Theory-Dover-Mathematics/dp/0486682102/ref=sr_1_9?dchild=1&keywords=information+theory&qid=1611699710&sr=8-9)*, Reza
+  - Information theory was born between 1920s and 1940s. So, this book, from 1961, is a relatively modern book on the subject. It was written by a US-educated Iranian electrical engineer, who passed away aged 104 in 2019. It is technical and theoretical, but accessible to senior-level undergraduate STEM students with a solid background in probability and calculus.
 - *[An Introduction to Information Theory: Symbols, Signals and Noise](https://www.amazon.com/Introduction-Information-Theory-Symbols-Signals/dp/B07YF2NV71/ref=sr_1_2?dchild=1&keywords=An+Introduction+to+Information+Theory&qid=1611699811&sr=8-2)*, Pierce
+  - This book is the more modern treatment of the subject, but it is about as good an introduction as the Reza book.
 
 **Hardware Engineering**
 
 - *[Electronic circuit analysis and design](https://www.amazon.com/Electronic-circuit-analysis-design-William/dp/0395326168/ref=sr_1_4?dchild=1&keywords=Electronic+Circuit+Analysis+and+Design&qid=1611699907&s=books&sr=1-4)*, Hayt
+  - Hayt was a highly respected electrical engineer. And this book is the classic in electrical engineering. It expounds one of the fundamental subjects in EE, circuit analysis, in an unparalleled clarity. This book has been the bedrock of EE curriculum for decades. There are newer books on the subjects, but they are not better. CS students may not need to read this book, but CE students should.
 - *[The Art of Electronics](https://www.amazon.com/Art-Electronics-Paul-Horowitz/dp/0521809266/ref=sr_1_8?dchild=1&keywords=electronics+textbook&qid=1611699993&s=books&sr=1-8)*, Horowitz
+  - This massive book is the bible of practising electronic engineers. It covers the breadth and depth of modern electronics. CS students who are keen on IoT and MCUs must read this book.
 - *[Computer Architecture: A Quantitative Approach](https://www.amazon.com/Computer-Architecture-Quantitative-Approach-Kaufmann/dp/0128119055/ref=sr_1_2?dchild=1&keywords=computer+architecture&qid=1611698618&sr=8-2)*, Hennessy
+  - This is the definitive textbook on the design of RISC architecture. It is perhaps the most comprehensive and accessible work on the subject. The authors are famous in both academia and industry, for their works on RISC.
 - *[Understanding Digital Signal Processing](https://www.amazon.com/Understanding-Digital-Signal-Processing-3rd/dp/0137027419/ref=sr_1_5?dchild=1&keywords=digital+signal+processing&qid=1611700269&s=books&sr=1-5)*, Lyons
+  - This book was written by a practising electrical engineer. It balances well the practice against the theory. It does require advanced engineering mathematics knowledge. Senior CE students interested in DSP should read this book.
 - *[Digital Image Processing](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728/ref=sr_1_1?dchild=1&keywords=digital+image+processing&qid=1611700317&s=books&sr=1-1)*, Gonzalez
-- *[The Designer's Guide to the Cortex-M Processor Family: A Tutorial Approach](https://www.amazon.com/Designers-Guide-Cortex-M-Processor-Family/dp/0081006292/ref=sr_1_12?dchild=1&keywords=arm+processor+architecture&qid=1611700040&s=books&sr=1-12)*, Martin
+  - For several decades, this book has been the ultimate text on DIP. It provides fundamental, theoretical knowledge, without getting bogged down with the particulars of software and hardware implementation. It is a must-read book for CS and CE students interested in DIP.
 - *[Programming Arduino: Getting Started with Sketches](https://www.amazon.com/Programming-Arduino-Getting-Started-Sketches/dp/1259641635/ref=sr_1_3?dchild=1&keywords=arduino&qid=1611700357&s=books&sr=1-3)*, Monk
+  - Monk is a well-known author of practical electronics. In this book, he explains the basics of Arduino-based hardware and software implementations. It is a good starting point for Arduino MCU studies. This book maybe read by advanced high schoolers.
+- *[The Designer's Guide to the Cortex-M Processor Family: A Tutorial Approach](https://www.amazon.com/Designers-Guide-Cortex-M-Processor-Family/dp/0081006292/ref=sr_1_12?dchild=1&keywords=arm+processor+architecture&qid=1611700040&s=books&sr=1-12)*, Martin
+  - This book is a detailed, but easy-to-read, introduction to the ARM Cortex-M MCU. It is written for those with advanced system programming skills.
 - *[The Official Raspberry Pi Beginner's Guide](https://magpi.raspberrypi.org/books/beginners-guide-2nd-ed)*, Halfacree
+  - This book, which comes bundled with the Raspberry Pi 400 computer, is a great introduction to middle school and high school students who wish to learn programming.
 - *[Programming the Raspberry Pi](https://www.amazon.com/Programming-Raspberry-Pi-Second-Getting/dp/1259587401/ref=sr_1_9?dchild=1&keywords=raspberry+pi&qid=1611700433&s=books&sr=1-9)*, Monk
+  - This is another one of Monk's good books. Whereas his Arduino book is focused on MCUs. this Pi book is focused on SBCs. Nevertheless, this book, like his Arduino book, is suitable for high schoolers.
 - *[The Official BBC micro:bit User Guide](https://www.amazon.com/Official-BBC-micro-User-Guide/dp/111938673X/ref=sr_1_2?dchild=1&keywords=bbc+microbit&qid=1611700465&s=books&sr=1-2)*, Halfacree
+  - This is the official guide for the micro:bit intended for school-aged children, pre-teens and up. It covers Python and JavaScript programming, as well as basic circuit interfacing and wireless communications.
 
 **Reading and Writing**
 
 - *[How to Read a Book: The Classic Guide to Intelligent Reading](https://www.amazon.com/How-Read-Book-Classic-Intelligent/dp/0671212095/ref=sr_1_1?dchild=1&keywords=how+to+read+a+book&qid=1611700577&s=books&sr=1-1)*, Adler
+  - Adler was a well-known philosopher. He wrote extensively about learning and reading. This book recommends great Western literary works with which the erudite ought to be familiar. But more importantly, it provides a guide on how to read such great works.
 - *[The Elements of Style](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X/ref=sr_1_1?dchild=1&keywords=strunk&qid=1611700548&s=books&sr=1-1)*, Strunk
+  - This little book is the perennial of writing classes. Since all STEMers must write, sooner or later, they should all read this book as early in their careers as possible.
