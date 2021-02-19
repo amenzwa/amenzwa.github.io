@@ -10,10 +10,12 @@ An engineer—like a doctor or a lawyer—is a licensed professional, who must p
 - IT companies enter into contracts, as a matter of course in day-to-day running of their businesses.
 - Every agreement is preceded by negotiations, where knowledge of the law is essential.
 - IT companies often sue their competitors for unfair competition, intellectual property theft, etc.
-- In many sectors IT systems are required to comply with numerous regulations.
+- In many business sectors, IT systems are required to comply with numerous regulations.
 - Some regulations place restraints on exporting IT products.
 - All IT companies that innovate avail themselves of intellectual property laws.
 - Many small IT companies are bought out through mergers and acquisitions (M&A) transactions.
+- Large IT companies have a habit of entangling themselves with anti-trust regulations.
+- Senior IT executives must sign non-compete and non-disclosure agreements when joining a company.
 
 It is, therefore, advisable that CS students endeavour to gain a basic understanding of how law and technology interact. This article describes at a high level the aspects of American law that pertain to the IT industry.
 
@@ -68,6 +70,14 @@ IP licensing is another topic of interest to IT practitioners. Sometimes, while 
 ## *government contracts*
 
 Perhaps the most important contracts to IT companies are those they make with the federal government, pursuant to the [Federal Acquisition Regulation](https://en.wikipedia.org/wiki/Federal_Acquisition_Regulation) (FAR). The FAR prescribes the policies and procedures for the federal government's acquisition of products and services, including IT-related products and services. Not surprisingly, the [DC Area](https://en.wikipedia.org/wiki/Washington_metropolitan_area) has the highest concentration of government contractors. These companies are pejoratively labelled "Beltway Bandits", in reference to the [Capital Beltway](https://en.wikipedia.org/wiki/Capital_Beltway) that surrounds DC. What distinguishes government contracts from private contracts is that many common law contract doctrines cannot be used to prevail upon the sovreign, and that the soverign always prefers lower price over higher quality. Common IT government contract types are fixed-price (FP), cost-plus (CP), time-and-materials (T&M), and indefinite delivery / indefinite quantity (IDIQ). An *FP contract* requires the contractor to complete the work at the negotiated price, thus allocating a high risk to the contractor. This type of contract is used to acquire hardware products or to run IT service programmes where the operating environments are stable and the contractors know the environment well. A *CP contract* reimburses the contractor for costs incurred during performance, up to the negotiated maximum price. This contract type gives the government the flexibility to ask the contractor to fill some urgent, unanticipated needs, without exposing the contractor to undue risks. A *T&M contract* pays the contractor for the time expended and the materials consumed to produce results, and reasonable profits are priced in. It offers greater flexibility to the government, and also allocates greater risk to the government. This type of contract is used for exploratory, research projects, where it is impossible to estimate the cost with any certainty, given the novel nature of the work. An *IDIQ contract* offers the government the greatest flexibility at the lowest risk and price. It allows the government to break up a large contract into small task orders, and when the need arises, asks multiple contractors compete for a task. This type of contract is suited for filling, on-demand, short-term needs for products and services.
+
+## *non-compete, non-disclosure agreements*
+
+When a company hires a top-level IT executive, they require him to sign a non-compete, non-disclosure agreement (NDA) as a precondition of his employment. An NDA is perhaps the most relevant legal document to an IT practitioner. The purpose of this agreement is to protect the company's trade secrets and to their market position. Most technologists willingly sign NDAs without fully comprehending its scope and restraints. Later, after they have left the company, they end up violating their NDAs, often unwittingly.
+
+An NDA agreement typically forbids the former employee from competing against the company in the same market for one or two years. But the law favours mobility and freedom, so on policy grounds courts often narrowly interpret overly expansive NDAs. For instance, if a Beltway Bandit were to restrain their former employees from working for any other government consultant in the DC area, that NDA may well be invalidated by the court for overreaching.
+
+Nevertheless, it is the [fiduciary duty](https://www.forbes.com/advisor/investing/what-is-fiduciary-duty/) of a former employee to protect the trade secrets and to refrain from misappropriating the company's goodwill or other intangible assets. And it goes without saying that a person may not do harm to his former employer for the management's mistreatment he endured during his employment. The evil managers are not the company; the company is a separate "legal person", to whom the former employee owes a fiduciary duty, long after he left the employ.
 
 # CONCLUSION
 
