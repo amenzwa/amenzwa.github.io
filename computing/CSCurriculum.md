@@ -1,7 +1,16 @@
+---
+layout: post
+mathjax: true
+---
+
 # Computer Science Curriculum
 Amen Zwa, Esq.
 
 # INTRODUCTION
+
+```html
+$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+```
 
 Over the past several decades, computer science (CS) gradually established itself as an enabler of modern society. It is the "T" in "STEM" (science, technology, engineering, and mathematics). Today's cutting-edge innovations in CS are powered by the computing hardware of the 2020s. The programming languages and software techniques that now run the technology sector were sired by CS in the 1990s. Its prominance notwithstanding, though, CS is a very young field, having matured into an independent discipline only in the 1960s. It was born relatively recently, in the 1930s, as a subfield of mathematics. And when society transitions to quantum computing in the not-so-distant future, CS will incorporate physics of the 1900s.
 

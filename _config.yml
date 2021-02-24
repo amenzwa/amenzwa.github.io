@@ -1,1 +1,10 @@
+title: Amen Zwa, Esq.
+email: amenzwa@gmail.com
+description: publications of Amen Zwa, Esq.
+baseurl: ""
+url: "http://amenzwa.github.io"
+twitter_username: AmenZwa
+github_username:  AmenZwa
+markdown: kramdown
+highlighter: rouge
 theme: jekyll-theme-architect
