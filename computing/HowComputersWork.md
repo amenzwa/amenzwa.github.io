@@ -67,13 +67,17 @@ DONE: ; loop completed
 Above, integer `i` is the loop index which is initialised to 0 at the top of the loop, and `n` is the maximum number of iterations. When `i = n`, the loop termination condition is met, so the CPU jumps out of the loop, instead of jumping back to the top of the loop.
 
 ***algorithm and intelligence***—A CPU equipped with boolean logic operations, character and string operations, integer and floating-point operations, and branching and looping constructs is capable of simple, but general, computations. For example, the integer averaging algorithm sums up a sequence $s_i$ of integers, and divides the sum with the sequence length $n$:
+<div>
 $$
 avg = \frac{\sum_{i=1}^{n} s_i}{n}
 $$
+</div>
 The integer averaging algorithm above uses looping, addition, and division. More complex computations, like $sin(a)$ where $a$ is an angle in radians, can be computed using Taylor series with sufficiently large number of iterations $n$:
+<div>
 $$
 sin(a) = \sum_{i=0}^{n} \frac{(-1)^i}{(2i+1)!} a^{2i+1}
 $$
+</div>
 The above sine algorithm uses looping, addition, subtraction, multiplication, and division. Exponentiation $a^i = a \cdot a \cdot ... \cdot a$ and factorial $i! = i \cdot (i - 1) \cdot (i - 2) \cdot ... \cdot 2 \cdot 1$ also use these same, simple computations.
 
 Algorithms like these are implemented as functions that take inputs and return results. When performing a conditional branch, the CPU can jump immediately to the designated code blocks, depending on the condition. But when calling a function, the CPU must assemble the input values for the function to use and arrange for the function to return its results to the caller, before jumping into the function's code block. This function call mechanism is described in detail, later.
