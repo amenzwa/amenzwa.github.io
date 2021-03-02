@@ -1,3 +1,10 @@
+---
+title: "How Computers Work"
+tags:
+  - mathjax
+use_math: true
+---
+
 # How Computers Work
 
 Amen Zwa, Esq.

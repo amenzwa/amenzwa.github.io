@@ -1,3 +1,10 @@
+---
+title: "Computer Science Curriculum"
+tags:
+  - mathjax
+use_math: true
+---
+
 # Computer Science Curriculum
 Amen Zwa, Esq.
 
