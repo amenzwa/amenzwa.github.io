@@ -5,10 +5,6 @@ tags:
 use_math: true
 ---
 
-# How Computers Work
-
-Amen Zwa, Esq.
-
 # INTRODUCTION
 
 In recent years, computing technologies have advanced at a ferocious pace and IT systems have become immensely sophisticated. Software systems have always been built in layers. But of late, the industry has been obliged to build new layers of complex technologies atop outmoded, ill-fitting technologies. This is due in part to the economics and practices of modern software development and in part to the deeply enmeshed nature of the older, hastily developed, poorly understood technologies. Progressive layering removes programmers farther and farther from the hardware, so much so that many experienced programmers today no longer understand something as fundamental as the boot-up sequence or the instruction execution cycle. Surely, a software developer can have a profitable career working on social media and line of business applications without ever having peered inside a computer case. But software development is more than captivating user interfaces and undocumented REST requests. To be effective, a programmer must, at the very least, possess an accurate mental model of how a computer executes programmes.
