@@ -1,6 +1,6 @@
-# Law and Technology
-
-Amen Zwa, Esq.
+---
+title: "Law and Technology"
+---
 
 # INTRODUCTION
 

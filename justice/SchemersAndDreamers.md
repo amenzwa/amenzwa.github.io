@@ -1,4 +1,6 @@
-# Schemers and Dreamers
+---
+title: "Schemers and Dreamers"
+---
 
 ## *an appeal for social justice*
 

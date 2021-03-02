@@ -1,6 +1,6 @@
-# Computer Science Career
-
-Amen Zwa, Esq.
+---
+title: "Computer Science Career"
+---
 
 # INTRODUCTION
 

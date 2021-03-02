@@ -1,4 +1,6 @@
-# EWI5000 Saxophone Fingering
+---
+title: "EWI5000 Saxophone Fingering"
+---
 
 ## *for the visually impaired players*
 

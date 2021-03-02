@@ -1,4 +1,6 @@
-# Motorsport
+---
+title: "Motorsport"
+---
 
 I wrote *[Going Nowhere Fast](https://www.amazon.com/Going-Nowhere-Assetto-Corsa-2018-01-20-ebook/dp/B00NS918M4/ref=sr_1_1?dchild=1&keywords=amen+zwa&qid=1608072855&sr=8-1)* (GNF) to be a comprehensive handbook for race driving on simulators.  Although GNF is based on Kunos Simulazioni’s [*Assetto Corsa*](https://www.assettocorsa.net/home-ac/) (AC) simulator, the principles, explanations, and suggestions given therein are applicable not only to all racing simulators but also to real-life track racing.  This *Car Set-up Guide* (CSG) is a companion to GNF.  While GNF is written in a conversational style suited to novice drivers learning AC, CSG is presented in a quick-reference style that enables a more experienced driver using any realistic simulator.  As such, this guide assumes that the driver is familiar with the fundamentals covered in GNF:  driving phases, corner configurations, handling techniques, on-track tactics, race strategies, psychology of race driving, and the like.  The main aim of CSG is to mitigate the frustrations stirred up by an ill-handling car.
 

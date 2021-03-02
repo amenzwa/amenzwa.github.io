@@ -1,3 +1,7 @@
+---
+title: "Publications of Amen Zwa, Esq."
+---
+
 # [Justice](justice/index.md)
 
 This topic covers legal education, social justice, and related matters. It is intended for those considering attending law school and those who are currently attending law school.
@@ -13,4 +17,3 @@ This topic covers car set-up guide for race simulator driving. It explains how t
 # [Music](music/index.md)
 
 This topic covers set-up and configuration of Akai EWI USB and EWI5000 MIDI wind instruments. It is intended for experienced wind instrument players who wish to explore the world of MIDI.
-
