@@ -272,7 +272,7 @@ Sometimes, you may come across a language that is so new that no books or articl
 
 There is, however, a good reason why such an expenditure of effort maybe warranted. Every popular language in use today began in that state—rough around the edges, no fancy features, no documentation, hardly any users. By becoming proficient in a new language in its nascent stage, you are poised to contribute to its advancement: by creating promotional blog posts, by writing explanatory books, or by expanding some of its features. Typically, those early adopters are friends and colleagues of the language designer. That the language may never blossom, of course, is the risk that the early adopter assumes.
 
-## *learning resources*
+## *resources*
 
 The following are the learning resources I recommend, either because they cater to the beginners, because they deal adequately with advanced topics, or because they present important new concepts. Remember, you do not need to learn all these languages, all at once. But if you stay in the software industry long enough, your will encounter most of these languages or their descendants, eventually.
 
