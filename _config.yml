@@ -1,10 +1,15 @@
 title: Amen Zwa, Esq.
 email: amenzwa@gmail.com
-description: publications of Amen Zwa, Esq.
+description: 'publications of <a href="http://amazon.com/author/amenzwa">Amen Zwa, Esq.</a>'
 baseurl: ""
 url: "http://amenzwa.github.io"
-twitter_username: AmenZwa
-github_username:  AmenZwa
-markdown: kramdown
-highlighter: rouge
-theme: jekyll-theme-architect
+baseurl: ''
+paginate: 5
+plugins:
+  - jekyll-paginate
+version: 1.0.0
+permalink: pretty
+author:
+  name: Amen Zwa, Esq.
+  url: https://twitter.com/amenzwa
+  email: amenzwa@gmail.com
