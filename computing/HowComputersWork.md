@@ -62,22 +62,16 @@ DONE: ; loop completed
 
 Above, integer `i` is the loop index which is initialised to 0 at the top of the loop, and `n` is the maximum number of iterations. When `i = n`, the loop termination condition is met, so the CPU jumps out of the loop, instead of jumping back to the top of the loop.
 
-***algorithm and intelligence***—A CPU equipped with boolean logic operations, character and string operations, integer and floating-point operations, and branching and looping constructs is capable of simple, but general, computations. For example, the integer averaging algorithm sums up a sequence $s_i$ of integers, and divides the sum with the sequence length $n$:
+***algorithm and intelligence***—A CPU equipped with boolean logic operations, character and string operations, integer and floating-point operations, and branching and looping constructs is capable of simple, but general, computations. For example, exponentiation $b^e = b \cdot b \cdot ... \cdot b$ is computed as $e$ repeated multiplications of $b$, and factorial $n! = (n - 0) \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 2 \cdot 1$ is computed as $n$ repeated multiplications of $n - i$ where $i$ ranges over the closed interval  $[0, n-1]$. The exponentiation algorithm uses looping and multiplication, and the factorial algorithm uses looping, subtraction, and multiplication. More complex computations, like $sin(a)$ where $a$ is an angle in radians, can be computed using Taylor series with sufficiently large number of iterations $n$:
 
-<div>
-$$
-avg = \frac{\sum_{i=1}^{n} s_i}{n}
-$$
-</div>
-The integer averaging algorithm above uses looping, addition, and division. More complex computations, like $sin(a)$ where $a$ is an angle in radians, can be computed using Taylor series with sufficiently large number of iterations $n$:
 <div>
 $$
 sin(a) = \sum_{i=0}^{n} \frac{(-1)^i}{(2i+1)!} a^{2i+1}
 $$
 </div>
-The above sine algorithm uses looping, addition, subtraction, multiplication, and division. Exponentiation $a^i = a \cdot a \cdot ... \cdot a$ and factorial $i! = i \cdot (i - 1) \cdot (i - 2) \cdot ... \cdot 2 \cdot 1$ also use these same, simple computations.
+The sine algorithm and its constituents, exponentiation and factorial, use looping, addition, subtraction, multiplication, and division. In this way, arbitrarily complex computations can be constructed from combinations of simpler ones.
 
-Algorithms like these are implemented as functions that take inputs and return results. When performing a conditional branch, the CPU can jump immediately to the designated code blocks, depending on the condition. But when calling a function, the CPU must assemble the input values for the function to use and arrange for the function to return its results to the caller, before jumping into the function's code block. This function call mechanism is described in detail, later.
+Algorithms like these are implemented as functions that take inputs and return results. Functions may be called from anywhere in the code. A function call, like a branch, alters programme flow. But there is a difference. Upon encountering a branch, the CPU jumps immediately to the designated code block and the execution continues from there. But when calling a function, the CPU must assemble the input values for the function to use and also must arrange for the function to return its results to the calling code, before jumping into the function's code block. And when the function finishes, execution returns to the caller. The function call mechanism is described in detail, later.
 
 More sophisticated functions, like [sorting](https://en.wikipedia.org/wiki/Sorting_algorithm), [searching](https://en.wikipedia.org/wiki/Search_algorithm), and [graph](https://en.wikipedia.org/wiki/Graph_theory) algorithms, are implemented by composing simpler functions. Complicated AI algorithms like [chess](https://en.wikipedia.org/wiki/Computer_chess) and [Go](https://en.wikipedia.org/wiki/Computer_Go) soon follow. Thus arose semblance of intelligence from streams of two symbols, a `0` and a `1`.
 
