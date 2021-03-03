@@ -37,7 +37,7 @@ Traditionally, integer arithmetic (`add`, `sub`, `mul`, `div`) is performed by t
 
 ***decision and repetition***—A sequence of bits (`0`s and `1`s) can represent letters and numbers. And the adder unit can add and subtract numbers. Programmes must make decisions based on conditions:
 
-```assembly
+```assembly_x86
      ...
      cond a < b ⇒ jump CON ⇏ jump ALT
      ...
@@ -51,7 +51,7 @@ For clarity and concision, the above code is written in pseudo assembly language
 
 Repetitive execution of a block of code, also known as looping, is accomplished by jumping back to the top of the block, based on a branching condition located at the bottom of the block:
 
-```assembly
+```assembly_x86
       ...
 LOOP: i ← 0
       ...
@@ -63,6 +63,7 @@ DONE: ; loop completed
 Above, integer `i` is the loop index which is initialised to 0 at the top of the loop, and `n` is the maximum number of iterations. When `i = n`, the loop termination condition is met, so the CPU jumps out of the loop, instead of jumping back to the top of the loop.
 
 ***algorithm and intelligence***—A CPU equipped with boolean logic operations, character and string operations, integer and floating-point operations, and branching and looping constructs is capable of simple, but general, computations. For example, the integer averaging algorithm sums up a sequence $s_i$ of integers, and divides the sum with the sequence length $n$:
+
 <div>
 $$
 avg = \frac{\sum_{i=1}^{n} s_i}{n}
