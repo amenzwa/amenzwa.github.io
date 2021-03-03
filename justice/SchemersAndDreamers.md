@@ -4,8 +4,6 @@ title: "Schemers and Dreamers"
 
 ## *an appeal for social justice*
 
-Amen Zwa, Esq.
-
 Of late (2018), the federal government shutdowns have become the fashion of the day in the governance of our country. This is because our legislators have grown so staunch in their stances that they altogether excised discourse and compromise from the political process. Consequently, the only option for the minority party to prevent being railroaded by the majority party is to force a shutdown. When Democrats were in charge, Republicans had to rely on this tactic. Now, the tables have turned. This is a puerile game at its finest, and an undemocratic rule-by-fiat at its vilest. In this game, both sides routinely behave like trite little “Schemers.” There is nothing new under the Capitol dome.
 
 But this time, the shutdown fight is different in kind. We are not sparring over taxes and entitlements, now; we are deciding whether to sustain or destroy the lives of countless young immigrants, whom we call “Dreamers.” That this impasse long remained unbreakable shows how evenly our citizenry is divided over this issue. I argue that the Dreamers should be granted the legal right permanently to reside in this country.

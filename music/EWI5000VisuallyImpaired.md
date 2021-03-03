@@ -4,8 +4,6 @@ title: "EWI5000 Saxophone Fingering"
 
 ## *for the visually impaired players*
 
-Amen Zwa, Esq.
-
 I published this short addendum to my book, [*Playing The Akai EWI5000 Electronic Wind Instrument*](https://amzn.to/2HCUYcq), to accommodate visually impaired saxophonists who use screen readers. I provide here purely textual descriptions of the EWI’s saxophone fingerings and instructions on how to configure the EWI to emulate the saxophone.
 
 I begin by describing the various bits on the body of the EWI, referring exclusively to their touch and feel, and without resort to their appearance. I, then, provide the factory-reset instructions, to ensure that the instrument is in a playable state. Next, I enumerate all the saxophone fingerings, including the alternate fingerings, that the EWI supports. Finally, I describe the quirks and the features of the EWI’s silicone mouthpiece.
