@@ -382,14 +382,14 @@ Note that there are four types programming books: purely theoretical, more theor
   - [*Programming the Raspberry Pi: Getting Started with Python*](http://www.amazon.com/Programming-Raspberry-Pi-Getting-Started/dp/0071807837/ref=sr_1_16?ie=UTF8&qid=1403700541&sr=8-16&keywords=Raspberry+Pi), Monk
 - C++
   - [*The C++ Programming Language*](http://www.amazon.com/C-Programming-Language-4th/dp/0321563840/ref=sr_1_1?s=books&ie=UTF8&qid=1401773170&sr=1-1&keywords=C%2B%2B+language+programming), Stroustrup (C++ designer)
+- Go
+  - *[The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_3?dchild=1&keywords=golang&qid=1611867815&sr=8-3)*, Donovan
+  - [*Effective Go*](http://golang.org/doc/effective_go.html), Google (Go designer)
 
 **Procedural**
 
 - C (pure procedural)
   - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan & Ritchie (C designer)
-- Go (object-oriented)
-- *[The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_3?dchild=1&keywords=golang&qid=1611867815&sr=8-3)*, Donovan
-  - [*Effective Go*](http://golang.org/doc/effective_go.html), Google (Go designer)
 - Matlab (hybrid object-oriented)
   - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
 
@@ -457,6 +457,7 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 - C++—Eclipse, Xcode, Visual Studio, CLion
 - Objective-C—Xcode, [AppCode](https://www.jetbrains.com/objc/)
 - Swift—Xcode, AppCode
+- Go—Eclipse, [GoLand](https://www.jetbrains.com/go/)
 - JavaScript—Eclipse, Xcode, [Atom](https://atom.io/), [WebStorm](https://www.jetbrains.com/webstorm/)
 - TypeScript—Atom, WebStorm
 - Python—[Jupyter](https://jupyter.org/), Eclipse, Xcode, [PyCharm](https://www.jetbrains.com/pycharm/)
@@ -464,7 +465,6 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 **Procedural**
 
 - C—Emacs, Eclipse, Xcode, CLion
-- Go—Eclipse, [GoLand](https://www.jetbrains.com/go/)
 - Matlab—[Matlab](http://www.mathworks.com/products/matlab/), Octave (mostly compatible with Matlab)
 
 **Shell**
@@ -594,12 +594,12 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 - [*The Java Language Specification*](http://www.amazon.com/Java-Language-Specification-SE-ebook/dp/B00BHEY5EU/ref=sr_1_23?s=books&ie=UTF8&qid=1401773907&sr=1-23&keywords=java), Gosling (Java designer)
 - [*C# in a Nutshell: The Definitive Reference*](http://www.amazon.com/C-8-0-Nutshell-Definitive-Reference/dp/1492051136/ref=sr_1_4?dchild=1&keywords=C%23&qid=1608772000&s=books&sr=1-4), Albahari
 - [*The C++ Programming Language*](http://www.amazon.com/C-Programming-Language-4th/dp/0321563840/ref=sr_1_1?s=books&ie=UTF8&qid=1401773170&sr=1-1&keywords=C%2B%2B+language+programming), Stroustrup (C++ designer)
+- [*Effective Go*](http://golang.org/doc/effective_go.html), Google, Inc. (Go designer)
 - [*Swift Programming Language*](http://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097), Apple, Inc. (Swift designer)
 - [*JavaScript: The Definitive Guide*](http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides-ebook/dp/B004XQX4K0/ref=sr_1_2?s=books&ie=UTF8&qid=1401775003&sr=1-2&keywords=javascript), Flanagan
 - [*Programming TypeScript: Making Your JavaScript Applications Scale*](https://www.amazon.com/Programming-TypeScript-Making-JavaScript-Applications/dp/1492037656/ref=sr_1_3?dchild=1&keywords=typescript&qid=1608772098&sr=8-3), Cherny
 - [*The Python Tutorial*](http://www.amazon.com/Python-Tutorial-2-7-5-Guido-Rossum-ebook/dp/B00FJRV9QI/ref=sr_1_13?s=books&ie=UTF8&qid=1401775234&sr=1-13&keywords=python), van Rossum (Python designer)
 - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan (C designer)
-- [*Effective Go*](http://golang.org/doc/effective_go.html), Google, Inc. (Go designer)
 - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
 - [*The AWK Programming Language*](http://www.amazon.com/The-AWK-Programming-Language-Alfred/dp/020107981X/ref=sr_1_1?ie=UTF8&qid=1401820819&sr=8-1&keywords=awk+programming), Aho (AWK designer)
 - [*Programming Perl: Unmatched Power for Text Processing and Scripting*](http://www.amazon.com/Programming-Perl-Unmatched-processing-scripting/dp/0596004923/ref=sr_1_1?s=books&ie=UTF8&qid=1401820920&sr=1-1&keywords=Programming+Perl), Wall (Perl designer)

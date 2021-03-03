@@ -37,7 +37,7 @@ Traditionally, integer arithmetic (`add`, `sub`, `mul`, `div`) is performed by t
 
 ***decision and repetition***—A sequence of bits (`0`s and `1`s) can represent letters and numbers. And the adder unit can add and subtract numbers. Programmes must make decisions based on conditions:
 
-```assembly_x86
+```assembly
      ...
      cond a < b ⇒ jump CON ⇏ jump ALT
      ...
@@ -51,7 +51,7 @@ For clarity and concision, the above code is written in pseudo assembly language
 
 Repetitive execution of a block of code, also known as looping, is accomplished by jumping back to the top of the block, based on a branching condition located at the bottom of the block:
 
-```assembly_x86
+```assembly
       ...
 LOOP: i ← 0
       ...
