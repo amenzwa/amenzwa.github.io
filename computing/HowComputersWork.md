@@ -107,7 +107,7 @@ The programmer defines a procedure in assembly by grouping a sequence of instruc
 ```assembly
   ...
 dbl: ; procedure that doubles input integer
-  mul 2 ; multiply argument value in ACC with 2; store result in ACC as return value
+  mul 2 ; multiply argument value in ACC with 2; store result in ACC
   ret   ; load PC with return addr from stack
   ...
 ```
@@ -117,7 +117,7 @@ This procedure can be invoked as follows:
 ```assembly
   ...
   a ← 13   ; load ACC with argument value 13
-  call dbl ; push return addr (next inst's addr) onto stack; load PC with dbl's addr
+  call dbl ; push return addr onto stack; load PC with dbl's addr
   a → m    ; store result value in ACC into memory for use later
   ...
 ```
