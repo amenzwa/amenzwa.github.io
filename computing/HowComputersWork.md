@@ -148,7 +148,7 @@ To keep the discussions short and simple, we shall talk about a fictional comput
 
 An implementation of the ISA in hardware is called the [microarchitecture](https://en.wikipedia.org/wiki/Microarchitecture). A simple CPU microarchitecture that can perform arithmetic and logic operations, call procedures, and handle interrupts is shown in the diagram below. It consists of the following: control unit (CU) which comprises control logic, timing logic, and instruction decoder (ID); instruction register (IR); interrupt controller (IC); status register (SR); arithmetic logic unit (ALU); accumulator (A); general purpose register (B); programme counter (PC); stack pointer (SP); internal data bus to which these components are attached; buffer circuit that isolates the internal data bus from the external data bus on the motherboard; and address lines that connect directly to the external address bus on the motherboard.
 
-![microarchitecture](/Users/zwa/Documents/amenzwa.github.io/computing/diagrams/microarchitecture.png)
+![microarchitecture](diagrams/microarchitecture.png)
 
 It is often said that the CPU is the brain of the computer. If that were so, the CU is the [cerebrum](https://en.wikipedia.org/wiki/Cerebrum); it controls all actions within the CPU, with the aid of ID, IC, and SR. Many circuitries inside the CPU as well as those in external components are built with [synchronous circuits](https://en.wikipedia.org/wiki/Synchronous_circuit). These components must be driven by the master clock signal in order for them to operate in unison. Timing signals go to every component in the system, so they are not shown in the above diagram. A typical classic 8-bit home computer ran at 1 MHz clock frequency. The clock signal is supplied by an external crystal.
 
