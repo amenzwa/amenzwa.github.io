@@ -47,7 +47,7 @@ Integer arithmetic (`add`, `sub`, `mul`, `div`) is performed by the [arithmetic 
 
 Now, our CPU can represent boolean values, characters, and numbers, and it can manipulate those values using arithmetic and logic operations. Next, we shall examine how conditions and loops are implemented in hardware.
 
-***decision and repetition***—A sequence of bits (`0`s and `1`s) can represent letters and numbers. And the adder unit can add and subtract numbers. But programmes must also make decisions based on conditions:
+***decision and repetition***—A sequence of bits can represent letters and numbers. And the adder unit can add and subtract numbers. But programmes must also make decisions based on conditions:
 
 ```assembly
   ...
@@ -105,7 +105,7 @@ In a typical, 1980s 8-bit home computer system, memory was a scarce resource, so
 
 When the 8-bit machine powers up, the CPU performs a system-wide hardware reset. Hardware reset clears CPU's internal registers (accumulator, general purpose registers, programme counter, etc.) and also clears peripherals' registers (configuration registers, data transfer registers, etc.). This puts the whole system in the well-defined initial state. The CPU then executes the reset interrupt service procedure. The CPU knows where to find this procedure, because the entry address of the procedure is conventionally stored in the ROM at a well-known address, such as `00000000,00000000` or `11111111,11111111`. The reset procedure first checks the health of memory and I/O devices. It then completes the system initialisation by performing a few housekeeping tasks, like setting up the interrupt service vector table, putting status register bits to appropriate initial values, and so on. The vector table is a list of addresses for various service procedures for handling timer, I/O, software error, hardware exception, and other interrupts.
 
-Once the system has been fully initialised, the reset procedure starts the BASIC interpreter. The BASIC interpreter served not only as the high-level language interpreter, it also served as a programme editor and a simple command line interpreter to access system services, such as loading programmes from external storage devices.
+Once the system has been fully initialised, the reset procedure starts the [BASIC interpreter](https://virtualconsoles.com/online-emulators/c64/). The BASIC interpreter served not only as the high-level language interpreter, it also served as a programme editor and a simple command line interpreter to access system services, such as loading programmes from external storage devices.
 
 A programmer-defined procedure in assembly language is just a sequence of instructions grouped under a label. The following pseudo-assembly procedure (a function, actually) doubles its integer argument:
 
