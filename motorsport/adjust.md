@@ -12,7 +12,21 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
 
 # FULL THROTTLE PHASE
 
-## *rev limit*
+## *compliance*
+
+- Car darts over bumps at high speed along the straight
+  - Stiffen front and rear fast jounce and droop dampers
+- Car skips over bumps at high speed along the straight
+  - Soften front and rear fast jounce and droop dampers
+
+## *manoeuvrability*
+
+- Vague steering while travelling at high speed along the straight
+  - Strengthen steering wheel controller force feedback
+  - Stiffen front and rear slow jounce and droop dampers
+  - Stiffen front and rear anti-sway bars
+
+## *responsiveness*
 
 - Engine rev limit reaches before the car reaches the braking zone
   - Lengthen top gear ratio
@@ -28,23 +42,9 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
   - Increase front wheels toe in
   - Increase steering castor angle positive value
 
-## *compliance*
-
-- Car darts over bumps at high speed along the straight
-  - Stiffen front and rear fast jounce and droop dampers
-- Car skips over bumps at high speed along the straight
-  - Soften front and rear fast jounce and droop dampers
-
-## *manoeuvrability*
-
-- Vague steering while travelling at high speed along the straight
-  - Strengthen steering wheel controller force feedback
-  - Stiffen front and rear slow jounce and droop dampers
-  - Stiffen front and rear anti-sway bars
-
 # HARD BRAKING PHASE
 
-## *brake bias*
+## *wheel locking*
 
 - Front wheels lock up before rear wheels under hard braking on level track surface
   - Move brake bias rearward
