@@ -4,13 +4,28 @@ title: "Adjust"
 
 ## *adjust car set-up to rectify handling problems*
 
-Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it, and identify the handling problems. This section describes how to identify handling problems during testing.
+Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it, and identify the handling problems. This section describes how to identify handling problems during testing. Drivers prefer a car that behaves predictably: tracks the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, and oversteers slightly at corner exit.
 
-Drivers prefer a car that behaves predictably at each phase of driving: tracks the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, and oversteers slightly at corner exit. Phases of driving are as follows: travelling at full throttle along the straight, hard braking before the corner, trail braking at turn-in, neutral throttle at mid corner, initial acceleration at corner exit, and hard acceleration. Here, I present ways to identify car handling problems that may arise during each phase of driving, symptoms first, then potential causes and remedies listed in the order from more likely to less likely.
+The *phases of driving* are defined as follows:
 
-When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling, and longevity be your guides.
+- Full throttle phase—travelling at full throttle along the straight
+- Hard braking phase—braking hard before turning in for the corner
+- Trail braking phase—continuing to brake at turn-in
+- Neutral throttle phase—remaining in neutral throttle at mid corner
+- Initial acceleration phase—returning to throttle at corner exit
+- Hard acceleration phase—resuming full throttle after having exited the corner
 
-# FULL THROTTLE PHASE
+In each phase, the following *handling problems* may arise, either singly or in combination:
+
+- Balance problem—the car understeers or oversteers during cornering
+- Compliance problem—the car darts left or right over bumps or the tyres skip over bumps
+- Manoeuvrability problem—the car does not respond quickly to direction change commands
+- Responsiveness problem—the car does not respond quickly to acceleration commands
+- Stability problem—the car does not track straight line
+
+Here, I present ways to identify car handling problems that may arise during each phase of driving, symptoms first, then potential remedies listed in the order from more likely to less likely. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling comfort, and resource longevity be your guides.
+
+# FULL THROTTLE
 
 ## *compliance*
 
@@ -42,7 +57,7 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
   - Increase front wheels toe in
   - Increase steering castor angle positive value
 
-# HARD BRAKING PHASE
+# HARD BRAKING
 
 ## *wheel locking*
 
@@ -81,7 +96,7 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
   - Stiffen front suspension springs
   - Stiffen front slow jounce and droop dampers
 
-# TRAIL BRAKING PHASE
+# TRAIL BRAKING
 
 ## *balance*
 
@@ -124,7 +139,7 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
 
-# NEUTRAL THROTTLE PHASE
+# NEUTRAL THROTTLE
 
 ## *balance*
 
@@ -166,7 +181,7 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
 
-# INITIAL ACCELERATION PHASE
+# INITIAL ACCELERATION
 
 ## *balance*
 
@@ -194,7 +209,7 @@ When setting up an unfamiliar car, always establish the baseline lap time in the
 - Car fishtails when accelerating out of corner
   - Set rear wheels toe angles closer to zero
 
-# HARD ACCELERATION PHASE
+# HARD ACCELERATION
 
 ## *balance*
 
