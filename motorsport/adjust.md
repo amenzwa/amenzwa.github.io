@@ -23,7 +23,7 @@ In each phase, the following *handling problems* may arise, either singly or in 
 - Responsiveness problem—the car does not respond quickly to acceleration commands
 - Stability problem—the car does not track straight line
 
-Here, I present ways to identify car handling problems that may arise during each phase of driving, symptoms first, then potential remedies listed in the order from more likely to less likely. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling comfort, and resource longevity be your guides.
+Here, I present ways to identify car handling problems that may arise during each phase of driving, symptoms first, then potential remedies listed in the order from more likely to less likely. If the car you are driving does not have a particular set-up parameter, ignore it. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling comfort, and resource longevity be your guides.
 
 # FULL THROTTLE
 
@@ -33,23 +33,31 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Stiffen front and rear fast jounce and droop dampers
 - Car skips over bumps at high speed along the straight
   - Soften front and rear fast jounce and droop dampers
+- Chassis scrapes the track at high speed along the straight
+  - Reduce fuel quantity if possible
+  - Raise front and rear ride heights
+  - Stiffen front and rear springs and dampers
+  - Stiffen front and rear heave springs and dampers
 
 ## *manoeuvrability*
 
 - Vague steering while travelling at high speed along the straight
   - Strengthen steering wheel controller force feedback
+  - Reduce fuel quantity if possible
   - Stiffen front and rear slow jounce and droop dampers
   - Stiffen front and rear anti-sway bars
+  - Lower front and rear ride heights
 
 ## *responsiveness*
 
 - Engine rev limit reaches before the car reaches the braking zone
-  - Lengthen top gear ratio
+  - Lengthen top gear ratio and adjust gear spacings
   - Lengthen final drive ratio
 - Engine cannot reach rev limit when the car reaches the braking zone
-  - Shorten top gear ratio
+  - Shorten top gear ratio and adjust gear spacings
   - Shorten final drive ratio
-  - Use shallower wing angles
+  - Reduce wing angles
+  - Remove Gurney flap
 
 ## *stability*
 
@@ -59,15 +67,12 @@ Here, I present ways to identify car handling problems that may arise during eac
 
 # HARD BRAKING
 
-## *wheel locking*
+## *balance*
 
 - Front wheels lock up before rear wheels under hard braking on level track surface
   - Move brake bias rearward
 - Rear wheels lock up before front wheels under hard braking on level track surface
   - Move brake bias forward
-
-## *balance*
-
 - Car spins off to the outside of corner under hard braking on a downslope
   - Move brake bias forward
   - Soften rear slow jounce and droop dampers
@@ -78,6 +83,10 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Stiffen front and rear fast jounce and droop dampers
 - Car skips over bumps under hard braking
   - Soften front and rear fast jounce and droop dampers
+- Front of chassis scrapes the track under hard braking
+  - Raise front ride height and do the same to the rear to maintain balance
+  - Stiffen front springs and dampers and do the same to the rear to maintain balance
+  - Stiffen front heave springs and dampers and do the same to the rear to maintain balance
 
 ## *responsiveness*
 
@@ -107,6 +116,7 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Lower front tyres pressures OR raise rear tyres pressures
   - Soften front anti-sway bars OR stiffen rear anti-sway bars
   - Decrease LSD coast side lock
+  - Decrease centre LSD preload
   - Increase front wheels toe out
   - Soften front springs OR stiffen rear springs
   - Soften front slow jounce dampers OR stiffen rear slow droop dampers
@@ -119,6 +129,7 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Raise front tyres pressures OR lower rear tyres pressures
   - Stiffen front anti-sway bars OR soften rear anti-sway bars
   - Increase LSD coast side lock
+  - Increase centre LSD preload
   - Decrease front wheels toe out
   - Stiffen front springs OR soften rear springs
   - Stiffen front slow jounce dampers OR soften rear slow droop dampers
@@ -135,6 +146,7 @@ Here, I present ways to identify car handling problems that may arise during eac
 ## *manoeuvrability*
 
 - Car feels floppy at turn-in
+  - Reduce fuel quantity if possible
   - Stiffen front and rear slow jounce dampers
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
@@ -150,6 +162,7 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Lower front tyres pressures OR raise rear tyres pressures
   - Soften front anti-sway bars OR stiffen rear anti-sway bars
   - Decrease LSD preload
+  - Decrease centre LSD preload
   - Increase front wheels toe out
   - Soften front springs OR stiffen rear springs
   - Soften front slow jounce dampers OR stiffen rear slow droop dampers
@@ -160,10 +173,11 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Raise front tyres pressures OR lower rear tyres pressures
   - Stiffen front anti-sway bars OR soften rear anti-sway bars
   - Increase LSD preload
+  - Increase centre LSD preload
   - Decrease front wheels toe out
   - Stiffen front springs OR soften rear springs
   - Stiffen front slow jounce dampers OR soften rear slow droop dampers
-
+  
 - Car skids away from apex
   - Soften front and rear anti-sway bars
 
@@ -177,6 +191,7 @@ Here, I present ways to identify car handling problems that may arise during eac
 ## *manoeuvrability*
 
 - Car feels floppy mid corner
+  - Reduce fuel quantity if possible
   - Stiffen front and rear slow jounce dampers
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
@@ -187,8 +202,10 @@ Here, I present ways to identify car handling problems that may arise during eac
 
 - Car understeers when accelerating out of corner
   - Decrease LSD power side lock
+  - Decrease centre LSD preload
 - Car oversteers when accelerating out of corner
   - Increase LSD power side lock
+  - Increase centre LSD preload
 
 ## *responsiveness*
 
