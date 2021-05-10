@@ -48,7 +48,7 @@ Here, I present ways to identify handling problems that may arise during each ph
 
 ## *responsiveness*
 
-- Engine rev limit reaches before the car reaches the braking zone
+- Engine redlines before the car reaches the braking zone
   - Lengthen top gear ratio and adjust gear spacings
   - Lengthen final drive ratio
 - Engine cannot reach rev limit when the car reaches the braking zone
@@ -59,7 +59,7 @@ Here, I present ways to identify handling problems that may arise during each ph
 
 ## *stability*
 
-- Car does not track straight line at high speed
+- Car does not follow straight line at high speed
   - Increase front wheels toe in
   - Increase steering castor angle positive value
 - Car darts left or right over bumps at high speed along the straight
@@ -88,12 +88,12 @@ Here, I present ways to identify handling problems that may arise during each ph
 
 ## *responsiveness*
 
-- Need to shift down mid corner
-  - Shorten cornering gear
-  - Shorten final drive ratio
-- Need to shift up mid corner
+- Engine redlines mid corner
   - Lengthen cornering gear
   - Lengthen final drive ratio
+- Engine bogs mid corner
+  - Shorten cornering gear
+  - Shorten final drive ratio
 
 ## *stability*
 
@@ -215,10 +215,10 @@ Here, I present ways to identify handling problems that may arise during each ph
 
 ## *responsiveness*
 
-- Engine red lines when accelerating out of corner
+- Engine redlines when accelerating out of corner
   - Lengthen cornering gear
   - Lengthen final drive ratio
-- Engine bogs down when accelerating out of corner
+- Engine bogs when accelerating out of corner
   - Shorten cornering gear
   - Shorten final drive ratio
 - Rear drive wheels spin at corner exit
