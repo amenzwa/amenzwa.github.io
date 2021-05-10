@@ -4,33 +4,31 @@ title: "Adjust"
 
 ## *adjust car set-up to rectify handling problems*
 
-Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it, and identify the handling problems. This section describes how to identify handling problems during testing. Drivers prefer a car that behaves predictably: tracks the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, and oversteers slightly at corner exit.
+Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it, and identify the handling problems. This section describes how to identify handling problems during testing. Drivers prefer a car that behaves predictably: follows the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, and oversteers slightly at corner exit.
 
-The *phases of driving* are defined as follows:
+The *driving phases* are defined as follows:
 
 - Full throttle phase—travelling at full throttle along the straight
 - Hard braking phase—braking hard before turning in for the corner
-- Trail braking phase—continuing to brake at turn-in
+- Trail braking phase—continuing braking at turn-in
 - Neutral throttle phase—remaining in neutral throttle at mid corner
 - Initial acceleration phase—returning to throttle at corner exit
 - Hard acceleration phase—resuming full throttle after having exited the corner
 
-In each phase, the following *handling problems* may arise, either singly or in combination:
+In each driving phase, issues related to the following *handling categories* may arise, either singly or in combination:
 
-- Balance problem—the car understeers or oversteers during cornering
-- Compliance problem—the car darts left or right over bumps or the tyres skip over bumps
-- Manoeuvrability problem—the car does not respond quickly to direction change commands
-- Responsiveness problem—the car does not respond quickly to acceleration commands
-- Stability problem—the car does not track straight line
+- Balance category—the car understeers or oversteers during cornering
+- Compliance category—the tyres skip over bumps
+- Manoeuvrability category—the car does not respond quickly to direction change commands
+- Responsiveness category—the car does not respond quickly to acceleration commands
+- Stability category—the car does not track straight line
 
-Here, I present ways to identify car handling problems that may arise during each phase of driving, symptoms first, then potential remedies listed in the order from more likely to less likely. If the car you are driving does not have a particular set-up parameter, ignore it. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling comfort, and resource longevity be your guides.
+Here, I present ways to identify handling problems that may arise during each phase of driving, symptoms first, then potential remedies listed in the order from more likely to less likely. If the car you are driving does not have a particular set-up parameter, ignore it. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling comfort, and resource longevity be your guides.
 
 # FULL THROTTLE
 
 ## *compliance*
 
-- Car darts over bumps at high speed along the straight
-  - Stiffen front and rear fast jounce and droop dampers
 - Car skips over bumps at high speed along the straight
   - Soften front and rear fast jounce and droop dampers
 - Chassis scrapes the track at high speed along the straight
@@ -64,6 +62,8 @@ Here, I present ways to identify car handling problems that may arise during eac
 - Car does not track straight line at high speed
   - Increase front wheels toe in
   - Increase steering castor angle positive value
+- Car darts left or right over bumps at high speed along the straight
+  - Stiffen front and rear slow jounce and droop dampers
 
 # HARD BRAKING
 
@@ -79,8 +79,6 @@ Here, I present ways to identify car handling problems that may arise during eac
 
 ## *compliance*
 
-- Car darts over bumps under hard braking
-  - Stiffen front and rear fast jounce and droop dampers
 - Car skips over bumps under hard braking
   - Soften front and rear fast jounce and droop dampers
 - Front of chassis scrapes the track under hard braking
@@ -104,6 +102,8 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Stiffen front heave springs and dampers
   - Stiffen front suspension springs
   - Stiffen front slow jounce and droop dampers
+- Car darts left or right over bumps under hard braking
+  - Stiffen front and rear slow jounce and droop dampers
 
 # TRAIL BRAKING
 
@@ -138,8 +138,6 @@ Here, I present ways to identify car handling problems that may arise during eac
 
 ## *compliance*
 
-- Car darts over bumps under trail braking
-  - Stiffen front and rear fast jounce and droop dampers
 - Car skips over bumps under trail braking
   - Soften front and rear fast jounce and droop dampers
 
@@ -150,6 +148,11 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Stiffen front and rear slow jounce dampers
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
+
+## *stability*
+
+- Car darts left or right over bumps under trail braking
+  - Stiffen front and rear slow jounce and droop dampers
 
 # NEUTRAL THROTTLE
 
@@ -183,8 +186,6 @@ Here, I present ways to identify car handling problems that may arise during eac
 
 ## *compliance*
 
-- Car darts over bumps mid corner
-  - Stiffen front and rear fast jounce and droop dampers
 - Car skips over bumps mid corner
   - Soften front and rear fast jounce and droop dampers
 
@@ -195,6 +196,11 @@ Here, I present ways to identify car handling problems that may arise during eac
   - Stiffen front and rear slow jounce dampers
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
+
+## *stability*
+
+- Car darts left or right over bumps mid corner
+  - Stiffen front and rear slow jounce and droop dampers
 
 # INITIAL ACCELERATION
 
