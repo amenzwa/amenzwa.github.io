@@ -47,7 +47,7 @@ The goals of car set-up are as follows:
 
 ## *manoeuvrability*
 
-- Vague steering while travelling at high speed along the straight
+- Steering feels vague while travelling at high speed along the straight
   - Strengthen steering wheel controller force feedback
   - Reduce fuel quantity if possible
   - Stiffen front and rear anti-sway bars
@@ -93,13 +93,13 @@ The goals of car set-up are as follows:
 - Tyres skip over bumps under hard braking
   - Soften front and rear fast jounce and droop dampers
 - Front of chassis scrapes the track surface under hard braking
-  - Stiffen front springs and dampers
-  - Stiffen front heave springs and dampers
-  - Raise front ride height
+  - Stiffen front springs and dampers and do the same to the rear to maintain balance
+  - Stiffen front heave springs and dampers and do the same to the rear to maintain balance
+  - Raise front ride height and do the same to the rear to maintain rake angle
 
 ## *stability*
 
-- Car dives hard onto front suspensions thereby deranging them
+- Body dives hard onto front suspensions thereby deranging them
   - Stiffen front heave springs and dampers
   - Stiffen front slow jounce and droop dampers
   - Stiffen front suspension springs
@@ -115,32 +115,32 @@ The goals of car set-up are as follows:
   - Reduce corner entry speed
   - Move brake bias rearward
   - Increase MGU-K recovery rate
-  - Lower front tyres pressures OR raise rear tyres pressures
-  - Soften front anti-sway bars OR stiffen rear anti-sway bars
+  - Lower front tyres pressures |OR| raise rear tyres pressures
+  - Soften front anti-sway bars |OR| stiffen rear anti-sway bars
   - Decrease LSD coast side lock
   - Decrease centre LSD preload
   - Increase front wheels toe out
-  - Soften front springs OR stiffen rear springs
-  - Soften front slow jounce dampers OR stiffen rear slow droop dampers
+  - Soften front springs |OR| stiffen rear springs
+  - Soften front slow jounce dampers |OR| stiffen rear slow droop dampers
   - Increase front and rear wheels negative camber
 - Car understeers at turn-in over bumps
-  - Soften front fast jounce and droop dampers OR stiffen rear fast jounce and droop dampers
+  - Soften front fast jounce and droop dampers |OR| stiffen rear fast jounce and droop dampers
 - Car oversteers at turn-in
   - Move brake bias forward
   - Decrease MGU-K recovery rate
-  - Raise front tyres pressures OR lower rear tyres pressures
-  - Stiffen front anti-sway bars OR soften rear anti-sway bars
+  - Raise front tyres pressures |OR| lower rear tyres pressures
+  - Stiffen front anti-sway bars |OR| soften rear anti-sway bars
   - Increase LSD coast side lock
   - Increase centre LSD preload
   - Decrease front wheels toe out
-  - Stiffen front springs OR soften rear springs
-  - Stiffen front slow jounce dampers OR soften rear slow droop dampers
+  - Stiffen front springs |OR| soften rear springs
+  - Stiffen front slow jounce dampers |OR| soften rear slow droop dampers
 - Car oversteers at turn-in over bumps
-  - Stiffen front fast jounce and droop dampers OR soften rear fast jounce and droop dampers
+  - Stiffen front fast jounce and droop dampers |OR| soften rear fast jounce and droop dampers
 
 ## *compliance*
 
-- Car skips over bumps under trail braking
+- Tyres skip over bumps under trail braking
   - Soften front and rear fast jounce and droop dampers
 
 ## *manoeuvrability*
@@ -150,6 +150,7 @@ The goals of car set-up are as follows:
   - Stiffen front and rear slow jounce dampers
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
+  - Lower front and rear ride heights proportionately
 
 ## *stability*
 
@@ -162,30 +163,30 @@ The goals of car set-up are as follows:
 
 - Car understeers mid corner
   - Increase MGU-K recovery rate
-  - Lower front tyres pressures OR raise rear tyres pressures
-  - Soften front anti-sway bars OR stiffen rear anti-sway bars
+  - Lower front tyres pressures |OR| raise rear tyres pressures
+  - Soften front anti-sway bars |OR| stiffen rear anti-sway bars
   - Decrease LSD preload
   - Decrease centre LSD preload
   - Increase front wheels toe out
-  - Soften front springs OR stiffen rear springs
-  - Soften front slow jounce dampers OR stiffen rear slow droop dampers
+  - Soften front springs |OR| stiffen rear springs
+  - Soften front slow droop dampers |OR| stiffen rear slow jounce dampers
   - Increase front and rear wheels negative camber
 - Car oversteers mid corner
   - Decrease MGU-K recovery rate
-  - Raise front tyres pressures OR lower rear tyres pressures
-  - Stiffen front anti-sway bars OR soften rear anti-sway bars
+  - Raise front tyres pressures |OR| lower rear tyres pressures
+  - Stiffen front anti-sway bars |OR| soften rear anti-sway bars
   - Increase LSD preload
   - Increase centre LSD preload
   - Decrease front wheels toe out
-  - Stiffen front springs OR soften rear springs
-  - Stiffen front slow jounce dampers OR soften rear slow droop dampers
+  - Stiffen front springs |OR| soften rear springs
+  - Stiffen front slow jounce dampers |OR| soften rear slow droop dampers
   
-- Car skids away from apex
+- Car skids away from the apex
   - Soften front and rear anti-sway bars
 
 ## *compliance*
 
-- Car skips over bumps mid corner
+- Tyres skip over bumps mid corner
   - Soften front and rear fast jounce and droop dampers
 
 ## *manoeuvrability*
@@ -195,6 +196,7 @@ The goals of car set-up are as follows:
   - Stiffen front and rear slow jounce dampers
   - Stiffen front and rear anti-sway bars
   - Stiffen front and rear springs
+  - Lower front and rear ride heights proportionately
 
 ## *stability*
 
@@ -206,6 +208,7 @@ The goals of car set-up are as follows:
 ## *balance*
 
 - Car understeers when accelerating out of corner
+  - Soften front slow droop dampers |OR| stiffen rear slow jounce dampers
   - Decrease LSD power side lock
   - Decrease centre LSD preload
 - Car oversteers when accelerating out of corner
@@ -228,8 +231,6 @@ The goals of car set-up are as follows:
 
 ## *stability*
 
-- Car squats hard onto rear suspensions thereby deranging them
-  - Stiffen rear springs and dampers
 - Car fishtails when accelerating out of corner
   - Return to throttle more gradually
   - Set rear wheels toe angles closer to zero
@@ -239,9 +240,9 @@ The goals of car set-up are as follows:
 ## *balance*
 
 - Car understeers under hard acceleration
-  - Soften front slow droop dampers OR stiffen rear slow jounce dampers
+  - Soften front slow droop dampers |OR| stiffen rear slow jounce dampers
 - Car oversteers under hard acceleration
-  - Stiffen front slow droop dampers OR soften rear slow jounce dampers
+  - Stiffen front slow droop dampers |OR| soften rear slow jounce dampers
 
 ## *responsiveness*
 
@@ -251,7 +252,7 @@ The goals of car set-up are as follows:
 
 ## *stability*
 
-- Car squats hard onto rear suspensions thereby deranging them
+- Body squats hard onto rear suspensions thereby deranging them
   - Stiffen rear springs and dampers
 - Car fishtails when accelerating out of corner
   - Return to throttle more gradually
