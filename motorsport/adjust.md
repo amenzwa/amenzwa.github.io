@@ -164,6 +164,7 @@ The goals of car set-up are as follows:
 ## *balance*
 
 - Car understeers mid corner
+  - Decrease mid corner differential lock
   - Increase MGU-K recovery rate
   - Lower front tyres pressures [OR] raise rear tyres pressures
   - Soften front anti-sway bars [OR] stiffen rear anti-sway bars
@@ -174,6 +175,7 @@ The goals of car set-up are as follows:
   - Soften front slow droop dampers [OR] stiffen rear slow jounce dampers
   - Increase front and rear wheels negative camber
 - Car oversteers mid corner
+  - Increase mid corner differential lock
   - Decrease MGU-K recovery rate
   - Raise front tyres pressures [OR] lower rear tyres pressures
   - Stiffen front anti-sway bars [OR] soften rear anti-sway bars
