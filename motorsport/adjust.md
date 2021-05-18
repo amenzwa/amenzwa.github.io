@@ -114,6 +114,7 @@ The goals of car set-up are as follows:
 - Car understeers at turn-in
   - Reduce corner entry speed
   - Move brake bias rearward
+  - Decrease corner entry differential lock
   - Increase MGU-K recovery rate
   - Lower front tyres pressures [OR] raise rear tyres pressures
   - Soften front anti-sway bars [OR] stiffen rear anti-sway bars
@@ -127,6 +128,7 @@ The goals of car set-up are as follows:
   - Soften front fast jounce and droop dampers [OR] stiffen rear fast jounce and droop dampers
 - Car oversteers at turn-in
   - Move brake bias forward
+  - Increase corner entry differential lock
   - Decrease MGU-K recovery rate
   - Raise front tyres pressures [OR] lower rear tyres pressures
   - Stiffen front anti-sway bars [OR] soften rear anti-sway bars
@@ -209,9 +211,11 @@ The goals of car set-up are as follows:
 
 - Car understeers when accelerating out of corner
   - Soften front slow droop dampers [OR] stiffen rear slow jounce dampers
+  - Decrease corner exit differential lock
   - Decrease LSD power side lock
   - Decrease centre LSD preload
 - Car oversteers when accelerating out of corner
+  - Increase corner exit differential lock
   - Increase LSD power side lock
   - Increase centre LSD preload
 
