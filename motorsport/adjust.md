@@ -4,7 +4,7 @@ title: "Adjust"
 
 ## *adjust car set-up to rectify handling problems*
 
-Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it, and identify the handling problems. This section describes how to identify handling problems during testing. Drivers prefer a car that behaves predictably: follows the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, and oversteers slightly at corner exit.
+Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it in its factory set-up, and identify the handling problems, if any. This section describes how to identify handling problems during testing and how to rectify them upon returning to the pit. Drivers prefer a car that behaves predictably: follows the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, oversteers slightly at corner exit, and accelerates quickly along the subsequent straight.
 
 The *driving phases* are defined as follows:
 
@@ -15,44 +15,52 @@ The *driving phases* are defined as follows:
 - Initial acceleration phase—returning to throttle at corner exit
 - Hard acceleration phase—resuming full throttle after having exited the corner
 
-In each driving phase, issues related to the following *handling categories* may arise, either singly or in combination:
+In each driving phase, specific issues may arise, either singly or multiply, under the following *handling categories*:
 
 - Balance category—the car understeers or oversteers during cornering
 - Compliance category—the tyres skip over bumps
-- Manoeuvrability category—the car does not respond quickly to direction change commands
+- Manoeuvrability category—the car does not respond quickly to direction-change commands
 - Responsiveness category—the car does not respond quickly to acceleration commands
-- Stability category—the car does not track straight line
+- Stability category—the car does not track the straight line
 
-Here, I present ways to identify handling problems that may arise during each phase of driving, symptoms first, then potential remedies listed in the order from more likely to less likely. If the car you are driving does not have a particular set-up parameter, ignore it. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Adjust one set-up parameter in one direction, and test drive. Patience and discipline matter. And let the lap time, tyre temperatures, handling comfort, and resource longevity be your guides.
+In this section, I present ways to identify handling problems that may arise during each phase of driving, the symptom first, followed by a list of potential remedies. The remedies are listed in the order in which you should try. If the car you are driving does not have a particular set-up parameter, ignore it. When setting up an unfamiliar car, always establish the baseline lap time in the factory set-up. Never alter multiple parameters in one go; adjust only one set-up parameter by a small increment in only one direction, then test drive for a few laps. And note that many set-up parameters are intertwined, sometimes in unintended and unintuitive ways. Altering one parameter, for instance, may alleviate one kind of handling problem but simultaneously aggravate another kind of problem. And one parameter may affect multiple handling categories, or multiple parameters may affect one handling category. Careful analysis and disciplined approach are essential when setting up a car.
+
+The goals of car set-up are as follows:
+
+- Minimise the lap time—aim for the single best lap when setting up for qualifying, but when setting up for the race, aim for the lap times that are consistently good over many laps and are just slightly better than the competition
+- Make the car handle well enough—it is impossible to make the car handle well in all phases of driving and in all corners on the track under all weather conditions, so just aim to minimise the car's assorted misbehaviours, everywhere on the track, as much as possible
+- Maintain tyre operating temperatures—all four tyres should operate within their optimal ranges through much of the race, and each tyre's inner-middle-outer tread temperatures should be more or less equalised
+- Minimise resource consumption—consumption rate of resources, like tyres, brakes, fuel, and driver stamina, should be reduced as much as possible, so that you can deploy the reserves at the end of the race when you pull ahead of the competition
 
 # FULL THROTTLE
 
 ## *compliance*
 
-- Car skips over bumps at high speed along the straight
+- Tyres skip over bumps at high speed along the straight
   - Soften front and rear fast jounce and droop dampers
 - Chassis scrapes the track at high speed along the straight
   - Reduce fuel quantity if possible
-  - Raise front and rear ride heights
+  - Reduce the front and rear wing angles
   - Stiffen front and rear springs and dampers
   - Stiffen front and rear heave springs and dampers
+  - Raise front and rear ride heights proportionately
 
 ## *manoeuvrability*
 
 - Vague steering while travelling at high speed along the straight
   - Strengthen steering wheel controller force feedback
   - Reduce fuel quantity if possible
-  - Stiffen front and rear slow jounce and droop dampers
   - Stiffen front and rear anti-sway bars
-  - Lower front and rear ride heights
+  - Stiffen front and rear slow jounce and droop dampers
+  - Lower front and rear ride heights proportionately
 
 ## *responsiveness*
 
 - Engine redlines before the car reaches the braking zone
-  - Lengthen top gear ratio and adjust gear spacings
+  - Lengthen top gear ratio and adjust gear spacings appropriately
   - Lengthen final drive ratio
 - Engine cannot reach rev limit when the car reaches the braking zone
-  - Shorten top gear ratio and adjust gear spacings
+  - Shorten top gear ratio and adjust gear spacings appropriately
   - Shorten final drive ratio
   - Reduce wing angles
   - Remove Gurney flap
@@ -71,37 +79,31 @@ Here, I present ways to identify handling problems that may arise during each ph
 
 - Front wheels lock up before rear wheels under hard braking on level track surface
   - Move brake bias rearward
+  - Increase MGU-K recovery rate
 - Rear wheels lock up before front wheels under hard braking on level track surface
   - Move brake bias forward
+  - Decrease MGU-K recovery rate
 - Car spins off to the outside of corner under hard braking on a downslope
   - Move brake bias forward
+  - Decrease MGU-K recovery rate
   - Soften rear slow jounce and droop dampers
 
 ## *compliance*
 
-- Car skips over bumps under hard braking
+- Tyres skip over bumps under hard braking
   - Soften front and rear fast jounce and droop dampers
-- Front of chassis scrapes the track under hard braking
-  - Raise front ride height and do the same to the rear to maintain balance
-  - Stiffen front springs and dampers and do the same to the rear to maintain balance
-  - Stiffen front heave springs and dampers and do the same to the rear to maintain balance
-
-## *responsiveness*
-
-- Engine redlines mid corner
-  - Lengthen cornering gear
-  - Lengthen final drive ratio
-- Engine bogs mid corner
-  - Shorten cornering gear
-  - Shorten final drive ratio
+- Front of chassis scrapes the track surface under hard braking
+  - Stiffen front springs and dampers
+  - Stiffen front heave springs and dampers
+  - Raise front ride height
 
 ## *stability*
 
 - Car dives hard onto front suspensions thereby deranging them
-  - Lower ride height
   - Stiffen front heave springs and dampers
-  - Stiffen front suspension springs
   - Stiffen front slow jounce and droop dampers
+  - Stiffen front suspension springs
+  - Lower front and rear ride heights proportionately
 - Car darts left or right over bumps under hard braking
   - Stiffen front and rear slow jounce and droop dampers
 
@@ -159,8 +161,6 @@ Here, I present ways to identify handling problems that may arise during each ph
 ## *balance*
 
 - Car understeers mid corner
-  - Reduce corner entry speed
-  - Move brake bias rearward
   - Increase MGU-K recovery rate
   - Lower front tyres pressures OR raise rear tyres pressures
   - Soften front anti-sway bars OR stiffen rear anti-sway bars
@@ -171,7 +171,6 @@ Here, I present ways to identify handling problems that may arise during each ph
   - Soften front slow jounce dampers OR stiffen rear slow droop dampers
   - Increase front and rear wheels negative camber
 - Car oversteers mid corner
-  - Move brake bias forward
   - Decrease MGU-K recovery rate
   - Raise front tyres pressures OR lower rear tyres pressures
   - Stiffen front anti-sway bars OR soften rear anti-sway bars
@@ -216,20 +215,23 @@ Here, I present ways to identify handling problems that may arise during each ph
 ## *responsiveness*
 
 - Engine redlines when accelerating out of corner
-  - Lengthen cornering gear
+  - Lengthen cornering gear and adjust gear spacings appropriately
   - Lengthen final drive ratio
 - Engine bogs when accelerating out of corner
-  - Shorten cornering gear
+  - Maintain a higher speed through the apex
+  - Shorten cornering gear and adjust gear spacings appropriately
   - Shorten final drive ratio
 - Rear drive wheels spin at corner exit
-  - Increase rear wheels negative camber
   - Reduce rear tyres pressures
+  - Increase rear wheels negative camber
+  - Increase LSD power side lock
 
 ## *stability*
 
 - Car squats hard onto rear suspensions thereby deranging them
   - Stiffen rear springs and dampers
 - Car fishtails when accelerating out of corner
+  - Return to throttle more gradually
   - Set rear wheels toe angles closer to zero
 
 # HARD ACCELERATION
@@ -237,19 +239,20 @@ Here, I present ways to identify handling problems that may arise during each ph
 ## *balance*
 
 - Car understeers under hard acceleration
-  - Soften front slow droop dampers
+  - Soften front slow droop dampers OR stiffen rear slow jounce dampers
 - Car oversteers under hard acceleration
-  - Soften rear slow jounce dampers
+  - Stiffen front slow droop dampers OR soften rear slow jounce dampers
 
 ## *responsiveness*
 
 - Rear drive wheels spin under hard acceleration
-  - Increase rear wheels negative camber
   - Reduce rear tyres pressures
+  - Increase rear wheels negative camber
 
 ## *stability*
 
 - Car squats hard onto rear suspensions thereby deranging them
   - Stiffen rear springs and dampers
 - Car fishtails when accelerating out of corner
+  - Return to throttle more gradually
   - Set rear wheels toe angles closer to zero
