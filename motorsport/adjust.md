@@ -115,28 +115,28 @@ The goals of car set-up are as follows:
   - Reduce corner entry speed
   - Move brake bias rearward
   - Increase MGU-K recovery rate
-  - Lower front tyres pressures |OR| raise rear tyres pressures
-  - Soften front anti-sway bars |OR| stiffen rear anti-sway bars
+  - Lower front tyres pressures [OR] raise rear tyres pressures
+  - Soften front anti-sway bars [OR] stiffen rear anti-sway bars
   - Decrease LSD coast side lock
   - Decrease centre LSD preload
   - Increase front wheels toe out
-  - Soften front springs |OR| stiffen rear springs
-  - Soften front slow jounce dampers |OR| stiffen rear slow droop dampers
+  - Soften front springs [OR] stiffen rear springs
+  - Soften front slow jounce dampers [OR] stiffen rear slow droop dampers
   - Increase front and rear wheels negative camber
 - Car understeers at turn-in over bumps
-  - Soften front fast jounce and droop dampers |OR| stiffen rear fast jounce and droop dampers
+  - Soften front fast jounce and droop dampers [OR] stiffen rear fast jounce and droop dampers
 - Car oversteers at turn-in
   - Move brake bias forward
   - Decrease MGU-K recovery rate
-  - Raise front tyres pressures |OR| lower rear tyres pressures
-  - Stiffen front anti-sway bars |OR| soften rear anti-sway bars
+  - Raise front tyres pressures [OR] lower rear tyres pressures
+  - Stiffen front anti-sway bars [OR] soften rear anti-sway bars
   - Increase LSD coast side lock
   - Increase centre LSD preload
   - Decrease front wheels toe out
-  - Stiffen front springs |OR| soften rear springs
-  - Stiffen front slow jounce dampers |OR| soften rear slow droop dampers
+  - Stiffen front springs [OR] soften rear springs
+  - Stiffen front slow jounce dampers [OR] soften rear slow droop dampers
 - Car oversteers at turn-in over bumps
-  - Stiffen front fast jounce and droop dampers |OR| soften rear fast jounce and droop dampers
+  - Stiffen front fast jounce and droop dampers [OR] soften rear fast jounce and droop dampers
 
 ## *compliance*
 
@@ -163,23 +163,23 @@ The goals of car set-up are as follows:
 
 - Car understeers mid corner
   - Increase MGU-K recovery rate
-  - Lower front tyres pressures |OR| raise rear tyres pressures
-  - Soften front anti-sway bars |OR| stiffen rear anti-sway bars
+  - Lower front tyres pressures [OR] raise rear tyres pressures
+  - Soften front anti-sway bars [OR] stiffen rear anti-sway bars
   - Decrease LSD preload
   - Decrease centre LSD preload
   - Increase front wheels toe out
-  - Soften front springs |OR| stiffen rear springs
-  - Soften front slow droop dampers |OR| stiffen rear slow jounce dampers
+  - Soften front springs [OR] stiffen rear springs
+  - Soften front slow droop dampers [OR] stiffen rear slow jounce dampers
   - Increase front and rear wheels negative camber
 - Car oversteers mid corner
   - Decrease MGU-K recovery rate
-  - Raise front tyres pressures |OR| lower rear tyres pressures
-  - Stiffen front anti-sway bars |OR| soften rear anti-sway bars
+  - Raise front tyres pressures [OR] lower rear tyres pressures
+  - Stiffen front anti-sway bars [OR] soften rear anti-sway bars
   - Increase LSD preload
   - Increase centre LSD preload
   - Decrease front wheels toe out
-  - Stiffen front springs |OR| soften rear springs
-  - Stiffen front slow jounce dampers |OR| soften rear slow droop dampers
+  - Stiffen front springs [OR] soften rear springs
+  - Stiffen front slow jounce dampers [OR] soften rear slow droop dampers
   
 - Car skids away from the apex
   - Soften front and rear anti-sway bars
@@ -208,7 +208,7 @@ The goals of car set-up are as follows:
 ## *balance*
 
 - Car understeers when accelerating out of corner
-  - Soften front slow droop dampers |OR| stiffen rear slow jounce dampers
+  - Soften front slow droop dampers [OR] stiffen rear slow jounce dampers
   - Decrease LSD power side lock
   - Decrease centre LSD preload
 - Car oversteers when accelerating out of corner
@@ -240,9 +240,9 @@ The goals of car set-up are as follows:
 ## *balance*
 
 - Car understeers under hard acceleration
-  - Soften front slow droop dampers |OR| stiffen rear slow jounce dampers
+  - Soften front slow droop dampers [OR] stiffen rear slow jounce dampers
 - Car oversteers under hard acceleration
-  - Stiffen front slow droop dampers |OR| soften rear slow jounce dampers
+  - Stiffen front slow droop dampers [OR] soften rear slow jounce dampers
 
 ## *responsiveness*
 
