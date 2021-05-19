@@ -19,14 +19,24 @@ Compliance, manoeuvrability, responsiveness, and stability issues must be sorted
 - Rocking the steering wheel
   - As the steering wheel is cranked toward the apex more and more, it will become noticeably lighter at some point. This is the sign that the front tyres are about to exceed their slip angle limit. At this point, let the steering wheel come back toward the outside of the corner. This will bring the front tyres' slip angles back into their operating range. Then, gently crank the steering wheel toward the apex again, and repeat the process.
   - This procedure enables the front tyres to operate at their maximum slip angle, without exceeding the limits and developing understeer.
-
 - Left-foot braking
   - When understeer begins to develop, gently dab the brake pedal. This transfers some load back onto the front tyres, thereby restoring some traction to them and preventing a full-on understeer.
   - Do not apply an excessive amount of brake, lest the car slow down too much. And do not lift off the throttle when using this technique.
-
 - Decreasing the throttle
   - At the onset of understeer, lift partway off the throttle. This transfers some load back onto the front tyres, thereby restoring some traction to them and preventing a full-on understeer.
   - Lifting off the throttle, even just a little, slows down the car. So, this technique should be used sparingly.
+- Mounting the low kerb
+  - Mount the inside-front wheel on the apex kerb, if the kerb is low. The scalloped surface of the kerb tends to grab the tyre, and this friction helps rotate a mildly understeering car.
+  - Do not place the inside-front wheel too far onto the kerb. At many corners, there usually are tall apex guards on the outside of the low apex kerbs. Hitting these tall bumps will upset the car.
+- Riding the crown
+  - Old track mods, say those that model the 1960s or older era, have surfaces that are crowned, prominently. Use the inside of the crown like a subtly banked track surface. That is, instead of using the whole width of the corner as you normally would, place the car on the inside of the crown adjacent to the apex.
+  - Do not carry excess speed into the corner, or you will push the car away from the apex, thus losing cornering speed.
+- Dipping into the depression
+  - Old tracks usually have many corners with noticeable depressions at the apex. And many corners have no apex kerbs. In such corners, it is possible to drop the inside-front wheel into the road depression, or even onto the dirt off the track, in order to help rotate the car. This is a common rallying technique.
+  - Do not stray too far off the track, or you will surely lose cornering speed. When driving a rally simulator, pay attention to the co-driver's warnings about tree stumps or large rocks at the apex.
+- Nudging the high kerb
+  - Old tracks have high, squared-off apex kerbs. Nudging the inside-front tyre's inside wall against the side of the high kerb will help rotate the car.
+  - Do not hit the kerb with the inside-front wheel, though. At a high enough speed, the force involved can bend the steering arm or even the front suspension. Use this technique with extreme care.
 
 ## *severe*
 

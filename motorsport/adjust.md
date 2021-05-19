@@ -37,6 +37,8 @@ The goals of car set-up are as follows:
 ## *compliance*
 
 - Tyres skip over bumps at high speed along the straight
+  - If the bumps are shallow and are closely spaced, just skip over them
+  - If the bumps are deep and are spaced far apart, ride them like a wave by modulating the throttle pedal
   - Soften front and rear fast jounce and droop dampers
 - Chassis scrapes the track at high speed along the straight
   - Reduce fuel quantity if possible
