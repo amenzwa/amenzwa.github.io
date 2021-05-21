@@ -198,7 +198,7 @@ Existing boundaries can be broadened by deriving new concepts using the followin
   - abstraction by analogy—The A* search algorithm is an efficient pathfinding algorithm used in the transportation industry, where destination cities are represented as vertices of of a graph and the roads that connect them as edges of the graph. Google Maps uses this algorithm to find the most efficient route between two locations on the map. The applicability of this algorithm can be broadened by analogy. By representing phrases of a natural language as vertices of a graph and by connecting them with edges where one phrase is grammatically linked to another, the A* search algorithm can be used to solve the natural language parsing problem. In the abstract, phrases of a language and their grammatical interrelationships is an analogue of cities and their interconnecting roadways.
   - abstraction by shifting focus—Many IT companies began as one type of organisation, then to keep pace with the changing tides of technology and economy, reinvent themselves as another type of organisation. IBM, for example, began as adding machine company, then became the mainframe pioneer, and later CPU maker, and now a cloud service provider. This phenomenon expresses itself even at the level of an algorithm. By shifting focus from one goal to a different one, the broader applicability of the concept becomes more obvious.
 
-***engineering v. art***—Many refer to software development as "software engineering", and they call themselves "software engineers". This is a misnomer: programming is not engineering; it is art. The key differences between engineering and programming are as follows:
+***engineering v. art***—Many refer to software development as "software engineering", and they call themselves "software engineers". This is a misnomer: programming is not engineering; the closest calling to programming is art. The key differences between engineering and programming are as follows:
 
 - workproduct
   - Engineers design tangible products, like buildings, bridges, cars, and radars, using established mathematical principles.
@@ -211,10 +211,10 @@ Existing boundaries can be broadened by deriving new concepts using the followin
   - Programmers are not licensed professionals. And their negligence often go unnoticed, because bugs are a commonplace in programming. Moreover, a bug caused by an ordinary mistake cannot, with certainty, be distinguished from a bug caused by a wilful negligence.
 - management
   - All major engineering projects are managed by experienced, licensed engineers.
-  - Most IT projects are managed by businessmen who have no technical background.
+  - Most IT projects are managed by businessmen who have no technical background. So, programmers, like artists, are managed by non-practitioners.
 - repeatability
   - Engineering processes are repeatable on a large scale.
-  - Regardless of size, software processes are rarely, if ever, repeatable, because no two software projects are identical, much like no two artworks are the same.
+  - Regardless of size, software processes are rarely, if ever, repeatable, because no two software projects are identical, much like no two artworks are.
 
 ## *systems*
 
