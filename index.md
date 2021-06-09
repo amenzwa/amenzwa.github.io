@@ -22,3 +22,4 @@ This topic covers set-up and configuration of Akai EWI USB and EWI5000 MIDI wind
 # [Motorsport](motorsport/index.md)
 
 This topic covers car set-up guide for race simulator driving. It explains how to identify car handling ills, understanding what cause those handling problems, and how to adjust the race car components to cure those problems, and how to cope with handling issues during while on track. It is intended for experienced simulator drivers.
+
