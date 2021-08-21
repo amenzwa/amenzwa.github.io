@@ -523,13 +523,17 @@ It is also essential that you know intimately the operating systems and the comp
 
 # CONCLUSION
 
-If one language is insufficient, what languages should you learn at a minimum? Regardless of your career specialisation, if you plan to write more than a few lines of code, you should at least know the following foundational languages:
+If one language is insufficient, what languages should you learn at a minimum? Regardless of your career specialisation, if you plan to write more than a few lines of code in the foreseeable future, you should at least know the following foundational languages:
 
-***•	Functional***—[Standard ML](https://www.smlnj.org/)
+**Declarative**
 
-•	***Objective***—[Smalltalk](http://www.squeak.org/)
+- Functional—[Standard ML](https://www.smlnj.org/)
+- Relational—[SQL](https://www.postgresql.org/)
 
-•	***Procedural***—[C](http://gcc.gnu.org/)
+**Imperative**
+
+- Objective—[Smalltalk](http://www.squeak.org/)
+- Procedural—[C](http://gcc.gnu.org/)
 
 It is fair to say that all popular, modern languages have a mixed ancestry comprising of Lisp, ML, Smalltalk, and C. With these languages as your foundation, you are better prepared to learn new programming concepts. A solid understanding of C, especially its pointer and memory facilities, will prepare you for operating system kernels, device drivers, 3D simulation engines, IoT, and other low-level, system programming tasks. Also, since many scripting languages like AWK, Perl, and JavaScript have C-like syntax, your knowledge of C will enable you to gain proficiency in those languages, quickly. Knowing Smalltalk in addition to C will ease learning Ruby, Objective-C, Swift, Kotlin, Go, C++, Java, C#, and indeed every object-oriented language currently in use. And proficiency in Scheme and ML will prepare you well for studying other functional languages like Clojure, Scala, F#, OCaml, Haskell, Erlang, and Elixir. Most people use popular scripting languages like JavaScript, TypeScript, and Python exclusively as object-oriented languages. But these languages also support the functional programming paradigm. Your background in functional programming will enable you to write clean, succinct, maintainable code in any language. Functional background will also help a great deal, when you study algorithm analysis and design, as part of your computer science curriculum. And you should consider taking foundational courses in computing, like [logical reasoning](http://en.wikipedia.org/wiki/Logical_reasoning), [discrete mathematics](http://en.wikipedia.org/wiki/Discrete_mathematics), and [algorithm analysis](https://en.wikipedia.org/wiki/Analysis_of_algorithms), even if you have no plans to major in computer science.
 
@@ -557,7 +561,10 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 - *[Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)*, Milewski
 - [*Statistics*](http://www.amazon.com/gp/product/0393929728/ref=pd_lpo_sbs_dp_ss_1?pf_rd_p=1944687742&pf_rd_s=lpo-top-stripe-1&pf_rd_t=201&pf_rd_i=0393970833&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=1S1TBWX07JCT43D899C3), Freedman
 - [*Discrete Mathematics with Applications*](http://www.amazon.com/Discrete-Mathematics-Applications-Susanna-Epp/dp/0495391328/ref=sr_1_2?s=books&ie=UTF8&qid=1433950209&sr=1-2&keywords=discrete+structures), Epp
-- [*Structure and Interpretation of Computer Programs*](http://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_8?s=books&ie=UTF8&qid=1401819781&sr=1-8&keywords=scheme+steele), Abelson
+- *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)* (IFP), Bird
+- [*Structure and Interpretation of Computer Programs*](http://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871/ref=sr_1_8?s=books&ie=UTF8&qid=1401819781&sr=1-8&keywords=scheme+steele) (SICP), Abelson
+- *[How to Design Programs](https://htdp.org/2021-5-4/Book/index.html)* (HDP), Felleisen
+- *[Concepts, Techniques, and Models of Computer Programming](https://www.amazon.com/Concepts-Techniques-Models-Computer-Programming/dp/0262220695/ref=sr_1_3?dchild=1&keywords=Concepts%2C+Techniques%2C+and+Models+of+Computer+Programming&qid=1629563174&sr=8-3)* (CTM), van Roy
 - [*Introduction to Algorithms*](http://www.amazon.com/Introduction-Algorithms-3rd-Thomas-Cormen/dp/0262033844/ref=sr_1_3?s=books&ie=UTF8&qid=1433949776&sr=1-3&keywords=algorithms), Cormen
 - [*The Art of Computer Programming*](http://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?s=books&ie=UTF8&qid=1433949817&sr=1-1&keywords=knuth), Knuth
 - [*Introduction to Graph Theory*](http://www.amazon.com/Introduction-Graph-Theory-Dover-Mathematics/dp/0486678709/ref=sr_1_1?s=books&ie=UTF8&qid=1433975084&sr=1-1&keywords=graph+theory), Trudeau
@@ -576,7 +583,6 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 
 **Practice**
 
-- *[Introduction to Functional Programming](https://usi-pl.github.io/lc/sp-2015/doc/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf)*, Bird
 - *[ML for the Working Programmer](https://www.amazon.com/ML-Working-Programmer-2nd-Paulson/dp/052156543X)*, Paulson
 - *[OCaml from the Very Beginning](https://www.amazon.com/OCaml-Very-Beginning-John-Whitington/dp/0957671105/ref=sr_1_1?dchild=1&keywords=OCaml+from+the+Very+Beginning&qid=1611698270&sr=8-1)*, Whitington
 - *[Programming in Haskell](https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/1316626229/ref=sr_1_1?dchild=1&keywords=hutton+haskell&qid=1611698302&sr=8-1)*, Hutton
@@ -599,7 +605,7 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 - [*JavaScript: The Definitive Guide*](http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides-ebook/dp/B004XQX4K0/ref=sr_1_2?s=books&ie=UTF8&qid=1401775003&sr=1-2&keywords=javascript), Flanagan
 - [*Programming TypeScript: Making Your JavaScript Applications Scale*](https://www.amazon.com/Programming-TypeScript-Making-JavaScript-Applications/dp/1492037656/ref=sr_1_3?dchild=1&keywords=typescript&qid=1608772098&sr=8-3), Cherny
 - [*The Python Tutorial*](http://www.amazon.com/Python-Tutorial-2-7-5-Guido-Rossum-ebook/dp/B00FJRV9QI/ref=sr_1_13?s=books&ie=UTF8&qid=1401775234&sr=1-13&keywords=python), van Rossum (Python designer)
-- [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan (C designer)
+- [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Ritchie (C designer)
 - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
 - [*The AWK Programming Language*](http://www.amazon.com/The-AWK-Programming-Language-Alfred/dp/020107981X/ref=sr_1_1?ie=UTF8&qid=1401820819&sr=8-1&keywords=awk+programming), Aho (AWK designer)
 - [*Programming Perl: Unmatched Power for Text Processing and Scripting*](http://www.amazon.com/Programming-Perl-Unmatched-processing-scripting/dp/0596004923/ref=sr_1_1?s=books&ie=UTF8&qid=1401820920&sr=1-1&keywords=Programming+Perl), Wall (Perl designer)

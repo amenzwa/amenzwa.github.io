@@ -97,3 +97,4 @@ TypeScript 4 uses strong, static, structural, inferred type system and impure, s
 # PRESENT
 
 use ts4 py3 in fp way
+
