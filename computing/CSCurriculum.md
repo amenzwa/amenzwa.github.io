@@ -43,7 +43,7 @@ Before we explore the CS curriculum, we shall first examine non-CS fields whose 
 
 ## *technology*
 
-- ***information systems***—Information Systems (IFSM) is a subfield of CS that specialise in the operation of enterprise computing systems. CS, too, studies DBs, networks, enterprise applications, and the like, but with a focus on theory and design. IFSM, on the other hand, studies the practical aspects of these technologies, such as economics of ownership, operation, maintenance, etc.
+- ***information systems***—Information Systems (IFSM) is a subfield of CS that specialises in the operation of enterprise computing systems. CS, too, studies DBs, networks, enterprise applications, and the like, but with a focus on theory and design. IFSM, on the other hand, studies the practical aspects of these technologies, such as economics of ownership, operation, maintenance, etc.
 - ***coding camps***—A large majority of people who work as coders today do not have a background in CS. Coders have all types of educational backgrounds. Some even have a degree in English Literature. Many of them entered IT by attending coding camps, and they work as web application developers or mobile application developers.
 
 ## *engineering*

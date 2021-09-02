@@ -114,7 +114,7 @@ Now that you understand families and paradigms, we can talk about where on the f
 - Relational—Programmer creates a query by defining relations between sets of data, and the language selects and returns the desired subset of the data.
   - SQL
 
-- Functional—Programmer defines data types and functions that operate on types, and the language evaluates the functions to transform the input data to produce the result.
+- Functional—Programmer defines data types and functions that operate on those types, and the language evaluates the functions to transform the input data to produce the result.
   - Lisp, Scheme, Common Lisp, Clojure, Mathematica, Julia
   - Standard ML, Haskell, OCaml, F#, Reason, Rust, Elm
   - Erlang, Elixir
@@ -131,7 +131,7 @@ Now that you understand families and paradigms, we can talk about where on the f
   - Cobol, Pascal, Algol, Basic
   - Fortran, Matlab
 
-- Mechanical—Programmer defines step-by-step, low-level instructions that the computer understands, and the hardware executes the instructions in sequence to produce the result.
+- Mechanical—Programmer defines step-by-step, low-level instructions that the computer understands, and the machine executes the instructions in sequence to produce the result.
   - Assembly, Hexadecimal, Binary
 
 Languages make much of programming paradigms, but in truth very few languages are paradigmatically pure. For example, Lisp is the seminal functional programming language, and is the matriarch of the declarative line. But it permits the mutation of the programme state, a distinctive trait of the imperative family. C is the perennial procedural programming language, and an honoured member of the imperative family. Simula is the first, true object-oriented language. Smalltalk is the first, pure object-oriented language. Crossing Smalltalk with C yields Objective-C and mixing Simula with C yields C++. C# is a derivative of Java, which in turn is a descendant of Smalltalk and C++. Adding a few functional programming constructs to Java yields Scala. Python is an object-oriented language but it supports many functional features. JavaScript, another famous object-oriented language, has even stronger ties to functional family.
@@ -278,7 +278,7 @@ The following are the learning resources I recommend, either because they cater 
 
 Note that there are four types programming books: purely theoretical, more theoretical than practical, less theoretical than practical, and purely practical. The former two types are read by CS students, and the latter two types are read by industry programmers. In general, books on the ML family of functional languages (Standard ML, Haskell, OCaml, etc.) lean toward CS theory, whereas books on the C++ family of object-oriented languages (C++, Java, JavaScript, etc.) are devoid of any CS theory. You will need to learn to read all these types of books. But do understand that you cannot benefit fully from a purely practical book without some theoretical background.
 
-**Logic**
+**Logical**
 
 - Prolog
   - [*Programming in Prolog: Using the ISO Standard*](http://www.amazon.com/Programming-Prolog-Using-ISO-Standard/dp/3540006788/ref=sr_1_1?ie=UTF8&qid=1401776122&sr=8-1&keywords=prolog), Clocksin
@@ -385,6 +385,9 @@ Note that there are four types programming books: purely theoretical, more theor
 - Go
   - *[The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_3?dchild=1&keywords=golang&qid=1611867815&sr=8-3)*, Donovan
   - [*Effective Go*](http://golang.org/doc/effective_go.html), Google (Go designer)
+- Windows PowerShell
+  - [*PowerShell for Sysadmins*](https://www.amazon.com/Automate-Boring-Stuff-PowerShell-Sysadmins/dp/1593279183/ref=sr_1_5?dchild=1&keywords=powershell&qid=1608748061&sr=8-5), Bertram
+  - [*PowerShell Documentation*](https://docs.microsoft.com/en-us/powershell/), Microsoft (PowerShell designer)
 
 **Procedural**
 
@@ -392,9 +395,6 @@ Note that there are four types programming books: purely theoretical, more theor
   - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan & Ritchie (C designer)
 - Matlab (hybrid object-oriented)
   - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
-
-**Shell**
-
 - Unix Bourne shell
   - [*The Unix Programming Environment*](http://www.amazon.com/Unix-Programming-Environment-Prentice-Hall-Software/dp/013937681X/ref=sr_1_1?s=books&ie=UTF8&qid=1401775485&sr=1-1&keywords=The+Unix+Programming+Environment), Kernighan (Unix designer)
   - [*UNIX: A History and a Memoir*](https://www.amazon.com/UNIX-History-Memoir-Brian-Kernighan/dp/1695978552/ref=sr_1_1?dchild=1&keywords=kernighan&qid=1608746441&s=books&sr=1-1), Kernighan
@@ -402,9 +402,13 @@ Note that there are four types programming books: purely theoretical, more theor
   - [*The AWK Programming Language*](http://www.amazon.com/The-AWK-Programming-Language-Alfred/dp/020107981X/ref=sr_1_1?ie=UTF8&qid=1401820819&sr=8-1&keywords=awk+programming), Aho (AWK designer)
 - Perl
   - [*Programming Perl: Unmatched Power for Text Processing and Scripting*](http://www.amazon.com/Programming-Perl-Unmatched-processing-scripting/dp/0596004923/ref=sr_1_1?s=books&ie=UTF8&qid=1401820920&sr=1-1&keywords=Programming+Perl), Wall (Perl designer)
-- Windows PowerShell
-  - [*PowerShell for Sysadmins*](https://www.amazon.com/Automate-Boring-Stuff-PowerShell-Sysadmins/dp/1593279183/ref=sr_1_5?dchild=1&keywords=powershell&qid=1608748061&sr=8-5), Bertram
-  - [*PowerShell Documentation*](https://docs.microsoft.com/en-us/powershell/), Microsoft (PowerShell designer)
+
+**Mechanical**
+
+- ARM
+  - *[ARM 64-Bit Assembly Language](https://www.amazon.com/64-Bit-Assembly-Language-Larry-Pyeatt/dp/0128192216/ref=sr_1_4?dchild=1&keywords=arm+cpu&qid=1630599595&s=books&sr=1-4)*, Pyeatt
+- AVR
+  - *[Arduino Cookbook: Recipes to Begin, Expand, and Enhance Your Projects](https://www.amazon.com/Arduino-Cookbook-Recipes-Enhance-Projects/dp/149190352X/ref=sr_1_4?dchild=1&keywords=arduino&qid=1630600127&s=books&sr=1-4)*, Margolis
 
 ## *programming tools*
 
@@ -428,7 +432,7 @@ A modern programming process is quite different, thanks to the IDE. The IDE inte
 
 Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visualstudio.com/) (VScode) is a great tool, despite being a relatively new product. It has support for just about every programming language. It can be used for web, desktop, mobile, embedded, or IoT development work. In any event, I present below a list of popular software development tools. When you start using a new language on a new project, try VScode first. Only if you are dissatisfied with it, try the tools listed here.
 
-**Logic**
+**Logical**
 
 - Prolog—Emacs
 
@@ -467,11 +471,14 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 - C—Emacs, Eclipse, Xcode, CLion
 - Matlab—[Matlab](http://www.mathworks.com/products/matlab/), Octave (mostly compatible with Matlab)
 
-**Shell**
-
 - Bourne shell—Emacs, [vi](http://www.atmos.albany.edu/deas/atmclasses/atm350/vi_cheat_sheet.pdf)
 - AWK—Emacs, vi
 - Perl—Emacs, vi
+
+**Mechanical**
+
+- ARM—[ARM Development Studio](https://www.arm.com/products/development-tools/embedded-and-software/arm-development-studio)
+- AVR—[Arduino IDE](https://www.arduino.cc/en/software)
 
 Software development is much more than just programming. You will need to use several other tools: communication, collaboration, documentation, and project management. These tools used to be separate, but are now merging with one another.
 
@@ -527,13 +534,15 @@ If one language is insufficient, what languages should you learn at a minimum? R
 
 **Declarative**
 
-- Functional—[Standard ML](https://www.smlnj.org/)
+- Logical—[Prolog](https://www.swi-prolog.org/)
 - Relational—[SQL](https://www.postgresql.org/)
+- Functional—[Standard ML](https://www.smlnj.org/)
 
 **Imperative**
 
 - Objective—[Smalltalk](http://www.squeak.org/)
 - Procedural—[C](http://gcc.gnu.org/)
+- Mechanical—[Arduino](https://www.arduino.cc/reference/en/)
 
 It is fair to say that all popular, modern languages have a mixed ancestry comprising of Lisp, ML, Smalltalk, and C. With these languages as your foundation, you are better prepared to learn new programming concepts. A solid understanding of C, especially its pointer and memory facilities, will prepare you for operating system kernels, device drivers, 3D simulation engines, IoT, and other low-level, system programming tasks. Also, since many scripting languages like AWK, Perl, and JavaScript have C-like syntax, your knowledge of C will enable you to gain proficiency in those languages, quickly. Knowing Smalltalk in addition to C will ease learning Ruby, Objective-C, Swift, Kotlin, Go, C++, Java, C#, and indeed every object-oriented language currently in use. And proficiency in Scheme and ML will prepare you well for studying other functional languages like Clojure, Scala, F#, OCaml, Haskell, Erlang, and Elixir. Most people use popular scripting languages like JavaScript, TypeScript, and Python exclusively as object-oriented languages. But these languages also support the functional programming paradigm. Your background in functional programming will enable you to write clean, succinct, maintainable code in any language. Functional background will also help a great deal, when you study algorithm analysis and design, as part of your computer science curriculum. And you should consider taking foundational courses in computing, like [logical reasoning](http://en.wikipedia.org/wiki/Logical_reasoning), [discrete mathematics](http://en.wikipedia.org/wiki/Discrete_mathematics), and [algorithm analysis](https://en.wikipedia.org/wiki/Analysis_of_algorithms), even if you have no plans to major in computer science.
 
@@ -545,7 +554,7 @@ I shall conclude with the following observation. New programming languages and a
 >
 > — Ecclesiastes 1:9
 
-For the moment, the darlings of the IT industry are JavaScript on the client side and Java on the server side. The next top language will likely be a Java-compatible, functional language. Kotlin and Scala are two such languages on the rise, and a few short years ago, it was Clojure. It is impossible to know what will become of any them in the near future. Language evolution through mutation is not new. C took ideas from Algol. C++ snuck onto the market on the back of C and Simula. Java beat C++ at its own game. Kotlin and Scala may take Java’s place someday, maybe not. But sooner or later, Java’s reign will end and JavaScript will fall. Nothing is permanent. Come what may, your prepared mind is ready.
+For the moment, the darlings of the IT industry are JavaScript on the client side and Java on the server side. The next top language will likely be a Java-compatible, functional language. Kotlin and Scala are two such languages on the rise, and a few short years ago, it was Clojure. It is impossible to know what will become of any them in the near future. Language evolution through mutation is not new. C took ideas from Algol. C++ snuck onto the market on the backs of C and Simula. Java beat C++ at its own game. Kotlin and Scala may take Java’s place someday, maybe not. But sooner or later, Java’s reign will end and JavaScript will fall. Nothing is permanent. Come what may, your prepared mind is ready.
 
 > “To every thing there is a season, and a time to every purpose under the heaven.”
 >
