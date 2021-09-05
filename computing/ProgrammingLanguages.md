@@ -568,6 +568,7 @@ For the moment, the darlings of the IT industry are JavaScript on the client sid
 
 **Theory**
 
+- *[The Next 700 Programming Languages](https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf)*, Landin
 - [*The Little Prover*](http://www.amazon.com/Little-Prover-Daniel-P-Friedman/dp/0262527952/ref=sr_1_4?ie=UTF8&qid=1433974273&sr=8-4&keywords=theorem+proving), Friedman
 - *[The Little Typer](https://www.amazon.com/Little-Typer-MIT-Press/dp/0262536439/ref=sr_1_1?dchild=1&keywords=The+Little+Typer&qid=1612639929&sr=8-1)*, Friedman
 - [*Understanding Arguments: An Introduction to Informal Logic*](http://www.amazon.com/Understanding-Arguments-Introduction-Informal-Logic/dp/0495603953/ref=sr_1_fkmr0_1?ie=UTF8&qid=1433974594&sr=8-1-fkmr0&keywords=walter+sinnot+Armstrong), Armstrong
