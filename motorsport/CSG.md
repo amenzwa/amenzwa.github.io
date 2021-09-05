@@ -10,7 +10,8 @@ Modern, commercial racing simulators have attained the level of realism that is 
 
 This guide is divided into the following sections:
 
-- [Adjust](GNFAdjust.md)
+- [Adjust](CSGAdjust.md)
   - Identify the car's handling ills and adjust the set-up in the pit to cure those ills.
-- [Adapt](GNFAdapt.md)
+- [Adapt](CSGAdapt.md)
   - Adapt one's driving style to ameliorate balance problems that erupt during a race.
+
