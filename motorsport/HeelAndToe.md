@@ -58,7 +58,7 @@ In the days of yore when drum brakes were in vogue, stepping down through the ge
 
 There is a catch with heel-and-toe, though. You cannot simply blip up to a random engine rpm. You must rev the engine to match the speed of the drivetrain. So, how do you know what rpm to rev up to, when you downshift?
 
-When you heel-and-toe downshift, you must blip the engine rpm up to what it needs to be in the intended lower gear, so that the drivetrain speed remains about the same, when you engage that lower gear. In a living room simulator like AC, we need not be so precise. But if you want the exact numbers, try this.
+When you heel-and-toe downshift, you must blip the engine rpm up to what it needs to be in the intended lower gear, so that the drivetrain speed remains about the same, when you engage that lower gear. In a living room simulator like [Assetto Corsa](https://www.assettocorsa.it/home-ac/), we need not be so precise. But if you want the exact numbers, try this.
 
 Start down a long straight, say at Monza historic, in the BMW E30 M3 road car in its factory set-up. Accelerate in G1 up to the redline at 7,000 rpm. The car’s forward speed will be 72 km h-1. Now, shift up to G2, and maintain the speed. You will notice that the engine revs drop from redline to 4,500. If you climb up the gears, you will see that in G3, the engine revs at 3,400; in G4 at 2,500; and, in G5 at 1,900. We now have the rpm deltas between the gears:
 

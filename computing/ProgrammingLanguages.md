@@ -127,7 +127,7 @@ Now that you understand families and paradigms, we can talk about where on the f
   - Go, Python, JavaScript, TypeScript
 
 - Procedural—Programmer defines global programme state and procedures that modify that state incrementally, and the language executes the procedures in sequence to reach the final state of the programme.
-  - C, Perl
+  - C, Nim, Perl
   - Cobol, Pascal, Algol, Basic
   - Fortran, Matlab
 
@@ -228,11 +228,13 @@ Another virtual machine language that has not enjoyed as much hype as Java and C
 
 A few words of caution, if you please. Software industry is founded upon computer science knowledge, and programming is a mathematical activity. But these days, although the industry makes much of the “computer,” it cares not enough about the “science” bit. The industry seeks code cutters, not analytical thinkers. It admires complexity and apparent sophistication, not correctness and actual simplicity. It desires quick delivery, not stable, speedy operation. Distance yourself the best you can from that lot. And you would do well to pay attention to the computer science theory courses in college, not just on the programming courses.
 
-***system programmers***—Originally, the term "system programming" meant programming operating systems. But today, its meaning is much more expansive, connoting "system-dependent programming"—essentially anything outside of line of business or social media application development. If you wish to become a system programmer, you should learn C, C++, OCaml, Rust, and at least one assembly language, preferably Intel or ARM.
+***system programmers***—Originally, the term "system programming" meant programming operating systems. But today, its meaning is much more expansive, connoting "system-dependent programming"—essentially anything outside of line of business or social media application development. If you wish to become a system programmer, you should learn C, Nim, C++, OCaml, Rust, and at least one assembly language, preferably Intel or ARM.
 
-Traditional system programming languages are C and the host hardware's assembly language. But today, C++ is used quite extensively, as well. So, if you are interested in 3D game programming, weather modelling, industrial process control, and the like, learn both C and C++. And you should also have a solid background in electronics and mathematics, because many system programming applications rely heavily on them.
+Traditional system programming languages are C and the host hardware's assembly language. But today, C++ is used quite extensively, as well. So, if you are interested in 3D game programming, weather modelling, industrial process control, and the like, learn both C and C++. And you should also have a solid background in electronics and mathematics, because many system programming applications rely heavily on these subjects. In some sectors where mathematics, algorithms, performance, and complexity rule the day, such as financial modelling, compiler development, etc., OCaml is the language of choice.
 
-In some sectors where mathematics, algorithms, and performance rule the day, such as financial modelling, compiler development, etc., OCaml is the language of choice. Proponents of Rust, a relative newcomer, claim it will soon be the next de facto system programming language. But whether Rust can topple C and C++ remains an open question, for the time being.
+[Nim](https://nim-lang.org/) is a relatively young procedural language with multi-paradigm support. It has an inferencing, static type system and a clean, Python-like syntax. Although it is a procedural language, it supports FP and OO. It also has a powerful meta-programming facilities—generics, templates, and macros—that reduce repetition and clutter in the code. And Nim supports various garbage collection strategies, thereby allowing the programmer to select the one that best fits his solution. Nim runs on just about every type of machine, from servers to microcontrollers. In other words, Nim could well be the best friend of a modern system programmer who does not need to dive into the kernel.
+
+Proponents of [Rust](https://www.rust-lang.org/), a relative newcomer, claim it will soon be the next de facto system programming language. But whether Rust can displace C remains an open question, for the time being. My bet is on C.
 
 ***system administrators***—If you are interested in becoming a system administrator, you should learn to program in Python, Bourne shell, and PowerShell. And because many business software are implemented as JavaScript web applications, some familiarity with the basics of JavaScript would be a plus. Of course, you must learn how properly to use `vi`, `sed`, `grep`, and other Unix command-line tools.
 
@@ -303,14 +305,14 @@ Note that there are four types programming books: purely theoretical, more theor
   - Standard ML
     - [*Elements of ML Programming*](https://www.amazon.com/Elements-ML-Programming-ML97-2nd/dp/0137903871/ref=sr_1_2?dchild=1&keywords=standard+ml&qid=1608746865&s=books&sr=1-2), Ullman
     - [*Programming in Standard ML*](http://www.cs.cmu.edu/~rwh/isml/book.pdf), Harper
-  - OCaml (hybrid object-oriented)
+  - OCaml (hybrid functional, objective)
     - [*The OCaml System*](https://ocaml.org/releases/4.11/ocaml-4.11-refman.pdf), Leroy (OCaml designer)
     - [*Real World OCaml*](https://www.amazon.com/Real-World-OCaml-Functional-programming/dp/144932391X/ref=sr_1_1?dchild=1&keywords=Real+World+OCaml&qid=1608746985&sr=8-1), Minsky
-  - F# (hybrid object-oriented)
+  - F# (hybrid functional, objective)
     - [*Beginning F#*](https://www.amazon.com/Beginning-F-4-0-Robert-Pickering-ebook/dp/B01JC6N1QM/ref=sr_1_8?dchild=1&keywords=F#&qid=1608745572&s=books&sr=1-8), Pickering
     - [*Expert F#*](https://www.amazon.com/Expert-F-4-0-Don-Syme/dp/1484207416/ref=sr_1_9?dchild=1&keywords=F#&qid=1608745572&s=books&sr=1-9), Syme (F# designer)
     - [*Domain Modeling Made Functional*](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB/ref=sr_1_2?dchild=1&keywords=F#&qid=1608745572&s=books&sr=1-2), Wlaschin
-  - Reason (hybrid object-oriented)
+  - Reason (hybrid functional, objective)
     - [*Learn Type-Driven Development*](https://www.amazon.com/Learn-Type-Driven-Development-applications-ebook/dp/B079DW69VL/ref=sr_1_2?dchild=1&keywords=reasonml&qid=1608747037&sr=8-2), Amin
     - [*Reason*](https://reasonml.github.io/docs/en/what-and-why), Facebook (Reason designer)
     - [*ReScript*](https://rescript-lang.org/docs/manual/latest/introduction), Facebook
@@ -330,7 +332,7 @@ Note that there are four types programming books: purely theoretical, more theor
     - [*Programming Elixir*](https://www.amazon.com/Programming-Elixir-1-6-Functional-Concurrent/dp/1680502999/ref=sr_1_3?dchild=1&keywords=elixir&qid=1608746507&s=books&sr=1-3), Thomas
     - [*Programming Phoenix*](https://www.amazon.com/Programming-Phoenix-1-4-Productive-Reliable/dp/1680502263/ref=sr_1_6?dchild=1&keywords=elixir&qid=1608746547&s=books&sr=1-6), McCord
 
-- Scala (hybrid object-oriented)
+- Scala (hybrid functional, objective)
   - [*Programming in Scala*](http://www.amazon.com/Programming-Scala-Comprehensive-Step---Step-ebook/dp/B004Z1FTXS/ref=sr_1_1?s=books&ie=UTF8&qid=1401774514&sr=1-1&keywords=scala), Odersky (Scala designer)
 
 - Julia
@@ -343,10 +345,10 @@ Note that there are four types programming books: purely theoretical, more theor
 - R
   - [*The R Book*](http://www.amazon.com/R-Book-Michael-J-Crawley/dp/0470973927/ref=sr_1_16?s=books&ie=UTF8&qid=1401772904&sr=1-16&keywords=r+language+programming), Crawley
 
-**Object-Oriented**
+**Objective**
 
 - Smalltalk family
-  - Smalltalk (pure object-oriented)
+  - Smalltalk (pure objective)
     - [*Smalltalk-80: The Language*](http://www.amazon.com/Smalltalk-80-Language-Adele-Goldberg/dp/0201136880/ref=sr_1_1?s=books&ie=UTF8&qid=1401774209&sr=1-1&keywords=smalltalk), Goldberg (Smalltalk designer)
     - [*Smalltalk-80: The Language and its Implementation*](http://www.amazon.com/Smalltalk-80-The-Language-its-Implementation/dp/0201113716/ref=sr_1_5?ie=UTF8&qid=1401820559&sr=8-5&keywords=smalltalk), Goldberg
     - [*Smalltalk-80: The Interactive Programming Environment*](http://www.amazon.com/Smalltalk-80-Interactive-Programming-Environment-Addison-Wesley/dp/0201113724/ref=sr_1_18?ie=UTF8&qid=1401820630&sr=8-18&keywords=smalltalk), Goldberg
@@ -362,20 +364,20 @@ Note that there are four types programming books: purely theoretical, more theor
   - C#
     - [*C# in a Nutshell*](http://www.amazon.com/C-8-0-Nutshell-Definitive-Reference/dp/1492051136/ref=sr_1_4?dchild=1&keywords=C%23&qid=1608747966&sr=8-4), Albahari
     - [*C# and .NET*](https://www.amazon.com/NET-Cross-Platform-Development-intelligent-Framework/dp/180056810X/ref=sr_1_2?dchild=1&keywords=C#&qid=1608747926&sr=8-2), Price
-  - Swift (hybrid functional)
+  - Swift (hybrid objective, functional)
     - [*Swift Programming Language*](http://https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097), Apple (Swift designer)
-  - Kotlin (hybrid functional)
+  - Kotlin (hybrid objective, functional)
     - [*Kotlin in Action*](https://www.amazon.com/Kotlin-Action-Dmitry-Jemerov/dp/1617293296/ref=sr_1_11?dchild=1&keywords=kotlin&qid=1608747783&sr=8-11), Jemerov
     - [*Learn Kotlin*](https://kotlinlang.org/docs/reference/), JetBrains (Kotlin designer)
 - JavaScript family
-  - JavaScript (hybrid functional)
+  - JavaScript (hybrid objective, functional)
     - [*JavaScript: The Definitive Guide*](http://www.amazon.com/JavaScript-Definitive-Most-Used-Programming-Language/dp/1491952024/ref=sr_1_2?dchild=1&keywords=javascript&qid=1608746146&sr=8-2), Flanagan
     - [*Eloquent JavaScript*](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_3?dchild=1&keywords=javascript&qid=1608746146&sr=8-3), Haverbeke
     - [*JavaScript: The Good Parts*](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_11?dchild=1&keywords=javascript&qid=1608746103&sr=8-11), Crockford
-  - TypeScript (hybrid functional)
+  - TypeScript (hybrid objective, functional)
     - [*Programming TypeScript*](https://www.amazon.com/Programming-TypeScript-Making-JavaScript-Applications/dp/1492037656/ref=sr_1_2?dchild=1&keywords=typescript&qid=1608746733&s=books&sr=1-2), Cherny
     - [*The TypeScript Handbook*](https://www.typescriptlang.org/docs/handbook/intro.html), Microsoft (TypeScript designer)
-- Python (hybrid functional)
+- Python (hybrid objective, functional)
   - [*The Python Tutorial*](http://www.amazon.com/Python-Tutorial-2-7-5-Guido-Rossum-ebook/dp/B00FJRV9QI/ref=sr_1_13?s=books&ie=UTF8&qid=1401775234&sr=1-13&keywords=python), van Rossum (Python designer)
   - [*Guide To Functional Python and Comprehension Constructs*](http://www.amazon.com/Guide-Functional-Python-Comprehension-Constructs-ebook/dp/B00CUZDOSI/ref=sr_1_1?s=books&ie=UTF8&qid=1401775298&sr=1-1&keywords=functional+python), Harrison
   - [*Functional Programming How-To*](http://docs.python.org/3/howto/functional.html), Kuchling
@@ -393,7 +395,9 @@ Note that there are four types programming books: purely theoretical, more theor
 
 - C (pure procedural)
   - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan & Ritchie (C designer)
-- Matlab (hybrid object-oriented)
+- Nim (hybrid procedural, functional, objective)
+  - *[Nim Basics](https://narimiran.github.io/nim-basics/)*, Miran
+- Matlab (hybrid procedural, objective)
   - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
 - Unix Bourne shell
   - [*The Unix Programming Environment*](http://www.amazon.com/Unix-Programming-Environment-Prentice-Hall-Software/dp/013937681X/ref=sr_1_1?s=books&ie=UTF8&qid=1401775485&sr=1-1&keywords=The+Unix+Programming+Environment), Kernighan (Unix designer)
@@ -452,7 +456,7 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 - Mathematica—[Mathematica](http://www.wolfram.com/mathematica/)
 - R—[RStudio](http://www.rstudio.com)
 
-**Object-Oriented**
+**Objective**
 
 - Smalltalk—[Squeak](http://www.squeak.org/)
 - Ruby—Eclipse, [Xcode](http://developer.apple.com/xcode/), [RubyMine](https://www.jetbrains.com/ruby/)
