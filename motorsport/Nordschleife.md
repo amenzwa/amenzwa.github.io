@@ -1,5 +1,5 @@
 ---
-title: "Nordschleife"
+title: "Nordschleife Track Guide"
 ---
 
 # INTRODUCTION
