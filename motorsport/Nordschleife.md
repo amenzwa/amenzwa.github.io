@@ -82,7 +82,7 @@ In the image below, the car has just clipped the apex of the right-hander, and i
 
 As you roll downhill out of Hocheichen, the track bends slightly to the right, just as it crests a hill. There is a bridge where the track passes over motorway 257. Right after the bridge, the track climbs back up a steep hill. This is Quiddelbacher Höhe, which is 2 km from the start line. Charge up the hill on the left side of the track at full throttle, but lift the throttle just a bit before you reach the crest. If you do not lift, the car will go airborne. And, if you attack the hill at full tilt on the right side of the track, the car will fly even higher. You will then arrive at the next corner, a fast double-apex right-hander, in a quivering car that landed back on terra firma just moment prior. In a fast car, you will have to jab the brake paddle upon landing, in order to settle the car before taking the double-apex right-hander.
 
-![Quiddelbacher Höhe](diagrams/Nordschleife/cQuiddelbacherHöheentry.jpg)
+![Quiddelbacher Höhe](diagrams/Nordschleife/cQuiddelbacherHoheentry.jpg)
 
 The crown of the track between the two right-handers is rather pronounced. So, if you slide to the opposite side of the crown after clipping the first apex, the outside of the crown will push you to the outside edge of the track, and you will miss the second apex.  Remain on the inside of the crown mid corner. To add to the challenge, there is a slight crest in the middle between the two apexes.
 
@@ -110,7 +110,7 @@ As you approach Aremberg, heel-and-toe downshift while staying on the left side 
 
 As you pass under the Yokohama bridge, the track drops away in a stretch that is almost straight save for the slight right-left-right kinks.  Do not mount the curbs at the kinks. After the final right kink on the downhill slope, the track bends slightly to the left and climbs sharply up a hill. In the image below, the car is about to take the second-to-last left-hander. You can see the steep hill, and the final left-hander of Fuchsröhre is barely visible at the top of that hill.
 
-![Fuchsröhre](diagrams/Nordschleife/cFuchsröhre.jpg)
+![Fuchsröhre](diagrams/Nordschleife/cFuchsrohre.jpg)
 
 The second-to-last left-hander at the base of the steep hill is perhaps the trickiest bit of the entire Fuchsröhre section. Its curvature is gradual, so you can take it at full throttle. But, the track abruptly transitions from a steep downhill slope to a steep uphill slope right at the apex of this corner.  As the car comes down the hill at a high speed and hits the sharp uphill slope, the front suspension suddenly compresses.  Do not slam on the brake while the front suspension is compressed near its limit, or the front suspension will seize up and you will lose control. Go wide at the apex, a bit toward the middle of the track where the surface is smoother. If your car has good brakes and if you have the iron constitution, remain in full throttle through the slope inflection at the base of the hill, and stand on the brake and heel-and-toe downshift, only after you have climbed up the hill and the suspension has unloaded somewhat. If you prefer a more sedate course of action instead, lift off the throttle before you reach the base of the hill, and coast up the hill with your foot off the throttle.
 
@@ -178,7 +178,7 @@ The dip just past Breidscheid bridge is at 332 m above sea level elevation, and 
 
 Turn smartly into this uphill right-hander. Accelerate early, clip the apex, drift out to the left edge, and go up through the gears. This corner is bumpy, the camber is markedly adverse, the uphill slope is steep especially at the apex, and you are accelerating hard not just to gain speed but also to claw up the hill. This combination is ticklish, so mistakes are possible. You can oversteer on the crest at the apex, if you are injudicious with the throttle. And, if you misjudge the speed and the line, the adverse camber will push you off onto the grass. The concomitant loss of traction on such a steep incline can be disastrous. Moreover, if you enter the corner in too low a gear the engine may redline halfway up the incline, and in too high a gear the engine may bog down. In either case, you lose momentum at an inopportune time. Set the gear ratio so that you can traverse Ex-Mühle in one gear, without stressing the engine. Lastly, ill-tuned suspension may succumb to the abuse here, and leave the car unsettled at the exit. You will then need to delay getting back on power, until the car has settled sufficiently. In the image below, the car is at the 8 km mark, and is about to clip the apex as it climbs the hill.
 
-![Ex-Mühle](diagrams/Nordschleife/cEx-Mühle.jpg)
+![Ex-Mühle](diagrams/Nordschleife/cEx-Muhle.jpg)
 
 ## *Lauda-Linksknick*
 
@@ -248,7 +248,7 @@ As you crest the hill, there is a tricky right-hander just ahead, which is the a
 
 Continue climbing the hill after you exit Hohe Acht. At the crest of this hill is a barely perceptible left kink called Hedwigshöhe. It is named after the track designer Dr. Otto Creutz’s wife, Hedwig. At the elevation of 625 m above sea level, it is the highest point on The Ring. It is 293 m above Breidscheid, the lowest point. In the image below, you can see the apex of Hedwigshöhe left kink. Clip this apex. You are now at the 13 km mark, and are staring your descent back to the lowlands.
 
-![Hedwigshöhe](diagrams/Nordschleife/cHedwigshöhe.jpg)
+![Hedwigshöhe](diagrams/Nordschleife/cHedwigshohe.jpg)
 
 ## *Wippermann*
 
@@ -272,7 +272,7 @@ Eschbach 2 is actually an increasing radius, double-apex left-hander. Clip the a
 
 Brünnchen is a pair of tricky right-handers. Brünnchen 1 is a particularly illusive corner. If you do not hug close to the apex, the car will massively understeer at the exit and slide onto the left-side low curb that runs the length of the downhill, short straight that connects the two Brünnchen corners. Going too far onto this curb will drain speed. With a little excess speed through Brünnchen 1, you might even slide off onto the grass. So, left-foot brake, take an early apex, and stay close to the apex as long as necessary to prevent sliding off the track.
 
-![Brünnchen](diagrams/Nordschleife/cBrünnchen1.jpg)
+![Brunnchen](diagrams/Nordschleife/cBrünnchen1.jpg)
 
 Brünnchen 2 is the easternmost point on the track.  Brünnchen 2 appears quite similar to Eschbach 1, both the entry and the exit. But in truth, Brünnchen 2 is slightly sharper than Eschbach 1. Do not mistake one corner for the other. If you were momentarily inattentive and mistook one corner for the other, you will lose your location awareness and confusion will follow, directly. Gently dab the brake paddle with your left foot at the turn in to slow the car to an appropriate speed and to help rotate it into the corner.
 
@@ -330,7 +330,7 @@ In its present form, Döttinger Höhe starts at the Audi gantry, and ends at the
 
 Beyond the Audi gantry, the track drops in elevation noticeably, as can be seen in the image below. Stay in top gear at full throttle until you pass the left-hander at the entry of Tiergarten.
 
-![Döttinger Höhe](diagrams/Nordschleife/cDöttingerHöheentry.jpg)
+![Döttinger Höhe](diagrams/Nordschleife/cDottingerHoheentry.jpg)
 
 ## *Antoniusbuche*
 
