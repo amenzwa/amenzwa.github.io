@@ -14,7 +14,7 @@ Construction of the Nürburgring began in 1925 and was completed in 1927. The S�
 
 The Nordschleife, which remains largely unchanged, surrounds the medieval village of Nürburg where a twelfth century castle still stands. The original layout had a long tail called the [Südkehre](http://www.rfactorcentral.com/detail.cfm?ID=70 Nordschleife) (southern turn), along which the original pits were located. The modern F1 circuit, called the Grand-Prix-Strecke, was built over the Südkehre in 1982, so this bit of the old track is no longer visible in the satellite image.
 
-Today, the Nürburgring comprises the Nordschleife plus the Grand-Prix-Strecke along with their myriad configurations. To most people, the name “Nordschleife” now means the Touristenfahrten (tourist rides) configuration, shown in the map below, which is the 20.832 km track that traces the original Nordschleife, excluding the Südkehre. The late [Stefan Bellof](http://en.wikipedia.org/wiki/Stefan_Bellof), driving his Porsche 956, set the current fastest lap time of 6:11.13, in 1983.
+Today, the Nürburgring comprises the Nordschleife plus the Grand-Prix-Strecke along with their myriad configurations. To most people, the name “Nordschleife” now means the Touristenfahrten (tourist rides) configuration, shown in the map below, which is the 20.832 km track that traces the original Nordschleife, excluding the Südkehre. The late Stefan Bellof, driving his Porsche 956 in 1983, set the fastest lap time of [6:11.130](https://youtu.be/vHPiiHDZUro) that stood until 2018, when Timo Bernhard in a Porsche 919 Hybrid EVO set the current lap record of [5:19.546](https://youtu.be/PQmSUHhP3ug).
 
 ![Nordschleife](diagrams/Nordschleife/Nordschleife.jpg)
 
