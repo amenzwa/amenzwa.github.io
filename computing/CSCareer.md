@@ -62,7 +62,7 @@ Today's technology industry, and by extension world economy, is powered by the h
 
 A fair question therefore is whether a CS degree is useless in the IT industry. The answer is no. Many computer scientists work as developers in the industry. Although most of them would never have the opportunity to design a famous algorithm, they do create software that animate world economy. Their work is no less important to society than the computer scientists in academia. And the micro-decisions they make in their daily work is undoubtedly guided by the CS theory they absorbed in college. When they eventually rise to leadership positions, their macro-decisions will continue to be informed by their educational background.
 
-But pursuing a CS degree is a significant investment in time, effort, and money. So, a youngster who is yearning to create the next great social media application or another addictive mobile game—but who has no burning curiosity for computability, computational complexity, formal languages, type theory, category theory, and other theoretical matters—is better off doing what he loves, without roaming about for several years in a CS curriculum.
+But pursuing a CS degree is a significant investment in time, effort, and money. So, a youngster who is yearning to create the next great social media application or another addictive mobile game—but who has no burning curiosity for computability, computational complexity, formal languages, type theory, category theory, and other theoretical matters—is better off doing what he loves, without roaming about for several years in the forest of CS curriculum.
 
 ## *interviewing*
 

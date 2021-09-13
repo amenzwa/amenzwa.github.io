@@ -534,7 +534,7 @@ It is also essential that you know intimately the operating systems and the comp
 
 # CONCLUSION
 
-If one language is insufficient, what languages should you learn at a minimum? Regardless of your career specialisation, if you plan to write more than a few lines of code in the foreseeable future, you should at least know the following foundational languages:
+If one language is insufficient, what languages should you learn at a minimum? Regardless of your career specialisation, if you plan to write more than a few lines of code in the foreseeable future, you should at least know the following languages:
 
 **Declarative**
 
@@ -546,7 +546,7 @@ If one language is insufficient, what languages should you learn at a minimum? R
 
 - Objective—[Smalltalk](http://www.squeak.org/)
 - Procedural—[C](http://gcc.gnu.org/)
-- Mechanical—[Arduino](https://www.arduino.cc/reference/en/)
+- Mechanical—[ARM](https://www.keil.com/dd/docs/datashts/arm/cortex_m0/r0p0/ddi0432c_cortex_m0_r0p0_trm.pdf)
 
 It is fair to say that all popular, modern languages have a mixed ancestry comprising of Lisp, ML, Smalltalk, and C. With these languages as your foundation, you are better prepared to learn new programming concepts. A solid understanding of C, especially its pointer and memory facilities, will prepare you for operating system kernels, device drivers, 3D simulation engines, IoT, and other low-level, system programming tasks. Also, since many scripting languages like AWK, Perl, and JavaScript have C-like syntax, your knowledge of C will enable you to gain proficiency in those languages, quickly. Knowing Smalltalk in addition to C will ease learning Ruby, Objective-C, Swift, Kotlin, Go, C++, Java, C#, and indeed every object-oriented language currently in use. And proficiency in Scheme and ML will prepare you well for studying other functional languages like Clojure, Scala, F#, OCaml, Haskell, Erlang, and Elixir. Most people use popular scripting languages like JavaScript, TypeScript, and Python exclusively as object-oriented languages. But these languages also support the functional programming paradigm. Your background in functional programming will enable you to write clean, succinct, maintainable code in any language. Functional background will also help a great deal, when you study algorithm analysis and design, as part of your computer science curriculum. And you should consider taking foundational courses in computing, like [logical reasoning](http://en.wikipedia.org/wiki/Logical_reasoning), [discrete mathematics](http://en.wikipedia.org/wiki/Discrete_mathematics), and [algorithm analysis](https://en.wikipedia.org/wiki/Analysis_of_algorithms), even if you have no plans to major in computer science.
 
