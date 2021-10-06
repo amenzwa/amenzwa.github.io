@@ -55,8 +55,8 @@ Now, our CPU can represent boolean values, characters, and numbers, and it can m
 
 ```assembly
   ...
-  jump a < b ⇒ con ⇏ alt
-con: ; consequent code block
+  jump a < b ⇒ csq ⇏ alt
+csq: ; consequent code block
   ...
 alt: ; alternative code block
   ...
