@@ -287,7 +287,7 @@ In programming, lists are used to represent sequential data. Trees are used to r
 
 The *lazy* strategy reduces an expression to its value, only if that value is needed in the subsequent computation. Evaluating a complex expression by beginning with the outermost subexpression and proceeding inward only when necessary is an example of lazy evaluation. Lazy evaluation permits the use of infinite data structures, whose values are computed only when the need arises. Haskell is lazy language.
 
-***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. Currying transforms $f : x, y → z$ into $f' : x → f''$, where $f'' : y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $f'(x)$ that returns another single-argument function $f''(y)$ which has value $x$ baked into its body. When the function $f''$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of single-argument functions.
+***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. Currying transforms $f : x, y → z$ into $f' : x → f''$, where $f'': y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $f'(x)$ that returns another single-argument function $f''(y)$ which has value $x$ baked into its body. When the function $f''$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of single-argument functions.
 
 ***partial application***—A partial application of a multi-argument function is a consequence of currying. In the currying example above, the function $f''$ is a partially applied version of the original function $f$. Applying the dyadic $f(x, y)$ to only $x$ is referred to as a *partial application* of $f$ to $x$. When $f$ receives only $x$, it knows that it cannot complete the computation, and instead returns $f''(y)$, which accepts $y$ and already has $x$ in its body. When $f''$ is given $y$, it becomes the fully applied, so it uses both $x$ and $y$ in its computation, and returns the final result $z$.
 
@@ -419,14 +419,9 @@ The relational model, the mathematical foundation of relational databases, is bu
 
 *Relational algebra*, in which operands are relations and operators manipulate relations. Relational operators include $∪$ (union), $∩$ (intersection), $×$ (cross product), $-$ (difference), $σ$ (tuple selection), $π$ (attribute projection), several variants of $⋈$ (join), and $ ρ$ (renaming).
 
-In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartesian product.
-$$
-\{xRy\ |\ x ∈ X, y ∈ Y\} ⊆ X × Y
-$$
-In relational theory, a relation $R$ is a set of tuples $(a_1, a_2, ...)$ where each attribute $a_i$ is a member of some domain $D_i$.
-$$
-R = \{(a_1, a_2, ...)\ |\ a_1 ∈ D_1, a_2 ∈ D_2, ...\}
-$$
+In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartesian product: $\{xRy\ |\ x ∈ X, y ∈ Y\} ⊆ X × Y$.
+
+In relational theory, a relation $R$ is a set of tuples $(a_1, a_2, ...)$ where each attribute $a_i$ is a member of some domain $D_i$: $R = \{(a_1, a_2, ...)\ |\ a_1 ∈ D_1, a_2 ∈ D_2, ...\}$.
 In database practice, a relation is a table `t` that contains a row collection of records `r.i` where each record comprises a collection of field values `f.j` drawn from their respective columns `C.j`.
 
 ```
