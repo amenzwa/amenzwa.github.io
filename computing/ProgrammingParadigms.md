@@ -262,6 +262,8 @@ Higher-order functions are also called *functionals*. The term "functional progr
 ***recursion***—Because in FP state maintenance is forbidden, counting loops are forbidden, too. The `for` loop construct in PP, for instance, maintains the loop count, which is a state. Instead, FP performs repetition with *recursion*. A recursive function is one that invokes itself, as part of its operation. Many problems in CS are hierarchically structured. At the top level, there is the original problem. This problem can be expressed in terms of smaller, self-similar sub-problems.
 
 Take, for instance, the algorithm for computing the length of a list $l$:
+
+
 $$
 |l| =
 \begin{cases}
@@ -269,6 +271,8 @@ $$
   1 + |tail(l)| & \text{otherwise} \\
 \end{cases}
 $$
+
+
 A *list* is the tail sublist $tail(l)$ with the singleton head element $head(l)$ tacked on at the front: $l = head(l) + tail(l)$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the above algorithm computes the length of the list as follows: the length of an empty list $|Ø|$ is clearly $0$; the length of a non-empty list is the length of the head $|head(l)|$, which is obviously $1$, plus the length of the tail $|tail(l)|$, which is computed recursively on the smaller sublist. As the algorithm proceeds down the tail, the tail shortens down to the empty list. The resultant length is $1 + 1 + ... + 0$, where the $1$s stand for each element of the list, and the $0$ for the terminating empty list.
 
 The above equation is not merely logical; it is downright intuitive. This comprehensibility and simplicity are the consequences of the hierarchical, self-similar representation, which epitomises the divide-and-conquer problem solving technique employed throughout CS. And the structure of a typical list processing solution like this matches that of the mathematical induction proof method, which means such an algorithm can be proved correct by a direct appeal to induction.
@@ -287,13 +291,13 @@ In programming, lists are used to represent sequential data. Trees are used to r
 
 The *lazy* strategy reduces an expression to its value, only if that value is needed in the subsequent computation. Evaluating a complex expression by beginning with the outermost subexpression and proceeding inward only when necessary is an example of lazy evaluation. Lazy evaluation permits the use of infinite data structures, whose values are computed only when the need arises. Haskell is lazy language.
 
-***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. Currying transforms $f : x, y → z$ into $f' : x → f''$, where $f'': y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $f'(x)$ that returns another single-argument function $f''(y)$ which has value $x$ baked into its body. When the function $f''$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of single-argument functions.
+***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. Currying transforms $f : x, y → z$ into $g : x → h$, where $h : y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $g(x)$ that returns another single-argument function $h(y)$ which has value $x$ baked into its body. When the function $h$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of single-argument functions.
 
-***partial application***—A partial application of a multi-argument function is a consequence of currying. In the currying example above, the function $f''$ is a partially applied version of the original function $f$. Applying the dyadic $f(x, y)$ to only $x$ is referred to as a *partial application* of $f$ to $x$. When $f$ receives only $x$, it knows that it cannot complete the computation, and instead returns $f''(y)$, which accepts $y$ and already has $x$ in its body. When $f''$ is given $y$, it becomes the fully applied, so it uses both $x$ and $y$ in its computation, and returns the final result $z$.
+***partial application***—A partial application of a multi-argument function is a consequence of currying. In the currying example above, the function $h$ is a partially applied version of the original function $f$. Applying the dyadic $f(x, y)$ to only $x$ is referred to as a *partial application* of $f$ to $x$. When $f$ receives only $x$, it knows that it cannot complete the computation, and instead returns $h(y)$, which accepts $y$ and already has $x$ in its body. When $h$ is given $y$, it becomes the fully applied, so it uses both $x$ and $y$ in its computation, and returns the final result $z$.
 
 Note that many programmers confuse the term "partially applied function" with "partial function"; these two concepts are unrelated. A partial application is analogous to the situation in which a painter is handed a 1 L can of paint and is told to paint a wall that requires 5 L to cover. He would paint as much of the wall as he can cover, but it is impossible for him to complete the job, until he is supplied with an adequate amount of paint. On the other hand, a partial function is like a painter who is famous for his intense hatred of white paint. If he were to be handed a can of white paint, he would surely blow his top in rage and, instead of painting the wall, would burn down the house.
 
-***sections***—A *section* is a partially applied dyadic operator. For instance, when the $+$ operator is partially applied to only one value, as in $(+1)$, it automatically returns a function $f': x → x + 1$. When $f'$ is applied to value $9$, it returns  $9 + 1 = 10$. The function $f'$ could be used as the increment operator.
+***sections***—A *section* is a partially applied dyadic operator. For instance, when the $+$ operator is partially applied to only one value, as in $(+1)$, it automatically returns a function $g : x → x + 1$. When $g$ is applied to value $3$, it returns  $3 + 1 = 4$. The function $g$ could be used as the increment operator.
 
 ### ML CONCEPTS
 
