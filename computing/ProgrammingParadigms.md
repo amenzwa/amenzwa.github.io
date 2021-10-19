@@ -279,7 +279,7 @@ Let us examine the algorithm for computing the length of a list. A *list* is the
   - $l = Ø ⇒ len(Ø) = 0$
   - $l ≠ Ø ⇒ len(l) = len(hd[l]) + len(tl[l])$
 
-The algorithm states that the length of an empty list is 0, and that the length of a non-empty list is the length of the head $len(hd[l])$, which is $1$, plus the length of the tail $len(tl[l])$, which is computed recursively on the smaller sublist. As the algorithm proceeds down the tail, the tail shortens down to the empty list. The resultant length is $1 + 1 + ... + 0$, where the $1$s stand for each element of the list, and the $0$ for the terminating empty list.
+The algorithm states that the length of an empty list is 0, and that the length of a non-empty list is the length of the singleton head element (which is $1$) plus the length of the tail (which is computed recursively on the smaller sublist $tl[l]$). As the algorithm proceeds down the tail, the tail shortens to the empty list. The resultant length is $1 + 1 + ... + 0$, where the $1$s stand for each element of the list, and the $0$ for the terminating empty list.
 
 The above equation is not merely logical; it is downright intuitive. This comprehensibility and simplicity are the consequences of the hierarchical, self-similar representation, which epitomises the divide-and-conquer problem solving technique employed throughout CS. And the structure of a typical list processing solution like this matches that of the mathematical induction proof method, which means such an algorithm can be proved correct by a direct appeal to induction.
 
