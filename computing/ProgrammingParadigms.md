@@ -174,9 +174,21 @@ The unifying principle in Smalltalk is that everything is an object. Primitive v
 
 Computation is performed by sending messages to objects. For example, `5 factorial` computes $5! = 120$. Here, the receiver is the `Integer` object `5` and the message is `factorial`.
 
-The conditional expression, too, is a message: `b ifTrue: [csq] ifFalse: [alt]`. Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[csq]` and `[alt]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[csq]` block is evaluated, and otherwise, the `[alt]` is evaluated.
+The conditional expression, too, is a message.
 
-A count-up loop over integers is written thus: `1 to: 10 do: [:i | i printNl]`. Here, the receiver is the `Integer` object `1`, the message is `to:do:`, and the message parameters are the `10` and the `[...]` block. Each time through the loop, the receiver's current value is passed to the block as the argument `i`, and the receiver is then automatically incremented. An equivalent loop in C is this:
+```Smalltalk
+b ifTrue: [csq] ifFalse: [alt]
+```
+
+Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[csq]` and `[alt]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[csq]` block is evaluated, and otherwise, the `[alt]` is evaluated.
+
+A count-up loop over integers is written as follows.
+
+```Smalltalk
+1 to: 10 do: [:i | i printNl]
+```
+
+Here, the receiver is the `Integer` object `1`, the message is `to:do:`, and the message parameters are the `10` and the `[...]` block. Each time through the loop, the receiver's current value is passed to the block as the argument `i`, and the receiver is then automatically incremented. An equivalent loop in C is this:
 
 ```c
 for (int i = 1; i <= 10; i++) printf("%d\n", i + 1);
@@ -378,7 +390,7 @@ In an eager language like ML, if this function is invoked as `constant (1/0)`, t
 
 ***types***—ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like lists and trees, to hold values of different types: `int list` is a list of integers; `float list` is a list of reals.
 
-***modules***—Like other languages, ML supports modules. But ML's module system is unique and powerful. ML modules can be parameterised with other modules. This facility is called *functors*. In category theory, a functor is a map from one category to another category: $F: C → D$. In that sense, a functor in ML transforms the argument module into a new result module.
+***modules***—Like other languages, ML supports modules. But ML's module system is unique and powerful. ML modules can be parameterised with other modules. This facility is called *functors*. In category theory, a functor is a map from one category to another category: $F: C → D$. In that sense, a functor $F$ in ML transforms the argument module $C$ into a new resultant module $D$.
 
 It is common practice in programming to use modules to implement commonly used abstract data types, such as lists, trees, graphs, and so on. It is also a usual practice to implement business domain models, such as task, project, workflow, etc. Using ML functors, we may create a list of tasks, a project tree, a workflow graph, and the like. ML supports a domain-specific sublanguage for modules and functors. This module language allows the programmer to specify relations and constraints among the modules. This constraint language is roughly similar to SQL's foreign key specifications.
 
