@@ -419,9 +419,10 @@ The relational model, the mathematical foundation of relational databases, is bu
 
 *Relational algebra*, in which operands are relations and operators manipulate relations. Relational operators include $∪$ (union), $∩$ (intersection), $×$ (cross product), $-$ (difference), $σ$ (tuple selection), $π$ (attribute projection), several variants of $⋈$ (join), and $ ρ$ (renaming).
 
-In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartesian product: $\{xRy\ |\ x ∈ X, y ∈ Y\} ⊆ X × Y$.
+In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartesian product: $\{xRy\ :\ x ∈ X, y ∈ Y\} ⊆ X × Y$.
 
-In relational theory, a relation $R$ is a set of tuples $(a_1, a_2, ...)$ where each attribute $a_i$ is a member of some domain $D_i$: $R = \{(a_1, a_2, ...)\ |\ a_1 ∈ D_1, a_2 ∈ D_2, ...\}$.
+In relational theory, a relation $R$ is a set of tuples $(a_1, a_2, ...)$ where each attribute $a_i$ is a member of some domain $D_i$: $R = \{(a_1, a_2, ...)\ :\ a_1 ∈ D_1, a_2 ∈ D_2, ...\}$.
+
 In database practice, a relation is a table `t` that contains a row collection of records `r.i` where each record comprises a collection of field values `f.j` drawn from their respective columns `C.j`.
 
 ```
