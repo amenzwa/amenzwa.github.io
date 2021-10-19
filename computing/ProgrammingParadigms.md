@@ -266,7 +266,7 @@ $$
 |l| =
 \begin{cases}
   0 & \text{if l = Ø} \\
-  1 + |tail(l)| & \text{otherwise}
+  1 + |tail(l)| & \text{otherwise} \\
 \end{cases}
 $$
 A *list* is the tail sublist $tail(l)$ with the singleton head element $head(l)$ tacked on at the front: $l = head(l) + tail(l)$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the above algorithm computes the length of the list as follows: the length of an empty list $|Ø|$ is clearly $0$; the length of a non-empty list is the length of the head $|head(l)|$, which is obviously $1$, plus the length of the tail $|tail(l)|$, which is computed recursively on the smaller sublist. As the algorithm proceeds down the tail, the tail shortens down to the empty list. The resultant length is $1 + 1 + ... + 0$, where the $1$s stand for each element of the list, and the $0$ for the terminating empty list.
