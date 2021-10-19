@@ -262,13 +262,13 @@ Higher-order functions are also called *functionals*. The term "functional progr
 ***recursion***—Because in FP state maintenance is forbidden, counting loops are forbidden, too. The `for` loop construct in PP, for instance, maintains the loop count, which is a state. Instead, FP performs repetition with *recursion*. A recursive function is one that invokes itself, as part of its operation. Many problems in CS are hierarchically structured. At the top level, there is the original problem. This problem can be expressed in terms of smaller, self-similar sub-problems.
 
 Take, for instance, the algorithm for computing the length of a list $l$:
-\[
+$$
 len(l) =
 \begin{cases}
   0 & \text{if l = Ø} \\
   1 + len(tl(l)) & \text{otherwise} \\
 \end{cases}
-\]
+$$
 A *list* is the tail sublist $tl(l)$ with the singleton head element $hd(l)$ tacked on at the front: $l = hd(l) + tl(l)$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the above algorithm computes the length of the list as follows: the length of an empty list $len(Ø)$ is clearly $0$; the length of a non-empty list is the length of the head $len(hd(l))$, which is obviously $1$, plus the length of the tail $len(tl(l))$, which is computed recursively on the smaller sublist. As the algorithm proceeds down the tail, the tail shortens down to the empty list. The resultant length is $1 + 1 + ... + 0$, where the $1$s stand for each element of the list, and the $0$ for the terminating empty list.
 
 The above equation is not merely logical; it is downright intuitive. This comprehensibility and simplicity are the consequences of the hierarchical, self-similar representation, which epitomises the divide-and-conquer problem solving technique employed throughout CS. And the structure of a typical list processing solution like this matches that of the mathematical induction proof method, which means such an algorithm can be proved correct by a direct appeal to induction.
