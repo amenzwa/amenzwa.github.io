@@ -2,7 +2,7 @@
 title: "Publications of Amen Zwa, Esq."
 ---
 
-I am Amen Zwa, an ordinary bloke. I was born and raised in [Burma](https://en.wikipedia.org/wiki/Myanmar). I now live in [Washington, DC](https://en.wikipedia.org/wiki/Washington,_D.C.), with my wife and son. I enjoy playing jazz with my son. I work as a technology consultant, focusing on business development, technology law, and algorithm design. My degrees are in law, computer science, and electrical engineering. In my spare time, I write about law, technology, music, and motorsport. Please feel free to contact me on Twitter [@AmenZwa](https://twitter.com/amenzwa).
+I am Amen Zwa, an ordinary bloke. I work as a technology consultant, focusing on business development, technology law, and algorithm design. My degrees are in law, computer science, and electrical engineering. In my spare time, I write about law, technology, music, and motorsport. Please feel free to contact me on Twitter [@AmenZwa](https://twitter.com/amenzwa).
 
 - Amazon Author Profile: [http://amazon.com/author/amenzwa](http://amazon.com/author/amenzwa)
 - LinkedIn Profile: [https://www.linkedin.com/in/amenzwa](https://www.linkedin.com/in/amenzwa)

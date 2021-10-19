@@ -90,6 +90,8 @@ I shall elaborate upon that pithy remark. We humans cannot cope with a large, co
 
 So, what of the object-oriented approach? The objective style came about, in order to rein in the procedural approach’s laissez-faire attitude toward modifying the programme state. When different parts of a large programme use and change the shared programme state in an uncontrolled and uncoordinated manner, the state quickly becomes corrupted, and chaos ensues. One way to temper the chaos is to break down the programme state into smaller chunks, and ensconce each chunk inside its own protective shell that jealously guards access thereto. So, an object comprises a small chunk of state, its protective shell, and the restrictive mechanisms through which other objects may access and mutate its state.
 
+For a more detailed discussions on this topic, see my article *[Programming Paradigms](ProgrammingParadigms.md)*.
+
 ## *interpreted v. compiled*
 
 In this guide I draw no distinctions between which language is interpreted and which compiled. The source code written in a *compiled* language, say C, must first be transformed into the machine code understood by the computer, before the computer can execute the programme. This transformation is called compilation. But the source code written in an *interpreted* language, like Python, is executed immediately by the interpreter, without the need to first compile the programme. The interpreter is the programme in this case, and the code the programmer wrote merely guides the behaviour of the interpreter.
