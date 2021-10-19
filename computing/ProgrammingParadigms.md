@@ -261,7 +261,7 @@ Higher-order functions are also called *functionals*. The term "functional progr
 
 ***recursion***—Because in FP state maintenance is forbidden, counting loops are forbidden, too. The `for` loop construct in PP, for instance, maintains the loop count, which is a state. Instead, FP performs repetition with *recursion*. A recursive function is one that invokes itself, as part of its operation. Many problems in CS are hierarchically structured. At the top level, there is the original problem. This problem can be expressed in terms of smaller, self-similar sub-problems.
 
-Let us examine the algorithm for computing the length of a list. A *list* is the tail sublist $tl[\_]$ with the singleton head element $hd[\_]$ tacked on at the front: a list $l = hd[l] + tl[l]$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the algorithm computes the length of the list in two cases, as follows:
+Let us examine the algorithm for computing the length of a list. A *list* is the tail sublist $tl[⊡]$ with the singleton head element $hd[⊡]$ tacked on at the front: a list $l = hd[l] + tl[l]$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the algorithm computes the length of the list in two cases, as follows:
 
 - $len(l)$:
   - $l = Ø ⇒ len(Ø) = 0$
@@ -322,7 +322,7 @@ fun fac n =
   in fac' 1 n end;
 ```
 
-This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $\_'$ is used sometimes to represent a quantity that is similar but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention to label subtly different quantities, as we did here with `fac` and `fac'`. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$.
+This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent a quantity that is similar but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention to label subtly different quantities, as we did here with `fac` and `fac'`. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$.
 
 ```Haskell
 fac 3
