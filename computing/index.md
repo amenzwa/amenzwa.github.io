@@ -11,7 +11,7 @@ This topic is devoted to computing. It covers computer science curriculum, caree
 - [Programming Languages](ProgrammingLanguages.md)
   - This article provides a high-level view of the world of programming languages. It gives an overview of the history of programming languages; describes the declarative and imperative family lines; gives guidance on which languages to study, and what books to read; and explains the nature of programming as an activity. It is written for all STEM *practitioners*: mathematicians, engineers, scientists, programmers, system administrators, and technical managers.
 - [Programming Paradigms](ProgrammingParadigms.md)
-  - This article provides a high-level view of programming paradigms. It is not a programming tutorial. It is a guide for experienced programmers on how to learn the four popular paradigms—procedural, objective, functional, and relational—highlighting the key concepts in each paradigm.
+  - This article provides a high-level view of programming paradigms. It is not a programming tutorial. It is a guide for *experienced* programmers on how to learn the four popular paradigms—procedural, objective, functional, and relational—highlighting the key concepts in each paradigm.
 - [How Computers Work](HowComputersWork.md)
   - This article explains to software developers how 8-bit computers are built from subsystems, how these subsystems collaborate to perform simple calculations, and how such simple calculations when combined exhibit complex behaviours. This information may make *developers* more mechanically sympathetic programmers.
 - [Law and Technology](LawAndTechnology.md)
