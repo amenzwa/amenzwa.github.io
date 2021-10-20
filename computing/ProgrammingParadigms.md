@@ -164,17 +164,27 @@ A category theory point of view simplifies the matter: a class is a product type
 
 Designing an OO programme is a matter of finding discrete concepts, naming them, and creating classes for them. A banking simulator, for example, would have classes like `Bank`, `Teller`, `Queue`, `Customer`, `Account`, and so on.
 
-Despite these simple, humble beginnings, however, OO has, over the years, amassed an exasperatingly unwieldy amount of glossy theories and swanky idioms, among which the SOLID principle and the GoF Patterns are the most famous. But all theories and idioms can be viewed as conventions for deciding what responsibility to assign to which class, in order to simply future software maintenance tasks.
+Despite the humble beginnings, however, OO has, over the years, amassed an exasperatingly unwieldy amount of glossy theories and swanky idioms, among which the SOLID principle and the GoF Patterns are the most famous. But all theories and idioms can be viewed as mere practical conventions for deciding what responsibility to assign to which class, in order to ensure software remains maintainable as its design ages.
 
 ### SMALLTALK CONCEPTS
 
 The core concepts of Smalltalk are inheritance, class, object, method, and message, which are the fundamental concepts of OO; nothing is special, there. What makes Smalltalk special is the understated way it achieves its express power through simple design and harmonious philosophy.
 
-The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the `Employee` class, one sends the `new` message to the global object that represents this class which, incidentally, is named `Employee`.
+The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the class `Stratocaster`, one sends the `new:` message to the global object that represents this class which, incidentally, is named `Stratocaster`.
+
+```
+redStrat := Stratocaster new: 'Fender Custom Shop' color: 'Fiesta Red'
+```
+
+Likewise, sending the `subclass:` message to an existing class creates a derived class with the specified name.
+
+```Smalltalk
+ElectricGuitar subclass: #Stratocaster
+```
 
 Computation is performed by sending messages to objects. For example, `5 factorial` computes $5! = 120$. Here, the receiver is the `Integer` object `5` and the message is `factorial`.
 
-The conditional expression, too, is a message.
+The conditional expression, too, is implemented as a message.
 
 ```Smalltalk
 b ifTrue: [csq] ifFalse: [alt]
@@ -196,11 +206,11 @@ for (int i = 1; i <= 10; i++) printf("%d\n", i + 1);
 
 The condition method and the loop method above are analogous to higher-order functions in FP, and the blocks are analogous to λ functions. Other FP influences in Smalltalk include  `collect:`, `select:`, `inject:into:`, whose FP equivalents are `map`, `filter`, `foldl`. It is not only possible, but also quite natural, to program in Smalltalk using FP techniques, such as λ functions and these higher-order functional operators.
 
-***anecdote***—In the late 1980s, I had the opportunity to observe, up-close, the many struggles that experienced PP programmers faced when adopting OO. They were my colleagues. They were C experts. They read the excellent [*The C++ Programming Language, 1ed*](https://stroustrup.com/1st.html) (Brown Book) by Stroustrup, as we all did, in those days. C++ was but a small extension of C then, having only classes, visibility modifiers, and multiple inheritance. For a Smalltalking, C programmer like me, adopting C++ was a simple matter of learning a few syntactic quirks. But my C-is-my-life colleagues went through a year-long ordeal. They learned easily the syntactic elements, but they struggled with OO design concepts; they kept falling back into familiar C idioms, and ended up using C++ to write C programmes.
+***advice***—In the late 1980s, I had the opportunity to observe, up-close, the many struggles that experienced PP programmers faced when adopting OO. They were my colleagues. They were C experts. They read the excellent [*The C++ Programming Language, 1ed*](https://stroustrup.com/1st.html) (Brown Book) by Stroustrup, as we all did, in those days. C++ was but a small extension of C then, having only classes, visibility modifiers, and multiple inheritance. For a Smalltalking, C programmer like me, adopting C++ was a simple matter of learning a few syntactic quirks. But my C-is-my-life colleagues went through a year-long ordeal. They learned easily the syntactic elements, but they struggled with OO design concepts; they kept falling back into familiar C idioms, and ended up using C++ to write C programmes.
 
-I came to Smalltalk by way of C, and assembly before that. So, a few years prior, I was in a similar situation, attempting to make PP-to-OO transition. But I did not experience that shocking ordeal, because Smalltalk was a small, simple, strictly OO language without pointers, `goto`, and other PP paraphernalia. I had no choice but to abandon my PP habits. And because, by then, I had already learnt some LISP, I was able to cognise and exploit Smalltalk's FP idioms. It was not a smooth transition, but it certainly was not an ordeal.
+Like my colleagues, I was versed in C and assembly, when I learned Smalltalk a few years before they began learning C++. I did not experience that shocking ordeal my colleagues faced, however, because Smalltalk was a small, simple, strictly OO language without pointers, `goto`, and other PP paraphernalia to distract and derail me. And because, by then, I had already learnt some LISP, I was able to cognise and exploit Smalltalk's FP idioms. It was not an easy transition for me, going from PP to OO, but it certainly was an enjoyable learning experience, not an ordeal.
 
-This experience taught me that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is mostly working hard with the right attitude. Humility is the trait from which both hard work and right attitude sprang. Do not be seduced by the temptation of "my way is the only way". The best way sways in the winds of trend and time; humility does not. So, be humble. Learn.
+This experience taught me that when learning something wholly new it is best to check prejudices and predilections, and that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is an exercise in assiduity while being receptive. Humility is the trait from which both hard work and open mind sprang. Do not be seduced by the "my way is the only way" mentality. The best way sways in the blistering winds of trend and it is soon buried under the drifting sands of time. Humility does not. So, strive to be humble. Learn.
 
 ## *functional*
 
@@ -251,11 +261,11 @@ Form the programme design point of view, the whole FP programme is just a functi
 
 The key concepts behind FP are simple, minimalist. But FP derives immense expressive powers by composing these simple, individual concepts in a uniform way. This readily composable nature of concepts distinguishes FP from other programming paradigms, when things get complicated.
 
-Objects in OO are, by design, can be assembled. But object assembly is different in kind form function composition. Functions compose like the individual stations are coupled in an assembly line. So long as the next station is equipped to accept the output of the previous station, the assembly line works smoothly. The arrival of the input animates a station into action. There is a unified sense of timing and flow. The traversal time through the assembly line is *linearly* proportional to the number of stations in the assembly line. By contrast, objects assemble and organise themselves rather like a group of people at an office party. People are autonomous; their individual actions are govern their internal motivations. But in a crowd, individuals regulate their actions and coordinate with the others, in accordance with applicable social norms. There is no unified sense of timing and flow. Social order emerges organically. However, the need for coordination is a form of overhead—a social overhead. And this overhead grows *exponentially* with the number of people.
+Objects in OO are designed to be assembled. But object assembly is different in kind form function composition. Functions compose like the individual stations are coupled in an assembly line. So long as the next station is equipped to accept the output of the previous station, the assembly line works smoothly. The arrival of the input animates a station into action. There is a unified sense of timing and flow. The traversal time through the assembly line is *linearly* proportional to the number of stations in the assembly line. By contrast, objects assemble and organise themselves rather like a group of people mingling and chatting at a party. People are autonomous; their individual actions are govern their internal motivations. But in a crowd, individuals endeavour to regulate their actions and to coordinate with one another, in accordance with local social norms. There is no unified sense of timing and flow. In the absence of an external ordering, a social order emerges organically to aid collaboration. However, the need for coordination is a form of overhead—a collaborative overhead. And this overhead grows *exponentially* with the number of people involved in the conversation.
 
-Another way to look at this is that FP abstracts flow, whereas OO abstracts coordination. Abstracting something hides the finicky details thereof, in order to simplify the task. So, FP hides the low-level details associated with composition, thereby simplifying the task of composing large systems from subsystems. But because OO hides the low-level details associated with coordination, it simplifies the task of inter-object interactions. Interactions contribute to the exponential growth of system complexity. Since OO abstracts interactions, their explosive growth is hidden from view.
+Another way to look at this is that FP abstracts synchronised flow, whereas OO abstracts spontaneous coordination. Abstracting something hides the details and simplifies the associated task. FP hides the low-level details associated with function composition, thereby simplifying the task of composing large systems out of functional forms. But because OO hides the low-level details associated with inter-object coordination, it simplifies the task of arranging object interactions. Interactions contribute to the exponential growth of system complexity as the number of active objects increases. But since OO abstracts interactions, this costly growth is invisible to the programmer.
 
-Now, let us switch gears and discuss a few FP terms. FP takes delight in giving ornate names to simple concepts. Below, I shall peel the arcane FP terms to reveal the simple concepts they denote.
+Now, let us turn our attention to some FP terms. FP takes delight in giving ornate names to simple concepts. Below, I shall peel the arcane FP terms to reveal the simple concepts they denote.
 
 ***purity***—Mathematical functions mutate neither their input arguments nor external values. This property of functions is referred to as *purity*. Purity guarantees that FP functions will not mutate data sneakily—no side effects. By contrast, PP procedures often have side effects, usually in the form of global data mutation.
 
@@ -390,11 +400,42 @@ In an eager language like ML, if this function is invoked as `constant (1/0)`, t
 
 ***types***—ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like lists and trees, to hold values of different types: `int list` is a list of integers; `float list` is a list of reals.
 
+ML was the first popular FP language to provide support for algebraic data types (not the same as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The well-known `option` type is an example of a sum type.
+
+```haskell
+datatype 'a option = none | some of 'a;
+```
+
+The above declaration defines a new data type, which is a disjoint union of a `none` case and a `some` case. The `none` case carries no data, but the `some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that returns a fax number of a company would return a value `some FaxNumber` if the company still possesses this antiquated technology. If not, the function would return `none`. Both the `none` data value and the `some FaxNumber` data value are of the type `option FaxNumber`.
+
+Product types are tuples like `val p1 = (x1, y1, z1);` and records like the following.
+
+```haskell
+val milner =
+{ firstname = "Robin"
+, lastname = "Milner"
+, contributions =
+    [ "Logic for Computable Functions"
+    , "Hindley–Milner Type System"
+    , "Meta Language"
+    , "π-calculus" ] };
+```
+
+Algebraic data types may be understood in terms of their cardinalities. A sum type's cardinality is the sum of the cardinalities of its constituent data types, and a product types's cardinality is the product of the cardinalities of its constituent data types. Ordinarily, types should always be designed to admit only those values that are necessary to allow the programme to work properly, and not more. If a type admits extraneous values, the programmer must implement runtime checks to ensure that the invalid values do not occur, which increases the possibility of programming errors. It is better to rely on the type system and let the compiler eliminate invalid values at compile time.
+
+Most modern programming language, be they OO or FP, support an incarnation of the Hindley-Milner type system. So, today's programmers are generally familiar with the concepts of this type system. But only those who know the proof-automation hereditary of the original version of ML, the LCF/ML, recognise that types are theorems, functions on those types are inference rules, functionals are proof tactics, and type system was there to guarantee the logical validity of theorems.
+
+***exceptions***—Because proof tactics can fail (a dead-end, for instance), higher-order tactics (tacticals) that manipulate tactics employ a failure detection and trapping mechanism, which is equivalent to modern exception handling facilities.
+
+To summarise, functions represent basic computations; functionals manipulate functions to express complex computations, such as proof tactics; and, tacticals manipulate tactics to express complex control flows involving exceptions and retries.
+
 ***modules***—Like other languages, ML supports modules. But ML's module system is unique and powerful. ML modules can be parameterised with other modules. This facility is called *functors*. In category theory, a functor is a map from one category to another category: $F: C → D$. In that sense, a functor $F$ in ML transforms the argument module $C$ into a new resultant module $D$.
 
 It is common practice in programming to use modules to implement commonly used abstract data types, such as lists, trees, graphs, and so on. It is also a usual practice to implement business domain models, such as task, project, workflow, etc. Using ML functors, we may create a list of tasks, a project tree, a workflow graph, and the like. ML supports a domain-specific sublanguage for modules and functors. This module language allows the programmer to specify relations and constraints among the modules. This constraint language is roughly similar to SQL's foreign key specifications.
 
-***anecdote***—At present, FP is enjoying its yet-another round of interest surge in the industry. As such, many experienced programmers are embarking on their quest to conquer FP. Almost universally, these programmers have a strong, and exclusive, background in an OO language, JavaScript, Java, or C#. To learn FP, Java programmers choose Scale, C# programmers F#, Android programmers Kotlin, and iOS programmer Swift. These are all fine, modern, hybrid OO-FP languages. However, since these languages tend to lean more toward OO than FP and the programmers are already fluent in OO, they end up using the FP syntax to write OO semantics programmes. And the design of these languages encourage this.
+An ML module is implemented using a `signature` file and a `structure` file. The `signature` file is analogous to the C `.h` header file, and the `structure` file to the C `.c` implementation file.
+
+***advice***—At present, FP is enjoying its yet-another round of interest surge in the industry. As such, many experienced programmers are embarking on their quest to conquer FP. Almost universally, these programmers have a strong, and exclusive, background in an OO language, JavaScript, Java, or C#. To learn FP, Java programmers choose Scale, C# programmers F#, Android programmers Kotlin, and iOS programmer Swift. These are all fine, modern, hybrid OO-FP languages. However, since these languages tend to lean more toward OO than FP and the programmers are already fluent in OO, they end up using the FP syntax to write OO semantics programmes. And the design of these languages encourage this.
 
 I have seen many OO experts who tried to take up FP suffer the indignity of not being able to think functionally, because they focus on using the FP language's syntax, instead of studying the FP paradigm's semantics. Indeed, most did not even bother learning recursion; instead they fall back upon the built-in imperative looping constructs provided by these hybrid languages. Furthermore, because these popular languages lean heavily toward the industry, most books written about these languages focus on industrial-strength applications. Few good introductory books exist for these languages, and even those few books lean toward applications, not FP theory. This is a somewhat reckless way to wade into the deep, choppy waters of FP.
 
