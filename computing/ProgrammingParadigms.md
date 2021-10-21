@@ -41,7 +41,7 @@ One learns a programming language for these reasons: because it is commercially 
 
 # PARADIGMS
 
-There are two predominant programming paradigms: the *imperative* paradigm, which reflects the way the computing hardware performs its work, and the *declarative* paradigm, which reflects the way the computer scientist thinks about his work.
+There are two predominant programming paradigms: the *imperative* paradigm, which reflects the way the computing hardware performs its work, and the *declarative* paradigm, which reflects the way the computer scientist thinks about his work. In other words, an imperative programme's meaning can only be understood by executing the code in the reader's mind, whereas a declarative programme's code directly expresses its mathematical meaning.
 
 ***imperative paradigm***—Within the imperative paradigm, there are three divisions: machine programming (MP) languages, procedural programming (PP) languages, and object-oriented (OO) languages.
 
