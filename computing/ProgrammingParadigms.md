@@ -478,7 +478,7 @@ Know this. There is no one correct way to learn FP, and there are a great many i
 
 Technically speaking, any FP language could be augmented with RP facilities. Indeed, there are countless "data query" languages: GraphQL, LINQ, OQL, Tutorial D, XQuery, etc. Some of these are hierarchical, others are relational. But SQL is the only RP language in use in the industry, today.
 
-SQL was standardised rather early in the language's lifecycle. But the language was enmeshed into the database product, vendors have put their own glosses on the language to distinguish their products from others. Moreover, the SQL standard itself has mutated through the years. Hence, there are many versions of standards and even more custom extensions. The name "Standard SQL" is thus a cruel joke. SQL is in good company, though; it share with JavaScript the same philosophies on what it means to be standardised.
+SQL was standardised rather early in the language's lifecycle. But because the language was enmeshed into the database product, each vendor has put its unique gloss on the language to distinguish its product. Moreover, the SQL standard itself has mutated through the years. Hence, there are many versions of standards and even more custom extensions. The name "Standard SQL" is thus a cruel joke. SQL is in good company, though; it share with JavaScript the same philosophies on what it means to be standardised.
 
 To master SQL and the RP paradigm, study these:
 
