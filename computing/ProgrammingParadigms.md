@@ -322,7 +322,8 @@ Note that many programmers confuse the term "partially applied function" with "p
 ***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition.
 
 ```Haskell
-fun fac n = if n = 0 then 1 else n * fac (n - 1);
+fun fac 0 = 1
+  | fac n = n * fac (n - 1);
 ```
 
 When this function is invoked as `fac 3`, it computes the following sequence of function invocations that yields the result $6$:
@@ -342,7 +343,8 @@ This simple recursion can be transformed into *tail recursion*. In a tail recurs
 
 ```Haskell
 fun fac n =
-  let fun fac' a n = if n = 0 then a else fac' (a * n) (n - 1)
+  let fun fac' a 0 = a
+        | fac' a n = fac' (a * n) (n - 1)
   in fac' 1 n end;
 ```
 
@@ -410,13 +412,34 @@ datatype 'a option = none | some of 'a;
 
 The above declaration defines a new data type, which is a disjoint union of a `none` case and a `some` case. The `none` case carries no data, but the `some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that returns a fax number of a company would return a value `some FaxNumber` if the company still possesses this antiquated technology. If not, the function would return `none`. Both the `none` data value and the `some FaxNumber` data value are of the type `option FaxNumber`.
 
-Product types are tuples like `val p1 = (x1, y1, z1);` and records like the following.
+A tuple is a product type. A 2D point type can be defined as an alias of a tuple as follows.
+
+```
+type point2D = real * real;
+```
+
+The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`. A tuple literal is written like this. 
+
+```
+val p = (0.25, 2.75) : point2D;
+```
+
+The `: point2D` above is how a value is manually assigned a type in ML. Another commonly used product types is the record type, which can be aliased like this.
+
+```
+type professor =
+  { first : string
+  , last : string
+  , contrib : string list };
+```
+
+Above, `string list` is the list of strings, which is the `list` type parameterised with the element type `string`. Record types have labelled elements and their order does not matter: `{ id: int, name: string }` is identical to `{ name: string, id: int }`. A record literal is written as follows.
 
 ```haskell
-val milner =
-{ firstname = "Robin"
-, lastname = "Milner"
-, contributions =
+val milner : professor =
+{ first = "Robin"
+, last = "Milner"
+, contrib =
     [ "Logic for Computable Functions"
     , "Hindley–Milner Type System"
     , "Meta Language"
