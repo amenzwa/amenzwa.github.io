@@ -9,39 +9,45 @@ use_math: true
 
 To be an efficient programmer, one must master the art of software design and the science of computing (CS). To be an effective thinker, he must learn multiple programming languages from different programming paradigms. In the article *[Programming Languages](ProgrammingLanguages.md)*, I described the different programming paradigms and enumerated a representative list of languages to learn within each paradigm. That article gave a broad overview of programming languages that are currently popular in the IT industry. In this article, I show a way to go beyond merely knowing a few programming languages to mastering various programming paradigms. My goal is to provide programmers with the rudiments of programming paradigms so as to enable them to learn any new programming language.
 
-Note that this article is about exploring, learning, and mastering various programming paradigms. It is a study guide, a roadmap as it were, to learning various programming paradigms, not a tutorial on particular programming languages. Being that this is a high-level, conceptual presentation of programming paradigms, code examples are used sparingly, only where a specific syntax promotes presentation clarity. The reader is expected to study the sources materials mentioned to learn the details of the languages and the paradigms. To put it another way, this guide is written for advanced programmers who wish to expand their theoretical knowledge and programming skills in order to bolster their software development careers, not for novices who are merely seeking to learn a language to secure a programming job.
+Note that this article is about exploring, learning, and mastering various programming paradigms. It is a study guide, a roadmap as it were, to learning various programming paradigms, not a tutorial on particular programming languages. Being that this is a high-level, conceptual presentation of programming paradigms, code examples are used sparingly, only where a specific syntax promotes presentation clarity. The reader is expected to study the cited source materials for details of the languages and the paradigms. To put it another way, this guide is written for advanced programmers who wish to expand their theoretical, paradigmatic knowledge and practical, programming skills, in order to bolster their software development careers; it is not written for novices who are merely seeking to learn a language in order to secure a programming job.
 
-The secondary audience is CS students who are interested in programming language design. All CS undergraduates are introduced to multiple programming paradigms. This article provides tips to these students on how to master various programming paradigms.
+The secondary audience is CS students who are interested in programming language design. All CS undergraduates are introduced to multiple programming paradigms. This article provides self-study tips to these students on how to go beyond the introductions and master the programming paradigms.
 
 There are many programming languages in popular use, and there are equally many ways to learn these languages. But knowing a language does not make one an expert in the paradigm. Indeed, there is but one way to master a programming paradigm: by repeatedly using the design idioms of the paradigm and by writing many programmes in a canonical language of that paradigm.
 
-A novice programmer, say a first-year CS student, typically learns his first programming language this way:
+A novice programmer learns his first programming language this way:
 
-- Study the language manual written by the language designer, focusing on the syntax.
-- Implement small programmes suggested by the end-of-chapter exercises.
+- Study the language manual written by the language designer, focusing on the syntax
+- Implement small programmes in the end-of-chapter exercises that were assigned by the professor
 
-The goal of a novice, at this early stage, is to learn how to use the language, especially the syntactic elements of the language. This practical knowhow, alone, will not make him a good programmer, however. To become a well-rounded programmer, the novice must additionally study CS theory: discrete mathematics, algorithms, complexity theory, and so on. Those interested in CS education may read my article, *[Computer Science Curriculum](CSCurriculum.md)*.
+The goal of a novice, at this early stage, is to learn how to use the language, especially the syntactic elements of the language. This practical knowhow, alone, will not make him a good programmer, however. To become a well-rounded programmer, the novice must additionally study CS theory: discrete mathematics, algorithms, complexity theory, computer architecture, and so on. Those interested in CS education may read my article, *[Computer Science Curriculum](CSCurriculum.md)*.
 
-An experienced programmer, especially one who has already learned a handful of different languages, picks up a new programming language in a very different way:
+An experienced programmer picks up a new programming language in a very different way:
 
-- Study the language manual written by the language designer, focusing on the semantics.
-- Implement small projects, either from the exercises or from his repertoire of favourite problems.
-- Apply the language in a commercial setting, thereby deepening his knowledge of the language.
+- Study the language manual written by the language designer, focusing on the semantics
+- Implement small projects, either from the exercises or from his repertoire of favourite problems
+- Apply the language in a commercial setting, thereby deepening his understanding
 
-When a conscientious programmer studies a new programming language, he not only learns the static, syntactic structures of programming languages, but also absorbs the dynamic, semantic behaviours of various programming paradigms to which these languages belong. And he takes in a bit of historical background of both the paradigm and the language. He reads the texts (yes, plural) that have been written about that language, preferably by the one who designed the language or by those who are active in that community. He does the end-of-chapter exercises in the texts. His reading list includes definitive textbooks, academic papers, and official online documentation. For a more effective learning, he additionally employs the paradigm's prescribed design techniques and the language's preferred implementation techniques to solve a few pet problems that are substantive but not too complicated—for instance, graph algorithms, neural network algorithms, computer graphics algorithms, or comparable ones. This is the most effective, proven way, regardless of whether one is learning the language in a formal, classroom setting or in an informal, bedroom setting.
+When a conscientious programmer studies a new programming language, he not only learns the static, syntactic structures of programming languages, but also absorbs the dynamic, semantic behaviours of various programming paradigms to which these languages belong. And he takes in a bit of historical background of both the paradigm and the language. He reads the texts (yes, plural) that have been written about that language, preferably by the one who designed the language or by those who are active in that community. He does the end-of-chapter exercises in the texts. His reading list includes definitive textbooks, academic papers, and official online documentation. For a more effective learning, he additionally employs the paradigm's prescribed design concepts and the language's preferred implementation idioms to solve a few pet problems that are substantive but not too complicated, for instance, graph algorithms, neural network algorithms, computer graphics algorithms, or comparable ones. This is the most effective, proven way, regardless of whether one is learning the language in a formal, classroom setting or in an informal, bedroom setting.
 
 An expert programmer masters a programming paradigm as follows:
 
-- Study the underlying theories of the paradigm, and identify the concepts that distinguish the paradigm.
-- Study a canonical language of the paradigm, focusing on the language's support for the key concepts.
-- Implement small projects to master the implementation practices of the language.
-- Implement a large project to master the design theories of the paradigm.
+- Study the underlying theories of the paradigm, and identify the concepts that distinguish the paradigm
+- Study a canonical language of the paradigm, focusing on the language's support for the key concepts
+- Implement small projects to master the implementation practices of the language
+- Implement a large project to master the design theories under the paradigm
 
-One learns a programming language for these reasons: because it is commercially *successful* in the industry; because it is intellectually *influential* in academia among programming language designers; or because it is *both* influential and successful. Below, I suggest a way to master four languages in four different paradigms. Absorbing these languages and their respective paradigms will equip one with the fundamentals necessary to pick up new languages that are, or may become, popular.
+One learns a programming language for these reasons: because it is commercially *successful* in the industry; because it is intellectually *influential* in academia among programming language designers; or because it is *both* influential and successful. Below, I suggest a way to master four languages in four paradigms. These four paradigms are the ones used extensively in the IT industry. And these languages are canonical languages in their respective paradigms, all have been successful, and all continue to be influential. Absorbing these languages and their respective paradigms will equip one with the fundamentals necessary to pick up any language—either existing or yet to be invented—in those paradigms.
+
+Before we proceed, I would like to reemphasise the following oft-overlooked, but important, points. Knowing how to use a language is not the same as understanding how to use it well. To use a language properly in an application environment (scientific, engineering, business, etc.), one must have done these in advance:
+
+- Learn the language's idioms
+- Master the paradigm's concepts
+- Grasp the environment's drivers
 
 # PARADIGMS
 
-There are two predominant programming paradigms: the *imperative* paradigm, which reflects the way the computing hardware performs its work, and the *declarative* paradigm, which reflects the way the computer scientist thinks about his work. In other words, an imperative programme's meaning can only be understood by executing the code in the reader's mind, whereas a declarative programme's code directly expresses its mathematical meaning.
+There are two predominant programming paradigms: the *imperative* paradigm, which reflects the way the computing hardware performs its work, and the *declarative* paradigm, which reflects the way the computer scientist thinks about his work. To look at it another way, whereas an imperative programme's meaning can only be understood by executing the code in the reader's mind, a declarative programme's meaning is patent in the code.
 
 ***imperative paradigm***—Within the imperative paradigm, there are three divisions: machine programming (MP) languages, procedural programming (PP) languages, and object-oriented (OO) languages.
 
@@ -65,7 +71,7 @@ Compare the data manipulation philosophies, for example. An imperative programme
 
 Today, PP is used almost exclusively in system programming. OO is predominant in business computing, but its use is widespread in system programming, too. Until recently, FP was used primarily in academic research and scientific computing but, of late, FP has become the IT industry's darling of the day. It took the industry four decades to appreciate all that FP has to offer. As mentioned above, RP is used only in database programming, but all modern applications use databases, so RP is significant. MP is used exclusively for hardware-proximate uses, such as operating systems, games, and microcontroller, and even in those domains, only rarely. In the heyday of AI in the 1980s, LP (Prolog) was nearly as prominent as LISP. But now, LP is confined to academia. Since this article is aimed mainly at enterprise programmers working in the IT industry, I shall discuss only PP, OO, FP, and RP paradigms.
 
-## *procedural*
+# PROCEDURAL
 
 C is the quintessential PP language, which is now more than half-a-century old. Indeed, C is the most successful PP language still in heavy use. Despite its age, C has remained essentially unaltered over time, because its design, from the very beginning, matched its purpose: for creating software that hugs the hardware, such as infrastructure application, operating system (OS), device driver, digital signal processing (DSP), etc.
 
@@ -87,7 +93,7 @@ To master C and the PP paradigm, study these:
   - [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)—SoC with ARM Cortex-A72 CPU (A-profile for high-performance application)
   - [STM32F411VE](https://www.st.com/en/evaluation-tools/32f411ediscovery.html)—MCU with ARM Cortex-M4 CPU (M-profile for low-power microcontroller)
 
-### PP CONCEPTS
+## *PP concepts*
 
 In PP, the key organising principle is the procedure. A *procedure* is a named sequence of statements. Ordinarily, a procedure, by its constituent statements, accesses and mutates some global data. This behaviour is referred to as *side effect*. The behaviour of a procedure can be controlled by providing it a set of input parameters. Although a return value is not mandatory, a procedure can return a result.
 
@@ -97,7 +103,7 @@ A PP programme is designed by grouping reusable behaviours into procedures. At r
 
 Large PP programmes often use modules as the next higher level of programme organisation. A *module* contains its own data and procedures, which other modules may use.
 
-### C CONCEPTS
+## *C concepts*
 
 C is a small, simple language; it can be learned in a day. But it takes an ordinary programmer a couple of years to master the language. The reason for this difficulty is that although the language is simple, it is very close to the hardware. As such, the programmer is exposed to the intricacies of the hardware. The programmer must develop a mechanical sympathy for the computer. He must first acquaint himself with the computer's architecture, before he could wield C's power.
 
@@ -115,9 +121,9 @@ C employs a static type system, but a rather weak one at that: it provides no su
 
 ***purpose of C***—It is important to recognise that C was created to implement operating systems at a time when even the most expensive computers had a 24-bit CPU and 1 MB of RAM, and many had only a 16-bit CPUs and 16 KB of RAM. The ability directly to manipulate the hardware was of paramount importance to C. The designers did not equip C with sophisticated high-level abstraction facilities, because such features were unnecessary for the intended purpose and they would only have bloated the language. Although C was used on many enterprise-scale projects in the 1980s, it was clear to everyone that this was not the application domain that suited C. OO thus came to the rescue. Today, C has returned to its roots: small-scale, hardware-level programming. Hence, an experienced programmer who uses C should be familiar with at least one microcontroller platform, such as the popular ARM Cortex-M family.
 
-Do note that C, the language, is eminently capable of handling any level of complexity. It is the average C programmer who cannot. Very few large projects now use C. The Linux kernel is one of those few. This famous open-source project admits into their midst only the most proficient C programmers.
+Do note that C, the language, is eminently capable of handling any level of complexity; it is the average C programmer who cannot. For this reason, only a few large projects use C, these days. The Linux kernel is one of those few. This famous open-source project admits into their midst only the most proficient C programmers.
 
-## *objective*
+# OBJECTIVE
 
 In the 1990s, the IT industry was consumed by an almost-irrational enthusiasm for OO. There were many reasons why the industry adopted OO wholesale, but the primary motivator was the desire to manage the rampant increase in software complexity.
 
@@ -148,7 +154,7 @@ To master Smaltalk and the OO paradigm, study these:
 - For historical background, read the definitive programming manual for the original Xerox Smalltalk.
   - *[Smalltalk-80: The Language and its Implementation](http://stephane.ducasse.free.fr/FreeBooks/BlueBook/Bluebook.pdf)* (Blue Book), Goldberg (Smalltalk team member)
 
-### OO CONCEPTS
+## *OO concepts*
 
 The state of an entire PP programme is held inside a large, global data structure. Any procedure can access this data structure, at will. In large, complex programmes, this unrestrained mutation of global data leads to chaos.
 
@@ -166,7 +172,7 @@ Designing an OO programme is a matter of finding discrete concepts, naming them,
 
 Despite the humble beginnings, however, OO has, over the years, amassed an exasperatingly unwieldy amount of glossy theories and swanky idioms, among which the SOLID principle and the GoF Patterns are the most famous. But all theories and idioms can be viewed as mere practical conventions for deciding what responsibility to assign to which class, in order to ensure software remains maintainable as its design ages.
 
-### SMALLTALK CONCEPTS
+## *Smalltalk concepts*
 
 The core concepts of Smalltalk are inheritance, class, object, method, and message, which are the fundamental concepts of OO; nothing is special, there. What makes Smalltalk special is the understated way it achieves its express power through simple design and harmonious philosophy.
 
@@ -212,7 +218,7 @@ Like my colleagues, I was versed in C and assembly, when I learned Smalltalk a f
 
 This experience taught me that when learning something wholly new it is best to check prejudices and predilections, and that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is an exercise in assiduity while being receptive. Humility is the trait from which both hard work and open mind sprang. Do not be seduced by the "my way is the only way" mentality. The best way sways in the blistering winds of trend and it is soon buried under the drifting sands of time. Humility does not. So, strive to be humble. Learn.
 
-## *functional*
+# FUNCTIONAL
 
 Fortunes of FP seem to wax and wane in decennial cycles. LISP, the world's second high-level language (after FORTRAN) and the first FP language, came out in the 1950s. Naturally, there was much enthusiasm for both FORTRAN and LISP, because most programmers at the time were programming in various assembly languages.
 
@@ -253,7 +259,7 @@ To master Standard ML and the FP paradigm, study these (NB—all texts in this l
 - Study category theory to learn the deep, sublime mathematical concepts that underlie computation in general and FP in particular. This book is based on Haskell, and uses more advanced features of the language. But the mathematical ideas presented in it are accessible to all FP programmers.
   - *[Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf/releases/download/v1.3.0/category-theory-for-programmers.pdf)*, Milewski
 
-### FP CONCEPTS
+## *FP concepts*
 
 From the perspective of state management, OO is but a gloss on PP. PP holds all programme state in a global data structure. Computation progresses when procedures mutate the global data. Of course, the procedures can mutate that global data, without restraint. On the other hand, OO apportions the programme state amongst autonomous objects who guard their own pieces of data. Computation progresses when objects exchange messages amongst themselves, which result in controlled, coordinated mutation of the disparate pieces of programme state. Despite these outward differences, both PP and OO propel computation by mutating programme state.
 
@@ -317,7 +323,7 @@ Note that many programmers confuse the term "partially applied function" with "p
 
 ***sections***—A *section* is a partially applied dyadic operator. For instance, when the $+$ operator is partially applied to only one value, as in $(+1)$, it automatically returns a function $g : x → x + 1$. When $g$ is applied to value $3$, it returns  $3 + 1 = 4$. The function $g$ could be used as the increment operator.
 
-### ML CONCEPTS
+## *ML concepts*
 
 ***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition.
 
@@ -468,11 +474,11 @@ A better way to learn FP is to immerse oneself in theory textbooks, and to use a
 
 Know this. There is no one correct way to learn FP, and there are a great many incorrect ways to learn FP. Given the theory-centric nature of FP, though, a sensible approach is to absorb theory, instead of merely skimming for the syntax. The syntax of a programming language is important to an experienced practitioner, because a clean syntax enables him to be productive, both in creating new programmes and in maintaining old ones. But for a novice, the semantics of the underlying programming paradigm holds a greater import, for without a grasp of the FP paradigm, one cannot create good designs in an FP language.
 
-## *relational*
+# RELATIONAL
 
 Technically speaking, any FP language could be augmented with RP facilities. Indeed, there are countless "data query" languages: GraphQL, LINQ, OQL, Tutorial D, XQuery, etc. Some of these are hierarchical, others are relational. But SQL is the only RP language in use in the industry, today.
 
-SQL was standardised rather early in the language's lifecycle, but the language has continually adopted technological advances, and hence there are many versions of standards and many more custom extensions. The name "Standard SQL" is thus a bad joke. SQL is in good company, though; it share with JavaScript similar philosophies on what it means to be standardised.
+SQL was standardised rather early in the language's lifecycle. But the language was enmeshed into the database product, vendors have put their own glosses on the language to distinguish their products from others. Moreover, the SQL standard itself has mutated through the years. Hence, there are many versions of standards and even more custom extensions. The name "Standard SQL" is thus a cruel joke. SQL is in good company, though; it share with JavaScript the same philosophies on what it means to be standardised.
 
 To master SQL and the RP paradigm, study these:
 
@@ -487,7 +493,7 @@ To master SQL and the RP paradigm, study these:
 - Download and experiment with an open-source data set of adequate complexity and intricacy to gain experience in manipulating data using SQL.
   - [Open Data](https://www.freecodecamp.org/news/https-medium-freecodecamp-org-best-free-open-data-sources-anyone-can-use-a65b514b0f2d/)
 
-### RP CONCEPTS
+## *RP concepts*
 
 The relational model, the mathematical foundation of relational databases, is built upon first-order logic and relational computation model. Relational computation can be accomplished through imperative relational algebra or, equivalently, through declarative relational calculus. Relational algebra is used in practice.
 
@@ -508,7 +514,7 @@ t = [ r1
       r.i = [ (f1, f2, ...) | f1 ← C1, f2 ← C2, ... ]
 ```
 
-### SQL CONCEPTS
+## *SQL concepts*
 
 Just as FP language ML is a realisation of λ-calculus, RP language SQL is a realisation of relational calculus. But ML is not a faithful to the ideals of λ-calculus; ML includes imperative facilities. Likewise, SQL deviates from relational calculus, and includes imperative elements.
 
