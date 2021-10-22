@@ -170,7 +170,7 @@ A category theory point of view simplifies the matter: a class is a product type
 
 Designing an OO programme is a matter of finding discrete concepts, naming them, and creating classes for them. A banking simulator, for example, would have classes like `Bank`, `Teller`, `Queue`, `Customer`, `Account`, and so on.
 
-Despite the humble beginnings, however, OO has, over the years, amassed an exasperatingly unwieldy amount of glossy theories and swanky idioms, among which the SOLID principle and the GoF Patterns are the most famous. But all theories and idioms can be viewed as mere practical conventions for deciding what responsibility to assign to which class, in order to ensure software remains maintainable as its design ages.
+Despite the humble beginnings, however, OO has, over the years, amassed an exasperatingly unwieldy amount of glossy theories and swanky idioms, like SOLID principle, covariance, contravariance, patterns, and anti-patterns. But all theories and idioms can be viewed as mere practical conventions for deciding what responsibility to assign to which class, in order to ensure software remains maintainable as its design ages.
 
 ## *Smalltalk concepts*
 
