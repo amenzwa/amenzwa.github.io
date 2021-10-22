@@ -424,7 +424,7 @@ datatype 'a option = None | Some of 'a;
 
 The `datatype` declaration defines a new sum type as a disjoint union of the specified, non-overlapping cases. The type uses the "or" `|` operator to indicate that a value of this type may hold only one case at a time, and that the total values representable by the type is the union of all the values representable by the individual disjoint cases.
 
-In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that extracts a fax number from a value of `company` type would return a value `Some Fax` if the company still uses this antiquated technology, but `None` otherwise. Both the `None` and the `Some Fax` data values are typed `Fax option`.
+In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that accesses a file would return `Some file` if the file exists, but would return `None` if it does not exist.
 
 An oft-used *product* type is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows.
 
@@ -467,6 +467,15 @@ Most modern programming language, be they OO or FP, support an incarnation of th
 ***exceptions***—Because proof tactics can fail (a dead-end, for instance), higher-order tactics (tacticals) that manipulate tactics employ a failure detection and trapping mechanism, which is equivalent to modern exception handling facilities.
 
 To summarise, functions represent basic computations; functionals manipulate functions to express complex computations, such as proof tactics; and, tacticals manipulate tactics to express complex control flows involving exceptions and retries.
+
+There are a few general guidelines for modelling unusual situations:
+
+- *absence*: If a value is missing and such a situation is a matter of course, represent the missing value using the `option` type. For example, the middle name field in a `person` record would be assigned the `middle : string option` type, since it is not uncommon for people to not have the middle name.
+- *salvageable issue*: When an undesirable, but not unexpected, situation arises where it is sensible for the programme to attempt to resolve the issue, throw an exception, catch it, and retry for a fixed number of times. For example, a connection attempt to a server failed, perhaps because the server was busy, and another connection attempt after a suitable delay might succeed.
+- *unsalvageable issue*: When an undesirable, but not unexpected, situation arises where it is impossible for the programme to proceed, throw an exception and let the user cope with the matter. For example, a necessary configuration file is missing, and there is nothing the programme could do.
+- *bug*: Upon encountering unexpected and irrecoverable situations—a bug—like divide-by-zero or out-of-stack-space fatal error, let the programme $⊥$, let the programmer fix the bug.
+
+Do keep in mind that these are mere guidelines. The programmer must use his technical judgement and his domain knowledge to represent exceptional situations precisely and logically to suit the application.
 
 ***modules***—Like other languages, ML supports modules. But ML's module system is unique and powerful. ML modules can be parameterised with other modules. This facility is called *functors*. In category theory, a functor is a map from one category to another category: $F: C → D$. In that sense, a functor $F$ in ML transforms the argument module $C$ into a new resultant module $D$.
 
