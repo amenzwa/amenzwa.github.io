@@ -119,7 +119,9 @@ A typical C programme is divided into *modules*. Physically, a module is a file.
 
 C employs a static type system, but a rather weak one at that: it provides no substantive type safety. Programmers, thus, rely on an elaborate set of conventions and idioms as a form of manual type safety protocol. The combination of a weak type system and a permissive, pointer-based memory access techniques make C programmes prone of many kinds of runtime errors, which invariably result in the all-too-familiar console message, "Segmentation fault (core dumped)". This message means that the programme had somehow trampled upon a region of memory not allotted to it, and as a consequence UNIX has forcibly terminated it and has preserved its memory state in a file named `core` for later examination by the programmer using low-level debugging tools. Modern C programmers do not use such low-level tools; instead they use a sophisticated, GUI-driven IDE with an integrated debugger.
 
-***purpose of C***—It is important to recognise that C was created to implement operating systems at a time when even the most expensive computers had a 24-bit CPU and 1 MB of RAM, and many had only a 16-bit CPUs and 16 KB of RAM. The ability directly to manipulate the hardware was of paramount importance to C. The designers did not equip C with sophisticated high-level abstraction facilities, because such features were unnecessary for the intended purpose and they would only have bloated the language. Although C was used on many enterprise-scale projects in the 1980s, it was clear to everyone that this was not the application domain that suited C. OO thus came to the rescue. Today, C has returned to its roots: small-scale, hardware-level programming. Hence, an experienced programmer who uses C should be familiar with at least one microcontroller platform, such as the popular ARM Cortex-M family.
+***purpose of C***—It is important to recognise that C was created to implement operating systems at a time when the most powerful computers had a 24-bit CPU and 1 MB of RAM, and many expensive ones had only a 16-bit CPUs and 16 KB of RAM. The ability directly to manipulate the hardware was of paramount importance to C. The designers did not equip C with sophisticated high-level abstraction facilities, because such features were unnecessary for the intended purpose and they would only have bloated the language. Viewed in this light, it is understandable, and indeed quite forgivable, that C's static type system does not provide any runtime safeties, since safety comes at the cost of performance.
+
+Although C was used on many enterprise-scale projects in the 1980s, it was clear to everyone that this was not the application domain that suited C. OO thus came to the rescue. Today, C has returned to its roots: small-scale, hardware-level programming. Hence, an experienced programmer who uses C should be familiar with at least one microcontroller platform, such as the popular ARM Cortex-M family.
 
 Do note that C, the language, is eminently capable of handling any level of complexity; it is the average C programmer who cannot. For this reason, only a few large projects use C, these days. The Linux kernel is one of those few. This famous open-source project admits into their midst only the most proficient C programmers.
 
@@ -408,23 +410,29 @@ fun constant x = 9;
 
 In an eager language like ML, if this function is invoked as `constant (1/0)`, the computation yields the $⊥$, because the eager evaluation strategy reduces the input expression `1/0` first, before invoking the `constant` function. That reduction immediately produces the divide-by-zero error. But in a lazy language like Haskell, this computation results in `9`, because the lazy evaluation strategy passes to the `constant` function the unevaluated input expression `1/0`. Being a constant function, `constant` simply ignores the input expression, and returns `9`. Hence, functions are strict in an eager language, and they are non-strict in a lazy language.
 
-***types***—ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like lists and trees, to hold values of different types: `int list` is a list of integers; `float list` is a list of reals.
+***types***—A type is a set of values. Using the facilities provided by the type system, the programmer crafts a type to admit only those values that are valid in the context of the programme. In a statically typed FP language like ML, this validity check is performed during compilation.
 
-ML was the first popular FP language to provide support for algebraic data types (not the same as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The well-known `option` type is an example of a sum type.
+ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like lists and trees, to hold values of different types: `int list` is a list of integers; `float list` is a list of reals.
+
+ML was the first popular FP language to provide support for algebraic data types (not the same as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The term "algebraic" derives from the fact that these types allow the programmer to construct complex types from simpler types using sum and product operators, not unlike using $+$ and $×$ operators to form complex arithmetic expressions.
+
+The well-known `option` type is a *sum* type.
 
 ```haskell
-datatype 'a option = none | some of 'a;
+datatype 'a option = None | Some of 'a;
 ```
 
-The above declaration defines a new data type, which is a disjoint union of a `none` case and a `some` case. The `none` case carries no data, but the `some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that returns a fax number of a company would return a value `some FaxNumber` if the company still possesses this antiquated technology. If not, the function would return `none`. Both the `none` data value and the `some FaxNumber` data value are of the type `option FaxNumber`.
+The `datatype` declaration defines a new sum type as a disjoint union of the specified, non-overlapping cases. The type uses the "or" `|` operator to indicate that a value of this type may hold only one case at a time, and that the total values representable by the type is the union of all the values representable by the individual disjoint cases.
 
-A tuple is a product type. A complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows.
+In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that extracts a fax number from a value of `company` type would return a value `Some Fax` if the company still uses this antiquated technology, but `None` otherwise. Both the `None` and the `Some Fax` data values are typed `Fax option`.
+
+An oft-used *product* type is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows.
 
 ```
 type complex = real * real;
 ```
 
-The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`. A tuple literal is written like this. 
+The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`, even though that they both have the same information content. A tuple literal is written like this.
 
 ```
 val c = (0.25, 2.75) : complex;
@@ -452,7 +460,7 @@ val milner : professor =
     , "π-calculus" ] };
 ```
 
-Algebraic data types may be understood in terms of their cardinalities. A sum type's cardinality is the sum of the cardinalities of its constituent data types, and a product types's cardinality is the product of the cardinalities of its constituent data types. Ordinarily, types should always be designed to admit only those values that are necessary to allow the programme to work properly, and not more. If a type admits extraneous values, the programmer must implement runtime checks to ensure that the invalid values do not occur, which increases the possibility of programming errors. It is better to rely on the type system and let the compiler eliminate invalid values at compile time.
+Algebraic data types may be understood in terms of their cardinalities. A sum type's cardinality is the sum of the cardinalities of its constituent data types, and a product types's cardinality is the product of the cardinalities of its constituent data types. Ordinarily, types should always be designed to admit only those values that are necessary to allow the programme to work properly, and not more. If a type admits extraneous values, the programmer is then obliged to implement runtime checks to ensure that the invalid values do not occur, which increases the possibility of programming errors. It is better to rely on the type system and let the compiler eliminate invalid values at compile time.
 
 Most modern programming language, be they OO or FP, support an incarnation of the Hindley-Milner type system. So, today's programmers are generally familiar with the concepts of this type system. But only those who know the proof-automation hereditary of the original version of ML, the LCF/ML, recognise that types are theorems, functions on those types are inference rules, functionals are proof tactics, and type system was there to guarantee the logical validity of theorems.
 
