@@ -351,7 +351,7 @@ fac 3
 
 Each step in the evaluation of `fac` contains a call to itself. This is the simplest form of recursion. The symbol $⇒$ above means "reduces to".
 
-This simple recursion can be transformed into *tail recursion*. In a tail recursion, the final step in the function is a recursive invocation of itself without additional computation. In the simple recursion version above, the final step in the `else` branch is `n * fac (n - 1)`. That means the result of the recursive invocation `fac (n - 1)` is an intermediate step, not the final step. The tail-recursive version of `fac` is this:
+This primitive recursion can be transformed into *tail recursion*. In a tail recursion, the final step in the function is a recursive invocation of itself without additional computation. In the primitive recursion version above, the final step in the `else` branch is `n * fac (n - 1)`. That means the result of the recursive invocation `fac (n - 1)` is an intermediate step, not the final step. The tail-recursive version of `fac` is this:
 
 ```Haskell
 fun fac n =
@@ -360,7 +360,7 @@ fun fac n =
   in fac' 1 n end;
 ```
 
-This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent a quantity that is similar but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention to label subtly different quantities, as we did here with `fac` and `fac'`. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$:
+This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent quantities that are similar, but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$:
 
 ```Haskell
 fac 3
@@ -373,26 +373,28 @@ fac 3
 
 Unlike the simply recursive version, the compiler transforms tail-recursive calls into the CPU's jumps instructions, thereby eliminating space and time overheads associated with function calls. In other words, the sequence of calls to `fac'` above are evaluated within the same stack frame as the call to `fac`. In essence, the compiler transformed this tail-recursive call into a `for` loop.
 
-I have written the consecutive calls to `fac'` without indentation to highlight the absence of function invocations. And for clarity, I have also labelled the arguments of `fac'` with an `a` and an `n`. The `a` here means "accumulator". The use of a local function and an accumulator to transform a simple recursion into a tail recursion is a common practice in FP.
+I have written the consecutive calls to `fac'` without indentation to highlight the absence of function invocations. And for clarity, I have also labelled the arguments of `fac'` with an `a` and an `n`. The `a` here means "accumulator". The use of a local function and an accumulator to transform a primitive recursion into a tail recursion is a common practice in FP.
 
 ***functional operators***—Recursion is essential. Recursion is elegant. In FP , recursion is everywhere: data structures are recursive, and the functions that operate upon them are recursive. The recursive structure of the list length algorithm we examined above appears in computation of the sum of a list of numbers, the product of a list of numbers, to concatenate a list of string, and so on.
 
-Recursion is an abstraction over repetition. But now, we see that recursion itself is getting repetitive, the same recursive form appearing in many different algorithms. It tuns out that this recursive solution structure can be abstracted into a higher-order operator `foldr` (fold right). This operator collapses a sequence of values into a single value, starting from the right. This functional operator uses an externally supplied collapsing function. In the case of list sum, that collapsing function is the $+$ operator. In the case of list product, it is the $×$ operator. In the case of list of strings, it is the string concatenation operator.
+Recursion is an abstraction over repetition. But now, we see that recursion itself is getting repetitive, the same recursive form appearing in many different algorithms. This primitive-recursive structure has as mathematical analogue called the *monoid* (not the same as monad). In abstract algebra, a monoid is a set equipped with as associative binary operator and an identity element. A common monoidal operation is to combine the elements of the set using the binary operator.
 
-The list length algorithm above can be implemented in Standard ML like this:
+The higher-order function `foldr` (fold right) captures this monoidal operation. `foldr` collapses a list of values into a single value, starting by combining the right-most element of the list with the supplied initial value. This functional operator uses an externally supplied combining function and initial value. In the case of list sum, that collapsing function is the $+$ operator and the initial value is $0$, which is the identity of the $+$. In the case of list product, the operator is $×$ and the identity value is $1$. In the case of list of strings, the operator is the string concatenation operator and the identity value is the empty string `""`.
+
+The list length algorithm mentioned above can be implemented in Standard ML like this:
 
 ```Haskell
 fun len [] = 0
   | len (x::xs) = 1 + len xs;
 ```
 
-The recursive structure of the `len` function can be captured using `foldr` like this:
+The primitive-recursive solution structure of `len` can be captured using `foldr` monoidal operator like this:
 
 ```Haskell
 List.foldr (fn (_, a) => 1 + a) 0 xs;
 ```
 
-The expression `fn (_, a) => 1 + a` is the collapsing λ function, which uses an accumulator `a`. The $0$ is the initial value for the accumulator. And the  `xs` is the list whose length we are computing. The left-start counterpart of `foldr` is `foldl`. The `fold` operator has many other superpowers, but its main use is to collapse a sequence of values into some form of a summary value.
+The expression `fn (_, a) => 1 + a` is the collapsing λ function, which uses an accumulator `a`. The $0$ is the initial value for the accumulator. And the  `xs` is the list whose length we are computing. The left-starting counterpart of `foldr` is `foldl`. The `fold` operator has many other superpowers, but its main use is to collapse a list of values into some form of summary value.
 
 Another oft-used functional operator is `map`, which applies the supplied λ function to the list. Whereas `fold` collapses the list into a single value, `map` preserves the original structure of the list. This is how to apply a squaring λ function `fn x ⇒ x * x` to the each element of the list `xs`:
 
