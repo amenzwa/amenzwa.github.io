@@ -178,13 +178,13 @@ Despite the humble beginnings, however, OO has, over the years, amassed an exasp
 
 The core concepts of Smalltalk are inheritance, class, object, method, and message, which are the fundamental concepts of OO; nothing is special, there. What makes Smalltalk special is the understated way it achieves its express power through simple design and harmonious philosophy.
 
-The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the class `Stratocaster`, one sends the `new:` message to the global object that represents this class which, incidentally, is named `Stratocaster`.
+The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the class `Stratocaster`, one sends the `new:` message to the global object that represents this class which, incidentally, is named `Stratocaster`:
 
 ```
 redStrat := Stratocaster new: 'Fender Custom Shop' color: 'Fiesta Red'
 ```
 
-Likewise, sending the `subclass:` message to an existing class creates a derived class with the specified name.
+Likewise, sending the `subclass:` message to an existing class creates a derived class with the specified name:
 
 ```Smalltalk
 ElectricGuitar subclass: #Stratocaster
@@ -192,7 +192,7 @@ ElectricGuitar subclass: #Stratocaster
 
 Computation is performed by sending messages to objects. For example, `5 factorial` computes $5! = 120$. Here, the receiver is the `Integer` object `5` and the message is `factorial`.
 
-The conditional expression, too, is implemented as a message.
+The conditional expression, too, is implemented as a message:
 
 ```Smalltalk
 b ifTrue: [csq] ifFalse: [alt]
@@ -200,7 +200,7 @@ b ifTrue: [csq] ifFalse: [alt]
 
 Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[csq]` and `[alt]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[csq]` block is evaluated, and otherwise, the `[alt]` is evaluated.
 
-A count-up loop over integers is written as follows.
+A count-up loop over integers is written as follows:
 
 ```Smalltalk
 1 to: 10 do: [:i | i printNl]
@@ -244,9 +244,11 @@ In truth, any new language in popular use today can be used to study FP, because
 
 On the other hand, OCaml, Haskell, and especially Standard ML, have extensive collection of books written by CS professors and IT practitioners alike. These books span the gamut: gentle introductions, heavy-duty industrial applications, compiler constructions, explorations of category theory, the lot.
 
-Haskell has a reputation for being difficult to learn and even more difficult to teach. Indeed, one cannot write a "Hello, World!" in Haskell, unless one understands the concept of *monad*, which is a rather high bar for novice FP programmers. OCaml is easier to learn, but its OO facilities may distract novices who are endeavouring to learn FP. And both Haskell and OCaml are large, complex languages that are continually evolving.
+Haskell has a reputation for being difficult to learn and even more difficult to teach. Indeed, one cannot write a "Hello, World!" in Haskell, unless one understands the concept of *monad*, which is a rather high bar for novice FP programmers.
 
-But Standard ML, the version of ML that was standardised in 1997, is stable and its core is comparatively tiny. And it has been around for a long time, and is used extensively in academia as a teaching language. As such, there are many more textbooks on Standard ML that are accessible to FP novices. Practically speaking, since OCaml, Haskell, and almost every modern FP language either descended from or was inspired by ML, it is fairly straightforward for an ML programmer to pick up those newer languages. For these reasons, Standard ML is considered by many to be the best language in which to learn FP. From a philosophical viewpoint, Standard ML is the still-vibrant seminal language that gave birth to almost all modern FP languages. For that reason alone, it deserves to be studied.
+OCaml is easier to learn, but its OO facilities may distract novices who are endeavouring to learn FP. And both Haskell and OCaml are large, complex languages that are continually evolving.
+
+But Standard ML, the version of ML that was standardised in 1997, is stable and its core is comparatively tiny. And it has been around for a long time, and is used extensively in academia as a teaching language. As such, there are many more textbooks on Standard ML that are accessible to FP novices. Practically speaking, since OCaml, Haskell, and almost every modern FP language either descended from or was inspired by ML, it is fairly straightforward for an ML programmer to pick up those newer languages. For these reasons, Standard ML is considered by many to be the best language in which to learn FP. From a philosophical viewpoint, Standard ML is a still-vibrant, seminal language that gave birth to almost all modern FP languages. For that reason alone, Standard ML deserves to be studied.
 
 To master Standard ML and the FP paradigm, study these (NB—all texts in this list were written by famous personalities in CS who are active in the FP community):
 
@@ -329,7 +331,7 @@ Note that many programmers confuse the term "partially applied function" with "p
 
 ## *ML concepts*
 
-***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition.
+***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition:
 
 ```Haskell
 fun fac 0 = 1
@@ -349,7 +351,7 @@ fac 3
 
 Each step in the evaluation of `fac` contains a call to itself. This is the simplest form of recursion. The symbol $⇒$ above means "reduces to".
 
-This simple recursion can be transformed into *tail recursion*. In a tail recursion, the final step in the function is a recursive invocation of itself without additional computation. In the simple recursion version above, the final step in the `else` branch is `n * fac (n - 1)`. That means the result of the recursive invocation `fac (n - 1)` is an intermediate step, not the final step. The tail-recursive version of `fac` is this.
+This simple recursion can be transformed into *tail recursion*. In a tail recursion, the final step in the function is a recursive invocation of itself without additional computation. In the simple recursion version above, the final step in the `else` branch is `n * fac (n - 1)`. That means the result of the recursive invocation `fac (n - 1)` is an intermediate step, not the final step. The tail-recursive version of `fac` is this:
 
 ```Haskell
 fun fac n =
@@ -358,7 +360,7 @@ fun fac n =
   in fac' 1 n end;
 ```
 
-This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent a quantity that is similar but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention to label subtly different quantities, as we did here with `fac` and `fac'`. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$.
+This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent a quantity that is similar but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention to label subtly different quantities, as we did here with `fac` and `fac'`. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$:
 
 ```Haskell
 fac 3
@@ -377,14 +379,14 @@ I have written the consecutive calls to `fac'` without indentation to highlight 
 
 Recursion is an abstraction over repetition. But now, we see that recursion itself is getting repetitive, the same recursive form appearing in many different algorithms. It tuns out that this recursive solution structure can be abstracted into a higher-order operator `foldr` (fold right). This operator collapses a sequence of values into a single value, starting from the right. This functional operator uses an externally supplied collapsing function. In the case of list sum, that collapsing function is the $+$ operator. In the case of list product, it is the $×$ operator. In the case of list of strings, it is the string concatenation operator.
 
-The list length algorithm above can be implemented in Standard ML like this.
+The list length algorithm above can be implemented in Standard ML like this:
 
 ```Haskell
 fun len [] = 0
   | len (x::xs) = 1 + len xs;
 ```
 
-The recursive structure of the `len` function can be captured using `foldr` like this.
+The recursive structure of the `len` function can be captured using `foldr` like this:
 
 ```Haskell
 List.foldr (fn (_, a) => 1 + a) 0 xs;
@@ -392,13 +394,13 @@ List.foldr (fn (_, a) => 1 + a) 0 xs;
 
 The expression `fn (_, a) => 1 + a` is the collapsing λ function, which uses an accumulator `a`. The $0$ is the initial value for the accumulator. And the  `xs` is the list whose length we are computing. The left-start counterpart of `foldr` is `foldl`. The `fold` operator has many other superpowers, but its main use is to collapse a sequence of values into some form of a summary value.
 
-Another oft-used functional operator is `map`, which applies the supplied λ function to the list. Whereas `fold` collapses the list into a single value, `map` preserves the original structure of the list. This is how to apply a squaring λ function `fn x ⇒ x * x` to the each element of the list `xs`.
+Another oft-used functional operator is `map`, which applies the supplied λ function to the list. Whereas `fold` collapses the list into a single value, `map` preserves the original structure of the list. This is how to apply a squaring λ function `fn x ⇒ x * x` to the each element of the list `xs`:
 
 ```Haskell
 List.map (fn x => x * x) xs;
 ```
 
-The `filter` functional operator, too, is commonly used in daily programming. It applies the supplied λ function predicate to the list to select the desired elements. For example, we can filter out elements of `xs` that are greater than $5$ like this.
+The `filter` functional operator, too, is commonly used in daily programming. It applies the supplied λ function predicate to the list to select the desired elements. For example, we can filter out elements of `xs` that are greater than $5$ like this:
 
 ```Haskell
 List.filter (fn x => x > 5) xs;
@@ -418,7 +420,7 @@ ML was the first FP language to use the Hindley-Milner type system. This type sy
 
 ML was the first popular FP language to provide support for algebraic data types (not the same as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The term "algebraic" derives from the fact that these types allow the programmer to construct complex types from simpler types using sum and product operators, not unlike using $+$ and $×$ operators to form complex arithmetic expressions.
 
-The well-known `option` type is a *sum* type.
+The well-known `option` type is a *sum* type:
 
 ```haskell
 datatype 'a option = None | Some of 'a;
@@ -428,19 +430,19 @@ The `datatype` declaration defines a new sum type as a disjoint union of the spe
 
 In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that accesses a file would return `Some file` if the file exists, but would return `None` if it does not exist.
 
-An oft-used *product* type is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows.
+An oft-used *product* type is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows:
 
 ```
 type complex = real * real;
 ```
 
-The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`, even though that they both have the same information content. A tuple literal is written like this.
+The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`, even though that they both have the same information content. A tuple literal is written like this:
 
 ```
 val c = (0.25, 2.75) : complex;
 ```
 
-The `: complex` above is how a value is manually assigned a type in ML. Another commonly used product types is the record type, which can be aliased like this.
+The `: complex` above is how a value is manually assigned a type in ML. Another commonly used product types is the record type, which can be aliased like this:
 
 ```
 type professor =
@@ -449,7 +451,7 @@ type professor =
   , contrib : string list };
 ```
 
-Above, `string list` is the list of strings, which is the `list` type parameterised with the element type `string`. Record types have labelled elements and their order does not matter: `{ id: int, name: string }` is identical to `{ name: string, id: int }`. A record literal is written as follows.
+Above, `string list` is the list of strings, which is the `list` type parameterised with the element type `string`. Record types have labelled elements and their order does not matter: `{ id: int, name: string }` is identical to `{ name: string, id: int }`. A record literal is written as follows:
 
 ```haskell
 val milner : professor =
@@ -526,7 +528,7 @@ In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartes
 
 In relational theory, a relation $R$ is a set of $(a_1, a_2, ...)$ tuples where each attribute $a_i$ is a member of some domain $D_i$: $R = \{(a_1, a_2, ...)\ :\ a_1 ∈ D_1, a_2 ∈ D_2, ...\}$.
 
-In database practice, a relation is a table `t` that contains a collection of records `r.i`. Each record is referred to as a row, and contains a collection of field values `f.j` drawn from their respective columns `C.j`.
+In database practice, a relation is a table `t` that contains a collection of records `r.i`. Each record is referred to as a row, and contains a collection of field values `f.j` drawn from their respective columns `C.j`:
 
 ```
 t = [ r1
