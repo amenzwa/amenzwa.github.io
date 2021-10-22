@@ -418,19 +418,19 @@ datatype 'a option = none | some of 'a;
 
 The above declaration defines a new data type, which is a disjoint union of a `none` case and a `some` case. The `none` case carries no data, but the `some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that returns a fax number of a company would return a value `some FaxNumber` if the company still possesses this antiquated technology. If not, the function would return `none`. Both the `none` data value and the `some FaxNumber` data value are of the type `option FaxNumber`.
 
-A tuple is a product type. A 2D point type can be defined as an alias of a tuple as follows.
+A tuple is a product type. A complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows.
 
 ```
-type point2D = real * real;
+type complex = real * real;
 ```
 
 The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`. A tuple literal is written like this. 
 
 ```
-val p = (0.25, 2.75) : point2D;
+val c = (0.25, 2.75) : complex;
 ```
 
-The `: point2D` above is how a value is manually assigned a type in ML. Another commonly used product types is the record type, which can be aliased like this.
+The `: complex` above is how a value is manually assigned a type in ML. Another commonly used product types is the record type, which can be aliased like this.
 
 ```
 type professor =
