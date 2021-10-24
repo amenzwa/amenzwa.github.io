@@ -375,6 +375,18 @@ Unlike the simply recursive version, the compiler transforms tail-recursive call
 
 I have written the consecutive calls to `fac'` without indentation to highlight the absence of function invocations. And for clarity, I have also labelled the arguments of `fac'` with an `a` and an `n`. The `a` here means "accumulator". The use of a local function and an accumulator to transform a primitive recursion into a tail recursion is a common practice in FP.
 
+There are algorithms in which each step contains multiple recursions. For instance, the famous quicksort algorithm uses *double recursion*.
+
+```Haskell
+fun qsort [] = []
+  | qsort (x::xs) =
+    let val less = List.filter (fn e => e < x) xs
+        val more = List.filter (fn e => e >= x) xs
+    in (qsort less) @ [x] @ (qsort more) end;
+```
+
+The recursive step of `qsort` recur once for the elements of `xs` that are less than the pivot `x` and once more for the elements of `xs` that are greater than or equal to `x`. Hence, `qsort` is doubly recursive. This algorithm states that a sorted list is a concatenation of the sorted sublist of values less than the pivot, the sublist containing only the pivot, and the sorted sublist of values more than the pivot. Like most recursive algorithms, quicksort is mathematically intuitive, and its meaning is evident in the code.
+
 ***functional operators***—Recursion is essential. Recursion is elegant. In FP , recursion is everywhere: data structures are recursive, and the functions that operate upon them are recursive. The recursive structure of the list length algorithm we examined above appears in computation of the sum of a list of numbers, the product of a list of numbers, to concatenate a list of string, and so on.
 
 Recursion is an abstraction over repetition. But now, we see that recursion itself is getting repetitive, the same recursive form appearing in many different algorithms. This primitive-recursive structure has as mathematical analogue called the *monoid* (not the same as monad). In abstract algebra, a monoid is a set equipped with as associative binary operator and an identity element. A common monoidal operation is to combine the elements of the set using the binary operator.
