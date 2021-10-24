@@ -440,13 +440,19 @@ ML was the first FP language to use the Hindley-Milner type system. This type sy
 
 ML was the first popular FP language to provide support for algebraic data types (not the same as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The term "algebraic" derives from the fact that these types allow the programmer to construct complex types from simpler types using sum and product operators, not unlike using $+$ and $×$ operators to form complex arithmetic expressions.
 
-The well-known `option` type is a *sum* type:
+The simplest *sum* type is the Boolean type `bool`, which consists of two distinct cases:
+
+```Haskell
+datatype bool = False | True
+```
+
+The `datatype` declaration defines a new sum type as a disjoint (non-overlapping) union of the specified cases. The "or" `|` operator separating the cases indicates that a value of the `option` type can be only one case, and that the set of all values representable by the type is the union of all the values representable by the individual disjoint cases. Therefore, a variable of type `bool` can hold either a `False` or a `True`, but not both at once. The `bool` above is referred to as *type constructor*. The `False` and the `True` are known as *data constructors*.
+
+The well-known `option` type is a sum type, too:
 
 ```haskell
 datatype 'a option = None | Some of 'a;
 ```
-
-The `datatype` declaration defines a new sum type as a disjoint union of the specified, non-overlapping cases. The type uses the "or" `|` operator to indicate that a value of this type may hold only one case at a time, and that the total values representable by the type is the union of all the values representable by the individual disjoint cases.
 
 In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that accesses a file would return `Some file` if the file exists, but would return `None` if it does not exist.
 
