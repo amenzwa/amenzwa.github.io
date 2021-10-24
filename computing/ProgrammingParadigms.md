@@ -187,7 +187,13 @@ redStrat := Stratocaster new: 'Fender Custom Shop' color: 'Fiesta Red'
 Likewise, sending the `subclass:` message to an existing class creates a derived class with the specified name:
 
 ```Smalltalk
-ElectricGuitar subclass: #Stratocaster
+MusicalInstrument subclass: #Guitar
+Guitar subclass: #AcousticGuitar
+AcousticGuitar subclass: #GibsonL5
+AcousticGuitar subclass: #MartinD28
+Guitar subclass: #ElectricGuitar
+ElectricGuitar subclass: #FenderTelecaster
+ElectricGuitar subclass: #FenderStratocaster
 ```
 
 Computation is performed by sending messages to objects. For example, `5 factorial` computes $5! = 120$. Here, the receiver is the `Integer` object `5` and the message is `factorial`.
