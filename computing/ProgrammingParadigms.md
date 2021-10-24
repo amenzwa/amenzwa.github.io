@@ -473,10 +473,10 @@ type complex = real * real;
 The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`, even though that they both have the same information content. A tuple literal is written like this:
 
 ```
-val c = (0.25, 2.75) : complex;
+val c = (0.25, 0.0) : complex;
 ```
 
-The `: complex` above is how a value is manually assigned a type in ML. Another commonly used product types is the record type, which can be aliased like this:
+Above, we assigned the tuple (0.25, 0.0)—the cusp of the Mandelbrot set—the `: complex` type. Another commonly used product types is the record type, which can be aliased like this:
 
 ```
 type professor =
