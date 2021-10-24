@@ -337,7 +337,7 @@ Note that many programmers confuse the term "partially applied function" with "p
 
 ## *ML concepts*
 
-***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition:
+***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition, using a *primitive recursion*:
 
 ```Haskell
 fun fac 0 = 1
@@ -436,11 +436,11 @@ In an eager language like ML, if this function is invoked as `constant (1/0)`, t
 
 ***types***—A type is a set of values. FP programmers aspire to craft types that admit only those values that are valid in the context of the programme. In a statically typed FP language like ML, validity checks are performed during compilation.
 
-ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like lists and trees, to hold values of different types: `int list` is a list of integers; `float list` is a list of reals.
+ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like `a' list`, to hold values of different types: `int list` is a list of integers; `real list` is a list of reals.
 
 ML was the first popular FP language to provide support for algebraic data types (not the same as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The term "algebraic" derives from the fact that these types allow the programmer to construct complex types from simpler types using sum and product operators, not unlike using $+$ and $×$ operators to form complex arithmetic expressions.
 
-The simplest *sum* type is the Boolean type `bool`, which consists of two distinct cases:
+The simplest *sum type* is the Boolean type `bool`, which consists of two distinct cases:
 
 ```Haskell
 datatype bool = False | True
@@ -456,7 +456,15 @@ datatype 'a option = None | Some of 'a;
 
 In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that accesses a file would return `Some file` if the file exists, but would return `None` if it does not exist.
 
-An oft-used *product* type is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows:
+Just as functions can be recursive in ML, types can be cursively defined, too. The `list` type is perhaps the simplest *recursive type*:
+
+```Haskell
+datatype a' list = [] | :: of a' * a' list;
+```
+
+Here, the `list` type is defined as either an empty list `[]` or a list constructed by using the cons operator `::` to prepend an element of type `a'` to a list of `a'` typed elements. In prefix form, this construction is written `:: (a', a' list)`. In an equivalent infix form, it is written `a' :: a' list`. The appearance of the `list` data constructor on the right side of the definition of the `list` type makes this a recursive type.
+
+An oft-used *product type* is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows:
 
 ```
 type complex = real * real;
