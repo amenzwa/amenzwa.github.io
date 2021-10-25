@@ -306,16 +306,6 @@ Higher-order functions are also called *functionals*. The term "functional progr
 ***recursion***—Because in FP state maintenance is forbidden, counting loops are forbidden, too. The `for` loop construct in PP, for instance, maintains the loop count, which is a state. Instead, FP performs repetition with *recursion*. A recursive function is one that invokes itself, as part of its operation. Many problems in CS are hierarchically structured. At the top level, there is the original problem. This problem can be expressed in terms of smaller, self-similar sub-problems.
 
 Let us examine the algorithm for computing the length of a list. A *list* is the tail sublist $tl[⊡]$ with the singleton head element $hd[⊡]$ tacked on at the front: a list $l = hd[l] + tl[l]$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the algorithm computes the length of the list in two cases, as follows:
-$$
-\displaystyle
-len(l) =
-  \left\{
-    \begin{array}{ccc}
-      0 & \text{if l = Ø} \\
-      len(hd[l]) + len(tl[l]) & \text{otherwise}
-    \end{array}
-  \right.
-$$
 
 - $len(l)$ =
   - $0$, if $l = Ø$
