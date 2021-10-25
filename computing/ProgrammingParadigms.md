@@ -531,7 +531,7 @@ Know this. There is no one correct way to learn FP, and there are a great many i
 
 A few words of caution is appropriate, here. Some FP enthusiasts admire purity so much that they become puritanical, others wrap themselves in coats of theoretical abstractions, and many fence themselves inside walls of complicated types. These activities are intellectually appealing, for sure. But such exuberance makes things unnecessarily complex. Complexity is poison to projects.
 
-Lastly, in the lifecycle of a programme, only a few people will write the code, but many people will read the code. It is, thus, equitable to insist that the needs of the many readers should outweigh the wants of the few writers. So, when working on enterprise-scale applications, write clear, succinct code that implements plain, understandable solutions first, then pursue eloquent abstractions and efficient implementations, only when such extravagances are justifiable, intellectually, practically, commercially.
+Lastly, there are two groups of people who work with a programme over the course of its lifecycle: writers and readers. Writers prefer convenience, readers favour clarity. Because only a few people will write the code but many people will read the code, it is equitable to insist that the needs of many readers should outweigh the wants of few writers. So, when working on an enterprise-scale application with other programmers, write clear, succinct, documented code that implements plain solutions first, then pursue eloquent abstractions and efficient implementations, only when such extravagances are justifiable, intellectually, socially, commercially.
 
 # RELATIONAL
 
