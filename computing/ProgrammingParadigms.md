@@ -49,7 +49,7 @@ Before we proceed, I would like to reemphasise the following oft-overlooked, but
 
 There are two predominant programming paradigms: the *imperative* paradigm, which reflects the way the computing hardware performs its work, and the *declarative* paradigm, which reflects the way the computer scientist thinks about his work. To look at it another way, whereas an imperative programme's meaning can only be understood by executing the code in the reader's mind, a declarative programme's meaning is patent in the code.
 
-***imperative paradigm***—Within the imperative paradigm, there are three divisions: machine programming (MP) languages, procedural programming (PP) languages, and object-oriented (OO) languages.
+***imperative paradigm***—Within the [imperative paradigm](https://en.wikipedia.org/wiki/Imperative_programming), there are three divisions: machine programming (MP) languages, procedural programming (PP) languages, and object-oriented (OO) languages.
 
 *MP* languages are realisations of [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine), a theoretical model of computation. MP languages are the assembly languages for various instruction set architectures, be they actual hardware or virtual machines. Today, very few programmers read, let alone write, in assembly. Only compiler writers regularly deal with assembly. The most prominent MP languages at present are ARM, Intel, JVM, and CLR.
 
@@ -57,7 +57,7 @@ As for *PP*, the classic languages of this paradigm include FORTRAN, COBOL, ALGO
 
 Classic *OO* languages are Simula and Smalltalk. Both are all but dead, but their intellectual descendants include C++, Java, C#, and just about every new language that emerged in the past decade or two. OO is, by far, the most successful programming paradigm in the industry. The persnickety nature of MP is quelled by the high-level constructs of PP languages, and PP's laissez-faire attitude toward code organisation and data management is tamed by the OO concepts of class, inheritance, objects, and methods. It could be said that OO is the most evolved expression of the imperative paradigm.
 
-***declarative paradigm***—The declarative paradigm, too, comprises three divisions: functional programming (FP) languages, relational programming (RP) languages, and logical programming (LP) languages.
+***declarative paradigm***—The [declarative paradigm](https://en.wikipedia.org/wiki/Declarative_programming), too, comprises three divisions: functional programming (FP) languages, relational programming (RP) languages, and logical programming (LP) languages.
 
 *FP* languages are realisations of [λ-calculus](https://en.wikipedia.org/wiki/Lambda_calculus), another theoretical model of computation, an equivalent of Turing Machine. FP languages emphasise creation, application, and manipulation of functions as values. Classic FP languages include LISP, ISWIM, and ML. LISP lives on in popular, modern languages like Racket and Clojure. ML is still used extensively in academia as the introductory language for first-year CS students.  Through the decades, there have been many great ML textbooks written by prominent FP researchers and professors. ML is the only language in popular use that has a comprehensive theoretical description. And ML's type system, syntax, and semantics appear in most new languages that came about over the past several years, including Haskell, OCaml, Rust, Kotlin, and Swift. Hence, ML is highly influential intellectually, though not as successful commercially. ISWIM is a conceptual language. Although it was never implemented, the concepts it pioneered were adopted by ML and the descendants of ML. As such, ISWIM is indeed the most influential FP language.
 
@@ -119,9 +119,9 @@ A typical C programme is divided into *modules*. Physically, a module is a file.
 
 C employs a static type system, but a rather weak one at that: it provides no substantive type safety. Programmers, thus, rely on an elaborate set of conventions and idioms as a form of manual type safety protocol. The combination of a weak type system and a permissive, pointer-based memory access techniques make C programmes prone of many kinds of runtime errors, which invariably result in the all-too-familiar console message, "Segmentation fault (core dumped)". This message means that the programme had somehow trampled upon a region of memory not allotted to it, and as a consequence UNIX has forcibly terminated it and has preserved its memory state in a file named `core` for later examination by the programmer using low-level debugging tools. Modern C programmers do not use such low-level tools; instead they use a sophisticated, GUI-driven IDE with an integrated debugger.
 
-***purpose of C***—It is important to recognise that C was created to implement operating systems at a time when the most powerful computers had a 24-bit CPU and 1 MB of RAM, and many expensive ones had only a 16-bit CPUs and 16 KB of RAM. The ability directly to manipulate the hardware was of paramount importance to C. The designers did not equip C with sophisticated high-level abstraction facilities, because such features were unnecessary for the intended purpose and they would only have bloated the language. Viewed in this light, it is understandable, and indeed quite forgivable, that C's static type system does not provide any runtime safeties, since safety comes at the cost of performance.
+***purpose of C***—It is important to recognise that C was created to implement operating systems at a time when one of the most powerful computers had a 32-bit CPU and 1 MB RAM, and many expensive ones had only a 16-bit CPUs and 16 KB of RAM. The ability directly to manipulate the hardware was of paramount importance to the designers of C. So, they did not equip C with sophisticated high-level abstraction facilities, because such features were unnecessary for the intended purpose and they would only have bloated the language. Viewed in this light, it is understandable, and indeed quite forgivable, that C's static type system does not perform any runtime checks, since safety incurs performance hit.
 
-Although C was used on many enterprise-scale projects in the 1980s, it was clear to everyone that this was not the application domain that suited C. OO thus came to the rescue. Today, C has returned to its roots: small-scale, hardware-level programming. Hence, an experienced programmer who uses C should be familiar with at least one microcontroller platform, such as the popular ARM Cortex-M family.
+Although C was used on many enterprise-scale projects in the 1980s, it was clear to everyone that this was not the application domain that suited C. OO thus came to fore. Today, C has returned to its roots: small-scale, hardware-level programming. Hence, an experienced programmer who uses C should be familiar with at least one microcontroller platform, such as the popular [ARM Cortex-M](https://developer.arm.com/ip-products/processors/cortex-m) family.
 
 Do note that C, the language, is eminently capable of handling any level of complexity; it is the average C programmer who cannot. For this reason, only a few large projects use C, these days. The Linux kernel is one of those few. This famous open-source project admits into their midst only the most proficient C programmers.
 
@@ -131,15 +131,15 @@ In the 1990s, the IT industry was consumed by an almost-irrational enthusiasm fo
 
 OO concepts were pioneered by Simula in the early 1960s, as an OO extension of ALGOL, a PP language. Simula's forte was discrete event simulation, which was an ideal playground for OO. Theoretical developments trickled in during the 1970s and 1980s. By the early 1990s, OO had matured, theoretically and practically. OO's coming of age coincided with the advent of RISC, which represented a massive jump in hardware sophistication. This hardware revolution empowered software to do much more than was possible, previously.
 
-The 1990s saw the rise of distributed computing platforms, like Sun's RPC, OSF's DCE, OMG's CORBA, and most importantly, CERN's WWW. These advances inevitably resulted in rapid rise in software complexity. The most dominant language of the time, the hardware-centric C with its lax attitude toward software abstractions, was unequal to the task of cope with this increased complexity. The industry looked to OO as the solution to managing software complexity, and OO delivered in spades.
+The 1990s saw the rise of distributed computing protocols, like Sun's [RPC](https://en.wikipedia.org/wiki/Sun_RPC), OSF's [DCE](https://en.wikipedia.org/wiki/Distributed_Computing_Environment), OMG's [CORBA](https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture), and most importantly, CERN's [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol). These advances inevitably resulted in rapid rise in software complexity. The most dominant language of the time, the hardware-centric C with its casual attitude toward software abstractions, was unequal to the task of cope with this increased complexity. The industry looked to OO as the solution to managing software complexity, and OO delivered in spades.
 
 Although Simula is to be credited as the progenitor of OO, it was Smalltalk, with the backing of a corporate giant Xerox, that popularised OO in the industry, in the 1970s. And by the mid 1980s, C was being used extensively in the industry on a large scale. Soon, C was found to be lacking in its ability to handle enterprise-scale software complexity. Objective-C was created by melding Smalltalk and C.
 
 The NeXTSTEP OS adopted this little-known language in the late 1980s, and propelled Objective-C into the pantheon of modern languages. NeXT was to be Apple 2.0, and the original MacOS was the embodiment of Smalltalk's legendary MVC GUI. Naturally, NeXTSTEP was powered by Objective-C and MVC.
 
-Around the same time, Bell Labs hatched C++ by melding Simula and C, in order to create a more modern system simulation language. C++'s OO support was appealing to C programmers struggling with enterprise applications that were becoming larger and more complex. By the early 1990s, C++ was already being used for desktop GUI, business software, scientific computing, system programming, operating system, device driver, game development, and everything else.
+Around the same time, Bell Labs hatched C++ by injecting Simula's OO concepts into C, in order to create a more modern system simulation language. C++'s OO support was appealing to C programmers struggling with enterprise applications that were becoming larger and more complex. By the early 1990s, C++ was already being used for desktop GUI, business software, scientific computing, system programming, operating system, device driver, game development, and everything else.
 
-Together, Objective-C and C++ dominated the software development industry throughout the 1990s. Today, Objective-C is still used on the modern macOS, the descendant of NeXTSTEP, but it is rapidly bing displaced by Apple's new language, Swift. And C++ is still used extensively throughout the industry, especially in performance-critical applications like VR games.
+Together, Objective-C and C++ dominated the software development industry throughout the 1990s. Today, Objective-C is still used on the modern macOS, the descendant of NeXTSTEP, but it is rapidly bing displaced by Apple's new language, Swift, a derivative of ML, Smalltalk, and C. And C++ is still used extensively throughout the industry, especially in performance-critical applications like VR games.
 
 Smalltalk is now all but confined to a few remaining legacy business applications. Nevertheless, Smalltalk is considered by OO aficionados as the definitive OO language. After all, Smalltalk inspired Objective-C, Java, C#, Scala, Ruby, and loads of other OO languages in popular use, at present. Although most modern programmer knows Smalltalk is OO, not many know that Smalltalk has a decent FP support, owing to its LISP influence. For instance, Smalltalk has λ function (`[...]` block), higher-order function (method that manipulates other methods), `map` (`collect:` method), `filter` (`select:` method),  `foldl` (`inject:into:` method), continuation (`currentDo:` method), and other FP facilities. Despite its pedigree and power, Smalltalk, as the name suggests, is a small, simple language endowed with a clean, cogent syntax. This makes Smalltalk a very good first language, even for young children. The compact syntax is easy to learn, and the pure OO nature is quick to grasp. Experienced programmers in the industry cannot escape OO, and they cannot shrug their responsibility to teach the less experienced. Smalltalk simplifies the teacher's job, when teaching OO concepts to novices.
 
@@ -188,9 +188,11 @@ Likewise, sending the `subclass:` message to an existing class creates a derived
 
 ```Smalltalk
 MusicalInstrument subclass: #Guitar
+
 Guitar subclass: #AcousticGuitar
 AcousticGuitar subclass: #GibsonL5
 AcousticGuitar subclass: #MartinD28
+
 Guitar subclass: #ElectricGuitar
 ElectricGuitar subclass: #FenderTelecaster
 ElectricGuitar subclass: #FenderStratocaster
@@ -304,6 +306,14 @@ Higher-order functions are also called *functionals*. The term "functional progr
 ***recursion***—Because in FP state maintenance is forbidden, counting loops are forbidden, too. The `for` loop construct in PP, for instance, maintains the loop count, which is a state. Instead, FP performs repetition with *recursion*. A recursive function is one that invokes itself, as part of its operation. Many problems in CS are hierarchically structured. At the top level, there is the original problem. This problem can be expressed in terms of smaller, self-similar sub-problems.
 
 Let us examine the algorithm for computing the length of a list. A *list* is the tail sublist $tl[⊡]$ with the singleton head element $hd[⊡]$ tacked on at the front: a list $l = hd[l] + tl[l]$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the algorithm computes the length of the list in two cases, as follows:
+$$
+len(l) =
+  \begin{cases}
+    0 & \text{if l = Ø} \\
+    len(hd[l]) + len(tl[l]) & \text{otherwise}
+  \end{cases}
+$$
+
 
 - $len(l)$:
   - $l = Ø ⇒ len(Ø) = 0$
