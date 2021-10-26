@@ -118,7 +118,7 @@ Now that you understand families and paradigms, we can talk about where on the f
 
 - Functional—Programmer defines data types and functions that operate on those types, and the language evaluates the functions to transform the input data to produce the result.
   - Lisp, Scheme, Common Lisp, Clojure, Mathematica, Julia
-  - Standard ML, Haskell, OCaml, F#, Reason, Rust, Elm
+  - Standard ML, Haskell, OCaml, F#, Reason, Elm
   - Erlang, Elixir
 
 **Imperative**
@@ -129,7 +129,7 @@ Now that you understand families and paradigms, we can talk about where on the f
   - Go, Python, JavaScript, TypeScript
 
 - Procedural—Programmer defines global programme state and procedures that modify that state incrementally, and the language executes the procedures in sequence to reach the final state of the programme.
-  - C, Nim, Perl
+  - C, Rust, Nim, Perl
   - Cobol, Pascal, Algol, Basic
   - Fortran, Matlab
 
@@ -198,7 +198,7 @@ But I recommended C as the starter language, not Matlab. Here is why. Matlab is 
 
 I must warn you that while Matlab is ideal for analysing algorithm designs and prototyping implementations, it is not suited to large-scale product development. Sure, you can invoke Matlab procedures from your programme written in C or Java; loads of engineers take this shortcut, when they are cornered into building product-quality software. But if you do this, your production system will have external dependencies on Matlab runtime, and Matlab license would be required for each installation of your programme. The C-Java-Matlab unholy polygamy maybe tolerable for a small, off-line system, but you should consider a cleaner, faster, more maintainable alternative, if you are working on a large application. The approach I favour is to explore, design, analyse, prototype, and test the algorithm in Matlab, and once it has been proven—mathematically and experimentally—to work, translate it into the language in which the production system is implemented. The downside, of course, is that you have to maintain two versions of the algorithm, one in Matlab and the other in the production language. But it is manageable if proper software practices are followed, and it sure is preferable to the alternative.
 
-Hardware engineers often end up working with operating systems, device drivers, and IoT. For software work like that, C is the language of choice. But newer [Rust](https://www.rust-lang.org/) programming language has the potential to depose C off its decades-long perch at the top. Rust supports safe, static type system and functional programming style. Rust also gives the programmer nearly as much control over the hardware as does C, but without any of C’s famously dangerous traps.
+Hardware engineers often end up working with operating systems, device drivers, and IoT. For software work like that, C is the language of choice. But newer [Rust](https://www.rust-lang.org/) programming language has the potential to depose C off its decades-long perch at the top. Despite its procedural feel, Rust supports safe, static type system and functional programming style. Rust also gives the programmer nearly as much control over the hardware as does C, but without any of C’s famously dangerous traps.
 
 And it is never harmful to familiarise yourself with the instruction set and the processor architecture of the microcontroller you are using. This knowledge will make you a more sympathetic engineer, one who is attuned to the inner workings of his hardware.
 
@@ -325,10 +325,7 @@ Note that there are four types programming books: purely theoretical, more theor
     - [*Programming in Haskell*](https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/1316626229/ref=sr_1_4?dchild=1&keywords=haskell&qid=1608745826&s=books&sr=1-4), Hutton
     - [*The Haskell School of Music*](https://www.amazon.com/Haskell-School-Music-Signals-Symphonies/dp/1108416756/ref=sr_1_10?dchild=1&keywords=haskell&qid=1608745906&s=books&sr=1-10), Hudak
     - [*Why Functional Programming Matters*](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf), Hughes
-  - Rust (hybrid functional, procedural)
-    - *[The Rust Programming Language](https://www.amazon.com/Rust-Programming-Language-Covers-2018/dp/1718500440/ref=sr_1_2?dchild=1&keywords=rust+language&qid=1635268254&sr=8-2)*, Klabnik
-    - *[Hands-On Concurrency with Rust](https://www.amazon.com/Hands-Concurrency-Rust-Confidently-memory-safe-ebook/dp/B07C5WXSXX/ref=sr_1_7?dchild=1&keywords=rust+language&qid=1635268254&sr=8-7)*, Troutwine
-  
+
 - Erlang family
   - Erlang
     - [*Introducing Erlang*](http://www.amazon.com/Introducing-Erlang-Getting-Functional-Programming-ebook/dp/B00B634R04/ref=sr_1_5?ie=UTF8&qid=1401805713&sr=8-5&keywords=erlang), St. Laurent
@@ -402,6 +399,9 @@ Note that there are four types programming books: purely theoretical, more theor
   - [*The C Programming Language*](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_8?s=books&ie=UTF8&qid=1401772856&sr=1-8&keywords=r+language+programming), Kernighan & Ritchie (C designer)
 - Nim (hybrid procedural, functional, objective)
   - *[Nim Basics](https://narimiran.github.io/nim-basics/)*, Miran
+- Rust (hybrid functional, procedural)
+  - *[The Rust Programming Language](https://www.amazon.com/Rust-Programming-Language-Covers-2018/dp/1718500440/ref=sr_1_2?dchild=1&keywords=rust+language&qid=1635268254&sr=8-2)*, Klabnik
+  - *[Hands-On Concurrency with Rust](https://www.amazon.com/Hands-Concurrency-Rust-Confidently-memory-safe-ebook/dp/B07C5WXSXX/ref=sr_1_7?dchild=1&keywords=rust+language&qid=1635268254&sr=8-7)*, Troutwine
 - Matlab (hybrid procedural, objective)
   - [*Matlab Language Fundamentals*](http://www.mathworks.com/help/matlab/index.html), MathWorks, Inc. (Matlab designer)
 - Unix Bourne shell
@@ -455,7 +455,6 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 - Clojure—[Eclipse](http://www.eclipse.org/), [Emacs](http://www.gnu.org/software/emacs/)
 - Scala—Eclipse
 - F#—[Visual Studio](http://visualstudio.microsoft.com/), [Rider](https://www.jetbrains.com/rider/)
-- Rust—[CLion](https://www.jetbrains.com/clion/)
 - Erlang—Eclipse
 - Haskell—Eclipse, Emacs 
 - Mathematica—[Mathematica](http://www.wolfram.com/mathematica/)
@@ -478,8 +477,9 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 **Procedural**
 
 - C—Emacs, Eclipse, Xcode, CLion
+- Nim—Emacs
+- Rust—[CLion](https://www.jetbrains.com/clion/)
 - Matlab—[Matlab](http://www.mathworks.com/products/matlab/), Octave (mostly compatible with Matlab)
-
 - Bourne shell—Emacs, [vi](http://www.atmos.albany.edu/deas/atmclasses/atm350/vi_cheat_sheet.pdf)
 - AWK—Emacs, vi
 - Perl—Emacs, vi
