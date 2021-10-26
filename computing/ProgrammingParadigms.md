@@ -141,7 +141,16 @@ Around the same time, Bell Labs hatched C++ by injecting Simula's OO concepts in
 
 Together, Objective-C and C++ dominated the software development industry throughout the 1990s. Today, Objective-C is still used on the modern macOS, the descendant of NeXTSTEP, but it is rapidly bing displaced by Apple's new language, Swift, a derivative of ML, Smalltalk, and C. And C++ is still used extensively throughout the industry, especially in performance-critical applications like VR games.
 
-Smalltalk is now all but confined to a few remaining legacy business applications. Nevertheless, Smalltalk is considered by OO aficionados as the definitive OO language. After all, Smalltalk inspired Objective-C, Java, C#, Scala, Ruby, and loads of other OO languages in popular use, at present. Although most modern programmer knows Smalltalk is OO, not many know that Smalltalk has a decent FP support, owing to its LISP influence. For instance, Smalltalk has λ function (`[...]` block), higher-order function (method that manipulates other methods), `map` (`collect:` method), `filter` (`select:` method),  `foldl` (`inject:into:` method), continuation (`currentDo:` method), and other FP facilities. Despite its pedigree and power, Smalltalk, as the name suggests, is a small, simple language endowed with a clean, cogent syntax. This makes Smalltalk a very good first language, even for young children. The compact syntax is easy to learn, and the pure OO nature is quick to grasp. Experienced programmers in the industry cannot escape OO, and they cannot shrug their responsibility to teach the less experienced. Smalltalk simplifies the teacher's job, when teaching OO concepts to novices.
+Smalltalk is now all but confined to a few remaining legacy business applications. Nevertheless, Smalltalk is considered by OO aficionados as the definitive OO language. After all, Smalltalk inspired Objective-C, Java, C#, Scala, Ruby, and loads of other OO languages in popular use, at present. Although most modern programmer knows Smalltalk is OO, not many know that Smalltalk has a decent FP support, owing to its LISP influence:
+
+- Smalltalk `[...]` block is LISP `lambda` function
+- Smalltalk method that manipulates other methods is LISP functional
+- Smalltalk `collect:` method is LISP `map` functional
+- Smalltalk `select:` method is LISP  `filter` functional
+- Smalltalk `inject:into:` method is LISP `foldl` functional
+- Smalltalk `currentDo:` method is LISP `call/cc` continuation
+
+Despite its pedigree and power, Smalltalk, as the name suggests, is a small, simple language endowed with a clean, cogent syntax. This makes Smalltalk a very good first language, even for young children. The compact syntax is easy to learn, and the pure OO nature is quick to grasp. Experienced programmers in the industry cannot escape OO, and they cannot shrug their responsibility to teach the less experienced. Smalltalk simplifies the teacher's job, when teaching OO concepts to novices.
 
 To master Smaltalk and the OO paradigm, study these:
 
@@ -242,7 +251,18 @@ Again, FP returned in the 1990s, in the guises of OCaml and Haskell, both descen
 
 However, the 2000s were undoubtedly the age of Java. Almost overnight, Java displaced C++ in enterprise computing. Indeed, the original Web was fuelled by Java: web programmes ran on instances of Java VM, and web programmers ran on cups of Java. Java gave birth to C# and Scala directly, and it indirectly influenced many modern languages, including Kotlin and Swift.
 
-In the 2010s, JavaScript did to Java what Java did to C++, a decade prior. But JavaScript is Java only syntactically; semantically JavaScript is a derivative of Self and Scheme. Self is a dialect of Smalltalk, and Scheme a dialect of LISP. Although JavaScript is known in the industry as an OO language, owing to its adoption of Self's class system and prototype-based inheritance, JavaScript possesses a LISP-influenced FP core. For example, JavaScript has LISP's dynamic type system, `quote` (`Symbol` class), λ function (`=>` function), higher-order function, `map` (`map` method), `filter` (`filter` method), `foldl` (`reduce` method), continuation (`await` operator), and homoiconicity (via the much-maligned `eval` function). This period also saw the resurgence of interest in FP due, in part, to many JavaScripters having adopted functional reactive programming (FRP) as a means to control the complexities associated with HTTP-based distributed computing. This renewed interest in FP, in turn, heightened the industry's awareness and respect for existing FP languages like OCaml, Haskell, Scala, and Clojure, and additionally created a demand for new FP-inspired languages, like Rust, Kotlin, and Swift. If the 1990s were the era of the OO hype, the 2010s were certainly the time of the FP hype.
+In the 2010s, JavaScript did to Java what Java did to C++, a decade prior. But JavaScript is Java only syntactically; semantically JavaScript is a derivative of Self and Scheme. Self is a dialect of Smalltalk, and Scheme a dialect of LISP. Although JavaScript is known in the industry as an OO language, owing to its adoption of Self's class system and prototype-based inheritance, JavaScript possesses a LISP-influenced FP core:
+
+- JavaScript, like LISP, has a weak, dynamic type system
+- JavaScript `Symbol` class is LISP `quote` function
+- JavaScript `⇒` function is LISP `lambda` function
+- JavaScript `map` method is LISP `map` functional
+- JavaScript `filter` method is LISP `filter` functional
+- JavaScript `reduce` method is LISP `foldl` functional
+- JavaScript  `await` operator is LISP `call/cc` continuation
+- The much-maligned JavaScript  `eval` function is LISP macro
+
+This period also saw the resurgence of interest in FP due, in part, to many JavaScripters having adopted functional reactive programming (FRP) as a means to control the complexities associated with HTTP-based distributed computing. This renewed interest in FP, in turn, heightened the industry's awareness and respect for existing FP languages like OCaml, Haskell, Scala, and Clojure, and additionally created a demand for new FP-inspired languages, like Rust, Kotlin, and Swift. If the 1990s were the era of the OO hype, the 2010s were certainly the time of the FP hype.
 
 Now, in the 2020s, new languages are cropping up seemingly every few hours. The designers of these new languages keep injecting FP facilities into their languages, but it is plain to see that most programmers continue to use the OO facilities with which they are familiar. It is too early to say whether FP will be snubbed by the industry, again, in this decade.
 
