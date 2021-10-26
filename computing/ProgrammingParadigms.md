@@ -317,11 +317,11 @@ Now, let us turn our attention to some FP terms. FP takes delight in giving orna
 
 ***first-class functions***—Functions are values, just like characters, integers, reals, lists, and such. This property of functions is known as *first-class*.
 
-***higher-order functions***—Since in FP functions are values, a function can accept another function as its argument value and a function can return another function as its result value. This property of functions is called *higher-order* functions. Higher-order functions can abstract away the low-level recursions, thereby making the task of the programmer more convenient and, more importantly, less error-prone.
+***local functions***—Since in FP functions are values, a function can be declared inside another function, and such local functions, like local variables, are visible only inside the enclosing function.
+
+***higher-order functions***—In FP, a function can accept another function as its argument value and a function can return another function as its result value. This property of functions is called *higher-order* functions. Higher-order functions can abstract away the low-level recursions, thereby making the task of the programmer more convenient and, more importantly, less error-prone.
 
 Higher-order functions are also called *functionals*. The term "functional programming" is a respectful nod to this key concept of FP.
-
-***partial functions***—In mathematics, a *total* function is one that is defined for the entirety of its domain. A *partial* function is a function that is not define for the entirety of its domain. In other words, if a partial function is given a value from its domain on which it is not defined, the computation is goes to the $⊥$.
 
 ***recursion***—Because in FP state maintenance is forbidden, counting loops are forbidden, too. The `for` loop construct in PP, for instance, maintains the loop count, which is a state. Instead, FP performs repetition with *recursion*. A recursive function is one that invokes itself, as part of its operation. Many problems in CS are hierarchically structured. At the top level, there is the original problem. This problem can be expressed in terms of smaller, self-similar sub-problems.
 
@@ -348,6 +348,8 @@ In programming, lists are used to represent sequential data. Trees are used to r
 ***laziness***—FP languages use either the eager evaluation strategy or the lazy evaluation strategy. The *eager* strategy reduces every expression to its value, before proceeding with the computation. When using paper and pencil to evaluate a complex arithmetic expression, one instinctively begins the reduction from the innermost subexpression, and works outward until the entire expression is reduced to a number. This is an example of eager evaluation. ML is an eager language.
 
 The *lazy* strategy reduces an expression to its value, only if that value is needed in the subsequent computation. Evaluating a complex expression by beginning with the outermost subexpression and proceeding inward only when necessary is an example of lazy evaluation. Lazy evaluation permits the use of infinite data structures, whose values are computed only when the need arises. Haskell is lazy language.
+
+***partial functions***—In mathematics, a *total* function is one that is defined for the entirety of its domain. A *partial* function is a function that is not defined for the entirety of its domain. In other words, if a partial function is given a value from its domain on which it is not defined, the computation is goes to the $⊥$.
 
 ***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. Currying transforms $f : x, y → z$ into $g : x → h$ where $h : y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $g(x)$ that returns another single-argument function $h(y)$ which has value $x$ baked into its body. When the function $h$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of single-argument functions.
 
