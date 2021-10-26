@@ -325,7 +325,10 @@ Note that there are four types programming books: purely theoretical, more theor
     - [*Programming in Haskell*](https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/1316626229/ref=sr_1_4?dchild=1&keywords=haskell&qid=1608745826&s=books&sr=1-4), Hutton
     - [*The Haskell School of Music*](https://www.amazon.com/Haskell-School-Music-Signals-Symphonies/dp/1108416756/ref=sr_1_10?dchild=1&keywords=haskell&qid=1608745906&s=books&sr=1-10), Hudak
     - [*Why Functional Programming Matters*](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf), Hughes
-
+  - Rust (hybrid functional, procedural)
+    - *[The Rust Programming Language](https://www.amazon.com/Rust-Programming-Language-Covers-2018/dp/1718500440/ref=sr_1_2?dchild=1&keywords=rust+language&qid=1635268254&sr=8-2)*, Klabnik
+    - *[Hands-On Concurrency with Rust](https://www.amazon.com/Hands-Concurrency-Rust-Confidently-memory-safe-ebook/dp/B07C5WXSXX/ref=sr_1_7?dchild=1&keywords=rust+language&qid=1635268254&sr=8-7)*, Troutwine
+  
 - Erlang family
   - Erlang
     - [*Introducing Erlang*](http://www.amazon.com/Introducing-Erlang-Getting-Functional-Programming-ebook/dp/B00B634R04/ref=sr_1_5?ie=UTF8&qid=1401805713&sr=8-5&keywords=erlang), St. Laurent
