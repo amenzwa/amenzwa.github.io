@@ -12,3 +12,4 @@ This topic is devoted to computing. It covers computer science curriculum, caree
   - This section presents programming languages and their respective programming paradigms. The articles in this section are written for STEM practitioners who program, and especially, those who are experienced programmers.
 - [Law and Technology](LawAndTechnology.md)
   - This article describes the interaction between law and technology. It covers topics such as regulatory compliance, intellectual property law, and contract law. The target audience is technical *leaders* and *managers*.
+
