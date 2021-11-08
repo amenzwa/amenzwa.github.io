@@ -61,7 +61,9 @@ $$
 log: D → L \\
 log^{-1}: L → D
 $$
-[$log(x)$ plot]
+In the plot below, the black curve is $log$ and the red is $log^{-1}$.
+
+![log](./figures/SlideRules/plot-log.jpg)
 
 The special name for $log^{-1}$ is $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. To put it differently, the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
 
@@ -171,7 +173,7 @@ A Mannheim slide rule has scales for arithmetic ($×$ and $÷$), logarithmic ($l
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$, which suited its intended purpose.
 
-A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.57\degree, $ $5.73\degree$]. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
+A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.57\degree, $ $5.73\degree$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
 
 [Nestler 23 R]
 
@@ -227,7 +229,7 @@ a ÷ b = log(a) - log(b) = log(a) + log(-b)
 $$
 The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $π$, thereby moving the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales.
 
-[reciprocal and folded scales]
+[reciprocal and folded scales photo]
 
 These auxiliary scales allow faster calculations, when many $×$ and $÷$ operations are chained in a complicated expression. For example, a folded $CI$ has the $1$ mark near the middle of the slide rule, so the cursor movement distance could be reduce considerably. But I shall not present the detailed procedures on using these scales, because they are procedural optimisations not essential to understanding the fundamentals of the slide rule. Interested readers may refer to the manuals for specific slide rules, which are listed in the resource section, below.
 
@@ -235,7 +237,7 @@ These auxiliary scales allow faster calculations, when many $×$ and $÷$ operat
 
 The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule. To compute a logarithm, say $log(2)$, one simply places the hairline on the $2$ mark on the $D$ logarithmic scale, and read the result on the $L$ arithmetic scale. See below.
 
-[$log(2)$]
+[$log(2)$ photo]
 
 ## *exponentiation*
 
@@ -306,7 +308,9 @@ $$
 ln : LL_n → D \\
 ln^{-1} : D → LL_n
 $$
-[$ln(x)$ plot]
+In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
+
+![ln](./figures/SlideRules/plot-ln.jpg)
 
 The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithmic scale and the base-$10$ common logarithmic scale.
 
@@ -316,7 +320,7 @@ Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it 
 - $LL_2$—$[1.105 → e]$
 - $LL_3$—$[e → 22000]$, where $e = 2.718$
 
-[$LL_n$ scales]
+[$LL_n$ scales photo]
 
 The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e_{LL_3})) = 0_D$ and $log(ln(22000_{LL_3})) = 1_D$. The $LL_n$ scales are a tangible example what "exponential growth" means: the first two 25-cm stretches of the scale span the range $[1.01, e]$, and the final 25-cm stretch span the range $[e, 22000]$.
 
@@ -328,7 +332,7 @@ The red $LL_{0n}$ scales are reciprocals of the black $LL_n$ scales. As such, th
 - $LL_{02}$—$[0.905 ← 1/e]$
 - $LL_{03}$—$[1/e ← 0.000045]$, where $1/e = 0.368$
 
-[$LL_{0n}$ scales]
+[$LL_{0n}$ scales photo]
 
 Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $LL_{0n}$ scales as $e^{-x}$.
 
@@ -400,7 +404,9 @@ $$
 sin: S → C \\
 sin^{-1}: C → S
 $$
-[$sin(\theta)$ plot]
+In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$.
+
+![sin](./figures/SlideRules/plot-sin.jpg)
 
 To compute $sin(30\degree)$, we manipulate the slide rule as follows:
 
@@ -411,18 +417,32 @@ To compute $sin(30\degree)$, we manipulate the slide rule as follows:
 
 To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60\degree$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60\degree$.
 
-The $S$ scale is graduated in black for $sin$ between the angles $5.73\degree$ and $90\degree$. But since $cos(\theta) = sin(90\degree - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure by referencing the red scale.
+The $S$ scale is graduated in black for $sin$ between the angles $5.73\degree$ and $90\degree$. But since $cos(\theta) = sin(90\degree - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
+
+In the plot below, the red curve is $cos$ and the green is $cos^{-1}$.
+
+![cos](./figures/SlideRules/plot-cos.jpg)
 
 The $T$ scale is graduated in degrees from $5.73\degree$ to $45\degree$. The $T$ and the $C$ scales are related by a bijective function $tan$:
 $$
 tan: T → C \\
 tan^{-1}: C → S
 $$
-[$tan(\theta)$ plot]
+In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
+
+![tan](./figures/SlideRules/plot-tan.jpg)
+
+In the plot below, the black curve is $cot$ and the blue is $cot^{-1}$.
+
+![cot](./figures/SlideRules/plot-cot.jpg)
 
 The $T$ scale, too, has red markings for $cot$, running right to left, from $45\degree$ to $84.29\degree$.
 
-The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.57\degree, 5.73\degree]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.57\degree$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians.
+The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.57\degree, 5.73\degree]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.57\degree$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians.
+
+In the plot below, the blue curve is $sin$ and the green is $tan$. These two curves are indistinguishable when $\theta ∈ [0.01, 0.1]$ radians.
+
+![sin-tan](./figures/SlideRules/plot-sin-tan.jpg)
 
 It is possible to chain trigonometric and arithmetic calculations on the slide rule. This is one of the reasons why calculating with the slide rule is fast. Readers interested in these details should read the manuals listed in the resources section at the end of the article.
 
@@ -459,7 +479,7 @@ The Model K is identical in construction, and has a $D$ scale of almost the same
 
 ## *Log Log Vector*
 
-Advanced engineering slide rules, like the K&E 4083-3 Log Log Vector Duplex, have $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the catenary of chains (or, heavy-duty power transmission lines). The length and sag of a chain hung from two posts of equal height is expressed thus:
+Advanced engineering slide rules, like the K&E 4083-3 Log Log Vector Duplex, have $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines). The length and sag of a chain hung from two posts of equal height is expressed thus:
 $$
 l = 2 \frac{H}{w} sinh(\frac{wb}{H}) \\
 s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]
@@ -478,6 +498,10 @@ sinh(x) = \frac{e^x - e^{-x}}{2} \\
 cosh(x) = \frac{e^x + e^{-x}}{2} \\
 tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}
 $$
+
+In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is $tanh$.
+
+![sinh-cosh-tanh](./figures/SlideRules/plot-sinh-cosh-tanh.jpg)
 
 ## *collecting slide rules*
 
