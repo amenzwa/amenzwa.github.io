@@ -33,11 +33,13 @@ It was around this time that I arrived at the university—in [Burma](https://en
 
 I subsequently emigrated to the US. Arrival in the US ended my association with the slide rule because, by the 1980s, American engineers were already using HP calculators and PC-based MATLAB technical computing software. I soon became an [HP RPN calculator](https://www.hpmuseum.org/) devotee. As such, I never got to use the slide rule, professionally. But I hung on to my student slide rules: the government-issued Aristo 0968 Studio and the privately-acquired Faber-Castell 8/10 circular slide rule. To this day, I remain partial to the intimate, tactile nature of the slide rule, especially its demands upon the user's brain. Over the next four decades, I have collected numerous slide rules. Many models in my collection are the ones I coveted as an engineering student in Burma, but were well beyond my reach.
 
-My main goal in writing this article is to [preserve the knowledge](https://youtu.be/CblhxhnSymg) about, and the memory of, the slide rule: how it works and how it was used. The focus here is on the basic principles of operation and how the slide rule was used in engineering. It is important to note that this is a "how it works" explanation, and not a "how to use" manual. Those who are interested in the most efficient use of a slide rule may read the manuals listed in the resources section at the end of this article. Beyond history and reminiscence, I hope to highlight the wide-ranging utility of some of the most basic mathematical functions that are familiar to middle schoolers.
+In its heyday, everyone uses the slide rule in every facet of life. As children, we saw it everywhere, so we were acquainted with it, even if we did not know how to use it. We were taught to use the slide rule's basic facilities in middle school. Our options were the abacus, the log books, or the slide rule. The choice was abundantly clear; we welcomed the opportunity to learn and to use the slide rule. Indeed, it was a rite of passage. Now, though, the world's [brightest engineering students do not know](https://youtu.be/CblhxhnSymg) what a slide rule is, let alone use it.
 
-It is impossible to discuss the slide rule without having a device in one's hand. For the presentations below, I chose the Keuffel & Esser (K&E) 4081-3 Log Log Duplex Decitrig engineering slide rule, shown below. You can [get one on eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) rather cheaply. You will need a slide rule to follow the discussions. Alternatively, you could use the [web application that simulates](https://www.sliderules.org/react/k_e_decilon.html) a more advanced model K&E 68-1100 Deci-Lon.
+My main goal in writing this article is to preserve the knowledge about, and the memory of, the slide rule: how it works and how it was used. The focus here is on the basic principles of operation and how the slide rule was used in engineering. It is important to note that this is a "how it works" explanation, and not a "how to use" manual. Those who are interested in the most efficient use of a slide rule may read the manuals listed in the resources section at the end of this article. Beyond history and reminiscence, I hope to highlight the wide-ranging utility of some of the most basic mathematical functions that are familiar to middle schoolers.
 
-[4081-3 photo]
+It is impossible to discuss the slide rule without having the device in hand. For the presentations below, I chose the Keuffel & Esser (K&E) 4081-3 Log Log Duplex Decitrig. It was one of the most common engineering slide rules. Another common model was the Post 1460 Versalog. The Post 1460 is cheaper and, in my opinion, is a far better slide rule. Go on eBay and get either the [K&E 4081-3](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) or the [Post 1460](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=post+1460+versalog+slide+rule&_sacat=0); you will need a slide rule to follow the discussions below. Alternatively, you could use a [slide rule simulator](https://www.sliderules.org/react/hemmi_versalog_ii.html) web application.
+
+[K&E 4081-3 & Post 1460 photo]
 
 # PRINCIPLES
 
@@ -286,7 +288,7 @@ To compute $3^3$, we manipulate the slide rule as follows:
 - $D$—Place the hairline on the *argument* $3$ on the $D$ scale.
 - $K$—Read under the hairline the *result* $27$ on the second cycle of the $K$ scale. This computes $3^3 = 27$.
 
-When computing $\sqrt[3]{x}$, the digits to the left of the decimal are grouped by threes, and if the left-most group has one digit (say $1,111.1$) then place the argument in $K$ scale's first cycle; if two digits (say $22,222.2$) then in the second cycle; and if three digits (say $333,333.3$) then in the third cycle.
+When computing $\sqrt[3]{x}$, the digits to the left of the decimal are grouped by threes, and if the left-most group has one digit (say $1,000$) then place the argument in $K$ scale's first cycle; if two digits (say $22,000$) then in the second cycle; and if three digits (say $333,000$) then in the third cycle.
 
 To compute $\sqrt[3]{64000}$, we manipulate the slide rule as follows:
 
@@ -435,7 +437,7 @@ It is possible to chain trigonometric and arithmetic calculations on the slide r
 
 Tedious and frustrating though it maybe, recalibrating the slide rule was the easy bit. Reading the scales with adequate precision, however, was not as easy, especially for those of us with poor eyesights.
 
-***cleaning***—I can say nothing about vintage, Thacher-style cylindrical rules, since I have never even seen one in person. But straight rules, circular rules, and Otis King-style cylindrical rules should be cleaned by gently wiping down with moistened paper towel, then wipe off the moisture, immediately. Although plastic and aluminium rules can be washed like dishes, wood and bamboo rules should not, lest they absorb too much moisture. Note that the black handle (the cursor) on the Otis King is actually black-painted brass cylinder. Aggressive rubbing will scrub off the black paint.
+***cleaning***—I can say nothing about maintaining vintage, Thacher-style large cylindrical rules, since I have never even seen one in person. But straight rules, circular rules, and Otis King-style cylindrical rules should be cleaned by gently wiping down with moistened paper towel, then wipe off the moisture, immediately. Although plastic and aluminium rules can be washed like dishes, wood and bamboo rules should not, lest they absorb too much moisture. Note that the black handle (the cursor) on the Otis King is actually black-painted brass cylinder. Aggressive rubbing will scrub off the black paint.
 
 Sometimes, the slide can get a bit sticky. This is caused by the grime—a mixture of dust and skin oil—that collect in the contact areas between the slide and the frame. This grime can be scraped off with a moist paper towel. Do not apply lemon oil, grease, powder, graphite, or any other foreign material to the slide-frame contact areas.
 
@@ -457,14 +459,20 @@ The Model K is identical in construction, and has a $D$ scale of almost the same
 
 ## *Log Log Vector*
 
-Advanced engineering slide rules, like the K&E 4083-3 Log Log Vector Duplex, have $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with electrical power engineers (as opposed to electronic engineering), in which these functions are used to compute voltages and currents of long-distant power transmission lines. Incidentally, mechanical engineers use it to compute the length and sag of chains (or, heavy-duty power cables):
+Advanced engineering slide rules, like the K&E 4083-3 Log Log Vector Duplex, have $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the catenary of chains (or, heavy-duty power transmission lines). The length and sag of a chain hung from two posts of equal height is expressed thus:
 $$
 l = 2 \frac{H}{w} sinh(\frac{wb}{H}) \\
-s = \frac{H}{w} [cosh(\frac{wb}{H} - 1)]
+s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]
 $$
 Here, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain.
 
-Since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations, albeit tediously:
+Incidentally, electrical power engineers (as opposed to electronic engineers), too, use these functions to compute voltages and currents on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the $π$ model, which represents the long cable as individual segments, like the chain made of individual links.
+
+Such formulae can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on the K&E 4083-3.
+
+[K&E 4083-3 photo]
+
+However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
 $$
 sinh(x) = \frac{e^x - e^{-x}}{2} \\
 cosh(x) = \frac{e^x + e^{-x}}{2} \\
@@ -473,7 +481,7 @@ $$
 
 ## *collecting slide rules*
 
-how to collect—don't buy display items
+how to collect as a hobbyist, not as a collector—don't buy display items; don't chase rarities; don't engage in bidding wars
 
 # RESOURCES
 
@@ -492,6 +500,8 @@ how to collect—don't buy display items
   - This is the most comprehensive site on slide rules. It was created by those who used the slide rule, professionally. They are an active, international lot. They have annual meetings. They publish detailed, insightful articles, both for beginners and experts.
 - [International Slide Rule Museum](https://sliderulemuseum.com/SRM_Home.htm)
   - This site is a virtual museum of slide rules. There are very few slide rules, if any at all, that are absent from this collection. Every slide rule in the collection has a set of high-resolution photographs.
+- [SlideRules.org](https://www.sliderules.org)
+  - This site has slide rule simulators for many popular models.
 - [Eric's Slide Rule Site](https://www.sliderule.ca/)
   - This is the site of an individual collector, so the collection is not as expansive. But it does have a decent background information on the slide rules that are in the collection.
 - [Tina's Slide Rule Books and other Good Stuff](http://tinas-sliderules.me.uk/)
