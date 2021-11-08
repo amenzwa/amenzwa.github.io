@@ -17,9 +17,9 @@ It could be said that astronomy evolved from measuring, tracking, and predicting
 
 In 1617, the brilliant Scottish mathematician [John Napier](https://en.wikipedia.org/wiki/John_Napier) published his method of mechanising [lattice multiplication](https://en.wikipedia.org/wiki/Lattice_multiplication). This method is known today as [Napier's bones](https://en.wikipedia.org/wiki/Napier%27s_bones). A few years earlier in 1614, Napier discovered [logarithms](https://en.wikipedia.org/wiki/Logarithm). Perhaps it would be more appropriate to say Napier invented logarithms, for his discovery was motivated by his desire to simplify multiplication and division. Arithmetically, multiplication can be thought of as repeated additions, and division as repeated subtractions. Logarithmically, multiplication of two numbers can be reduced to addition of their logarithms, and division to subtraction thereof. Hence, multiplication and division of very large numbers can be reduced to straightforward addition and subtraction, with the aid of prepared logarithm and inverse logarithm tables.
 
-In 1620, [Edmund Gunter](https://en.wikipedia.org/wiki/Edmund_Gunter), an English astronomer, used Napier's logarithms to create a calculating device we now call [Gunter's scale](https://en.wikipedia.org/wiki/Edmund_Gunter#Gunter's_scale). The etchings on this device were not linear like a simple ruler, but logarithmic. To multiply two numbers, one marks the multiplicand on one logarithmic scale, marks the multiplier on another logarithmic scale, and adds the corresponding logarithmic scale lengths to obtain the result. This device was the precursor to the slide rule.
+In 1620, [Edmund Gunter](https://en.wikipedia.org/wiki/Edmund_Gunter), an English astronomer, used Napier's logarithms to create a calculating device we now call [Gunter's scale](https://en.wikipedia.org/wiki/Edmund_Gunter#Gunter's_scale). The etchings on this device were not linear like a simple ruler, but logarithmic. To multiply two numbers, the length representing the multiplicand is first marked out on the logarithmic scale using a divider and, from thence, the length representing the multiplier is similarly marked out, thereby obtaining the product, which is the sum of the two logarithmic lengths. This device was the precursor to the slide rule.
 
-The first practical [slide rule](https://en.wikipedia.org/wiki/Slide_rule) was invented by [William Oughtred](https://en.wikipedia.org/wiki/William_Oughtred), an English mathematician, in 1622. [Oughtred's slide rule](https://www.technologyuk.net/computing/history-of-computing/images/history-of-computing-0014.jpg) was circular, and it was essentially a usability improvement over Gunter's scale. Whereas using Gunter's scale required a divider to mark the operands, Oughtred's slide rule had two built-in pointers for that purpose. The photograph below shows a brass circular slide rule that is a contemporaneous clone of Oughtred's.
+The first practical [slide rule](https://en.wikipedia.org/wiki/Slide_rule) was invented by [William Oughtred](https://en.wikipedia.org/wiki/William_Oughtred), an English mathematician, in 1622. Oughtred used two bits of wood graduated with Gunter's scale. In 1630, Oughtred fashioned a brass circular slide rule with two integrated pointers. This device was a significant improvement over Gunter's scale, in terms of practicality and usability. The photograph below shows a brass circular slide rule that is a contemporaneous clone of Oughtred's.
 
 ![Davenport Circular Slide Rule](figures/SlideRules/DavenportCircularSlideRule.jpg)
 
@@ -35,7 +35,9 @@ I subsequently emigrated to the US. Arrival in the US ended my association with 
 
 My main goal in writing this article is to [preserve the knowledge](https://youtu.be/CblhxhnSymg) about, and the memory of, the slide rule: how it works and how it was used. The focus here is on the basic principles of operation and how the slide rule was used in engineering. It is important to note that this is a "how it works" explanation, and not a "how to use" manual. Those who are interested in the most efficient use of a slide rule may read the manuals listed in the resources section at the end of this article. Beyond history and reminiscence, I hope to highlight the wide-ranging utility of some of the most basic mathematical functions that are familiar to middle schoolers.
 
-It is impossible to discuss the slide rule without having a device in one's hand. For the presentations below, I chose the Keuffel & Esser (K&E) 4081-3 Log Log Duplex Decitrig engineering slide rule. You can [get one on eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) rather cheaply. You will need a slide rule to follow the discussions. Alternatively, you could use the [web application that simulates](https://www.sliderules.org/react/k_e_decilon.html) a more advanced model K&E 68-1100 Deci-Lon.
+It is impossible to discuss the slide rule without having a device in one's hand. For the presentations below, I chose the Keuffel & Esser (K&E) 4081-3 Log Log Duplex Decitrig engineering slide rule, shown below. You can [get one on eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) rather cheaply. You will need a slide rule to follow the discussions. Alternatively, you could use the [web application that simulates](https://www.sliderules.org/react/k_e_decilon.html) a more advanced model K&E 68-1100 Deci-Lon.
+
+[4081-3 photo]
 
 # PRINCIPLES
 
@@ -57,6 +59,8 @@ $$
 log: D → L \\
 log^{-1}: L → D
 $$
+[$log(x)$ plot]
+
 The special name for $log^{-1}$ is $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. To put it differently, the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
 
 Naturally, plotting the $log$ function on a logarithmic scale produces a sequence of evenly spaced values. Hence, the $L$ scale appears linear, when laid out on the logarithmic slide rule. Note also that the mere act of reading $x$ on the logarithmic scale implicitly computes $log(x)$, and there is no need explicitly to compute $log^{-1}(x)$. Gunter's logarithmic scale, thus, was the groundbreaking idea that made the slide rule work so effectively, efficiently, effortlessly.
@@ -165,7 +169,7 @@ A Mannheim slide rule has scales for arithmetic ($×$ and $÷$), logarithmic ($l
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$, which suited its intended purpose.
 
-A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.57\degree, $ $5.7\degree$]. In this angular range, $sin\ \theta ≈ tan\ \theta$, so the combined $sin$-$tan$ scale suffices—for engineers. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
+A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.57\degree, $ $5.73\degree$]. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
 
 [Nestler 23 R]
 
@@ -203,7 +207,7 @@ It is no secret that most engineers frown upon the circular slide rule. [Seymour
 
 To use the Otis King, one holds the chrome handle in the left hand, and pulls out the top, thereby exposing the helical logarithmic scales. The Model L shown above has the $C$ scale on the top, the $L$ scale in the middle, and the $D$ scale on the bottom. The black handle, which is operated with the right hand, is the equivalent of the straight rule's cursor, and it is engraved with two white index marks. These two indices are the equivalents of the two hairlines on the Fowler circular rule. The upper portion of the device which holds the $C$ and $L$ scales can shift up and down along the longitudinal axis and can also spin about the axis, independently of the fixed $D$ scale on the lower portion. Of course, the hidden numbers on the $D$ scale can be brought forward by spinning the handle in the left hand. And the black cursor can shift and spin independently of both scales. Thus, the Model L's  fixed lower portion is like the frame of the straight rule, the movable upper portion is like the slide of the straight rule.
 
-One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289). I have never seen one in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
+One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules) in 1881. I have never seen one in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
 
 ![K&E 1740 Thacher](/Users/zwa/Documents/amenzwa.github.io/computing/figures/SlideRules/K&E1740Thacher.jpg)
 
@@ -215,7 +219,7 @@ A typical engineering slide rule—of the 1970s vintage—supported arithmetic, 
 
 The driving force behind the slide rule was to expedite $×$ and $÷$. As such, slide rule designers had invented numerous scales to augment the logarithmic $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$.
 
-Being the reciprocals of $C$ and $D$ scales, $CI$ and $DI$ scales run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$, but using $D$ and $CI$ this expression is computed as $a_D + b_{CI}$:
+In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$, but using $D$ and $CI$ this expression is computed as $a_D + b_{CI}$:
 $$
 a ÷ b = log(a) - log(b) = log(a) + log(-b)
 $$
@@ -275,7 +279,7 @@ To compute $\sqrt{9}$, we manipulate the slide rule as follows:
 
 Placing the hairline on $9$ in the second cycle of the $A$ scale would compute $\sqrt{90} = 9.49$. 
 
-***cubing on slide rule***—The $K$-$D$ scale pair computes $x^3$ because $K$ is a triple-cycle logarithmic scale. And the reverse $D$-$K$ scale pair computes $\sqrt[3]{x}$.
+***cubing on slide rule***—It is a little known fact that [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton) invented the cubic $K$ scale in 1675 by solving the cubic equations using three consecutive logarithmic scales. The $K$-$D$ scale pair computes $x^3$ because $K$ is a triple-cycle logarithmic scale. And the reverse $D$-$K$ scale pair computes $\sqrt[3]{x}$.
 
 To compute $3^3$, we manipulate the slide rule as follows:
 
@@ -300,6 +304,8 @@ $$
 ln : LL_n → D \\
 ln^{-1} : D → LL_n
 $$
+[$ln(x)$ plot]
+
 The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithmic scale and the base-$10$ common logarithmic scale.
 
 Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
@@ -378,13 +384,45 @@ If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.1
 
 ## *trigonometric*
 
-S, T, ST
+Trigonometric functions are related to each other in the following ways:
+$$
+sin(\theta) = cos(90\degree - \theta) \\
+cos(\theta) = sin(90\degree - \theta) \\
+tan(\theta) = cot(90\degree - \theta) = \frac{sin(\theta)}{cos(\theta)} \\
+cot(\theta) = tan(90\degree - \theta) = \frac{cos(\theta)}{sin(\theta)} \\
+sec(\theta) = \frac{1}{cos(\theta)} \\
+csc(\theta) = \frac{1}{sin(\theta)}
+$$
+The $S$ scale is graduated in degrees from $5.73\degree$ to $90\degree$. The $S$ and the $C$ scales are related by a bijective function $sin$:
+$$
+sin: S → C \\
+sin^{-1}: C → S
+$$
+[$sin(\theta)$ plot]
 
-Mannheim and Darmstadt trig scales
+To compute $sin(30\degree)$, we manipulate the slide rule as follows:
 
-## *hyperbolic*
+- $S$—Place the hairline on the *argument* $30\degree$ on the $S$ scale.
+- $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30\degree) = 0.5$.
 
-Sh, Ch, Th
+[$sin(30\degree)$ photo]
+
+To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60\degree$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60\degree$.
+
+The $S$ scale is graduated in black for $sin$ between the angles $5.73\degree$ and $90\degree$. But since $cos(\theta) = sin(90\degree - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure by referencing the red scale.
+
+The $T$ scale is graduated in degrees from $5.73\degree$ to $45\degree$. The $T$ and the $C$ scales are related by a bijective function $tan$:
+$$
+tan: T → C \\
+tan^{-1}: C → S
+$$
+[$tan(\theta)$ plot]
+
+The $T$ scale, too, has red markings for $cot$, running right to left, from $45\degree$ to $84.29\degree$.
+
+The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.57\degree, 5.73\degree]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.57\degree$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians.
+
+It is possible to chain trigonometric and arithmetic calculations on the slide rule. This is one of the reasons why calculating with the slide rule is fast. Readers interested in these details should read the manuals listed in the resources section at the end of the article.
 
 # MAINTENANCE
 
@@ -405,7 +443,7 @@ Dust also tends to gather under the cursor glass. The easiest way to remove the 
 
 If you are reading this article, odds are that you have never used or owned a slide rule. It is my hope that you would acquire one, say from [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412), and learn to use it. Your first slide rule should not be a rare collector's item; it should be something like the [K&E 4081-3 Log Log Duplex Decitrig](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_sacat=0) or the [Post 1460 Versalog](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=Post+1460+Versalog&_sacat=0&LH_TitleDesc=0&_odkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_osacat=0)—a good, but cheap, workhorse. If you do end up buying one, your slide rule will most likely be grimy and discoloured, for having been kept in a dusty storage bin for decades. Do not despair; most old slide rules can be renewed to an extent. The grime and discolouration can be removed by gently—I mean gently—rubbing with the soft, foamy side of a moistened [kitchen sponge](https://www.amazon.com/dp/B007C5IH4C?tag=aboutcom02thespruce-20&linkCode=ogi&th=1&psc=1&ascsubtag=4164819%7Cnca170cbe1d384af0a2b09e62c4e4b9b020%7CB007C5IH4C) loaded with a spot of dish soap. If you do decide to attack a stain with the rough side of the sponge, use care and judgement, or you will scrub off the scale markings. And if yours is a wood slide rule, minimise the use of water as much as practicable. Dry off the slide rule after cleaning. I strongly suggest that you clean in stages, little by little.
 
-# COLLECTION
+# COLLECTING
 
 my engineering slide rules collection
 
@@ -413,7 +451,27 @@ all photos except the Thacher are mine
 
 Darmstadt is my favourite for its simplicity-utility balance
 
+## *Otis King*
+
 The Model K is identical in construction, and has a $D$ scale of almost the same length. But the upper portion is occupied by the dual-cycle $C$ scale. The two cycles of the $C$ scale allows chained calculations without having to reset the cursor, as was necessary with the single-cycle Model L. But where as the Model L could compute $×$, $÷$, $log$, $log^{-1}$, and $x^y$, the Model K could only compute $×$ and $÷$.
+
+## *Log Log Vector*
+
+Advanced engineering slide rules, like the K&E 4083-3 Log Log Vector Duplex, have $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with electrical power engineers (as opposed to electronic engineering), in which these functions are used to compute voltages and currents of long-distant power transmission lines. Incidentally, mechanical engineers use it to compute the length and sag of chains (or, heavy-duty power cables):
+$$
+l = 2 \frac{H}{w} sinh(\frac{wb}{H}) \\
+s = \frac{H}{w} [cosh(\frac{wb}{H} - 1)]
+$$
+Here, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain.
+
+Since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations, albeit tediously:
+$$
+sinh(x) = \frac{e^x - e^{-x}}{2} \\
+cosh(x) = \frac{e^x + e^{-x}}{2} \\
+tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}
+$$
+
+## *collecting slide rules*
 
 how to collect—don't buy display items
 
