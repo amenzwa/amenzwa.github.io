@@ -21,7 +21,7 @@ In 1620, [Edmund Gunter](https://en.wikipedia.org/wiki/Edmund_Gunter), an Englis
 
 The first practical [slide rule](https://en.wikipedia.org/wiki/Slide_rule) was invented by [William Oughtred](https://en.wikipedia.org/wiki/William_Oughtred), an English mathematician, in 1622. Oughtred used two bits of wood graduated with Gunter's scale. In 1630, Oughtred fashioned a brass circular slide rule with two integrated pointers. This device was a significant improvement over Gunter's scale, in terms of practicality and usability. The photograph below shows a brass circular slide rule that is a contemporaneous clone of Oughtred's.
 
-![Davenport Circular Slide Rule](figures/SlideRules/DavenportCircularSlideRule.jpg)
+![Davenport Circular Slide Rule](./figures/SlideRules/DavenportCircularSlideRule.jpg)
 
 The earliest adopters of the slide rule were the 17th century astronomers, who used it to make fast calculations of arithmetic and trigonometric operations. But it was the 19th century engineers, the spearheaded of the industrial revolution, who propelled the slide rule technology forward. For about four centuries, the slide rule remained the preeminent calculating device. Buildings and bridges were designed by slide rule. Apollo astronauts carried the [Pickett N600-ES log-log duplex](https://americanhistory.si.edu/collections/search/object/nmah_694174) petite slide rule for navigation and thruster-burn calculations. The [General Dynamics F-16](https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon), a modern air-superiority fighter, was designed by slide rule. In the 1970s, school children all over the world, including me, were taught to use the slide rule and the logarithm book, along with penmanship and grammar.
 
@@ -221,7 +221,7 @@ To use the Otis King, one holds the chrome handle in the left hand, and pulls ou
 
 One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules) in 1881. I have never seen one in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
 
-![K&E 1740 Thacher](/Users/zwa/Documents/amenzwa.github.io/computing/figures/SlideRules/K&E1740Thacher.jpg)
+![K&E 1740 Thacher](./figures/SlideRules/K&E1740Thacher.jpg)
 
 # OPERATIONS
 
