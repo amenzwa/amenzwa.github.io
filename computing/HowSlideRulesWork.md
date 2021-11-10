@@ -308,10 +308,10 @@ Placing the hairline on $6.4$ in the first cycle of the $K$ scale would compute 
 As I mentioned previously, the $LL_n$ scales compute $x^{y/z}$ when $x > 1$, and the $LL_{0n}$ scale computes $x^{y/z}$ when $x < 1$. It is reasonable to ask, "If the $LL$ scale pairs can compute arbitrary powers and roots, why waste precious real estate with the redundant $A$, $B$, and $K$ scales?" The answer is convenience. Engineering calculations make frequent use of squares (for Pythagoreans and areas) and cubes (for volumes), and these scales provide quick calculations of those operations. And although the $LL$ scales are more powerful and precise, their procedures are commensurately more intricate and error prone.
 
 ***natural logarithmic scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $log_e$ or $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
-$$
-ln : LL_n \rightarrow D \\
-ln^{-1} : D \rightarrow LL_n
-$$
+
+- $ln : LL_n \rightarrow D$
+- $ln^{-1} : D \rightarrow LL_n$
+
 In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
 
 ![ln](./figures/SlideRules/plot-ln.jpg)
@@ -395,23 +395,23 @@ If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.1
 ## *trigonometric*
 
 Trigonometric functions are related to each other in the following ways:
-$$
-sin(\theta) = cos(90\degree - \theta) \\
-cos(\theta) = sin(90\degree - \theta) \\
-tan(\theta) = cot(90\degree - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)} \\
-cot(\theta) = tan(90\degree - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)} \\
-sec(\theta) = \frac{1}{cos(\theta)} \\
-csc(\theta) = \frac{1}{sin(\theta)}
-$$
+
+- $sin(\theta) = cos(90\degree - \theta)$
+- $cos(\theta) = sin(90\degree - \theta)$
+- $tan(\theta) = cot(90\degree - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)}$
+- $cot(\theta) = tan(90\degree - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)}$
+- $sec(\theta) = \frac{1}{cos(\theta)}$
+- $csc(\theta) = \frac{1}{sin(\theta)}$
+
 In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $tan$.
 
 ![sin-cos-tan](./figures/SlideRules/plot-sin-cos-tan.jpg)
 
 ***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73\degree$ to $90\degree$. When $\theta ∈ [5.73\degree, 90\degree]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
-$$
-sin: S \rightarrow C \\
-sin^{-1}: C \rightarrow S
-$$
+
+- $sin: S \rightarrow C$
+- $sin^{-1}: C \rightarrow S$
+
 In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. The inverse function, here $sin^{-1}$, is a reflection of the original function, here $sin$, in the $y = x$ line. The $x$-axis is the angle $\theta$ in radians.
 
 ![sin](./figures/SlideRules/plot-sin.jpg)
@@ -432,10 +432,10 @@ In the plot below, the red curve is $cos$ and the green is $cos^{-1}$.
 ![cos](./figures/SlideRules/plot-cos.jpg)
 
 ***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73\degree$ to $45\degree$. When $\theta ∈ [5.73\degree, 45\degree]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
-$$
-tan: T \rightarrow C \\
-tan^{-1}: C \rightarrow S
-$$
+
+- $tan: T \rightarrow C$
+- $tan^{-1}: C \rightarrow S$
+
 In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
 ![tan](./figures/SlideRules/plot-tan.jpg)
@@ -545,10 +545,10 @@ Below, I arranged my collection by slide rule varieties (straight, circular, and
 ![catenary](./figures/SlideRules/catenary.jpg)
 
 The length and sag of a chain hung from two posts of equal height is expressed thus:
-$$
-l = 2 \frac{H}{w} sinh(\frac{wb}{H}) \\
-s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]
-$$
+
+- $l = 2 \frac{H}{w} sinh(\frac{wb}{H})$
+- $s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]$
+
 Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary curve.
 
 Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$π$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" nomenclature of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
@@ -558,14 +558,13 @@ Catenary of chain and impedance of power line can be computed using the $C$, $D$
 [K&E 4083-3 photo]
 
 However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
-$$
-sinh(x) = \frac{e^x - e^{-x}}{2} \\
-cosh(x) = \frac{e^x + e^{-x}}{2} \\
-tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1} \\
-coth(x) = \frac{cosh(x)}{sinh(x)} \\
-sech(x) = \frac{1}{cosh(x)} \\
-csch(x) = \frac{1}{sinh(x)}
-$$
+
+- $sinh(x) = \frac{e^x - e^{-x}}{2}$
+- $cosh(x) = \frac{e^x + e^{-x}}{2}$
+- $tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}$
+- $coth(x) = \frac{cosh(x)}{sinh(x)}$
+- $sech(x) = \frac{1}{cosh(x)}$
+- $csch(x) = \frac{1}{sinh(x)}$
 
 In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is $tanh$.
 
