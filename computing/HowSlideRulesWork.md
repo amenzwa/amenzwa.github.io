@@ -33,9 +33,9 @@ But then, in 1972, HP released its first programmable scientific calculator, the
 
 It was around this time that I arrived at the university—in [Burma](https://en.wikipedia.org/wiki/Myanmar). In those days, electronic pocket calculators were beyond the reach of most college students. To ensure fairness, [my engineering college](https://en.wikipedia.org/wiki/Yangon_Technological_University) insisted that all students used the government-issued slide rule, which was readily accessible to everyone. In those days, many classrooms in my college had large, wall-mounted [demonstration slide rules](https://sliderulemuseum.com/DemoSR.htm) to teach first-year students how properly to use the slide rule like an engineer—that is, to eradicate the bad habits learned in high school.
 
-I subsequently emigrated to the US. Arrival in the US ended my association with the slide rule because, by the 1980s, American engineers were already using HP calculators and PC-based MATLAB technical computing software. I soon became an [HP RPN calculator](https://www.hpmuseum.org/) devotee. As such, I never got to use the slide rule, professionally. But I hung on to my student slide rules: the government-issued Aristo 0968 Studio and the privately-acquired Faber-Castell 8/10 circular slide rule. To this day, I remain partial to the intimate, tactile nature of the slide rule, especially its demands upon the user's brain. Over the next four decades, I have collected numerous slide rules. Many models in my collection are the ones I coveted as an engineering student in Burma, but were well beyond my reach.
+I subsequently emigrated to the US. Arrival in the US ended my association with the slide rule because, by the 1980s, American engineers were already using [HP RPN calculators](https://www.hpmuseum.org) and [MATLAB](https://www.mathworks.com/products/matlab.html) technical computing software on the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). I soon became an HP calculator devotee. As such, I never got to use the slide rule extensively in a professional setting. But I hung on to my student slide rules: the government-issued Aristo 0968 Studio, a straight rule, and the handed-down Faber-Castell 8/10, a circular rule. To this day, I remain partial to the intimate, tactile nature of the slide rule, especially the demands it places upon the user's mind. Over the next four decades, I have collected numerous slide rules. Many models in my collection are the ones I coveted as an engineering student in Burma, but were well beyond my reach.
 
-In its heyday, everyone uses the slide rule in every facet of life. As children, we saw it everywhere, so we were acquainted with it, even if we did not know how to use it. We were taught to use the slide rule's basic facilities in middle school. Our options were the abacus, the log books, or the slide rule. The choice was abundantly clear; we welcomed the opportunity to learn and to use the slide rule. Indeed, it was a rite of passage. Now, though, the world's [brightest engineering students do not know](https://youtu.be/CblhxhnSymg) what a slide rule is, let alone use it.
+In its heyday, everyone uses the slide rule in every facet of life. As children, we saw it everywhere, so we were acquainted with it, even if we did not know how to use it. We were taught to use the slide rule's basic facilities in middle school. Our options were the abacus, the log books, or the slide rule. The choice was abundantly clear; we welcomed the opportunity to learn and to use the slide rule. Indeed, it was a rite of passage. Now, though, even the [brightest engineering students](https://youtu.be/CblhxhnSymg) in the world have never heard of a slide rule, let alone know what it is.
 
 ## *main goal*
 
@@ -64,8 +64,8 @@ That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$,
 
 The $D$ and the $L$ scales are related by a bijective function $log$:
 $$
-log: D → L \\
-log^{-1}: L → D
+log: D \rightarrow L \\
+log^{-1}: L \rightarrow D
 $$
 In the plot below, the black curve is $log$ and the red is $log^{-1}$.
 
@@ -181,7 +181,7 @@ A Mannheim slide rule has scales for arithmetic ($×$ and $÷$), logarithmic ($l
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$, which suited its intended purpose.
 
-A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.57\degree, $ $5.73\degree$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
+A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.573\degree, $ $5.73\degree$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
 
 [Nestler 23 R]
 
@@ -197,7 +197,7 @@ The Faber-Castell (FC) 2/83 N Novo Duplex slide rule, shown below, was a common 
 
 Of the straight rule varieties, the less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who require more precision. Some models even came with magnifying cursor glass to allow a more precise reading. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, most slide rules manufactured over the past two centuries were of this design.
 
-***circular rules***—As an engineering student in the 1980s in Burma, I used the Faber-Castell 8/10 circular slide rule, shown below, which I inherited from an engineer aunt. All my classmates used the government-issued Aristo 0968 straight slide rule. All the scales are etched onto the exposed plastic face. The outer portion of the face is fixed to the body, and the inner portion of the face rotates. And the cursor with the hairline rotates across the scales on the face. The FC 8/10, despite being circular, operates on the same principles as the straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, the inner portion to the slide. The circular shape of the device does indeed highlight, visually and literally, the wrap-around nature of the logarithmic scales.
+***circular rules***—As an engineering student in the 1980s in Burma, I used the Faber-Castell 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. All my classmates used the government-issued Aristo 0968 straight slide rule. All the scales are etched onto the exposed plastic face. The outer portion of the face is fixed to the body, and the inner portion of the face rotates. And the cursor with the hairline rotates across the scales on the face. The FC 8/10, despite being circular, operates on the same principles as the straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, the inner portion to the slide. The circular shape of the device does indeed highlight, visually and literally, the wrap-around nature of the logarithmic scales.
 
 [Faber-Castell 8/10, early 1970s]
 
@@ -207,7 +207,7 @@ A more typical design for circular slide rules is the pocket watch variety, like
 
 [Fowler Universal Calculator, 1854, prob 1950s]
 
-As I said before, most engineers of the day shunned the circular slide rule. But the Dempster RotaRule Model AA was the one circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model, somewhat uncommon trait among circular rules. And in addition to the usual assortment of scales, it has the scales that engineers need: three $LL$ scales, scales for computing $\sqrt{x^2 + y^2}$. At about 13 cm in diameter, the RotaRule is about the same size as the FC 8/10. But unlike the FC 8/10's 25 cm circumference circular scale, the RotaRule has a 127-cm spiral scale. And it even has a $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device. Dempster began manufacturing the RotaRule in 1928. The RutaRule AA model shown below is probably from the late 1940s.
+As I said before, most engineers of the day shunned the circular slide rule. But the Dempster RotaRule Model AA was the one circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model, somewhat uncommon trait among circular rules, was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a mechanical engineer. And in addition to the usual assortment of scales, it has the scales that engineers need: three $LL$ scales, scales for computing $\sqrt{x^2 + y^2}$. At about 13 cm in diameter, the RotaRule is about the same size as the FC 8/10. But unlike the FC 8/10's 25 cm circumference circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm four-cycle $LL$ scale. And it even has a $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device. Dempster began manufacturing the RotaRule in 1928. The RutaRule AA model shown below is probably from the late 1940s.
 
 [Dempster RotaRule AA, 1928, prob 1940s]
 
@@ -313,8 +313,8 @@ As I mentioned previously, the $LL_n$ scales compute $x^{y/z}$ when $x > 1$, and
 
 ***natural logarithmic scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $log_e$ or $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
 $$
-ln : LL_n → D \\
-ln^{-1} : D → LL_n
+ln : LL_n \rightarrow D \\
+ln^{-1} : D \rightarrow LL_n
 $$
 In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
 
@@ -324,21 +324,21 @@ The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a tr
 
 Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
 
-- $LL_1$—$[1.01 → 1.105]$
-- $LL_2$—$[1.105 → e]$
-- $LL_3$—$[e → 22000]$, where $e = 2.718$
+- $LL_1$—$x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
+- $LL_2$—$x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
+- $LL_3$—$x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$, where $e = 2.718$ and $ln(e) = 1.0$
 
 [$LL_n$ scales photo]
 
 The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e_{LL_3})) = 0_D$ and $log(ln(22000_{LL_3})) = 1_D$. The $LL_n$ scales are a tangible example what "exponential growth" means: the first two 25-cm stretches of the scale span the range $[1.01, e]$, and the final 25-cm stretch span the range $[e, 22000]$.
 
-But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Squeezing this massive range of numbers into a 25-cm scale would make such a scale unusable.
+But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse.
 
 The red $LL_{0n}$ scales are reciprocals of the black $LL_n$ scales. As such, the red scales run from right to left. On the K&E 4081-3, the red $LL_{0n}$ scale is divided into these ranges:
 
-- $LL_{01}$—$[0.9901 ← 0.905]$
-- $LL_{02}$—$[0.905 ← 1/e]$
-- $LL_{03}$—$[1/e ← 0.000045]$, where $1/e = 0.368$
+- $LL_{01}$—$x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
+- $LL_{02}$—$x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
+- $LL_{03}$—$x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$, where $1/e = 0.368$
 
 [$LL_{0n}$ scales photo]
 
@@ -347,12 +347,12 @@ Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$
 To compute $ln(2)$, we manipulate the slide rule as follows:
 
 - $LL_2$—Place the hairline on the *argument* $2$ on the $LL_2$ scale.
-- $D$—Read under the hairline the *result* $0.693$ on the $D$ scale. This computes $ln(2) = 0.693$.
+- $D$—Read under the hairline the *result* $693$ on the $D$ scale. As per the legend inscribed on the right side of the $LL_2$ scale, the value of $ln(2) ∈ [0.1, 1.0]$. Hence, we read $ln(2) = 0.693$.
 
 To compute $ln(3)$, we manipulate the slide rule as follows:
 
 - $LL_3$—Place the hairline on the *argument* $3$ on the $LL_3$ scale.
-- $D$—Read under the hairline the *result* $1.099$ on the $D$ scale. This computes $ln(3) = 1.099$.
+- $D$—Read under the hairline the *result* $1099$ on the $D$ scale. As per the legend inscribed on the right side of the $LL_3$ scale, the value of $ln(3) ∈ [1.0, 10.0]$. Hence, we read $ln(3) = 1.099$.
 
 Computing $e^x$, however, is not the primary purpose of the $LL$ scale pairs; [Peter Roget](https://en.wikipedia.org/wiki/Peter_Mark_Roget), of Roget Thesaurus fame, designed this scale to compute arbitrary powers and roots in the form of $x^{y/z}$. The black $LL_n$ scales are for computing powers and roots of $x > 1$, and the red $LL_{0n}$ for $x < 1$.
 
@@ -402,51 +402,64 @@ Trigonometric functions are related to each other in the following ways:
 $$
 sin(\theta) = cos(90\degree - \theta) \\
 cos(\theta) = sin(90\degree - \theta) \\
-tan(\theta) = cot(90\degree - \theta) = \frac{sin(\theta)}{cos(\theta)} \\
-cot(\theta) = tan(90\degree - \theta) = \frac{cos(\theta)}{sin(\theta)} \\
+tan(\theta) = cot(90\degree - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)} \\
+cot(\theta) = tan(90\degree - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)} \\
 sec(\theta) = \frac{1}{cos(\theta)} \\
 csc(\theta) = \frac{1}{sin(\theta)}
 $$
-The $S$ scale is graduated in degrees from $5.73\degree$ to $90\degree$. The $S$ and the $C$ scales are related by a bijective function $sin$:
+In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $tan$.
+
+![sin-cos-tan](./figures/SlideRules/plot-sin-cos-tan.jpg)
+
+***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73\degree$ to $90\degree$. When $\theta ∈ [5.73\degree, 90\degree]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
 $$
-sin: S → C \\
-sin^{-1}: C → S
+sin: S \rightarrow C \\
+sin^{-1}: C \rightarrow S
 $$
-In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. The $x$-axis is the angle $\theta$ in radians.
+In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. The inverse function, here $sin^{-1}$, is a reflection of the original function, here $sin$, in the $y = x$ line. The $x$-axis is the angle $\theta$ in radians.
 
 ![sin](./figures/SlideRules/plot-sin.jpg)
 
 To compute $sin(30\degree)$, we manipulate the slide rule as follows:
 
-- $S$—Place the hairline on the *argument* $30\degree$ on the $S$ scale.
+- $S$—Place the hairline on the *argument* $30\degree$ on the black $S$ scale.
 - $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30\degree) = 0.5$.
 
 [$sin(30\degree)$ photo]
 
 To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60\degree$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60\degree$.
 
-The $S$ scale is graduated in black for $sin$ between the angles $5.73\degree$ and $90\degree$. But since $cos(\theta) = sin(90\degree - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
+***red $S$ scale***—The $S$ scale is graduated in black for $sin$ between the angles $5.73\degree$ and $90\degree$. But since $cos(\theta) = sin(90\degree - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
 
 In the plot below, the red curve is $cos$ and the green is $cos^{-1}$.
 
 ![cos](./figures/SlideRules/plot-cos.jpg)
 
-The $T$ scale is graduated in degrees from $5.73\degree$ to $45\degree$. The $T$ and the $C$ scales are related by a bijective function $tan$:
+***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73\degree$ to $45\degree$. When $\theta ∈ [5.73\degree, 45\degree]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
 $$
-tan: T → C \\
-tan^{-1}: C → S
+tan: T \rightarrow C \\
+tan^{-1}: C \rightarrow S
 $$
 In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
 ![tan](./figures/SlideRules/plot-tan.jpg)
 
-In the plot below, the black curve is $cot$ and the blue is $cot^{-1}$.
+***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45\degree, 84.29\degree]$. The red $T$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $T$ scale is used in conjunction with the reciprocal $CI$ scale.
+
+To compute $tan(83\degree)$, we manipulate the slide rule as follows:
+
+- $T$—Place the hairline on the *argument* $83\degree$ on the red $T$ scale.
+- $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83\degree) = 8.14$.
+
+[$tan(83\degree)$ photo]
+
+Since $cot(\theta) = tan(90\degree - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83\degree)$, we use the same procedure as $tan(83\degree)$ on the red $T$ scale, but instead read the result $cot(83\degree) = 1/tan(83\degree) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90\degree - 83\degree)$ on the black $T$ scale, and read the result $cot(83\degree) = tan(7\degree) = 0.1228$ on the $C$ scale.
+
+In the plot below, the red curve is $cot$​ and the green is $cot^{-1}$​.
 
 ![cot](./figures/SlideRules/plot-cot.jpg)
 
-The $T$ scale, too, has red markings for $cot$, running right to left, from $45\degree$ to $84.29\degree$.
-
-The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.57\degree, 5.73\degree]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.57\degree$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians.
+***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573\degree, 5.73\degree]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.573\degree$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
 
 In the plot below, the blue curve is $sin$ and the green is $tan$. These two curves are indistinguishable when $\theta ∈ [0.01, 0.1]$ radians.
 
@@ -475,9 +488,11 @@ If you are reading this article, odds are that you have never used or owned a sl
 
 # COLLECTING
 
-This section is about collecting slide rules: what to look for, how to purchase, etc. I collect slide rules. This should surprise no one reading this article. But I am an atypical collector. I collect, but I do not trade. I do not engage in bidding wars on eBay. And I collect only those slide rules that I coveted as a young engineering student in early-1980s Burma. More importantly, I collect only those slide rules that are not "collector-grade". The slide rules that I buy have high accuracy, but not necessarily high resale value: most are not rarities; some have former owners' names engraved upon them; many do not come with cases, manuals, wrappings, boxes, and other accoutrement of collecting. Moreover, I am partial to Darmstadt rules, for they offered the best balance in terms of density, simplicity, and utility.
+This section is about collecting slide rules: what to look for, how to purchase, etc. I collect slide rules. This should surprise no one reading this article. But I am an atypical collector. I buy, but I do not sell, and I do not engage in bidding wars on eBay. And I collect only those slide rules that I coveted as a young engineering student in the early 1980s. More importantly, I collect only those slide rules that are not "collector-grade". The slide rules that I buy have high accuracy, but do not necessarily have high resale value: most are not rarities; some have former owners' names engraved upon them; many do not come with cases, manuals, wrappings, boxes, and other accoutrement of collecting. Moreover, I am partial to Darmstadt rules, for they offered the best balance in terms of density, simplicity, and utility.
 
-My main goal in collecting slide rules is to play, not to display. Although these simple instruments no longer hold practical value today, they were once instrumental in humanity's ability to create societal value. I acknowledge that fact by collecting them. And by using them, I learn how ingenious of my forebears, the engineers who designed these marvellous devices. Indeed, I taught my son how to use slide rules, when he was a third-grader. So, I am motivated by knowledge and nostalgia, not by possessory pride or pecuniary purpose. When reading this section, take into consideration my biases.
+My main goal in collecting slide rules is to play, not to display. Although these simple instruments no longer hold practical value today, they were once instrumental in humanity's ability to create societal value. I acknowledge that fact by collecting them. And by using them, I learn the ingenuity of my forebears, the engineers who designed these marvellous devices. Indeed, I taught my son how to use slide rules, when he was a third-grader. I am motivated by knowledge and nostalgia, not by possessory pride or pecuniary purpose. So, when perusing my collection described in this section, take my biases into consideration.
+
+Below, I arranged my collection by slide rule varieties (straight, circular, and cylindrical) and, within each variety, by manufacturer names. Do note, though, that sellers (brands) were not necessarily the same as manufacturers, in some cases. For example, Frederick Post, a well-known American company, sold under the Post brand the bamboo slide rules manufactured by Hemmi in Japan. Hemmi also sold the same slide rules under their own brand. Also of note was that German manufacturers, Faber-Castell (est. 1761), Aristo (est. 1862), and Nestler (est. 1878), were in [West Germany](https://en.wikipedia.org/wiki/West_Germany) (FRD) during the [Cold War](https://en.wikipedia.org/wiki/Cold_War), but Reiss (est. 1882) was in [East Germany](https://en.wikipedia.org/wiki/East_Germany) (DDR). Likewise, Kontrolpribor, a Russian manufacturer, is more properly labelled as a company from the former [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union).
 
 ## *straight rules*
 
@@ -538,11 +553,11 @@ $$
 l = 2 \frac{H}{w} sinh(\frac{wb}{H}) \\
 s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]
 $$
-Here, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain. By the way, the [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary.
+Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary curve.
 
-Electrical power engineers (not electronic engineers) use hyperbolic functions to compute voltages and currents on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the $π$ model, which represents the long cable as individual segments, like the chain made of individual links. The "vector" nomenclature of the K&E 4083-3 might well trace its origin to electrical power engineers' obsessive use of this slide rule and of [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus).
+Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$π$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" nomenclature of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
 
-Catenary and power line formulae can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like the K&E 4083-3.
+Catenary of chain and impedance of power line can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like the K&E 4083-3.
 
 [K&E 4083-3 photo]
 
@@ -550,7 +565,10 @@ However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_f
 $$
 sinh(x) = \frac{e^x - e^{-x}}{2} \\
 cosh(x) = \frac{e^x + e^{-x}}{2} \\
-tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}
+tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1} \\
+coth(x) = \frac{cosh(x)}{sinh(x)} \\
+sech(x) = \frac{1}{cosh(x)} \\
+csch(x) = \frac{1}{sinh(x)}
 $$
 
 In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is $tanh$.
@@ -608,6 +626,8 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 #### Dempster (US)
 
 ***Dempster RotaRule Model AA***—
+
+The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper engineering slide rule, with three $LL_n$ scales and three $LL_{0n}$ scales, comparable in capabilities to a typical log-log duplex straight rule, but with far greater precision. Incidentally, [Bernard Boykin](http://www.oughtred.org/memoriam/memoriam.shtml), the designer of the fabulous Boykin circular slide rule, was my fellow engineer and a fellow Marylander, to boot. Alas, I do not own a Boykin circular rule—not yet.
 
 #### Emeloid (US)
 
