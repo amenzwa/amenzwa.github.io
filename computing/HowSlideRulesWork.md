@@ -52,10 +52,10 @@ It is impossible to discuss the slide rule without having the device in hand. Fo
 ## *arithmetic operations*
 
 ***properties of  logarithms***—The base-$10$ common logarithm function $log_{10}(x)$ and its inverse power-of-10 function $10^x$ gives life to the slide rule. The two main properties of logarithms upon which the slide rule relies are these:
-\[
-a × b = log^{-1}[log(a) + log(b)] \\
-a ÷ b = log^{-1}[log(a) - log(b)]
-\]
+
+- $a × b = log^{-1}[log(a) + log(b)]$
+- $a ÷ b = log^{-1}[log(a) - log(b)]$
+
 That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$. Note that $log^{-1}(x) = 10^x$.
 
 ***logarithmic scale***—The slide rule mechanised these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). To derive the logarithmic scale, we begin with a 25-cm-long arithmetic scale divided into $10$ equal major divisions, marked $0, 1, 2, 3, ..., 10$, similar to an ordinary ruler. We then line up $log(1) = 0$ with the arithmetic scale's $0$, and place $log(2) = 0.301, log(3) = 0.477, ...$ at the appropriate spots along the arithmetic scale. The resulting graduations is the logarithmic scale. Incidentally, the arithmetic scale is the logarithm scale $L$, which is used to compute the $log$ function. The arithmetic $L$ scale and the logarithmic $D$ scales are shown below.
