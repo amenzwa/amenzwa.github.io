@@ -63,10 +63,10 @@ That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$,
 [$L$ scale and $D$ scale]
 
 The $D$ and the $L$ scales are related by a bijective function $log$:
-$$
-log: D \rightarrow L \\
-log^{-1}: L \rightarrow D
-$$
+
+- $log: D \rightarrow L$
+- $log^{-1}: L \rightarrow D$
+
 In the plot below, the black curve is $log$ and the red is $log^{-1}$.
 
 ![log](./figures/SlideRules/plot-log.jpg)
@@ -232,9 +232,9 @@ A typical engineering slide rule—of the 1970s vintage—supported arithmetic, 
 The driving force behind the slide rule was to expedite $×$ and $÷$. As such, slide rule designers had invented numerous scales to augment the logarithmic $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$.
 
 In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$, but using $D$ and $CI$ this expression is computed as $a_D + b_{CI}$:
-$$
-a ÷ b = log(a) - log(b) = log(a) + log(-b)
-$$
+
+- $a ÷ b = log(a) - log(b) = log(a) + log(-b)$
+
 The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $π$, thereby moving the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales.
 
 [reciprocal and folded scales photo]
@@ -250,23 +250,23 @@ The logarithmic scale is the irony of the slide rule. The $log$ function is nonl
 ## *exponentiation*
 
 ***logarithmic exponentiation***—The general exponentiation $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
-$$
-log(x^{y/z}) = y ÷ z × log(x)
-$$
+
+- $log(x^{y/z}) = y ÷ z × log(x)$.
+
 Then, $×$ and $÷$ can be further reduced to $+$ and $-$ by applying the $log$ function once more:
-$$
-log(y ÷ z × log(x)) = log(y) - log(z) + log(log(x))
-$$
+
+- log(y ÷ z × log(x)) = log(y) - log(z) + log(log(x))
+
 It turns out that the slide rule uses the base-$e$ natural logarithm $ln$ as the inner logarithm, and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving the precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing these logarithmic operations:
-$$
-\begin{equation}
+
+$\begin{equation}
   \begin{split}
     x^{y/z} & = ln^{-1}(y ÷ z × ln(x)) \\
             & = ln^{-1}[log^{-1}\{log(y ÷ z × ln(x))\}] \\
             & = ln^{-1}[log^{-1}\{log(y) - log(z) + log(ln(x))\}]
   \end{split}
-\end{equation}
-$$
+\end{equation}$
+
 So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
 - $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
 - $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)] = ln^{-1}[log^{-1}\{log(1) - log(4) + log(ln(16))\}] = 2$
