@@ -328,7 +328,7 @@ Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it 
 
 [$LL_n$ scales photo]
 
-The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e_{LL_3})) = 0_D$ and $log(ln(22000_{LL_3})) = 1_D$. The $LL_n$ scales are a tangible example of "exponential growth".
+The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of "exponential growth".
 
 But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse.
 
