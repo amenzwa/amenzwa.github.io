@@ -181,7 +181,7 @@ A Mannheim slide rule has scales for arithmetic ($×$ and $÷$), logarithmic ($l
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$, which suited its intended purpose.
 
-A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.573\degree, $ $5.73\degree$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
+A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.573^∘, $ $5.73^∘$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
 
 [Nestler 23 R]
 
@@ -322,11 +322,13 @@ Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it 
 
 - $LL_1$—$x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
 - $LL_2$—$x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
-- $LL_3$—$x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$, where $e = 2.718$ and $ln(e) = 1.0$
+- $LL_3$—$x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$
+  - Here, $e = 2.718$ and $ln(e) = 1.0$
+
 
 [$LL_n$ scales photo]
 
-The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e_{LL_3})) = 0_D$ and $log(ln(22000_{LL_3})) = 1_D$. The $LL_n$ scales are a tangible example what "exponential growth" means.
+The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e_{LL_3})) = 0_D$ and $log(ln(22000_{LL_3})) = 1_D$. The $LL_n$ scales are a tangible example of "exponential growth".
 
 But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse.
 
@@ -334,7 +336,9 @@ The red $LL_{0n}$ scales are reciprocals of the black $LL_n$ scales. As such, th
 
 - $LL_{01}$—$x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
 - $LL_{02}$—$x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
-- $LL_{03}$—$x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$, where $1/e = 0.368$
+- $LL_{03}$—$x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
+  - Here, $1/e = 0.368$ and $ln(1/e) = -1.0$
+
 
 [$LL_{0n}$ scales photo]
 
@@ -396,10 +400,10 @@ If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.1
 
 Trigonometric functions are related to each other in the following ways:
 
-- $sin(\theta) = cos(90\degree - \theta)$
-- $cos(\theta) = sin(90\degree - \theta)$
-- $tan(\theta) = cot(90\degree - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)}$
-- $cot(\theta) = tan(90\degree - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)}$
+- $sin(\theta) = cos(90^∘ - \theta)$
+- $cos(\theta) = sin(90^∘ - \theta)$
+- $tan(\theta) = cot(90^∘ - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)}$
+- $cot(\theta) = tan(90^∘ - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)}$
 - $sec(\theta) = \frac{1}{cos(\theta)}$
 - $csc(\theta) = \frac{1}{sin(\theta)}$
 
@@ -407,7 +411,7 @@ In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $
 
 ![sin-cos-tan](./figures/SlideRules/plot-sin-cos-tan.jpg)
 
-***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73\degree$ to $90\degree$. When $\theta ∈ [5.73\degree, 90\degree]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
+***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73^∘$ to $90^∘$. When $\theta ∈ [5.73^∘, 90^∘]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
 
 - $sin: S \rightarrow C$
 - $sin^{-1}: C \rightarrow S$
@@ -416,22 +420,22 @@ In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. The inve
 
 ![sin](./figures/SlideRules/plot-sin.jpg)
 
-To compute $sin(30\degree)$, we manipulate the slide rule as follows:
+To compute $sin(30^∘)$, we manipulate the slide rule as follows:
 
-- $S$—Place the hairline on the *argument* $30\degree$ on the black $S$ scale.
-- $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30\degree) = 0.5$.
+- $S$—Place the hairline on the *argument* $30^∘$ on the black $S$ scale.
+- $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30^∘) = 0.5$.
 
-[$sin(30\degree)$ photo]
+[$sin(30^∘)$ photo]
 
-To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60\degree$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60\degree$.
+To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60^∘$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60^∘$.
 
-***red $S$ scale***—The $S$ scale is graduated in black for $sin$ between the angles $5.73\degree$ and $90\degree$. But since $cos(\theta) = sin(90\degree - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
+***red $S$ scale***—The $S$ scale is graduated in black for $sin$ between the angles $5.73^∘$ and $90^∘$. But since $cos(\theta) = sin(90^∘ - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
 
 In the plot below, the red curve is $cos$ and the green is $cos^{-1}$.
 
 ![cos](./figures/SlideRules/plot-cos.jpg)
 
-***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73\degree$ to $45\degree$. When $\theta ∈ [5.73\degree, 45\degree]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
+***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73^∘$ to $45^∘$. When $\theta ∈ [5.73^∘, 45^∘]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
 
 - $tan: T \rightarrow C$
 - $tan^{-1}: C \rightarrow S$
@@ -440,22 +444,22 @@ In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
 ![tan](./figures/SlideRules/plot-tan.jpg)
 
-***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45\degree, 84.29\degree]$. The red $T$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $T$ scale is used in conjunction with the reciprocal $CI$ scale.
+***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45^∘, 84.29^∘]$. The red $T$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $T$ scale is used in conjunction with the reciprocal $CI$ scale.
 
-To compute $tan(83\degree)$, we manipulate the slide rule as follows:
+To compute $tan(83^∘)$, we manipulate the slide rule as follows:
 
-- $T$—Place the hairline on the *argument* $83\degree$ on the red $T$ scale.
-- $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83\degree) = 8.14$.
+- $T$—Place the hairline on the *argument* $83^∘$ on the red $T$ scale.
+- $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83^∘) = 8.14$.
 
-[$tan(83\degree)$ photo]
+[$tan(83^∘)$ photo]
 
-Since $cot(\theta) = tan(90\degree - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83\degree)$, we use the same procedure as $tan(83\degree)$ on the red $T$ scale, but instead read the result $cot(83\degree) = 1/tan(83\degree) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90\degree - 83\degree)$ on the black $T$ scale, and read the result $cot(83\degree) = tan(7\degree) = 0.1228$ on the $C$ scale.
+Since $cot(\theta) = tan(90^∘ - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83^∘)$, we use the same procedure as $tan(83^∘)$ on the red $T$ scale, but instead read the result $cot(83^∘) = 1/tan(83^∘) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90^∘ - 83^∘)$ on the black $T$ scale, and read the result $cot(83^∘) = tan(7^∘) = 0.1228$ on the $C$ scale.
 
 In the plot below, the red curve is $cot$​ and the green is $cot^{-1}$​.
 
 ![cot](./figures/SlideRules/plot-cot.jpg)
 
-***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573\degree, 5.73\degree]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.573\degree$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
+***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573^∘, 5.73^∘]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.573^∘$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
 
 In the plot below, the blue curve is $sin$ and the green is $tan$. These two curves are indistinguishable when $\theta ∈ [0.01, 0.1]$ radians.
 
