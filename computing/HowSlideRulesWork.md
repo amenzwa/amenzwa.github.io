@@ -13,9 +13,9 @@ Calculations operate on operands obtained through measurements. Counting is the 
 
 By around 3000 BC, Sumerians had invented the sexagesimal (base-$60$) number system, and they were using the [abacus](https://en.wikipedia.org/wiki/Abacus) by 2700 BC. Egyptians used simple measuring instruments and advanced geometry to survey property boundaries on the Nile flood planes and to erect the pyramids. By 220 BC, Persian astronomers were using the [astrolabe](https://en.wikipedia.org/wiki/Astrolabe) to calculate the latitude, to measure the height of objects, and to triangulate positions. Greeks constructed truly advanced mechanical instruments that predicted solar and lunar eclipses. The complexity and refinement exhibited by the [Antikythera mechanism](https://en.wikipedia.org/wiki/Antikythera_mechanism) from around 200 BC continues to amaze modern engineers.
 
-It could be said that astronomy evolved from measuring, tracking, and predicting the movements of the sun and the moon. When celestial navigation came to be used extensively during the 1500s during the age of global trade across the oceans, we began charting the night sky in earnest. Astronomical calculations involved manually manipulating large numbers. These calculations were tedious and error-prone.
+It could be said that astronomy evolved from measuring, tracking, and predicting the movements of the sun and the moon. When celestial navigation came to be used extensively during the 1500s during the age of global trade across the oceans, we began charting the night sky in earnest. Astronomical calculations involved manually manipulating large numbers. These calculations were tedious and error prone.
 
-In 1617, the brilliant Scottish mathematician [John Napier](https://en.wikipedia.org/wiki/John_Napier) published his method of mechanising [lattice multiplication](https://en.wikipedia.org/wiki/Lattice_multiplication). This method is known today as [Napier's bones](https://en.wikipedia.org/wiki/Napier%27s_bones). A few years earlier in 1614, Napier discovered [logarithms](https://en.wikipedia.org/wiki/Logarithm). Perhaps it would be more appropriate to say Napier invented logarithms, for his discovery was motivated by his desire to simplify multiplication and division. Arithmetically, multiplication can be thought of as repeated additions, and division as repeated subtractions. Logarithmically, multiplication of two numbers can be reduced to addition of their logarithms, and division to subtraction thereof. Hence, multiplication and division of very large numbers can be reduced to straightforward addition and subtraction, with the aid of prepared logarithm and inverse logarithm tables.
+In 1617, a brilliant Scottish mathematician [John Napier](https://en.wikipedia.org/wiki/John_Napier) published his method of mechanising [lattice multiplication](https://en.wikipedia.org/wiki/Lattice_multiplication). This method is known today as [Napier's bones](https://en.wikipedia.org/wiki/Napier%27s_bones). A few years earlier in 1614, Napier discovered [logarithms](https://en.wikipedia.org/wiki/Logarithm). Perhaps it would be more appropriate to say Napier invented logarithms, for his discovery was motivated by his desire to simplify multiplication and division. Arithmetically, multiplication can be thought of as repeated additions, and division as repeated subtractions. Logarithmically, multiplication of two numbers can be reduced to addition of their logarithms, and division to subtraction thereof. Hence, multiplication and division of very large numbers can be reduced to straightforward addition and subtraction, with the aid of prepared logarithm and inverse logarithm tables.
 
 In 1620, [Edmund Gunter](https://en.wikipedia.org/wiki/Edmund_Gunter), an English astronomer, used Napier's logarithms to create a calculating device we now call [Gunter's scale](https://en.wikipedia.org/wiki/Edmund_Gunter#Gunter's_scale). The etchings on this device were not linear like a simple ruler, but logarithmic. To multiply two numbers, the length representing the multiplicand is first marked out on the logarithmic scale using a divider and, from thence, the length representing the multiplier is similarly marked out, thereby obtaining the product, which is the sum of the two logarithmic lengths. This device was the precursor to the slide rule.
 
@@ -23,23 +23,23 @@ The first practical [slide rule](https://en.wikipedia.org/wiki/Slide_rule) was i
 
 ![Davenport Circular Slide Rule](./figures/SlideRules/DavenportCircularSlideRule.jpg)
 
-The earliest adopters of the slide rule were the 17th century astronomers, who used it to make fast calculations of arithmetic and trigonometric operations. But it was the 19th century engineers, the spearheaded of the industrial revolution, who propelled the slide rule technology forward. For about four centuries, the slide rule remained the preeminent calculating device. Buildings and bridges were designed by slide rule. Apollo astronauts carried the [Pickett N600-ES](https://americanhistory.si.edu/collections/search/object/nmah_694174) pocket slide rule for navigation and propulsion calculations. The [General Dynamics F-16](https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon), a modern air-superiority fighter, was designed by slide rule. In the 1970s, school children all over the world, including me, were taught to use the slide rule and the logarithm book, along with penmanship and grammar.
+The earliest adopters of the slide rule were the 17th century astronomers, who used it to make fast calculations of arithmetic and trigonometric operations. But it was the 19th century engineers, the spearheads of the industrial revolution, who propelled the slide rule technology forward. For almost four centuries, the slide rule remained the preeminent calculating device. Buildings, bridges, machines—even computer system components—were designed by slide rule. Apollo astronauts carried the [Pickett N600-ES](https://americanhistory.si.edu/collections/search/object/nmah_694174) pocket slide rule for navigation and propulsion calculations. The [General Dynamics F-16](https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon), a present-day air-superiority fighter, was designed by slide rule. Well into the late 1970s, school children all over the world, including me, were taught to use the slide rule and the logarithm book, along with penmanship and grammar.
 
-The largest group of slide rule users, naturally, were engineers. But slide rules were used in all areas of human endeavour that required calculating: business, construction, manufacturing, medicine, and even photography. Obviously, bankers and accountants relied on the slide rule to perform numerical gymnastics. But construction sites and factory floors, too, used specialised versions of slide rules for mixing concrete, computing volumes, etc. Surveyors used the [stadia slide rule](http://www.rechenschieber.org/stadia.pdf) made specifically for the purpose. Doctors use special, [medical slide rules](https://www.rechenschieber-werbemittel.de/en/slide-charts/medical) for calculating all manner of things: body mass index, pregnancy terms, medicine dosage, and the like. Photographers used [photometric slide rules](https://en.wikipedia.org/wiki/Actinograph) for calculating film development times. Army officers used [artillery slide rules](https://www.springfieldarsenal.net/155MM-Howitzer-slide-rule-range-tables-for-M483-M16.htm). Pilots used [aviation slide rules](https://www.sliderulemuseum.com/Aerospace.htm). The list was long. The slide rule perfectly expressed the engineering design philosophy: capability by simplicity.
+The largest and most enthusiastic group of slide rule users, naturally, were engineers. But slide rules were used in all areas of human endeavour that required calculation: business, construction, manufacturing, medicine, photography, and more. Obviously, bankers and accountants relied on the slide rule to perform sundry numerical gymnastics. But construction sites and factory floors, too, used specialised versions of slide rules for mixing concrete, computing volumes, etc. Surveyors used the [stadia slide rule](http://www.rechenschieber.org/stadia.pdf) made specifically for them. Doctors use special, [medical slide rules](https://www.rechenschieber-werbemittel.de/en/slide-charts/medical) for calculating all manner of things: body mass index, pregnancy terms, medicine dosage, and the like. Photographers used [photometric slide rules](https://en.wikipedia.org/wiki/Actinograph) for calculating film development times. Army officers used [artillery slide rules](https://www.springfieldarsenal.net/155MM-Howitzer-slide-rule-range-tables-for-M483-M16.htm). Pilots used [aviation slide rules](https://www.sliderulemuseum.com/Aerospace.htm). The list was long. This humble device powered the 19th century Industrial Revolution and seeded the 20th century Technological Revolution. Indeed, the slide rule perfectly expressed the engineering design philosophy: capability through simplicity.
 
-But then, in 1972, HP released its first programmable scientific calculator, the inimitable [HP-35](https://hpmuseum.org/hp35.htm). The HP-35 rang loud the death knell of the slide rule. Although electronic pocket calculators were unaffordable in the early 1970s, thanks to [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law), they became ubiquitous within a decade, and quickly displaced the slide rule. By the early 1980s, only a few people were using the slide rule. I was one.
+But then, in 1972, HP released its first programmable scientific calculator, the inimitable [HP-35](https://hpmuseum.org/hp35.htm). The HP-35 rang loud the death knell of the slide rule. Although electronic pocket calculators were unaffordable in the early 1970s, they became ubiquitous within a decade thanks to [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law), and quickly displaced the slide rule. By the early 1980s, only a few people in the world were using the slide rule. I was one.
 
 ## *personal*
 
 It was around this time that I arrived at the university—in [Burma](https://en.wikipedia.org/wiki/Myanmar). In those days, electronic pocket calculators were beyond the reach of most college students. To ensure fairness, [my engineering college](https://en.wikipedia.org/wiki/Yangon_Technological_University) insisted that all students used the government-issued slide rule, which was readily accessible to everyone. Many classrooms in my college had large, wall-mounted [demonstration slide rules](https://sliderulemuseum.com/DemoSR.htm) to teach first-year students how properly to use the slide rule like an engineer—that is, to eradicate the bad habits learned in high school.
 
-I subsequently emigrated to the US. Arrival in the US ended my association with the slide rule because, by the 1980s, American engineers were already using [HP RPN calculators](https://www.hpmuseum.org) and [MATLAB](https://www.mathworks.com/products/matlab.html) technical computing software on the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). I soon became an HP calculator devotee. As such, I never got to use the slide rule extensively in a professional setting. But I hung on to my student slide rules: the government-issued Aristo 0968 Studio, a straight rule, and the handed-down Faber-Castell 8/10, a circular rule. To this day, I remain partial to the intimate, tactile nature of the slide rule, especially the demands it places upon the user's mind. Over the next four decades, I have collected numerous slide rules. Many models in my collection are the ones I coveted as an engineering student in Burma, but were well beyond my reach.
+I subsequently emigrated to the US. Arrival in the US ended my association with the slide rule because, by the 1980s, American engineers were already using [HP RPN pocket calculators](https://www.hpmuseum.org) and [MATLAB](https://www.mathworks.com/products/matlab.html) technical computing software on the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). I soon became an HP calculator devotee. As such, I never got to use the slide rule extensively in a professional setting. But I hung on to my student slide rules: the government-issued Aristo 0968 Studio, a straight rule, and the handed-down Faber-Castell 8/10, a circular rule. To this day, I remain partial to the intimate, tactile nature of the slide rule, especially the demands it places upon the user's mind. Over the next four decades, I have collected numerous slide rules. Many models in my collection are the ones I coveted as an engineering student in Burma, but were well beyond my reach.
 
-In its heyday, everyone uses the slide rule in every facet of life. As children, we saw it everywhere, so we were acquainted with it, even if we did not know how to use it. We were taught to use the slide rule's basic facilities in middle school. Our options were the abacus, the log books, or the slide rule. The choice was abundantly clear; we welcomed the opportunity to learn and to use the slide rule. Indeed, it was a rite of passage. Now, though, even the [brightest engineering students](https://youtu.be/CblhxhnSymg) in the world have never heard of a slide rule, let alone know what it is.
+In its heyday, everyone uses the slide rule in every facet of life. As children, we saw it everywhere, so we were acquainted with it, even if we did not know how to use it. We were taught to use the slide rule's basic facilities in middle school. Our options were the abacus, the log books, or the slide rule. The choice was abundantly clear: we enthusiastically took up the slide rule; it was a rite of passage. Now, though, even the [brightest engineering students](https://youtu.be/CblhxhnSymg) in the world have never heard of a slide rule, let alone know what it is.
 
 ## *goal*
 
-My main goal in writing this article is to preserve the knowledge about, and the memory of, the slide rule: how it works and how it was used. The focus here is on the basic principles of operation and how the slide rule was used in engineering. This is a "how it works" explanation, and not a "how to use" manual. Those who are interested in the most efficient use of a slide rule may read the manuals listed in the resources section at the end of this article. Beyond history and reminiscence, I hope to highlight the wide-ranging utility of some of the most basic mathematical functions that are familiar to middle schoolers.
+My main goal in writing this article is to preserve the knowledge about, and the memory of, this exceedingly clever computing device: how it works and how it was used. The focus here is on the basic principles of operation and how the slide rule was used in engineering. This is a "how it works" explanation, and not a "how to use" manual. Those who are interested in the most efficient use of a slide rule may read the manuals listed in the resources section at the end of this article. Beyond history and reminiscence, I hope to highlight the wide-ranging utility of some of the most basic mathematical functions that are familiar to middle schoolers.
 
 ## *recommendations*
 
@@ -165,9 +165,9 @@ On the right end of $D$ scale, $9.8$, $8.85$, $9.9$, $9.95$, etc., can be read d
 
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/9.975.jpg)
 
-Under optimal conditions—calibrated slide rule, nominal eyesight, alert mind, and good lighting—the slide rule can attain four significant figures on the lower end of the $D$ scale and three significant figures on the higher end of the scale.
+Under optimal conditions—calibrated slide rule, nominal eyesight, good lighting, and alert mind—the slide rule can attain four significant figures on the lower end of the $D$ scale and three significant figures on the higher end of the scale.
 
-Ordinarily, the slide rule was used to evaluate complicated expressions involving many chained calculations needed to be performed quickly, but precision was not a paramount concern. Where precision is important, [logarithm tables](https://en.wikipedia.org/wiki/Mathematical_table) were used. These tables were laboriously hand-computed to several significant figures. If the desired value fell between two entries in the table, one could manually interpolate the result. While accountants may have demanded such high precisions afforded by the logarithm tables, engineers willingly accepted three or four significant figures offered by the slide rule, because the slide rule was accurate enough for engineering use and it was the fastest means then available to perform many calculations. In due course, the slide rule became inextricably linked to engineers, like the stethoscope to doctors.
+Ordinarily, the slide rule was used to evaluate complicated expressions involving many chained calculations when they needed to be performed quickly but when precision was not a paramount concern. When precision is important, however, [logarithm tables](https://en.wikipedia.org/wiki/Mathematical_table) were used. These tables were laboriously hand-computed to several significant figures. If the desired value fell between two entries in the table, the user is obliged manually to interpolate the result. While accountants may have demanded such high precisions afforded by the logarithm tables, engineers willingly accepted three or four significant figures offered by the slide rule, because the slide rule was accurate enough for engineering use and it was the fastest means then available to perform calculations. In due course, the slide rule became inextricably linked to engineers, like the stethoscope to doctors.
 
 # VARIETIES
 
@@ -223,7 +223,7 @@ As I said before, most engineers of the day shunned the circular slide rule. But
 
 ![Dempster RotaRule Model AA](./figures/SlideRules/DempsterRotaRule/front.jpg)
 
-It is no secret that most engineers frown upon the circular slide rule. [Seymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray), my favourite electrical engineer and a fellow circular slide rule fancier, [once quipped](https://youtu.be/8Z9VStbhplQ?t=713), "If you had a circular [slide rule], you had some social problems in college." He was right.
+It is no secret that most engineers frown upon the circular slide rule. [Seymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray), the designer of the [CRAY super computer](https://en.wikipedia.org/wiki/Cray), my favourite electrical engineer, and my fellow circular slide rule fancier, [once quipped](https://youtu.be/8Z9VStbhplQ?t=713), "If you had a circular [slide rule], you had some social problems in college." He was right.
 
 ## *cylindrical rules*
 
@@ -233,13 +233,13 @@ All cylindrical rules employed the very long helical scale, and the business com
 
 To use the Otis King, one holds the chrome handle in the left hand, and pulls out the top, thereby exposing the helical logarithmic scales. The Model L shown above has the $C$ scale on the top, the $L$ scale in the middle, and the $D$ scale on the bottom. The black handle, which is operated with the right hand, is the equivalent of the straight rule's cursor, and it is engraved with two white index marks. These two indices are the equivalents of the two hairlines on the Fowler circular rule. The upper portion of the device which holds the $C$ and $L$ scales can shift up and down along the longitudinal axis and can also spin about the axis, independently of the fixed $D$ scale on the lower portion. Of course, the hidden numbers on the $D$ scale can be brought forward by spinning the handle in the left hand. And the black cursor can shift and spin independently of both scales. Thus, the Model L's  fixed lower portion is like the frame of the straight rule, the movable upper portion is like the slide of the straight rule.
 
-One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules) in 1881. I have never seen one in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
+One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed in 1881 by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules), an American engineer working for K&E. I have never seen this device in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
 
 ![K&E 1740 Thacher](./figures/SlideRules/K&E1740Thacher.jpg)
 
 # OPERATIONS
 
-A typical engineering slide rule—of the 1970s vintage—supported arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models supported hyperbolic functions. More specialised models had field-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore the field-specific functions, and instead describe the common engineering slide rule functions.
+An ordinary engineering slide rule supported arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models supported hyperbolic functions. More specialised models had field-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore the field-specific functions, and instead describe the most common functions found on a typical engineering slide rule.
 
 ## *arithmetic*
 
@@ -247,9 +247,9 @@ The driving force behind the slide rule was to expedite $×$ and $÷$. As such, 
 
 In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$, but using $D$ and $CI$ this expression is computed as $a_D + b_{CI}$:
 
-- $a ÷ b = log(a) - log(b) = log(a) + log(-b)$
+- $a ÷ b = log(a) - log(b) = log(a) + log(1/b)$
 
-The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $π$, thereby moving the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales.
+The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $π$, thereby moving the $1$ mark to the middle of the scale. They reduce the distance required to move the slide. The following photograph shows these auxiliary arithmetic scales.
 
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
@@ -362,7 +362,7 @@ To compute $ln(3)$, we manipulate the slide rule as follows:
 - $LL_3$—Place the hairline on the *argument* $3$ on the $LL_3$ scale.
 - $D$—Read under the hairline the *result* $1099$ on the $D$ scale. As per the legend inscribed on the right side of the $LL_3$ scale, the value of $ln(3) ∈ [1.0, 10.0]$. Hence, we read $ln(3) = 1.099$.
 
-Computing $e^x$, however, is not the primary purpose of the $LL$ scale pairs; [Peter Roget](https://en.wikipedia.org/wiki/Peter_Mark_Roget), of Roget Thesaurus fame, designed this scale to compute arbitrary powers and roots in the form of $x^{y/z}$. The black $LL_n$ scales are for computing powers and roots of $x > 1$, and the red $LL_{0n}$ for $x < 1$.
+Computing $e^x$, however, is not the primary purpose of the $LL$ scale pairs; [Peter Roget](https://en.wikipedia.org/wiki/Peter_Mark_Roget), an English physician and the creator of the Roget Thesaurus, designed this scale to compute arbitrary powers and roots in the form of $x^{y/z}$. The black $LL_n$ scales are for computing powers and roots of $x > 1$, and the red $LL_{0n}$ for $x < 1$.
 
 Using the $LL$ scales properly is challenging, and using them efficient requires an appreciable amount of practice. As we have seen above, multiplication and division start and end on the fixed $D$ scale and requires the use of the sliding the $C$ scale. Likewise, exponentiation starts and ends on the fixed $LL$ scale and requires the use of the sliding $C$ scale. The operation $x^y$ is performed on the slide rule in a similar manner as $y × x$ except, of course, using a different pair of scales.
 
@@ -495,6 +495,196 @@ Sometimes, the slide can get a bit sticky. This is caused by the grime—a mixtu
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/clean.jpg)
 
 If you are reading this article, odds are that you have never used or owned a slide rule. It is my hope that you would acquire one, say from [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412), and learn to use it. Your first slide rule should not be a rare collector's item; it should be something like the [K&E 4081-3 Log Log Duplex Decitrig](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_sacat=0) or the [Post 1460 Versalog](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=Post+1460+Versalog&_sacat=0&LH_TitleDesc=0&_odkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_osacat=0)—a good, but cheap, workhorse. If you do end up buying one, your slide rule will most likely be grimy and discoloured, for having been kept in a dusty storage bin for decades. Do not despair; most old slide rules can be renewed to an extent. The grime and discolouration can be removed by gently—I mean gently—rubbing with the soft, foamy side of a moistened [kitchen sponge](https://www.amazon.com/dp/B007C5IH4C?tag=aboutcom02thespruce-20&linkCode=ogi&th=1&psc=1&ascsubtag=4164819%7Cnca170cbe1d384af0a2b09e62c4e4b9b020%7CB007C5IH4C) loaded with a spot of dish soap. If you do decide to attack a stain with the rough side of the sponge, use care and judgement, or you will scrub off the scale markings. And if yours is a wood slide rule, minimise the use of water as much as practicable. Dry off the slide rule after cleaning. I strongly suggest that you clean in stages, little by little.
+
+# COLLECTING
+
+This section is about collecting slide rules: what to look for, how to purchase, how to avoid pitfalls, etc. I collect slide rules; this should surprise no one reading this article. But I am an atypical collector. I buy but I do not sell, and I do not engage in bidding wars on eBay. And I collect only those slide rules that I coveted as a young engineering student in the early 1980s. More importantly, I buy only those slide rules that are not "collector-grade". The slide rules that I buy have high accuracy, but do not necessarily have high resale value: most are not rarities; some have former owners' names engraved upon them; many do not come with cases, manuals, wrappings, boxes, and other accoutrement of collecting. Moreover, I am partial to Darmstadt rules, for they offered the best balance in terms of density, simplicity, and utility.
+
+My main goal in collecting slide rules is to play, not to display. Although these simple instruments no longer hold practical value today, they were once instrumental in humanity's ability to create societal value. I acknowledge that fact by collecting them. And by using them, I am able to appreciate more deeply the ingenuity of my forebears, the engineers who designed these marvellous devices. To perpetuate this appreciation, I taught my son how to use slide rules, when he was a third-grader. I am motivated by knowledge and nostalgia, not by possessory pride or pecuniary purpose. So, when perusing my collection described in this section, take my biases into account.
+
+Below, I arranged my collection by slide rule varieties (straight, circular, and cylindrical) and, within each variety, by manufacturer names. Do note, though, that sellers (brands) were not necessarily the same as manufacturers, in some cases. For example, Frederick Post, a well-known American company, sold under the Post brand the bamboo slide rules designed and manufactured by Hemmi in Japan. Hemmi also sold many superb slide rules under their own brand. Also of note was that German manufacturers, Faber-Castell (est. 1761), Aristo (est. 1862), and Nestler (est. 1878), were in [West Germany](https://en.wikipedia.org/wiki/West_Germany) (FRD) during the [Cold War](https://en.wikipedia.org/wiki/Cold_War), but Reiss (est. 1882) was in [East Germany](https://en.wikipedia.org/wiki/East_Germany) (DDR). And Kontrolpribor, a Russian manufacturer, is more properly labelled a factory from the former [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union).
+
+## *straight rules*
+
+#### Aristo (DE)
+
+***Aristo 967U Darmstadt***—
+
+***Aristo 0968 Studio***—
+
+***Aristo 0969 StudioLog***—
+
+#### Blundell-Harling (UK)
+
+***BRL D.26 Darmstadt***—
+
+#### Faber-Castell (DE)
+
+***FC 1/54 Darmstadt***—
+
+***FC 1/98 Elektro***—
+
+***FC 2/83 N Novo-Duplex***—
+
+***FC 67/64 R Darmstadt mit Addiator***—
+
+#### Graphoplex (FR)
+
+***Graphoplex 640 Electric Log Log***—
+
+***Graphoplex 643 Electric Log Log***—
+
+#### Hemmi (JP)
+
+***Hemmi 130W Advanced Darmstadt***—
+
+***Hemmi 135 Pocket Advanced Darmstadt***—
+
+***Hemmi 149 Pocket Log Log Duplex Decitrig***—
+
+***Hemmi 153 Electrical Engineer***—
+
+***Hemmi 255D Expert Electrical Engineer***—
+
+#### Keuffel  & Esser (US)
+
+***K&E 4181-1 Pocket Log Log Duplex Decitrig***—
+
+***K&E 4081-3 Log Log Duplex Decitrig***—
+
+***K&E 68-1100 Deci-Lon 10***—
+
+***K&E 4083-3 Log Log Vector Duplex***—The K&E 4083-3 Log Log Vector Duplex was one of the earliest advanced engineering slide rules with $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
+
+![catenary](./figures/SlideRules/catenary.jpg)
+
+The length and sag of a chain hung from two posts of equal height is expressed thus:
+
+- $l = 2 \frac{H}{w} sinh(\frac{wb}{H})$
+- $s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]$
+
+Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary curve.
+
+Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$π$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" nomenclature of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
+
+Catenary of chain and impedance of power line can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like the K&E 4083-3.
+
+[K&E 4083-3 photo]
+
+However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
+
+- $sinh(x) = \frac{e^x - e^{-x}}{2}$
+- $cosh(x) = \frac{e^x + e^{-x}}{2}$
+- $tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}$
+- $coth(x) = \frac{cosh(x)}{sinh(x)}$
+- $sech(x) = \frac{1}{cosh(x)}$
+- $csch(x) = \frac{1}{sinh(x)}$
+
+In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is $tanh$.
+
+![sinh-cosh-tanh](./figures/SlideRules/plot-sinh-cosh-tanh.jpg)
+
+#### Logarex (CZ)
+
+***Logarex 27402-X Darmstadt***—
+
+***Logarex 27403-X Darmstadt***—
+
+#### Nestler (DE)
+
+***Nestler 23 R/3 Rietz***—
+
+***Nestler 0210 Darmstadt***—
+
+***Nestler 0292 Multimath-Duplex***—
+
+#### Pickett & Eckel (US)
+
+***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—
+
+***Pickett N4-ES Vector Log Log Dual-Base***—
+
+#### Post (Hemmi, JP)
+
+***Post 1447 Mannheim***—
+
+***Post 1460 Versalog II***—
+
+***Post 1461 Pocket Versalog II***—
+
+#### Reiss (DE)
+
+***Reiss 3214 Darmstadt Record***—
+
+***Reiss Darmstadt***—
+
+## *circular rules*
+
+#### **AirClassics** (US)
+
+***AirClassics E6-B Flight Computer***—
+
+#### Breitling (CH)
+
+***Breitling Montbrillant Datora***—
+
+#### Concise (JP)
+
+***Concise Model 300***—
+
+#### Dempster (US)
+
+***Dempster RotaRule Model AA***—
+
+The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper engineering slide rule, with three $LL_n$ scales and three $LL_{0n}$ scales, comparable in capabilities to a typical log-log duplex straight rule, but with far greater precision. Incidentally, [Bernard Boykin](http://www.oughtred.org/memoriam/memoriam.shtml), the designer of the fabulous Boykin circular slide rule, was my fellow engineer and a fellow Marylander, to boot. Alas, I do not own a Boykin circular rule—not yet.
+
+#### Emeloid (US)
+
+***Emeloid Radio Transmission Line Calculator***—
+
+#### Faber-Castell (DE)
+
+***FC 8/10***—
+
+#### Fowler (UK)
+
+***Fowler's Universal Calculator***—
+
+#### Gilson (US)
+
+***Gilson Binary***—
+
+#### Kontrolpribor (RU)
+
+***Kontrolpribor  Model KL-1***—
+
+#### Loga (CH)
+
+***Loga 30 Tt***—
+
+#### Pickett & Eckel (US)
+
+***Pickett 101-C Dial Rule***—
+
+***Pickett 111-ES***—made in JP
+
+## *cylindrical rules*
+
+#### Otis King (UK)
+
+***Otis King Model K***—The Model K's upper cylinder is sports the dual-cycle $C$ scale. The two cycles of the $C$ scale allows chained calculations without having to reset the cursor, as was necessary with the single-cycle Model L. The Model K could compute only $×$ and $÷$.
+
+[Otis King Model K photo]
+
+***Otis King Model L***—The Model L is identical in construction to the Model K, and these two models have a $D$ scale that is almost the same length. But the Model L's upper cylinder is occupied by the single-cycle $C$ scale and the $L$ scale. Where as the Model K could compute only $×$ and $÷$, the Model L could compute $×$, $÷$, $log$, $log^{-1}$, and $x^y$.
+
+[Otis King Model L photo]
+
+# CONCLUSION
+
+I hope I have given a thorough enough explanation in this article on how the slide rule works, how it was used, and how it came to be. Although this article will not make the reader an expert user of an advanced engineering slide rule, there is ample information preserved and presented here to enable him to pursue his interest further, whether it is in learning or in collecting. And I hope, also, that I have demonstrated the extent to which some very simple mathematical functions, like $log$, $ln$, $sin$, $tan$, etc., were put to use, when necessity and ingenuity coincided at a crucial point in the development of our species.
+
+Indeed, true ingenuity is in being able to make useful things inexpensively on a massive scale by composing simple ideas in systematic, reliable, repeatable ways. That is the foundational philosophy of engineering. The slide rule, both as a tool for engineering and as a product of engineering, epitomised this philosophy in its day. And for that, alone, it deserves to be remembered, treasured.
 
 # RESOURCES
 
