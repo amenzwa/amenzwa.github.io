@@ -29,7 +29,7 @@ The largest group of slide rule users, naturally, were engineers. But slide rule
 
 But then, in 1972, HP released its first programmable scientific calculator, the inimitable [HP-35](https://hpmuseum.org/hp35.htm). The HP-35 rang loud the death knell of the slide rule. Although electronic pocket calculators were unaffordable in the early 1970s, thanks to [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law), they became ubiquitous within a decade, and quickly displaced the slide rule. By the early 1980s, only a few people were using the slide rule. I was one.
 
-## *personal background*
+## *personal*
 
 It was around this time that I arrived at the university—in [Burma](https://en.wikipedia.org/wiki/Myanmar). In those days, electronic pocket calculators were beyond the reach of most college students. To ensure fairness, [my engineering college](https://en.wikipedia.org/wiki/Yangon_Technological_University) insisted that all students used the government-issued slide rule, which was readily accessible to everyone. Many classrooms in my college had large, wall-mounted [demonstration slide rules](https://sliderulemuseum.com/DemoSR.htm) to teach first-year students how properly to use the slide rule like an engineer—that is, to eradicate the bad habits learned in high school.
 
@@ -37,23 +37,23 @@ I subsequently emigrated to the US. Arrival in the US ended my association with 
 
 In its heyday, everyone uses the slide rule in every facet of life. As children, we saw it everywhere, so we were acquainted with it, even if we did not know how to use it. We were taught to use the slide rule's basic facilities in middle school. Our options were the abacus, the log books, or the slide rule. The choice was abundantly clear; we welcomed the opportunity to learn and to use the slide rule. Indeed, it was a rite of passage. Now, though, even the [brightest engineering students](https://youtu.be/CblhxhnSymg) in the world have never heard of a slide rule, let alone know what it is.
 
-## *main goal*
+## *goal*
 
 My main goal in writing this article is to preserve the knowledge about, and the memory of, the slide rule: how it works and how it was used. The focus here is on the basic principles of operation and how the slide rule was used in engineering. This is a "how it works" explanation, and not a "how to use" manual. Those who are interested in the most efficient use of a slide rule may read the manuals listed in the resources section at the end of this article. Beyond history and reminiscence, I hope to highlight the wide-ranging utility of some of the most basic mathematical functions that are familiar to middle schoolers.
 
-## *recommended devices*
+## *recommendations*
 
 It is impossible to discuss the slide rule without having the device in hand. For the presentations below, I chose the Keuffel & Esser (K&E) 4081-3 Log Log Duplex Decitrig. It was one of the most common engineering slide rules for decades and, as such, many engineering professors published good introductory books for it.
 
-[K&E 4081-3 photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
 The term "log-log" refers to the $LL$ scale, which is used to compute arbitrary exponentiation. The term "duplex" refers to the fact that both sides of the frame are etched with scales. The duplex arrangement was invented by William Cox in 1895 for K&E. The term "decitrig" was K&E's trade name for its slide rules that used decimal degrees for trigonometric computations, instead of minutes and seconds. Engineers prefer using the more convenient decimal notation. The K&E 4081-3 was perhaps the most popular engineering slide rule in the US.
 
 Another common model was the Post 1460 Versalog. Although somewhat less popular than the K&E 4081-3, the Post 1460 is cheaper and, in my opinion, is a better slide rule. It is made of bamboo, a more stable material than wood.
 
-[Post 1460 photo]
+![Post 1460](./figures/SlideRules/Post1460/front.jpg)
 
-Go on eBay and buy an inexpensive one, either the [K&E 4081-3](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) or the [Post 1460](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=post+1460+versalog+slide+rule&_sacat=0); you will need a slide rule to follow the discussions below. Alternatively, you could use a [slide rule simulator](https://www.sliderules.org/react/hemmi_versalog_ii.html).
+Go on eBay and buy an inexpensive one, either the [K&E 4081-3](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) or the [Post 1460](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=post+1460+versalog+slide+rule&_sacat=0); you will need a slide rule to follow the discussions below. Alternatively, you could use a [slide rule simulator](https://www.sliderules.org/react/hemmi_versalog_ii.html). After having read this article, I recommend moving on to one or more of the books listed in the resources section at the end.
 
 # PRINCIPLES
 
@@ -90,7 +90,7 @@ The logarithmic scale has many other uses in STEM beyond the slide rule: the [Ri
 1. $D$—Place the cursor hairline on the *argument* $2$ on the $D$ scale.
 2. $L$—Read under the hairline the *result* $0.301$ on the $L$ scale. This computes $log(2) = 0.301$.
 
-[$log(2)$ photo]
+![log(2)](./figures/SlideRules/K&E4081-3/log-2.jpg)
 
 To compute $2 × 3$, we manipulate the slide rule as follows:
 
@@ -99,7 +99,7 @@ To compute $2 × 3$, we manipulate the slide rule as follows:
 3. $C$—Place the hairline on the *multiplier* $3$ on the $C$ scale.
 4. $D$—Read under the hairline the *product* $6$ on the $D$ scale.
 
-[$2 × 3$ photo]
+![2×3](./figures/SlideRules/K&E4081-3/2×3.jpg)
 
 The above multiplication procedure computes $2 × 3 = 6$, like this:
 
@@ -117,7 +117,7 @@ To compute $2 ÷ 3$, we manipulate the slide rule as follows:
 3. $C$—Place the hairline on the right-hand $1$ on the $C$ scale. This computes $log(2) - log(3)$.
 4. $D$—Read under the hairline the *quotient* $667$ on the $D$ scale, which is interpreted to be $0.667$, as will be explained below. This computes $log^{-1}[log(2) - log(3)] = 2 ÷ 3 = 0.667$.
 
-[$2 ÷ 3$ photo]
+![2÷3](./figures/SlideRules/K&E4081-3/2÷3.jpg)
 
 Multiplication and division operations start and end with the cursor hairline on the $D$ scale. Skilled users frequently skipped the initial cursor setting when multiplying and the final cursor setting when dividing, opting instead to use the either end of the $C$ scale as the substitute hairline.
 
@@ -129,9 +129,7 @@ Through the centuries, the slide rule gained numerous scales, some very speciali
 
 In slide rule parlance, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated. And *precision* means how many significant figures the user can reliably read off the scale.
 
-***accuracy***—More expensive, professional-grade slide rules were made exceedingly well, yet they all allowed the user to calibrate the device. Even a well-made slide rule, like the K&E 4081-3 Log Log Duplex Decitrig slide rule, shown below, can go out of alignment if mistreated, say by exposing it to sun, solvent, shock, heat, or cold. And prolonged exposure to moisture can warp a wood slide rule, like the K&E 4081-3, thereby damaging it, permanently. I describe the recalibration procedure in the maintenance section, later in this article.
-
-[K&E 4081-3 Log Log Duplex Decitrig]
+***accuracy***—More expensive, professional-grade slide rules were made exceedingly well, yet they all allowed the user to calibrate the device. Even a well-made slide rule, like the K&E 4081-3 can go out of alignment if mistreated, say by exposing it to sun, solvent, shock, heat, or cold. And prolonged exposure to moisture can warp a wood slide rule, like the K&E 4081-3, thereby damaging it, permanently. I describe the recalibration procedure in the maintenance section, later in this article.
 
 ***precision***—Before we discuss precision of slide rules, let us explore the nature of the logarithmic scale. The $C$ and $D$ scales are logarithmic, so they are nonlinear. The scales start at $log(1) = 0$, which is marked as $1$, and end at $log(10) = 1$, which is also marked as $1$. In other words, these scales wrap around by multiples of $10$. So, the number $314$ is read as $0.314$, $3.14$, $31.4$, or $314.0$, depending on context. The decimal point is located using some clever mental arithmetic.
 
@@ -147,7 +145,7 @@ As can be seen in the photograph below, the distance between two adjacent major 
 - $log(9) - log(8) = 0.051 \approx 5\%$
 - $log(10) - log(9) = 0.046 \approx 4\%$
 
-[whole $D$ scale]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
 The photograph above also shows the three distinct regions on the $D$ scale that have different resolutions:
 
@@ -155,17 +153,17 @@ The photograph above also shows the three distinct regions on the $D$ scale that
 - In the rage $[2, 5]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $5$ minor divisions.
 - In the range $[5, 1]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $2$ minor divisions.
 
-At the left end of the $D$ scale, $1.11$, $1.12$, etc., can be read directly from the scale. With practice, one could visually subdivide each minor division into $10$ sub-subdivisions and discern $1.111$ from $1.112$. In the photograph below, the cursor hairline is placed on $1.111$.
+At the left end of the $D$ scale, $1.11$, $1.12$, etc., can be read directly from the scale. With practice, one could visually subdivide each minor division into $10$ sub-subdivisions and discern $1.111$ from $1.112$. In the photograph below, the cursor hairline is placed on $1.115$.
 
-[$1.111$ on $D$ scale]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/1.115.jpg)
 
 In the middle of the $D$ scale, $3.12$, $3.14$, etc., can be read directly from the scale. Indeed, $3.14$ is marked as $π$ on $C$ and $D$ scales of all slide rules. With a nominal eyesight, each minor division could be subdivided visually and easily read $3.13$, which is halfway between the $3.12$ and the $3.14$ graduations. The photograph below shows the hairline on $3.13$.
 
-[$3.13$ on $D$ scale]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/3.13.jpg)
 
 On the right end of $D$ scale, $9.8$, $8.85$, $9.9$, $9.95$, etc., can be read directly from the scale. With due care, each minor division could be subdivided into $2$ sub-subdivisions and read without undue strain $9.975$, which is halfway between the $9.95$ and the $1$ graduations. See the photograph below. But for those of us with poor eyesights, it is rather difficult to discern $9.98$ from $9.99$.
 
-[$9.975$ on $D$ scale]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/9.975.jpg)
 
 Under optimal conditions—calibrated slide rule, nominal eyesight, alert mind, and good lighting—the slide rule can attain four significant figures on the lower end of the $D$ scale and three significant figures on the higher end of the scale.
 
@@ -189,23 +187,23 @@ The most common kind of slide rule was the 25 cm desk model, called the straight
 
 A Mannheim slide rule has scales for arithmetic ($×$ and $÷$), logarithmic ($log_{10}$), square ($x^2$ and $\sqrt{x}$), cubic ($x^3$ and $\sqrt[3]{x}$), and trigonometric ($sin$, $tan$, $cos$, and $cot$). The following is the Post 1447 simplex slide rule, manufactured by the Japanese company Hemmi in the late 1950s. In this context, "simplex" refers to the slide rules with scales on only one side of the frame. All slides, however, have scales on both sides. As is common with Japanese slide rules, this one is made of bamboo, which is a far better material than wood, because bamboo is more resistant to warping and slides more smoothly.
 
-[Post 1447]
+![Post 1447](./figures/SlideRules/Post1447/front.jpg)
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$, which suited its intended purpose.
 
 ***Rietz type***—A slight improvement upon the Mannheim slide rule was the German Rietz type. It added the $ST$ scale for small angles in the range $[0.573°, $ $5.73°$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
 
-[Nestler 23 R]
+![Nestler 23 R](./figures/SlideRules/Nestler23R/front.jpg)
 
 ***Darmstadt type***—Another German innovation, the Darmstadt type, was the workhorse preferred by the early 20th century engineers. It has three $LL$ scales, $LL_1$, $LL_2$, and $LL_3$, used to compute general exponentiation of the form $x^{y/z} = \sqrt[z]{x^y}$. When $z = 1$, the general expression reduces to $x^y$. When $y = 1$, the general expression reduces to $x^{1/z} = \sqrt[z]{x}$. Newer, more advanced models sport the fourth $LL_0$ scale. The following is the Aristo 967 U Darmstadt from the mid 1970s.
 
-[Aristo 967 U]
+![Aristo 967 U](./figures/SlideRules/Aristo967U/front.jpg)
 
 ***log-log duplex type***—Engineering slide rules generally were of the log-log duplex type. The models used by engineering students have three black $LL$ scales ($LL_1$, $LL_2$, and $LL_3$) for cases where $x > 1$ and three red $LL$ scales ($LL_{01}$, $LL_{02}$, and $LL_{03}$ running from right to left) for cases where $x < 1$. More advanced models used by professional engineers have four black-red pairs of $LL$ scales.
 
 The Faber-Castell (FC) 2/83 N Novo Duplex slide rule, shown below, was a common model used by many engineers in the mid to late 1970s. It was especially popular outside the US. It was a big (wide) slide rule. And it was arguably one of the most aesthetically pleasing slid rules ever manufactured. Aside from sporting four black-red pairs of $LL$ scales, it had $T_1$ and $T_2$ refined $tan$ scales, $W_1$ and $W_2$ specialised scale pairs for computing $\sqrt{x}$ with greater precision, and additional hairlines on the cursor for power (HP and kW) computations.
 
-[Faber-Castell 2/83 N Novo Duplex]
+![Faber-Castell 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
 
 Of the straight rule types, the less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who require more precision. Some models even came with magnifying cursor glass to allow a more precise reading. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, most slide rules manufactured over the past two centuries were of this design.
 
@@ -213,17 +211,17 @@ Of the straight rule types, the less expensive Mannheim and Rietz models were us
 
 As an engineering student in the 1980s in Burma, I used the Faber-Castell 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. All my classmates used the government-issued Aristo 0968 straight slide rule. All the scales are etched onto the exposed plastic face. The outer portion of the face is fixed to the body, and the inner portion of the face rotates. And the cursor with the hairline rotates across the scales on the face. The FC 8/10, despite being circular, operates on the same principles as the straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, the inner portion to the slide. The circular shape of the device does indeed highlight, visually and literally, the wrap-around nature of the logarithmic scales.
 
-[Faber-Castell 8/10, early 1970s]
+![Faber-Castell 8/10](./figures/SlideRules/FC8-10/front.jpg)
 
 The diameter of the FC 8/10 circular rule is only 12 cm, but in terms of capability, it is equivalent to a 25-cm Rietz straight rule. I liked the FC 8/10, because it was well made like all FC products, accurate, inexpensive, unique, aesthetically pleasing, and compact. I used it for ordinary, daily tasks. But when I needed the $LL$ scale, say for laboratory work and examinations, I used the Aristo 0968 log-log duplex. In general, switching slide rules like this is detrimental, since it robs the opportunity to develop an intimate relation with a single device. But the FC 8/10 is an atypical circular rule; in fact, it is a wrap-around Mannheim straight rule. So, my switching between the FC 8/10 and the 0968 did not impact me, negatively. By way of analogy, FC 8/10 is to Aristo 0968 what [HP-35](https://hpmuseum.org/hp35.htm) is to [HP-32S](https://www.hpmuseum.org/hp32s.htm).
 
-A more typical design for circular slide rules is the pocket watch variety, like the Fowler Universal Calculator shown below. Fowler began manufacturing calculating devices in the mid 1800s. This particular model probably dates to the 1950s. Etched into the glass of this Fowler is the fixed red hairline, aligned with the crown at 12 o'clock. This crown rotates the face anticlockwise. All the scales are etched onto this one-piece, rotating face. And the crown at 2 o'clock rotates the clear plastic cursor bearing the black hairline clockwise.
+A more typical design for circular slide rules is the pocket watch variety, like the Fowler Universal Calculator shown below. Fowler began manufacturing calculating devices in the mid 1800s. This particular model probably dates to the 1950s. Etched into the glass of this Fowlersal Calculatorr is the fixed red hairline, aligned with the crown at 12 o'clock. This crown rotates the face anticlockwise. All the scales are etched onto this one-piece, rotating face. And the crown at 2 o'clock rotates the clear plastic cursor bearing the black hairline clockwise.
 
-[Fowler Universal Calculator, 1854, prob 1950s]
+![Fowler Universal Calculator](./figures/SlideRules/FowlerUC/front.jpg)
 
 As I said before, most engineers of the day shunned the circular slide rule. But the Dempster RotaRule Model AA was the one circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model, somewhat uncommon trait among circular rules, was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a mechanical engineer. And in addition to the usual assortment of scales, it has the scales that engineers need: three $LL$ scales, scales for computing $\sqrt{x^2 + y^2}$. At about 13 cm in diameter, the RotaRule is about the same size as the FC 8/10. But unlike the FC 8/10's 25 cm circumference circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm four-cycle $LL$ scale. And it even has a $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device. Dempster began manufacturing the RotaRule in 1928. The RutaRule AA model shown below is probably from the late 1940s.
 
-[Dempster RotaRule AA, 1928, prob 1940s]
+![Dempster RotaRule Model AA](./figures/SlideRules/DempsterRotaRule/front.jpg)
 
 It is no secret that most engineers frown upon the circular slide rule. [Seymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray), my favourite electrical engineer and a fellow circular slide rule fancier, [once quipped](https://youtu.be/8Z9VStbhplQ?t=713), "If you had a circular [slide rule], you had some social problems in college." He was right.
 
@@ -231,7 +229,7 @@ It is no secret that most engineers frown upon the circular slide rule. [Seymour
 
 All cylindrical rules employed the very long helical scale, and the business community favours the greater precision these devices afforded. As such, most cylindrical rules very large; they were meant for the banker's desk. By contrast, the Otis King Model L, shown below, is a very compact cylindrical rule. In the stowed position, the device is well shy of the length of an open hand. It fitted coat pockets as well as any watch-style circular models, but it offered far greater precision. This particular Model L is likely from the early 1970s.
 
-[Otis King Model L, 1922, early 1970s]
+![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
 
 To use the Otis King, one holds the chrome handle in the left hand, and pulls out the top, thereby exposing the helical logarithmic scales. The Model L shown above has the $C$ scale on the top, the $L$ scale in the middle, and the $D$ scale on the bottom. The black handle, which is operated with the right hand, is the equivalent of the straight rule's cursor, and it is engraved with two white index marks. These two indices are the equivalents of the two hairlines on the Fowler circular rule. The upper portion of the device which holds the $C$ and $L$ scales can shift up and down along the longitudinal axis and can also spin about the axis, independently of the fixed $D$ scale on the lower portion. Of course, the hidden numbers on the $D$ scale can be brought forward by spinning the handle in the left hand. And the black cursor can shift and spin independently of both scales. Thus, the Model L's  fixed lower portion is like the frame of the straight rule, the movable upper portion is like the slide of the straight rule.
 
@@ -253,7 +251,7 @@ In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English ex
 
 The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $π$, thereby moving the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales.
 
-[reciprocal and folded scales photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
 These auxiliary scales allow faster calculations, when many $×$ and $÷$ operations are chained in a complicated expression. For example, a folded $CI$ has the $1$ mark near the middle of the slide rule, so the cursor movement distance could be reduce considerably. But I shall not present the detailed procedures on using these scales, because they are procedural optimisations not essential to understanding the fundamentals of the slide rule. Interested readers may refer to the manuals for specific slide rules, which are listed in the resource section, below.
 
@@ -261,7 +259,7 @@ These auxiliary scales allow faster calculations, when many $×$ and $÷$ operat
 
 The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule. To compute a logarithm, say $log(2)$, one simply places the hairline on the $2$ mark on the $D$ logarithmic scale, and read the result on the $L$ arithmetic scale. See below.
 
-[$log(2)$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/log-2.jpg)
 
 ## *exponentiation*
 
@@ -292,7 +290,7 @@ To compute $3^2$, we manipulate the slide rule as follows:
 - $D$—Place the hairline on the *argument* $3$ on the $D$ scale.
 - $A$—Read under the hairline the *result* $9$ on the $A$ scale. This computes $3^2 = 9$.
 
-[$3^2$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/3^2.jpg)
 
 The $A$-$D$ scale pair computes $x^2$ because $A$ is a dual-cycle logarithmic scale and $D$ is a single-cycle logarithmic scale. In the reverse direction, the $D$-$A$ scale pair computes $\sqrt{x}$.
 
@@ -341,9 +339,6 @@ Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it 
 - $LL_3$ | $x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$
   - Here, $e = 2.718$ and $ln(e) = 1.0$
 
-
-[$LL_n$ scales photo]
-
 The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of the explosive rate of "exponential growth".
 
 But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse.
@@ -354,9 +349,6 @@ The red $LL_{0n}$ scales are reciprocals of the black $LL_n$ scales. As such, th
 - $LL_{02}$ | $x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
 - $LL_{03}$ | $x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
   - Here, $1/e = 0.368$ and $ln(1/e) = -1.0$
-
-
-[$LL_{0n}$ scales photo]
 
 Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $LL_{0n}$ scales as $e^{-x}$.
 
@@ -381,11 +373,11 @@ To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 - $C$—Place the hairline on the *exponent* $2.4$ on the $C$ scale.
 - $LL_1$—Flip the slide rule to the back side. Read under the hairline the *result* $1.0735$ on the $LL_1$ scale. This computes $1.03^{2.4} = 1.0735$.
 
-[$1.03^{2.4}$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/1.03^2.4.jpg)
 
 But if we wish to compute $1.03^{9.2}$, we have a small crisis. Once the $C$ scale's left-hand $1$ is lined up with the $LL_1$ scale's $1.03$, the $C$ scale's $9.2$ has moved off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale, and have ventured into the $LL_2$ scale. To avoid going off the edge, we use the folded $CF$ scale, instead. We line up the $CF$ scale's $1$, which is near the centre of that scale, and move the hairline to the exponent $9.2$ of the left. We then read the result $1.03^{9.2} = 1.3125$ on the $LL_2$ scale.
 
-[$1.03^{9.2}$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
 And if we wish to compute $1.03^{92}$, we would perform the same operations, but read the result $1.03^{92} = 15.2$ on the $LL_3$ scale.
 
@@ -408,7 +400,7 @@ To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 - $CI$—Place the hairline on the right-hand $1$ of the $CI$ scale.
 - $LL_{02}$—Read under the hairline the result $0.413$ on the $LL_{02}$ scale. This computes $2.22^{-1.11} = 0.413$.
 
-[$2.22^{-1.11}$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/2.22^-1.11.jpg)
 
 If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $LL_{02}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as required. The $LL$ scales are the most powerful scales on a typical engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the manuals listed in the resources section at the end of the article.
 
@@ -441,7 +433,7 @@ To compute $sin(30°)$, we manipulate the slide rule as follows:
 - $S$—Place the hairline on the *argument* $30°$ on the black $S$ scale.
 - $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30°) = 0.5$.
 
-[$sin(30°)$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/sin-30.jpg)
 
 To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60°$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60°$.
 
@@ -467,7 +459,7 @@ To compute $tan(83°)$, we manipulate the slide rule as follows:
 - $T$—Place the hairline on the *argument* $83°$ on the red $T$ scale.
 - $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83°) = 8.14$.
 
-[$tan(83°)$ photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/tan-83.jpg)
 
 Since $cot(\theta) = tan(90° - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83°)$, we use the same procedure as $tan(83°)$ on the red $T$ scale, but instead read the result $cot(83°) = 1/tan(83°) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90° - 83°)$ on the black $T$ scale, and read the result $cot(83°) = tan(7°) = 0.1228$ on the $C$ scale.
 
@@ -492,13 +484,15 @@ It is possible to chain trigonometric and arithmetic calculations on the slide r
 - ***align front cursor to frame***—Move the cursor hairline on the left-hand $π$ of the upper frame's $DF$ scale and the left-hand $1$ of the lower frame's $D$ scale on the front side of the frame. Slightly loosen the screws that hold the glass's metal bracket to the top and the bottom end pieces of the cursor. Nudge the glass until the hairline is aligned to both the $DF$ and the $D$ scales. Retighten the glass bracket's screws. Do not over tighten, lest the cursor is damaged.
 - ***align back cursor to frame***—Flip the slide rule, and align the back cursor to the frame in like manner.
 
+[K&E 4081-3 adjustment photo]
+
 Tedious and frustrating though it maybe, recalibrating the slide rule was the easy bit. Reading the scales with adequate precision, however, was not as easy, especially for those of us with poor eyesights.
 
 ***cleaning***—I can say nothing about maintaining vintage, Thacher-style large cylindrical rules, since I have never even seen one in person. But straight rules, circular rules, and Otis King-style cylindrical rules should be cleaned by gently wiping down with moistened paper towel, then wipe off the moisture, immediately. Although plastic and aluminium rules can be washed like dishes, wood and bamboo rules should not, lest they absorb too much moisture. Note that the black handle (the cursor) on the Otis King is actually black-painted brass cylinder. Aggressive rubbing will scrub off the black paint.
 
-Sometimes, the slide can get a bit sticky. This is caused by the grime—a mixture of dust and skin oil—that collect in the contact areas between the slide and the frame. This grime can be scraped off with a moist paper towel. Do not apply lemon oil, grease, powder, graphite, or any other foreign material to the slide-frame contact areas.
+Sometimes, the slide can get a bit sticky. This is caused by the grime—a mixture of dust and skin oil—that collect in the contact areas between the slide and the frame. This grime can be scraped off with a moist paper towel. Do not apply lemon oil, grease, powder, graphite, or any other foreign material to the slide-frame contact areas. Dust also tends to gather under the cursor glass. The easiest way to remove the dust is to use a compressed air canister to blow out the dust. To remove stubborn stains under the glass, however, the cursor may need to be disassembled and cleaned.
 
-Dust also tends to gather under the cursor glass. The easiest way to remove the dust is to use a compressed air canister to blow out the dust. To remove stubborn stains under the glass, however, the cursor may need to be disassembled and cleaned.
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/clean.jpg)
 
 If you are reading this article, odds are that you have never used or owned a slide rule. It is my hope that you would acquire one, say from [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412), and learn to use it. Your first slide rule should not be a rare collector's item; it should be something like the [K&E 4081-3 Log Log Duplex Decitrig](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_sacat=0) or the [Post 1460 Versalog](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=Post+1460+Versalog&_sacat=0&LH_TitleDesc=0&_odkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_osacat=0)—a good, but cheap, workhorse. If you do end up buying one, your slide rule will most likely be grimy and discoloured, for having been kept in a dusty storage bin for decades. Do not despair; most old slide rules can be renewed to an extent. The grime and discolouration can be removed by gently—I mean gently—rubbing with the soft, foamy side of a moistened [kitchen sponge](https://www.amazon.com/dp/B007C5IH4C?tag=aboutcom02thespruce-20&linkCode=ogi&th=1&psc=1&ascsubtag=4164819%7Cnca170cbe1d384af0a2b09e62c4e4b9b020%7CB007C5IH4C) loaded with a spot of dish soap. If you do decide to attack a stain with the rough side of the sponge, use care and judgement, or you will scrub off the scale markings. And if yours is a wood slide rule, minimise the use of water as much as practicable. Dry off the slide rule after cleaning. I strongly suggest that you clean in stages, little by little.
 
