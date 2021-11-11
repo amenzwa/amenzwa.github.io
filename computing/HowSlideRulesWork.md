@@ -31,7 +31,7 @@ But then, in 1972, HP released its first programmable scientific calculator, the
 
 ## *personal background*
 
-It was around this time that I arrived at the university—in [Burma](https://en.wikipedia.org/wiki/Myanmar). In those days, electronic pocket calculators were beyond the reach of most college students. To ensure fairness, [my engineering college](https://en.wikipedia.org/wiki/Yangon_Technological_University) insisted that all students used the government-issued slide rule, which was readily accessible to everyone. In those days, many classrooms in my college had large, wall-mounted [demonstration slide rules](https://sliderulemuseum.com/DemoSR.htm) to teach first-year students how properly to use the slide rule like an engineer—that is, to eradicate the bad habits learned in high school.
+It was around this time that I arrived at the university—in [Burma](https://en.wikipedia.org/wiki/Myanmar). In those days, electronic pocket calculators were beyond the reach of most college students. To ensure fairness, [my engineering college](https://en.wikipedia.org/wiki/Yangon_Technological_University) insisted that all students used the government-issued slide rule, which was readily accessible to everyone. Many classrooms in my college had large, wall-mounted [demonstration slide rules](https://sliderulemuseum.com/DemoSR.htm) to teach first-year students how properly to use the slide rule like an engineer—that is, to eradicate the bad habits learned in high school.
 
 I subsequently emigrated to the US. Arrival in the US ended my association with the slide rule because, by the 1980s, American engineers were already using [HP RPN calculators](https://www.hpmuseum.org) and [MATLAB](https://www.mathworks.com/products/matlab.html) technical computing software on the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). I soon became an HP calculator devotee. As such, I never got to use the slide rule extensively in a professional setting. But I hung on to my student slide rules: the government-issued Aristo 0968 Studio, a straight rule, and the handed-down Faber-Castell 8/10, a circular rule. To this day, I remain partial to the intimate, tactile nature of the slide rule, especially the demands it places upon the user's mind. Over the next four decades, I have collected numerous slide rules. Many models in my collection are the ones I coveted as an engineering student in Burma, but were well beyond my reach.
 
@@ -97,10 +97,10 @@ The above multiplication procedure computes $2 × 3 = 6$, like this:
 
 - In step (1), we placed the hairline on $D$ scale's $2$. In this way, we mechanically marked out the length $[1, 2]$ along the logarithmic $D$ scale. Mathematically, this is equivalent to computing $log(2)$.
 - In step (2), we lined up $C$ scale's left-hand $1$, the beginning of the scale, with $D$ scale's $2$, in preparation for the next step.
-- In step (3), we placed the hairline on $C$ scale's $3$. This mechanically marked out the length $[1, 2]_D + [1, 3]_C$ on the logarithmic $D$ scale, which is mathematically equivalent to computing $log(2) + log(3)$.
+- In step (3), we placed the hairline on $C$ scale's $3$. This mechanically marked out the length sum $[1, 2]_D + [1, 3]_C$ on the logarithmic $D$ scale, which is mathematically equivalent to computing $log(2) + log(3)$.
 - Then, in step (4), we read the result $6$ on the $D$ scale under the hairline. This is a mathematical equivalent of computing $log^{-1}[log(2) + log(3)] = 2 × 3 = 6$.
 
-To put it plainly, adding $2$ units of length and $3$ units of length yields $2 + 3 = 5$ units of length on the arithmetic scale. But on the logarithmic scale, adding $2$ units of length and $3$ units of length yields $2 × 3 = 6$ units of length.
+To put it plainly, adding $2$ units of length and $3$ units of length yields $2 + 3 = 5$ units of length on the arithmetic scale of an ordinary rule. But on the logarithmic scale of the slide rule, adding $2$ units of length and $3$ units of length yields $2 × 3 = 6$ units of length.
 
 To compute $2 ÷ 3$, we manipulate the slide rule as follows:
 
@@ -111,19 +111,21 @@ To compute $2 ÷ 3$, we manipulate the slide rule as follows:
 
 [$2 ÷ 3$ photo]
 
-Multiplication and division operations start and end with the cursor hairline on the $D$ scale. Skilled users frequently skipped the initial cursor setting when multiplying and the final cursor setting when dividing, opting instead to use the either end of the $C$ scale as the substitute hairline. By the way, the slide rule is always operated using both hands. To make fine adjustments of the slider, one uses the index fingers of both hands, one finger pushing and the other opposing. The bottom end of the cursor glides along the bottom of the lower frame, and there is a tension spring between the top end of the cursor and the top of the upper frame. This spring stabilises the cursor against the frame. To make fine adjustments of the cursor, one uses the thumbs of both hands against the bottom of the cursor. But when using the back side of a duplex straight rule, the cursor had to be fine adjusted using the index fingers, since the flat bottom of the cursor has now flipped to the top.
+Multiplication and division operations start and end with the cursor hairline on the $D$ scale. Skilled users frequently skipped the initial cursor setting when multiplying and the final cursor setting when dividing, opting instead to use the either end of the $C$ scale as the substitute hairline.
 
-After the invention of the slide rule's logarithmic scale and its basic mechanisms in the early 17th century, other scales were added to the device in quick succession. Slide rules steadily grew larger and more complex over the centuries.
+Note that the slide rule is always operated using both hands, fingers of one hand pushing and those of the other gently opposing. The bottom end of the cursor glides along the bottom of the lower frame, and there is a tension spring between the top end of the cursor and the top of the upper frame. This spring stabilises the cursor against the frame. To make fine adjustments of the cursor, one uses the thumbs of both hands against the bottom of the cursor. But when using the back side of a duplex straight rule, the cursor bottom has now flipped to the topside, so it had to be fine adjusted using the index fingers.
+
+Through the centuries, the slide rule gained numerous scales, some very specialised to application domains. Slide rules, thus, steadily grew larger and more complex in time.
 
 ## *accuracy and precision*
 
 In slide rule parlance, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated. And *precision* means how many significant figures the user can reliably read off the scale.
 
-***accuracy***—More expensive, professional-grade slide rules were made exceedingly well, but they all allow the user to calibrate the device. Even a well-made slide rule, like the K&E 4081-3 Log Log Duplex Decitrig slide rule, shown below, can go out of alignment if mistreated, say by exposing it to shock, heat, or cold. And prolonged exposure to moisture can warp a wood slide rule, like the K&E 4081-3, thereby damaging it, permanently. I describe the recalibration procedure in the maintenance section, below. By the way, the term "Decitrig" was K&E's trade name for its slide rules that used decimal degrees, instead of minutes and seconds. Engineers prefer using the more convenient decimal notation. And the K&E 4081-3 was perhaps the most popular engineering slide rule in the US.
+***accuracy***—More expensive, professional-grade slide rules were made exceedingly well, but they all allowed the user to calibrate the device. Even a well-made slide rule, like the K&E 4081-3 Log Log Duplex Decitrig slide rule, shown below, can go out of alignment if mistreated, say by exposing it to shock, heat, or cold. And prolonged exposure to moisture can warp a wood slide rule, like the K&E 4081-3, thereby damaging it, permanently. I describe the recalibration procedure in the maintenance section, later in this article. By the way, the term "Decitrig" was K&E's trade name for its slide rules that used decimal degrees for trigonometric computations, instead of minutes and seconds. Engineers prefer using the more convenient decimal notation. The K&E 4081-3 was perhaps the most popular engineering slide rule in the US.
 
 [K&E 4081-3 Log Log Duplex Decitrig]
 
-***precision***—Before we discuss precision of slide rules, let us explore the nature of the logarithmic scale. The $C$ and $D$ scales are logarithmic, so they are nonlinear. The scales start at $log(1)$, which is marked as $1$, and end at $log(10)$, which is also marked as $1$. In other words, these scales wrap around by multiples of $10$. So, $3.14$ is read exactly the same as $0.314$, $31.4$, and $314$. The decimal point is located using some clever mental arithmetic.
+***precision***—Before we discuss precision of slide rules, let us explore the nature of the logarithmic scale. The $C$ and $D$ scales are logarithmic, so they are nonlinear. The scales start at $log(1) = 0$, which is marked as $1$, and end at $log(10) = 1$, which is also marked as $1$. In other words, these scales wrap around by multiples of $10$. So, the number $314$ is read as $0.314$, $3.14$, $31.4$, or $314.0$, depending on context. The decimal point is located using some clever mental arithmetic.
 
 As can be seen in the photograph below, the distance between two adjacent major divisions on the scale shrinks logarithmically from left to right:
 
@@ -181,7 +183,7 @@ A Mannheim slide rule has scales for arithmetic ($×$ and $÷$), logarithmic ($l
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$, which suited its intended purpose.
 
-A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.573^∘, $ $5.73^∘$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
+A slight improvement upon the Mannheim slide rule was the German *Rietz* model. It added the $ST$ scale for small angles in the range $[0.573°, $ $5.73°$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1940s.
 
 [Nestler 23 R]
 
@@ -328,7 +330,7 @@ Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it 
 
 [$LL_n$ scales photo]
 
-The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of "exponential growth".
+The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of the explosive rate of "exponential growth".
 
 But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse.
 
@@ -400,10 +402,10 @@ If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.1
 
 Trigonometric functions are related to each other in the following ways:
 
-- $sin(\theta) = cos(90^∘ - \theta)$
-- $cos(\theta) = sin(90^∘ - \theta)$
-- $tan(\theta) = cot(90^∘ - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)}$
-- $cot(\theta) = tan(90^∘ - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)}$
+- $sin(\theta) = cos(90° - \theta)$
+- $cos(\theta) = sin(90° - \theta)$
+- $tan(\theta) = cot(90° - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)}$
+- $cot(\theta) = tan(90° - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)}$
 - $sec(\theta) = \frac{1}{cos(\theta)}$
 - $csc(\theta) = \frac{1}{sin(\theta)}$
 
@@ -411,7 +413,7 @@ In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $
 
 ![sin-cos-tan](./figures/SlideRules/plot-sin-cos-tan.jpg)
 
-***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73^∘$ to $90^∘$. When $\theta ∈ [5.73^∘, 90^∘]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
+***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73°$ to $90°$. When $\theta ∈ [5.73°, 90°]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
 
 - $sin: S \rightarrow C$
 - $sin^{-1}: C \rightarrow S$
@@ -420,22 +422,22 @@ In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. The inve
 
 ![sin](./figures/SlideRules/plot-sin.jpg)
 
-To compute $sin(30^∘)$, we manipulate the slide rule as follows:
+To compute $sin(30°)$, we manipulate the slide rule as follows:
 
-- $S$—Place the hairline on the *argument* $30^∘$ on the black $S$ scale.
-- $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30^∘) = 0.5$.
+- $S$—Place the hairline on the *argument* $30°$ on the black $S$ scale.
+- $C$—Read under the hairline the *result* $0.5$ on the $C$ scale. This computes $sin(30°) = 0.5$.
 
-[$sin(30^∘)$ photo]
+[$sin(30°)$ photo]
 
-To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60^∘$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60^∘$.
+To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60°$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60°$.
 
-***red $S$ scale***—The $S$ scale is graduated in black for $sin$ between the angles $5.73^∘$ and $90^∘$. But since $cos(\theta) = sin(90^∘ - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
+***red $S$ scale***—The $S$ scale is graduated in black for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
 
 In the plot below, the red curve is $cos$ and the green is $cos^{-1}$.
 
 ![cos](./figures/SlideRules/plot-cos.jpg)
 
-***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73^∘$ to $45^∘$. When $\theta ∈ [5.73^∘, 45^∘]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
+***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73°$ to $45°$. When $\theta ∈ [5.73°, 45°]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
 
 - $tan: T \rightarrow C$
 - $tan^{-1}: C \rightarrow S$
@@ -444,22 +446,22 @@ In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
 ![tan](./figures/SlideRules/plot-tan.jpg)
 
-***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45^∘, 84.29^∘]$. The red $T$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $T$ scale is used in conjunction with the reciprocal $CI$ scale.
+***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45°, 84.29°]$. The red $T$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $T$ scale is used in conjunction with the reciprocal $CI$ scale.
 
-To compute $tan(83^∘)$, we manipulate the slide rule as follows:
+To compute $tan(83°)$, we manipulate the slide rule as follows:
 
-- $T$—Place the hairline on the *argument* $83^∘$ on the red $T$ scale.
-- $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83^∘) = 8.14$.
+- $T$—Place the hairline on the *argument* $83°$ on the red $T$ scale.
+- $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83°) = 8.14$.
 
-[$tan(83^∘)$ photo]
+[$tan(83°)$ photo]
 
-Since $cot(\theta) = tan(90^∘ - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83^∘)$, we use the same procedure as $tan(83^∘)$ on the red $T$ scale, but instead read the result $cot(83^∘) = 1/tan(83^∘) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90^∘ - 83^∘)$ on the black $T$ scale, and read the result $cot(83^∘) = tan(7^∘) = 0.1228$ on the $C$ scale.
+Since $cot(\theta) = tan(90° - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83°)$, we use the same procedure as $tan(83°)$ on the red $T$ scale, but instead read the result $cot(83°) = 1/tan(83°) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90° - 83°)$ on the black $T$ scale, and read the result $cot(83°) = tan(7°) = 0.1228$ on the $C$ scale.
 
 In the plot below, the red curve is $cot$​ and the green is $cot^{-1}$​.
 
 ![cot](./figures/SlideRules/plot-cot.jpg)
 
-***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573^∘, 5.73^∘]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.573^∘$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
+***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573°, 5.73°]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.573°$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
 
 In the plot below, the blue curve is $sin$ and the green is $tan$. These two curves are indistinguishable when $\theta ∈ [0.01, 0.1]$ radians.
 
@@ -473,7 +475,7 @@ It is possible to chain trigonometric and arithmetic calculations on the slide r
 
 - ***align slide to lower frame***—Align the slide's $C$ scale with the lower frame's $D$ scale.
 - ***align upper frame to slide***—Slightly loosen the screws that hold the upper frame. While keeping the slide aligned with the lower frame, align the upper frame's $DF$ scale to the slide's $CF$ scale. Retighten the screws, but not so tight as to impede the movement of the slide.
-- ***align front cursor to frame***—Move the cursor hairline on the left-hand $π$ of the upper frame's $DF$ scale and the left-hand $1$ of the lower frame's $D$ scale on the front side of the frame. Slightly loosen the screws that hold the glass's metal frame to the top and the bottom end pieces of the cursor. Nudge the glass until the hairline is aligned to both the $DF$ and the $D$ scales. Retighten the glass frame screws. Do not over tighten, lest the cursor is damaged.
+- ***align front cursor to frame***—Move the cursor hairline on the left-hand $π$ of the upper frame's $DF$ scale and the left-hand $1$ of the lower frame's $D$ scale on the front side of the frame. Slightly loosen the screws that hold the glass's metal bracket to the top and the bottom end pieces of the cursor. Nudge the glass until the hairline is aligned to both the $DF$ and the $D$ scales. Retighten the glass bracket's screws. Do not over tighten, lest the cursor is damaged.
 - ***align back cursor to frame***—Flip the slide rule, and align the back cursor to the frame in like manner.
 
 Tedious and frustrating though it maybe, recalibrating the slide rule was the easy bit. Reading the scales with adequate precision, however, was not as easy, especially for those of us with poor eyesights.
@@ -492,7 +494,7 @@ This section is about collecting slide rules: what to look for, how to purchase,
 
 My main goal in collecting slide rules is to play, not to display. Although these simple instruments no longer hold practical value today, they were once instrumental in humanity's ability to create societal value. I acknowledge that fact by collecting them. And by using them, I learn the ingenuity of my forebears, the engineers who designed these marvellous devices. Indeed, I taught my son how to use slide rules, when he was a third-grader. I am motivated by knowledge and nostalgia, not by possessory pride or pecuniary purpose. So, when perusing my collection described in this section, take my biases into consideration.
 
-Below, I arranged my collection by slide rule varieties (straight, circular, and cylindrical) and, within each variety, by manufacturer names. Do note, though, that sellers (brands) were not necessarily the same as manufacturers, in some cases. For example, Frederick Post, a well-known American company, sold under the Post brand the bamboo slide rules manufactured by Hemmi in Japan. Hemmi also sold the same slide rules under their own brand. Also of note was that German manufacturers, Faber-Castell (est. 1761), Aristo (est. 1862), and Nestler (est. 1878), were in [West Germany](https://en.wikipedia.org/wiki/West_Germany) (FRD) during the [Cold War](https://en.wikipedia.org/wiki/Cold_War), but Reiss (est. 1882) was in [East Germany](https://en.wikipedia.org/wiki/East_Germany) (DDR). Likewise, Kontrolpribor, a Russian manufacturer, is more properly labelled as a company from the former [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union).
+Below, I arranged my collection by slide rule varieties (straight, circular, and cylindrical) and, within each variety, by manufacturer names. Do note, though, that sellers (brands) were not necessarily the same as manufacturers, in some cases. For example, Frederick Post, a well-known American company, sold under the Post brand the bamboo slide rules manufactured by Hemmi in Japan. Hemmi also sold the same slide rules under their own brand. Also of note was that German manufacturers, Faber-Castell (est. 1761), Aristo (est. 1862), and Nestler (est. 1878), were in [West Germany](https://en.wikipedia.org/wiki/West_Germany) (FRD) during the [Cold War](https://en.wikipedia.org/wiki/Cold_War), but Reiss (est. 1882) was in [East Germany](https://en.wikipedia.org/wiki/East_Germany) (DDR). And Kontrolpribor, a Russian manufacturer, is more properly labelled a company from the former [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union).
 
 ## *straight rules*
 
