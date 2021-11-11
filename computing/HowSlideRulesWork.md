@@ -484,7 +484,7 @@ It is possible to chain trigonometric and arithmetic calculations on the slide r
 - ***align front cursor to frame***—Move the cursor hairline on the left-hand $π$ of the upper frame's $DF$ scale and the left-hand $1$ of the lower frame's $D$ scale on the front side of the frame. Slightly loosen the screws that hold the glass's metal bracket to the top and the bottom end pieces of the cursor. Nudge the glass until the hairline is aligned to both the $DF$ and the $D$ scales. Retighten the glass bracket's screws. Do not over tighten, lest the cursor is damaged.
 - ***align back cursor to frame***—Flip the slide rule, and align the back cursor to the frame in like manner.
 
-[K&E 4081-3 adjustment photo]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/calibrate.jpg)
 
 Tedious and frustrating though it maybe, recalibrating the slide rule was the easy bit. Reading the scales with adequate precision, however, was not as easy, especially for those of us with poor eyesights.
 
