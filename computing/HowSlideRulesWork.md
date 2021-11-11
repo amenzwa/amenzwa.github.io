@@ -66,9 +66,9 @@ Go on eBay and buy an inexpensive one, either the [K&E 4081-3](https://www.ebay.
 
 That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$. Note that $log^{-1}(x) = 10^x$.
 
-***logarithmic scale***—The slide rule mechanised these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). To derive the logarithmic scale, we begin with a 25-cm-long arithmetic scale divided into $10$ equal major divisions, marked $0, 1, 2, 3, ..., 10$, similar to an ordinary ruler. We then line up $log(1) = 0$ with the arithmetic scale's $0$, and place $log(2) = 0.301, log(3) = 0.477, ...$ at the appropriate spots along the arithmetic scale. The resulting graduations is the logarithmic scale. Incidentally, the arithmetic scale is the logarithm scale $L$, which is used to compute the $log$ function. The arithmetic $L$ scale and the logarithmic $D$ scales are shown below.
+***logarithmic scale***—The slide rule mechanised these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). To derive the logarithmic scale, we begin with a 25-cm-long arithmetic scale divided into $10$ equal major divisions, marked $0, 1, 2, 3, ..., 10$, similar to an ordinary ruler. We then line up $log(1) = 0$ with the arithmetic scale's $0$, and place $log(2) = 0.301, log(3) = 0.477, ...$ at the appropriate spots along the arithmetic scale. The resulting graduations is the logarithmic scale. Incidentally, the arithmetic scale is the logarithm scale $L$, which is used to compute the $log$ function. The arithmetic $L$ scale and the logarithmic $D$ scales can be seen in the photograph below, which shows the back side of the K&E 4081-3.
 
-[$L$ scale and $D$ scale]
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/back.jpg)
 
 The $D$ and the $L$ scales are related by a bijective function $log$:
 
@@ -334,9 +334,9 @@ The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a tr
 
 Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
 
-- $LL_1$ | $x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
-- $LL_2$ | $x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
-- $LL_3$ | $x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$
+- $LL_1$: $x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
+- $LL_2$: $x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
+- $LL_3$: $x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$
   - Here, $e = 2.718$ and $ln(e) = 1.0$
 
 The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of the explosive rate of "exponential growth".
@@ -345,9 +345,9 @@ But had the $log \circ log$ function composition been used to construct the $LL_
 
 The red $LL_{0n}$ scales are reciprocals of the black $LL_n$ scales. As such, the red scales run from right to left. On the K&E 4081-3, the red $LL_{0n}$ scale is divided into these ranges:
 
-- $LL_{01}$ | $x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
-- $LL_{02}$ | $x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
-- $LL_{03}$ | $x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
+- $LL_{01}$: $x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
+- $LL_{02}$: $x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
+- $LL_{03}$: $x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
   - Here, $1/e = 0.368$ and $ln(1/e) = -1.0$
 
 Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $LL_{0n}$ scales as $e^{-x}$.
@@ -495,190 +495,6 @@ Sometimes, the slide can get a bit sticky. This is caused by the grime—a mixtu
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/clean.jpg)
 
 If you are reading this article, odds are that you have never used or owned a slide rule. It is my hope that you would acquire one, say from [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412), and learn to use it. Your first slide rule should not be a rare collector's item; it should be something like the [K&E 4081-3 Log Log Duplex Decitrig](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_sacat=0) or the [Post 1460 Versalog](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=Post+1460+Versalog&_sacat=0&LH_TitleDesc=0&_odkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_osacat=0)—a good, but cheap, workhorse. If you do end up buying one, your slide rule will most likely be grimy and discoloured, for having been kept in a dusty storage bin for decades. Do not despair; most old slide rules can be renewed to an extent. The grime and discolouration can be removed by gently—I mean gently—rubbing with the soft, foamy side of a moistened [kitchen sponge](https://www.amazon.com/dp/B007C5IH4C?tag=aboutcom02thespruce-20&linkCode=ogi&th=1&psc=1&ascsubtag=4164819%7Cnca170cbe1d384af0a2b09e62c4e4b9b020%7CB007C5IH4C) loaded with a spot of dish soap. If you do decide to attack a stain with the rough side of the sponge, use care and judgement, or you will scrub off the scale markings. And if yours is a wood slide rule, minimise the use of water as much as practicable. Dry off the slide rule after cleaning. I strongly suggest that you clean in stages, little by little.
-
-# COLLECTING
-
-This section is about collecting slide rules: what to look for, how to purchase, etc. I collect slide rules. This should surprise no one reading this article. But I am an atypical collector. I buy, but I do not sell, and I do not engage in bidding wars on eBay. And I collect only those slide rules that I coveted as a young engineering student in the early 1980s. More importantly, I collect only those slide rules that are not "collector-grade". The slide rules that I buy have high accuracy, but do not necessarily have high resale value: most are not rarities; some have former owners' names engraved upon them; many do not come with cases, manuals, wrappings, boxes, and other accoutrement of collecting. Moreover, I am partial to Darmstadt rules, for they offered the best balance in terms of density, simplicity, and utility.
-
-My main goal in collecting slide rules is to play, not to display. Although these simple instruments no longer hold practical value today, they were once instrumental in humanity's ability to create societal value. I acknowledge that fact by collecting them. And by using them, I learn the ingenuity of my forebears, the engineers who designed these marvellous devices. Indeed, I taught my son how to use slide rules, when he was a third-grader. I am motivated by knowledge and nostalgia, not by possessory pride or pecuniary purpose. So, when perusing my collection described in this section, take my biases into consideration.
-
-Below, I arranged my collection by slide rule varieties (straight, circular, and cylindrical) and, within each variety, by manufacturer names. Do note, though, that sellers (brands) were not necessarily the same as manufacturers, in some cases. For example, Frederick Post, a well-known American company, sold under the Post brand the bamboo slide rules manufactured by Hemmi in Japan. Hemmi also sold the same slide rules under their own brand. Also of note was that German manufacturers, Faber-Castell (est. 1761), Aristo (est. 1862), and Nestler (est. 1878), were in [West Germany](https://en.wikipedia.org/wiki/West_Germany) (FRD) during the [Cold War](https://en.wikipedia.org/wiki/Cold_War), but Reiss (est. 1882) was in [East Germany](https://en.wikipedia.org/wiki/East_Germany) (DDR). And Kontrolpribor, a Russian manufacturer, is more properly labelled a company from the former [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union).
-
-## *straight rules*
-
-#### Aristo (DE)
-
-***Aristo 967U Darmstadt***—
-
-***Aristo 0968 Studio***—
-
-***Aristo 0969 StudioLog***—
-
-#### Blundell-Harling (UK)
-
-***BRL D.26 Darmstadt***—
-
-#### Faber-Castell (DE)
-
-***FC 1/54 Darmstadt***—
-
-***FC 1/98 Elektro***—
-
-***FC 2/83 N Novo-Duplex***—
-
-***FC 67/64 R Darmstadt mit Addiator***—
-
-#### Graphoplex (FR)
-
-***Graphoplex 640 Electric Log Log***—
-
-***Graphoplex 643 Electric Log Log***—
-
-#### Hemmi (JP)
-
-***Hemmi 130W Advanced Darmstadt***—
-
-***Hemmi 135 Pocket Advanced Darmstadt***—
-
-***Hemmi 149 Pocket Log Log Duplex Decitrig***—
-
-***Hemmi 153 Electrical Engineer***—
-
-***Hemmi 255D Expert Electrical Engineer***—
-
-#### Keuffel  & Esser (US)
-
-***K&E 4181-1 Pocket Log Log Duplex Decitrig***—
-
-***K&E 4081-3 Log Log Duplex Decitrig***—
-
-***K&E 68-1100 Deci-Lon 10***—
-
-***K&E 4083-3 Log Log Vector Duplex***—The K&E 4083-3 Log Log Vector Duplex was one of the earliest advanced engineering slide rules with $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
-
-![catenary](./figures/SlideRules/catenary.jpg)
-
-The length and sag of a chain hung from two posts of equal height is expressed thus:
-
-- $l = 2 \frac{H}{w} sinh(\frac{wb}{H})$
-- $s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]$
-
-Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary curve.
-
-Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$π$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" nomenclature of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
-
-Catenary of chain and impedance of power line can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like the K&E 4083-3.
-
-[K&E 4083-3 photo]
-
-However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
-
-- $sinh(x) = \frac{e^x - e^{-x}}{2}$
-- $cosh(x) = \frac{e^x + e^{-x}}{2}$
-- $tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}$
-- $coth(x) = \frac{cosh(x)}{sinh(x)}$
-- $sech(x) = \frac{1}{cosh(x)}$
-- $csch(x) = \frac{1}{sinh(x)}$
-
-In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is $tanh$.
-
-![sinh-cosh-tanh](./figures/SlideRules/plot-sinh-cosh-tanh.jpg)
-
-#### Logarex (CZ)
-
-***Logarex 27402-X Darmstadt***—
-
-***Logarex 27403-X Darmstadt***—
-
-#### Nestler (DE)
-
-***Nestler 23 R/3 Rietz***—
-
-***Nestler 0210 Darmstadt***—
-
-***Nestler 0292 Multimath-Duplex***—
-
-#### Pickett & Eckel (US)
-
-***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—
-
-***Pickett N4-ES Vector Log Log Dual-Base***—
-
-#### Post (Hemmi, JP)
-
-***Post 1447 Mannheim***—
-
-***Post 1460 Versalog II***—
-
-***Post 1461 Pocket Versalog II***—
-
-#### Reiss (DE)
-
-***Reiss 3214 Darmstadt Record***—
-
-***Reiss Darmstadt***—
-
-## *circular rules*
-
-#### **AirClassics** (US)
-
-***AirClassics E6-B Flight Computer***—
-
-#### Breitling (CH)
-
-***Breitling Montbrillant Datora***—
-
-#### Concise (JP)
-
-***Concise Model 300***—
-
-#### Dempster (US)
-
-***Dempster RotaRule Model AA***—
-
-The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper engineering slide rule, with three $LL_n$ scales and three $LL_{0n}$ scales, comparable in capabilities to a typical log-log duplex straight rule, but with far greater precision. Incidentally, [Bernard Boykin](http://www.oughtred.org/memoriam/memoriam.shtml), the designer of the fabulous Boykin circular slide rule, was my fellow engineer and a fellow Marylander, to boot. Alas, I do not own a Boykin circular rule—not yet.
-
-#### Emeloid (US)
-
-***Emeloid Radio Transmission Line Calculator***—
-
-#### Faber-Castell (DE)
-
-***FC 8/10***—
-
-#### Fowler (UK)
-
-***Fowler's Universal Calculator***—
-
-#### Gilson (US)
-
-***Gilson Binary***—
-
-#### Kontrolpribor (RU)
-
-***Kontrolpribor  Model KL-1***—
-
-#### Loga (CH)
-
-***Loga 30 Tt***—
-
-#### Pickett & Eckel (US)
-
-***Pickett 101-C Dial Rule***—
-
-***Pickett 111-ES***—made in JP
-
-## *cylindrical rules*
-
-#### Otis King (UK)
-
-***Otis King Model K***—The Model K's upper cylinder is sports the dual-cycle $C$ scale. The two cycles of the $C$ scale allows chained calculations without having to reset the cursor, as was necessary with the single-cycle Model L. The Model K could compute only $×$ and $÷$.
-
-[Otis King Model K photo]
-
-***Otis King Model L***—The Model L is identical in construction to the Model K, and these two models have a $D$ scale that is almost the same length. But the Model L's upper cylinder is occupied by the single-cycle $C$ scale and the $L$ scale. Where as the Model K could compute only $×$ and $÷$, the Model L could compute $×$, $÷$, $log$, $log^{-1}$, and $x^y$.
-
-[Otis King Model L photo]
 
 # RESOURCES
 
