@@ -562,7 +562,7 @@ The mechanisms of the Addiator works on the same principles as the [mechanical c
 
 ![FC 1/98](./figures/SlideRules/FC1-98/front.jpg)
 
-***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its usability and for its appearance. Contrary to popular opinion, we engineers do have the eye for aesthetics. It uses pale green background for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue background for $A$ and $B$ on the frontside. In my opinion, FC 2/83 N's colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$, $W_2$ and $W^{'}_1$, $W^{'}_2$ extended square root scales, which are lacking in the Aristo 0969. Also, the FC 2/83 N's slide has shallow grooves  on its tip, making it easier to pull out from its stowed position. These little features make big differences in usability and convenience, especially when operating under time pressure.
+***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its usability and for its appearance. Contrary to popular opinion, we engineers do have the eye for aesthetics. It uses pale green background for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue background for $A$ and $B$ on the frontside. In my opinion, FC 2/83 N's colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$, $W^{'}_1$ and $W_2$, $W^{'}_2$ extended square root scales, which are lacking in the Aristo 0969. Also, the FC 2/83 N's slide has shallow grooves  on its tip, making it easier to pull out from its stowed position. These little features make big differences in usability and convenience, especially when operating under time pressure.
 
 ![FC 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
 
@@ -584,21 +584,30 @@ I purchased all my slide rules on eBay, except the Aristo 0968 and the FC 8/10 w
 
 ![Hemmi 135](./figures/SlideRules/Hemmi135/front.jpg)
 
-***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule; I would very much like to have owned this rule, when I was a young engineering student. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Rather unusually, the backside of the slide has five scales: $L$, $LL_0$, $LL_1$, $LL_2$, and $LL_3$, making this slide rule a powerhouse of Darmstadt rules.
+***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule; I would very much like to have owned this rule, when I was a young engineering student. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Unusually for a simplex rule, the backside of the slide has five scales: $L$, $LL_0$, $LL_1$, $LL_2$, and $LL_3$, making this slide rule a powerful Darmstadt.
 
 ![Hemmi 130W](./figures/SlideRules/Hemmi130W/front.jpg)
 
-But I believe Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. As such, a few more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scale, could have been placed on the frame edges. Instead, Hemmi inscribed the vapid 27-cm ruler on the top edge of the frame and on the bottom edge an odd, zero-centred 26-cm ruler with 13-cm linear scales to each side.
+But I think Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. The top edge of the frame holds a vapid 27-cm ruler and the bottom edge holds an odd zero-centred 26-cm ruler with 13-cm linear scales spanning out to each end. Hemmi should instead have inscribed more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scale, on the frame edges.
 
 ***Hemmi 149A Pocket Log Log Duplex Decitrig***—The Hemmi 149A pocket duplex rule is a structurally identical, but simpler, version of the Post 1461 pocket Versalog II which, in turn, is a miniature version of the Post 1460. By the way, Post slide rules were manufactured by Hemmi. See the full description in the Post 1460 subsection, below.
 
 ![Hemmi 149A](./figures/SlideRules/Hemmi149A/front.jpg)
 
-***Hemmi 153 Electrical Engineer***—
+***Hemmi 153 Electrical Engineer***—The Hemmi 153 is a log-log duplex vector rule cherished by electrical power engineers. In terms of power, this slide rule is comparable to the more popular K&E 4083-3 described below in the K&E section. But the Hemmi 153 computes the hyperbolic functions in a rather unique and ingenious way, using the [Gudermannian function](https://en.wikipedia.org/wiki/Gudermannian_function): $gd(x) = sin^{-1}(tanh(x)) = tan^{-1}(sinh(x))$. The function $gd$ relates trigonometric functions with hyperbolic functions:
+
+- $sin(gd(x)) = tanh(x)$
+- $cos(gd(x)) = sech(x)$
+- $tan(gd(x)) = sinh(x)$
+- $cot(gd(x)) = csch(x)$
+- $sec(gd(x)) = cosh(x)$
+- $csc(gd(x)) = coth(x)$
+
+The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_{\theta}$ scale for computing $gd(x)$. Using the $\theta$ scale, the trigonometric scales, and the $G_{\theta}$ scale of the Hemmi 153, we can compute the hyperbolic functions. The $G_{\theta}$ scale, thus, ingeniously expands the power of the Hemmi 153 greatly, without occupying too much real estate, albeit by requiring one more step.
 
 ![Hemmi 153](./figures/SlideRules/Hemmi153/back.jpg)
 
-***Hemmi 255D Expert Electrical Engineer***—
+***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log duplex vector rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_{\theta}$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D provides the more conventional $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular K&E 4083-3 described below in the K&E section.
 
 ![Hemmi 255D](./figures/SlideRules/Hemmi255D/back.jpg)
 
@@ -608,13 +617,15 @@ But I believe Hemmi missed an opportunity with the way they used the real estate
 
 ![K&E 4181-1](./figures/SlideRules/K&E4181-1/front.jpg)
 
-***K&E 4081-3 Log Log Duplex Decitrig***—
+***K&E 4081-3 Log Log Duplex Decitrig***—The K&E 4081-3 is the quintessential engineering slide rule. Its design is old and basic, but its implementation good and enduring. In a way, the K&E 4081-3 is the [Ford Model T](https://en.wikipedia.org/wiki/Ford_Model_T) of engineering slide rules. It does have a few usability quirks, such as the $LL_1$ and $LL_{01}$ being relegated to the backside. But such compromises are inevitable, given the compactness of this slide rule.
 
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
-***K&E 68-1100 Deci-Lon 10***—
+***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most advanced, engineering slide rules from K&E, designed to compete with the likes of FC 2/83 N and Aristo 0969. And like most late model K&E rules, the K&E 68-1100 is made of cheapish plastic. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But the lopsided frame feels awkward when flipping to those who are used to the common, symmetric design.
 
-***K&E 4083-3 Log Log Vector Duplex***—The K&E 4083-3 Log Log Vector Duplex was one of the earliest advanced engineering slide rules with $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
+[K&E 68-1100 photo]
+
+***K&E 4083-3 Log Log Duplex Vector***—The K&E 4083-3 Log Log Duplex Vector was one of the earliest advanced engineering slide rules with $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
 
 ![catenary](./figures/SlideRules/catenary.jpg)
 
@@ -746,7 +757,7 @@ The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper
 
 ***Otis King Model L***—The Model L is identical in construction to the Model K, and these two models have a $D$ scale that is almost the same length. But the Model L's upper cylinder is occupied by the single-cycle $C$ scale and the $L$ scale. Where as the Model K could compute only $×$ and $÷$, the Model L could compute $×$, $÷$, $log$, $log^{-1}$, and $x^y$.
 
-[Otis King Model L photo]
+![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
 
 # CONCLUSION
 
