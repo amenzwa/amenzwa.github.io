@@ -207,8 +207,6 @@ Some slide rules, like this older Nestler 23 R (probably from the 1920s) shown b
 
 Like the Mannheim rules, the Rietz rules have the traditional cutouts on the backside. But, of course, the backside of Rietz slides have the distinguishing $ST$ scale instead of the $L$ scale of Mannheim rules.
 
-Typically, classic German wood rules are thick enough to have space on the top and bottom edges of the frame for additional scales. The Nestler 23 R has a 27-cm ruler scale on the top edge of the frame and the bottom edge of the frame is either blank or has a $1:25$ scale. The $1:25$ scale is $27.2$ cm in length, and is divided linearly into $7$ major divisions. I do not know the purpose of this quirky scale.
-
 ***Darmstadt type***—Another German innovation, the Darmstadt type, was the workhorse preferred by the early 20th century engineers. It has three $LL$ scales, $LL_1$, $LL_2$, and $LL_3$, used to compute general exponentiation of the form $x^{y/z} = \sqrt[z]{x^y}$. When $z = 1$, the general expression reduces to $x^y$. When $y = 1$, the general expression reduces to $x^{1/z} = \sqrt[z]{x}$. Newer, more advanced models sport the fourth $LL_0$ scale. The following is the Aristo 967 U Darmstadt from the mid 1970s.
 
 ![Aristo 967 U](./figures/SlideRules/Aristo967U/front.jpg)
@@ -562,7 +560,7 @@ The mechanisms of the Addiator works on the same principles as the [mechanical c
 
 ![FC 1/98](./figures/SlideRules/FC1-98/front.jpg)
 
-***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its usability and for its appearance. Contrary to popular opinion, we engineers do have the eye for aesthetics. It uses pale green background for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue background for $A$ and $B$ on the frontside. In my opinion, FC 2/83 N's colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$, $W^{'}_1$ and $W_2$, $W^{'}_2$ extended square root scales, which are lacking in the Aristo 0969. Also, the FC 2/83 N's slide has shallow grooves  on its tip, making it easier to pull out from its stowed position. These little features make big differences in usability and convenience, especially when operating under time pressure.
+***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its usability and for its beauty. Contrary to popular opinion, we engineers do have the eye for aesthetics. The FC 2/83 N uses pale green backgrounds for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue backgrounds for $A$ and $B$ on the frontside. In my opinion, FC 2/83 N's colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$, $W^{'}_1$ and $W_2$, $W^{'}_2$ extended square root scales, which are lacking in the Aristo 0969. Also, the FC 2/83 N's slide has shallow grooves  on its tip, making it easier to pull out from its stowed position. These little features make big differences in usability and convenience, especially when operating under time pressure.
 
 ![FC 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
 
@@ -603,9 +601,11 @@ But I think Hemmi missed an opportunity with the way they used the real estate o
 - $sec(gd(x)) = cosh(x)$
 - $csc(gd(x)) = coth(x)$
 
-The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_{\theta}$ scale for computing $gd(x)$. Using the $\theta$ scale, the trigonometric scales, and the $G_{\theta}$ scale of the Hemmi 153, we can compute the hyperbolic functions. The $G_{\theta}$ scale, thus, ingeniously expands the power of the Hemmi 153 greatly, without occupying too much real estate, albeit by requiring one more step.
+The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_{\theta}$ scale for computing $gd(x)$. Using the $\theta$ scale, the trigonometric scales, and the $G_{\theta}$ scale of the Hemmi 153, we can compute the hyperbolic functions. The $G_{\theta}$ scale, thus, ingeniously expands the power of the Hemmi 153 greatly, without occupying too much real estate, albeit by requiring one more computation step.
 
 ![Hemmi 153](./figures/SlideRules/Hemmi153/back.jpg)
+
+Care is necessary when using the $T$ scale on the Hemmi 153, because its angle $\theta$ scale goes all the way to $90°$ and $tan(90°) = ∞$.
 
 ***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log duplex vector rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_{\theta}$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D provides the more conventional $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular K&E 4083-3 described below in the K&E section.
 
@@ -621,9 +621,9 @@ The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 9
 
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
-***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most advanced, engineering slide rules from K&E, designed to compete with the likes of FC 2/83 N and Aristo 0969. And like most late model K&E rules, the K&E 68-1100 is made of cheapish plastic. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But the lopsided frame feels awkward when flipping to those who are used to the common, symmetric design.
+***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most refined, engineering slide rules from K&E, designed to compete with the likes of FC 2/83 N and Aristo 0969. And like other late model K&E rules, the K&E 68-1100 is made of plastic that is on the cheap side, compared to the European brands. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But the lopsided frame feels awkward when flipping to those who are used to the common, symmetric design.
 
-[K&E 68-1100 photo]
+![K&E 68-1100](./figures/SlideRules/K&E68-1100/front.jpg)
 
 ***K&E 4083-3 Log Log Duplex Vector***—The K&E 4083-3 Log Log Duplex Vector was one of the earliest advanced engineering slide rules with $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
 
@@ -657,31 +657,41 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 #### Logarex (CZ)
 
-***Logarex 27402-X Darmstadt***—
+***Logarex 27403-X Darmstadt***—Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). The Logarax 27403-X is a late model Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. Although there are black indices on each end, they do not permit reading the $LL_2$ scale in the middle of the slide. Hence, to use the $LL_n$ scales, they must be flipped to the front. Like everything else manufactured in the Eastern Bloc countries in the Soviet Era, this slide rule feels cheap but usable.
 
-***Logarex 27403-X Darmstadt***—
+![Logarex 27403-X](./figures/SlideRules/Logarex27403-X/front.jpg)
 
 #### Nestler (DE)
 
-***Nestler 23 R/3 Rietz***—
+***Nestler 23 R/3 Rietz***—Of the German brands, Nestler is my favourite. I am in good company: the Nestler 23 R is favoured by very illustrious scientists and engineers: [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), [Wernher von Braun](https://en.wikipedia.org/wiki/Wernher_von_Braun), [Sergei Korolev](https://en.wikipedia.org/wiki/Sergei_Korolev)—nuff said. The Nestler 23 R is a typical Rietz rule, with typical Rietz scale layout.
 
 ![Nestler 23 R](./figures/SlideRules/Nestler23R/front.jpg)
 
-***Nestler 0210 Darmstadt***—
+Yet, there is something subversive about the Nestler 23 R. Being of the classic German simplex design, this slide rule is thick enough to have space on the top and bottom edges of the frame for additional scales. The Nestler 23 R has a 27-cm ruler scale on the top edge of the frame and the bottom edge of the frame is either blank or has a $1:25$ scale. The $1:25$ scale is $27.2$ cm in length, and is divided linearly into $7$ major divisions. I do not know the purpose of this quirky scale.
+
+***Nestler 0210 Darmstadt***—Of the Nestler slide rules I own, the Nestler 0210 is my favourite. This slide rule is minimalistic, but powerful. The backside of the slide has the $LL_n$ scale typical of Darmstadt rules. And given its classic German simplex proportions, the thick edges sport more useful rules. The top edge of the frame holds the 27-cm ruler scale and the $L$ scale. The bottom edge of the frame holds the $S$ and $T$ scales.
 
 ![Nestler 0210](./figures/SlideRules/Nestler0210/front.jpg)
 
-***Nestler 0292 Multimath-Duplex***—
+***Nestler 0292 Multimath-Duplex***—I like the appearance of Nestler slide rules for their understated elegance and subtle power. Being a late model advanced log-log duplex engineering rule, the Nestler 0292 possesses the same computing power as the top-of-the-line models from other manufacturers: FC 2/83 N, Aristo 0969, K&E 68-1100, Pickett N3-ES, et al. In my view, the Nester 0292 beats them all in both usability and beauty. No offence meant to those who admire the FC 2/83 N's looks; I like that slide rule very well, only not as much as the Nestler 0292. Whereas the FC 2/83 N shouts out its power, the Nestler 0292 expresses its power, quietly. It is much slimmer than the FC 2/83 N, so it feels more comfortable in the hand, especially for those of us who grew up on smaller rules, like the Aristo 0968. And it employs only one colour, the pale green background, which covers both sides of the slide. I am of the opinion that the Nestler 0292 is an embodiment of engineering philosophy: elegant simplicity, effortless efficiency, quiet power.
+
+![Nestler 0292](./figures/SlideRules/Nestler0292/front.jpg)
 
 #### Pickett & Eckel (US)
 
-***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—
+***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly arranged the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacking the $LL_n$ and $LL_{0n}$ scales makes it more difficult to read. To each his own. The Pickett N3-ES's claims to fame are the aluminium body and the eye-saver yellow.
 
-***Pickett N4-ES Vector Log Log Dual-Base***—
+![Pickett N3-ES](./figures/SlideRules/PickettN3-ES/front.jpg)
 
-#### Post (Hemmi, JP)
+To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy the Pickett N3-ES. Not withstanding my dislike, this slide rule is a solid performer. Aluminium is a far more stable material than wood. Indeed, it is virtually indestructible. Nevertheless, it feels cheap, sharp, and cold to me. My apologies to NASA, who used, with great success, the Pickett N600-ES, a pared-down, pocket version of the Pickett N3-ES, on all the Apollo missions.
 
-***Post 1447 Mannheim***—
+***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES has the $Sh$ and $Th$ scales. But the distinctive feature of the Pickett N4-ES is its $LL$ scales: $LL_1$, $LL_{01}$ to $LL_4$, $LL_{04}$. So, the Pickett N4-ES discards the lower-end $LL_0$ and $LL_{00}$ scales in favour of the higher-end $LL_4$ and $LL_{04}$ scales.
+
+![Pickett N4-ES](./figures/SlideRules/PickettN4-ES/front.jpg)
+
+#### Post (US importer; Hemmi, JP, manufacturer)
+
+***Post 1447 Mannheim***—Post was an American importer of topping Japanese, bamboo slide rules, made by Hemmi. The Post 1447 is an honest slide rule fit for innocent high schoolers. It had the Mannheim essentials: $C$, $D$, $A$, $B$, $S$, $L$, and $T$. The $S$, $L$, and $T$ scales are on the backside of the slide, which are read through the cutouts on the backside of the slide rule.
 
 ![Post 1447](./figures/SlideRules/Post1447/front.jpg)
 
@@ -689,15 +699,19 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 ![Post 1461](./figures/SlideRules/Post1461/front.jpg)
 
-***Post 1460 Versalog II***—
+***Post 1460 Versalog II***—The Post 1460 is a direct competitor, albeit a refined one, of the K&E 4081-3 standard engineering slide rule. But in my view, the Post 1460 is a superior slide rule to the K&E 4081-3, in terms of feel, appearance, and usability; I favour bamboo rules over wood rules. The Versalog II has a green $cos$ scale, but the original Versalog has a blue $cos$ scale.
 
 ![Post 1460](./figures/SlideRules/Post1460/front.jpg)
 
 #### Reiss (DE)
 
-***Reiss 3214 Darmstadt Record***—
+***Reiss 3214 Darmstadt Record***—Reiss was a factory in the former East Germany. But unlike other Eastern Bloc countries, the East Germans managed to cling on to their traditional German workmanship: the Reiss 3214 feels as solid and smooth as other European models. And despite the presence of the term "Darmstadt" in the name, the Reiss 3214 is actually a log-log duplex rule comparable to the venerable K&E 4081-3.
 
-***Reiss Darmstadt***—
+![Reiss 3214](./figures/SlideRules/Reiss3214/front.jpg)
+
+***Reiss Darmstadt***—This slide rule is a traditional Darmstadt rule, but it is made of aluminium. In terms of quality, this slide rule is as solid as any European model. But I detest its aluminium construction.
+
+![Reiss Darmstadt](./figures/SlideRules/ReissDarmstadt/front.jpg)
 
 ## *circular rules*
 
