@@ -221,17 +221,17 @@ Of the straight rule types, the less expensive Mannheim and Rietz models were us
 
 ## *circular rules*
 
-As an engineering student in the 1980s in Burma, I used the Faber-Castell 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. All my classmates used the government-issued Aristo 0968 straight slide rule. All the scales are etched onto the exposed plastic face. The outer portion of the face is fixed to the body, and the inner portion of the face rotates. And the cursor with the hairline rotates across the scales on the face. The FC 8/10, despite being circular, operates on the same principles as the straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, the inner portion to the slide. The circular shape of the device does indeed highlight, visually and literally, the wrap-around nature of the logarithmic scales.
+Circular slide rules can be categorised into three types: simplex, pocket watch, and duplex. Circular rules were popular with businessmen, and the most popular models were of the pocket watch type.
+
+***simplex type***—The diameter of the FC 8/10 circular rule is only 12 cm, but in terms of capability, it is equivalent to a 25-cm Rietz straight rule. I liked the FC 8/10, because it was well made like all FC products, accurate, inexpensive, unique, aesthetically pleasing, and compact. But the FC 8/10 is an atypical circular rule. Most circular rules used spiral scales, but the FC 8/10 used ordinary Mannheim scales in wrapped form. The example shown below was made in the mid 1970s.
 
 ![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
 
-The diameter of the FC 8/10 circular rule is only 12 cm, but in terms of capability, it is equivalent to a 25-cm Rietz straight rule. I liked the FC 8/10, because it was well made like all FC products, accurate, inexpensive, unique, aesthetically pleasing, and compact. I used it for ordinary, daily tasks. But when I needed the $LL$ scale, say for laboratory work and examinations, I used the Aristo 0968 log-log duplex. In general, switching slide rules like this is detrimental, since it robs the opportunity to develop an intimate relation with a single device. But the FC 8/10 is an atypical circular rule; in fact, it is a wrap-around Mannheim straight rule. So, my switching between the FC 8/10 and the 0968 did not impact me, negatively. By way of analogy, FC 8/10 is to Aristo 0968 what [HP-35](https://hpmuseum.org/hp35.htm) is to [HP-32S](https://www.hpmuseum.org/hp32s.htm).
+***pocket watch type***—A more typical design for circular slide rules is the pocket watch variety, like the Fowler Universal Calculator shown below. [William Fowler](https://www.nzeldes.com/HOC/Fowlers.htm) of Manchester, England, began manufacturing calculating devices in 1898. This particular model probably dates to the 1950s. Fowler slide rules were made to exacting standards, like an expensive pocket watch, and are operated like a watch, too, using the two crowns.
 
-A more typical design for circular slide rules is the pocket watch variety, like the Fowler Universal Calculator shown below. Fowler began manufacturing calculating devices in the mid 1800s. This particular model probably dates to the 1950s. Etched into the glass of this Fowlersal Calculatorr is the fixed red hairline, aligned with the crown at 12 o'clock. This crown rotates the face anticlockwise. All the scales are etched onto this one-piece, rotating face. And the crown at 2 o'clock rotates the clear plastic cursor bearing the black hairline clockwise.
+![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
 
-![Fowler Universal Calculator](./figures/SlideRules/FowlerUC/front.jpg)
-
-As I said before, most engineers of the day shunned the circular slide rule. But the Dempster RotaRule Model AA was the one circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model, somewhat uncommon trait among circular rules, was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a mechanical engineer. And in addition to the usual assortment of scales, it has the scales that engineers need: three $LL$ scales, scales for computing $\sqrt{x^2 + y^2}$. At about 13 cm in diameter, the RotaRule is about the same size as the FC 8/10. But unlike the FC 8/10's 25 cm circumference circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm four-cycle $LL$ scale. And it even has a $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device. Dempster began manufacturing the RotaRule in 1928. The RutaRule AA model shown below is probably from the late 1940s.
+***duplex type***—As I said before, most engineers of the day shunned the circular slide rule. But the Dempster RotaRule Model AA was the one circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model—a bit of an uncommon trait among circular rules—was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), an American mechanical engineer, a Berkeley graduate. Dempster began manufacturing the RotaRule in 1928 in the basement of his Berkeley, CA, home. The RotaRule Model AA shown below is probably from the late 1940s.
 
 ![Dempster RotaRule Model AA](./figures/SlideRules/DempsterRotaRule/front.jpg)
 
@@ -239,13 +239,13 @@ It is no secret that most engineers frown upon the circular slide rule. [Seymour
 
 ## *cylindrical rules*
 
-All cylindrical rules employed the very long helical scale, and the business community favours the greater precision these devices afforded. As such, most cylindrical rules very large; they were meant for the banker's desk. By contrast, the Otis King Model L, shown below, is a very compact cylindrical rule. In the stowed position, the device is well shy of the length of an open hand. It fitted coat pockets as well as any watch-style circular models, but it offered far greater precision. This particular Model L is likely from the early 1970s.
+All cylindrical rules emphasise precision, so they all have very long scales. Some cylindrical rules use the helical-scale design, while others use the stacked straight-scale design. Cylindrical rules come in two types: pocket type and desk type. The business community favours the greater precision these devices afforded. As such, most cylindrical rules very large; they were meant for the banker's desk.
+
+***pocket type***—The Otis King Model L, shown below, is a contradiction: it is a compact cylindrical rule that, when collapsed, is well shy of an open palm. Portability wise, this cylindrical rule could compete with larger pocket watch type circular rules. But because the Model L employs helical scales, its precision is far superior to that of straight and circular rules. This particular Model L is likely from the 1950s.
 
 ![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
 
-To use the Otis King, one holds the chrome handle in the left hand, and pulls out the top, thereby exposing the helical logarithmic scales. The Model L shown above has the $C$ scale on the top, the $L$ scale in the middle, and the $D$ scale on the bottom. The black handle, which is operated with the right hand, is the equivalent of the straight rule's cursor, and it is engraved with two white index marks. These two indices are the equivalents of the two hairlines on the Fowler circular rule. The upper portion of the device which holds the $C$ and $L$ scales can shift up and down along the longitudinal axis and can also spin about the axis, independently of the fixed $D$ scale on the lower portion. Of course, the hidden numbers on the $D$ scale can be brought forward by spinning the handle in the left hand. And the black cursor can shift and spin independently of both scales. Thus, the Model L's  fixed lower portion is like the frame of the straight rule, the movable upper portion is like the slide of the straight rule.
-
-One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed in 1881 by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules), an American engineer working for K&E. I have never seen this device in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
+***desk type***—One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed in 1881 by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules), an American engineer working for K&E. I have never seen this device in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
 
 ![K&E 1740 Thacher](./figures/SlideRules/K&E1740Thacher.jpg)
 
@@ -621,7 +621,7 @@ Care is necessary when using the $T$ scale on the Hemmi 153, because its angle $
 
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
-***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most refined, engineering slide rules from K&E, designed to compete with the likes of FC 2/83 N and Aristo 0969. And like other late model K&E rules, the K&E 68-1100 is made of plastic that is on the cheap side, compared to the European brands. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But the lopsided frame feels awkward when flipping to those who are used to the common, symmetric design.
+***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most refined, engineering slide rules from K&E, designed to compete with the likes of Aristo 0969, FC 2/83 N, and Nester 0292. And like other late model K&E rules, the K&E 68-1100 is made of plastic that is on the cheap side, compared to the European brands. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But the lopsided frame feels awkward when flipping to those who are used to the common, symmetric design.
 
 ![K&E 68-1100](./figures/SlideRules/K&E68-1100/front.jpg)
 
@@ -659,7 +659,7 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 ***Logarex 27403-X Darmstadt***—Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). The Logarax 27403-X is a late model Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. Although there are black indices on each end, they do not permit reading the $LL_2$ scale in the middle of the slide. Hence, to use the $LL_n$ scales, they must be flipped to the front. Like everything else manufactured in the Eastern Bloc countries in the Soviet Era, this slide rule feels cheap but usable.
 
-![Logarex 27403-X](./figures/SlideRules/Logarex27403-X/front.jpg)
+![Logarex 27403-X](./figures/SlideRules/Logarex27403X/front.jpg)
 
 #### Nestler (DE)
 
@@ -673,21 +673,21 @@ Yet, there is something subversive about the Nestler 23 R. Being of the classic 
 
 ![Nestler 0210](./figures/SlideRules/Nestler0210/front.jpg)
 
-***Nestler 0292 Multimath-Duplex***—I like the appearance of Nestler slide rules for their understated elegance and subtle power. Being a late model advanced log-log duplex engineering rule, the Nestler 0292 possesses the same computing power as the top-of-the-line models from other manufacturers: FC 2/83 N, Aristo 0969, K&E 68-1100, Pickett N3-ES, et al. In my view, the Nester 0292 beats them all in both usability and beauty. No offence meant to those who admire the FC 2/83 N's looks; I like that slide rule very well, only not as much as the Nestler 0292. Whereas the FC 2/83 N shouts out its power, the Nestler 0292 expresses its power, quietly. It is much slimmer than the FC 2/83 N, so it feels more comfortable in the hand, especially for those of us who grew up on smaller rules, like the Aristo 0968. And it employs only one colour, the pale green background, which covers both sides of the slide. I am of the opinion that the Nestler 0292 is an embodiment of engineering philosophy: elegant simplicity, effortless efficiency, quiet power.
+***Nestler 0292 Multimath-Duplex***—I like the appearance of Nestler slide rules for their understated elegance and subtle power. Being a late model advanced log-log duplex engineering rule, the Nestler 0292 possesses the same computing power as the top-of-the-line models from other manufacturers: Aristo 0969, FC 2/83 N, K&E 68-1100, Pickett N3-ES, et al. In my view, the Nester 0292 beats them all in both usability and beauty. No offence meant to those who admire the FC 2/83 N's looks; I like that slide rule very well, only not as much as the Nestler 0292. Whereas the FC 2/83 N shouts out its power, the Nestler 0292 expresses its power, quietly. It is much slimmer than the FC 2/83 N, so it feels more comfortable in the hand, especially for those of us who grew up on smaller rules, like the Aristo 0968. And it employs only one colour, the pale green background, which covers both sides of the slide. I am of the opinion that the Nestler 0292 is an embodiment of engineering philosophy: elegant simplicity, effortless efficiency, quiet power.
 
 ![Nestler 0292](./figures/SlideRules/Nestler0292/front.jpg)
 
 #### Pickett & Eckel (US)
 
-***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly arranged the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacking the $LL_n$ and $LL_{0n}$ scales makes it more difficult to read. To each his own. The Pickett N3-ES's claims to fame are the aluminium body and the eye-saver yellow.
+***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly arranged the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacking the $LL_n$ and $LL_{0n}$ scales makes it more difficult to read. To each his own. The Pickett N3-ES's claims to fame are the aluminium body and the Pickett's trademarked Eye-Saver Yellow.
 
-![Pickett N3-ES](./figures/SlideRules/PickettN3-ES/front.jpg)
+![Pickett N3-ES](./figures/SlideRules/PickettN3ES/front.jpg)
 
 To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy the Pickett N3-ES. Not withstanding my dislike, this slide rule is a solid performer. Aluminium is a far more stable material than wood. Indeed, it is virtually indestructible. Nevertheless, it feels cheap, sharp, and cold to me. My apologies to NASA, who used, with great success, the Pickett N600-ES, a pared-down, pocket version of the Pickett N3-ES, on all the Apollo missions.
 
 ***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES has the $Sh$ and $Th$ scales. But the distinctive feature of the Pickett N4-ES is its $LL$ scales: $LL_1$, $LL_{01}$ to $LL_4$, $LL_{04}$. So, the Pickett N4-ES discards the lower-end $LL_0$ and $LL_{00}$ scales in favour of the higher-end $LL_4$ and $LL_{04}$ scales.
 
-![Pickett N4-ES](./figures/SlideRules/PickettN4-ES/front.jpg)
+![Pickett N4-ES](./figures/SlideRules/PickettN4ES/front.jpg)
 
 #### Post (US importer; Hemmi, JP, manufacturer)
 
@@ -709,7 +709,7 @@ To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-
 
 ![Reiss 3214](./figures/SlideRules/Reiss3214/front.jpg)
 
-***Reiss Darmstadt***—This slide rule is a traditional Darmstadt rule, but it is made of aluminium. In terms of quality, this slide rule is as solid as any European model. But I detest its aluminium construction.
+***Reiss Darmstadt***—This slide rule is a traditional Darmstadt rule, but it is made of aluminium. In terms of quality, this slide rule is as solid as any European model. But I detest its cold, harsh, aluminium construction.
 
 ![Reiss Darmstadt](./figures/SlideRules/ReissDarmstadt/front.jpg)
 
@@ -717,59 +717,91 @@ To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-
 
 #### Breitling (CH)
 
-***Breitling Montbrillant Datora***—
+***Breitling Montbrillant Datora***—The Breitling Montbrillant Datora is a descendant of the revered [Breitling Navitimer](https://wristreview.com/a-brief-history-of-the-breitling-navitimer/) pilot's watch. The Navitimer was introduced in 1952 for use by pilots. Instrument flying in those days, pilots used the flight instruments in the cockpit together with an accurate timer (for timed turns, holding patterns, etc.) and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled both those needs, because it incorporated a chronograph and a slide rule. The $C$ scale is engraved on the rotating bezel and the $D$ scale on the watch face.
+
+![Breitling Montbrillant Datora](./figures/SlideRules/BreitlingDatora/front.jpg)
 
 #### Concise (JP)
 
-***Concise Model 300***—
+***Concise Model 300***—The Concise 300 is a low-cost, compact, duplex circular rule. It uses pared-down Darmstadt scales, providing only $LL_2$ and $LL_3$. But it provides two $tan$ scales, $T_1$ and $T_2$. In terms of computing power, this slide rule is almost as capable as the Nestler 0210.
+
+![Concise Model 300](./figures/SlideRules/Concise300/front.jpg)
+
+The Concise 300 is held with the $1$ index mark pointing up, and is flipped left-to-right. For its price, this is a decent slide rule. But it does not stack up well against other Japanese-made slide rules, in terms of quality.
 
 #### Dempster (US)
 
-***Dempster RotaRule Model AA***—
+***Dempster RotaRule Model AA***—The Dempster RotaRule is the most desirable log-log duplex circular rule. In addition to the usual assortment of scales, it has the scales that engineers need: the four $LL_n$ scales and the Pythagorean $\sqrt{x^2 + y^2}$ scale. At about 13 cm in diameter, the RotaRule is about the same size as the simplex FC 8/10. But unlike the FC 8/10's 25 cm circumference circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm four-cycle $LL$ scale. And it even has a surveyor's $Stadia$ scale a $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device.
 
 ![Dempster RotaRule](./figures/SlideRules/DempsterRotaRule/front.jpg)
+
+The Dempster RotaRule is held with the $1$ index mark pointing down, and is flipped left-to-right. It was designed by [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a mechanical engineer, for use in engineering. The term "engineering circular rule" is almost an oxymoron, given that most engineers disliked circular rules, but so it was.
 
 The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper engineering slide rule, with three $LL_n$ scales and three $LL_{0n}$ scales, comparable in capabilities to a typical log-log duplex straight rule, but with far greater precision. Incidentally, [Bernard Boykin](http://www.oughtred.org/memoriam/memoriam.shtml), the designer of the fabulous Boykin circular slide rule, was my fellow engineer and a fellow Marylander, to boot. Alas, I do not own a Boykin circular rule—not yet.
 
 #### Faber-Castell (DE)
 
-***FC 8/10***—
+***FC 8/10***—As an engineering student in the 1980s in Burma, I used the FC 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. The FC 8/10 is a simplex circular rule. It uses aesthetically pleasing pale yellow and pale green backgrounds for some of the scales. I consider this slide rule one of the prettiest of all engineering tools. All the scales are engraved onto the exposed plastic face. The outer portion of the face is fixed to the body, and the rotatable inner portion of the face is operated using both thumbs, pushing against each other. And the cursor with the hairline rotates across the scales on the face.
 
 ![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
 
+As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But when I needed the $LL$ scales, say for laboratory work and examinations, I used the Aristo 0968 log-log duplex. In general, switching slide rules like this is detrimental, since it robs the opportunity to develop an intimate relation with a single device. But the FC 8/10 is just a straight rule in a circular guise. Despite being circular in shape, it operates on the same principles as the Mannheim straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, the inner portion to the slide. And the circular shape of the device does indeed highlight, visually and literally, the wrap-around nature of the logarithmic scales. So, my switching between the FC 8/10 and the 0968 did not impact me negatively. By way of analogy, FC 8/10 is to Aristo 0968 what [HP-35](https://hpmuseum.org/hp35.htm) is to [HP-32S](https://www.hpmuseum.org/hp32s.htm).
+
 #### Fowler (UK)
 
-***Fowler's Universal Calculator***—
+***Fowler's Universal Calculator***—Fowler circular slide rules were exceedingly well-made, like expensive pocket watches, and they came in high-quality wooden cases that resembled jewel boxes. At about 8.5 cm in diameter, this device is perfectly sized for the hand. Etched into the glass of the Fowler's Universal Calculator is the fixed red hairline, aligned with the crown at 12 o'clock. Turning this crown clockwise rotates the face anticlockwise, and turning this crown anticlockwise rotates the face clockwise. All the scales are etched onto this one-piece, rotating face. And turning the crown at 2 o'clock clockwise rotates the clear plastic cursor bearing the black hairline clockwise, and turning this crown anticlockwise rotates the cursor anticlockwise. It is a bit odd that this slide rule has no $A$ and $B$ scales, but it has a very long, triple-cycle $\sqrt[3]{x}$ scale.
 
-![Fowler Universal Calculator](./figures/SlideRules/FowlerUC/front.jpg)
+![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
 
 #### Gilson (US)
 
 ***Gilson Binary***—
 
+![Gilson Binary](./figures/SlideRules/GilsonBinary/front.jpg)
+
+The Gilson Binary is held with the $1$ index mark pointing up, and is flipped left-to-right.
+
+![Gilson Binary](./figures/SlideRules/GilsonBinary/back.jpg)
+
 #### Kontrolpribor (RU)
 
-***Kontrolpribor  Model KL-1***—
+***Kontrolpribor Model KL-1***—Kontrolpribor was a Soviet factory that made cheap slide rules. The Kontrolpribor KL-1 is a pocket watch type duplex circular model. It is about the size of a wristwatch. The faces are covered with cheap plastic. Because the plastic covers are domed, they can get scratched easily. The black-dotted crown at 12 o'clock rotates the face and the red-dotted one at 2 o'clock rotates the needle. The frontside has 15-cm long $C$ and $A$ scales, giving precision equivalent to a pocket straight rule. The backside has circular $C$ and $S$ scales and a spiral $T$ scale. This slide rule is comparable in computing power to a pocket Mannheim.
+
+![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/front.jpg)
+
+The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. Compared to the Fowler's Universal Calculator, this slide rule is a cheap toy.
 
 #### Loga (CH)
 
-***Loga 30 Tt***—
+***Loga 30 Tt***—Loga was a Swiss maker of superb technical instruments. Until about the late 19th century, Switzerland was the home of cheap, high-quality craftsmen. French, German, and English watch makers relied extensively on the well-trained Swiss labour force to hand-make their high-end watches. That was how the modern Swiss watch industry came about. The Swiss craftsmanship is apparent in the Loga 30 Tt, an accurate, sturdy, beautiful, Darmstadt-equivalent circular rule. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds dual-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. Note that the $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are labelled $A$ and $B$.
+
+![Loga 30 Tt](./figures/SlideRules/Loga30Tt/front.jpg)
+
+A quirk of the Loga 30 Tt is intended to be flipped by holding it between right thumb and forefinger. If it were flipped left-to-right, the $1$ index mark points to the right instead of straight up. The entire back face is fixed to the frame, and holds the $S$, $T$, $ST$, and three $LL_n$ scales. The end of the backside cursor protrudes beyond the disc. The clever bit is that the back cursor is attached to the inner, rotating portion on the front face, and the cursor's protruding end serves as the handle that rotates the inner front face. In terms of capabilities and quality, the Loga 30 Tt is on par with high-end Darmstadt rules, like BRL D.26, FC 1/54, and Nestler 0210.
 
 #### Pickett & Eckel (US)
 
-***Pickett 101-C Dial Rule***—
+***Pickett 101-C Dial Rule***—The Pickett 101-C is a low-end circular rule. The body is a cheap, thin aluminium disc. Being a rather small disc, there are only two $LL_n$ scales, but the ranges are unusual: $LL_1 ∈ [1.15, 4.0]$ and $LL_2 ∈ [4, 10^6]$. And like many other low-end circular rules of the time, this slide rule has the fraction scale. Indeed, the Pickett 101-C is a miniature version of the Gilson Binary. See the full description in the Gilson Binary subsection, above.
 
-***Pickett 111-ES***—made in JP
+![Pickett 101-C](./figures/SlideRules/Pickett101C/front.jpg)
+
+The Pickett 101-C is held with the $1$ index mark pointing up, and is flipped bottom-to-top, like a standard straight rule.
+
+***Pickett 111-ES***—I am no fan of Pickett rules, but I like the Pickett 111-ES. It is made in Japan. Although it has an aluminium core, the edges are rounded off and the faces are covered in high-quality Japanese plastic. The Pickett 111-ES is a log-log duplex advanced engineering rule with eight $LL$ scales, a rarity among circular rules. It employs Pickett's stacked layout for the $LL$ scales. But whereas the Pickett N3-ES stacks $LL_n$ and $LL_{0n}$ on the same line, the Pickett 111-ES stacks $LL_0$-$LL_1$ and $LL_2$-$LL_3$ on the frontside, and $LL_{00}$-$LL_{01}$ and $LL_{02}$-$LL_{03}$ on the backside. The Pickett 111-ES's capabilities compare well against top-of-the-line engineering rules, like Aristo 0969, FC 2/83 N, Nestler 0292, K&E 68-1100, and Pickett N3-ES. Similar to other high-end circular rules, like the Dempster RotaRule, the outer portion is fixed, the inner portion rotates, and the duplex cursor is firm but glides smoothly.
+
+![Pickett 111ES](./figures/SlideRules/Pickett111ES/front.jpg)
+
+The Pickett 111-ES, like the Dempster RotaRule, is held with the $1$ index mark pointing down, and flipped left-to-right.
 
 ## *cylindrical rules*
 
 #### Otis King (UK)
 
-***Otis King Model K***—The Model K's upper cylinder is sports the dual-cycle $C$ scale. The two cycles of the $C$ scale allows chained calculations without having to reset the cursor, as was necessary with the single-cycle Model L. The Model K could compute only $×$ and $÷$.
+***Otis King Model K***—The Model K's upper cylinder is sports the dual-cycle $C$ scale. The two cycles of the $C$ scale allows chained calculations without having to reset the cursor, as was necessary with the single-cycle Model L. The Model K could compute only $×$ and $÷$. To use the Model K, one holds the chrome handle in one hand and with the other hand pulls out the top, thereby exposing the helical logarithmic scales. The black handle, which is operated with the free hand, is the equivalent of the straight rule's cursor, and it is engraved with two white index marks that are aligned to each other. The upper portion of the device, which holds the $C$ scale, can shift up and down along the longitudinal axis, and it can also spin about that axis independently of the fixed $D$ scale on the lower portion. The back-facing numbers on the $D$ scale can be brought into view by spinning the handle. And the black cursor can shift and spin independently of both scales. Thus, the Model K's  fixed lower portion is equivalent to the frame of the straight rule, the movable upper portion is equivalent to the slide of the straight rule.
 
-[Otis King Model K photo]
+![Otis King Model K](./figures/SlideRules/OtisKingK/front.jpg)
 
-***Otis King Model L***—The Model L is identical in construction to the Model K, and these two models have a $D$ scale that is almost the same length. But the Model L's upper cylinder is occupied by the single-cycle $C$ scale and the $L$ scale. Where as the Model K could compute only $×$ and $÷$, the Model L could compute $×$, $÷$, $log$, $log^{-1}$, and $x^y$.
+***Otis King Model L***—The Model L is identical in construction and in operation to the Model K, and these two models have a $D$ scale that is almost the same length. But the Model L's upper cylinder is occupied by the single-cycle $C$ scale and the $L$ scale. Where as the Model K could compute only $×$ and $÷$, the Model L could compute $×$, $÷$, $log$, $log^{-1}$, and $x^y$.
 
 ![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
 
