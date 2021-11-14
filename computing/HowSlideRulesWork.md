@@ -141,7 +141,7 @@ In slide rule terminology, *accuracy* refers to how consistently the device oper
 
 ***precision***—Before we discuss precision of slide rules, let us explore the nature of the logarithmic scale. The $C$ and $D$ scales are logarithmic, so they are nonlinear. The scales start at $log(1) = 0$, which is marked as $1$, and end at $log(10) = 1$, which is also marked as $1$. In other words, these scales wrap around by multiples of $10$. So, the number $314$ is read as $0.314$, $3.14$, $31.4$, or $314.0$, depending on context. The decimal point is located using some clever mental arithmetic.
 
-As can be seen in the photograph below, the distance between two adjacent major divisions on the scale shrinks logarithmically from left to right:
+As can be seen in the figure below, the distance between two adjacent major divisions on the scale shrinks logarithmically from left to right:
 
 - $log(2) - log(1) = 0.301 \approx 30\%$
 - $log(3) - log(2) = 0.176 \approx 18\%$
@@ -153,13 +153,13 @@ As can be seen in the photograph below, the distance between two adjacent major 
 - $log(9) - log(8) = 0.051 \approx 5\%$
 - $log(10) - log(9) = 0.046 \approx 4\%$
 
-![D scale](./figures/SlideRules/K&E4081-3/front.jpg)
+![D scale](./figures/SlideRules/scale-D.jpg)
 
-The photograph above also shows the three distinct regions on the $D$ scale that have different resolutions:
+The figure above also shows the three distinct regions on the $D$ scale that have different resolutions:
 
 - In the range $[1, 2]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $10$ minor divisions.
-- In the rage $[2, 5]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $5$ minor divisions.
-- In the range $[5, 1]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $2$ minor divisions.
+- In the rage $[2, 4]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $5$ minor divisions.
+- In the range $[4, 1]$, the scale is graduated into $10$ major divisions, and each major division is further graduated into $2$ minor divisions.
 
 At the left end of the $D$ scale, $1.11$, $1.12$, etc., can be read directly from the scale. With practice, one could visually subdivide each minor division into $10$ sub-subdivisions and discern $1.111$ from $1.112$. In the photograph below, the cursor hairline is placed on $1.115$.
 
