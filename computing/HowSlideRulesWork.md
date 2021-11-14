@@ -66,7 +66,7 @@ Go on eBay and buy a good, inexpensive slide rule, either the [K&E 4081-3](https
 
 That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$. Note that $log^{-1}(x) = 10^x$.
 
-***logarithmic scale***—The slide rule mechanised these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). The logarithmic scale is derived from the arithmetic scale like this. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments—$0, 1, 2, 3, ..., 1$—similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood is now the source arithmetic scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments—$1, 2, 3, ..., 1$—starting with $1$ and, again, ending with $1$. But the division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by referencing the linear arithmetic scale:
+***logarithmic scale***—The slide rule mechanised these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). The logarithmic scale is derived from the arithmetic scale like this. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments—$0, 1, 2, 3, ..., 1$—similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source arithmetic scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments—$1, 2, 3, ..., 1$—starting with $1$ and, again, ending with $1$. But the division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by referencing the linear arithmetic scale:
 
 - $log(1) = 0.0$, so $1$ on the second scale is lined up with $0.0$ on the first scale
 - $log(2) = 0.301$, so $2$ on the second scale is lined up with $0.301$ on the first scale
@@ -78,7 +78,7 @@ The second scale thus obtained is the logarithmic scale. In the figure below, th
 
 ![L & D scales](./figures/SlideRules/scale-L-D.jpg)
 
-On the slide rule, we label the linear arithmetic scale as $L$, and the non-linear logarithmic scale as $D$, and these scales are related by a bijective function $log$:
+On the slide rule, we label the arithmetic scale as $L$, and the logarithmic scale as $D$. These scales are related by a bijective function $log$:
 
 - $log: D \rightarrow L$
 - $log^{-1}: L \rightarrow D$
