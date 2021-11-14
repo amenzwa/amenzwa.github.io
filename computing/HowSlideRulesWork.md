@@ -59,7 +59,7 @@ Go on eBay and buy a good, inexpensive slide rule, either the [K&E 4081-3](https
 
 ## *arithmetic operations*
 
-***properties of  logarithms***—The base-$10$ common logarithm function $log_{10}(x)$ and its inverse power-of-10 function $10^x$ gives life to the slide rule. The two main properties of logarithms upon which the slide rule relies are these:
+***properties of  logarithms***—The base-$10$ common logarithm function $log_{10}(x)$ and its inverse, the power-of-10 function $10^x$, give life to the slide rule. The two main properties of logarithms upon which the slide rule relies are these:
 
 - $a × b = log^{-1}[log(a) + log(b)]$
 - $a ÷ b = log^{-1}[log(a) - log(b)]$
@@ -81,7 +81,7 @@ In the plot below, the black curve is $log$ and the red is $log^{-1}$.
 
 The special name for $log^{-1}$ is $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. To put it differently, the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
 
-Naturally, plotting the $log$ function on a logarithmic scale produces a sequence of evenly spaced values. Hence, the $L$ scale appears linear, when laid out on the logarithmic slide rule. Note also that the mere act of reading $x$ on the logarithmic scale implicitly computes $log(x)$, and there is no need explicitly to compute $log^{-1}(x)$. Gunter's logarithmic scale, thus, was the groundbreaking idea that made the slide rule work so effectively, efficiently, effortlessly.
+Plotting the $log$ function on a logarithmic scale produces a sequence of evenly spaced values. Hence, the $L$ scale appears linear, when laid out on the logarithmic slide rule. Note also that the mere act of reading $x$ on the logarithmic scale implicitly computes $log(x)$, and there is no need explicitly to compute $log^{-1}(x)$. Gunter's logarithmic scale, thus, was the groundbreaking idea that made the slide rule work so effectively, efficiently, effortlessly.
 
 The logarithmic scale has many other uses in STEM beyond the slide rule: the [Richter scale](https://en.wikipedia.org/wiki/Richter_magnitude_scale) used to measure seismic events; the $dB$ [decibel scale](https://en.wikipedia.org/wiki/Decibel) used to measure sound pressure levels; the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) used to visualise frequency domain signals are just a few examples. These uses exploit the logarithmic scale's ability to compress a very large range, while preserving relevant details.
 
@@ -259,7 +259,7 @@ The driving force behind the slide rule was to expedite $×$ and $÷$. As such, 
 
 In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$, but using $D$ and $CI$ this expression is computed as $a_D + b_{CI}$:
 
-- $a ÷ b = log(a) - log(b) = log(a) + log(1/b)$
+- $a ÷ b = log(a) - log(b) = log(a) + log(\frac{1}{b})$
 
 The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $π$, thereby moving the $1$ mark to the middle of the scale. They reduce the distance required to move the slide. The following photograph shows these auxiliary arithmetic scales.
 
