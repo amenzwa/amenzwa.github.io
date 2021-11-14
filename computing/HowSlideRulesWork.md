@@ -657,9 +657,11 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 #### Logarex (CZ)
 
-***Logarex 27403-X Darmstadt***—Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). The Logarax 27403-X is a late model Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. Although there are black indices on each end, they do not permit reading the $LL_2$ scale in the middle of the slide. Hence, to use the $LL_n$ scales, they must be flipped to the front. Like everything else manufactured in the Eastern Bloc countries in the Soviet Era, this slide rule feels cheap but usable.
+***Logarex 27403-X Darmstadt***—Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). The Logarax 27403-X is a late model Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. Although there are black indices on each end, they do not permit reading the $LL_2$ scale in the middle of the slide. Hence, to use the $LL_n$ scales, they must be flipped to the front.
 
 ![Logarex 27403-X](./figures/SlideRules/Logarex27403X/front.jpg)
+
+Like everything else manufactured in the Eastern Bloc countries in the Soviet Era, this slide rule feels cheap but usable.
 
 #### Nestler (DE)
 
@@ -685,7 +687,7 @@ Yet, there is something subversive about the Nestler 23 R. Being of the classic 
 
 To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy the Pickett N3-ES. Not withstanding my dislike, this slide rule is a solid performer. Aluminium is a far more stable material than wood. Indeed, it is virtually indestructible. Nevertheless, it feels cheap, sharp, and cold to me. My apologies to NASA, who used, with great success, the Pickett N600-ES, a pared-down, pocket version of the Pickett N3-ES, on all the Apollo missions.
 
-***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES has the $Sh$ and $Th$ scales. But the distinctive feature of the Pickett N4-ES is its $LL$ scales: $LL_1$, $LL_{01}$ to $LL_4$, $LL_{04}$. So, the Pickett N4-ES discards the lower-end $LL_0$ and $LL_{00}$ scales in favour of the higher-end $LL_4$ and $LL_{04}$ scales.
+***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES has the $Sh$ and $Th$ scales. The Pickett N4-ES labels its $LL$ scales from $LL_1$, $LL_{01}$ to $LL_4$, $LL_{04}$, instead of starting from $LL_0$ and $LL_{00}$.
 
 ![Pickett N4-ES](./figures/SlideRules/PickettN4ES/front.jpg)
 
@@ -694,6 +696,8 @@ To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-
 ***Post 1447 Mannheim***—Post was an American importer of topping Japanese, bamboo slide rules, made by Hemmi. The Post 1447 is an honest slide rule fit for innocent high schoolers. It had the Mannheim essentials: $C$, $D$, $A$, $B$, $S$, $L$, and $T$. The $S$, $L$, and $T$ scales are on the backside of the slide, which are read through the cutouts on the backside of the slide rule.
 
 ![Post 1447](./figures/SlideRules/Post1447/front.jpg)
+
+In my youth, fortunate middle schoolers and high schoolers learn to use the slide rule on a superb Mannheim rule like the Post 1447. The cursed, though, had to settle for something like the [Sterling Acumath 400](https://www.sliderulemuseum.com/Acumath/Acu-Math_No400_PlainEdgeStock_OneSidedCursor_GiftOfWilliamMulroy.jpg).
 
 ***Post 1461 Pocket Versalog II***—The Post 1461 is a miniature version of the Post 1460. See the full description in the Post 1460 subsection, below.
 
@@ -717,7 +721,7 @@ To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-
 
 #### Breitling (CH)
 
-***Breitling Montbrillant Datora***—The Breitling Montbrillant Datora is a descendant of the revered [Breitling Navitimer](https://wristreview.com/a-brief-history-of-the-breitling-navitimer/) pilot's watch. The Navitimer was introduced in 1952 for use by pilots. Instrument flying in those days, pilots used the flight instruments in the cockpit together with an accurate timer (for timed turns, holding patterns, etc.) and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled both those needs, because it incorporated a chronograph and a slide rule. The $C$ scale is engraved on the rotating bezel and the $D$ scale on the watch face.
+***Breitling Montbrillant Datora***—The Breitling Montbrillant Datora is a member of the [Breitling Navitimer](https://wristreview.com/a-brief-history-of-the-breitling-navitimer/) family of pilots' watches. The Navitimer was introduced in 1952 for use by pilots. Instrument flying in those days, pilots used the flight instruments in the cockpit together with an accurate timer (for timed turns, holding patterns, etc.) and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled both those needs, because it incorporated a chronograph and a slide rule. The $C$ scale is engraved on the rotating bezel and the $D$ scale on the watch face.
 
 ![Breitling Montbrillant Datora](./figures/SlideRules/BreitlingDatora/front.jpg)
 
@@ -755,13 +759,29 @@ As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But whe
 
 #### Gilson (US)
 
-***Gilson Binary***—
+***Gilson Binary***—The Gilson Binary is a cheaply-made, large, thin, aluminium disc of about 21 cm in diameter. But given its immense size, it is capable of yielding very high precision. And its two-arm cursor mechanism is rather clever. The frontside has $C$, $CI$, $A$, $K$, $L$, $LL_0$, $LL_1$, $LL_2$, $LL_3$, fraction multiplication and division scale, and millimetre to fractional inch conversion scale pair. Back in the day, engineers round the world found fractions to be annoying, like a piece of food stuck between the teeth. But to American engineers, fractions were their bread-and-butter. The $C$ scale is over 60 cm in length. The range of the entire clockwise, quadruple-cycle $LL_n$ scale is an impressive $[1.0015, 10^6]$. The tan-colour face is punctuated with bright yellow scale background rings: the $LL_0$ has tan background, $LL_1$ has yellow background, etc. This somewhat eases the daunting task of chasing the mammoth $LL$ scale round the large face. The front face has two clear plastic cursors, one longer than the other. When the long cursor is moved, the short cursor also moves in lock step. But the short cursor can be moved independently of the long cursor. Ordinarily, computations begin with setting the long cursor hairline on the $1$ on the $C$ scale, and end with reading under the short cursor hairline on the appropriate scale. Suffice it to say the Gilson Binary's design is unique. Without the aid of a manual, even experienced straight rule users would be hard pressed to figure out how to use it. But once its quirks have been discovered, it is just as simple to use as a straight rule.
 
 ![Gilson Binary](./figures/SlideRules/GilsonBinary/front.jpg)
 
-The Gilson Binary is held with the $1$ index mark pointing up, and is flipped left-to-right.
+To compute $2 × 3$, we manipulate the slide rule as follows:
+
+- $C$—Place the long cursor hairline on the $1$ on the $C$ scale.
+- $C$—Place the short cursor hairline on the *multiplicand* $2$ on the $C$ scale.
+- $C$—Move the long cursor and place its hairline on the *multiplier* $3$ on the $C$ scale.
+- $C$—Read under the short cursor hairline the *product* $6$ on the $C$ scale. This computes $2 × 3 = 6$.
+
+To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
+
+- $C$—Place the long cursor hairline on the $1$ on the $C$ scale.
+- $LL_1$—Place the short cursor hairline on the *base* $1.03$ on the $LL_1$ scale.
+- $C$—Move the long cursor and place its hairline on the *exponent* $2.4$ on the $C$ scale.
+- $LL_1$—Read under the short hairline the *result* $1.0735$ on the $LL_1$ scale. This computes $1.03^{2.4} = 1.0735$.
+
+The Gilson Binary is held with the $1$ index mark pointing up, and is flipped left-to-right. Unusual design elements continue on the back face, too. For instance, unlike a typical slide rule, the Gilson Binary has two opposing $Degrees$ scales, one running clockwise and the other anticlockwise. The degree scales are split into three cycles, each 30° wide. Stack atop the degree scales are the clockwise, triple-cycle $T$ scales, and the $Degree$-$T$ scale pair is interlaced with the clockwise, triple-cycle $S$ scales. Since the $Degree$ scale's range is $[0°, 90°]$, one must use care to avoid reading a nonsensical value like $tan(90°)$.
 
 ![Gilson Binary](./figures/SlideRules/GilsonBinary/back.jpg)
+
+American slide rule manufacturers, like most American engineers of that era, had a hostile attitude toward usability, mistakenly believing that clever, trained person should be able to cope with complexity. This attitude is prominently on display in the design of the Gilson Binary. This slide rule would be far more pleasant to use, had pale greens and pale blues, like those on the FC 8/10 and the FC 2/83 N, been used, instead of the eye-gouging yellow rings. Yes, it is unfair to compare the 1930s Gilson with the 1970s Faber-Castell. But it is eminently fair to compare the American Gilson to its German contemporaries, like the FC 1/54 and the Nestler 23 R. There, too, the Gilson design falls well short, in terms of aesthetic and usability.
 
 #### Kontrolpribor (RU)
 
@@ -769,7 +789,7 @@ The Gilson Binary is held with the $1$ index mark pointing up, and is flipped le
 
 ![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/front.jpg)
 
-The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. Compared to the Fowler's Universal Calculator, this slide rule is a cheap toy.
+The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. In the presence of the Fowler's Universal Calculator, this slide rule is a cheap toy. But it is much more powerful than the Breitling Navitimer.
 
 #### Loga (CH)
 
@@ -781,7 +801,7 @@ A quirk of the Loga 30 Tt is intended to be flipped by holding it between right 
 
 #### Pickett & Eckel (US)
 
-***Pickett 101-C Dial Rule***—The Pickett 101-C is a low-end circular rule. The body is a cheap, thin aluminium disc. Being a rather small disc, there are only two $LL_n$ scales, but the ranges are unusual: $LL_1 ∈ [1.15, 4.0]$ and $LL_2 ∈ [4, 10^6]$. And like many other low-end circular rules of the time, this slide rule has the fraction scale. Indeed, the Pickett 101-C is a miniature version of the Gilson Binary. See the full description in the Gilson Binary subsection, above.
+***Pickett 101-C Dial Rule***—The Pickett 101-C is a low-end circular rule. The body is a cheap, thin aluminium disc. Being a rather small disc, there are only two $LL_n$ scales, but the ranges are unusual: $LL_1 ∈ [1.15, 4.0]$ and $LL_2 ∈ [4, 10^6]$. And like many other low-end, American circular rules of its era, this slide rule has the fraction scale. Indeed, the Pickett 101-C is essentially a miniature version of the Gilson Binary, but with two $LL_n$ scales.
 
 ![Pickett 101-C](./figures/SlideRules/Pickett101C/front.jpg)
 
