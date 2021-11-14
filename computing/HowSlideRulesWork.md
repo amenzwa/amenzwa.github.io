@@ -601,13 +601,37 @@ But I think Hemmi missed an opportunity with the way they used the real estate o
 - $sec(gd(x)) = cosh(x)$
 - $csc(gd(x)) = coth(x)$
 
-The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_{\theta}$ scale for computing $gd(x)$. Using the $\theta$ scale, the trigonometric scales, and the $G_{\theta}$ scale of the Hemmi 153, we can compute the hyperbolic functions. The $G_{\theta}$ scale, thus, ingeniously expands the power of the Hemmi 153 greatly, without occupying too much real estate, albeit by requiring one more computation step.
+The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, ingeniously expands the power of the Hemmi 153 by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the engineering ideal of functionality through minimalism.
 
 ![Hemmi 153](./figures/SlideRules/Hemmi153/back.jpg)
 
-Care is necessary when using the $T$ scale on the Hemmi 153, because its angle $\theta$ scale goes all the way to $90°$ and $tan(90°) = ∞$.
+To compute $sin(30°)$, we manipulate the slide rule as follows:
 
-***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log duplex vector rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_{\theta}$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D provides the more conventional $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular K&E 4083-3 described below in the K&E section.
+- $\theta$—Place the hairline on the *argument* $30°$ on the $\theta$ scale.
+- $P$—Read under the hairline the *result* $0.5$ on the $P$ scale. This computes $sin(30°) = 0.5$.
+
+To compute $cos(60°)$, we manipulate the slide rule as follows:
+
+- $\theta$—Place the hairline on the *argument* $60°$ on the $\theta$ scale.
+- $Q$—Slide the left-hand $0$ on the $Q$ scale under the hairline.
+- $P$—Place the hairline on the right-hand $1$ of the $P$ scale.
+- $Q$—Read under the hairline the *result* $0.5$ on the $Q$ scale. This computes $cos(60°) = 0.5$.
+
+Note the asymmetry between the $sin$ and $cos$ computation procedures, above. This is a compromise that sprang from the clever dual-use design of $P$ and $Q$ scales: they compute Pythagorean, but they also double as $sin$ and $cos$ scales. Now the cleverer bit: computing hyperbolic functions in the absence of hyperbolic scales.
+
+To compute $sinh(0.5)$ using the identity $tan(gd(x)) = sinh(x)$ mentioned above, we manipulate the slide rule as follows:
+
+- $G_\theta$—Place the hairline on the *argument* $0.5$ on the $G_\theta$ scale.
+- $T$—Read under the hairline the *result* $0.521$ on the $T$ scale. This computes $sinh(0.5) = tan(gd(0.5)) = 0.521$.
+
+To compute $tanh(0.5)$ using the identity $sin(gd(x)) = tanh(x)$ mentioned above, we manipulate the slide rule as follows:
+
+- $G_\theta$—Place the hairline on the *argument* $0.5$ on the $G_\theta$ scale.
+- $P$—Read under the hairline the *result* $0.462$ on the $P$ scale. This computes $tanh(0.5) = sin(gd(0.5)) = 0.462$.
+
+Do note that care is necessary when using the $T$ scale on the Hemmi 153, because its angle $\theta$ scale goes all the way up to $90°$ and $tan(90°) = ∞$.
+
+***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log duplex vector rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D provides the more conventional $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular log-log vector rules, like K&E 4083-3 and Pickett N4-ES described below in their respective subsections.
 
 ![Hemmi 255D](./figures/SlideRules/Hemmi255D/back.jpg)
 
@@ -689,7 +713,7 @@ Yet, there is something subversive about the Nestler 23 R. Being of the classic 
 
 To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy the Pickett N3-ES. Not withstanding my dislike, this slide rule is a solid performer. Aluminium is a far more stable material than wood. Indeed, it is virtually indestructible. Nevertheless, it feels cheap, sharp, and cold to me. My apologies to NASA, who used, with great success, the Pickett N600-ES, a pared-down, pocket version of the Pickett N3-ES, on all the Apollo missions.
 
-***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES has the $Sh$ and $Th$ scales. The Pickett N4-ES labels its $LL$ scales from $LL_1$, $LL_{01}$ to $LL_4$, $LL_{04}$, instead of starting from $LL_0$ and $LL_{00}$.
+***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES adds the $Sh$ and $Th$ scales. Note, though, that this slide rule labels its $LL$ scales from $LL_1$-$LL_{01}$ to $LL_4$-$LL_{04}$, instead of the conventional nomenclature, which goes from $LL_0$-$LL_{00}$ to $LL_3$-$LL_{03}$.
 
 ![Pickett N4-ES](./figures/SlideRules/PickettN4ES/front.jpg)
 
