@@ -105,7 +105,7 @@ To compute $2 × 3$, we manipulate the slide rule as follows:
 1. $D$—Place the hairline on the *multiplicand* $2$ on the $D$ scale.
 2. $C$—Slide the left-hand $1$ on the $C$ scale under the hairline.
 3. $C$—Place the hairline on the *multiplier* $3$ on the $C$ scale.
-4. $D$—Read under the hairline the *product* $6$ on the $D$ scale.
+4. $D$—Read under the hairline the *product* $6$ on the $D$ scale. This computes $2 × 3 = 6$.
 
 ![2×3](./figures/SlideRules/K&E4081-3/2×3.jpg)
 
@@ -114,7 +114,7 @@ The above multiplication procedure computes $2 × 3 = 6$, like this:
 - In step (1), we placed the hairline on $D$ scale's $2$. In this way, we mechanically marked out the length $[1, 2]$ along the logarithmic $D$ scale. Mathematically, this is equivalent to computing $log(2)$.
 - In step (2), we lined up $C$ scale's left-hand $1$, the beginning of the scale, with $D$ scale's $2$, in preparation for the next step.
 - In step (3), we placed the hairline on $C$ scale's $3$. This mechanically marked out the length sum $[1, 2]_D + [1, 3]_C$ on the logarithmic $D$ scale, which is mathematically equivalent to computing $log(2) + log(3)$.
-- Then, in step (4), we read the result $6$ on the $D$ scale under the hairline. This is a mathematical equivalent of computing $log^{-1}[log(2) + log(3)] = 2 × 3 = 6$.
+- Then, in step (4), we read the result $6$ on the $D$ scale under the hairline. This is mathematically equivalent to computing $log^{-1}[log(2) + log(3)] = 2 × 3 = 6$. Recall that $log^{-1}$ operation is implicit in the mere reading of the $D$ logarithmic scale.
 
 To put it plainly, adding $2$ units of length and $3$ units of length yields $2 + 3 = 5$ units of length on the arithmetic scale of an ordinary rule. But on the logarithmic scale of the slide rule, adding $2$ units of length and $3$ units of length yields $2 × 3 = 6$ units of length.
 
@@ -123,7 +123,7 @@ To compute $2 ÷ 3$, we manipulate the slide rule as follows:
 1. $D$—Place the hairline on the *dividend* $2$ on the $D$ scale. This computes $log(2)$.
 2. $C$—Slide under the hairline the *divisor* $3$ on the $C$ scale.
 3. $C$—Place the hairline on the right-hand $1$ on the $C$ scale. This computes $log(2) - log(3)$.
-4. $D$—Read under the hairline the *quotient* $667$ on the $D$ scale, which is interpreted to be $0.667$, as will be explained below. This computes $log^{-1}[log(2) - log(3)] = 2 ÷ 3 = 0.667$.
+4. $D$—Read under the hairline the *quotient* $667$ on the $D$ scale, which is interpreted to be $0.667$, as will be explained below. This computes $2 ÷ 3 = log^{-1}[log(2) - log(3)] = 0.667$.
 
 ![2÷3](./figures/SlideRules/K&E4081-3/2÷3.jpg)
 
