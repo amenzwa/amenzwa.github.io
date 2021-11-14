@@ -741,7 +741,7 @@ The Concise 300 is held with the $1$ index mark pointing up, and is flipped left
 
 The Dempster RotaRule is held with the $1$ index mark pointing down, and is flipped left-to-right. It was designed by [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a mechanical engineer, for use in engineering. The term "engineering circular rule" is almost an oxymoron, given that most engineers disliked circular rules, but so it was.
 
-The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper engineering slide rule, with three $LL_n$ scales and three $LL_{0n}$ scales, comparable in capabilities to a typical log-log duplex straight rule, but with far greater precision. Incidentally, [Bernard Boykin](http://www.oughtred.org/memoriam/memoriam.shtml), the designer of the fabulous Boykin circular slide rule, was my fellow engineer and a fellow Marylander, to boot. Alas, I do not own a Boykin circular rule—not yet.
+The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper engineering slide rule, with three $LL_n$ scales and three $LL_{0n}$ scales, comparable in capabilities to a typical log-log duplex straight rule, but with far greater precision. Incidentally, [Bernard Boykin](http://www.oughtred.org/memoriam/memoriam.shtml), the designer of the fabulous Boykin circular slide rule, was my fellow engineer and a fellow Marylander, to boot. Alas, I do not yet own a Boykin circular rule.
 
 #### Faber-Castell (DE)
 
