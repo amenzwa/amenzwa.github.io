@@ -64,15 +64,15 @@ Go on eBay and buy a good, inexpensive slide rule, either the [K&E 4081-3](https
 - $a × b = log^{-1}[log(a) + log(b)]$
 - $a ÷ b = log^{-1}[log(a) - log(b)]$
 
-That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$. Note that $log^{-1}(x) = 10^x$.
+That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$.
 
-***logarithmic scale***—The slide rule mechanised these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). The logarithmic scale is derived from the arithmetic scale like this. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments—$0, 1, 2, 3, ..., 1$—similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source arithmetic scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments—$1, 2, 3, ..., 1$—starting with $1$ and, again, ending with $1$. But the division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by referencing the linear arithmetic scale:
+***logarithmic scale***—The slide rule mechanises these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). The logarithmic scale is derived from the arithmetic scale in the following manner. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments labelled $0, 1, 2, 3, ..., 1$, similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source arithmetic scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments labelled $1, 2, 3, ..., 1$, starting with $1$ and, again, ending with $1$. The division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by reference to the linear arithmetic scale:
 
-- $log(1) = 0.0$, so $1$ on the second scale is lined up with $0.0$ on the first scale
-- $log(2) = 0.301$, so $2$ on the second scale is lined up with $0.301$ on the first scale
-- $log(3) = 0.477$, so $3$ on the second scale is lined up with $0.477$ on the first scale
+- $log(1) = 0.0$, so $1$ on the second scale is lined up with $0.0$ on the arithmetic scale
+- $log(2) = 0.301$, so $2$ on the second scale is lined up with $0.301$ on the arithmetic scale
+- $log(3) = 0.477$, so $3$ on the second scale is lined up with $0.477$ on the arithmetic scale
 - $...$
-- $log(10) = 1.0$, so $10$ (which is labelled $1$) on the second scale is lined up with $1.0$ on the first scale
+- $log(10) = 1.0$, so $10$ (which is labelled $1$) on the second scale is lined up with $1.0$ on the arithmetic scale
 
 The second scale thus obtained is the logarithmic scale. In the figure below, the upper one is the source arithmetic scale and the lower one is the derived logarithmic scale.
 
@@ -87,7 +87,7 @@ In the plot below, the black curve is $log$ and the red is $log^{-1}$.
 
 ![log](./figures/SlideRules/plot-log.jpg)
 
-The special name for $log^{-1}$ is $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. To put it differently, the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
+The special name for $log^{-1}$ is $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. It turns out that the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
 
 Plotting the $log$ function on a logarithmic scale produces a sequence of evenly spaced values. Hence, the $L$ scale appears linear, when laid out on the logarithmic slide rule. Note also that the mere act of reading $x$ on the logarithmic scale implicitly computes $log(x)$, and there is no need explicitly to compute $log^{-1}(x)$. Gunter's logarithmic scale, thus, was the groundbreaking idea that made the slide rule work so effectively, efficiently, effortlessly.
 
