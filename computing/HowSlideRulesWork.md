@@ -161,21 +161,21 @@ The figure above also shows the three distinct regions on the $D$ scale that hav
 
 At the left end of the $D$ scale, $1.11$, $1.12$, etc., can be read directly from the scale. With practice, one could visually subdivide each minor division into $10$ sub-subdivisions and discern $1.111$ from $1.112$. In the photograph below, the cursor hairline is placed on $1.115$.
 
-![1.115_D](./figures/SlideRules/K&E4081-3/1.115.jpg)
+![1.115 on D scale](./figures/SlideRules/K&E4081-3/1.115.jpg)
 
 In the middle of the $D$ scale, $3.12$, $3.14$, etc., can be read directly from the scale. Indeed, $3.14$ is marked as $\pi$ on $C$ and $D$ scales of all slide rules. With a nominal eyesight, each minor division could be subdivided visually and easily read $3.13$, which is halfway between the $3.12$ and the $3.14$ graduations. The photograph below shows the hairline on $3.13$.
 
-![3.13_D](./figures/SlideRules/K&E4081-3/3.13.jpg)
+![3.13 on D scale](./figures/SlideRules/K&E4081-3/3.13.jpg)
 
-On the right end of $D$ scale, $9.8$, $8.85$, $9.9$, $9.95$, etc., can be read directly from the scale. With due care, each minor division could be subdivided into $2$ sub-subdivisions and read without undue strain $9.975$, which is halfway between the $9.95$ and the $1$ graduations. See the photograph below. But for those of us with poor eyesights, it is rather difficult to discern $9.98$ from $9.99$.
+On the right end of $D$ scale, $9.8$, $8.85$, $9.9$, $9.95$, etc., can be read directly from the scale. With due care, each minor division could be subdivided into two sub-subdivisions and read without undue strain $9.975$, which is halfway between the $9.95$ and the $1$ graduations. See the photograph below. But for those of us with poor eyesights, it is rather difficult to discern $9.98$ from $9.99$.
 
-![9.975_D](./figures/SlideRules/K&E4081-3/9.975.jpg)
+![9.975 on D scale](./figures/SlideRules/K&E4081-3/9.975.jpg)
 
 Under optimal conditions—calibrated slide rule, nominal eyesight, good lighting, and alert mind—the slide rule can attain four significant figures of precision on the lower end of the $D$ scale and three significant figures on the higher end of the scale.
 
-It is important to note that the logarithmic scale cycles. Hence, the scale reading of $314$ can be valued as $0.0314, 0.314, 3.14,$ etc., depending on the context. The decimal point must be located using mental arithmetic. For example, $\pi/8 \approx 3/8 \approx 0.4$, so the result must necessarily be $0.3927$, not $0.03927, 3.927,$ or any other alternative. To put it another way, mental arithmetic locates the decimal point thereby getting us within the zone of accuracy, and scale reading yields the constituent digits thus getting us the precision we desire.
+It is important to note that the logarithmic scale cycles, repeatedly. Hence, the scale reading of $314$ can be valued as $0.0314, 0.314, 3.14, 31.4, 314.0, 3140.0,$ and so forth, depending on the context. The decimal point must be located using mental arithmetic. For example, $\pi/8 \approx 3/8 \approx 0.4$, so the result must necessarily be $0.3927$, not $0.03927, 3.927,$ nor any other alternative. To put it another way, mental arithmetic locates the decimal point thereby getting us within the zone of accuracy, and scale reading yields the constituent digits thus getting us the precision we desire.
 
-Ordinarily, the slide rule was used to evaluate complicated expressions involving many chained calculations when they needed to be performed quickly but when precision was not a paramount concern. When precision is important, however, [logarithm tables](https://en.wikipedia.org/wiki/Mathematical_table) were used. These tables were laboriously hand-computed to several significant figures. If the desired value fell between two entries in the table, the user is obliged manually to interpolate the result. While accountants may have demanded such high precisions afforded by the logarithm tables, engineers willingly accepted three or four significant figures offered by the slide rule, because the slide rule was accurate enough for engineering use and it was the fastest means then available to perform calculations. In due course, the slide rule became inextricably linked to engineers, like the stethoscope to doctors.
+Ordinarily, the slide rule was used to evaluate complicated expressions involving many chained calculations when they needed to be performed quickly but when precision was not a paramount concern. When precision is important, however, [logarithm tables](https://en.wikipedia.org/wiki/Mathematical_table) were used. These tables were laboriously hand-computed to several significant figures. If the desired value fell between two entries in the table, the user is obliged to interpolate the result, manually. While accountants may have demanded the high precision afforded by the logarithm table, engineers willingly accepted three or four significant figures offered by the slide rule, because the slide rule was accurate enough for engineering use and it was the fastest means then available to perform calculations. In due course, the slide rule became inextricably linked to engineers, like the stethoscope to doctors.
 
 # VARIETIES
 
