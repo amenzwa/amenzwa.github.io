@@ -181,11 +181,11 @@ Ordinarily, the slide rule was used to evaluate complicated expressions involvin
 
 Slide rules came in straight, circular, and cylindrical varieties. Cylindrical rules consist of two concentric cylinders that slide and rotate relative to each other. The key innovation of cylindrical rules is the helical scale that wraps round the cylinder. The coiled scale stretches to an impressive length, despite the relatively small size of the cylinder. Of course, a longer scale yields a greater precision. The cylinder can be rotated to bring the back-facing numbers round to the front.
 
-Circular rules are the first practical slide rules. Their main advantages are compactness and stoutness. A typical model is constructed like a pocket watch and operated like one too, using crowns. The glass-faced, sealed construction protected the device against dust. Some circular models sport a spiral scale, thereby extracting good precision from a compact real estate. But because the markings encircle the centre, the device needed be rotated frequently to read the scale. And on some very small models, the graduation marks get very tight near the centre. In other words, circular scales can be rather fiddly.
+Circular rules are the first practical slide rules. Their main advantages are compactness and stoutness. A typical model is constructed like a pocket watch and operated like one too, using crowns. The glass-faced, sealed construction protects the device against dust. Some circular models sport a spiral scale, thereby extracting good precision from a compact real estate. But because the markings encircle the centre, the device needed to be rotated frequently to read the scale. Expert users of circular rules were good at reading the scales upside-down. On some very small models, the graduation marks get very tight near the centre. In other words, circular scales can be rather fiddly.
 
-Of all the varieties, straight rules are the easiest and the most convenient to use, because they are relatively small and light, and because the whole scale is readable at once. However, their scale lengths are bounded by the length of the body. So, straight rules are less precise by comparison.
+Of all the varieties, straight rules are the easiest and the most convenient to use, because they are relatively small and light, and because the whole scale is visible at once. However, their scale lengths are bounded by the length of the body. So, straight rules are less precise by comparison.
 
-Most engineers preferred straight rules, because these devices were accurate enough, portable, and easy to use, allowing very fast calculations. Indeed, given the focus of this article, much of the presentation here concerns straight rules. A few engineers used circular models, either because these devices were more precise or because they were more compact. No engineers in my day used cylindrical ones; these devices were too unwieldy and they had only basic arithmetic scales, albeit very long ones indeed. But accountants, financiers, actuaries, and others who require greater precision swore by cylindrical rules.
+Most engineers preferred straight rules, because these devices were fast, accurate, and portable enough for daily use. Hence, this article focuses on straight rules. But a few engineers did use circular models, either because these devices were more precise or because they were more compact. No engineers used cylindrical ones on a routine basis; these devices were too unwieldy and they had only basic arithmetic scales. But accountants, financiers, actuaries, and others who require greater precision swore by cylindrical rules.
 
 ## *straight rules*
 
@@ -195,15 +195,15 @@ The most common kind of slide rule was the 25 cm desk model, called the straight
 
 A Mannheim slide rule has $C$ and $D$ scales for arithmetic operations ($×$ and $÷$), $L$ scale for common logarithm ($log_{10}$), $A$ and $B$ scales for square and square root ($x^2$ and $\sqrt{x}$), $K$ scale for cubic and cube root ($x^3$ and $\sqrt[3]{x}$), and $S$ and $T$ scales for trigonometric functions ($sin$ and $tan$).
 
-The following is the Post 1447 simplex slide rule, manufactured by the Japanese company Hemmi in the late 1950s. As is common with Japanese slide rules, this one is made of bamboo, which is a far better material than wood, because bamboo is far more resistant to warping and it slides more smoothly. In slide rule parlance, the term "simplex" refers to the slide rules with scales on only one side of the frame.
+The following is the Post 1447 simplex slide rule, manufactured by the Japanese company Hemmi in the late 1950s. As is common with Japanese slide rules, this one is made of bamboo, which is a better material than wood, because bamboo is more resistant to warping and it slides more smoothly. In slide rule parlance, the term "simplex" refers to the models with scales on only one side of the frame.
 
 ![Post 1447](./figures/SlideRules/Post1447/front.jpg)
 
-Although the frame has scales only on the frontside, the slide has scales on both sides. On Mannheim rules, like the Post 1447, the backside of the slide has $S$, $L$, and $T$ scales, which are read through cutout windows at each end. The plastic of the windows are etched with fixed, red indices for reading the scales. When using simplex slide rules, one flips the slide to the frontside of the slide rule, depending on whether the predominant calculations are arithmetic or trigonometric.
+Unlike its simplex frame, the Mannheim slide has engraved on its backside the $S$, $L$, and $T$ scales, which are read through cutout windows at each end. The plastic of the windows are etched with fixed, red indices for reading the scales. When using a simplex slide rule, one sometimes flips the slide round, depending on whether the predominant calculations are arithmetic or trigonometric.
 
 ![Post 1447](./figures/SlideRules/Post1447/back.jpg)
 
-The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing artillery firing solutions in the field. It had only $C$, $D$, $A$, and $B$ scales, so it was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$. This suited its intended purpose.
+The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing firing solutions in the field. It had only $C$, $D$, $A$, and $B$ scales, so it was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$. This suited its intended purpose.
 
 ***Rietz type***—A slight improvement upon the Mannheim slide rule was the German Rietz type. It added the $ST$ scale for small angles in the range $[0.573°, $ $5.73°$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1930s. The frontside has $K$ and $A$ scales on the upper frame, $B$, $CI$ (reverse $C$), and $C$ scales on the slide, and $D$ and $L$ scales on the lower frame.
 
@@ -225,13 +225,13 @@ The Faber-Castell (FC) 2/83 N Novo Duplex slide rule, shown below, was a common 
 
 ![FC 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
 
-Of the straight rule types, the less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who require more precision. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, most slide rules manufactured over the past two centuries were of this design.
+Of the straight rule types, the less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who require more precision. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, the majority of the slide rules manufactured over the past two centuries were of this design.
 
 ## *circular rules*
 
 Circular slide rules can be categorised into three types: simplex, pocket watch, and duplex. Circular rules were popular with businessmen, and the most popular models were of the pocket watch type.
 
-***simplex type***—The diameter of the FC 8/10 circular rule is only 12 cm, but in terms of capability, it is equivalent to a 25-cm Rietz straight rule. I liked the FC 8/10, because it was well made like all FC products, accurate, inexpensive, unique, aesthetically pleasing, and compact. But the FC 8/10 is an atypical circular rule. Most circular rules used spiral scales, but the FC 8/10 used ordinary Mannheim scales in wrapped form. The example shown below was made in the mid 1970s.
+***simplex type***—The diameter of the FC 8/10 circular rule is only 12 cm, but in terms of capability, it is equivalent to a 25-cm Rietz straight rule. But the FC 8/10 is an atypical circular rule. Most circular rules used spiral scales, but the FC 8/10 used ordinary Mannheim scales in wrapped form. The example shown below was made in the mid 1970s.
 
 ![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
 
@@ -794,7 +794,7 @@ The Dempster RotaRule inspired the Boykin RotaRule Model 510, which was a proper
 
 #### Faber-Castell (DE)
 
-***FC 8/10***—As an engineering student in the 1980s in Burma, I used the FC 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. The FC 8/10 is a simplex circular rule. It uses aesthetically pleasing pale yellow and pale green backgrounds for some of the scales. I consider this slide rule one of the prettiest of all engineering tools. All the scales are engraved onto the exposed plastic face. The outer portion of the face is fixed to the body, and the rotatable inner portion of the face is operated using both thumbs, pushing against each other. And the cursor with the hairline rotates across the scales on the face.
+***FC 8/10***—As an engineering student in the 1980s in Burma, I used the FC 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. The FC 8/10 is a simplex circular rule. It uses aesthetically pleasing pale yellow and pale green backgrounds for some of the scales. I consider this slide rule one of the prettiest of all engineering tools. I liked the FC 8/10, not only for its beauty, but also because it was well made, accurate, inexpensive, unique, and compact. All the scales are engraved onto the exposed plastic face. The outer portion of the face is fixed to the body, and the rotatable inner portion of the face is operated using both thumbs, pushing against each other. And the cursor with the hairline rotates across the scales on the face.
 
 ![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
 
