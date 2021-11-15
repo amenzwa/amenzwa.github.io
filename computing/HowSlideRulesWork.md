@@ -239,51 +239,49 @@ Circular slide rules can be categorised into three types: simplex, pocket watch,
 
 ![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
 
-***duplex type***—As I said before, most engineers of the day shunned the circular slide rule. But the Dempster RotaRule Model AA was the one circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model—a bit of an uncommon trait among circular rules—was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), an American mechanical engineer, a Berkeley graduate. Dempster began manufacturing the RotaRule in 1928 in the basement of his Berkeley, CA, home. The RotaRule Model AA shown below is probably from the late 1940s.
+***duplex type***—It is no secret that most engineers frowned upon the circular slide rule. [Seymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray), the designer of the [CRAY super computer](https://en.wikipedia.org/wiki/Cray), my favourite electrical engineer and my fellow circular slide rule fancier, [once quipped](https://youtu.be/8Z9VStbhplQ?t=713), "If you had a circular [slide rule], you had some social problems in college." But the Dempster RotaRule Model AA was the circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model, which is a bit of an uncommon trait among circular rules. And it is very well made. It was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), an American mechanical engineer, a Berkeley graduate. Dempster began manufacturing the RotaRule in 1928 in the basement of his Berkeley, CA, home. The RotaRule Model AA shown below is probably from the late 1940s.
 
 ![Dempster RotaRule Model AA](./figures/SlideRules/DempsterRotaRule/front.jpg)
 
-It is no secret that most engineers frown upon the circular slide rule. [Seymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray), the designer of the [CRAY super computer](https://en.wikipedia.org/wiki/Cray), my favourite electrical engineer, and my fellow circular slide rule fancier, [once quipped](https://youtu.be/8Z9VStbhplQ?t=713), "If you had a circular [slide rule], you had some social problems in college." He was right.
-
 ## *cylindrical rules*
 
-All cylindrical rules emphasise precision, so they all have very long scales. Some cylindrical rules use the helical-scale design, while others use the stacked straight-scale design. Cylindrical rules come in two types: pocket type and desk type. The business community favours the greater precision these devices afforded. As such, most cylindrical rules very large; they were meant for the banker's desk.
+All cylindrical rules emphasise precision, so they all have very long scales. Some cylindrical rules use the helical-scale design, while others use the stacked straight-scale design. Cylindrical rules come in two types: pocket type and desk type. The business community favoured the greater precision these devices afforded. As such, most cylindrical rules were very large; they were meant for the banker's ornate mahogany desk.
 
 ***pocket type***—The Otis King Model L, shown below, is a contradiction: it is a compact cylindrical rule that, when collapsed, is well shy of an open palm. Portability wise, this cylindrical rule could compete with larger pocket watch type circular rules. But because the Model L employs helical scales, its precision is far superior to that of straight and circular rules. This particular Model L is likely from the 1950s.
 
 ![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
 
-***desk type***—One of the giants of cylindrical rules was the [K&E 1740 Thacher](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed in 1881 by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules), an American engineer working for K&E. I have never seen this device in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is fixed to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. The is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
+***desk type***—One of the giants of cylindrical rules was the [K&E 1740](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed in 1881 by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules), an American engineer working for K&E. I have never seen this device in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is mounted to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. The inner cylinder's scale is read through the slits in the outer cylinder's scale. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. There is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
 
 ![K&E 1740 Thacher](./figures/SlideRules/K&E1740Thacher.jpg)
 
 # OPERATIONS
 
-An ordinary engineering slide rule supported arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models supported hyperbolic functions. More specialised models had field-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore the field-specific functions, and instead describe the most common functions found on a typical engineering slide rule.
+Ordinary engineering slide rules provide arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models provide hyperbolic functions. More specialised models provide field-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore the field-specific functions.
 
 ## *arithmetic*
 
-The driving force behind the slide rule was to expedite $×$ and $÷$. As such, slide rule designers had invented numerous scales to augment the logarithmic $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$.
+The impetus for the slide rule's invention was to expedite $×$ and $÷$. These arithmetic operations were performed using the $C$ and the $D$ scales. Over time, slide rule designers had created numerous scales that augment the $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$. Together these scales expedite chained arithmetic operations.
 
-In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$, but using $D$ and $CI$ this expression is computed as $a_D + b_{CI}$:
+In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$. But using $D$ and $CI$, this expression is computed as $a_D + b_{CI}$:
 
 - $a ÷ b = log(a) - log(b) = log(a) + log(\frac{1}{b})$
 
-The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $\pi$, thereby moving the $1$ mark to the middle of the scale. They reduce the distance required to move the slide. The following photograph shows these auxiliary arithmetic scales.
+The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $\pi$, thereby shifting the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales on the slide.
 
 ![folded and inverted scales](./figures/SlideRules/K&E4081-3/front.jpg)
 
-These auxiliary scales allow faster calculations, when many $×$ and $÷$ operations are chained in a complicated expression. For example, a folded $CI$ has the $1$ mark near the middle of the slide rule, so the cursor movement distance could be reduce considerably. But I shall not present the detailed procedures on using these scales, because they are procedural optimisations not essential to understanding the fundamentals of the slide rule. Interested readers may refer to the manuals for specific slide rules, which are listed in the resource section, below.
+These auxiliary arithmetic scales often reduce the slide and cursor movement distances considerably, thereby speeding up computations. But I shall not present the detailed procedures on using these scales, because they are procedural optimisations not essential to understanding slide rule fundamentals. Interested readers may refer to the user's manuals, which are listed in the resource section at the end of the article.
 
 ## *logarithmic*
 
-The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule. To compute a logarithm, say $log(2)$, one simply places the hairline on the $2$ mark on the $D$ logarithmic scale, and read the result on the $L$ arithmetic scale. See below.
+The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule. To compute a logarithm, say $log(2)$, one simply places the hairline on the $2$ mark on the $D$ logarithmic scale, and read the result on the $L$ arithmetic scale. See the photograph below.
 
 ![log(2)](./figures/SlideRules/K&E4081-3/log-2.jpg)
 
 ## *exponentiation*
 
-***logarithmic exponentiation***—The general exponentiation $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
+***logarithmic exponentiation***—General exponentiation of the form $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
 
 - $log(x^{y/z}) = y ÷ z × log(x)$.
 
@@ -291,11 +289,11 @@ Then, $×$ and $÷$ can be further reduced to $+$ and $-$ by applying the $log$ 
 
 - log(y ÷ z × log(x)) = log(y) - log(z) + log(log(x))
 
-It turns out that the slide rule uses the base-$e$ natural logarithm $ln$ as the inner logarithm, and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving the precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing these logarithmic operations:
+It turns out that the slide rule performs this trick using the base-$e$ natural logarithm $ln$ as the inner logarithm and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$, not $log \circ log$ as described above. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving reading precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing these logarithmic operations:
 
-- $x^{y/z} = ln^{-1}(y ÷ z × ln(x))$
-  - $= ln^{-1}[log^{-1}\{log(y ÷ z × ln(x))\}]$
-  - $= ln^{-1}[log^{-1}\{log(y) - log(z) + log(ln(x))\}]$
+- $x^{y/z} = ln^{-1}[y ÷ z × ln(x)]$
+  - $= ln^{-1}[log^{-1}[log(y ÷ z × ln(x))]$
+  - $= ln^{-1}[log^{-1}[log(y) - log(z) + log(ln(x))]]$
 
 So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
 - $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
