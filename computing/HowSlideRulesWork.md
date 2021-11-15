@@ -131,8 +131,6 @@ Multiplication and division operations start and end with the cursor hairline on
 
 Note that the slide rule is always operated using both hands, fingers of one hand pushing and those of the other gently opposing. The lower lintel of the cursor glides along the bottom of the lower frame. There is a tension spring between the upper lintel of the cursor and the top of the upper frame. This tension spring braces the lower lintel of the cursor against the bottom of the lower frame. To make fine adjustments of the cursor, one uses the thumbs of both hands against the lower lintel of the cursor. But when using the backside of a duplex straight rule, the lower lintel of the cursor has now flipped to the topside, so it had to be fine adjusted using the index fingers.
 
-Through the centuries, the slide rule gained numerous scales. Some scales are highly specialised to particular application domains. Slide rules, thus, steadily grew larger and more complex in due course.
-
 ## *accuracy and precision*
 
 In slide rule terminology, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated. And *precision* means how many significant figures the user can reliably read off the scale.
@@ -524,6 +522,21 @@ My main goal in collecting slide rules is to play, not to display. Although thes
 
 Below, I arranged my collection by slide rule varieties (straight, circular, and cylindrical) and, within each variety, by manufacturer names. Do note, though, that sellers (brands) were not necessarily the same as manufacturers, in some cases. For example, Frederick Post, a well-known American company, sold under the Post brand the bamboo slide rules designed and manufactured by Hemmi in Japan. Hemmi also sold many superb slide rules under their own brand. Also of note was that German manufacturers, Faber-Castell (est. 1761), Aristo (est. 1862), and Nestler (est. 1878), were in [West Germany](https://en.wikipedia.org/wiki/West_Germany) (FRD) during the [Cold War](https://en.wikipedia.org/wiki/Cold_War), but Reiss (est. 1882) was in [East Germany](https://en.wikipedia.org/wiki/East_Germany) (DDR). And Kontrolpribor, a Russian manufacturer, is more properly labelled a factory from the former [Soviet Union](https://en.wikipedia.org/wiki/Soviet_Union).
 
+Before we proceed, here are some admonishments for those who are buying slide rules for using, not merely for possessing:
+
+- Do not buy a slide rule with chips, dents, or other deformities. This is the sign that former owner did not care for it, adequately.
+- Do not worry about dust, dirt, etc., so long as the slide rule is physically in good nick, and the scale engravings are undamaged. The grime can be cleaned.
+- Do not buy a wood slide rule that exhibits gaps between the slide and the body. This is the sign of a warped frame. This slide rule cannot be calibrated to restore its accuracy.
+- Do not buy from a seller who does not post clear, high-resolution images. You will not be able to assess the condition of slide rule from blurry, low-resolution images.
+- Do not buy many slide rules sold as a lot. The lot inevitably contains slide rules you do not need, as well as multiple copies of the one you need.
+- Do not focus on one brand or one variety. This strategy will miss out on good slide rules that have desirable, innovative designs.
+- Do not buy slide rules that are specialised exclusively to a particular application domain: artillery, stadia, photography, stahlbeton, obstetric, and the like.
+- Do not buy manuals. Every manual is now available online in PDF format.
+- Do not chase collector-grade items with complete set of manuals, boxes, etc. Those are for traders.
+- Do not chase rarities. Rarity is a quality treasured by traders, so such items tend to be unreasonably expensive.
+- Do not engage in a bidding war with traders.
+- Do not rush in. Good slide rules always come on eBay, sooner or later.
+
 ## *straight rules*
 
 #### Aristo (DE)
@@ -609,7 +622,7 @@ But I think Hemmi missed an opportunity with the way they used the real estate o
 - $sec(gd(x)) = cosh(x)$
 - $csc(gd(x)) = coth(x)$
 
-The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, ingeniously expands the power of the Hemmi 153 by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the engineering ideal of functionality through minimalism.
+The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, ingeniously expands the power of the Hemmi 153 by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the pragmatic minimalism design ideal.
 
 ![Hemmi 153](./figures/SlideRules/Hemmi153/back.jpg)
 
