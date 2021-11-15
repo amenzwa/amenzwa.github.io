@@ -129,9 +129,9 @@ To compute $2 ÷ 3$, we manipulate the slide rule as follows:
 
 Multiplication and division operations start and end with the cursor hairline on the $D$ scale. Skilled users frequently skipped the initial cursor setting when multiplying and the final cursor setting when dividing, opting instead to use the either end of the $C$ scale as the substitute hairline.
 
-Note that the slide rule is always operated using both hands, fingers of one hand pushing and those of the other gently opposing. The bottom end of the cursor glides along the bottom of the lower frame, and there is a tension spring between the top end of the cursor and the top of the upper frame. This spring stabilises the cursor against the frame. To make fine adjustments of the cursor, one uses the thumbs of both hands against the bottom of the cursor. But when using the backside of a duplex straight rule, the cursor bottom has now flipped to the topside, so it had to be fine adjusted using the index fingers.
+Note that the slide rule is always operated using both hands, fingers of one hand pushing and those of the other gently opposing. The lower lintel of the cursor glides along the bottom of the lower frame. There is a tension spring between the upper lintel of the cursor and the top of the upper frame. This tension spring braces the lower lintel of the cursor against the bottom of the lower frame. To make fine adjustments of the cursor, one uses the thumbs of both hands against the lower lintel of the cursor. But when using the backside of a duplex straight rule, the lower lintel of the cursor has now flipped to the topside, so it had to be fine adjusted using the index fingers.
 
-Through the centuries, the slide rule gained numerous scales, some very specialised to application domains. Slide rules, thus, steadily grew larger and more complex in time.
+Through the centuries, the slide rule gained numerous scales. Some scales are highly specialised to particular application domains. Slide rules, thus, steadily grew larger and more complex in due course.
 
 ## *accuracy and precision*
 
