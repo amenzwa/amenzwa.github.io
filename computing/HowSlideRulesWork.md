@@ -299,7 +299,7 @@ So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
 - $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
 - $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)] = ln^{-1}[log^{-1}\{log(1) - log(4) + log(ln(16))\}] = 2$
 
-We now see that the "log-log" nomenclature of engineering slide rules is a not-so-subtle nod to the function composition $log \circ ln$ that appears in the expressions computing $x^{y/z}$.
+We now see that the "log-log" nomenclature of engineering slide rules is a not-so-subtle nod to the function composition $\color{blue}{log} \circ \color{red}{ln}$ that appears in the expressions computing $x^{y/z}$.
 
 ***squaring on slide rule***—A typical engineering slide rule provides the $A$ scale on the frame and the $B$ scale on the slide for computing $x^2$, the $K$ scale on the frame for computing $x^3$, and the $LL_n$ scales and their reciprocals $LL_{0n}$ scales on the frame for computing $x^y$. The procedures for computing powers and roots always involve the $D$ scale.
 
