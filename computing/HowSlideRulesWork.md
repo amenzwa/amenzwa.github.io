@@ -292,8 +292,8 @@ Then, $×$ and $÷$ can be further reduced to $+$ and $-$ by applying the $log$ 
 It turns out that the slide rule performs this trick using the base-$e$ natural logarithm $ln$ as the inner logarithm and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$, not $log \circ log$ as described above. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving reading precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing these logarithmic operations:
 
 - $x^{y/z} = \color{darkred}{ln^{-1}}[y ÷ z × \color{red}{ln}(x)]$
-  - $= \color{darkred}{ln^{-1}}[\color{darkgreen}{log^{-1}}[\color{green}{log}[y ÷ z × \color{red}{ln}(x)]$
-  - $= \color{darkred}{ln^{-1}}[\color{darkgreen}{log^{-1}}[\color{green}{log}(y) - \color{green}{log}(z) + \color{green}{log}(\color{red}{ln}(x))]]$
+  - $= \color{darkred}{ln^{-1}}[\color{darkblue}{log^{-1}}[\color{blue}{log}[y ÷ z × \color{red}{ln}(x)]$
+  - $= \color{darkred}{ln^{-1}}[\color{darkblue}{log^{-1}}[\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log}(\color{red}{ln}(x))]]$
 
 So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
 - $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
