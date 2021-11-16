@@ -383,7 +383,7 @@ Computing $e^x$, however, is not the primary purpose of the $LL$ scale pairs; [P
 
 As we have seen earlier, multiplication and division start and end on the fixed $D$ scale and requires the use of the sliding the $C$ scale. Likewise, exponentiation starts and ends on the fixed $LL$ scales and requires the use of the sliding $C$ scale. At a glance, computing $x^y$ seems as straightforward as computing $x × y$. But in truth, the $LL$ scales are beguiling; using them correctly requires care, and using them quickly requires practice. A typical first-year engineering student takes a few months of regular use to become proficient with these scales. The procedures for computing $x^y$ using the $LL$ scales are complex enough that they warrant being split into two cases: when $x > 1$ and when $x < 1$.
 
-***exponentiation for the $x > 1$ case***—If $x > 1$, use the $LL_n$ scales and the $C$ scale to compute $x^y$ as follows:
+***exponentiation for the $x > 1$ case***—If $x > 1$, we use the $LL_n$ scales and the $C$ scale to compute $x^y$ as follows:
 
 - If $y ∈ [0.1, 1]$, the result is always less than the base, so read the result further down the scale, either to the left on the same scale or on the next lower scale.
 - If $y ∈ [0.001, 0.1]$, reduce the problem to the $y ∈ [0.1, 1]$ case by mentally shifting the decimal point one or two places to the right.
@@ -400,18 +400,18 @@ To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 
 ![1.03^2.4](./figures/SlideRules/K&E4081-3/1.03^2.4.jpg)
 
-But sometimes, we encounter a problem. Say, we wish to compute $1.03^{9.2}$. So, we line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has moved off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured into the $LL_2$ scale. To avoid going off the edge, we use the folded $CF$ scale, instead. We line up the $CF$ scale's $1$, which is near the centre of that scale, and move the hairline to the exponent $9.2$, which is slightly to the left. We then read the result $1.03^{9.2} = 1.3125$ on the $LL_2$ scale.
+But sometimes, we get into a quandary. Say, we wish to compute $1.03^{9.2}$. So, we line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has moved off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured into the $LL_2$ scale. To avoid going off the edge, we use the folded $CF$ scale, instead. We line up the $CF$ scale's $1$, which is near the centre of that scale, and move the hairline to the exponent $9.2$, which is slightly to the left. We then read the result $1.03^{9.2} = 1.3125$ on the $LL_2$ scale.
 
 ![1.03^9.2](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
-***exponentiation for the $x < 1$ case***—If $x < 1$, use the $LL_{0n}$ scales and the $CI$ scale, instead. The procedures for the $LL_{0n}$ scales are similarly categorised into four ranges of the exponent. The $LL_{0n}$ scales are also useful when dealing with negative exponents. Because $x^{-y} = 1/x^y$ and $LL_n = 1/LL_{0n}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $LL_{0n}$ scale yields $x^{-y}$.
+***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $LL_{0n}$ scales and the $CI$ scale, instead. The procedures for the $LL_{0n}$ scales are similarly categorised into four ranges of the exponent. The $LL_{0n}$ scales are also useful when dealing with negative exponents. Because $x^{-y} = 1/x^y$ and $LL_n = 1/LL_{0n}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $LL_{0n}$ scale yields $x^{-y}$.
 
 To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
 - $LL_2$—Place the hairline on the *base* $2.22$ on the $LL_2$ scale.
 - $CI$—Slide the *exponent* $1.11$ on the $CI$ scale under the hairline.
 - $CI$—Place the hairline on the right-hand $1$ of the $CI$ scale.
-- $LL_{02}$—Read under the hairline the result $0.413$ on the $LL_{02}$ scale. This computes $2.22^{-1.11} = 0.413$.
+- $LL_{02}$—Read under the hairline the *result* $0.413$ on the $LL_{02}$ scale. This computes $2.22^{-1.11} = 0.413$.
 
 ![2.22^1.11](./figures/SlideRules/K&E4081-3/2.22^-1.11.jpg)
 
@@ -419,7 +419,7 @@ If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.1
 
 ## *trigonometric*
 
-Trigonometric functions are related to each other in the following ways:
+Trigonometric functions are related to each other by these identities:
 
 - $sin(\theta) = cos(90° - \theta)$
 - $cos(\theta) = sin(90° - \theta)$
@@ -437,7 +437,7 @@ In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $
 - $sin: S \rightarrow C$
 - $sin^{-1}: C \rightarrow S$
 
-In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. The inverse function, here $sin^{-1}$, is a reflection of the original function, here $sin$, in the $y = x$ line. The $x$-axis is the angle $\theta$ in radians.
+In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. Note that the inverse function (here $sin^{-1}$) is a reflection in the $y = x$ line of the original function (here $sin$). The $x$-axis is the angle $\theta$ in radians.
 
 ![sin](./figures/SlideRules/plot-sin.jpg)
 
@@ -448,11 +448,11 @@ To compute $sin(30°)$, we manipulate the slide rule as follows:
 
 ![sin(30)](./figures/SlideRules/K&E4081-3/sin-30.jpg)
 
-To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read $60°$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60°$.
+To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read the result $60°$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60°$.
 
-***red $S$ scale***—The $S$ scale is graduated in black for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by referencing the red scale.
+***red $S$ scale***—The $S$ scale is graduated from left to right, in black, for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by reading the red scale.
 
-In the plot below, the red curve is $cos$ and the green is $cos^{-1}$.
+In the plot below, the red curve is $cos$ and the blue is $cos^{-1}$.
 
 ![cos](./figures/SlideRules/plot-cos.jpg)
 
@@ -465,16 +465,16 @@ In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
 ![tan](./figures/SlideRules/plot-tan.jpg)
 
-***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45°, 84.29°]$. The red $T$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $T$ scale is used in conjunction with the reciprocal $CI$ scale.
+***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45°, 84.29°]$. The red $\color{red}{T}$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $\color{red}{T}$ scale is used in conjunction with the reciprocal $CI$ scale.
 
 To compute $tan(83°)$, we manipulate the slide rule as follows:
 
-- $T$—Place the hairline on the *argument* $83°$ on the red $T$ scale.
+- $T$—Place the hairline on the *argument* $83°$ on the red $\color{red}{T}$ scale.
 - $CI$—Read under the hairline the *result* 8.14 on the $CI$ scale. This computes $tan(83°) = 8.14$.
 
 ![tan(83)](./figures/SlideRules/K&E4081-3/tan-83.jpg)
 
-Since $cot(\theta) = tan(90° - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $T$ scales, as mentioned above. So, to compute $cot(83°)$, we use the same procedure as $tan(83°)$ on the red $T$ scale, but instead read the result $cot(83°) = 1/tan(83°) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90° - 83°)$ on the black $T$ scale, and read the result $cot(83°) = tan(7°) = 0.1228$ on the $C$ scale.
+Since $cot(\theta) = tan(90° - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $\color{red}{T}$ scales, using the procedure described above. So, to compute $cot(83°)$, we use the same procedure as $tan(83°)$ on the red $\color{red}{T}$ scale, but instead read the result $cot(83°) = 1/tan(83°) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90° - 83°)$ on the black $T$ scale, and read the result $cot(83°) = tan(7°) = 0.1228$ on the $C$ scale.
 
 In the plot below, the red curve is $cot$​ and the green is $cot^{-1}$​.
 
