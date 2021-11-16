@@ -869,34 +869,34 @@ The Pickett 111-ES, like the Dempster RotaRule, is held with the $1$ index mark 
 
 # CONCLUSION
 
-I have endeavoured to give a thorough enough explanation in this article on how the slide rule works, how it was used, and how it came to be. But this article will not make the reader an expert user of an advanced engineering slide rule; that is the domain of the user's manuals. I have also emphasised the necessity of engaging the mind, when using a slide rule. And I have demonstrated the extent to which some very simple mathematical functions, like $log$, $ln$, $sin$, $tan$, etc., were put to use.
+I have endeavoured to give a thorough enough explanation in this article on how the slide rule works, how it was used, and how it came to be. But this article will not make the reader an expert user of an advanced engineering slide rule; that is the domain of the user's manuals. I have also emphasised the necessity of engaging the mind, when using a slide rule. And I have demonstrated the extent to which some very simple mathematical functions, like $log$, $ln$, $sin$, $tan$, etc., were put to use to solve substantial problems in engineering.
 
-Ingenuity is the ability to make useful things inexpensively on a massive scale by composing simple ideas in systematic, reliable, repeatable ways. That is the foundational philosophy of engineering. The slide rule, both as a tool for engineering and as a product of engineering, epitomised this philosophy in its day. The slide rule was born when necessity and ingenuity coincided at a crucial point in history, and it accelerated the technological development of humanity. It took us to the Moon. The slide rules, thus, deserves to be remembered, respected, revered.
+Ingenuity is the ability to make useful things inexpensively on a massive scale by composing simple, but innovative, ideas in reliable, repeatable ways. And that is what engineering is. The slide rule, both as a tool for engineering and as a product of engineering, epitomised this philosophy in its day. The slide rule was born when necessity and ingenuity coincided at a crucial point in history, and it accelerated the technological development of humanity. It enabled us to cross the oceans. It empowered us to span the continents. It took us to the Moon. The slide rules, thus, deserves to be remembered, respected, revered.
 
 # RESOURCES
 
 ## *books*
 
 - *[An Easy Introduction to the Slide Rule](https://archive.org/details/easyintroduction00isaa)*, Asimov
-  - Everyone knows Isaac Asimov for his incisive science fiction novels, like *I, Robot*. But he also wrote numerous non-fiction works. This booklet is an equally incisive, down-to-earth explanation of how the Mannheim slide rule works. It was written for high school students of the day.
+  - Everyone knows Isaac Asimov for his incisive science fiction novels, like *I, Robot*. But he also wrote numerous non-fiction works. This booklet is a concise, down-to-earth explanation of how the Mannheim slide rule works and how to use it well. It was written for high school students of the day.
 - *[The Slide Rule](https://archive.org/details/sliderule00john)*, Johnson
-  - This book is the best slide rule instructional book for engineers. The author was a well-known engineering professor. Although this book applies to all engineering slide rules, the K&E 4081-3 is used for examples and photographs. Johnson's explanations of the $LL$ scales are particularly lucid.
+  - To my knowledge, this book is the best slide rule instructional book for engineers. The explanations of the $LL$ scales given in this book are particularly lucid. The author was a well-known engineering professor. Although it applies to all engineering slide rules, the K&E 4081-3 is used for examples and photographs. I did the same in this article, so as to make it easy for the interested readers to progress to Johnson's book.
 - *[K&E Log Log Duplex Decitrig Slide Rule No. 4081 Manual](http://sliderule.ozmanor.com/man/man024-ke4081-02.html)*, Kells
-  - The author was mathematics professor, and he wrote this manual for K&E. It is a definitive manual for the K&E 4081-3. Although the K&E 4081-3 does not have hyperbolic scales, this manual shows how to compute $sinh$, $cosh$, and $tanh$ using the $LL$ scales.
+  - The author was mathematics professor, and he wrote this manual for K&E. It is a definitive manual for the K&E 4081-3. Although the K&E 4081-3 does not have hyperbolic scales, this manual shows how to use the $LL$ scales to compute $sinh$, $cosh$, and $tanh$.
 
 ## *sites*
 
 - [The Oughtred Society](http://oughtred.org/)
-  - This is the most comprehensive site on slide rules. It was created by those who used the slide rule, professionally. They are an active, international lot. They have annual meetings. They publish detailed, insightful articles, both for beginners and experts.
+  - This is the most comprehensive web site on slide rules. It was created by those who used the slide rule professionally, back in the day. They are an active, international lot. They have annual meetings. They publish detailed, insightful articles, both for beginners and for experts. They also have a [guide on collecting slide rules](http://www.oughtred.org/books/BeginnersGuideToCollectingSlideRules131022.pdf).
 - [International Slide Rule Museum](https://sliderulemuseum.com/SRM_Home.htm)
-  - This site is a virtual museum of slide rules. There are very few slide rules, if any at all, that are absent from this collection. Every slide rule in the collection has a set of high-resolution photographs.
+  - This site is a virtual museum of slide rules. There are very few slide rules, if any at all, that are absent from its collection. Every slide rule in the collection has a set of high-resolution photographs and interesting details such as the donor's name, date of purchase, professional uses, etc.
 - [SlideRules.org](https://www.sliderules.org)
-  - This site has slide rule simulators for many popular models.
+  - This site has slide rule simulator web applications for many popular models. The feature of the simulators that is especially useful to novices is the cursor's ability to show the exact scale values under the hairline.
 - [K&E Slide Rule Manuals](http://mccoys-kecatalogs.com/KEManuals/manuals.htm)
-  - This site has a long list of K&E slide rule manual PDFs.
+  - This site has a long list of K&E slide rule manuals in PDF format.
 - [Eric's Slide Rule Site](https://www.sliderule.ca/)
-  - This is the site of an individual collector, so the collection is not as expansive. But it does have a decent background information on the slide rules that are in the collection.
+  - This is the site run by an individual collector, so the collection is not as expansive as that of a museum. But it does have a decent background information on the slide rules that are in the collection.
 - [Tina's Slide Rule Books and other Good Stuff](http://tinas-sliderules.me.uk/)
-  - This is another collector's site. But this site covers other classic engineering tools, including drafting and scientific mechanical instruments. And it has a decent collection of PDFs.
+  - This is another collector's site. But this site covers other classic engineering tools, including drafting and scientific mechanical instruments. And it has a decent collection of manuals in PDF format.
 - [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412)
   - There are loads of sites that cater to slide rule collectors. But these services tend to trade in the high-priced, collectors' market. If you want to buy an affordable slide rule that you can play around with, explore the American, British, French, German, and Japanese eBay sites. Remember, do not engage in a bidding war; that way lies headache and heartbreak.
