@@ -310,7 +310,7 @@ To compute $3^2$, we manipulate the slide rule as follows:
 
 ![3^2](./figures/SlideRules/K&E4081-3/3^2.jpg)
 
-The $A$-$D$ scale pair computes $x^2$ because $A$ is a double-cycle logarithmic scale and $D$ is a single-cycle logarithmic scale. In the reverse direction, the $D$-$A$ scale pair computes $\sqrt{x}$.
+The $A$-$D$ scale pair computes $x^2$, because $A$ is a double-cycle logarithmic scale and $D$ is a single-cycle logarithmic scale. In the reverse direction, the $D$-$A$ scale pair computes $\sqrt{x}$.
 
 To compute $\sqrt{9}$, we manipulate the slide rule as follows:
 
@@ -319,7 +319,7 @@ To compute $\sqrt{9}$, we manipulate the slide rule as follows:
 
 Placing the hairline on $9$ in the second cycle of the $A$ scale would compute $\sqrt{90} = 9.49$. 
 
-***cubing on slide rule***—It is a little known fact that [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton) invented the cubic $K$ scale in 1675 by solving the cubic equations using three consecutive logarithmic scales. The $K$-$D$ scale pair computes $x^3$ because $K$ is a triple-cycle logarithmic scale. And the reverse $D$-$K$ scale pair computes $\sqrt[3]{x}$.
+***cubing on slide rule***—It is a little known fact that [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton) invented the cubic $K$ scale in 1675 by solving the cubic equations using logarithms. The $K$-$D$ scale pair computes $x^3$ because $K$ is a triple-cycle logarithmic scale. And the reverse $D$-$K$ scale pair computes $\sqrt[3]{x}$.
 
 To compute $3^3$, we manipulate the slide rule as follows:
 
@@ -333,11 +333,9 @@ To compute $\sqrt[3]{64000}$, we manipulate the slide rule as follows:
 - $K$—Place the hairline on the *argument* $64$ in the second cycle of the $K$ scale.
 - $D$—Read under the hairline the *result* $4$ on the $D$ scale. A quick mental calculation $\sqrt[3]{1000} = 10$ indicates that the result should be in the tens, so the actual result is $40$. This computes $\sqrt[3]{64000} = 40$. 
 
-[$\sqrt[3]{64000}$ photo]
-
 Placing the hairline on $6.4$ in the first cycle of the $K$ scale would compute $\sqrt[3]{6.4} = 1.857$, and placing the hairline on $640$ on the third cycle of the $K$ scale would compute $\sqrt[3]{640} = 8.62$.
 
-As I mentioned previously, the $LL_n$ scales compute $x^{y/z}$ when $x > 1$, and the $LL_{0n}$ scale computes $x^{y/z}$ when $x < 1$. It is reasonable to ask, "If the $LL$ scale pairs can compute arbitrary powers and roots, why waste precious real estate with the redundant $A$, $B$, and $K$ scales?" The answer is convenience. Engineering calculations make frequent use of squares (for Pythagoreans and areas) and cubes (for volumes), and these scales provide quick calculations of those operations. And although the $LL$ scales are more powerful and precise, their procedures are commensurately more intricate and error prone.
+As I mentioned previously, the $LL_n$ scales compute $x^{y/z}$ when $x > 1$, and the $LL_{0n}$ scale computes $x^{y/z}$ when $x < 1$. It is reasonable to ask, "If the $LL$ scale pairs can compute arbitrary powers and roots, why waste precious real estate with the redundant $A$, $B$, and $K$ scales?" The answer is convenience. Engineering calculations make frequent use of squares (for Pythagoreans and areas) and cubes (for volumes), and these scales provide quick calculations of those operations. And although the $LL$ scales possess greater flexibility and precision, their procedures are commensurately more intricate and error prone.
 
 ***natural logarithmic scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $log_e$ or $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
 
