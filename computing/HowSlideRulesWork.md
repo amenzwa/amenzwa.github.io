@@ -450,7 +450,7 @@ To compute $sin(30°)$, we manipulate the slide rule as follows:
 
 To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read the result $60°$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60°$.
 
-***red $S$ scale***—The $S$ scale is graduated from left to right, in black, for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by reading the red scale.
+***red $S$ scale***—The $S$ scale is graduated from left to right, in black, for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by reading the red $\color{red}{S}$ scale.
 
 In the plot below, the red curve is $cos$ and the blue is $cos^{-1}$.
 
@@ -480,13 +480,13 @@ In the plot below, the red curve is $cot$​ and the green is $cot^{-1}$​.
 
 ![cot](./figures/SlideRules/plot-cot.jpg)
 
-***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573°, 5.73°]$, or in radians $[0.01, 0.1]$, because $sin(\theta) \approx tan(\theta)$ for small angles. For angles smaller than $0.573°$, we exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
+***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573°, 5.73°] = [0.01, 0.1]\ rad$, because $sin(\theta) \approx tan(\theta)$ for small angles. For such small angles, we may exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
 
-In the plot below, the blue curve is $sin$ and the green is $tan$. These two curves are indistinguishable when $\theta ∈ [0.01, 0.1]$ radians.
+In the plot below, the blue curve is $sin$ and the red is $tan$. These two curves are indistinguishable when $\theta ∈ [0.0, 0.1]\ rad$.
 
 ![sin-tan](./figures/SlideRules/plot-sin-tan.jpg)
 
-It is possible to chain trigonometric and arithmetic calculations on the slide rule. This is one of the reasons why calculating with the slide rule is fast. Readers interested in these details should read the manuals listed in the resources section at the end of the article.
+It is possible to chain trigonometric and arithmetic calculations on the slide rule. This is one of the reasons why calculating with the slide rule was much faster than using tables. Those who are interested in these details should read the user's manuals listed in the resources section at the end of the article.
 
 # MAINTENANCE
 
