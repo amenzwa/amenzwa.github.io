@@ -281,26 +281,6 @@ The logarithmic scale is the irony of the slide rule. The $log$ function is nonl
 
 ## *exponentiation*
 
-***logarithmic exponentiation***—General exponentiation of the form $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
-
-- $log(x^{y/z}) = y ÷ z × log(x)$.
-
-Then, $×$ and $÷$ can be further reduced to $+$ and $-$ by applying the $log$ function once more:
-
-- log(y ÷ z × log(x)) = log(y) - log(z) + log(log(x))
-
-It turns out that the slide rule performs this trick using the base-$e$ natural logarithm $ln$ as the inner logarithm and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$, not $log \circ log$ as described above. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving reading precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing these logarithmic operations:
-
-- $x^{y/z} = \color{darkred}{ln^{-1}}[y ÷ z × \color{red}{ln}(x)]$
-  - $= \color{darkred}{ln^{-1}}[\color{darkblue}{log^{-1}}[\color{blue}{log}[y ÷ z × \color{red}{ln}(x)]$
-  - $= \color{darkred}{ln^{-1}}[\color{darkblue}{log^{-1}}[\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log}(\color{red}{ln}(x))]]$
-
-So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
-- $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
-- $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)] = ln^{-1}[log^{-1}\{log(1) - log(4) + log(ln(16))\}] = 2$
-
-We now see that the "log-log" nomenclature of engineering slide rules is a not-so-subtle nod to the function composition $\color{blue}{log} \circ \color{red}{ln}$ that appears in the expressions computing $x^{y/z}$.
-
 ***squaring on slide rule***—A typical engineering slide rule provides the $A$ scale on the frame and the $B$ scale on the slide for computing $x^2$, the $K$ scale on the frame for computing $x^3$, and the $LL_n$ scales and their reciprocals $LL_{0n}$ scales on the frame for computing $x^y$. The procedures for computing powers and roots always involve the $D$ scale on the frame.
 
 To compute $3^2$, we manipulate the slide rule as follows:
@@ -335,7 +315,28 @@ To compute $\sqrt[3]{64000}$, we manipulate the slide rule as follows:
 
 Placing the hairline on $6.4$ in the first cycle of the $K$ scale would compute $\sqrt[3]{6.4} = 1.857$, and placing the hairline on $640$ on the third cycle of the $K$ scale would compute $\sqrt[3]{640} = 8.62$.
 
-As I mentioned previously, the $LL_n$ scales compute $x^{y/z}$ when $x > 1$, and the $LL_{0n}$ scale computes $x^{y/z}$ when $x < 1$. It is reasonable to ask, "If the $LL$ scale pairs can compute arbitrary powers and roots, why waste precious real estate with the redundant $A$, $B$, and $K$ scales?" The answer is convenience. Engineering calculations make frequent use of squares (for Pythagoreans and areas) and cubes (for volumes), and these scales provide quick calculations of those operations. And although the $LL$ scales possess greater flexibility and precision, their procedures are commensurately more intricate and error prone.
+***logarithmic exponentiation***—General exponentiation of the form $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
+
+- $log(x^{y/z}) = y ÷ z × log(x)$.
+
+Then, $×$ and $÷$ can be further reduced to $+$ and $-$ by applying the $log$ function once more:
+
+- log(y ÷ z × log(x)) = log(y) - log(z) + log(log(x))
+
+It turns out that the slide rule performs this trick using the base-$e$ natural logarithm $ln$ as the inner logarithm and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$, not $log \circ log$ as described above. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving reading precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing these logarithmic operations:
+
+- $x^{y/z} = \color{darkred}{ln^{-1}}[y ÷ z × \color{red}{ln}(x)]$
+  - $= \color{darkred}{ln^{-1}}[\color{darkblue}{log^{-1}}[\color{blue}{log}[y ÷ z × \color{red}{ln}(x)]$
+  - $= \color{darkred}{ln^{-1}}[\color{darkblue}{log^{-1}}[\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log}(\color{red}{ln}(x))]]$
+
+So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
+
+- $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
+- $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)] = ln^{-1}[log^{-1}\{log(1) - log(4) + log(ln(16))\}] = 2$
+
+We now see that the "log-log" nomenclature of engineering slide rules is a not-so-subtle nod to the function composition $\color{blue}{log} \circ \color{red}{ln}$ that appears in the expressions computing $x^{y/z}$.
+
+On the slide rule, the $LL$​ scales compute general exponentiation $x^{y/z}$​. It is, therefore, reasonable to ask, "If the $LL$​ scale pairs can compute arbitrary powers and roots, why waste precious real estate with the redundant $A$​, $B$​, and $K$​ scales?" The answer is convenience. Engineering calculations make frequent use of squares (for Pythagoreans and areas) and cubes (for volumes), and these scales provide quick calculations of those operations. And although the $LL$​ scales possess greater flexibility and precision, their procedures are commensurately more intricate and error prone.
 
 ***natural logarithmic scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $log_e$ or $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
 
@@ -353,18 +354,18 @@ Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it 
 - $LL_1$: $x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
 - $LL_2$: $x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
 - $LL_3$: $x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$
-  - Here, $e = 2.718$ and $ln(e) = 1.0$
+  - Note that $e = 2.718$ and $ln(e) = 1.0$
 
-The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of the explosive rate of "exponential growth".
+The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of "exponential growth".
 
-But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse.
+But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse. The function $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down.
 
 The red $LL_{0n}$ scales are reciprocals of the black $LL_n$ scales. As such, the red scales run from right to left. On the K&E 4081-3, the red $LL_{0n}$ scale is divided into these ranges:
 
 - $LL_{01}$: $x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
 - $LL_{02}$: $x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
 - $LL_{03}$: $x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
-  - Here, $1/e = 0.368$ and $ln(1/e) = -1.0$
+  - Note that $1/e = 0.368$ and $ln(1/e) = -1.0$
 
 Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $LL_{0n}$ scales as $e^{-x}$.
 
@@ -380,7 +381,15 @@ To compute $ln(3)$, we manipulate the slide rule as follows:
 
 Computing $e^x$, however, is not the primary purpose of the $LL$ scale pairs; [Peter Roget](https://en.wikipedia.org/wiki/Peter_Mark_Roget), an English physician and the creator of the Roget Thesaurus, designed this scale to compute arbitrary powers and roots in the form of $x^{y/z}$. The black $LL_n$ scales are for computing powers and roots of $x > 1$, and the red $LL_{0n}$ for $x < 1$.
 
-Using the $LL$ scales properly is challenging, and using them efficient requires an appreciable amount of practice. As we have seen above, multiplication and division start and end on the fixed $D$ scale and requires the use of the sliding the $C$ scale. Likewise, exponentiation starts and ends on the fixed $LL$ scale and requires the use of the sliding $C$ scale. The operation $x^y$ is performed on the slide rule in a similar manner as $y × x$ except, of course, using a different pair of scales.
+As we have seen earlier, multiplication and division start and end on the fixed $D$ scale and requires the use of the sliding the $C$ scale. Likewise, exponentiation starts and ends on the fixed $LL$ scales and requires the use of the sliding $C$ scale. At a glance, computing $x^y$ seems as straightforward as computing $x × y$. But in truth, the $LL$ scales are beguiling; using them correctly requires care, and using them quickly requires practice. A typical first-year engineering student takes a few months of regular use to become proficient with these scales. The procedures for computing $x^y$ using the $LL$ scales are complex enough that they warrant being split into two cases: when $x > 1$ and when $x < 1$.
+
+***exponentiation for the $x > 1$ case***—If $x > 1$, use the $LL_n$ scales and the $C$ scale to compute $x^y$ as follows:
+
+- If $y ∈ [0.1, 1]$, the result is always less than the base, so read the result further down the scale, either to the left on the same scale or on the next lower scale.
+- If $y ∈ [0.001, 0.1]$, reduce the problem to the $y ∈ [0.1, 1]$ case by mentally shifting the decimal point one or two places to the right.
+- If $y ∈ [1, 10]$, the result is always greater than the base, so read the result further up the scale, either to the right on the same scale or on the next higher scale.
+- If $y ∈ [10, 100]$, reduce the problem to the $y ∈ [1, 10]$ case by mentally shifting the decimal point one or two places to the left.
+- If the result exceeds $22000$, factor out $10$ from the base (as in $23^8 = 2.3^8 × 10^8$) or factor out 10 from the exponent (as in $1.9^{23} = 1.9^{10} × 1.9^{13}$).
 
 To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 
@@ -391,23 +400,11 @@ To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 
 ![1.03^2.4](./figures/SlideRules/K&E4081-3/1.03^2.4.jpg)
 
-But if we wish to compute $1.03^{9.2}$, we have a small crisis. Once the $C$ scale's left-hand $1$ is lined up with the $LL_1$ scale's $1.03$, the $C$ scale's $9.2$ has moved off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale, and have ventured into the $LL_2$ scale. To avoid going off the edge, we use the folded $CF$ scale, instead. We line up the $CF$ scale's $1$, which is near the centre of that scale, and move the hairline to the exponent $9.2$ of the left. We then read the result $1.03^{9.2} = 1.3125$ on the $LL_2$ scale.
+But sometimes, we encounter a problem. Say, we wish to compute $1.03^{9.2}$. So, we line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has moved off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured into the $LL_2$ scale. To avoid going off the edge, we use the folded $CF$ scale, instead. We line up the $CF$ scale's $1$, which is near the centre of that scale, and move the hairline to the exponent $9.2$, which is slightly to the left. We then read the result $1.03^{9.2} = 1.3125$ on the $LL_2$ scale.
 
 ![1.03^9.2](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
-And if we wish to compute $1.03^{92}$, we would perform the same operations, but read the result $1.03^{92} = 15.2$ on the $LL_3$ scale.
-
-At a glance, computing $x^y$ seems as simple as computing $x × y$. But in truth, the $LL$ scale is beguiling; a typical first-year engineering student takes a few months of regular use to become proficient in its use. The procedures computing $x^y$ are grouped into the following categories:
-
-If $x > 1$, use the $LL_n$ scale.
-
-- If $y ∈ [0.1, 1]$, the result is always less than the base, so read the result further down the scale, either to the left on the same scale or on the next lower scale.
-- If $y ∈ [0.001, 0.1]$, reduce the problem to the $y ∈ [0.1, 1]$ case by mentally shifting the decimal point one or two places to the right.
-- If $y ∈ [1, 10]$, the result is always greater than the base, so read the result further up the scale, either to the right on the same scale or on the next higher scale.
-- If $y ∈ [10, 100]$, reduce the problem to the $y ∈ [1, 10]$ case by mentally shifting the decimal point one or two places to the left.
-- If the result exceeds $22000$, factor out $10$ from the base or the exponent: $23^8 = 2.3^8 × 10^8$ or $1.9^{23} = 1.9^{10} × 1.9^{13}$.
-
-If $x < 1$, use the $LL_{0n}$ scale. The procedures for the $LL_{0n}$ scales are similarly categorised into four ranges of the exponent. The $LL_{0n}$ scale comes in handy when dealing with negative exponents. Because $x^{-y} = 1/x^y$ and $LL_n = 1/LL_{0n}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $LL_{0n}$ scale yields $y^{-y}$.
+***exponentiation for the $x < 1$ case***—If $x < 1$, use the $LL_{0n}$ scales and the $CI$ scale, instead. The procedures for the $LL_{0n}$ scales are similarly categorised into four ranges of the exponent. The $LL_{0n}$ scales are also useful when dealing with negative exponents. Because $x^{-y} = 1/x^y$ and $LL_n = 1/LL_{0n}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $LL_{0n}$ scale yields $x^{-y}$.
 
 To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
@@ -418,7 +415,7 @@ To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
 ![2.22^1.11](./figures/SlideRules/K&E4081-3/2.22^-1.11.jpg)
 
-If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $LL_{02}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as required. The $LL$ scales are the most powerful scales on a typical engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the manuals listed in the resources section at the end of the article.
+If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $LL_{02}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as desired. The $LL$ scales are the most powerful scales on an ordinary engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the user's manuals listed in the resources section at the end of the article.
 
 ## *trigonometric*
 
