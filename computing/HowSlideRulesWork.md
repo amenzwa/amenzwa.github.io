@@ -592,27 +592,29 @@ By the way, I purchased all my slide rules on eBay, except these: the Aristo 096
 
 #### Graphoplex (FR)
 
-***Graphoplex 643 Pocket Electric Log Log***—Graphoplex was a French maker of splendid-looking slide rules, but with a horrid-looking logo. Of all my pocket rules, I find this one the easiest to read. The Graphoplex 643 is but a miniature version of the Graphoplex 640. See the full description in the Graphoplex 640 subsection, below.
+***Graphoplex 643 Pocket Electric Log Log***—Graphoplex was a French maker of splendid-looking slide rules, but with a horrid-looking logo. The Graphoplex 643 is an advanced pocket rule. Of all my pocket rules—which I have but a few, due to my poor eyesight—I find this one the easiest to read. This pocket rule is a miniature version of the Graphoplex 640. See the full description in the Graphoplex 640 subsection, below.
 
 ![Graphoplex 643](./figures/SlideRules/Graphoplex643/front.jpg)
 
-***Graphoplex 640 Electric Log Log***—The Graphoplex 640 is another top-of-the-line Darmstadt rule, like the BRL D.26. But breaking from the Darmstadt tradition, the Graphoplex 640 places the three $LL_n$ scales on the lower frame on the frontside of the slide rule, and the backside of the slide sports $cos$, $sin$, $tan$, and $C$ scales. This scale layout of placing the $LL_n$ scales together with the $D$ scale and the $C$ scale together with the trigonometric scales greatly improves usability by reducing the need frequently to flip the slide rule.
+***Graphoplex 640 Electric Log Log***—The Graphoplex 640 is another topping Darmstadt rule, like the BRL D.26. But breaking from the Darmstadt tradition, the Graphoplex 640 places the three $LL_n$ scales on the lower frame on the front of the slide rule. And the backside of the slide sports $cos$, $sin$, $tan$, and $C$ scales. This scale layout of placing the $LL_n$ scales, together with the $D$, $C$, and trigonometric scales, significantly improves the usability by reducing the need frequently to flip the slide rule.
 
 ![Graphoplex 640](./figures/SlideRules/Graphoplex640/front.jpg)
 
+The Graphoplex 643 and the Graphoplex 640 were marketed as specialty electrical engineering slide rules. But I included them in this article, because they are excellent Darmstadt rules, too. I like them very much indeed. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
+
 #### Hemmi (JP)
 
-***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is quite marvellous: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
+***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is a marvel: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
 
 ![Hemmi 135](./figures/SlideRules/Hemmi135/front.jpg)
 
-***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule; I would very much like to have owned this rule, when I was a young engineering student. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Unusually for a simplex rule, the backside of the slide has five scales: $L$, $LL_0$, $LL_1$, $LL_2$, and $LL_3$, making this slide rule a powerful Darmstadt.
+***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule. There, I said it. I would very much like to have owned this rule, when I was a young engineering student those many years ago. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Unusually for a simplex rule, the backside of the slide has five scales: $L$, $LL_0$, $LL_1$, $LL_2$, and $LL_3$. This makes this slide rule one of the most powerful Darmstadt rules, capabilities wise.
 
 ![Hemmi 130W](./figures/SlideRules/Hemmi130W/front.jpg)
 
-But I think Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. The top edge of the frame holds a vapid 27-cm ruler and the bottom edge holds an odd zero-centred 26-cm ruler with 13-cm linear scales spanning out to each end. Hemmi should instead have inscribed more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scale, on the frame edges.
+I adore Darmstadt rules. I said so, frequently. And the Hemmi 130W is my absolute favourite Darmstadt rule. Yet, I think Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. The top edge of the frame holds a vapid 27-cm ruler and the bottom edge holds an odd zero-centred 26-cm ruler with 13-cm linear scales sprinting out to each end. Hemmi should, instead, have inscribed more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scales, on the frame edges.
 
-***Hemmi 149A Pocket Log Log Duplex Decitrig***—The Hemmi 149A pocket duplex rule is a structurally identical, but simpler, version of the Post 1461 pocket Versalog II which, in turn, is a miniature version of the Post 1460. By the way, Post slide rules were manufactured by Hemmi. See the full description in the Post 1460 subsection, below.
+***Hemmi 149A Pocket Log Log Duplex Decitrig***—The Hemmi 149A pocket duplex rule is a proportionate, but simpler and smaller, version of the Post 1461 pocket Versalog II which, in turn, is a miniature version of the Hemmi-made Post 1460 Versalog II. See the full description in the Post 1460 subsection, below.
 
 ![Hemmi 149A](./figures/SlideRules/Hemmi149A/front.jpg)
 
