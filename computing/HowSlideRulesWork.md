@@ -845,7 +845,9 @@ The Dempster RotaRule inspired the [Boykin RotaRule Model 510](https://www.slide
 
 ![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
 
-As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But when I needed the $LL$ scales, say for laboratory work and examinations, I used the Aristo 0968 log-log duplex. In general, hopping around slide rules is considered detrimental, since it robs the opportunity to develop an intimate relation with a single device. But the FC 8/10 is just a straight rule in a circular guise. Despite being circular in shape, it operates on the same principles as the Rietz straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, the inner portion to the slide. And the circular shape of the device does indeed highlight, visually and literally, the wrap-around nature of the logarithmic scales. So, my switching between the FC 8/10 and the 0968 did not impact me, negatively.
+As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But when I needed the $LL$ scales, say for laboratory work and examinations, I used the Aristo 0968 log-log duplex.
+
+In general, hopping about the different slide rules is considered detrimental, since it robs one the opportunity to develop an intimate relation with a single device. But the FC 8/10 is a unique circular rule: it is just a straight rule in a circular guise. Despite being circular in shape, it operates on the same principles as the Rietz straight rule: the outer portion of the FC 8/10 is analogous to the frame of the straight rule, and the inner portion is analogous to the slide of the straight rule. And the circular shape of the device physically and visually highlights the wrap-around nature of the logarithmic scales. So, my flip-flopping between the FC 8/10 and the 0968 did not impact me, negatively.
 
 #### Fowler (UK)
 
