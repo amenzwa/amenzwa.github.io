@@ -532,11 +532,49 @@ Before we proceed, here are some admonishments for those who are buying slide ru
 - Do not engage in a bidding war with traders.
 - Do not rush in. Good slide rules always show up on eBay, sooner or later.
 
+## *manufacturers*
+
+***Aristo (DE)***—Aristo was the slide rule brandname of the German company [Dennert & Pape](http://waywiser.rc.fas.harvard.edu/people/7640/dennert--pape) (D&P), which were founded in 1872. But Aristo eventually became synonymous with D&P.
+
+***Blundell-Harling (UK)***—Blundell-Harling are an English stationary manufacturer that makes technical drawing supplies, today. Their BRL slide rules were of very high quality. During the nearly four-century reign of the slide rule, almost every industrialised nation had at least one slide rule manufacturer. But the English slide rules—straight, circular, cylindrical, the lot—were generally superior in terms of craftsmanship and materials. It makes sense in a way; the English invented the slide rule, after all.
+
+***Breitling (CH)***—[Breitling](https://www.breitling.com/us-en/) are a famed Swiss watchmaker. They were founded in 1884. They have long been associated with aviation. Their [Navitimer](https://www.breitling.com/us-en/watches/navitimer/) line is the first watch with an integrated slide rule. The Navitimer was introduced in 1952 for use by pilots. When instrument-flying in those days, pilots used the flight instruments in the cockpit together with an accurate chronometer (for flight time, destination time, etc.), a stopwatch (for timed turns, holding patterns, etc.), and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled all these needs, because it a chronometer-grade wristwatch, a chronograph, and a slide rule, all-in-one.
+
+***Concise (JP)***—[Concise](https://www.sliderule.tokyo/) are a Japanese maker of drawing and measuring tools. They made good, but low-cost, circular slide rules. They are the only company still making slide rules in the 21st century.
+
+***Dempster (US)***—Dempster were a boutique American manufacturer of top-quality circular slide rules. They were founded by [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a Berkeley graduate mechanical engineer. Dempster began manufacturing the RotaRule in 1928 in the basement of his home in Berkeley, California.
+
+***Faber-Castell (DE)***—Founded in 1761, [Faber-Castell](https://en.wikipedia.org/wiki/Faber-Castell) (FC) were an office supply company. Today, it is one of the oldest and largest company of its kind. It is now famous for its quality pens and pencils. But for almost 100 years, until 1975, FC was a leading slide rule manufacturer, as well.
+
+***Fowler (UK)***—Fowler were an English maker of pocket watch slide rules. They were founded in 1853, and they held numerous British patents. Fowler calculators were exceedingly well-made, like expensive pocket watches, and they came in high-quality wooden cases that resembled jewel boxes.
+
+***Gilson (US)***—Gilson, established 1930s, were an American maker of cheap, but serviceable, aluminium circular rules with spiral scales. They made many models, both large (almost 22 cm diameter) and small (about 12 cm diameter), but all were of the same, three-cursor design. Strangely, they even made slide rules for computer scientists, which included $hex$-$oct$-$dec$ base conversion scales.
+
+***Graphoplex (FR)***—Graphoplex were a French maker of splendid-looking slide rules, but with a horrid-looking logo. In terms of quality, French slide rules are on par with German ones. But Graphoplex rules' [sector-dial watch face](https://revolutionwatch.com/the-watch-face-sector-dials/) style scales are quite pleasing to the eye. Although this visual design was common in the late 19th century, it disappeared during the early 20th century. This design gives Graphplex's modern slide rules their unique, classic look.
+
+***Hemmi (JP)***—Established in 1895, Hemmi designed and manufactured unique, innovative slide rules. They made accurate, elegant instruments using quality materials. Their signature material was bamboo. Bamboo is perhaps the best material with which to make slide rules. It is tough, stable, and naturally slippery. I adore Hemmi rules. Today, they make high-tech electronic devices. Yet, they continue to use the name [Hemmi Slide Rule Co., Ltd.](https://hemmi-inc.co.jp/english/company/), proudly displaying their illustrious heritage.
+
+***Keuffel & Esser (US)***—Keuffel & Esser (K&E) were the most successful manufacturer of quality slide rules in America. They were founded in 1867 as an importer of German slide rules. But soon, they began designing and making their own slide rules. K&E was [quite innovative](https://www.mccoys-kecatalogs.com/KEPatents/KEPatents.htm). The duplex design was one of their inventions. Their signature material was mahogany. Mahogany is a good material for slide rule, but it is neither as robust, nor as stable, as bamboo. K&E also made several plastic rules, but their plastic is of a lower quality, compared to the European plastics.
+
+***Kontrolpribor (RU)***—Kontrolpribor was a Soviet factory that made pocket watch slide rules. Like other Soviet products, Kontrolpribor devices feel cheap, but sturdy. Today, [Kontrolpribor](https://www.kontrolpribor.ru/en/) make scientific instruments.
+
+***Loga (CH)***—Loga were a Swiss maker of superb technical instruments, including circular and cylindrical slide rules. They were founded in the early 20th century. Until about the late 19th century, Switzerland was the home of cheap, high-quality craftsmen. French, German, and English watch makers relied extensively on the well-trained Swiss labour force to hand-make their high-end watches. That was how the modern Swiss watch industry came about.
+
+***Logarex (CZ)***—Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). Like everything else manufactured in the Eastern Bloc countries during the Soviet Era, this slide rule feels cheap. But it is quite usable.
+
+***Nestler (DE)***—Nestler were a German maker of high-quality slide rules. They were established in 1878. Their wood rules were the stuff of legend. Even the very old wood rules from the early 20th century have a modern, minimalist look and feel to them. Of all the German brands, Nestler is my favourite.
+
+***Otis King (UK)***—Otis King was an English electrical engineer. His company made high-quality pocket cylindrical rules, around 1922. They made only two types, Model K and Model L, both of which are described, below. And despite being designed by an electrical engineer, these rules are not suitable for daily use in engineering, given their limited capabilities. The focus of these rules is on portability and precision, the two characteristics most engineers did not care for.
+
+***Pickett & Eckel (US)***—Pickett, established in 1943, were a newcomer to the American slide rule market. Their signature material was aluminium. And most of their rules wore their trade-dress, the Pickett Eye-Saver Yellow. To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy Pickett rules. Not withstanding my opinion, this slide rule is a solid performer. Aluminium is thermally much more stable than wood. And it is well-neigh indestructible. Nevertheless, Pickett aluminium rules feel cheap to me. My apologies to NASA who, for their the Apollo missions, chose the [Pickett N600-ES](https://americanhistory.si.edu/collections/search/object/nmah_694174), a pared-down, pocket version of the Pickett N3-ES.
+
+***Frederick Post (US)***—Frederick Post were an American importer of top-quality Hemmi bamboo rules. These bamboo rules were sold under the Post brand in America. Frederick Post morphed into Teledyne Post in 1970, and continued making drafting supplies until 1992.
+
+***Reiss (DE)***—Reiss were a German maker of slide rules, established in 1882. During the Cold War, it was a factory in East Germany. But unlike other Eastern Bloc countries, the East Germans clung on to their traditional German craftsmanship. As such, Reiss rules are good quality instruments.
+
 ## *straight rules*
 
 #### Aristo (DE)
-
-Aristo was the slide rule brandname of the German company [Dennert & Pape](http://waywiser.rc.fas.harvard.edu/people/7640/dennert--pape) (D&P), which were founded in 1872. But Aristo eventually became synonymous with D&P.
 
 ***Aristo 967 U Darmstadt***—The Aristo 967 U is one of the most advanced Darmstadt slide rules ever made. Unlike the older Darmstadt rules, the backside of Aristo 967 U is clear plastic, which allows the user to see the entire backside of the slide. Like other Darmstadt rules, the Aristo 967 U's slide holds the $LL_1$, $LL_2$, and $LL_3$ scales on the backside. But somewhat unusually, the $L$ scale is on the backside of the slide, as well. And in the tradition of Darmstadt, this slide rule is simplex. As such, the cursor does not reach the backside; the backside scales are read against the traditional red index marks at each end of the rule. Typical of all Aristo slide rules, the frame, the slide, and the cursor are made of a very high quality plastic. All these bits glide smoothly.
 
@@ -556,15 +594,11 @@ Frankly, I fail to see the value of the 25-cm and 10-in ruler scales. All engine
 
 #### Blundell-Harling (UK)
 
-Blundell-Harling are an English stationary manufacturer that makes technical drawing supplies, today. Their BRL slide rules were of very high quality. During the nearly four-century reign of the slide rule, almost every industrialised nation had at least one slide rule manufacturer. But the English slide rules—straight, circular, cylindrical, the lot—were generally superior in terms of craftsmanship and materials. It makes sense in a way; the English invented the slide rule, after all.
-
 ***BRL D.26 Darmstadt***—The BRL D.26 is a late model Darmstadt. In terms of capabilities, the BRL D.26 is comparable to its contemporary, the Aristo 0967 U. But this English rule's build quality is obviously superior to that of its German competitor. The backside of the BRL D.26 sports the traditional cutout for reading the three $LL_n$ scales.
 
 ![BRL D.26](./figures/SlideRules/BRLD26/front.jpg)
 
 #### Faber-Castell (DE)
-
-Founded in 1761, [Faber-Castell](https://en.wikipedia.org/wiki/Faber-Castell) (FC) were an office supply company. Today, it is one of the oldest and largest company of its kind. It is now famous for its quality pens and pencils. But for almost 100 years, until 1975, FC was a leading slide rule manufacturer, as well.
 
 ***FC 1/54 Darmstadt***—I rather like the sensible scale layout of the FC 1/54. The back of the slide has the usual three $LL_n$ scales, which are read through the traditional cutouts. Being of a classic German simplex design, this rule is narrow, but quite thick, compared to modern straight rules. This thickness gives enough space to the top and bottom edges of the frame for additional scales. The top edge has the 27-cm ruler scale and the $L$ scale, and the bottom edge has the $S$ and the $T$ trigonometric scales.
 
@@ -598,8 +632,6 @@ By the way, I purchased all my slide rules on eBay, except these: the Aristo 096
 
 #### Graphoplex (FR)
 
-Graphoplex were a French maker of splendid-looking slide rules, but with a horrid-looking logo. In terms of quality, French slide rules are on par with German ones. But Graphoplex rules' [sector-dial watch face](https://revolutionwatch.com/the-watch-face-sector-dials/) style scales are quite pleasing to the eye. Although this visual design was common in the late 19th century, it disappeared during the early 20th century. This design gives Graphplex's modern slide rules their unique, classic look.
-
 ***Graphoplex 643 Pocket Electric Log Log***—The Graphoplex 643 is an advanced pocket rule. Of all my pocket rules—which I have but a few, due to my poor eyesight—I find this one the easiest to read. This pocket rule is a miniature version of the Graphoplex 640. See the full description in the Graphoplex 640 subsection, below.
 
 ![Graphoplex 643](./figures/SlideRules/Graphoplex643/front.jpg)
@@ -611,8 +643,6 @@ Graphoplex were a French maker of splendid-looking slide rules, but with a horri
 The Graphoplex 643 and the Graphoplex 640 were marketed as specialty electrical engineering slide rules. But I included them in this article, because they are excellent Darmstadt rules, too. I like them very much indeed. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
 
 #### Hemmi (JP)
-
-Established in 1895, Hemmi designed and manufactured unique, innovative slide rules. They made accurate, elegant instruments using quality materials. Their signature material was bamboo. Bamboo is perhaps the best material with which to make slide rules. It is tough, stable, and naturally slippery. I adore Hemmi rules. Today, they make high-tech electronic devices. Yet, they continue to use the name [Hemmi Slide Rule Co., Ltd.](https://hemmi-inc.co.jp/english/company/), proudly displaying their illustrious heritage.
 
 ***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is a marvel: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
 
@@ -677,8 +707,6 @@ The Hemmi 255D is definitely a specialty electrical engineering rule. But it is 
 
 #### Keuffel & Esser (US)
 
-Keuffel & Esser (K&E) were the most successful manufacturer of quality slide rules in America. They were founded in 1867 as an importer of German slide rules. But soon, they began designing and making their own slide rules. K&E was [quite innovative](https://www.mccoys-kecatalogs.com/KEPatents/KEPatents.htm). The duplex design was one of their inventions. Their signature material was mahogany. Mahogany is a good material for slide rule, but it is neither as robust, nor as stable, as bamboo. K&E also made several plastic rules, but their plastic is of a lower quality, compared to the European plastics.
-
 ***K&E 4181-1 Pocket Log Log Duplex Decitrig***—The K&E 4181-1 is a miniature version of the K&E 4081-3. But whereas the K&E 4081-3 is made of wood, the K&E 4181-1 is made of plastic. And unlike European plastics, the plastic of this slide rule feels cheap. See the full description in the K&E 4081-3 subsection, below.
 
 ![K&E 4181-1](./figures/SlideRules/K&E4181-1/front.jpg)
@@ -725,15 +753,11 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 #### Logarex (CZ)
 
-Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). Like everything else manufactured in the Eastern Bloc countries during the Soviet Era, this slide rule feels cheap. But it is quite usable.
-
 ***Logarex 27403-X Darmstadt***—The Logarax 27403-X is a late model, simplex Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. The black indices on each end permit reading only the $LL_1$ and $LL_3$ scales. The $LL_2$ scale in the middle of the slide is hidden by the frame back. This is a design blunder. So, to use the $LL_n$ scales effectively, the slide must be flipped to the front.
 
 ![Logarex 27403-X](./figures/SlideRules/Logarex27403X/front.jpg)
 
 #### Nestler (DE)
-
-Nestler were a German maker of high-quality slide rules. They were established in 1878. Their wood rules were the stuff of legend. Even the very old wood rules from the early 20th century have a modern, minimalist look and feel to them. Of all the German brands, Nestler is my favourite.
 
 ***Nestler 23 R/3 Rietz***—The Nestler 23 R was favoured by very illustrious scientists and engineers, including [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), [Wernher von Braun](https://en.wikipedia.org/wiki/Wernher_von_Braun), and [Sergei Korolev](https://en.wikipedia.org/wiki/Sergei_Korolev). It is a typical Rietz rule, with a typical Rietz scale layout. Perhaps it was this simplicity that attracted these greatest scientific minds of the 20th century.
 
@@ -751,8 +775,6 @@ Yet, there is something subversively quirky about the Nestler 23 R. Being of the
 
 #### Pickett & Eckel (US)
 
-Pickett, established in 1943, were a newcomer to the American slide rule market. Their signature material was aluminium. And most of their rules wore their trade-dress, the Pickett Eye-Saver Yellow. To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy Pickett rules. Not withstanding my opinion, this slide rule is a solid performer. Aluminium is thermally much more stable than wood. And it is well-neigh indestructible. Nevertheless, Pickett aluminium rules feel cheap to me. My apologies to NASA who, for their the Apollo missions, chose the [Pickett N600-ES](https://americanhistory.si.edu/collections/search/object/nmah_694174), a pared-down, pocket version of the Pickett N3-ES.
-
 ***Pickett N3-ES Power Log Exponential***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly stacked the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacked scales are more difficult to read. To each his own.
 
 ![Pickett N3-ES](./figures/SlideRules/PickettN3ES/front.jpg)
@@ -763,9 +785,7 @@ I rather like this stacked scale layout. But I cannot countenance the economy fe
 
 ![Pickett N4-ES](./figures/SlideRules/PickettN4ES/front.jpg)
 
-#### Post (US)
-
-Frederick Post were an American importer of top-quality Hemmi bamboo rules. These bamboo rules were sold under the Post brand in America. Frederick Post morphed into Teledyne Post in 1970, and continued making drafting supplies until 1992.
+#### Frederick Post (US)
 
 ***Post 1447 Mannheim***—The Post 1447 was an honest slide rule fit for innocent high schoolers. It is of the traditional Mannheim simplex design. It has the usual $C$, $D$, $A$, $B$, $S$, $L$, and $T$ scales on the frontside. The $S$, $L$, and $T$ scales are on the backside of the slide, which are read through the cutouts on the backside of the frame.
 
@@ -783,8 +803,6 @@ In my youth, fortunate middle schoolers and high schoolers learned to use the sl
 
 #### Reiss (DE)
 
-Reiss were a German maker of slide rules, established in 1882. During the Cold War, it was a factory in East Germany. But unlike other Eastern Bloc countries, the East Germans clung on to their traditional German craftsmanship. As such, Reiss rules are good quality instruments.
-
 ***Reiss 3214 Darmstadt Record***—The Reiss 3214 feels as solid and smooth as other European late model rules. It is a plastic duplex rule, which is a break from the Darmstadt simplex tradition. Nevertheless, it is a Darmstadt rule in a sense that it has three $LL_n$ scales, but no $LL_{0n}$ scales. And like a traditional Darmstadt rule, its frame is not adjustable.
 
 ![Reiss 3214](./figures/SlideRules/Reiss3214/front.jpg)
@@ -797,15 +815,11 @@ Reiss were a German maker of slide rules, established in 1882. During the Cold W
 
 #### Breitling (CH)
 
-[Breitling](https://www.breitling.com/us-en/) are a famed Swiss watchmaker. They were founded in 1884. They have long been associated with aviation. Their [Navitimer](https://www.breitling.com/us-en/watches/navitimer/) line is the first watch with an integrated slide rule. The Navitimer was introduced in 1952 for use by pilots. When instrument-flying in those days, pilots used the flight instruments in the cockpit together with an accurate chronometer (for flight time, destination time, etc.), a stopwatch (for timed turns, holding patterns, etc.), and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled all these needs, because it a chronometer-grade wristwatch, a chronograph, and a slide rule, all-in-one.
-
 ***Breitling Montbrillant Datora***—The Breitling Montbrillant Datora is a member of the Navitimer family of pilots' watches. The $C$ scale is engraved on the rotating bezel and the $D$ scale on the watch face. The watch face also has indices for kph to mph conversion and nautical mile to statute mile conversion. In keeping with the Navitimer tradition, this watch incorporates the chronograph function. And it adds the 24-hour sub-dial, and a complete calendar with day, date, and month indicators. The label "Datora" refers to this complete-calendar feature. And the label "Montbrillant" was a [historical designation](https://www.breitling.com/gb-en/history/part-3) Breitling applied to some of their watch dials in the early 1920s.
 
 ![Breitling Montbrillant Datora](./figures/SlideRules/BreitlingDatora/front.jpg)
 
 #### Concise (JP)
-
-[Concise](https://www.sliderule.tokyo/) are a Japanese maker of drawing and measuring tools. They made good, but low-cost, circular slide rules. They are the only company still making slide rules in the 21st century.
 
 ***Concise Model 300***—The Concise 300 is a low-cost, compact, duplex circular rule. It uses pared-down Darmstadt scales, providing only $LL_2$ and $LL_3$. But it provides two $tan$ scales, $T_1$ and $T_2$. In terms of computing power, this slide rule is almost as capable as the Nestler 0210.
 
@@ -816,8 +830,6 @@ The Concise 300 is held with the $1$ index mark pointing up, and is flipped left
 I purchased this Concise Model 300, new, straight from the Concise [online store](https://www.sliderule.tokyo/products/detail.php?product_id=8), several years ago. The quality of this new slide rule seems lower than the older ones I have seen, back in the day.
 
 #### Dempster (US)
-
-Dempster were a boutique American manufacturer of top-quality circular slide rules. They were founded by [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a Berkeley graduate mechanical engineer. Dempster began manufacturing the RotaRule in 1928 in the basement of his home in Berkeley, California.
 
 ***Dempster RotaRule Model AA***—The Dempster RotaRule is undoubtedly the most desirable log-log duplex engineering circular rule. It was designed and manufactured by an engineer for use in engineering. The phrase "engineering circular rule" is an oxymoron, given that circular slide rules were a favourite of businessmen and most engineers disliked circular rules. But the Dempster RotaRule is a different kind of circular rule. In addition to the usual assortment of scales, it has the scales that engineers need: the trigonometric scales, the four $LL_n$ scales, and the Pythagorean $\sqrt{x^2 + y^2}$ scale. At about 13 cm in diameter, this slide rule is about the same size as the simplex FC 8/10. But unlike the FC 8/10's 25-cm circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm quadruple-cycle $LL$ scale. And it even has a surveyor's $Stadia$ scale and a financier's $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device.
 
@@ -837,15 +849,11 @@ As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But whe
 
 #### Fowler (UK)
 
-Fowler were an English maker of pocket watch slide rules. They were founded in 1853, and they held numerous British patents. Fowler calculators were exceedingly well-made, like expensive pocket watches, and they came in high-quality wooden cases that resembled jewel boxes.
-
 ***Fowler's Universal Calculator***—At about 8.5 cm in diameter, the Fowler's Universal Calculator is perfectly sized for the hand. Etched into the glass face cover is the fixed red hairline, aligned with the crown at 12 o'clock. Turning this crown clockwise rotates the face anticlockwise, and turning it anticlockwise rotates the face clockwise. All the scales are etched onto this one-piece, rotating face. And turning the crown at 2 o'clock clockwise rotates the clear plastic cursor bearing the black hairline clockwise, and turning it anticlockwise rotates the cursor anticlockwise. It is a bit odd that this slide rule has no $x^2$ $A$ and $B$ scales, but it has a very long, triple-cycle $\sqrt[3]{x}$ scale.
 
 ![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
 
 #### Gilson (US)
-
-Gilson, established 1930s, were an American maker of cheap, but serviceable, aluminium circular rules with spiral scales. They made many models, both large (almost 22 cm diameter) and small (about 12 cm diameter), but all were of the same, three-cursor design. Strangely, they even made slide rules for computer scientists, which included $hex$-$oct$-$dec$ base conversion scales.
 
 ***Gilson Binary***—The Gilson Binary is a cheaply-made, large, thin, aluminium disc of nearly 22 cm in diameter. But given its immense size, it is capable of yielding very high precision. And its two-arm cursor mechanism is rather clever. The frontside has $C$, $CI$, $A$, $K$, $L$, $LL_0$, $LL_1$, $LL_2$, $LL_3$, fraction multiplication and division scale, and millimetre to fractional inch conversion scale pair. Back in the day, engineers round the world found fractions to be annoying, like a piece of food stuck between the teeth. But to American engineers, fractions were their bread-and-butter. The $C$ scale is over 60 cm in length. The range of the entire clockwise, quadruple-cycle $LL_n$ scale is an impressive $[1.0015, 10^6]$. The tan-colour face is punctuated with bright yellow scale background rings: the $LL_0$ has tan background, $LL_1$ has yellow background, etc. This somewhat eases the daunting task of chasing the mammoth $LL$ scale round the large face. The front face has two clear plastic cursors, one longer than the other. When the long cursor is moved, the short cursor also moves in lock step. But the short cursor can be moved independently of the long cursor. Ordinarily, computations begin with setting the long cursor hairline on the $1$ on the $C$ scale, and end with reading under the short cursor hairline on the appropriate scale. Suffice it to say the Gilson Binary's design is unique. Without the aid of a manual, even experienced straight rule users would be hard pressed to figure out how to use it. But once its quirks have been discovered, it is just as simple to use as a straight rule.
 
@@ -873,8 +881,6 @@ American slide rule manufacturers, like most American engineers of that era, had
 
 #### Kontrolpribor (RU)
 
-Kontrolpribor was a Soviet factory that made pocket watch slide rules. Like other Soviet products, Kontrolpribor devices feel cheap, but sturdy. Today, [Kontrolpribor](https://www.kontrolpribor.ru/en/) make scientific instruments.
-
 ***Kontrolpribor Model KL-1***—The Kontrolpribor KL-1 is a pocket watch type duplex circular model. It is about the size of a wristwatch. The faces are covered with cheap plastic. Because the plastic covers are domed, they can get scratched easily. The black-dotted crown at 12 o'clock rotates the face and the red-dotted one at 2 o'clock rotates the needle. The frontside has 15-cm long $C$ and $A$ scales, giving precision equivalent to a pocket straight rule. The backside has circular $C$ and $S$ scales and a spiral $T$ scale. This slide rule is comparable in computing power to a pocket Mannheim.
 
 ![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/front.jpg)
@@ -882,8 +888,6 @@ Kontrolpribor was a Soviet factory that made pocket watch slide rules. Like othe
 The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. In the presence of the Fowler's Universal Calculator, this slide rule is a cheap toy. But it is certainly more powerful than the Breitling Navitimer.
 
 #### Loga (CH)
-
-Loga were a Swiss maker of superb technical instruments, including circular and cylindrical slide rules. They were founded in the early 20th century. Until about the late 19th century, Switzerland was the home of cheap, high-quality craftsmen. French, German, and English watch makers relied extensively on the well-trained Swiss labour force to hand-make their high-end watches. That was how the modern Swiss watch industry came about.
 
 ***Loga 30 Tt***—The Swiss craftsmanship is apparent in the Loga 30 Tt, an accurate, sturdy, beautiful, Darmstadt-equivalent circular rule. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds double-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. Note that the $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are labelled $A$ and $B$.
 
@@ -908,8 +912,6 @@ The Pickett 111-ES, like the Dempster RotaRule, is held with the $1$ index mark 
 ## *cylindrical rules*
 
 #### Otis King (UK)
-
-Otis King was an English electrical engineer. His company made high-quality pocket cylindrical rules, around 1922. They made only two types, Model K and Model L, both of which are described, below. And despite being designed by an electrical engineer, these rules are not suitable for daily use in engineering, given their limited capabilities. The focus of these rules is on portability and precision, the two characteristics most engineers did not care for.
 
 ***Otis King Model K***—Otis King cylindrical slide rules use helical scales. The Model K is unusual in that it uses a double-cycle $C$ scale, thus, can perform chained calculations without the need to reset the cursor, as is necessary with the Model L, described below, which has a normal, single-cycle $C$ scale. But the Model K is limited, capability wise; it could compute only $×$ and $÷$.
 
