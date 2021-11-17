@@ -536,13 +536,15 @@ Before we proceed, here are some admonishments for those who are buying slide ru
 
 #### Aristo (DE)
 
-Aristo was the slide rule brandname of the German company [Dennert & Pape](http://waywiser.rc.fas.harvard.edu/people/7640/dennert--pape) (D&P), which was founded in 1872. But Aristo eventually became synonymous with D&P.
+Aristo was the slide rule brandname of the German company [Dennert & Pape](http://waywiser.rc.fas.harvard.edu/people/7640/dennert--pape) (D&P), which were founded in 1872. But Aristo eventually became synonymous with D&P.
 
 ***Aristo 967 U Darmstadt***—The Aristo 967 U is one of the most advanced Darmstadt slide rules ever made. Unlike the older Darmstadt rules, the backside of Aristo 967 U is clear plastic, which allows the user to see the entire backside of the slide. Like other Darmstadt rules, the Aristo 967 U's slide holds the $LL_1$, $LL_2$, and $LL_3$ scales on the backside. But somewhat unusually, the $L$ scale is on the backside of the slide, as well. And in the tradition of Darmstadt, this slide rule is simplex. As such, the cursor does not reach the backside; the backside scales are read against the traditional red index marks at each end of the rule. Typical of all Aristo slide rules, the frame, the slide, and the cursor are made of a very high quality plastic. All these bits glide smoothly.
 
 ![Aristo 967 U](./figures/SlideRules/Aristo967U/front.jpg)
 
 Many late-model, plastic Darmstadt rules, like the Aristo 967 U, have thin lips protruding from the frame. These portions are often marked with 25-cm and 10-in ruler scales. Unfortunately, the corners of these lips are rather fragile. If the slide rule was mistreated, the corners chip easily. Pay attention to this type of damage, when purchasing a plastic Darmstadt.
+
+Frankly, I fail to see the value of the 25-cm and 10-in ruler scales. All engineers use the [triangular rule](https://americanhistory.si.edu/collections/search/object/nmah_692472) for measuring and drafting. This ruler is always on our desks. And on the very first day in engineering school, we were taught never to use the slide rule—a precision instrument—like a common ruler. So, putting ruler scales on a slide rule is simply wasting precious real estate.
 
 ***Aristo 0968 Studio***—This Aristo 0968 was my first slide rule, purchased from the government store in Burma, circa 1982. This is an ordinary log-log duplex engineering straight rule, like the K&E 4081-3. But this slide rule is about half a centimetre wider than the K&E 4081-3, which affords a couple of extra scales and a more logical scale layout. The Aristo 0968 has the Pythagorean $P$ scale for computing $1 - x^2$ and two $tan$ scales $T_1 [5.5°, 45°]$ and $T_2 [45°, 84.5°]$, which the K&E 4081-3 does not. And all six $LL$ scales are placed on the backside, making it a much more convenient rule to use. Indeed, usability is the hallmark of European and Asian slide rules; this is the area in which American slide rules falter.
 
@@ -554,7 +556,7 @@ Many late-model, plastic Darmstadt rules, like the Aristo 967 U, have thin lips 
 
 #### Blundell-Harling (UK)
 
-Blundell-Harling is an English stationary manufacturer that makes technical drawing supplies, today. Their BRL slide rules were of very high quality. During the nearly four-century reign of the slide rule, almost every industrialised nation had at least one slide rule manufacturer. But the English slide rules—straight, circular, cylindrical, the lot—were generally superior in terms of craftsmanship and materials. It makes sense in a way; the English invented the slide rule, after all.
+Blundell-Harling are an English stationary manufacturer that makes technical drawing supplies, today. Their BRL slide rules were of very high quality. During the nearly four-century reign of the slide rule, almost every industrialised nation had at least one slide rule manufacturer. But the English slide rules—straight, circular, cylindrical, the lot—were generally superior in terms of craftsmanship and materials. It makes sense in a way; the English invented the slide rule, after all.
 
 ***BRL D.26 Darmstadt***—The BRL D.26 is a late model Darmstadt. In terms of capabilities, the BRL D.26 is comparable to its contemporary, the Aristo 0967 U. But this English rule's build quality is obviously superior to that of its German competitor. The backside of the BRL D.26 sports the traditional cutout for reading the three $LL_n$ scales.
 
@@ -562,7 +564,7 @@ Blundell-Harling is an English stationary manufacturer that makes technical draw
 
 #### Faber-Castell (DE)
 
-[Faber-Castell](https://en.wikipedia.org/wiki/Faber-Castell) (FC) was founded in 1761 as an office supply company. Today, it is one of the oldest and largest company of its kind. It is now famous for its quality pens and pencils. But for almost 100 years, until 1975, FC was a leading slide rule manufacturer, as well.
+Founded in 1761, [Faber-Castell](https://en.wikipedia.org/wiki/Faber-Castell) (FC) were an office supply company. Today, it is one of the oldest and largest company of its kind. It is now famous for its quality pens and pencils. But for almost 100 years, until 1975, FC was a leading slide rule manufacturer, as well.
 
 ***FC 1/54 Darmstadt***—I rather like the sensible scale layout of the FC 1/54. The back of the slide has the usual three $LL_n$ scales, which are read through the traditional cutouts. Being of a classic German simplex design, this rule is narrow, but quite thick, compared to modern straight rules. This thickness gives enough space to the top and bottom edges of the frame for additional scales. The top edge has the 27-cm ruler scale and the $L$ scale, and the bottom edge has the $S$ and the $T$ trigonometric scales.
 
@@ -596,7 +598,7 @@ By the way, I purchased all my slide rules on eBay, except these: the Aristo 096
 
 #### Graphoplex (FR)
 
-Graphoplex was a French maker of splendid-looking slide rules, but with a horrid-looking logo. In terms of quality, French slide rules are on par with German ones. But Graphoplex rules' [sector-dial watch face](https://revolutionwatch.com/the-watch-face-sector-dials/) style scales are quite pleasing to the eye, and this visual design is unique among slide rules.
+Graphoplex were a French maker of splendid-looking slide rules, but with a horrid-looking logo. In terms of quality, French slide rules are on par with German ones. But Graphoplex rules' [sector-dial watch face](https://revolutionwatch.com/the-watch-face-sector-dials/) style scales are quite pleasing to the eye. Although this visual design was common in the late 19th century, it disappeared during the early 20th century. This design gives Graphplex's modern slide rules their unique, classic look.
 
 ***Graphoplex 643 Pocket Electric Log Log***—The Graphoplex 643 is an advanced pocket rule. Of all my pocket rules—which I have but a few, due to my poor eyesight—I find this one the easiest to read. This pocket rule is a miniature version of the Graphoplex 640. See the full description in the Graphoplex 640 subsection, below.
 
@@ -610,7 +612,7 @@ The Graphoplex 643 and the Graphoplex 640 were marketed as specialty electrical 
 
 #### Hemmi (JP)
 
-Hemmi was established in 1895 to design and manufacture slide rules. They make accurate, elegant instruments using quality materials. Their signature material was bamboo. Bamboo is perhaps the best material with which to make slide rules. It is tough, stable, and naturally slippery. I adore Hemmi rules. Today, they make high-tech electronic devices. Yet, they continue to use the name [Hemmi Slide Rule Co., Ltd.](https://hemmi-inc.co.jp/english/company/), proudly displaying their illustrious heritage.
+Established in 1895, Hemmi designed and manufactured unique, innovative slide rules. They made accurate, elegant instruments using quality materials. Their signature material was bamboo. Bamboo is perhaps the best material with which to make slide rules. It is tough, stable, and naturally slippery. I adore Hemmi rules. Today, they make high-tech electronic devices. Yet, they continue to use the name [Hemmi Slide Rule Co., Ltd.](https://hemmi-inc.co.jp/english/company/), proudly displaying their illustrious heritage.
 
 ***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is a marvel: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
 
@@ -675,7 +677,7 @@ The Hemmi 255D is definitely a specialty electrical engineering rule. But it is 
 
 #### Keuffel & Esser (US)
 
-Keuffel & Esser (K&E) was the most successful manufacturer of quality slide rules in America. They were founded in 1867 as an importer of German slide rules. But soon, they began designing and making their own slide rules. K&E was [quite innovative](https://www.mccoys-kecatalogs.com/KEPatents/KEPatents.htm). The duplex design was one of their inventions. Their signature material was mahogany. Mahogany is a good material for slide rule, but it is not as robust, or as stable, as bamboo. K&E also made several plastic rules, but theirs is of a lower quality, compared to the European plastics.
+Keuffel & Esser (K&E) were the most successful manufacturer of quality slide rules in America. They were founded in 1867 as an importer of German slide rules. But soon, they began designing and making their own slide rules. K&E was [quite innovative](https://www.mccoys-kecatalogs.com/KEPatents/KEPatents.htm). The duplex design was one of their inventions. Their signature material was mahogany. Mahogany is a good material for slide rule, but it is neither as robust, nor as stable, as bamboo. K&E also made several plastic rules, but their plastic is of a lower quality, compared to the European plastics.
 
 ***K&E 4181-1 Pocket Log Log Duplex Decitrig***—The K&E 4181-1 is a miniature version of the K&E 4081-3. But whereas the K&E 4081-3 is made of wood, the K&E 4181-1 is made of plastic. And unlike European plastics, the plastic of this slide rule feels cheap. See the full description in the K&E 4081-3 subsection, below.
 
@@ -685,13 +687,13 @@ Keuffel & Esser (K&E) was the most successful manufacturer of quality slide rule
 
 ![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
 
-This slide rule was the most popular slide rule in America. Although it is a very good slide rule, the wood core is easily damaged, when mistreated. And because they were inexpensive, many owners abused them. As such, a lot of the K&E 4081-3 slide rules being sold on eBay are not in good shape. So, be patient; do not rush headlong into a bidding war. The same admonishment applies to all wood rules, especially the very old ones made in the early 20th century or before.
+This slide rule was the most popular slide rule in America. Although it is a very good slide rule, the wood core is easily damaged, when mistreated. And because they were inexpensive, many owners abused them. As such, many K&E 4081-3 slide rules being sold on eBay are warped, and hence are useless. Good ones do pop up every so often; so, be patient. The same admonishment applies to all wood rules, especially the very old ones made in the early 20th century or before.
 
-***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most refined, engineering slide rules from K&E, designed to compete with the likes of Aristo 0969, FC 2/83 N, and Nester 0292. And like other late model K&E rules, the K&E 68-1100 is made of plastic that is on the cheap side, compared to the European brands. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But the lopsided frame feels awkward when flipping to those who are used to the common, symmetric design.
+***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most refined, engineering slide rules from K&E, designed to compete with late model German slide rules: Aristo 0969, FC 2/83 N, and Nester 0292. And like other newer K&E rules, the K&E 68-1100 is made of plastic that is on the cheap side, compared to the European plastics. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But to those of us who are used to the common, symmetric design, the lopsided frame feels awkward when flipping.
 
 ![K&E 68-1100](./figures/SlideRules/K&E68-1100/front.jpg)
 
-***K&E 4083-3 Log Log Duplex Vector***—The K&E 4083-3 Log Log Duplex Vector was one of the earliest advanced engineering slide rules with $Sh$ hyperbolic sine and  $Th$ hyperbolic tangent scales. These vector rules were popular with mechanical and structural engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
+***K&E 4083-3 Log Log Duplex Vector***—The K&E 4083-3 was one of the earliest advanced engineering slide rules with hyperbolic sine $Sh$ and hyperbolic tangent $Th$ scales. These vector rules were popular with mechanical and civil engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
 
 ![catenary](./figures/SlideRules/catenary.jpg)
 
@@ -700,15 +702,15 @@ The length and sag of a chain hung from two posts of equal height is expressed t
 - $l = 2 \frac{H}{w} sinh(\frac{wb}{H})$
 - $s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]$
 
-Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts suspending the chain. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary curve.
+Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, MO, is a catenary arch, an inverted catenary curve.
 
-Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$\pi$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" nomenclature of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
+Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$\pi$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" designation of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
 
 Catenary of chain and impedance of power line can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like the K&E 4083-3.
 
 ![K&E 4083-3](./figures/SlideRules/K&E4083-3/front.jpg)
 
-However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary engineering slide rule, like the K&E 4081-3, can compute the hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
+However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary log-log duplex slide rule, like the K&E 4081-3, can compute hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
 
 - $sinh(x) = \frac{e^x - e^{-x}}{2}$
 - $cosh(x) = \frac{e^x + e^{-x}}{2}$
@@ -725,47 +727,47 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 Logarax was a factory in Czechoslovakia, when the country was part of the old [Eastern Bloc](https://en.wikipedia.org/wiki/Eastern_Bloc). Like everything else manufactured in the Eastern Bloc countries during the Soviet Era, this slide rule feels cheap. But it is quite usable.
 
-***Logarex 27403-X Darmstadt***—The Logarax 27403-X is a late model, simplex Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. The black indices on each end permit reading the $LL_1$ and $LL_3$ scales, the $LL_2$ scale in the middle of the slide is hidden. This is a design blunder. So, to use the $LL_n$ scales effectively, the slide must be flipped to the front.
+***Logarex 27403-X Darmstadt***—The Logarax 27403-X is a late model, simplex Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. The black indices on each end permit reading only the $LL_1$ and $LL_3$ scales. The $LL_2$ scale in the middle of the slide is hidden by the frame back. This is a design blunder. So, to use the $LL_n$ scales effectively, the slide must be flipped to the front.
 
 ![Logarex 27403-X](./figures/SlideRules/Logarex27403X/front.jpg)
 
 #### Nestler (DE)
 
-Nestler was a German maker of high-quality slide rules. They were established in 1878. Their wood rules were the stuff of legend. Of all the German brands, Nestler is my favourite.
+Nestler were a German maker of high-quality slide rules. They were established in 1878. Their wood rules were the stuff of legend. Even the very old wood rules from the early 20th century have a modern, minimalist look and feel to them. Of all the German brands, Nestler is my favourite.
 
-***Nestler 23 R/3 Rietz***—The Nestler 23 R is favoured by very illustrious scientists and engineers: [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), [Wernher von Braun](https://en.wikipedia.org/wiki/Wernher_von_Braun), [Sergei Korolev](https://en.wikipedia.org/wiki/Sergei_Korolev). The Nestler 23 R is a typical Rietz rule, with a typical Rietz scale layout.
+***Nestler 23 R/3 Rietz***—The Nestler 23 R was favoured by very illustrious scientists and engineers, including [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), [Wernher von Braun](https://en.wikipedia.org/wiki/Wernher_von_Braun), and [Sergei Korolev](https://en.wikipedia.org/wiki/Sergei_Korolev). It is a typical Rietz rule, with a typical Rietz scale layout. Perhaps it was this simplicity that attracted these greatest scientific minds of the 20th century.
 
 ![Nestler 23 R](./figures/SlideRules/Nestler23R/front.jpg)
 
 Yet, there is something subversively quirky about the Nestler 23 R. Being of the classic German simplex design, this slide rule is thick enough to have space on the top and bottom edges of the frame for additional scales. The Nestler 23 R has a 27-cm ruler scale on the top edge of the frame and the bottom edge of the frame is either blank or has a $1:25$ scale. The $1:25$ scale is $27.2$ cm in length, and is divided linearly into $7$ major divisions. I do not know the purpose of this quirky scale.
 
-***Nestler 0210 Darmstadt***—Of the Nestler slide rules I own, the Nestler 0210 is my favourite. This slide rule is minimalistic, but powerful. The backside of the slide has the $LL_n$ scale typical of Darmstadt rules. And given its classic German simplex proportions, the thick edges sport more useful rules. The top edge of the frame holds the 27-cm ruler scale and the $L$ scale. The bottom edge of the frame holds the $S$ and $T$ scales.
+***Nestler 0210 Darmstadt***—Of the Nestler slide rules I own, the Nestler 0210 is my favourite. This slide rule is minimalistic, but powerful. The backside of the slide has the $LL_n$ scale typical of Darmstadt rules. And given its classic German simplex proportions, the thick edges sport more useful rules. The top edge of the frame holds the 27-cm ruler scale and the $L$ scale. The bottom edge of the frame holds the $S$ and $T$ scales. This design is practical, logical, and compact.
 
 ![Nestler 0210](./figures/SlideRules/Nestler0210/front.jpg)
 
-***Nestler 0292 Multimath-Duplex***—I like the appearance of Nestler slide rules for their understated elegance and subtle power. Being a late model advanced log-log duplex engineering rule, the Nestler 0292 possesses the same computing power as the top-of-the-line models from other manufacturers: Aristo 0969, FC 2/83 N, K&E 68-1100, Pickett N3-ES, et al. In my view, the Nester 0292 beats them all in both usability and beauty. No offence meant to those who admire the FC 2/83 N's looks; I like that slide rule very well, only not as much as the Nestler 0292. Whereas the FC 2/83 N shouts out its power, the Nestler 0292 expresses its power, quietly. It is much slimmer than the FC 2/83 N, so it feels more comfortable in the hand, especially for those of us who grew up on smaller rules, like the Aristo 0968. And it employs only one colour, the pale green background, which covers both sides of the slide. I am of the opinion that the Nestler 0292 is an embodiment of engineering philosophy: elegant simplicity, effortless efficiency, quiet power.
+***Nestler 0292 Multimath-Duplex***—I like the appearance of Nestler slide rules for their understated elegance and subtle power. Being a late model advanced log-log duplex engineering rule, the Nestler 0292 possesses the same computing power as those top-of-the-line models from other manufacturers: Aristo 0969, FC 2/83 N, K&E 68-1100, Pickett N3-ES, et al. In my view, the Nester 0292 beats them all in both usability and beauty. No offence intended to those who admire the FC 2/83 N's looks; indeed, I like that slide rule very well, only not as much as I like the Nestler 0292. Whereas the FC 2/83 N shouts out its power, the Nestler 0292 expresses its power, quietly. It is appreciably slimmer than the FC 2/83 N, so it feels more comfortable in the hand, especially for those of us who grew up on smaller rules, like the Aristo 0968. And it employs only one colour, the pale green background, which covers both sides of the slide. I am of the opinion that the Nestler 0292 is an embodiment of engineering philosophy: elegant simplicity, effortless efficiency, quiet power.
 
 ![Nestler 0292](./figures/SlideRules/Nestler0292/front.jpg)
 
 #### Pickett & Eckel (US)
 
-Pickett, established in 1943, was the newcomer to the American slide rule scene. Their signature material was aluminium. And most of their rules bore their trade-dress Eye-Saver Yellow. To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy Pickett rules. Not withstanding my dislike, this slide rule is a solid performer. Aluminium is thermally much more stable than wood. And it is virtually indestructible. Nevertheless, Pickett aluminium rules feel cheap to me. My apologies to NASA, who used, with great success, the Pickett N600-ES, a pared-down, pocket version of the Pickett N3-ES, on all the Apollo missions.
+Pickett, established in 1943, were a newcomer to the American slide rule market. Their signature material was aluminium. And most of their rules wore their trade-dress, the Pickett Eye-Saver Yellow. To be honest, I detest the cold, sharp edges of the aluminium and the gaudy eye-slayer yellow. But loads of American engineers fancy Pickett rules. Not withstanding my opinion, this slide rule is a solid performer. Aluminium is thermally much more stable than wood. And it is well-neigh indestructible. Nevertheless, Pickett aluminium rules feel cheap to me. My apologies to NASA who, for their the Apollo missions, chose the [Pickett N600-ES](https://americanhistory.si.edu/collections/search/object/nmah_694174), a pared-down, pocket version of the Pickett N3-ES.
 
-***Pickett N3-ES Power Log Exponential Log Log Dual-Base***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. It is a rather wide straight rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly stacked the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacked scales are more difficult to read. To each his own.
+***Pickett N3-ES Power Log Exponential***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly stacked the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacked scales are more difficult to read. To each his own.
 
 ![Pickett N3-ES](./figures/SlideRules/PickettN3ES/front.jpg)
 
-I rather like this stacked scale layout. But I cannot countenance the cheap feel and the rude colour of this slide rule. And it is significantly wider and heavier compared to the late model German log-log duplex rules. That makes the Pickett N3-ES cumbersome to use.
+I rather like this stacked scale layout. But I cannot countenance the economy feel and the impertinent colour of this slide rule. And it is significantly wider and weightier, compared to the late model German log-log duplex rules. So, the Pickett N3-ES is cumbersome and cheap, but reliable and stout.
 
-***Pickett N4-ES Vector Log Log Dual-Base***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES adds the hyperbolic $Sh$ and $Th$ scales. It is peculiar that this slide rule labels its $LL$ scales from $LL_1$-$LL_{01}$ to $LL_4$-$LL_{04}$, instead of the more conventional labelling, which goes from $LL_0$-$LL_{00}$ to $LL_3$-$LL_{03}$. I dislike this slide rule, too.
+***Pickett N4-ES Vector Log Log Dual-Based Speed Rule***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES adds the hyperbolic $Sh$ and $Th$ scales. It is peculiar, though, that this slide rule labels its $LL$ scales from $LL_1$-$LL_{01}$ to $LL_4$-$LL_{04}$, instead of employing the more conventional scheme, which goes from $LL_0$-$LL_{00}$ to $LL_3$-$LL_{03}$. I dislike this slide rule, too.
 
 ![Pickett N4-ES](./figures/SlideRules/PickettN4ES/front.jpg)
 
 #### Post (US)
 
-Frederick Post was an American importer of Hemmi bamboo rules, which were sold under the Post brand. Frederick Post morphed into Teledyne Post in 1970, and continued making drafting supplies until 1992.
+Frederick Post were an American importer of top-quality Hemmi bamboo rules. These bamboo rules were sold under the Post brand in America. Frederick Post morphed into Teledyne Post in 1970, and continued making drafting supplies until 1992.
 
-***Post 1447 Mannheim***—The Post 1447 is an honest slide rule fit for innocent high schoolers. It had the Mannheim essentials: $C$, $D$, $A$, $B$, $S$, $L$, and $T$. The $S$, $L$, and $T$ scales are on the backside of the slide, which are read through the cutouts on the backside of the slide rule.
+***Post 1447 Mannheim***—The Post 1447 was an honest slide rule fit for innocent high schoolers. It is of the traditional Mannheim simplex design. It has the usual $C$, $D$, $A$, $B$, $S$, $L$, and $T$ scales on the frontside. The $S$, $L$, and $T$ scales are on the backside of the slide, which are read through the cutouts on the backside of the frame.
 
 ![Post 1447](./figures/SlideRules/Post1447/front.jpg)
 
@@ -775,19 +777,19 @@ In my youth, fortunate middle schoolers and high schoolers learned to use the sl
 
 ![Post 1461](./figures/SlideRules/Post1461/front.jpg)
 
-***Post 1460 Versalog II***—The Post 1460 is a direct competitor, albeit a more refined one, of the K&E 4081-3 standard log-log duplex engineering slide rule. But in my view, the Post 1460 is superior, in terms of appearance, feel, durability, and usability. The Versalog II has a green $cos$ scale, but the original Versalog has a dark blue $cos$ scale.
+***Post 1460 Versalog II***—The Post 1460 is a direct competitor, albeit more refined, to the K&E 4081-3 standard log-log duplex engineering slide rule. But in my view, the Post 1460 is superior, in terms of appearance, feel, durability, and usability. The Versalog II has a green $cos$ scale, but the original Versalog has a dark blue $cos$ scale.
 
 ![Post 1460](./figures/SlideRules/Post1460/front.jpg)
 
 #### Reiss (DE)
 
-Reiss was a German maker of slide rules, established in 1882. During the Cold War, it was a factory in East Germany. But unlike other Eastern Bloc countries, the East Germans clung on to their traditional German craftsmanship. As such, Reiss rules are well made.
+Reiss were a German maker of slide rules, established in 1882. During the Cold War, it was a factory in East Germany. But unlike other Eastern Bloc countries, the East Germans clung on to their traditional German craftsmanship. As such, Reiss rules are good quality instruments.
 
-***Reiss 3214 Darmstadt Record***—The Reiss 3214 feels as solid and smooth as other European models. It is a late model plastic duplex rule, which breaks from the Darmstadt simplex tradition. But it is a Darmstadt rule in a sense that it has only three $LL_n$ scales, but no $LL_{0n}$ scales. And like a traditional Darmstadt rule, its frame is not adjustable.
+***Reiss 3214 Darmstadt Record***—The Reiss 3214 feels as solid and smooth as other European late model rules. It is a plastic duplex rule, which is a break from the Darmstadt simplex tradition. Nevertheless, it is a Darmstadt rule in a sense that it has three $LL_n$ scales, but no $LL_{0n}$ scales. And like a traditional Darmstadt rule, its frame is not adjustable.
 
 ![Reiss 3214](./figures/SlideRules/Reiss3214/front.jpg)
 
-***Reiss Darmstadt***—This slide rule is a traditional Darmstadt rule, but it is made of aluminium. In terms of quality, this slide rule is as solid as any European model, and is much better made than the Pickett metal rules. But still, I dislike its cold, sharp construction.
+***Reiss Darmstadt***—This slide rule is a traditional Darmstadt rule, but it is made of aluminium. In terms of quality, this slide rule is as good as any European model, and is much better made than the Pickett aluminium rules. Being much slimmer than Pickett N3-ES, the Reiss Darmstadt rule is easier to handle. Still, I dislike its cold, sharp construction.
 
 ![Reiss Darmstadt](./figures/SlideRules/ReissDarmstadt/front.jpg)
 
@@ -795,7 +797,7 @@ Reiss was a German maker of slide rules, established in 1882. During the Cold Wa
 
 #### Breitling (CH)
 
-[Breitling](https://www.breitling.com/us-en/) is a famed Swiss watchmaker founded in 1884. They have a long association with aviation. Their [Navitimer](https://www.breitling.com/us-en/watches/navitimer/) line, which has long been a favourite of pilots (and astronauts), is the first watch with an integrated slide rule. The Navitimer was introduced in 1952 for use by pilots. Instrument flying in those days, pilots used the flight instruments in the cockpit together with an accurate timer (for timed turns, holding patterns, etc.) and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled both those needs, because it incorporated a chronograph and a slide rule.
+[Breitling](https://www.breitling.com/us-en/) are a famed Swiss watchmaker. They were founded in 1884. They have a long association with aviation. Their [Navitimer](https://www.breitling.com/us-en/watches/navitimer/) line, which has long been a favourite of pilots (and astronauts), is the first watch with an integrated slide rule. The Navitimer was introduced in 1952 for use by pilots. Instrument flying in those days, pilots used the flight instruments in the cockpit together with an accurate timer (for timed turns, holding patterns, etc.) and a slide rule (for navigation, fuel burn calculations, etc.). The Navitimer fulfilled both those needs, because it incorporated a chronograph and a slide rule.
 
 ***Breitling Montbrillant Datora***—The Breitling Montbrillant Datora is a member of the Navitimer family of pilots' watches. The $C$ scale is engraved on the rotating bezel and the $D$ scale on the watch face. The watch face also has indices for kph-mph conversion and nautical mile to statute mile conversion. In keeping with the Navitimer tradition, this watch incorporates the chronograph function. But it adds the 24-hour sub-dial, and a complete calendar with day, date, and month indicators. The term "Datora" refers to this complete-calendar function.
 
@@ -803,7 +805,7 @@ Reiss was a German maker of slide rules, established in 1882. During the Cold Wa
 
 #### Concise (JP)
 
-[Concise](https://www.sliderule.tokyo/) is a Japanese maker of drawing and measuring tools. They made good, but low-cost, circular slide rules. To this day, they continue to make slide rules.
+[Concise](https://www.sliderule.tokyo/) are a Japanese maker of drawing and measuring tools. They made good, but low-cost, circular slide rules. To this day, they continue to make slide rules.
 
 ***Concise Model 300***—The Concise 300 is a low-cost, compact, duplex circular rule. It uses pared-down Darmstadt scales, providing only $LL_2$ and $LL_3$. But it provides two $tan$ scales, $T_1$ and $T_2$. In terms of computing power, this slide rule is almost as capable as the Nestler 0210.
 
@@ -815,7 +817,7 @@ I purchased this Concise Model 300, new, straight from the [Concise online store
 
 #### Dempster (US)
 
-Dempster was an American boutique maker of top-quality circular slide rules. It  was founded by [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a Berkeley graduate mechanical engineer. Dempster began manufacturing the RotaRule in 1928 in the basement of his Berkeley, CA, home.
+Dempster were an American boutique maker of top-quality circular slide rules. It  was founded by [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), a Berkeley graduate mechanical engineer. Dempster began manufacturing the RotaRule in 1928 in the basement of his Berkeley, CA, home.
 
 ***Dempster RotaRule Model AA***—The Dempster RotaRule is the most desirable log-log duplex circular rule. It was designed and manufactured by an engineer for use in engineering. The term "engineering circular rule" is almost an oxymoron, given that most engineers disliked circular rules, but so it was. In addition to the usual assortment of scales, it has the scales that engineers need: the four $LL_n$ scales and the Pythagorean $\sqrt{x^2 + y^2}$ scale. At about 13 cm in diameter, the RotaRule is about the same size as the simplex FC 8/10. But unlike the FC 8/10's 25 cm circumference circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm quadruple-cycle $LL$ scale. And it even has a surveyor's $Stadia$ scale and a $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device.
 
@@ -835,7 +837,7 @@ As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But whe
 
 #### Fowler (UK)
 
-Fowler was an English maker of pocket watch slide rules. They were founded in 1853, and they held numerous British patents. Fowler calculators were exceedingly well-made, like expensive pocket watches, and they came in high-quality wooden cases that resembled jewel boxes.
+Fowler were an English maker of pocket watch slide rules. They were founded in 1853, and they held numerous British patents. Fowler calculators were exceedingly well-made, like expensive pocket watches, and they came in high-quality wooden cases that resembled jewel boxes.
 
 ***Fowler's Universal Calculator***—At about 8.5 cm in diameter, the Fowler's Universal Calculator is perfectly sized for the hand. Etched into the glass face cover is the fixed red hairline, aligned with the crown at 12 o'clock. Turning this crown clockwise rotates the face anticlockwise, and turning it anticlockwise rotates the face clockwise. All the scales are etched onto this one-piece, rotating face. And turning the crown at 2 o'clock clockwise rotates the clear plastic cursor bearing the black hairline clockwise, and turning it anticlockwise rotates the cursor anticlockwise. It is a bit odd that this slide rule has no $x^2$ $A$ and $B$ scales, but it has a very long, triple-cycle $\sqrt[3]{x}$ scale.
 
@@ -843,7 +845,7 @@ Fowler was an English maker of pocket watch slide rules. They were founded in 18
 
 #### Gilson (US)
 
-Gilson, established 1930s, was an American maker of cheap, but serviceable, aluminium circular rules with spiral scales. They made many models, both large (almost 22 cm diameter) and small (about 12 cm diameter), but all were of the same, three-cursor design. Strangely, they even made slide rules for computer scientists, which included $hex$-$oct$-$dec$ base conversion scales.
+Gilson, established 1930s, were an American maker of cheap, but serviceable, aluminium circular rules with spiral scales. They made many models, both large (almost 22 cm diameter) and small (about 12 cm diameter), but all were of the same, three-cursor design. Strangely, they even made slide rules for computer scientists, which included $hex$-$oct$-$dec$ base conversion scales.
 
 ***Gilson Binary***—The Gilson Binary is a cheaply-made, large, thin, aluminium disc of nearly 22 cm in diameter. But given its immense size, it is capable of yielding very high precision. And its two-arm cursor mechanism is rather clever. The frontside has $C$, $CI$, $A$, $K$, $L$, $LL_0$, $LL_1$, $LL_2$, $LL_3$, fraction multiplication and division scale, and millimetre to fractional inch conversion scale pair. Back in the day, engineers round the world found fractions to be annoying, like a piece of food stuck between the teeth. But to American engineers, fractions were their bread-and-butter. The $C$ scale is over 60 cm in length. The range of the entire clockwise, quadruple-cycle $LL_n$ scale is an impressive $[1.0015, 10^6]$. The tan-colour face is punctuated with bright yellow scale background rings: the $LL_0$ has tan background, $LL_1$ has yellow background, etc. This somewhat eases the daunting task of chasing the mammoth $LL$ scale round the large face. The front face has two clear plastic cursors, one longer than the other. When the long cursor is moved, the short cursor also moves in lock step. But the short cursor can be moved independently of the long cursor. Ordinarily, computations begin with setting the long cursor hairline on the $1$ on the $C$ scale, and end with reading under the short cursor hairline on the appropriate scale. Suffice it to say the Gilson Binary's design is unique. Without the aid of a manual, even experienced straight rule users would be hard pressed to figure out how to use it. But once its quirks have been discovered, it is just as simple to use as a straight rule.
 
@@ -871,7 +873,7 @@ American slide rule manufacturers, like most American engineers of that era, had
 
 #### Kontrolpribor (RU)
 
-Kontrolpribor was a Soviet factory that made pocket watch slide rules. Like other Soviet products, Kontrolpribor devices feel cheap, but sturdy. Today, [Kontrolpribor](https://www.kontrolpribor.ru/en/) continues to make scientific instruments.
+Kontrolpribor was a Soviet factory that made pocket watch slide rules. Like other Soviet products, Kontrolpribor devices feel cheap, but sturdy. Today, [Kontrolpribor](https://www.kontrolpribor.ru/en/) make scientific instruments.
 
 ***Kontrolpribor Model KL-1***—The Kontrolpribor KL-1 is a pocket watch type duplex circular model. It is about the size of a wristwatch. The faces are covered with cheap plastic. Because the plastic covers are domed, they can get scratched easily. The black-dotted crown at 12 o'clock rotates the face and the red-dotted one at 2 o'clock rotates the needle. The frontside has 15-cm long $C$ and $A$ scales, giving precision equivalent to a pocket straight rule. The backside has circular $C$ and $S$ scales and a spiral $T$ scale. This slide rule is comparable in computing power to a pocket Mannheim.
 
@@ -881,7 +883,7 @@ The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is f
 
 #### Loga (CH)
 
-Loga was a Swiss maker of superb technical instruments, including circular and cylindrical slide rules. They were founded in the early 20th century. Until about the late 19th century, Switzerland was the home of cheap, high-quality craftsmen. French, German, and English watch makers relied extensively on the well-trained Swiss labour force to hand-make their high-end watches. That was how the modern Swiss watch industry came about.
+Loga were a Swiss maker of superb technical instruments, including circular and cylindrical slide rules. They were founded in the early 20th century. Until about the late 19th century, Switzerland was the home of cheap, high-quality craftsmen. French, German, and English watch makers relied extensively on the well-trained Swiss labour force to hand-make their high-end watches. That was how the modern Swiss watch industry came about.
 
 ***Loga 30 Tt***—The Swiss craftsmanship is apparent in the Loga 30 Tt, an accurate, sturdy, beautiful, Darmstadt-equivalent circular rule. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds double-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. Note that the $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are labelled $A$ and $B$.
 
@@ -907,7 +909,7 @@ The Pickett 111-ES, like the Dempster RotaRule, is held with the $1$ index mark 
 
 #### Otis King (UK)
 
-Otis King was an English electrical engineer. His company made high-quality pocket cylindrical rules, around 1922. Otis King made only two types, Model K and Model L, both of which are described, below. And despite being designed by an electrical engineer, these rules are not suitable for daily use in engineering, given their limited capabilities. The focus of these rules is on portability and precision, the two characteristics most engineers did not care for.
+Otis King was an English electrical engineer. His company made high-quality pocket cylindrical rules, around 1922. They made only two types, Model K and Model L, both of which are described, below. And despite being designed by an electrical engineer, these rules are not suitable for daily use in engineering, given their limited capabilities. The focus of these rules is on portability and precision, the two characteristics most engineers did not care for.
 
 ***Otis King Model K***—Otis King cylindrical slide rules use helical scales. The Model K is unusual in that it uses a double-cycle $C$ scale, thus, can perform chained calculations without the need to reset the cursor, as is necessary with the Model L, described below, which has a normal, single-cycle $C$ scale. But the Model K is limited, capability wise; it could compute only $×$ and $÷$.
 
