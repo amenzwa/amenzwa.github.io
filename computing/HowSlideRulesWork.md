@@ -524,7 +524,7 @@ Before we proceed, here are some admonishments for those who are buying slide ru
 - Do not buy a wood slide rule that is showing gaps between the slide and the body. This is the sign warping. This slide rule cannot be mended, and it cannot be calibrated to restore its accuracy.
 - Do not buy from a seller who does not post clear, high-resolution images. You cannot assess the condition of slide rule from blurry, low-resolution images.
 - Do not buy a bundle of slide rules sold as a lot. The lot inevitably contains slide rules that you do not need, as well as multiple copies of the one you do need.
-- Do not focus on one brand or one variety. This strategy will cause you to miss out on desirable slide rules with innovative designs.
+- Do not focus on one brand or one variety. This strategy will lead your collection askew, and will cause you to miss out on desirable slide rules with truly innovative designs.
 - Do not buy slide rules that are specialised exclusively to a particular application domain: artillery, aviation, stadia, photography, stahlbeton, obstetric, and the like.
 - Do not buy manuals. Every manual is now available online in PDF format.
 - Do not chase collector-grade items with complete set of manuals, boxes, etc. Those are for traders.
@@ -536,17 +536,17 @@ Before we proceed, here are some admonishments for those who are buying slide ru
 
 #### Aristo (DE)
 
-***Aristo 967 U Darmstadt***—The Aristo 967 U is one of the most advanced Darmstadt slide rules ever made. Unlike the older Darmstadt rules, the backside of Aristo 967 U is clear plastic, which allows the user to see the entire backside of the slide. Like other Darmstadt rules, the Aristo 967 U's slide holds the $LL_1$, $LL_2$, and $LL_3$ scales on the backside. But somewhat unusually, the $L$ scale is on the backside of the slide, as well. And in the tradition of Darmstadt, this slide rule is simplex. As such, the cursor does not reach the backside; the backside scales are read against the traditional red index marks at each end of the rule. Typical of all Aristo slide rules, the plastic on the body and the cursor is of a high quality, and these bits glide smoothly against one another.
+***Aristo 967 U Darmstadt***—The Aristo 967 U is one of the most advanced Darmstadt slide rules ever made. Unlike the older Darmstadt rules, the backside of Aristo 967 U is clear plastic, which allows the user to see the entire backside of the slide. Like other Darmstadt rules, the Aristo 967 U's slide holds the $LL_1$, $LL_2$, and $LL_3$ scales on the backside. But somewhat unusually, the $L$ scale is on the backside of the slide, as well. And in the tradition of Darmstadt, this slide rule is simplex. As such, the cursor does not reach the backside; the backside scales are read against the traditional red index marks at each end of the rule. Typical of all Aristo slide rules, the frame, the slide, and the cursor are made of a very high quality plastic. All these bits glide smoothly.
 
 ![Aristo 967 U](./figures/SlideRules/Aristo967U/front.jpg)
 
-Many late-model, plastic Darmstadt rules, like the Aristo 967 U, have thin lips protruding from the frame. These portions are marked with 25-cm and 10-in ruler scales. Unfortunately, the corners of these lips are rather fragile. If the slide rule was mistreated, the corners chip easily. Pay attention to this type of damage, when purchasing a plastic Darmstadt.
+Many late-model, plastic Darmstadt rules, like the Aristo 967 U, have thin lips protruding from the frame. These portions are often marked with 25-cm and 10-in ruler scales. Unfortunately, the corners of these lips are rather fragile. If the slide rule was mistreated, the corners chip easily. Pay attention to this type of damage, when purchasing a plastic Darmstadt.
 
-***Aristo 0968 Studio***—This Aristo 0968 is my first slide rule, purchased from the government store in Burma, circa 1982. This is an ordinary log-log duplex engineering straight rule, like the K&E 4081-3. But this slide rule is about half centimetre wider than the K&E 4081-3, which affords a couple of extra scales and a more logical arrangement of scales. The Aristo 0968 has the Pythagorean $P$ scale for computing $1 - x^2$ and two $tan$ scales $T_1 [5.5°, 45°]$ and $T_2 [45°, 84.5°]$, which the K&E 4081-3 does not. And all six $LL$ scales are placed on the backside, making it a much more convenient rule to use. Indeed, usability is the hallmark of European and Asian slide rules; this is where all American-designed slide rules falter.
+***Aristo 0968 Studio***—This Aristo 0968 was my first slide rule, purchased from the government store in Burma, circa 1982. This is an ordinary log-log duplex engineering straight rule, like the K&E 4081-3. But this slide rule is about half a centimetre wider than the K&E 4081-3, which affords a couple of extra scales and a more logical scale layout. The Aristo 0968 has the Pythagorean $P$ scale for computing $1 - x^2$ and two $tan$ scales $T_1 [5.5°, 45°]$ and $T_2 [45°, 84.5°]$, which the K&E 4081-3 does not. And all six $LL$ scales are placed on the backside, making it a much more convenient rule to use. Indeed, usability is the hallmark of European and Asian slide rules; this is the area in which American slide rules falter.
 
 ![Aristo 0968](./figures/SlideRules/Aristo0968/front.jpg)
 
-***Aristo 0969 StudioLog***—The Arist 0969 is a top-of-the-line engineering slide rule. In terms of capabilities, it is identical to its more famous competitor, the FC 2/83 N. But being half centimetre or so wider, it is a monster of a straight rule. This extra real estate allows a bit of extra space between the scales, making them arguably easier to read. But the extra-wide frame makes it a bit awkward to flip.
+***Aristo 0969 StudioLog***—The Arist 0969 is a top-of-the-line engineering duplex slide rule, with four pairs of $LL$ scales, $P$ scale, etc. In terms of capabilities, it is identical to its more famous competitor, the FC 2/83 N. But being half centimetre or so wider, it is a monster of a straight rule. This extra real estate allows a bit of extra space between the scales, making them arguably easier to read. But the extra-wide frame is a bit awkward, when flipping.
 
 ![Aristo 0969](./figures/SlideRules/Aristo0969/front.jpg)
 
@@ -556,31 +556,39 @@ Many late-model, plastic Darmstadt rules, like the Aristo 967 U, have thin lips 
 
 ![BRL D.26](./figures/SlideRules/BRLD26/front.jpg)
 
+Over its nearly four-century reign, almost every industrialised country had at least one slide rule manufacturer. But the English slide rules—straight, circular, cylindrical, the lot—were generally superior in terms of craftsmanship and materials. It makes sense in a way; the English invented the slide rule, after all.
+
 #### Faber-Castell (DE)
 
-***FC 1/54 Darmstadt***—The back of the slide has the three $LL_n$ scales, which are read through the traditional cutouts. Being of a classic German simplex design, this rule is rather narrow. But because it is fairly thick compared to modern straight rules, the top edge of the frame has enough space for a 27-cm ruler scale and the $L$ scale, and the bottom edge of the frame has the $S$ and the $T$ trigonometric scales. I rather like the sensible scale layout of the FC 1/54.
+***FC 1/54 Darmstadt***—I rather like the sensible scale layout of the FC 1/54. The back of the slide has the usual three $LL_n$ scales, which are read through the traditional cutouts. Being of a classic German simplex design, this rule is narrow, but quite thick, compared to modern straight rules. This thickness gives enough space to the top and bottom edges of the frame for additional scales. The top edge has the 27-cm ruler scale and the $L$ scale, and the bottom edge has the $S$ and the $T$ trigonometric scales.
 
 ![FC 1/54](./figures/SlideRules/FC1-54/front.jpg)
 
-***FC 67/64 R Pocket Darmstadt mit Addiator***—The FC 67/64 R is a Darmstadt pocket straight rule of about 15 cm in length. Being a Darmstadt rule, the backside of its slide has the usual three $LL_n$ scales. But instead of the traditional cutouts, the backside of the slide rule is occupied by a metal Addiator. As such, the only way to use the $LL_n$ scales is to flip the slide.
+As I stated earlier, I adore Darmstadt rules. The FC 1/54 is one of my favourite Darmstadt rules. But it is not my absolute favourite Darmstadt rule. What is my absolute favourite? Read on.
+
+***FC 67/64 R Pocket Darmstadt mit Addiator***—The FC 67/64 R is a Darmstadt pocket straight rule of about 15 cm in length. Being a Darmstadt rule, the backside of its slide has the usual three $LL_n$ scales. But instead of the traditional cutouts, the backside of the slide rule is occupied by a metal Addiator. As such, the only way to use the $LL_n$ scales is to flip the slide round to the front.
 
 ![FC 67/64 R front](./figures/SlideRules/FC67-64R/front.jpg)
 
-The Addiator is a mechanical device for addition and subtraction. The device must be reset before each operation by pulling out the bar at the top. The Addiator can handle operands up to six digits. The operand is entered by dragging a slot next to the desired digit in the appropriate column, using the provided stylus. When adding, both augend and addend are set in the upper register. When subtracting, the minuend is set in the upper register and the subtrahend in the lower register. Given that this is an article about slide rules, I shall go no further on using the Addiator. The curious may view the [YouTube videos](https://youtu.be/iz3ecu25gls) on the subject.
+The [Addiator](https://en.wikipedia.org/wiki/Addiator) is a clever little contraption capable of performing addition and subtraction. The device must be reset before each operation by pulling out the bar at the top. The Addiator on the backside of this slide rule can handle operands up to six digits. The operand is entered by dragging a slot next to the desired digit in the appropriate column, using the provided stylus. When adding, both augend and addend are set in the upper register. When subtracting, the minuend is set in the upper register and the subtrahend in the lower register. Given that this is an article about slide rules, I shall go no further on using the Addiator. The curious may view the [YouTube videos](https://youtu.be/iz3ecu25gls) on the subject.
 
 ![FC 67/64 R back](./figures/SlideRules/FC67-64R/back.jpg)
 
-The mechanisms of the Addiator works on the same principles as the [mechanical calculator](https://en.wikipedia.org/wiki/Mechanical_calculator). But the Addiator is only 1 mm thick and fits neatly behind a pocket slide rule. I purchased this FC 67/64 R, new, straight from the Faber-Castell online store many years ago.
+The mechanisms of the Addiator works on similar principles as the [mechanical calculator](https://en.wikipedia.org/wiki/Mechanical_calculator). But the Addiator is only 1 mm thick and fits neatly behind a pocket slide rule. I purchased this FC 67/64 R, new, straight from the Faber-Castell online store, many years ago.
 
-***FC 1/98 Elektro***—The FC 1/98 is an advanced Darmstadt rule designed for electrical power engineers. As such, it has specialised scales like the $kW$ scale for computing electrical power, the $Dynamo$-$Motor$ scale for computing percent power efficiency ($η = P_{out} / P_{in}$) of generators and motors, and the $Volt$ scale for computing voltage drop along copper wires. Note that the term "dynamo" was an older name for generator, and motor is the dual of generator. The $Dynamo$-$Motor$ scale and the $Volt$ scale are engraved in the trough of the frame, under the slide. The frame has the $LL_2$ and $LL_3$, but no $LL_1$. The bottom edge of the frame holds the $K$ scale. The backside of the slide has $S$, $L$, and $T$ more commonly found on Mannheim rules, which are read through the traditional cutouts. The FC 1/98 is a rather unique rule that combines Mannheim, Darmstadt, and electrical engineering scales.
+***FC 1/98 Elektro***—The FC 1/98 is an advanced Darmstadt rule designed for electrical power engineers. It is of the classic German wood rule design—narrow and thick. As such, it has specialised scales, like the $kW$ scale for computing electrical power, the $Dynamo$-$Motor$ scale for computing percent power efficiency ($η = P_{out} / P_{in}$) of generators and motors, and the $Volt$ scale for computing voltage drop along copper wires. Note that the term "dynamo" was an older name for generator, and motor is the dual of generator. The $Dynamo$-$Motor$ scale and the $Volt$ scale are engraved in the trough of the frame, under the slide. That is a clever use of space. The frame has the $LL_2$ and $LL_3$, but no $LL_1$. The bottom edge of the frame holds the $K$ scale. The backside of the slide has $S$, $L$, and $T$ more commonly found on Mannheim rules, which are read through the traditional cutouts. So, the FC 1/98 is a rather unique rule that combines Mannheim, Darmstadt, and electrical engineering scales.
 
 ![FC 1/98](./figures/SlideRules/FC1-98/front.jpg)
 
-***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its usability and for its beauty. Contrary to popular opinion, we engineers do have the eye for aesthetics. The FC 2/83 N uses pale green backgrounds for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue backgrounds for $A$ and $B$ on the frontside. In my opinion, FC 2/83 N's colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$, $W^{'}_1$ and $W_2$, $W^{'}_2$ extended square root scales, which are lacking in the Aristo 0969. Also, the FC 2/83 N's slide has shallow grooves  on its tip, making it easier to pull out from its stowed position. These little features make big differences in usability and convenience, especially when operating under time pressure.
+The FC 1/98 is, for sure, a specialty slide rule for electrical engineers. But it is general enough to qualify as a Darmstadt-ish engineering rule. And its clever scale layout deserves recognition. As such, I chose to include it in this article. But I did leave out other specialty engineering rules in my collection that are too far off the main aim of this article: transmission line Smith chart, electronic engineering rule, mechanical engineering rule, chemical engineering rule, and so forth.
+
+***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its evident usability as well as for its quiet beauty. Yes, contrary to the prevailing view, we engineers do appreciate aesthetics and subtlety. The FC 2/83 N uses pale green backgrounds for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue backgrounds for $A$ and $B$ on the frontside. In my opinion—and this view sprang from my experience with human factors in user interface design—FC 2/83 N's understate, colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$-$W^{'}_1$ and $W_2$-$W^{'}_2$ extended square root scales, which are lacking on the Aristo 0969. That is impressive, considering the Aristo 0969 is a good half-centimetre wider than the FC 2/83 N. Also, as can be seen in the photograph below, the FC 2/83 N's slide has black grooves at its tips. These striations make it easier to pull out from its stowed position. Little things like this make big differences in usability and convenience, especially when operating under time pressure—like in an examination.
 
 ![FC 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
 
-I purchased all my slide rules on eBay, except the Aristo 0968 and the FC 8/10 which date back to my engineering student days, and the FC 67/64 R and the FC 2/83 N which I purchased new from the Faber-Castell online store many years ago, when the company still had new, old stock (NOS) slide rules.
+I would like to draw attention to the fact that the 1970s were, how shall I say it tactfully, "unique" in terms of [design taste](https://flashbak.com/wp-content/uploads/2016/09/Vincent.jpg). All right, they were loud, they were excessive. In that era of paisleys and bell-bottoms, German slide rule design—typified by the Aristo 0969, the FC 2/83 N, and the Nestler 0292—managed to remain tastefully restrained.
+
+By the way, I purchased all my slide rules on eBay, except these: the Aristo 0968 and the FC 8/10, which date back to my engineering student days in the early 1980s and the FC 67/64 R and the FC 2/83 N, which I purchased new from the Faber-Castell online store many years ago, when the company still had new, old-stock (NOS) slide rules.
 
 #### Graphoplex (FR)
 
@@ -647,9 +655,13 @@ To compute $tanh(0.5)$ using the identity $sin(gd(x)) = tanh(x)$ mentioned above
 
 Do note that care is necessary when using the $T$ scale on the Hemmi 153, because its angle $\theta$ scale goes all the way up to $90°$ and $tan(90°) = ∞$.
 
+Like the FC 1/98, the Hemmi 153 is a specialty electrical engineering slide rule. But it would be a borderline crime not to include this rule in this article, due to its innovative $G_\theta$ scale-based hyperbolic function computations.
+
 ***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log duplex vector rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D provides the more conventional $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular log-log vector rules, like K&E 4083-3 and Pickett N4-ES described below in their respective subsections.
 
 ![Hemmi 255D](./figures/SlideRules/Hemmi255D/back.jpg)
+
+The Hemmi 255D is definitely a specialty electrical engineering rule. But it is also a general engineering vector slide rule, in the same category as the famous K&E 4083-3. So, I chose to include it in this article.
 
 #### Keuffel  & Esser (US)
 
