@@ -851,7 +851,7 @@ In general, hopping about the different slide rules is considered detrimental, s
 
 #### Fowler (UK)
 
-***Fowler's Universal Calculator***—At about 8.5 cm in diameter, the Fowler's Universal Calculator is perfectly sized for the hand. Etched into the glass face cover is the fixed red hairline, aligned with the crown at 12 o'clock. Turning this crown clockwise rotates the face anticlockwise, and turning it anticlockwise rotates the face clockwise. All the scales are etched onto this one-piece, rotating face. And turning the crown at 2 o'clock clockwise rotates the clear plastic cursor bearing the black hairline clockwise, and turning it anticlockwise rotates the cursor anticlockwise. It is a bit odd that this slide rule has no $x^2$ $A$ and $B$ scales, but it has a very long, triple-cycle $\sqrt[3]{x}$ scale.
+***Fowler's Universal Calculator***—At about 8.5 cm in diameter, the Fowler's Universal Calculator is perfectly sized for the hand. Etched into the glass cover is the fixed red hairline, aligned to the crown at 12 o'clock. Turning this crown clockwise rotates the face anticlockwise, and turning it anticlockwise rotates the face clockwise. That seems weird at first sight, but it becomes natural, with use. All the scales are etched onto this one-piece, rotating face. And turning the crown at 2 o'clock clockwise rotates the clear plastic cursor bearing the black hairline clockwise, and turning it anticlockwise rotates the cursor anticlockwise. The second crown behaves more naturally. But it is odd that this slide rule has no $x^2$ $A$ and $B$ scales, but it has a very long, triple-cycle $\sqrt[3]{x}$ scale. Businessmen....
 
 ![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
 
