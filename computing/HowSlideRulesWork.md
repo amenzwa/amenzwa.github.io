@@ -359,8 +359,12 @@ It turns out that the slide rule performs this trick using the base-$e$ natural 
 
 So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
 
-- $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)] = ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
-- $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)] = ln^{-1}[log^{-1}\{log(1) - log(4) + log(ln(16))\}] = 2$
+- $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)]$
+  - $= ln^{-1}[log^{-1}\{log(4) - log(1) + log(ln(2))\}] = 16$
+
+- $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)]$
+  - $= ln^{-1}[log^{-1}\{log(1) - log(4) + log(ln(16))\}] = 2$
+
 
 We now see that the "log-log" nomenclature of engineering slide rules is a not-so-subtle nod to the function composition $\color{blue}{log} \circ \color{red}{ln}$ that appears in the expressions computing $x^{y/z}$.
 
