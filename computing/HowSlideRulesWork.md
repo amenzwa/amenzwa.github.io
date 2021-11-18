@@ -61,7 +61,7 @@ A slide rule comprises three components: the body, the slide, and the cursor. Th
 
 ## *arithmetic operations*
 
-***properties of  logarithms***—The base-$10$ common logarithm function $log_{10}(x)$ and its inverse, the power-of-10 function $10^x$, give life to the slide rule. The two main properties of logarithms upon which the slide rule relies are these:
+***properties of logarithms***—The base-$10$ common logarithm function $log_{10}(x)$ and its inverse, the power-of-10 function $10^x$, give life to the slide rule. The two main properties of logarithms upon which the slide rule relies are these:
 
 - $a × b = log^{-1}[log(a) + log(b)]$
 - $a ÷ b = log^{-1}[log(a) - log(b)]$
