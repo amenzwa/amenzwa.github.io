@@ -45,13 +45,13 @@ My main goal in writing this article is to preserve the knowledge about, and the
 
 It is mighty difficult to discuss the slide rule without having the device in hand. For the presentations below, I chose the Keuffel & Esser (K&E) 4081-3 Log Log Duplex Decitrig. It was one of the most popular engineering slide rules for decades, especially in the US. As such, many engineering professors published good introductory books for it.
 
-![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/DSC00176.JPG)
 
 The term "log-log" refers to the $LL$ scale, which is used to compute exponentiation, as will be explained, later. The term "duplex" refers to the fact that both sides of the frame are engraved with scales. The duplex arrangement was invented by [William Cox](https://mccoys-kecatalogs.com/KECollection/1744/ke_1744family.htm) in 1895 for K&E. The term "decitrig" was K&E's trade name for its slide rules that used decimal degrees for trigonometric computations, instead of minutes and seconds. Engineers prefer using the more convenient decimal notation.
 
 Another common model was the Post 1460 Versalog. Although less popular than the K&E 4081-3, the Post 1460 is cheaper and, in my opinion, is a better slide rule. It is made of bamboo, a more stable material than wood.
 
-![Post 1460](./figures/SlideRules/Post1460/front.jpg)
+![Post 1460](./figures/SlideRules/Post1460/DSC00182.JPG)
 
 Go on eBay and buy a good, inexpensive slide rule, either the [K&E 4081-3](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) or the [Post 1460](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=post+1460+versalog+slide+rule&_sacat=0); you will need a slide rule to follow the discussions below. Alternatively, you could use a [slide rule simulator](https://www.sliderules.org/react/hemmi_versalog_ii.html). After having read this article, I recommend moving on to one or more of the books listed in the resources section at the end.
 
@@ -199,33 +199,33 @@ A Mannheim slide rule has $C$ and $D$ scales for arithmetic operations ($×$ and
 
 The following is the Post 1447 simplex slide rule, manufactured by the Japanese company Hemmi in the late 1950s. As is common with Japanese slide rules, this one is made of bamboo, which is a better material than wood, because bamboo is more resistant to warping and it slides more smoothly. In slide rule parlance, the term "simplex" refers to the models with scales on only one side of the frame.
 
-![Post 1447](./figures/SlideRules/Post1447/front.jpg)
+![Post 1447](./figures/SlideRules/Post1447/DSC00149.JPG)
 
 Unlike its simplex frame, the Mannheim slide has engraved on its backside the $S$, $L$, and $T$ scales, which are read through cutout windows at each end. The plastic of the windows are etched with fixed, red indices for reading the scales. When using a simplex slide rule, one sometimes flips the slide round, depending on whether the predominant calculations are arithmetic or trigonometric.
 
-![Post 1447](./figures/SlideRules/Post1447/back.jpg)
+![Post 1447](./figures/SlideRules/Post1447/DSC00150.JPG)
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing firing solutions in the field. It had only $C$, $D$, $A$, and $B$ scales, so it was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$. This suited its intended purpose.
 
 ***Rietz type***—A slight improvement upon the Mannheim slide rule was the German Rietz type. It added the $ST$ scale for small angles in the range $[0.573°, $ $5.73°$], or in radians $[0.01, 0.1]$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices—for engineers, that is. The following is the Nestler 23 R Rietz, a famous German slide rule known to be a favourite of Albert Einstein. The 23 R dates to 1907, but the example below is from the 1930s. The frontside has $K$ and $A$ scales on the upper frame, $B$, $CI$ (reverse $C$), and $C$ scales on the slide, and $D$ and $L$ scales on the lower frame.
 
-![Nestler 23 R](./figures/SlideRules/Nestler23R/front.jpg)
+![Nestler 23 R](./figures/SlideRules/Nestler23R/DSC00151.JPG)
 
 Some slide rules, like this older Nestler 23 R (probably from the 1920s) shown below, came with magnifying cursor glass to allow a more precise reading. But I find the distorted view at the edges of the magnifier rather vexing.
 
-![Nestler 23 R with magnifier](./figures/SlideRules/Nestler23R/front-magnifier.jpg)
+![Nestler 23 R with magnifier](./figures/SlideRules/Nestler23R/DSC00153.JPG)
 
 Like the Mannheim rules, the Rietz rules have the traditional cutouts on the backside. But, of course, the backside of Rietz slides have the distinguishing $ST$ scale instead of the $L$ scale of Mannheim rules.
 
 ***Darmstadt type***—Another German innovation, the Darmstadt type, was the workhorse preferred by the early 20th century engineers. It has three $LL_n$ scales, $LL_1$, $LL_2$, and $LL_3$, used to compute general exponentiation of the form $x^{y/z} = \sqrt[z]{x^y}$, when $x > 1$. When $z = 1$, the general expression reduces to $x^y$. When $y = 1$, the general expression reduces to $x^{1/z} = \sqrt[z]{x}$. Newer, more advanced models sport the fourth $LL_0$ scale. The following is the Aristo 967 U Darmstadt from the mid 1970s.
 
-![Aristo 967 U](./figures/SlideRules/Aristo967U/front.jpg)
+![Aristo 967 U](./figures/SlideRules/Aristo967U/DSC00162.JPG)
 
 ***log-log duplex type***—Engineering slide rules generally were of the log-log duplex type. The models used by engineering students have three black $LL$ scales ($LL_1$, $LL_2$, and $LL_3$) for cases where $x > 1$ and three red $LL$ scales ($LL_{01}$, $LL_{02}$, and $LL_{03}$ running from right to left) for cases where $x < 1$. More advanced models used by professional engineers have four black-red pairs of $LL$ scales.
 
 The Faber-Castell (FC) 2/83 N Novo Duplex slide rule, shown below, was a common model used by many engineers in the mid to late 1970s. It was especially popular outside the US. It was a big (wide) slide rule. And it was arguably one of the most aesthetically pleasing slid rules ever manufactured. Aside from sporting four black-red pairs of $LL$ scales, it had $T_1$ and $T_2$ refined $tan$ scales, $W_1$ and $W_2$ specialised scale pairs for computing $\sqrt{x}$ with greater precision, and additional hairlines on the cursor for power (HP and kW) computations.
 
-![FC 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
+![FC 2/83 N](./figures/SlideRules/FC2-83N/DSC00194.JPG)
 
 Of the straight rule types, the less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who require more precision. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, the majority of the slide rules manufactured over the past two centuries were of this design.
 
@@ -235,15 +235,15 @@ Circular slide rules can be categorised into three types: simplex, pocket watch,
 
 ***simplex type***—The diameter of the FC 8/10 circular rule is only 12 cm, but in terms of capability, it is equivalent to a 25-cm Rietz straight rule. But the FC 8/10 is an atypical circular rule. Most circular rules used spiral scales, but the FC 8/10 used traditional Rietz scales in wrapped, circular form. The example shown below was made in the mid 1970s.
 
-![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
+![FC 8/10](./figures/SlideRules/FC8-10/DSC00123.JPG)
 
 ***pocket watch type***—A more typical design for circular slide rules is the pocket watch variety, like the Fowler Universal Calculator shown below. [William Fowler](https://www.nzeldes.com/HOC/Fowlers.htm) of Manchester, England, began manufacturing calculating devices in 1898. This particular model probably dates to the 1950s. Fowler slide rules were made to exacting standards, like an expensive pocket watch, and are operated like a watch, too, using the two crowns.
 
-![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
+![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/DSC00121.JPG)
 
 ***duplex type***—It is no secret that most engineers frowned upon the circular slide rule. [Seymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray), the designer of the [CRAY super computer](https://en.wikipedia.org/wiki/Cray), my favourite electrical engineer and my fellow circular slide rule fancier, [once quipped](https://youtu.be/8Z9VStbhplQ?t=713), "If you had a circular [slide rule], you had some social problems in college." But the Dempster RotaRule Model AA was the circular rule that could have temped even the most ardent straight rule enthusiast. The RotaRule is a duplex model, which is a bit of an uncommon trait among circular rules. And it is very well made. It was the brainchild of [John Dempster](http://oughtred.org/jos/Davis_DempsterRotaRule.pdf), an American mechanical engineer. The RotaRule Model AA shown below is probably from the late 1940s.
 
-![Dempster RotaRule Model AA](./figures/SlideRules/DempsterRotaRule/front.jpg)
+![Dempster RotaRule Model AA](./figures/SlideRules/DempsterRotaRule/DSC00133.JPG)
 
 ## *cylindrical rules*
 
@@ -251,7 +251,7 @@ All cylindrical rules emphasise precision, so they all have very long scales. So
 
 ***pocket type***—The Otis King Model L, shown below, is a contradiction: it is a compact cylindrical rule that, when collapsed, is well shy of an open palm. Portability wise, this cylindrical rule could compete with larger pocket watch type circular rules. But because the Model L employs helical scales, its precision is far superior to that of straight and circular rules. This particular Model L is likely from the 1950s.
 
-![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
+![Otis King Model L](./figures/SlideRules/OtisKingL/DSC00148.JPG)
 
 ***desk type***—One of the giants of cylindrical rules was the [K&E 1740](https://www.si.edu/object/keuffel-esser-1740-thacher-cylindrical-slide-rule:nmah_1131289), designed in 1881 by [Edwin Thacher](https://www.si.edu/spotlight/slide-rules/cylindrical-slide-rules), an American engineer working for K&E. I have never seen this device in person, so I do not know the finer points of how it was used. The [general operating principles](https://youtu.be/EsDCXxn4Fpk?t=68) are similar to that of the Otis King Model K: the outer cylinder is mounted to the frame but it can spin in place. The inner cylinder shifts and spins independently of the outer cylinder. The inner cylinder's scale is read through the slits in the outer cylinder's scale. Thus, the outer cylinder is analogous to the straight rule's frame, and the inner cylinder is analogous to the straight rule's slide. There is, however, no cursor or pointer on this device. The first Thacher model dates to 1881. The one shown in the photograph blow, a museum piece, is probably a late model from the 1950s, by the look of it.
 
@@ -271,7 +271,7 @@ In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English ex
 
 The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $\pi$, thereby shifting the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales on the slide.
 
-![folded and inverted scales](./figures/SlideRules/K&E4081-3/front.jpg)
+![folded and inverted scales](./figures/SlideRules/K&E4081-3/DSC00176.JPG)
 
 These auxiliary arithmetic scales often reduce the slide and cursor movement distances considerably, thereby speeding up computations. But I shall not present the detailed procedures on using these scales, because they are procedural optimisations not essential to understanding slide rule fundamentals. Interested readers may refer to the user's manuals, which are listed in the resource section at the end of the article.
 
@@ -580,7 +580,7 @@ Before we proceed, here are some admonishments for those who are buying slide ru
 
 ***Aristo 967 U Darmstadt***—The Aristo 967 U is one of the most advanced Darmstadt slide rules ever made. Unlike the older Darmstadt rules, the backside of Aristo 967 U is clear plastic, which allows the user to see the entire backside of the slide. Like other Darmstadt rules, the Aristo 967 U's slide holds the $LL_1$, $LL_2$, and $LL_3$ scales on the backside. But somewhat unusually, the $L$ scale is on the backside of the slide, as well. And in the tradition of Darmstadt, this slide rule is simplex. As such, the cursor does not reach the backside; the backside scales are read against the traditional red index marks at each end of the rule. Typical of all Aristo slide rules, the frame, the slide, and the cursor are made of a very high quality plastic. All these bits glide smoothly.
 
-![Aristo 967 U](./figures/SlideRules/Aristo967U/front.jpg)
+![Aristo 967 U](./figures/SlideRules/Aristo967U/DSC00162.JPG)
 
 Many late-model, plastic Darmstadt rules, like the Aristo 967 U, have thin lips protruding from the frame. These portions are often marked with 25-cm and 10-in ruler scales. Unfortunately, the corners of these lips are rather fragile. If the slide rule was mistreated, the corners chip easily. Pay attention to this type of damage, when purchasing a plastic Darmstadt.
 
@@ -588,45 +588,45 @@ Frankly, I fail to see the value of the 25-cm and 10-in ruler scales. All engine
 
 ***Aristo 0968 Studio***—This Aristo 0968 was my first slide rule, purchased from the government store in Burma, circa 1982. This is an ordinary log-log duplex engineering straight rule, like the K&E 4081-3. But this slide rule is about half a centimetre wider than the K&E 4081-3, which affords a couple of extra scales and a more logical scale layout. The Aristo 0968 has the Pythagorean $P$ scale for computing $1 - x^2$ and two $tan$ scales $T_1 [5.5°, 45°]$ and $T_2 [45°, 84.5°]$, which the K&E 4081-3 does not. And all six $LL$ scales are placed on the backside, making it a much more convenient rule to use. Indeed, usability is the hallmark of European and Asian slide rules; this is the area in which American slide rules falter.
 
-![Aristo 0968](./figures/SlideRules/Aristo0968/front.jpg)
+![Aristo 0968](./figures/SlideRules/Aristo0968/DSC00188.JPG)
 
 ***Aristo 0969 StudioLog***—The Arist 0969 is a top-of-the-line engineering duplex slide rule, with four pairs of $LL$ scales, $P$ scale, etc. In terms of capabilities, it is identical to its more famous competitor, the FC 2/83 N. But being half centimetre or so wider, it is a monster of a straight rule. This extra real estate allows a bit of extra space between the scales, making them arguably easier to read. But the extra-wide frame is a bit awkward, when flipping.
 
-![Aristo 0969](./figures/SlideRules/Aristo0969/front.jpg)
+![Aristo 0969](./figures/SlideRules/Aristo0969/DSC00190.JPG)
 
 #### Blundell-Harling (UK)
 
 ***BRL D.26 Darmstadt***—The BRL D.26 is a late model Darmstadt. In terms of capabilities, the BRL D.26 is comparable to its contemporary, the Aristo 0967 U. But this English rule's build quality is obviously superior to that of its German competitor. The backside of the BRL D.26 sports the traditional cutout for reading the three $LL_n$ scales.
 
-![BRL D.26](./figures/SlideRules/BRLD26/front.jpg)
+![BRL D.26](./figures/SlideRules/BRLD26/DSC00164.JPG)
 
 #### Faber-Castell (DE)
 
 ***FC 1/54 Darmstadt***—I rather like the sensible scale layout of the FC 1/54. The back of the slide has the usual three $LL_n$ scales, which are read through the traditional cutouts. Being of a classic German simplex design, this rule is narrow, but quite thick, compared to modern straight rules. This thickness gives enough space to the top and bottom edges of the frame for additional scales. The top edge has the 27-cm ruler scale and the $L$ scale, and the bottom edge has the $S$ and the $T$ trigonometric scales.
 
-![FC 1/54](./figures/SlideRules/FC1-54/front.jpg)
+![FC 1/54](./figures/SlideRules/FC1-54/DSC00158.JPG)
 
 As I stated earlier, I adore Darmstadt rules. The FC 1/54 is one of my favourite Darmstadt rules. But it is not my absolute favourite Darmstadt rule. What is my absolute favourite? Read on.
 
 ***FC 67/64 R Pocket Darmstadt mit Addiator***—The FC 67/64 R is a Darmstadt pocket straight rule of about 15 cm in length. Being a Darmstadt rule, the backside of its slide has the usual three $LL_n$ scales. But instead of the traditional cutouts, the backside of the slide rule is occupied by a metal Addiator. As such, the only way to use the $LL_n$ scales is to flip the slide round to the front.
 
-![FC 67/64 R front](./figures/SlideRules/FC67-64R/front.jpg)
+![FC 67/64 R front](./figures/SlideRules/FC67-64R/DSC00139.JPG)
 
 The [Addiator](https://en.wikipedia.org/wiki/Addiator) is a clever little contraption capable of performing addition and subtraction. The device must be reset before each operation by pulling out the bar at the top. The Addiator on the backside of this slide rule can handle operands up to six digits. The operand is entered by dragging a slot next to the desired digit in the appropriate column, using the provided stylus. When adding, both augend and addend are set in the upper register. When subtracting, the minuend is set in the upper register and the subtrahend in the lower register. Given that this is an article about slide rules, I shall go no further on using the Addiator. The curious may view the [YouTube videos](https://youtu.be/iz3ecu25gls) on the subject.
 
-![FC 67/64 R back](./figures/SlideRules/FC67-64R/back.jpg)
+![FC 67/64 R back](./figures/SlideRules/FC67-64R/DSC00140.JPG)
 
 The mechanisms of the Addiator works on similar principles as the [mechanical calculator](https://en.wikipedia.org/wiki/Mechanical_calculator). But the Addiator is only 1 mm thick and fits neatly behind a pocket slide rule. I purchased this FC 67/64 R, new, straight from the Faber-Castell online store, many years ago.
 
 ***FC 1/98 Elektro***—The FC 1/98 is an advanced Darmstadt rule designed for electrical power engineers. It is of the classic German simplex design—narrow and thick. As such, it has specialised scales, like the $kW$ scale for computing electrical power, the $Dynamo$-$Motor$ scale for computing percent power efficiency ($η = P_{out} / P_{in}$) of generators and motors, and the $Volt$ scale for computing voltage drop along copper wires. Note that the term "dynamo" was an older name for generator, and motor is the dual of generator. The $Dynamo$-$Motor$ scale and the $Volt$ scale are engraved in the trough of the frame, under the slide. That is a clever use of space. The frame has the $LL_2$ and $LL_3$, but no $LL_1$. The bottom edge of the frame holds the $K$ scale. The backside of the slide has $S$, $L$, and $T$ more commonly found on Mannheim rules, which are read through the traditional cutouts. So, the FC 1/98 is a rather unique rule that combines Mannheim, Darmstadt, and electrical engineering scales.
 
-![FC 1/98](./figures/SlideRules/FC1-98/front.jpg)
+![FC 1/98](./figures/SlideRules/FC1-98/DSC00160.JPG)
 
 The FC 1/98 is, for sure, a specialty slide rule for electrical engineers. But it is general enough to qualify as a Darmstadt-ish engineering rule. And its clever scale layout deserves recognition. As such, I chose to include it in this article. But I did leave out other specialty engineering rules in my collection that are too far off the main aim of this article: transmission line Smith chart, electronic engineering rule, mechanical engineering rule, chemical engineering rule, and so forth.
 
 ***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its evident usability as well as for its quiet beauty. Yes, contrary to the prevailing view, we engineers do appreciate aesthetics and subtlety. The FC 2/83 N uses pale green backgrounds for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue backgrounds for $A$ and $B$ on the frontside. In my opinion—and this view sprang from my experience with human factors in user interface design—FC 2/83 N's understate, colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$-$W^{'}_1$ and $W_2$-$W^{'}_2$ extended square root scales, which are lacking on the Aristo 0969. That is impressive, considering the Aristo 0969 is a good half-centimetre wider than the FC 2/83 N. Also, as can be seen in the photograph below, the FC 2/83 N's slide has black grooves at its tips. These striations make it easier to pull out from its stowed position. Little things like this make big differences in usability and convenience, especially when operating under time pressure—like in an examination.
 
-![FC 2/83 N](./figures/SlideRules/FC2-83N/front.jpg)
+![FC 2/83 N](./figures/SlideRules/FC2-83N/DSC00194.JPG)
 
 I would like to draw attention to the fact that the 1970s were, how shall I say it tactfully, "unique" in terms of [design taste](https://flashbak.com/wp-content/uploads/2016/09/Vincent.jpg). All right, they were loud, they were excessive. In that era of paisleys and bell-bottoms, German slide rule design—typified by the Aristo 0969, the FC 2/83 N, and the Nestler 0292—managed to remain tastefully restrained.
 
@@ -636,11 +636,11 @@ By the way, I purchased all my slide rules on eBay, except these: the Aristo 096
 
 ***Graphoplex 643 Pocket Electric Log Log***—The Graphoplex 643 is an advanced pocket rule. Of all my pocket rules—which I have but a few, due to my poor eyesight—I find this one the easiest to read. This pocket rule is a miniature version of the Graphoplex 640. See the full description in the Graphoplex 640 subsection, below.
 
-![Graphoplex 643](./figures/SlideRules/Graphoplex643/front.jpg)
+![Graphoplex 643](./figures/SlideRules/Graphoplex643/DSC00141.JPG)
 
 ***Graphoplex 640 Electric Log Log***—The Graphoplex 640 is another topping Darmstadt rule, like the BRL D.26. But breaking from the Darmstadt tradition, the Graphoplex 640 places the three $LL_n$ scales on the lower frame on the front of the slide rule. And the backside of the slide sports $cos$, $sin$, $tan$, and $C$ scales. This scale layout of placing the $LL_n$ scales, together with the $D$, $C$, and trigonometric scales, significantly improves the usability by reducing the need frequently to flip the slide rule.
 
-![Graphoplex 640](./figures/SlideRules/Graphoplex640/front.jpg)
+![Graphoplex 640](./figures/SlideRules/Graphoplex640/DSC00166.JPG)
 
 The Graphoplex 643 and the Graphoplex 640 were marketed as specialty electrical engineering slide rules. But I included them in this article, because they are excellent Darmstadt rules, too. I like them very much indeed. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
 
@@ -648,17 +648,17 @@ The Graphoplex 643 and the Graphoplex 640 were marketed as specialty electrical 
 
 ***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is a marvel: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
 
-![Hemmi 135](./figures/SlideRules/Hemmi135/front.jpg)
+![Hemmi 135](./figures/SlideRules/Hemmi135/DSC00137.JPG)
 
-***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule. There, I said it. I would very much like to have owned this rule, when I was a young engineering student those many years ago. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Unusually for a simplex rule, the backside of the slide has five scales: $L$, $LL_0$, $LL_1$, $LL_2$, and $LL_3$. This makes this slide rule one of the most powerful Darmstadt rules, capabilities wise.
+***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule. There, I said it. I would very much like to have owned this rule, when I was a young engineering student those many years ago. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside.
 
-![Hemmi 130W](./figures/SlideRules/Hemmi130W/front.jpg)
+![Hemmi 130W](./figures/SlideRules/Hemmi130W/DSC00168.JPG)
+
+Traditional Darmstadt rules have only $LL_1$, $LL_2$, and $LL_3$ on the backside of the slide. But the Hemmi 130W has $LL_0$, $LL_1$, $LL_2$, and $LL_3$. This makes this slide rule one of the most powerful Darmstadt simplex rules, capabilities wise. The $L$ and the $LL_n$ scales are read through the cutouts at each end. The plastic cover of each cutout is inscribed with a thin red index line for reading the scales.
+
+![Hemmi 130W](./figures/SlideRules/Hemmi130W/DSC00169.JPG)
 
 I adore Darmstadt rules. I said so, frequently. And the Hemmi 130W is my absolute favourite Darmstadt rule. Yet, I think Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. The top edge of the frame holds a vapid 27-cm ruler and the bottom edge holds an odd zero-centred 26-cm ruler with 13-cm linear scales sprinting out to each end. Hemmi should, instead, have inscribed more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scales, on the frame edges.
-
-***Hemmi 149A Pocket Log Log Duplex Decitrig***—The Hemmi 149A pocket duplex rule is a proportionate, but simpler and smaller, version of the Post 1461 pocket Versalog II which, in turn, is a miniature version of the Hemmi-made Post 1460 Versalog II. See the full description in the Post 1460 subsection, below.
-
-![Hemmi 149A](./figures/SlideRules/Hemmi149A/front.jpg)
 
 ***Hemmi 153 Electrical Engineer***—The Hemmi 153 is a log-log vector duplex rule cherished by electrical power engineers. In terms of power, this slide rule is comparable to the more popular K&E 4083-3 described below in the K&E section. But the Hemmi 153 computes the hyperbolic functions in a rather unique and ingenious way, using the [Gudermannian function](https://en.wikipedia.org/wiki/Gudermannian_function): $gd(x) = sin^{-1}(tanh(x)) = tan^{-1}(sinh(x))$. The function $gd$ relates trigonometric functions with hyperbolic functions:
 
@@ -671,7 +671,7 @@ I adore Darmstadt rules. I said so, frequently. And the Hemmi 130W is my absolut
 
 The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, expands the power of the Hemmi 153 by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the design ideal of pragmatic minimalism.
 
-![Hemmi 153](./figures/SlideRules/Hemmi153/back.jpg)
+![Hemmi 153](./figures/SlideRules/Hemmi153/DSC00185.JPG)
 
 To compute $sin(30°)$, we manipulate the slide rule as follows:
 
@@ -692,6 +692,8 @@ Now, the cleverer bit: computing hyperbolic functions in the absence of hyperbol
 - $G_\theta$—Place the hairline on the *argument* $0.5$ on the $G_\theta$ scale. This computes $gd(0.5)$.
 - $T$—Read under the hairline the *result* $0.521$ on the $T$ scale. This computes $sinh(0.5) = tan(gd(0.5)) = 0.521$.
 
+![Hemmi 153](./figures/SlideRules/Hemmi153/DSC00184.JPG)
+
 To compute $tanh(0.5)$ using the identity $sin(gd(x)) = tanh(x)$ mentioned above, we manipulate the slide rule as follows:
 
 - $G_\theta$—Place the hairline on the *argument* $0.5$ on the $G_\theta$ scale. This computes $gd(0.5)$.
@@ -703,7 +705,7 @@ Like the FC 1/98, the Hemmi 153 is a specialty electrical engineering slide rule
 
 ***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log vector duplex rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D employs the more conventional hyperbolic $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular log-log vector rules, like K&E 4083-3 and Pickett N4-ES described below in their respective subsections.
 
-![Hemmi 255D](./figures/SlideRules/Hemmi255D/back.jpg)
+![Hemmi 255D](./figures/SlideRules/Hemmi255D/DSC00187.JPG)
 
 The Hemmi 255D is definitely a specialty electrical engineering rule. But it is also a general engineering vector slide rule, in the same category as the famous K&E 4083-3. So, I chose to include it in this article.
 
@@ -711,17 +713,17 @@ The Hemmi 255D is definitely a specialty electrical engineering rule. But it is 
 
 ***K&E 4181-1 Pocket Log Log Duplex Decitrig***—The K&E 4181-1 is a miniature version of the K&E 4081-3. But whereas the K&E 4081-3 is made of wood, the K&E 4181-1 is made of plastic. And unlike European plastics, the plastic of this slide rule feels cheap. See the full description in the K&E 4081-3 subsection, below.
 
-![K&E 4181-1](./figures/SlideRules/K&E4181-1/front.jpg)
+![K&E 4181-1](./figures/SlideRules/K&E4181-1/DSC00143.JPG)
 
 ***K&E 4081-3 Log Log Duplex Decitrig***—The K&E 4081-3 is the quintessential engineering slide rule. Its design is old and basic, but its implementation good and enduring. In a way, the K&E 4081-3 is the [Ford Model T](https://en.wikipedia.org/wiki/Ford_Model_T) of engineering slide rules. It does have a few usability quirks, such as the $LL_1$ and $LL_{01}$ being relegated to the backside. But such compromises are inevitable, given the compactness of this slide rule.
 
-![K&E 4081-3](./figures/SlideRules/K&E4081-3/front.jpg)
+![K&E 4081-3](./figures/SlideRules/K&E4081-3/DSC00176.JPG)
 
 This slide rule was the most popular slide rule in America. Although it is a very good slide rule, the wood core is easily damaged, when mistreated. And because they were inexpensive, many owners abused them. As such, many K&E 4081-3 slide rules being sold on eBay are warped, and hence are useless. Good ones do pop up every so often; so, be patient. The same admonishment applies to all wood rules, especially the very old ones made in the early 20th century or before.
 
 ***K&E 68-1100 Deci-Lon 10***—The K&E 68-1100 is one of the last, and most refined, engineering slide rules from K&E, designed to compete with late model German slide rules: Aristo 0969, FC 2/83 N, and Nester 0292. And like other newer K&E rules, the K&E 68-1100 is made of plastic that is on the cheap side, compared to the European plastics. The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But to those of us who are used to the common, symmetric design, the lopsided frame feels awkward when flipping.
 
-![K&E 68-1100](./figures/SlideRules/K&E68-1100/front.jpg)
+![K&E 68-1100](./figures/SlideRules/K&E68-1100/DSC00180.JPG)
 
 ***K&E 4083-3 Log Log Duplex Vector***—The K&E 4083-3 was one of the earliest advanced engineering slide rules with hyperbolic sine $Sh$ and hyperbolic tangent $Th$ scales. These vector rules were popular with mechanical and civil engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
 
@@ -736,9 +738,9 @@ Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit
 
 Electrical power engineers (as opposed to electronic engineers) use hyperbolic functions to compute impedances (and hence, voltages and currents, by [Ohm's law](https://en.wikipedia.org/wiki/Ohm's_law)) on long-distant power transmission lines that stretch several hundred kilometres. Electrical engineers model the impedance of a long transmission line using the [$\pi$ model](http://www.egr.unlv.edu/~eebag/TRANSMISSION%20LINES.pdf), which represents the long cable as a series connection of short, individual segments, like a long chain made of small, individual links. Electrical power engineering deals with electric motors, transmission lines, etc., and much of the work in this discipline involves [vector calculus](https://en.wikipedia.org/wiki/Vector_calculus). The "vector" designation of the K&E 4083-3 might well trace its origin to electrical power engineers' obsession with vector calculus and hyperbolic slide rules.
 
-Catenary of chain and impedance of power line can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like the K&E 4083-3.
+Catenary of chain and impedance of power line can be computed using the $C$, $D$, $CI$, $DI$, and other arithmetic scales in combination with $Sh$ and $Th$ hyperbolic scales on a vector slide rule, like those on the backside of the K&E 4083-3.
 
-![K&E 4083-3](./figures/SlideRules/K&E4083-3/front.jpg)
+![K&E 4083-3](./figures/SlideRules/K&E4083-3/DSC00179.JPG)
 
 However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary log-log duplex slide rule, like the K&E 4081-3, can compute hyperbolic functions using the following equations and the $LL$ scales, albeit rather tediously:
 
@@ -755,63 +757,73 @@ In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is
 
 #### Logarex (CZ)
 
-***Logarex 27403-X Darmstadt***—The Logarax 27403-X is a late model, simplex Darmstadt with three $LL_n$ scales on the backside of the slide. But whereas the traditional Darmstadt rule has a closed backside and cutouts on each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. The black indices on each end permit reading only the $LL_1$ and $LL_3$ scales. The $LL_2$ scale in the middle of the slide is hidden by the frame back. This is a design blunder. So, to use the $LL_n$ scales effectively, the slide must be flipped to the front.
+***Logarex 27403-X Darmstadt***—The Logarax 27403-X is a late model, simplex Darmstadt with traditional Darmstadt scales on the frontside, and three $LL_n$ scales on the backside of the slide.
 
-![Logarex 27403-X](./figures/SlideRules/Logarex27403X/front.jpg)
+![Logarex 27403-X](./figures/SlideRules/Logarex27403X/DSC00170.JPG)
+
+But whereas a traditional Darmstadt rule has a closed backside and cutouts at each end for reading the $LL_n$ scales, the backside of the Logarax 27403-X is open like a duplex rule and there are no cutouts with red indices. The black indices at each end of the frame permit reading only the $LL_1$ and $LL_3$ scales. But there is no way to read the $LL_2$ scale in the middle of the slide, unless one uses a ruler or a piece of paper as a makeshift index. The only way to use the $LL_n$ scales effectively is to flip the slide round to the front. This is a design blunder.
+
+![Logarex 27403-X](./figures/SlideRules/Logarex27403X/DSC00171.JPG)
+
+
 
 #### Nestler (DE)
 
 ***Nestler 23 R/3 Rietz***—The Nestler 23 R was favoured by very illustrious scientists and engineers, including [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), [Wernher von Braun](https://en.wikipedia.org/wiki/Wernher_von_Braun), and [Sergei Korolev](https://en.wikipedia.org/wiki/Sergei_Korolev). It is a typical Rietz rule, with a typical Rietz scale layout. Perhaps it was this simplicity that attracted these greatest scientific minds of the 20th century.
 
-![Nestler 23 R](./figures/SlideRules/Nestler23R/front.jpg)
+![Nestler 23 R](./figures/SlideRules/Nestler23R/DSC00151.JPG)
 
 Yet, there is something subversively quirky about the Nestler 23 R. Being of the classic German simplex design, this slide rule is thick enough to have space on the top and bottom edges of the frame for additional scales. The Nestler 23 R has a 27-cm ruler scale on the top edge of the frame and the bottom edge of the frame is either blank or has a $1:25$ scale. The $1:25$ scale is $27.2$ cm in length, and is divided linearly into $7$ major divisions. I do not know the purpose of this quirky scale.
 
 ***Nestler 0210 Darmstadt***—Of the Nestler slide rules I own, the Nestler 0210 is my favourite. This slide rule is minimalistic, but powerful. The backside of the slide has the $LL_n$ scale typical of Darmstadt rules. And given its classic German simplex proportions, the thick edges sport more useful rules. The top edge of the frame holds the 27-cm ruler scale and the $L$ scale. The bottom edge of the frame holds the $S$ and $T$ scales. This design is practical, logical, and compact.
 
-![Nestler 0210](./figures/SlideRules/Nestler0210/front.jpg)
+![Nestler 0210](./figures/SlideRules/Nestler0210/DSC00156.JPG)
 
 ***Nestler 0292 Multimath-Duplex***—I like the appearance of Nestler slide rules for their understated elegance and subtle power. Being a late model advanced log-log duplex engineering rule, the Nestler 0292 possesses the same computing power as those top-of-the-line models from other manufacturers: Aristo 0969, FC 2/83 N, K&E 68-1100, Pickett N3-ES, et al. In my view, the Nester 0292 beats them all in both usability and beauty. No offence intended to those who admire the FC 2/83 N's looks; indeed, I like that slide rule very well, only not as much as I like the Nestler 0292. Whereas the FC 2/83 N shouts out its power, the Nestler 0292 expresses its power, quietly. It is appreciably slimmer than the FC 2/83 N, so it feels more comfortable in the hand, especially for those of us who grew up on smaller rules, like the Aristo 0968. And it employs only one colour, the pale green background, which covers both sides of the slide. I am of the opinion that the Nestler 0292 is an embodiment of engineering philosophy: elegant simplicity, effortless efficiency, quiet power.
 
-![Nestler 0292](./figures/SlideRules/Nestler0292/front.jpg)
+![Nestler 0292](./figures/SlideRules/Nestler0292/DSC00192.JPG)
 
 #### Pickett & Eckel (US)
 
 ***Pickett N3-ES Power Log Exponential***—The Pickett N3-ES is a late model log-log duplex engineering slide rule. Like its competitors, it has eight $LL$ scales. Pickett cleverly stacked the $LL_n$ and $LL_{0n}$ scales on the same line—$LL_0$ is paired with $LL_{00}$, $LL_1$ with $LL_{01}$, and so on—thus yielding a more logical, and space-saving, scale layout. But it could be argued that stacked scales are more difficult to read. To each his own.
 
-![Pickett N3-ES](./figures/SlideRules/PickettN3ES/front.jpg)
+![Pickett N3-ES](./figures/SlideRules/PickettN3ES/DSC00196.JPG)
 
 I rather like this stacked scale layout. But I cannot countenance the economy feel and the impertinent colour of this slide rule. And it is significantly wider and weightier, compared to the late model German log-log duplex rules. So, the Pickett N3-ES is cumbersome and cheap, but reliable and stout.
 
 ***Pickett N4-ES Vector Log Log Dual-Based Speed Rule***—The Pickett N4-ES is the vectorised version of the Pickett N3-ES. As such, the Pickett N4-ES adds the hyperbolic $Sh$ and $Th$ scales. It is peculiar, though, that this slide rule labels its $LL$ scales from $LL_1$-$LL_{01}$ to $LL_4$-$LL_{04}$, instead of employing the more conventional scheme, which goes from $LL_0$-$LL_{00}$ to $LL_3$-$LL_{03}$. I dislike this slide rule, too.
 
-![Pickett N4-ES](./figures/SlideRules/PickettN4ES/front.jpg)
+![Pickett N4-ES](./figures/SlideRules/PickettN4ES/DSC00198.JPG)
 
 #### Frederick Post (US)
 
 ***Post 1447 Mannheim***—The Post 1447 was an honest slide rule fit for innocent high schoolers. It is of the traditional Mannheim simplex design. It has the usual $C$, $D$, $A$, $B$, $S$, $L$, and $T$ scales on the frontside. The $S$, $L$, and $T$ scales are on the backside of the slide, which are read through the cutouts on the backside of the frame.
 
-![Post 1447](./figures/SlideRules/Post1447/front.jpg)
+![Post 1447](./figures/SlideRules/Post1447/DSC00149.JPG)
 
 In my youth, fortunate middle schoolers and high schoolers learned to use the slide rule on a superb Mannheim rule, like the Post 1447. The cursed, though, had to settle for something vapid, like the [Sterling Acumath 400](https://www.sliderulemuseum.com/Acumath/Acu-Math_No400_PlainEdgeStock_OneSidedCursor_GiftOfWilliamMulroy.jpg).
 
 ***Post 1461 Pocket Versalog II***—The Post 1461 is a miniature version of the Post 1460. See the full description in the Post 1460 subsection, below.
 
-![Post 1461](./figures/SlideRules/Post1461/front.jpg)
+![Post 1461](./figures/SlideRules/Post1461/DSC00145.JPG)
 
 ***Post 1460 Versalog II***—The Post 1460 is a direct competitor, albeit more refined, to the K&E 4081-3 standard log-log duplex engineering slide rule. But in my view, the Post 1460 is superior, in terms of appearance, feel, durability, and usability. The Versalog II has a green $cos$ scale, but the original Versalog has a dark blue $cos$ scale.
 
-![Post 1460](./figures/SlideRules/Post1460/front.jpg)
+![Post 1460](./figures/SlideRules/Post1460/DSC00182.JPG)
 
 #### Reiss (DE)
 
-***Reiss 3214 Darmstadt Record***—The Reiss 3214 feels as solid and smooth as other European late model rules. It is a plastic duplex rule, which is a break from the Darmstadt simplex tradition. Nevertheless, it is a Darmstadt rule in a sense that it has three $LL_n$ scales, but no $LL_{0n}$ scales. And like a traditional Darmstadt rule, its frame is not adjustable.
-
-![Reiss 3214](./figures/SlideRules/Reiss3214/front.jpg)
-
 ***Reiss Darmstadt***—This slide rule is a traditional Darmstadt rule, but it is made of aluminium. In terms of quality, this slide rule is as good as any European model, and is much better made than the Pickett aluminium rules. Being much slimmer than Pickett N3-ES, the Reiss Darmstadt rule is easier to handle. Still, I dislike its cold, sharp construction.
 
-![Reiss Darmstadt](./figures/SlideRules/ReissDarmstadt/front.jpg)
+![Reiss Darmstadt](./figures/SlideRules/ReissDarmstadt/DSC00172.JPG)
+
+***Reiss 3214 Darmstadt Record***—The Reiss 3214 feels as solid and smooth as other European late model rules. It is a late model advanced Darmstadt rule. But its duplex design breaks with tradition.
+
+![Reiss 3214](./figures/SlideRules/Reiss3214/DSC00174.JPG)
+
+The backside of the Reiss 3214 has three $LL_n$ scales, but being a Darmstadt rule, it has no $LL_{0n}$ scales. And in keeping with the Darmstadt tradition, the frame is not adjustable.
+
+![Reiss 3214](./figures/SlideRules/Reiss3214/DSC00175.JPG)
 
 ## *circular rules*
 
@@ -825,7 +837,7 @@ In my youth, fortunate middle schoolers and high schoolers learned to use the sl
 
 ***Concise Model 300***—The Concise 300 is a low-cost, compact, duplex circular rule. It uses pared-down Darmstadt scales, providing only $LL_2$ and $LL_3$. But it provides two $tan$ scales, $T_1$ and $T_2$. In terms of computing power, this slide rule is almost as capable as the Nestler 0210.
 
-![Concise Model 300](./figures/SlideRules/Concise300/front.jpg)
+![Concise Model 300](./figures/SlideRules/Concise300/DSC00125.JPG)
 
 The Concise 300 is held with the $1$ index mark pointing up, and is flipped left-to-right. For its price, this is a decent slide rule. But it does not stack up well against other Japanese-made slide rules, in terms of workmanship.
 
@@ -835,7 +847,7 @@ I purchased this Concise Model 300, new, straight from the Concise [online store
 
 ***Dempster RotaRule Model AA***—The Dempster RotaRule is undoubtedly the most desirable log-log duplex engineering circular rule. It was designed and manufactured by an engineer for use in engineering. The phrase "engineering circular rule" is an oxymoron, given that circular slide rules were a favourite of businessmen and most engineers disliked circular rules. But the Dempster RotaRule is a different kind of circular rule. In addition to the usual assortment of scales, it has the scales that engineers need: the trigonometric scales, the four $LL_n$ scales, and the Pythagorean $\sqrt{x^2 + y^2}$ scale. At about 13 cm in diameter, this slide rule is about the same size as the simplex FC 8/10. But unlike the FC 8/10's 25-cm circular scale, the RotaRule has a 127-cm spiral $C$ and $D$ scales plus a 254-cm quadruple-cycle $LL$ scale. And it even has a surveyor's $Stadia$ scale and a financier's $Monthly\ Interest$ scale, making it suitable to both technical and business uses. Because the outer portion of the disc (analogue of straight rule's frame) is fixed and the inner portion (analogue of straight rule's slide) rotates, the RotaRule needs only one cursor. And this cursor is well made to the point of being over engineered: it has a sturdy frame equipped with a friction lock, and its central hub has hole to plant a small, brass-framed magnifier that comes with the device.
 
-![Dempster RotaRule](./figures/SlideRules/DempsterRotaRule/front.jpg)
+![Dempster RotaRule](./figures/SlideRules/DempsterRotaRule/DSC00133.JPG)
 
 Somewhat unusually, the Dempster RotaRule places the trigonometric scales on the frontside. This slide rule is held with the $1$ index mark pointing down, and is flipped left-to-right. The all-important $LL_n$ scales are on the backside.
 
@@ -845,7 +857,7 @@ The Dempster RotaRule inspired the [Boykin RotaRule Model 510](https://www.slide
 
 ***FC 8/10***—As an engineering student in the early 1980s in Burma, I used the FC 8/10 circular slide rule, shown below, which was a hand-me-down from my engineer aunt. The FC 8/10 is a simplex circular rule. It uses aesthetically pleasing pale yellow and pale green backgrounds for some of the scales. I consider this slide rule one of the prettiest of all engineering tools. I liked the FC 8/10, not only for its beauty, but also because it was well made, accurate, inexpensive, unique, and compact. All the scales are engraved onto the exposed plastic face. The outer portion of the face is fixed to the body, and the rotatable inner portion of the face is operated using both thumbs, pushing against each other. And the cursor with the hairline rotates across the face over the scales.
 
-![FC 8/10](./figures/SlideRules/FC8-10/front.jpg)
+![FC 8/10](./figures/SlideRules/FC8-10/DSC00123.JPG)
 
 As an engineering student, I used the FC 8/10 for ordinary, daily tasks. But when I needed the $LL$ scales, say for laboratory work and examinations, I used the Aristo 0968 log-log duplex.
 
@@ -855,13 +867,13 @@ In general, hopping about the different slide rules is considered detrimental, s
 
 ***Fowler's Universal Calculator***—At about 8.5 cm in diameter, the Fowler's Universal Calculator is perfectly sized for the hand. Etched into the glass cover is the fixed red hairline, aligned to the crown at 12 o'clock. Turning this crown clockwise rotates the face anticlockwise, and turning it anticlockwise rotates the face clockwise. That seems weird at first sight, but it becomes natural, with use. All the scales are etched onto this one-piece, rotating face. And turning the crown at 2 o'clock clockwise rotates the clear plastic cursor bearing the black hairline clockwise, and turning it anticlockwise rotates the cursor anticlockwise. The second crown behaves more naturally. But it is odd that this slide rule has no $x^2$ $A$ and $B$ scales, yet it has a very long, triple-cycle $\sqrt[3]{x}$ scale. Business logic, as they say.
 
-![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/front.jpg)
+![Fowler Universal Calculator](./figures/SlideRules/FowlerUniversal/DSC00121.JPG)
 
 #### Gilson (US)
 
 ***Gilson Binary***—The Gilson Binary is a cheaply-made, large, thin, aluminium disc of nearly 22 cm in diameter. Given its immense size, it is capable of very high precision calculations. And its two-arm cursor mechanism is quite clever. The frontside has $C$, $CI$, $A$, $K$, $L$, $LL_0$, $LL_1$, $LL_2$, $LL_3$, fraction multiplication and division scale, and millimetre to fractional inch conversion scale pair. Engineers round the world have always deemed fractions to be annoyances, like a piece of food stuck between the teeth. But to American engineers of yore, fractions were their bread-and-butter. Thankfully, fractions are no longer a thing in American engineering today, although they still dominate factory floors, as do the Imperial measurement system—depressing, really. The $C$ scale is over 60 cm in length. The range of the entire clockwise, quadruple-cycle $LL_n$ scale is an impressive $[1.0015, 10^6]$. The tan-colour face is punctuated with bright yellow scale background rings: the $LL_0$ has tan background, $LL_1$ has yellow background, etc. This somewhat eases the daunting task of chasing the mammoth $LL$ scale round the large face. The front face has two clear plastic cursors, one longer than the other. When the long cursor is moved, the short cursor also moves in lock step. But the short cursor can be moved independently of the long cursor. Suffice it to say the Gilson Binary's design is unique. Without the aid of a manual, even experienced straight rule users would be hard pressed to figure out how properly to use it. But once its quirks have been discovered, it is just as simple to use as a straight rule.
 
-![Gilson Binary](./figures/SlideRules/GilsonBinary/front.jpg)
+![Gilson Binary](./figures/SlideRules/GilsonBinary/DSC00135.JPG)
 
 Ordinarily, computations begin with setting the long cursor hairline on the $1$ on the $C$ scale, and end with reading under the short cursor hairline on the appropriate scale. The short cursor is analogous to the slide of a straight rule. To compute $2 × 3$, we manipulate the slide rule as follows:
 
@@ -879,7 +891,7 @@ To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 
 The Gilson Binary is held with the $1$ index mark pointing up, and is flipped left-to-right. The unusual design elements continue on the back face. For instance, unlike a typical slide rule, the Gilson Binary has two opposing $Degree$ scales, one running clockwise and the other anticlockwise. The degree scales are split into three cycles, each 30° wide. Stacked atop the degree scales are the clockwise, triple-cycle $T$ scales. The $Degree$-$T$ scale pair is interlaced with the clockwise, triple-cycle $S$ scales. And note that since the $Degree$ scale's range is $[0°, 90°]$, one must use care to avoid reading a nonsensical value like $tan(90°)$.
 
-![Gilson Binary](./figures/SlideRules/GilsonBinary/back.jpg)
+![Gilson Binary](./figures/SlideRules/GilsonBinary/DSC00136.JPG)
 
 American slide rule manufacturers, like most American engineers of that era, had a hostile attitude toward users in particular and usability in general, mistakenly believing that clever, trained persons—like they—should be able to cope with complexity. This attitude is prominently on display in the design of the Gilson Binary. This slide rule would be far more pleasant to use, had pale green and pale blue colours, like those on the FC 8/10 and the FC 2/83 N, been used, instead of the hypnotic yellow rings. Yes, it is unfair to compare the 1930s Gilson with the 1970s Faber-Castell. But it is eminently fair to compare the American Gilson to its German contemporaries, like the FC 1/54 and the Nestler 23 R. There, too, the Gilson design falls woefully short, in terms of aesthetics and usability.
 
@@ -887,31 +899,45 @@ American slide rule manufacturers, like most American engineers of that era, had
 
 ***Kontrolpribor Model KL-1***—The Kontrolpribor KL-1 is a pocket watch type duplex circular rule. It is about the size of a wristwatch. The faces are covered with cheap plastic. Because the plastic covers are domed, they are prone to scratching. The black-dotted crown at 12 o'clock rotates the face and the red-dotted one at 2 o'clock rotates the needle. The frontside has 15-cm long $C$ and $A$ scales. The backside has circular $C$ and $S$ scales and a spiral $T$ scale. This slide rule is comparable in computing power to a pocket Mannheim straight rule.
 
-![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/front.jpg)
+![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/DSC00119.JPG)
 
-The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. Compared to the Fowler's Universal Calculator, this slide rule is but a cheap toy. Yet, it is more powerful than the Breitling Navitimer.
+The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. The backside has the $C$ scale, the circular $S [5.5°, 90°]$ scale, and the spiral $T [1°, 45°]$ scale. This scale layout is quite unique.
+
+![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/DSC00120.JPG)
+
+Compared to the Fowler's Universal Calculator, this slide rule is but a cheap toy. Yet, it is more powerful than the Breitling Navitimer.
 
 #### Loga (CH)
 
-***Loga 30 Tt***—The Swiss craftsmanship is apparent in the Loga 30 Tt, an accurate, sturdy, beautiful, Darmstadt-equivalent circular rule. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds double-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. The $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are confusingly labelled $A$ and $B$.
+***Loga 30 Tt***—The Swiss craftsmanship is apparent in the Loga 30 Tt: accurate, sturdy, beautiful. Being a Darmstadt-equivalent model, it is one of the more powerful circular rules. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds double-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. The $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are confusingly labelled $A$ and $B$.
 
-![Loga 30 Tt](./figures/SlideRules/Loga30Tt/front.jpg)
+![Loga 30 Tt](./figures/SlideRules/Loga30Tt/DSC00131.JPG)
 
-Another quirk of the Loga 30 Tt is that it is intended to be flipped by holding it between right thumb and forefinger at 3 o'clock. If it were flipped left-to-right, the $1$ index mark would point to the right instead of straight up. The entire back face is fixed to the frame, and holds the $S$, $T$, $ST$, and the three $LL_n$ scales. The end of the backside cursor protrudes beyond the disc. The clever bit is that the back cursor is attached to the inner rotating portion on the front face, and the cursor's protruding end serves as the handle that rotates the inner front face. In terms of capabilities and quality, the Loga 30 Tt is on par with high-end Darmstadt rules, like BRL D.26, FC 1/54, and Nestler 0210.
+Another quirk of the Loga 30 Tt is that it is intended to be flipped by holding it between right thumb and forefinger at 3 o'clock. If it were flipped left-to-right, the $1$ index mark would point to the right instead of straight up. The entire back face is fixed to the frame, and holds the $S$, $T$, $ST$, and the three $LL_n$ scales. The end of the backside cursor protrudes beyond the disc. The clever bit is that the back cursor is attached to the inner rotating portion on the front face, and the cursor's protruding end serves as the handle that rotates the inner front face. A small, rotatable, black disc is mounted to the backside hub. This disc is meant to be used as the handle, when computing with the frontside scales.
+
+![Loga 30 Tt](./figures/SlideRules/Loga30Tt/DSC00132.JPG)
+
+In terms of capability and quality, the Loga 30 Tt is on par with high-end Darmstadt straight rules, like BRL D.26, FC 1/54, and Nestler 0210.
 
 #### Pickett & Eckel (US)
 
 ***Pickett 101-C Dial Rule***—The Pickett 101-C is a low-end circular rule. The body is a cheap, thin aluminium disc. Being a rather small disc, there are only two $LL_n$ scales, but the ranges are unusual: $LL_1 ∈ [1.15, 4.0]$ and $LL_2 ∈ [4, 10^6]$. And like other low-end, American circular rules of that era, this slide rule has the fraction scale. Indeed, the Pickett 101-C is essentially a miniature version of the Gilson Binary, but with only two $LL_n$ scales.
 
-![Pickett 101-C](./figures/SlideRules/Pickett101C/front.jpg)
+![Pickett 101-C](./figures/SlideRules/Pickett101C/DSC00127.JPG)
 
 The Pickett 101-C is held with the $1$ index mark pointing up, and is flipped bottom-to-top, like a standard straight rule.
 
-***Pickett 111-ES***—I am no fan of Pickett slide rules, but I like the Pickett 111-ES. Unlike other Pickett rules which are made in America, the Pickett 111-ES is made in Japan. And although it has an aluminium core, the metal edges are rounded off and the faces are covered in high-quality Japanese plastic. This slide rule is a log-log duplex advanced engineering circular rule with eight $LL$ scales, a rarity among circular rules. It employs Pickett's stacked layout for the $LL$ scales. But whereas the Pickett N3-ES stacks $LL_n$ and $LL_{0n}$ on the same line, the Pickett 111-ES stacks $LL_0$-$LL_1$ and $LL_2$-$LL_3$ on the frontside, and $LL_{00}$-$LL_{01}$ and $LL_{02}$-$LL_{03}$ on the backside. Its capabilities compare well against top-of-the-line engineering rules, like Aristo 0969, FC 2/83 N, Nestler 0292, K&E 68-1100, and Pickett N3-ES. Similar to other high-end circular rules, like the Dempster RotaRule, the outer portion is fixed, the inner portion rotates, and the duplex cursor is firm but glides smoothly.
+![Pickett 101-C](./figures/SlideRules/Pickett101C/DSC00128.JPG)
 
-![Pickett 111ES](./figures/SlideRules/Pickett111ES/front.jpg)
+***Pickett 111-ES***—I am no fan of Pickett slide rules, but I like the Pickett 111-ES. Unlike other Pickett rules, which are made in America, the Pickett 111-ES is made in Japan. And although it has an aluminium core, the metal edges are rounded off and the faces are covered in high-quality Japanese plastic. It is a pleasant rule to use.
 
-The Pickett 111-ES is held with the $1$ index mark pointing down, and flipped left-to-right.
+![Pickett 111ES](./figures/SlideRules/Pickett111ES/DSC00129.JPG)
+
+The Pickett 111-ES is held with the $1$ index mark pointing down, and flipped left-to-right. This slide rule is a log-log duplex advanced engineering circular rule with eight $LL$ scales, a rarity among circular rules. It employs Pickett's stacked layout for the $LL$ scales. But whereas the Pickett N3-ES stacks $LL_n$ and $LL_{0n}$ on the same line, the Pickett 111-ES stacks $LL_0$-$LL_1$ and $LL_2$-$LL_3$ on the frontside, and $LL_{00}$-$LL_{01}$ and $LL_{02}$-$LL_{03}$ on the backside. The backside also holds a double-cycle $S$ scale, a triple-cycle $T$ scale, and a single-cycle $ST$ scale.
+
+![Pickett 111ES](./figures/SlideRules/Pickett111ES/DSC00130.JPG)
+
+The capabilities of the Pickett 111-ES stack up well against top-of-the-line engineering straight rules, like Aristo 0969, FC 2/83 N, Nestler 0292, K&E 68-1100, Pickett N3-ES, etc. And similar to other high-end circular rules, like the Dempster RotaRule, the outer portion is fixed, the inner portion rotates, and the duplex cursor is firm but glides smoothly.
 
 ## *cylindrical rules*
 
@@ -919,13 +945,13 @@ The Pickett 111-ES is held with the $1$ index mark pointing down, and flipped le
 
 ***Otis King Model K***—Otis King cylindrical slide rules use helical scales. The Model K is unusual in that it uses a double-cycle $C$ scale, thus, can perform chained calculations without the need to reset the cursor, as is necessary with the Model L, described below, which has a normal, single-cycle $C$ scale. But the Model K is limited, capability wise; it could compute only $×$ and $÷$.
 
-![Otis King Model K](./figures/SlideRules/OtisKingK/front.jpg)
+![Otis King Model K](./figures/SlideRules/OtisKingK/DSC00147.JPG)
 
 To use the Model K, one holds the chrome handle in one hand and with the free hand pulls out the top, thereby exposing the helical logarithmic scales. The black cylinder in the middle, which is operated with the free hand, is the equivalent of the straight rule's cursor. It is engraved with two white index marks that are aligned to each other. These indices are equivalent of the cursor's hairline. The upper cylinder, which holds the $C$ scale can shift up and down along the longitudinal axis, and it can also spin about that axis independently of the fixed $D$ scale on the lower cylinder. The back-facing numbers on the $D$ scale can be brought into view by spinning the chrome handle. And the black cylinder can shift and spin independently of both scales. So, the Model K's fixed lower cylinder is equivalent to the frame of the straight rule and the movable upper cylinder is equivalent to the slide of the straight rule.
 
 ***Otis King Model L***—The Model L is identical in construction and in operation to the Model K, and these two models have a $D$ scale that is almost the same length. But the Model L's upper cylinder is occupied by the single-cycle $C$ scale and the $L$ scale. As such, the Model L could compute $×$, $÷$, $log$, and $log^{-1}$.
 
-![Otis King Model L](./figures/SlideRules/OtisKingL/front.jpg)
+![Otis King Model L](./figures/SlideRules/OtisKingL/DSC00148.JPG)
 
 # CONCLUSION
 
