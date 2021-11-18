@@ -883,33 +883,33 @@ American slide rule manufacturers, like most American engineers of that era, had
 
 #### Kontrolpribor (RU)
 
-***Kontrolpribor Model KL-1***—The Kontrolpribor KL-1 is a pocket watch type duplex circular model. It is about the size of a wristwatch. The faces are covered with cheap plastic. Because the plastic covers are domed, they can get scratched easily. The black-dotted crown at 12 o'clock rotates the face and the red-dotted one at 2 o'clock rotates the needle. The frontside has 15-cm long $C$ and $A$ scales, giving precision equivalent to a pocket straight rule. The backside has circular $C$ and $S$ scales and a spiral $T$ scale. This slide rule is comparable in computing power to a pocket Mannheim.
+***Kontrolpribor Model KL-1***—The Kontrolpribor KL-1 is a pocket watch type duplex circular rule. It is about the size of a wristwatch. The faces are covered with cheap plastic. Because the plastic covers are domed, they are prone to scratching. The black-dotted crown at 12 o'clock rotates the face and the red-dotted one at 2 o'clock rotates the needle. The frontside has 15-cm long $C$ and $A$ scales. The backside has circular $C$ and $S$ scales and a spiral $T$ scale. This slide rule is comparable in computing power to a pocket Mannheim straight rule.
 
 ![Kontrolpribor Model KL-1](./figures/SlideRules/KontrolpriborKL1/front.jpg)
 
-The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. In the presence of the Fowler's Universal Calculator, this slide rule is a cheap toy. But it is certainly more powerful than the Breitling Navitimer.
+The Kontrolpribor KL-1 is held with the black-dotted crown pointing up, and is flipped left-to-right. Compared to the Fowler's Universal Calculator, this slide rule is but a cheap toy. Yet, it is more powerful than the Breitling Navitimer.
 
 #### Loga (CH)
 
-***Loga 30 Tt***—The Swiss craftsmanship is apparent in the Loga 30 Tt, an accurate, sturdy, beautiful, Darmstadt-equivalent circular rule. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds double-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. Note that the $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are labelled $A$ and $B$.
+***Loga 30 Tt***—The Swiss craftsmanship is apparent in the Loga 30 Tt, an accurate, sturdy, beautiful, Darmstadt-equivalent circular rule. Like other high-end circular rules, the outer portion of the front face is fixed to the frame and the inner portion rotates. The frontside cursor bisects the front face that holds double-cycle, stacked $\sqrt{x}$ scale and the usual Darmstadt scales. The $\sqrt{x}$ scale is the inverse of the $x^2$ scales ordinarily labelled $A$ and $B$. On this slide rule, though, the $C$ and $D$ scales are confusingly labelled $A$ and $B$.
 
 ![Loga 30 Tt](./figures/SlideRules/Loga30Tt/front.jpg)
 
-A quirk of the Loga 30 Tt is intended to be flipped by holding it between right thumb and forefinger. If it were flipped left-to-right, the $1$ index mark points to the right instead of straight up. The entire back face is fixed to the frame, and holds the $S$, $T$, $ST$, and three $LL_n$ scales. The end of the backside cursor protrudes beyond the disc. The clever bit is that the back cursor is attached to the inner, rotating portion on the front face, and the cursor's protruding end serves as the handle that rotates the inner front face. In terms of capabilities and quality, the Loga 30 Tt is on par with high-end Darmstadt rules, like BRL D.26, FC 1/54, and Nestler 0210.
+Another quirk of the Loga 30 Tt is that it is intended to be flipped by holding it between right thumb and forefinger at 3 o'clock. If it were flipped left-to-right, the $1$ index mark would point to the right instead of straight up. The entire back face is fixed to the frame, and holds the $S$, $T$, $ST$, and the three $LL_n$ scales. The end of the backside cursor protrudes beyond the disc. The clever bit is that the back cursor is attached to the inner rotating portion on the front face, and the cursor's protruding end serves as the handle that rotates the inner front face. In terms of capabilities and quality, the Loga 30 Tt is on par with high-end Darmstadt rules, like BRL D.26, FC 1/54, and Nestler 0210.
 
 #### Pickett & Eckel (US)
 
-***Pickett 101-C Dial Rule***—The Pickett 101-C is a low-end circular rule. The body is a cheap, thin aluminium disc. Being a rather small disc, there are only two $LL_n$ scales, but the ranges are unusual: $LL_1 ∈ [1.15, 4.0]$ and $LL_2 ∈ [4, 10^6]$. And like many other low-end, American circular rules of its era, this slide rule has the fraction scale. Indeed, the Pickett 101-C is essentially a miniature version of the Gilson Binary, but with two $LL_n$ scales.
+***Pickett 101-C Dial Rule***—The Pickett 101-C is a low-end circular rule. The body is a cheap, thin aluminium disc. Being a rather small disc, there are only two $LL_n$ scales, but the ranges are unusual: $LL_1 ∈ [1.15, 4.0]$ and $LL_2 ∈ [4, 10^6]$. And like other low-end, American circular rules of that era, this slide rule has the fraction scale. Indeed, the Pickett 101-C is essentially a miniature version of the Gilson Binary, but with only two $LL_n$ scales.
 
 ![Pickett 101-C](./figures/SlideRules/Pickett101C/front.jpg)
 
 The Pickett 101-C is held with the $1$ index mark pointing up, and is flipped bottom-to-top, like a standard straight rule.
 
-***Pickett 111-ES***—I am no fan of Pickett rules, but I like the Pickett 111-ES. It is made in Japan. Although it has an aluminium core, the edges are rounded off and the faces are covered in high-quality Japanese plastic. The Pickett 111-ES is a log-log duplex advanced engineering rule with eight $LL$ scales, a rarity among circular rules. It employs Pickett's stacked layout for the $LL$ scales. But whereas the Pickett N3-ES stacks $LL_n$ and $LL_{0n}$ on the same line, the Pickett 111-ES stacks $LL_0$-$LL_1$ and $LL_2$-$LL_3$ on the frontside, and $LL_{00}$-$LL_{01}$ and $LL_{02}$-$LL_{03}$ on the backside. The Pickett 111-ES's capabilities compare well against top-of-the-line engineering rules, like Aristo 0969, FC 2/83 N, Nestler 0292, K&E 68-1100, and Pickett N3-ES. Similar to other high-end circular rules, like the Dempster RotaRule, the outer portion is fixed, the inner portion rotates, and the duplex cursor is firm but glides smoothly.
+***Pickett 111-ES***—I am no fan of Pickett slide rules, but I like the Pickett 111-ES. Unlike other Pickett rules which are made in America, the Pickett 111-ES is made in Japan. And although it has an aluminium core, the metal edges are rounded off and the faces are covered in high-quality Japanese plastic. This slide rule is a log-log duplex advanced engineering circular rule with eight $LL$ scales, a rarity among circular rules. It employs Pickett's stacked layout for the $LL$ scales. But whereas the Pickett N3-ES stacks $LL_n$ and $LL_{0n}$ on the same line, the Pickett 111-ES stacks $LL_0$-$LL_1$ and $LL_2$-$LL_3$ on the frontside, and $LL_{00}$-$LL_{01}$ and $LL_{02}$-$LL_{03}$ on the backside. Its capabilities compare well against top-of-the-line engineering rules, like Aristo 0969, FC 2/83 N, Nestler 0292, K&E 68-1100, and Pickett N3-ES. Similar to other high-end circular rules, like the Dempster RotaRule, the outer portion is fixed, the inner portion rotates, and the duplex cursor is firm but glides smoothly.
 
 ![Pickett 111ES](./figures/SlideRules/Pickett111ES/front.jpg)
 
-The Pickett 111-ES, like the Dempster RotaRule, is held with the $1$ index mark pointing down, and flipped left-to-right.
+The Pickett 111-ES is held with the $1$ index mark pointing down, and flipped left-to-right.
 
 ## *cylindrical rules*
 
