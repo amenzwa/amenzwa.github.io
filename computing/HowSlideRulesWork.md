@@ -101,14 +101,7 @@ Plotting the $log$ function on a logarithmic scale produces a sequence of evenly
 
 The logarithmic scale has many other uses in STEM beyond the slide rule: the [Richter scale](https://en.wikipedia.org/wiki/Richter_magnitude_scale) used to measure seismic events; the $dB$ [decibel scale](https://en.wikipedia.org/wiki/Decibel) used to measure sound pressure levels; the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) used to visualise frequency domain signals are just a few examples. These uses exploit the logarithms' ability to compress a very large range, while preserving relevant details.
 
-***computations using logarithmic scales***—To compute $log(2)$, we manipulate the slide rule as follows:
-
-1. $D$—Place the cursor hairline on the *argument* $2$ on the $D$ scale.
-2. $L$—Read under the hairline the *result* $0.301$ on the $L$ scale. This computes $log(2) = 0.301$.
-
-![log(2)](./figures/SlideRules/K&E4081-3/log-2.jpg)
-
-To compute $2 × 3$, we manipulate the slide rule as follows:
+***computations using logarithmic scales***—To compute $2 × 3$, we manipulate the slide rule as follows:
 
 1. $D$—Place the hairline on the *multiplicand* $2$ on the $D$ scale.
 2. $C$—Slide the left-hand $1$ on the $C$ scale under the hairline.
@@ -291,25 +284,30 @@ All cylindrical rules emphasise precision, so they all have very long scales. So
 
 # OPERATIONS
 
-Ordinary engineering slide rules provide arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models provide hyperbolic functions. More specialised models provide field-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore the field-specific functions.
+Ordinary engineering slide rules provide arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models provide hyperbolic functions. More models provide speciality-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore such speciality-specific rules.
 
 ## *arithmetic*
 
-The impetus for the slide rule's invention was to expedite $×$ and $÷$. These arithmetic operations were performed using the $C$ and the $D$ scales. Over time, slide rule designers had created numerous scales that augment the $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$. Together these scales expedite chained arithmetic operations.
+The impetus for the slide rule's invention was to expedite $×$ and $÷$. These arithmetic operations were performed using the $C$ and the $D$ scales. Over time, slide rule designers had created numerous scales that augment the $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$.
 
 In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$. But using $D$ and $CI$, this expression is computed as $a_D + b_{CI}$:
 
 - $a ÷ b = log(a) - log(b) = log(a) + log(\frac{1}{b})$
 
-The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $\pi$, thereby shifting the $1$ mark to the middle of the scale. The following photograph shows these auxiliary arithmetic scales on the slide.
+The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $\pi$, thereby shifting the $1$ mark to the middle of the scale. The following photograph shows these auxiliary scales on the slide.
 
 ![folded and inverted scales](./figures/SlideRules/K&E4081-3/DSC00176.JPG)
 
-These auxiliary arithmetic scales often reduce the slide and cursor movement distances considerably, thereby speeding up computations. But I shall not present the detailed procedures on using these scales, because they are procedural optimisations not essential to understanding slide rule fundamentals. Interested readers may refer to the user's manuals, which are listed in the resource section at the end of the article.
+These auxiliary scales often reduce slide and cursor movement distances considerably, thereby speeding up computations. But I shall not present the detailed procedures on using these auxiliary scales, because they are procedural optimisations not essential to understanding slide rule fundamentals. Interested readers may refer to the user's manuals, which are listed in the resource section at the end of the article.
 
 ## *logarithmic*
 
-The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule. To compute a logarithm, say $log(2)$, one simply places the hairline on the $2$ mark on the $D$ logarithmic scale, and read the result on the $L$ arithmetic scale. See the photograph below.
+The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule.
+
+To compute $log(2)$, we manipulate the slide rule as follows:
+
+1. $D$—Place the cursor hairline on the *argument* $2$ on the $D$ scale.
+2. $L$—Read under the hairline the *result* $0.301$ on the $L$ scale. This computes $log(2) = 0.301$.
 
 ![log(2)](./figures/SlideRules/K&E4081-3/log-2.jpg)
 
@@ -676,7 +674,7 @@ The mechanisms of the Addiator works on similar principles as the [mechanical ca
 
 ![FC 1/98](./figures/SlideRules/FC1-98/DSC00161.JPG)
 
-The FC 1/98 is, for sure, a specialty slide rule for electrical engineers. But it is general enough to qualify as a Darmstadt-ish engineering rule. And its clever scale layout deserves recognition. As such, I chose to include it in this article. But I did leave out other specialty engineering rules in my collection that are too far off the main aim of this article: transmission line Smith chart, electronic engineering rule, mechanical engineering rule, chemical engineering rule, and so forth.
+The FC 1/98 is, for sure, a speciality slide rule for electrical engineers. But it is general enough to qualify as a Darmstadt-ish engineering rule. And its clever scale layout deserves recognition. As such, I chose to include it in this article. But I did leave out other speciality engineering rules in my collection that are too far off the main aim of this article: transmission line Smith chart, electronic engineering rule, mechanical engineering rule, chemical engineering rule, and so forth.
 
 ***FC 2/83 N Novo-Duplex***—The FC 2/83 N is famous both for its evident usability as well as for its quiet beauty. Yes, contrary to the prevailing view, we engineers do appreciate aesthetics and subtlety. The FC 2/83 N uses pale green backgrounds for $C$ and $CF$ on the frontside and $C$ and $D$ on the backside. It uses pale blue backgrounds for $A$ and $B$ on the frontside. In my opinion—and this view sprang from my experience with human factors in user interface design—FC 2/83 N's understate, colour-coded scales are a better design choice than the Aristo 0969's spread-out scales. The FC 2/83 N has on the backside the $W_1$-$W^{'}_1$ and $W_2$-$W^{'}_2$ extended square root scales, which are lacking on the Aristo 0969. That is impressive, considering the Aristo 0969 is a good half-centimetre wider than the FC 2/83 N. Also, as can be seen in the photograph below, the FC 2/83 N's slide has black grooves at its tips. These striations make it easier to pull out from its stowed position. Little things like this make big differences in usability and convenience, especially when operating under time pressure—like in an examination.
 
@@ -700,7 +698,7 @@ I would like to draw attention to the fact that the 1970s were, how shall I say 
 
 ![Graphoplex 640](./figures/SlideRules/Graphoplex640/DSC00167.JPG)
 
-The Graphoplex 643 and the Graphoplex 640 were marketed as specialty electrical engineering slide rules. But I included them in this article, because they are excellent Darmstadt rules, too. I like them very much indeed. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
+The Graphoplex 643 and the Graphoplex 640 were marketed as speciality electrical engineering slide rules. But I included them in this article, because they are excellent Darmstadt rules, too. I like them very much indeed. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
 
 #### Hemmi (JP)
 
@@ -759,7 +757,7 @@ To compute $tanh(0.5)$ using the identity $sin(gd(x)) = tanh(x)$ mentioned above
 
 When using the $T$ scale on the Hemmi 153 where the angle $\theta$ scale goes all the way up to $90°$, it is important to recall that $tan(90°) = ∞$.
 
-Like the FC 1/98, the Hemmi 153 is a specialty electrical engineering slide rule. But it would be a crime not to include the Hemmi 153 in this article, due to its innovative $G_\theta$ scale-based hyperbolic function computations.
+Like the FC 1/98, the Hemmi 153 is a speciality electrical engineering slide rule. But it would be a crime not to include the Hemmi 153 in this article, due to its innovative $G_\theta$ scale-based hyperbolic function computations.
 
 ***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log vector duplex rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D employs the more conventional hyperbolic $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular log-log vector rules, like K&E 4083-3 and Pickett N4-ES described below in their respective subsections.
 
@@ -767,7 +765,7 @@ Like the FC 1/98, the Hemmi 153 is a specialty electrical engineering slide rule
 
 ![Hemmi 255D](./figures/SlideRules/Hemmi255D/DSC00187.JPG)
 
-The Hemmi 255D is definitely a specialty electrical engineering rule. But it is also a general engineering vector slide rule, in the same category as the famous K&E 4083-3. So, I chose to include it in this article.
+The Hemmi 255D is definitely a speciality electrical engineering rule. But it is also a general engineering vector slide rule, in the same category as the famous K&E 4083-3. So, I chose to include it in this article.
 
 #### Keuffel & Esser (US)
 
