@@ -225,7 +225,7 @@ Some slide rules, like this older Nestler 23 R (probably from the 1920s) shown b
 
 ![Nestler 23 R with magnifier](./figures/SlideRules/Nestler23R/DSC00153.JPG)
 
-***Darmstadt type***—Another German innovation, the Darmstadt type, was the workhorse preferred by the early 20th century engineers. It has three $LL_n$ scales ()$LL_1$, $LL_2$, and $LL_3$) used to compute general exponentiation of the form $x^{y/z} = \sqrt[z]{x^y}$, when $x > 1$. When $z = 1$, the general expression reduces to $x^y$. When $y = 1$, the general expression reduces to $x^{1/z} = \sqrt[z]{x}$. Newer, more advanced models sport the fourth $LL_0$ scale. The following is the Aristo 967 U Darmstadt from the mid 1970s.
+***Darmstadt type***—Another German innovation, the Darmstadt type, was the workhorse preferred by the early 20th century engineers. It has three $LL_n$ scales ($LL_1$, $LL_2$, and $LL_3$) used to compute general exponentiation of the form $x^{y/z} = \sqrt[z]{x^y}$, when $x > 1$. When $z = 1$, the general expression reduces to $x^y$. When $y = 1$, the general expression reduces to $x^{1/z} = \sqrt[z]{x}$. Newer, more advanced models sport the fourth $LL_0$ scale. The following is the Aristo 967 U Darmstadt from the mid 1970s.
 
 ![Aristo 967 U](./figures/SlideRules/Aristo967U/DSC00162.JPG)
 
