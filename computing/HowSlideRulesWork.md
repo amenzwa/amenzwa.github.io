@@ -53,7 +53,9 @@ Another common model was the Post 1460 Versalog. Although less popular than the 
 
 ![Post 1460](./figures/SlideRules/Post1460/DSC00182.JPG)
 
-Go on eBay and buy a good, inexpensive slide rule, either the [K&E 4081-3](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) or the [Post 1460](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=post+1460+versalog+slide+rule&_sacat=0); you will need a slide rule to follow the discussions below. Alternatively, you could use a [slide rule simulator](https://www.sliderules.org/react/hemmi_versalog_ii.html). After having read this article, I recommend that you move on to one or more of the books listed in the resources section at the end.
+Go on eBay and buy a good, inexpensive slide rule, either the [K&E 4081-3](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26e+4081-3+slide+rule&_sacat=0&LH_TitleDesc=0&_odkw=k%26e+4081-3+log+log+duplex+decitrig&_osacat=0) or the [Post 1460](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=post+1460+versalog+slide+rule&_sacat=0); you will need a slide rule to follow the discussions below. Alternatively, you could use a [slide rule simulator](https://www.sliderules.org/react/hemmi_versalog_ii.html). The feature of this simulator that is especially useful to novices is the cursor's ability instantaneously to show the exact scale values under the hairline.
+
+And I recommend that, after you have read this article, you study one or more of the books listed in the resources section at the end.
 
 # PRINCIPLES
 
@@ -329,9 +331,9 @@ To compute $\sqrt{9}$, we manipulate the slide rule as follows:
 - $A$—Place the hairline on the *argument* $9$ in the first cycle of the $A$ scale.
 - $D$—Read under the hairline the result $3$ on the $D$ scale. This computes $\sqrt{9} = 3$.
 
-Placing the hairline on $9$ in the second cycle of the $A$ scale would compute $\sqrt{90} = 9.49$. 
+But placing the hairline on $9$ in the second cycle of the $A$ scale would compute $\sqrt{90} = 9.49$. 
 
-***cubing on slide rule***—It is a little known fact that [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton) invented the cubic $K$ scale in 1675 by solving the cubic equations using logarithms. The $K$-$D$ scale pair computes $x^3$ because $K$ is a triple-cycle logarithmic scale. And the reverse $D$-$K$ scale pair computes $\sqrt[3]{x}$.
+***cubing on slide rule***—It is a little known fact that [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton) invented the cubic $K$ scale in 1675 by solving the cubic equation. The $K$-$D$ scale pair computes $x^3$ because $K$ is a triple-cycle logarithmic scale. And the reverse $D$-$K$ scale pair computes $\sqrt[3]{x}$.
 
 To compute $3^3$, we manipulate the slide rule as follows:
 
@@ -345,7 +347,7 @@ To compute $\sqrt[3]{64000}$, we manipulate the slide rule as follows:
 - $K$—Place the hairline on the *argument* $64$ in the second cycle of the $K$ scale.
 - $D$—Read under the hairline the *result* $4$ on the $D$ scale. A quick mental calculation $\sqrt[3]{1000} = 10$ indicates that the result should be in the tens, so the actual result is $40$. This computes $\sqrt[3]{64000} = 40$. 
 
-Placing the hairline on $6.4$ in the first cycle of the $K$ scale would compute $\sqrt[3]{6.4} = 1.857$, and placing the hairline on $640$ on the third cycle of the $K$ scale would compute $\sqrt[3]{640} = 8.62$.
+Placing the hairline on $6.4$ in the first cycle of the $K$ scale would compute $\sqrt[3]{6.4} = 1.857$, and placing the hairline on $640$ in the third cycle of the $K$ scale would compute $\sqrt[3]{640} = 8.62$.
 
 ***logarithmic exponentiation***—General exponentiation of the form $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
 
@@ -1049,7 +1051,7 @@ Ingenuity is the ability to make useful things inexpensively on a massive scale 
 - [International Slide Rule Museum](https://sliderulemuseum.com/SRM_Home.htm)
   - This site is a virtual museum of slide rules. There are very few slide rules, if any at all, that are absent from its collection. Every slide rule in the collection has a set of high-resolution photographs and interesting details such as the donor's name, date of purchase, professional uses, etc.
 - [SlideRules.org](https://www.sliderules.org)
-  - This site has slide rule simulator web applications for many popular models. The feature of the simulators that is especially useful to novices is the cursor's ability to show the exact scale values under the hairline.
+  - This site has slide rule simulator web applications for many popular models.
 - [K&E Slide Rule Manuals](http://mccoys-kecatalogs.com/KEManuals/manuals.htm)
   - This site has a long list of K&E slide rule manuals in PDF format.
 - [Eric's Slide Rule Site](https://www.sliderule.ca/)
