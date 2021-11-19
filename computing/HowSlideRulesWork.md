@@ -389,7 +389,7 @@ In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
 
 The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithmic scale and the base-$10$ common logarithmic scale.
 
-Unlike other scales of the slide rule, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
+Unlike the $D$ scale, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
 
 - $LL_1$: $x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
 - $LL_2$: $x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
