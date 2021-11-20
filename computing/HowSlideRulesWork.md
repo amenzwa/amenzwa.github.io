@@ -138,7 +138,7 @@ Multiplication and division operations start and end with the cursor hairline on
 
 ## *accuracy and precision*
 
-In slide rule terminology, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated. And *precision* means how many significant figures the user can reliably read off the scale.
+In slide rule parlance, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated. And *precision* means how many significant figures the user can reliably read off the scale.
 
 Professional-grade slide rules are made exceedingly well, so they are very accurate. Yet, they all allow the user to calibrate the device. Even a well-made slide rule, like the K&E 4081-3 can go out of alignment if mistreated, say by exposing it to sun, solvent, or shock (mechanical or thermal). Misaligned slide rule can be recalibrated using the procedure described in the maintenance section, later in this article. And prolonged exposure to moisture and heat can deform a wood rule, like the K&E 4081-3, thereby damaging it, permanently. The accuracy of a warped wood rule can no longer be restored by recalibrating. So, be kind to your slide rule.
 
@@ -206,7 +206,7 @@ The less expensive Mannheim and Rietz models were used in high school, and the m
 
 A Mannheim slide rule has $C$ and $D$ scales for arithmetic operations ($×$ and $÷$), $L$ scale for common logarithm ($log$), $A$ and $B$ scales for square and square root ($x^2$ and $\sqrt{x}$), $K$ scale for cubic and cube root ($x^3$ and $\sqrt[3]{x}$), and $S$ and $T$ scales for trigonometric functions ($sin$ and $tan$).
 
-The following is the Post 1447 simplex slide rule, manufactured by the Japanese company Hemmi in the late 1950s. As is the tradition for Japanese slide rules, this one is made of bamboo, which is a better material than wood, because bamboo is more resistant to warping and it slides more smoothly. In slide rule parlance, the term "simplex" refers to the models with scales on only one side of the frame.
+The following is the Post 1447 simplex slide rule, manufactured by the Japanese company Hemmi in the late 1950s. As is the tradition for Japanese slide rules, this one is made of bamboo, which is a better material than wood, because bamboo is more resistant to warping and it slides more smoothly. The term "simplex" refers to the slide rules with scales on only one side of the frame.
 
 ![Post 1447](./figures/SlideRules/Post1447/DSC00149.JPG)
 
@@ -411,7 +411,7 @@ The red $\color{red}{LL_{0n}}$ scales are reciprocals of the black $LL_n$ scales
 - $\color{red}{LL_{03}}$: $x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
   - $1/e = 0.368$ and $ln(1/e) = -1.0$
 
-Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $\color{red}{LL_{0n}}$ scales as $e^{-x}$.
+Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $\color{red}{LL_{0n}}$ scales as $e^{-x}$. Note the terminology: the term "exponentiation" refers to the expression $x^y$, and the term "exponential" refers to the function $e^x$.
 
 To compute $ln(2)$, we manipulate the slide rule as follows:
 
@@ -726,31 +726,35 @@ I would like to draw attention to the fact that the 1970s were, how shall I say 
 
 ![Graphoplex 643](./figures/SlideRules/Graphoplex643/DSC00142.JPG)
 
-***Graphoplex 640 Electric Log Log***—The Graphoplex 640 is another topping Darmstadt rule, like the BRL D.26. But breaking from the Darmstadt tradition, the Graphoplex 640 places the three $LL_n$ scales on the lower frame on the front of the slide rule. And the backside of the slide sports $cos$, $sin$, $tan$, and $C$ scales. This scale layout of placing the $LL_n$ scales, together with the $D$, $C$, and trigonometric scales, significantly improves the usability by reducing the need frequently to flip the slide rule.
+***Graphoplex 640 Electric Log Log***—The Graphoplex 640 is another topping Darmstadt rule, like the BRL D.26. But breaking from the Darmstadt tradition, the Graphoplex 640 places the three $LL_n$ scales on the frontside, on the lower frame. And the backside of the slide holds the trigonometric scales and the $C$ scale, which are read through a single cutout on the right side of the rule. The cutout has a clear plastic cover with a hairline, which makes it easy to read all four scales on the backside of the slide. But having only one cutout makes it cumbersome to read the left-hand portions of these scales. The Graphoplex 640 places the three $LL_n$ scales together with the $D$ and $C$ scales. This arrangement significantly improves usability by reducing the need frequently to flip the slide rule when computing exponentiations.
 
 ![Graphoplex 640](./figures/SlideRules/Graphoplex640/DSC00166.JPG)
 
 ![Graphoplex 640](./figures/SlideRules/Graphoplex640/DSC00167.JPG)
 
-The Graphoplex 643 and the Graphoplex 640 were marketed as speciality electrical engineering slide rules. But I included them in this article, because they are excellent Darmstadt rules, too. I like them very much indeed. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
+The Graphoplex 643 and the Graphoplex 640 were marketed as speciality electrical engineering slide rules. But they are fairly conventional Darmstadt rules. I like these rules very much. Yet, they are not my absolute favourite Darmstadt rules. Read on, to find out which one is my absolute favourite Darmstadt engineering slide rule.
 
 #### Hemmi (JP)
 
-***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is a marvel: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
+***Hemmi 135 Pocket Advanced Darmstadt***—The Hemmi 135 pocket rule is a marvel: it is a miniature version of the Hemmi 130W, an advanced Darmstadt rule, except for a minor difference with the $LL_n$ scales on the backside of the slide. Whereas the Hemmi 130W has four $LL_n$ scales, the Hemmi 135 has only three, given its diminutive size. See the full description in the Hemmi 130W subsection, below.
 
 ![Hemmi 135](./figures/SlideRules/Hemmi135/DSC00137.JPG)
 
 ![Hemmi 135](./figures/SlideRules/Hemmi135/DSC00138.JPG)
 
-***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule. There, I said it. I would very much like to have owned this rule, when I was a young engineering student those many years ago. Like all Hemmi slide rules, it is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Traditional Darmstadt rules have only $LL_1$, $LL_2$, and $LL_3$ on the backside of the slide. But the Hemmi 130W has $LL_0$, $LL_1$, $LL_2$, and $LL_3$. This makes this slide rule one of the most powerful Darmstadt simplex rules, capabilities wise. The $L$ and the $LL_n$ scales are read through the cutouts at each end. The plastic cover of each cutout is inscribed with a thin red index line for reading the scales.
+***Hemmi 130W Advanced Darmstadt***—The Hemmi 130W is my absolute favourite Darmstadt rule. There, I said it. I would very much like to have owned this rule, when I was a young engineering student those many years ago. As with all Hemmi slide rules, this rule is made of bamboo, my favourite slide rule material. The $S$, $T$, and $P$ scales, along with the usual ones, are on the frontside. Traditional Darmstadt rules have only $LL_1$, $LL_2$, and $LL_3$ on the backside of the slide. But the Hemmi 130W's slide has four $LL_n$ scales: $LL_0$, $LL_1$, $LL_2$, and $LL_3$. This makes this slide rule one of the most powerful Darmstadt simplex rules. The $L$ and the $LL_n$ scales are read through large cutouts at each end. The plastic cover of each cutout is inscribed with a fixed red hairline for reading the scales.
 
 ![Hemmi 130W](./figures/SlideRules/Hemmi130W/DSC00168.JPG)
 
 ![Hemmi 130W](./figures/SlideRules/Hemmi130W/DSC00169.JPG)
 
-I adore Darmstadt rules. I said so, often. And the Hemmi 130W is my absolute favourite Darmstadt rule. Yet, I think Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. The top edge of the frame holds a vapid 27-cm ruler and the bottom edge holds an odd zero-centred 26-cm ruler with 13-cm linear scales sprinting out to each end. Hemmi should, instead, have inscribed more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scales, on the frame edges.
+I adore Darmstadt rules. I said so, often. And of all the Darmstadt rules I won, I love the Hemmi 130W the most. Yet, I think Hemmi missed an opportunity with the way they used the real estate of the top and bottom edges of the frame. Typical of Hemmi simplex rules, this one is fairly thick. The top edge of the frame holds a vapid 27-cm ruler and the bottom edge holds an odd zero-centred 26-cm ruler with 13-cm linear scales crawling out to each end. Hemmi should, instead, have inscribed more useful scales, like the $ST$ scale or the split $T_1$-$T_2$ scales, on the frame edges.
 
-***Hemmi 153 Electrical Engineer***—The Hemmi 153 is a log-log vector duplex rule cherished by electrical power engineers. In terms of power, this slide rule is comparable to the more popular K&E 4083-3 described below in the K&E section. But the Hemmi 153 computes the hyperbolic functions in a rather unique and ingenious way, using the [Gudermannian function](https://en.wikipedia.org/wiki/Gudermannian_function): $gd(x) = sin^{-1}(tanh(x)) = tan^{-1}(sinh(x))$. The function $gd$ relates trigonometric functions with hyperbolic functions:
+***Hemmi 153 Electrical Engineer***—The Hemmi 153 is a log-log vector duplex rule cherished by electrical power engineers. In terms of capabilities, this slide rule is comparable to the more famous K&E 4083-3 described below in the K&E section. But the Hemmi 153 computes the hyperbolic functions in a rather unique and ingenious way, using the [Gudermannian function](https://en.wikipedia.org/wiki/Gudermannian_function):
+
+- $gd(x) = sin^{-1}(tanh(x)) = tan^{-1}(sinh(x))$
+
+The function $gd$, thus, relates trigonometric functions with hyperbolic functions as follows:
 
 - $sin(gd(x)) = tanh(x)$
 - $cos(gd(x)) = sech(x)$
@@ -759,7 +763,7 @@ I adore Darmstadt rules. I said so, often. And the Hemmi 130W is my absolute fav
 - $sec(gd(x)) = cosh(x)$
 - $csc(gd(x)) = coth(x)$
 
-The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, expands the power of the Hemmi 153 by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the design ideal of pragmatic minimalism.
+The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, expands the power of this slide rule by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the design ideal of pragmatic minimalism.
 
 ![Hemmi 153](./figures/SlideRules/Hemmi153/DSC00184.JPG)
 
@@ -777,9 +781,9 @@ To compute $cos(60°)$, we manipulate the slide rule as follows:
 - $P$—Place the hairline on the right-hand $1$ of the $P$ scale.
 - $Q$—Read under the hairline the *result* $0.5$ on the $Q$ scale. This computes $cos(60°) = 0.5$.
 
-Note the asymmetry between the $sin$ and $cos$ computation procedures, above. This is a consequence of the $P$ and $Q$ scales' dual-use design: they are used to compute Pythagorean, but they also double as the $sin$ and $cos$ scales.
+Note the asymmetry between the $sin$ and $cos$ procedures, above. This is a consequence of the $P$ and $Q$ scales' dual-use design: they are used to compute Pythagorean, but they also double as the $sin$ and $cos$ scales. It is, therefore, faster to compute $cos(60°)$ as $sin(90° - 60°)$.
 
-Now, the cleverer bit: computing hyperbolic functions in the absence of hyperbolic scales. To compute $sinh(0.5)$ using the identity $tan(gd(x)) = sinh(x)$ mentioned above, we manipulate the slide rule as follows:
+Now, the cleverer bit: computing hyperbolic functions without various hyperbolic scales. To compute $sinh(0.5)$ using the identity $tan(gd(x)) = sinh(x)$ mentioned above, we manipulate the slide rule as follows:
 
 - $G_\theta$—Place the hairline on the *argument* $0.5$ on the $G_\theta$ scale. This computes $gd(0.5)$.
 - $T$—Read under the hairline the *result* $0.521$ on the $T$ scale. This computes $sinh(0.5) = tan(gd(0.5)) = 0.521$.
@@ -791,9 +795,9 @@ To compute $tanh(0.5)$ using the identity $sin(gd(x)) = tanh(x)$ mentioned above
 
 When using the $T$ scale on the Hemmi 153 where the angle $\theta$ scale goes all the way up to $90°$, it is important to recall that $tan(90°) = ∞$.
 
-Like the FC 1/98, the Hemmi 153 is a speciality electrical engineering slide rule. But it would be a crime not to include the Hemmi 153 in this article, due to its innovative $G_\theta$ scale-based hyperbolic function computations.
+The Hemmi 153 is marketed as a speciality electrical engineering slide rule. But it would be a crime not to include it in this article, due to its innovative $G_\theta$ scale-based hyperbolic function computations.
 
-***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log vector duplex rule than the Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D employs the more conventional hyperbolic $Sh$ and $Th$ scales. In terms of power, the Hemmi 255D is comparable to the popular log-log vector rules, like K&E 4083-3 and Pickett N4-ES described below in their respective subsections.
+***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log vector duplex rule, compared to the older Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D employs the more conventional hyperbolic $Sh$ and $Th$ scales. In terms of capabilities, the Hemmi 255D is comparable to other log-log vector duplex rules, like the Pickett N4-ES.
 
 ![Hemmi 255D](./figures/SlideRules/Hemmi255D/DSC00186.JPG)
 
