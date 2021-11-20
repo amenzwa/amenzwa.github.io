@@ -455,17 +455,6 @@ To compute $1.03^{9.2}$, we manipulate the slide rule as follows:
 
 ![1.03^9.2](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
-***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale to compute $x^y$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent, the details of which I shall forego.
-
-To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
-
-- $\color{red}{LL_{03}}$—Place the hairline on the base $0.222$ on the $\color{red}{LL_{03}}$ scale.
-- $C$—Slide the left-hand $1$ on the $C$ scale under the hairline.
-- $C$—Place the hairline on the exponent $1.11$ on the $C$ scale.
-- $\color{red}{LL_{03}}$—Read under the hairline the result $0.188$ on the $\color{red}{LL_{03}}$ scale. This computes $0.222^{1.11} = 0.188$.
-
-![0.222^1.11](./figures/SlideRules/K&E4081-3/0.222^1.11.jpg)
-
 If the exponent is negative, we read the result on the $\color{red}{LL_{0n}}$ scale. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$.
 
 To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
@@ -480,6 +469,17 @@ To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 Had we read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $\color{red}{LL_{02}}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as desired. The $LL$ scales are the most powerful scales on an engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the user's manuals listed in the resources section at the end of the article.
 
 In the above procedure, we used the $CI$ scale, instead of the $C$ scale, as usual. This is because the base  $2.22$ is far to the right edge of the slide rule, had we used the $C$ scale, the slide would be hanging almost entirely off the right edge. Using the $CI$ scale in this case reduces the slide movement distance, considerably.
+
+***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale to compute $x^y$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent, the details of which I shall forego.
+
+To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
+
+- $\color{red}{LL_{03}}$—Place the hairline on the base $0.222$ on the $\color{red}{LL_{03}}$ scale.
+- $C$—Slide the left-hand $1$ on the $C$ scale under the hairline.
+- $C$—Place the hairline on the exponent $1.11$ on the $C$ scale.
+- $\color{red}{LL_{03}}$—Read under the hairline the result $0.188$ on the $\color{red}{LL_{03}}$ scale. This computes $0.222^{1.11} = 0.188$.
+
+![0.222^1.11](./figures/SlideRules/K&E4081-3/0.222^1.11.jpg)
 
 ## *trigonometric*
 
