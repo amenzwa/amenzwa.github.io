@@ -455,7 +455,7 @@ To compute $1.03^{9.2}$, we manipulate the slide rule as follows:
 
 ![1.03^9.2](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
-***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale to compute $x^y$. As usual, we begin on an $\color{red}{LL_{0n}}$ scale, and end on an $\color{red}{LL_{0n}}$ scale.
+***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale to compute $x^y$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent, the details of which I shall forego.
 
 To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
 
@@ -466,7 +466,7 @@ To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
 
 ![0.222^1.11](./figures/SlideRules/K&E4081-3/0.222^1.11.jpg)
 
-If the exponent is negative, we read the result on the $\color{red}{LL_{0n}}$ scale. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent.
+If the exponent is negative, we read the result on the $\color{red}{LL_{0n}}$ scale. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$.
 
 To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
