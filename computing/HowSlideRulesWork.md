@@ -76,19 +76,23 @@ And another thing: a typical older simplex slide rule, like the Nestler 23 R sho
 
 That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$.
 
-***logarithmic scale***—The slide rule mechanises these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). Gunter's logarithmic scale is derived from the arithmetic scale in the following manner. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments labelled $0.0, 0.1, 0.2, 0.3, ..., 1.0$, similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source arithmetic scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments labelled $1, 2, 3, ..., 1$, starting with $1$ and, again, ending with $1$. The division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by reference to the linear arithmetic scale:
+***logarithmic scale***—The slide rule mechanises these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). Gunter's logarithmic scale is derived from a ruler-like linear scale in the following manner. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments labelled $0.0, 0.1, 0.2, 0.3, ..., 1.0$, similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source linear scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments labelled $1, 2, 3, ..., 1$, starting with $1$ and, again, ending with $1$. The division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by reference to the linear scale:
 
-- $log(1) = 0.0$, so $1$ on the second scale is lined up with $0.0$ on the arithmetic scale
-- $log(2) = 0.301$, so $2$ on the second scale is lined up with $0.301$ on the arithmetic scale
-- $log(3) = 0.477$, so $3$ on the second scale is lined up with $0.477$ on the arithmetic scale
+- $log(1) = 0.0$, so $1$ on the second scale is lined up with $0.0$ on the linear scale
+- $log(2) = 0.301$, so $2$ on the second scale is lined up with $0.301$ on the linear scale
+- $log(3) = 0.477$, so $3$ on the second scale is lined up with $0.477$ on the linear scale
 - $...$
-- $log(10) = 1.0$, so $10$ (which is labelled $1$) on the second scale is lined up with $1.0$ on the arithmetic scale
+- $log(10) = 1.0$, so $10$ (which is labelled $1$) on the second scale is lined up with $1.0$ on the linear scale
 
-The second scale thus obtained is the logarithmic scale. In the figure below, the upper one is the source arithmetic scale and the lower one is the derived logarithmic scale.
+The second scale thus obtained is the logarithmic scale. In the figure below, the upper one is the source linear scale and the lower one is the derived logarithmic scale.
 
 ![L & D scales](./figures/SlideRules/scale-L-D.jpg)
 
-On the slide rule, we label the source arithmetic scale as $L$, and the derived logarithmic scale as $D$. These scales are related by a bijective function $log$:
+On the slide rule, the source linear scale is labelled $L$, and it is called the "logarithm scale". The derived logarithmic scale is labelled $D$.
+
+I would like to direct your attention to this potentially confusing terminology. The term "logarithm scale" refers to the linear $L$ scale used for computing the common logarithm function $log(x)$. And the term "logarithmic scale" refers to the non-linear $C$ and $D$ scales used for computing the arithmetic operations $×$ and $÷$. This knotty terminology is unavoidable, given the logarithmic nature of the slide rule.
+
+The logarithmic scale and the logarithm scale are related by a bijective function $log$:
 
 - $log: D \rightarrow L$
 - $log^{-1}: L \rightarrow D$
@@ -286,13 +290,13 @@ All cylindrical rules emphasise precision, so they all have very long scales. So
 
 # OPERATIONS
 
-Ordinary engineering slide rules provide arithmetic, logarithmic, exponential, and trigonometric functions. Some advanced models provide hyperbolic functions. More models provide speciality-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore such speciality-specific rules.
+Ordinary engineering slide rules provide arithmetic, logarithm, exponential, and trigonometric functions. Some advanced models provide hyperbolic functions. More models provide speciality-specific functions: electronic, electrical, mechanical, chemical, civil, and so forth. Here, I shall ignore such speciality-specific rules.
 
 ## *arithmetic*
 
 The impetus for the slide rule's invention was to expedite $×$ and $÷$. These arithmetic operations were performed using the $C$ and the $D$ scales. Over time, slide rule designers had created numerous scales that augment the $C$ and $D$ scales: reciprocal $CI$ and $DI$; folded $CF$ and $DF$; and folded reciprocal $CIF$ and $DIF$.
 
-In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted the logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$. But using $D$ and $CI$, this expression is computed as $a_D + b_{CI}$:
+In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted Gunter's logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$. But using $D$ and $CI$, this expression is computed as $a_D + b_{CI}$:
 
 - $a ÷ b = log(a) - log(b) = log(a) + log(\frac{1}{b})$
 
@@ -302,9 +306,9 @@ The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold t
 
 These auxiliary scales often reduce slide and cursor movement distances considerably, thereby speeding up computations. But I shall not present the detailed procedures on using these auxiliary scales, because they are procedural optimisations not essential to understanding slide rule fundamentals. Interested readers may refer to the user's manuals, which are listed in the resource section at the end of the article.
 
-## *logarithmic*
+## *logarithm*
 
-The logarithmic scale is the irony of the slide rule. The $log$ function is nonlinear. But since the slide rule is built upon this same nonlinear scale, the $L$ scale appears linear on the slide rule.
+The logarithm $L$ scale is the irony of the slide rule. The $log$ function is nonlinear. But because the slide rule is based upon this very same nonlinearity, the $L$ scale appears linear when inscribed on the slide rule.
 
 To compute $log(2)$, we manipulate the slide rule as follows:
 
@@ -378,7 +382,7 @@ On the slide rule, the $LL$ scales compute general exponentiation $x^{y/z}$. It 
 
 Recall that reading the result on the $D$ scale implicitly performs $log^{-1}$. Likewise, reading the result on the $LL_n$ scale implicitly performs $ln^{-1}$.
 
-***natural logarithmic scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
+***natural logarithm scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
 
 - $ln : LL_n \rightarrow D$
 - $ln^{-1} : D \rightarrow LL_n$
@@ -387,7 +391,7 @@ In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
 
 ![ln](./figures/SlideRules/plot-ln.jpg)
 
-The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithmic scale and the base-$10$ common logarithmic scale.
+The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithm scale and the base-$10$ common logarithm scale.
 
 Unlike the $D$ scale, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
 
@@ -400,7 +404,7 @@ The function composition $log \circ ln$ used to construct the $LL_n$ scales make
 
 But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse. The function $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down.
 
-The red $\color{red}{LL_{0n}}$ scales are reciprocals of the black $LL_n$ scales. As such, the red scales run from right to left. On the K&E 4081-3, the red $\color{red}{LL_{0n}}$ scale is divided into these ranges:
+The red $\color{red}{LL_{0n}}$ scales are reciprocals of the black $LL_n$ scales. As such, these scales run from right to left. On the K&E 4081-3, the red $\color{red}{LL_{0n}}$ scale is divided into these ranges:
 
 - $\color{red}{LL_{01}}$: $x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
 - $\color{red}{LL_{02}}$: $x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
@@ -440,22 +444,38 @@ To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 
 ![1.03^2.4](./figures/SlideRules/K&E4081-3/1.03^2.4.jpg)
 
-But sometimes, we get into a quandary. Say, we wish to compute $1.03^{9.2}$. So, we line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has moved off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured into the $LL_2$ scale. To avoid going off the edge, we use the folded $CF$ scale, instead. We line up the $CF$ scale's $1$, which is near the centre of that scale, and move the hairline to the exponent $9.2$, which is slightly to the left. We then read the result $1.03^{9.2} = 1.3125$ on the $LL_2$ scale.
+Sometimes, we get into a bit of a quandary. Say, we wish to compute $1.03^{9.2}$. We line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has fallen off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured onto the $LL_2$ scale. That means we must read the result on the $LL_2$ scale. In order to avoid going off the edge, we instead use the folded $$ scale.
+
+To compute $1.03^{9.2}$, we manipulate the slide rule as follows:
+
+- $LL_1$—Place the hairline on the *base* $1.03$ on the $LL_1$ scale on the backside of the slide rule.
+- $CF$—Flip the slide rule to the frontside. Slide the middle $1$ on the $CF$ scale under the hairline.
+- $CF$—Place the hairline on the *exponent* $9.2$ on the $CF$ scale.
+- $LL_2$—Read under the hairline the *result* $1.3125$ on the $LL_2$ scale. This computes $1.03^{9.2} = 1.3125$.
 
 ![1.03^9.2](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
-***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $CI$ scale, instead. The procedures for the $\color{red}{LL_{0n}}$ scales are similarly categorised into four ranges of the exponent. These scales are also useful when the exponents are negative. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$.
+***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale. And if the exponent is negative, we use the $CI$ scale. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent.
+
+To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
+
+- $\color{red}{LL_{03}}$—Place the hairline on the base $0.222$ on the $\color{red}{LL_{03}}$ scale.
+- $C$—Slide the left-hand $1$ on the $C$ scale under the hairline.
+- $C$—Place the hairline on the exponent $1.11$ on the $C$ scale.
+- $\color{red}{LL_{03}}$—Read under the hairline the result $0.188$ on the $\color{red}{LL_{03}}$ scale. This computes $0.222^{1.11} = 0.188$.
+
+![0.222^1.11](./figures/SlideRules/K&E4081-3/0.222^1.11.jpg)
 
 To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
 - $LL_2$—Place the hairline on the *base* $2.22$ on the $LL_2$ scale.
 - $CI$—Slide the *exponent* $1.11$ on the $CI$ scale under the hairline.
 - $CI$—Place the hairline on the right-hand $1$ of the $CI$ scale.
-- $\color{red}{LL_{02}}$—Read under the hairline the *result* $0.413$ on the $\color{red}{LL_{02}}$ scale. This computes $2.22^{-1.11} = 0.413$.
+- $\color{red}{LL_{02}}$—Read under the hairline the *result* $0.413$ on the $\color{red}{LL_{02}}$ scale. This computes $2.22^{-1.11} = 1/ 2.22^{1.11} = 0.413$.
 
 ![2.22^1.11](./figures/SlideRules/K&E4081-3/2.22^-1.11.jpg)
 
-If we had read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $\color{red}{LL_{02}}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as desired. The $LL$ scales are the most powerful scales on an ordinary engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the user's manuals listed in the resources section at the end of the article.
+Had we read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $\color{red}{LL_{02}}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as desired. The $LL$ scales are the most powerful scales on an engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the user's manuals listed in the resources section at the end of the article.
 
 ## *trigonometric*
 
