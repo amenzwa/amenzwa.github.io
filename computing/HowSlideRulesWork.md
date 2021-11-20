@@ -455,7 +455,7 @@ To compute $1.03^{9.2}$, we manipulate the slide rule as follows:
 
 ![1.03^9.2](./figures/SlideRules/K&E4081-3/1.03^9.2.jpg)
 
-***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale. And if the exponent is negative, we use the $CI$ scale. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent.
+***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale to compute $x^y$. As usual, we begin on an $\color{red}{LL_{0n}}$ scale, and end on an $\color{red}{LL_{0n}}$ scale.
 
 To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
 
@@ -465,6 +465,8 @@ To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
 - $\color{red}{LL_{03}}$—Read under the hairline the result $0.188$ on the $\color{red}{LL_{03}}$ scale. This computes $0.222^{1.11} = 0.188$.
 
 ![0.222^1.11](./figures/SlideRules/K&E4081-3/0.222^1.11.jpg)
+
+If the exponent is negative, we read the result on the $\color{red}{LL_{0n}}$ scale. Because $x^{-y} = 1/x^y$ and $LL_n = 1/\color{red}{LL_{0n}}$, computing $x^y$ on the $LL_n$ scale but reading the result on the $\color{red}{LL_{0n}}$ scale yields $x^{-y}$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent.
 
 To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
@@ -476,6 +478,8 @@ To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 ![2.22^1.11](./figures/SlideRules/K&E4081-3/2.22^-1.11.jpg)
 
 Had we read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $\color{red}{LL_{02}}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as desired. The $LL$ scales are the most powerful scales on an engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the user's manuals listed in the resources section at the end of the article.
+
+In the above procedure, we used the $CI$ scale, instead of the $C$ scale, as usual. This is because the base  $2.22$ is far to the right edge of the slide rule, had we used the $C$ scale, the slide would be hanging almost entirely off the right edge. Using the $CI$ scale in this case reduces the slide movement distance, considerably.
 
 ## *trigonometric*
 
