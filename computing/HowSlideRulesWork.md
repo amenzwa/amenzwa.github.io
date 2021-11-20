@@ -382,7 +382,7 @@ On the slide rule, the $LL$ scales compute general exponentiation $x^{y/z}$. It 
 
 Recall that reading the result on the $D$ scale implicitly performs $log^{-1}$. Likewise, reading the result on the $LL_n$ scale implicitly performs $ln^{-1}$.
 
-***natural logarithm scale***—The black $LL_n$ scale is derived from the base-$e$ ($e = 2.718$) natural logarithm $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
+***natural logarithm scale***—The black $LL_n$ scale is closely related to the base-$e$ ($e = 2.718$) natural logarithm $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
 
 - $ln : LL_n \rightarrow D$
 - $ln^{-1} : D \rightarrow LL_n$
@@ -398,18 +398,18 @@ Unlike the $D$ scale, the black $LL_n$ scale is not cyclic; it is one long scale
 - $LL_1$: $x ∈ [1.01 \rightarrow 1.105] \implies ln(x) ∈ [0.01, 0.1]$
 - $LL_2$: $x ∈ [1.105 \rightarrow e] \implies ln(x) ∈ [0.1, 1.0]$
 - $LL_3$: $x ∈ [e \rightarrow 22000] \implies ln(x) ∈ [1.0, 10.0]$
-  - Note that $e = 2.718$ and $ln(e) = 1.0$
+  - $e = 2.718$ and $ln(e) = 1.0$
 
-The function composition $log \circ ln$ used to construct the $LL_n$ scales makes the $LL_3$ scale line up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The $LL_n$ scales are a tangible example of "exponential growth".
+These ranges of the $LL_n$ scales clearly show the rate of exponential growth. The function composition $log \circ ln$ used to derive the $LL_n$ scales, so that the $LL_3$ scale lines up perfectly with the $D$ scale: $log(ln(e)) = 0$ and $log(ln(22000)) = 1$. The lower $LL_n$ scales are similarly derived in accordance with their respective ranges.
 
-But had the $log \circ log$ function composition been used to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse. The function $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down.
+Had we used the $log \circ log$ function composition to construct the $LL_n$ scales, the range of the $LL_3$ scale would be $[10^1, 10^{10}]$, instead. Shrinking this galactic scale down to a 25-cm length would make the scale resolution unusably coarse. The function $e^x$ is famous for its fast growth rate, but $10^x$ beats it, hands down.
 
 The red $\color{red}{LL_{0n}}$ scales are reciprocals of the black $LL_n$ scales. As such, these scales run from right to left. On the K&E 4081-3, the red $\color{red}{LL_{0n}}$ scale is divided into these ranges:
 
 - $\color{red}{LL_{01}}$: $x ∈ [0.9901 \leftarrow 0.905] \implies ln(x) ∈ [-0.01, -0.1]$
 - $\color{red}{LL_{02}}$: $x ∈ [0.905 \leftarrow 1/e] \implies ln(x) ∈ [-0.1, -1.0]$
 - $\color{red}{LL_{03}}$: $x ∈ [1/e \leftarrow 0.000045] \implies ln(x) ∈ [-1.0, -10.0]$
-  - Note that $1/e = 0.368$ and $ln(1/e) = -1.0$
+  - $1/e = 0.368$ and $ln(1/e) = -1.0$
 
 Because the $LL$ scales are intimately linked to $ln$, and by extension to $e^x$, many slide rules label the $LL_n$ scales as $e^x$ and the $\color{red}{LL_{0n}}$ scales as $e^{-x}$.
 
@@ -444,7 +444,7 @@ To compute $1.03^{2.4}$, we manipulate the slide rule as follows:
 
 ![1.03^2.4](./figures/SlideRules/K&E4081-3/1.03^2.4.jpg)
 
-Sometimes, we get into a bit of a quandary. Say, we wish to compute $1.03^{9.2}$. We line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has fallen off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured onto the $LL_2$ scale. That means we must read the result on the $LL_2$ scale. In order to avoid going off the edge, we instead use the folded $$ scale.
+Sometimes, we get into a bit of a quandary. Say, we wish to compute $1.03^{9.2}$. We line up the $C$ scale's left-hand $1$ with the $LL_1$ scale's $1.03$. But now, the $C$ scale's $9.2$ has fallen off the right edge of the slide rule. What this indicates is that we have exceeded the upper limit of the $LL_1$ scale from whence we began, and have ventured onto the $LL_2$ scale. That means we must read the result on the $LL_2$ scale. In order to avoid going off the edge, we instead use the folded $CF$ scale.
 
 To compute $1.03^{9.2}$, we manipulate the slide rule as follows:
 
@@ -468,16 +468,16 @@ To compute $2.22^{-1.11}$, we manipulate the slide rule as follows:
 
 Had we read the result on the $LL_2$ scale, we would have computed $2.22^{1.11} = 2.434$. But by reading the result on the $\color{red}{LL_{02}}$ scale, we compute the reciprocal $1/2.434 = 0.413$, as desired. The $LL$ scales are the most powerful scales on an engineering straight rule. But with that power comes numerous traps for the unweary. Interested readers may read the user's manuals listed in the resources section at the end of the article.
 
-In the above procedure, we used the $CI$ scale, instead of the $C$ scale, as usual. This is because the base  $2.22$ is far to the right edge of the slide rule, had we used the $C$ scale, the slide would be hanging almost entirely off the right edge. Using the $CI$ scale in this case reduces the slide movement distance, considerably.
+When computing $2.22^{-1.11}$ above, we used the $CI$ scale, instead of the $C$ scale, as usual. This is because the base  $2.22$ is far to the right edge of the slide rule, had we used the $C$ scale, the slide would be hanging almost entirely off the right edge. Using the $CI$ scale in this case reduces the slide movement distance, considerably.
 
 ***exponentiation for the $x < 1$ case***—If $x < 1$, we use the $\color{red}{LL_{0n}}$ scales and the $C$ scale to compute $x^y$. The procedures for the $\color{red}{LL_{0n}}$ scales are analogously categorised into four ranges of the exponent, the details of which I shall forego.
 
 To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
 
-- $\color{red}{LL_{03}}$—Place the hairline on the base $0.222$ on the $\color{red}{LL_{03}}$ scale.
+- $\color{red}{LL_{03}}$—Place the hairline on the *base* $0.222$ on the $\color{red}{LL_{03}}$ scale.
 - $C$—Slide the left-hand $1$ on the $C$ scale under the hairline.
-- $C$—Place the hairline on the exponent $1.11$ on the $C$ scale.
-- $\color{red}{LL_{03}}$—Read under the hairline the result $0.188$ on the $\color{red}{LL_{03}}$ scale. This computes $0.222^{1.11} = 0.188$.
+- $C$—Place the hairline on the *exponent* $1.11$ on the $C$ scale.
+- $\color{red}{LL_{03}}$—Read under the hairline the *result* $0.188$ on the $\color{red}{LL_{03}}$ scale. This computes $0.222^{1.11} = 0.188$.
 
 ![0.222^1.11](./figures/SlideRules/K&E4081-3/0.222^1.11.jpg)
 
@@ -501,7 +501,7 @@ In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $
 - $sin: S \rightarrow C$
 - $sin^{-1}: C \rightarrow S$
 
-In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. Note that the inverse function (here $sin^{-1}$) is a reflection in the $y = x$ line of the original function (here $sin$). The $x$-axis is the angle $\theta$ in radians.
+In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. Note that the inverse function (here $sin^{-1}$) is a reflection in the $y = x$ line of the original function (here $sin$). In the figure below, the $x$-axis represents the angle $\theta$ in radians.
 
 ![sin](./figures/SlideRules/plot-sin.jpg)
 
@@ -514,7 +514,7 @@ To compute $sin(30°)$, we manipulate the slide rule as follows:
 
 To compute $\theta$ in the expression $sin(\theta) = 0.866$, we do the opposite: set the argument $0.866$ on the $C$ scale and read the result $60°$ on the $S$ scale. This computes $\theta = sin^{-1}(0.866) = 60°$.
 
-***red $S$ scale***—The $S$ scale is graduated from left to right, in black, for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but by reading the red $\color{red}{S}$ scale.
+***red $\color{red}{S}$ scale***—The $S$ scale is graduated from left to right, in black, for $sin$ between the angles $5.73°$ and $90°$. But since $cos(\theta) = sin(90° - \theta)$, the $cos$ scale is readily combined into the $S$ scale, but in the reverse direction and marked in red. Hence, $cos(\theta)$ is computed using the same procedure, but in reference to the red $\color{red}{S}$ scale.
 
 In the plot below, the red curve is $cos$ and the blue is $cos^{-1}$.
 
@@ -529,7 +529,7 @@ In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
 ![tan](./figures/SlideRules/plot-tan.jpg)
 
-***red $T$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45°, 84.29°]$. The red $\color{red}{T}$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $\color{red}{T}$ scale is used in conjunction with the reciprocal $CI$ scale.
+***red $\color{red}{T}$ scale***—The $T$ scale, too, has red markings, running right to left, for $\theta ∈ [45°, 84.29°]$. The red $\color{red}{T}$ scale is used for $tan(\theta) ∈ [1 \rightarrow 10]$ and for $cot(\theta) ∈ [1.0 \leftarrow 0.1]$. The red $\color{red}{T}$ scale is used in conjunction with the reciprocal $CI$ scale.
 
 To compute $tan(83°)$, we manipulate the slide rule as follows:
 
@@ -538,40 +538,42 @@ To compute $tan(83°)$, we manipulate the slide rule as follows:
 
 ![tan(83)](./figures/SlideRules/K&E4081-3/tan-83.jpg)
 
-Since $cot(\theta) = tan(90° - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black and red $\color{red}{T}$ scales, using the procedure described above. So, to compute $cot(83°)$, we use the same procedure as $tan(83°)$ on the red $\color{red}{T}$ scale, but instead read the result $cot(83°) = 1/tan(83°) = 0.1228$ on the $C$ scale. Alternatively, we may compute $tan(90° - 83°)$ on the black $T$ scale, and read the result $cot(83°) = tan(7°) = 0.1228$ on the $C$ scale.
+Since $cot(\theta) = tan(90° - \theta) = 1/tan(\theta)$, we may compute $cot(\theta)$ using the black $T$ scale or the red $\color{red}{T}$ scale, as per the procedure described above. So, to compute $cot(83°)$, we use the same procedure as $tan(83°)$ on the red $\color{red}{T}$ scale, but read the result $cot(83°) = 1/tan(83°) = 0.1228$ on the $C$ scale, instead of the $CI$ scale. Alternatively, we may compute $tan(90° - 83°)$ on the black $T$ scale, and read the result $cot(83°) = tan(7°) = 0.1228$ also on the $C$ scale.
 
 In the plot below, the red curve is $cot$​ and the green is $cot^{-1}$​.
 
 ![cot](./figures/SlideRules/plot-cot.jpg)
 
-***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573°, 5.73°] = [0.01, 0.1]\ rad$, because $sin(\theta) \approx tan(\theta)$ for small angles. For such small angles, we may exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
+***$ST$ or $SRT$ scale***—The $ST$ scale is used to compute $sin$ and $tan$ for small angles in the range $[0.573°, 5.73°] = [0.01, 0.1]\ rad$, because $sin(\theta) \approx tan(\theta)$ for small angles. For such small angles, we may exploit another approximation: $sin(\theta) \approx tan(\theta) \approx \theta\ rad$, where the angle $\theta$ is measured in radians. For this reason, some manufacturers, like K&E, label the $ST$ scale as $SRT$ for $sin$-$rad$-$tan$.
 
 In the plot below, the blue curve is $sin$ and the red is $tan$. These two curves are indistinguishable when $\theta ∈ [0.0, 0.1]\ rad$.
 
 ![sin-tan](./figures/SlideRules/plot-sin-tan.jpg)
 
-It is possible to chain trigonometric and arithmetic calculations on the slide rule. This is one of the reasons why calculating with the slide rule was much faster than using tables. Those who are interested in these details should read the user's manuals listed in the resources section at the end of the article.
+It is possible to chain trigonometric and arithmetic calculations on the slide rule. This is one of the reasons why calculating with the slide rule is so much faster than using tables. Those who are interested in these details should read the user's manuals listed in the resources section at the end of the article.
 
 # MAINTENANCE
 
-***calibrating***—When an adjustable slide rule, like the K&E 4081-3, goes askew (but not warped), it can be recalibrated. The frame of this duplex slide rule consists of the fixed lower portion and the adjustable upper portion. The two faces of the cursor are independently adjustable, as well. We calibrate this slide rule as follows:
+***calibrating***—When an adjustable slide rule, like the K&E 4081-3, goes askew (but not warped), its accuracy can be restore by recalibrating. The frame of this duplex slide rule consists of the fixed lower portion and the adjustable upper portion. The two faces of the cursor are independently adjustable, as well. We calibrate this slide rule as follows:
 
-- ***align slide to lower frame***—Align the slide's $C$ scale with the lower frame's $D$ scale.
+- ***align slide to lower frame***—Nudge the slide and align its $C$ scale with the fixed lower frame's $D$ scale.
 - ***align upper frame to slide***—Slightly loosen the screws that hold the upper frame. While keeping the slide aligned with the lower frame, adjust the upper frame so that its $DF$ scale lines up with the slide's $CF$ scale. Retighten the upper frame screws, but not so tight as to impede the movement of the slide.
-- ***align front cursor to frame***—Move the cursor hairline on the left-hand $\pi$ of the upper frame's $DF$ scale and the left-hand $1$ of the lower frame's $D$ scale on the frontside of the slide rule. Slightly loosen the screws that hold the glass's metal bracket to the top and bottom lintels of the cursor. Nudge the glass until the hairline is aligned to both the $DF$ and the $D$ scales. Retighten the glass bracket's screws. Do not over tighten, lest the cursor is damaged.
+- ***align front cursor to frame***—After having aligned the lower frame, the slide, and the upper frame, move the cursor hairline on the left-hand $\pi$ of the upper frame's $DF$ scale and the left-hand $1$ of the lower frame's $D$ scale on the frontside of the slide rule. Slightly loosen the screws that hold the glass's metal bracket to the top and bottom lintels of the cursor. Nudge the glass until the hairline is aligned to both the $DF$ and the $D$ scales. Retighten the glass bracket's screws. Do not over tighten, lest the cursor is damaged.
 - ***align back cursor to frame***—Flip the slide rule, and align the back cursor to the frame in the same manner.
 
 ![calibrating](./figures/SlideRules/K&E4081-3/calibrating.jpg)
 
-Frustrating though it can be to recalibrate the slide rule, that is the easy bit. Reading the scales with adequate precision, however, was tricky, especially for those of us with poor eyesights.
+Frustrating though it can be to recalibrate a skewed slide rule, that is the easy bit. Reading the scales with adequate precision, however, is trickier, especially for those of us with poor eyesights.
 
-***cleaning***—I can say nothing about maintaining vintage Thacher-style large cylindrical rules, since I have never even seen one in person. But straight rules, circular rules, and Otis King-style cylindrical rules should be cleaned by gently wiping down with clean, moist (but not dripping wet) microfibre cloth or paper towel, then dry off the moisture, immediately. Although plastic and aluminium rules can withstand water, wood and bamboo rules cannot. Note that the black handle (the cursor) on the Otis King is actually black-painted brass cylinder. Aggressive rubbing will scrub off the black paint. And be forewarned: never use chemical solvents.
+***cleaning***—I can say nothing about maintaining and cleaning vintage Thacher-style large cylindrical rules, since I have never even seen one in person. But straight rules, circular rules, and Otis King-style cylindrical rules should be cleaned by gently wiping down with clean, moist (but not dripping wet) microfibre cloth or paper towel, then dry off the moisture, immediately. Although plastic and aluminium rules can withstand water, wood and bamboo rules cannot. Note that the black handle (the cursor) on the Otis King is actually a black-painted brass cylinder. Aggressive rubbing can scrub off the black paint. And be forewarned: never use chemical solvents.
 
-With use, the slide can get sticky, sometimes. This is caused by the grime—an amalgam of dust and skin oil—that collect in the crevices between the slide and the frame. This grime can be cleaned with a moist microfibre cloth or paper towel. Do not apply lemon oil, grease, powder, graphite, or any other foreign substance to the slide rule, and especially to the slide-frame contact areas. Not only does the slide rule not require lubricants, these substances could mar, or perhaps even damage, the device. Dust also tends to gather under the cursor glass. The easiest way to remove the dust is to blow it out using a compressed air canister. To remove stubborn stains under the glass, however, the cursor may need to be disassembled and cleaned.
+With use, the slide can get sticky, over time. This is caused by the grime—an amalgam of dust and skin oil—that collect in the crevices between the slide and the frame. This grime can be cleaned with a moist microfibre cloth or paper towel. Do not apply lemon oil, grease, powder, graphite, or any other foreign substance to the slide rule, and especially never to the slide-frame contact areas. Not only does the slide rule not require lubricants, these foreign substances could mar, or perhaps even damage, the device.
+
+Dust also tends to gather under the cursor glass. The easiest way to remove the dust is to blow it out using a compressed air canister. To remove stubborn stains under the glass, however, the cursor may need to be disassembled and cleaned.
 
 ![cleaning](./figures/SlideRules/K&E4081-3/cleaning.jpg)
 
-If you are reading this article, odds are that you have never used or owned a slide rule. It is my hope that you would acquire one, say from [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412), and learn to use it. Your first slide rule should not be a rare collector's item; it should be something like the [K&E 4081-3 Log Log Duplex Decitrig](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_sacat=0) or the [Post 1460 Versalog](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=Post+1460+Versalog&_sacat=0&LH_TitleDesc=0&_odkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_osacat=0)—a decent, common, inexpensive model. If you do end up buying one, your slide rule will most likely be grimy and discoloured, for having been kept in a dusty storage bin for decades. Do not despair; most old slide rules can be renewed to a good extent. The grime and discolouration can be removed by gently—I mean gently—rubbing with the soft, foamy side of a moist (but not dropping wet) [kitchen sponge](https://www.amazon.com/dp/B007C5IH4C?tag=aboutcom02thespruce-20&linkCode=ogi&th=1&psc=1&ascsubtag=4164819%7Cnca170cbe1d384af0a2b09e62c4e4b9b020%7CB007C5IH4C) loaded with a spot of dish soap. If you do decide to attack a stain with the rough side of the sponge, use care and judgement, or you will scrub off the scale markings. And if yours is a wood slide rule, minimise its contact with water. Immediately dry off the slide rule after cleaning. Do not apply heat as a drying aid. And I strongly suggest that you clean in stages, removing the grime layer by layer.
+If you are reading this article, odds are that you do not own a slide rule. It is my hope that you would acquire one, say from [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l2632&_nkw=slide+rules&_sacat=412), and learn to use it. Your first slide rule should not be a rare, collector's item; it should be something like the [K&E 4081-3 Log Log Duplex Decitrig](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_sacat=0) or the [Post 1460 Versalog](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=Post+1460+Versalog&_sacat=0&LH_TitleDesc=0&_odkw=K%26E+4081-3+Log+Log+Duplex+Decitrig&_osacat=0)—a cheap, but good, model. If you do end up buying one, yours will most likely be grimy and discoloured, for having been kept in a dusty storage bin for decades. Do not despair; most old slide rules can be renewed to a good extent. The grime and discolouration can be removed by gently—I mean gently—rubbing with the soft, foamy side of a moist (but not dropping wet) [kitchen sponge](https://www.amazon.com/dp/B007C5IH4C?tag=aboutcom02thespruce-20&linkCode=ogi&th=1&psc=1&ascsubtag=4164819%7Cnca170cbe1d384af0a2b09e62c4e4b9b020%7CB007C5IH4C) loaded with a spot of dish soap. If you do decide to attack a stain with the rough side of the sponge, use care and judgement, or you will scrub off the scale markings. Use extra care, when scrubbing painted slide rules, like the Pickett aluminium rules. And if yours is a wood slide rule, minimise its contact with water. Immediately dry off the slide rule after cleaning. Do not apply heat as a drying aid. And I strongly suggest that you clean in stages, removing the grime layer by layer.
 
 # COLLECTING
 
