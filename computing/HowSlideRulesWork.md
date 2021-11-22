@@ -65,7 +65,7 @@ A slide rule comprises three components: the body, the slide, and the cursor, as
 
 The slide rule is always operated using both hands, fingers of one hand pushing and those of the other gently opposing. The lower lintel of the cursor glides along the bottom of the lower frame. There is a tension spring between the upper lintel of the cursor and the top of the upper frame. This tension spring braces the lower lintel of the cursor against the bottom of the lower frame. To make fine adjustments of the cursor, one uses the thumbs of both hands against the lower lintel of the cursor. But when using the backside of a duplex straight rule, the lower lintel of the cursor has now flipped to the topside, so it had to be fine adjusted using the forefingers. Fine adjustments of the slide are made with the forefingers of both hands. To use the backside scales on a duplex straight rule, the device is flipped bottom-to-top.
 
-Older simplex slide rules, like the Nestler 23 R, have use instructions and a few scientific constants on the back, and newer duplex slide rules comes with a plastic insert that bears such information. But no engineer I knew actually used this on-device information. Procedures for operating an engineering slide rule are complex; we had to study the user's manual thoroughly and receive hands-on instructions for at least a few weeks before we became proficient enough to be left alone with a slide rule without causing mayhem. And every branch of engineering has its own set of published handbooks in which many formulae and constants can readily be found.
+Older simplex slide rules, like the Nestler 23 R, have use instructions and a few scientific constants on the back, and newer duplex slide rules comes with a plastic insert that bears such information. But no engineer I knew actually used this on-device information. Procedures for operating an engineering slide rule are complex; we had to study the user's manual thoroughly and receive hands-on instructions for several weeks before we became proficient enough to be left alone with a slide rule without causing mayhem. And every branch of engineering has its own set of published handbooks in which many formulae and constants can readily be found.
 
 ## *arithmetic operations*
 
@@ -101,7 +101,7 @@ In the plot below, the black curve is $log$ and the red is $log^{-1}$.
 
 ![log](./figures/SlideRules/plot-log.jpg)
 
-The special name for $log^{-1}$ is $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. It turns out that the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
+The special name for $log^{-1}$ is power-of-$10$ function $10^x$. The $D$ and the $L$ scales form a transform pair that converts between the  logarithmic scale and the arithmetic scale. It turns out that the $log$ function transforms the arithmetic scale's $×$ and $÷$ operators into the logarithmic scale's $+$ and $-$ operators, and the $log^{-1}$ function performs the inverse transformation.
 
 Plotting the $log$ function on a logarithmic scale produces a sequence of evenly spaced values. Hence, the $L$ scale appears linear, when laid out on the slide rule. Note also that the mere act of reading $x$ on the logarithmic scale implicitly computes $log(x)$; there is no need explicitly to compute $log^{-1}(x)$. Gunter's logarithmic scale was the groundbreaking idea that made the slide rule work so effectively, efficiently, effortlessly.
 
@@ -194,13 +194,13 @@ Circular rules were the first practical slide rules. Their main advantages are c
 
 Of all the varieties, straight rules are the easiest and the most convenient to use, because they are relatively small and light, and because the whole scale is visible at once. However, their scale lengths are bounded by the length of the body. So, straight rules are less precise by comparison.
 
-Most engineers preferred straight rules, because these devices allowed the user to see the whole scales, and they were fast, accurate, and portable enough for routine use. Hence, this article focuses on straight rules. But a few engineers did use circular models, either because these devices were more precise or because they were more compact. No engineers I knew used cylindrical ones; these devices were too unwieldy and they had only basic arithmetic scales. But accountants, financiers, actuaries, and others who require greater precision swore by cylindrical rules.
+Most engineers preferred straight rules, because these devices allowed the user to see the whole scales, and they were fast, accurate, and portable enough for routine use. Hence, this article focuses on straight rules. But a few engineers did use circular models, either because these devices were more precise or because they were more compact. In general, engineers did not use cylindrical ones; these devices were too unwieldy and they had only basic arithmetic scales. But accountants, financiers, actuaries, and others who required greater precision swore by cylindrical rules.
 
 ## *straight rules*
 
 The commonest kind of slide rule was the 25 cm desk model, called the straight rule. The cursor is made of clear plastic or glass, etched with a hairline. The frame and the slide are made of wood, bamboo, aluminium, or plastic. The name "slide rule" derives from the slippy-slidy bits and the ruler-like scales. Straight rules come in four types: Mannheim, Rietz, Darmstadt, and log-log duplex.
 
-The less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who require more precision. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for quick, back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, the majority of the slide rules manufactured over the past two centuries were of this design.
+The less expensive Mannheim and Rietz models were used in high school, and the more sophisticated Darmstadt and log-log duplex models were used in college. There were longer straight rules used by those who required more precision. And there were shorter, pocket-sized straight rules, like the Pickett N600-ES carried by the Apollo astronauts. Although not very precise, pocket slide rules were good enough for quick, back-of-the-napkin calculations in the field. Engineers, however, were partial to the 25 cm desk straight rule. As such, the majority of the slide rules manufactured over the past two centuries were of this design.
 
 ***Mannheim type***—The most basic straight rule is the Mannheim type, the progenitor of the modern slide rule. Surely, applying the adjective "modern" to a device that had been deemed outmoded for over 40 years is doing gentle violence to the English language. But given that the slide rule is now over 400 years old, a 150-year-old Mannheim model is comparatively "modern".
 
@@ -218,7 +218,7 @@ Classic Mannheim simplex slide rules do not have windows over the cutouts. Inste
 
 The original Mannheim slide rule was invented in 1859 by [Amédée Mannheim](https://en.wikipedia.org/wiki/Amédée_Mannheim), a French artillery officer, for quickly computing firing solutions in the field. It had only $C$, $D$, $A$, and $B$ scales, so it was capable of computing only $×$, $÷$, $x^2$, and $\sqrt{x}$. This suited its intended purpose. It was the forefather of the modern straight rule.
 
-***Rietz type***—A slight improvement upon the French Mannheim type was the German Rietz type, designed in 1902 for D&P (Aristo) by Max Rietz, an engineer. It added the $ST$ scale for small angles in the range $[0.573°, $ $5.73°] = [0.01, 0.1]\ rad$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices. The following is the Nestler 23 R Rietz, a German make known to be favoured by boffins, including Albert Einstein. The 23 R dates to 1907, but the example below is from the 1930s. The frontside has $K$ and $A$ scales on the upper frame; $B$, $CI$ , and $C$ scales on the slide; and $D$ and $L$ scales on the lower frame. The $CI$ scale is the reverse $C$ scale that runs from right to left.
+***Rietz type***—A slight improvement upon the French Mannheim type was the German Rietz type, designed in 1902 for Dennert & Pape (D&P, subsequently Aristo) by Max Rietz, an engineer. It added the $ST$ scale for small angles in the range $[0.573°, $ $5.73°] = [0.01, 0.1]\ rad$. In this angular range, $sin(\theta) \approx tan(\theta)$, so the combined $sin$-$tan$ scale suffices. The following is the Nestler 23 R Rietz, a German make known to be favoured by boffins, including Albert Einstein. The 23 R dates to 1907, but the example below is from the 1930s. The frontside has $K$ and $A$ scales on the upper frame; $B$, $CI$ , and $C$ scales on the slide; and $D$ and $L$ scales on the lower frame. The $CI$ scale is the reverse $C$ scale that runs from right to left.
 
 ![Nestler 23 R](./figures/SlideRules/Nestler23R/DSC00151.JPG)
 
@@ -391,7 +391,7 @@ In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
 
 ![ln](./figures/SlideRules/plot-ln.jpg)
 
-The special name for $ln^{-1}$ is $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithm scale and the base-$10$ common logarithm scale.
+The special name for $ln^{-1}$ is exponential function $e^x$. The $LL_n$ and the $D$ scales form a transform pair that converts between the base-$e$ natural logarithm scale and the base-$10$ common logarithm scale.
 
 Unlike the $D$ scale, the black $LL_n$ scale is not cyclic; it is one long scale. On the K&E 4081-3, the black $LL_n$ scale is divided into these three ranges:
 
