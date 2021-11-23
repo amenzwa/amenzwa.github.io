@@ -67,4 +67,4 @@ We may remedy the stutter problem by setting the graphics card to adaptive verti
 
 # CONCLUSION
 
-As I stated above, this book not meant for the gamers, but for the serious simulator users. These excerpts from GNF should give you a better sense of whether this book is right for you.
+GNF not meant for the gamers, but for the serious simulator users. These excerpts from this book should give you a better sense of whether it is right for you.
