@@ -17,7 +17,7 @@ By the way, I test ran AC on a MacBook Pro 15” with 2.6 GHz Core i7 with 16 GB
 
 For an enhanced realism, you should buy a racing seat like the Playseat Evolution. Be sure to get the Gearshift Holder accessory. Mount it on the right side of the seat if you are used to driving left-hand-drive cars, and on the left side if you prefer right- hand-drive cars. The photograph⁠ below shows a G27 mounted on a Playseat.
 
-![G25 & Playseat](/Users/zwa/Documents/amenzwa.github.io/motorsport/figures/G25-Playseat.jpg)
+![G25 & Playseat](./figures/G25-Playseat.jpg)
 
 Place your tele on a low stand, so that your eye level is about one-half from the bottom edge of the display. Then, place the racing seat as close to the base of the stand as practicable. This arrangement, shown above, complements the cockpit view. An inexpensive but high-quality immersive sound can be obtained using a professional-grade stereo headphone and a digital-to-analogue converter (DAC) headphone amplifier. The Sennheiser HD 600 headphone driven by the FiiO Alpen E17 USB DAC amplifier offers decent sound at an affordable price. You will also need a force feedback USB steering wheel like the Logitech G27 or the older G25.
 
@@ -27,21 +27,21 @@ Download the Steam client from SteamPowered.com, register with the service, purc
 
 AC’s road-going cars have proper seat heights, so you may use the default value for these cars. But the open-wheel models have disconcertingly high seats. So, we need to lower the seat for an open-wheeler, but by how much? Let us have a look at the Lotus Type 125 Exos. It is an F1-like race car that Lotus sells to its elite customers. So, it should have a similar cockpit view as the Lotus F1 car. See the true driver’s eyes view video made by Lucas di Grassi, a Pirelli test driver putting a set of full-wet rain tyres through their paces in a Lotus F1 car on Circuit Paul Ricard in France. Unlike other in-cockpit videos that were shot though helmet-top cameras, di Grassi wore the camera directly in front of his eyes, partially obscuring his vision as a consequence. Also, note how shaky his head got at various parts on the track. And most of the time, di Grassi cannot see the track ahead over the top of his steering wheel, given how low he sits in the cockpit. This is as realistic a view as we mortals can get of an F1 cockpit. The following screenshot⁠ was captured from di Grassi’s video, in order to provide you a baseline against which to compare your seat height in AC.
 
-![Lotus di Grassi](/Users/zwa/Documents/amenzwa.github.io/motorsport/figures/viewLotus-diGrassi.jpg)
+![Lotus di Grassi](./figures/viewLotus-diGrassi.jpg)
 
 The default seat height for Exos in AC, however, is much too high, as can be seen below.
 
-![Lotus default](/Users/zwa/Documents/amenzwa.github.io/motorsport/figures/viewExosdefault.jpg)
+![Lotus default](./figures/viewExosdefault.jpg)
 
 Since the Exos is derived from the Lotus F1 car, you should reproduce the F1 driver’s cockpit view. But there is a catch. In real life, the driver can raise his head slightly to see what is ahead, if necessary. You, however, cannot raise your head in AC as readily. So, as a compromise, I recommend that you lower the seat until the two little humps on the side of the nose are barely visible over the top of the steering wheel, as shown below. This position offers the best realism-usability balance.
 
-![Lotus lowered](/Users/zwa/Documents/amenzwa.github.io/motorsport/figures/viewExoslowered.jpg)
+![Lotus lowered](./figures/viewExoslowered.jpg)
 
 # GRAPHICS SET-UP
 
 ## *eye-to-screen distance*
 
-The above screenshot of the Lotus Exos cockpit uses AC’s default field of view of $54\degree$. A spot of trigonometry tells us how far the screen should be from the eyes at a given view angle and screen size. Let us say that a large tele has a usable screen width of about $150\ cm$ (approximately $60\ in$), and you have kept AC’s field of view at the default $54\degree$. Then, the proper eye-to-screen distance is $(150 ÷ 2) / tan(54 ÷ 2) \approx 150\ cm$. The diagram below shows the top view of the tele, the eyes, and the view cone.
+The above screenshot of the Lotus Exos cockpit uses AC’s default field of view of $54°$. A spot of trigonometry tells us how far the screen should be from the eyes at a given view angle and screen size. Let us say that a large tele has a usable screen width of about $150\ cm$ (approximately $60\ in$), and you have kept AC’s field of view at the default $54°$. Then, the proper eye-to-screen distance is $(150 ÷ 2) / tan(54 ÷ 2) \approx 150\ cm$. The diagram below shows the top view of the tele, the eyes, and the view cone.
 
 ![Screen Distance](./figures/graphicsScreenDistance.jpg)
 
