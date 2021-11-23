@@ -32,9 +32,9 @@ Now, let us look at a pair of examples to better understand the declarative-impe
 
 Say, your local library has a large collection of novels, and you wish to know the titles of the novels written by [Jane Austen](http://en.wikipedia.org/wiki/Jane_Austen). You can walk up to the librarian and ask, thusly:
 
-> "Can you find me the *titles* of the *novels* by the *author* Jane Austen?"
+> Can you find me the *titles* of the *novels* by the *author* Jane Austen?
 
-It would be becoming if you append the word “please” to your request, but since this supplicatory word has no equivalent keyword in programming languages, I left it out.
+It would be polite to append the word “please” to your request, but since this supplicatory word has no equivalent keyword in programming languages, I left it out.
 
 Alternatively, you can send to the library’s catalogue database the following query written in the declarative language SQL:
 
@@ -68,7 +68,11 @@ for n = 1 to N
 
 For clarity, I used a pseudo programming language above, instead of an actual one. And for simplicity, I used a naïve, linear search algorithm, instead of an optimal one. In this pseudo code, the first statement defines the library’s novel collection, and the second statement defines the total number of novels. Let us assume that the collection *Novels* is a set, so it contains only unique elements. Hence, even if the library has multiple copies of a novel, that novel will appear only once in this set. Next, the programme repeats the following steps for every novel in the set: retrieve one novel from the set; check if its author is Jane Austen; and if so, print its title.
 
-Puerile, you say? Well, this is how all computers work; be thankful that humans do not. Imagine that the library staff responds only to imperatives. Then, you would be obliged to issue step-by-step instructions like this: “Walk to the aisle where shelves of novels are kept. Pick out the first novel. If its author is Jane Austen, write down its title on a piece of paper, provided that title has not already been recorded on the paper. Repeat the previous two steps, until all the novels on all the shelves have been examined. Return to this information desk. Hand me the list.” That would enrage even the meekest of bookworms.
+Puerile, you say? Well, this is how all computers work; be thankful that humans do not. Imagine that the library staff responds only to imperatives. Then, you would be obliged to issue step-by-step instructions like this:
+
+> Walk to the aisle where shelves of novels are kept. Pick out the first novel. If its author is Jane Austen, write down its title on a piece of paper, provided that title has not already been recorded on the paper. Repeat the previous two steps, until all the novels on all the shelves have been examined. Return to this information desk. Hand me the list.
+
+That would enrage even the meekest of bookworms.
 
 To sum up, a *declarative* language allows the programmer to focus on the application concepts, while the language takes care of the niggly details. This yields a more expressive, succinct code. There is less work for the programmer, and fewer ways for him to make mistakes. And the programme is easier to understand, because it reflects the way humans think. To enjoy these benefits, however, the programmer must necessarily relinquish some of the control to the computer. By the way, mathematics is a declarative language.
 
