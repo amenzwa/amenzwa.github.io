@@ -115,9 +115,9 @@ A programmer-defined procedure in assembly language is just a sequence of instru
 
 ```assembly
   ...
-dbl: ; procedure that doubles input integer supplied in accumulator A
-  mul 2  ; multiply input value in A with 2; store result back in A
-  return ; pop (SR + ret addr) off stack at SP; load PC with retaddr
+dbl:     ; double the input integer supplied in accumulator A
+  mul 2  ; multiply value in A with 2, store result in A
+  return ; pop (SR+retaddr) off stack at SP, load PC with retaddr
   ...
 ```
 
@@ -126,8 +126,8 @@ This procedure can be invoked as follows:
 ```assembly
   ...
   A ← 13   ; load A with argument value 13
-  call dbl ; push (ret addr + SR) on stack at SP; load PC with dbl's addr
-  A → mem  ; store result value in A to RAM location mem
+  call dbl ; push (retaddr+SR) on stack at SP, load dbl's addr in PC
+  A → mem  ; store result in A to RAM location mem
   ...
 ```
 
