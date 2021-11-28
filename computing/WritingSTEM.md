@@ -184,10 +184,10 @@ The text is written using [Markdown](https://www.markdownguide.org/), which is a
 Before we start, we import some preliminary libraries. We will also import (below) the accompanying `lorenz.py` file, which contains the actual solver and plotting routine.
 ```
 
-Equations and other mathematical contents are written using [$\TeX$](https://tug.org/index.html) mathematical typesetting language. There are many online [tutorials](https://sodocumentation.net/latex/topic/5950/typesetting-mathematics) for typesetting in $\TeX$. Find one that suits your needs. You can typeset text, tables, figures, and equations in $\TeX$. Just learn to typeset maths. Jupyter can handle the rest. The Fourier transform $F(\omega) = \frac{1}{2\pi} \int_{-\infin}^{+\infin}{f(t) e^{-i \omega t}} dt$, for example, is typeset as follows:
+Equations and other mathematical contents are written using [$\TeX$](https://tug.org/index.html) mathematical typesetting language. There are many online [tutorials](https://sodocumentation.net/latex/topic/5950/typesetting-mathematics) for typesetting in $\TeX$. Find one that suits your needs. You can typeset text, tables, figures, and equations in $\TeX$. Just learn to typeset maths. Jupyter can handle the rest. The Fourier transform $F(\omega) = \frac{1}{2\pi} \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt$, for example, is typeset as follows:
 
 ```TeX
-F(\omega) = \frac{1}{2\pi} \int_{-\infin}^{+\infin}{f(t) e^{-i \omega t}} dt
+F(\omega) = \frac{1}{2\pi} \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt
 ```
 
 Printout from a well-crafted Jupyter notebook is more than adequate for term papers and lab reports at the high school and college levels. The biggest advantage is that the Python code within the Jupyter notebook can consume CSV, JSON, and other commonly used data formats. The observation data from your experiment can thus be analysed in your report notebook, and the output embedded therein. This workflow is far superior to using word processor and spreadsheet.
