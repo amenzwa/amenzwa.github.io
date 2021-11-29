@@ -149,13 +149,13 @@ Traditionally, STEMers used [$\TeX$](https://en.wikipedia.org/wiki/TeX) typesett
 
 But fortunately, we now have [Jupyter](https://jupyter.org/), a literate programming environment for technical computing. Its open architecture supports many programming languages, but [Python](https://www.python.org/) is the most commonly used language. The [literate programming](https://www.cs.tufts.edu/~nr/cs257/archive/literate-programming/01-knuth-lp.pdf) concept dates back to Knuth's original work in 1984. The motivation was to make code and its descriptive text fully integrated. And the UI that supports the literate programming style is known as the [computational notebook](https://en.wikipedia.org/wiki/Notebook_interface), a live document that allows the user to manipulate both code and text. Jupyter's notebook user interface is web application. In the days of the [VT100](https://en.wikipedia.org/wiki/VT100) terminal and [Emacs](https://en.wikipedia.org/wiki/Emacs) text editor, a live document was a revolutionary idea. Today, though, every web page is a live document that contains text, user interface components, and JavaScript code that animate those elements. However, despite the impressive utility of web pages, the immense capabilities of IDEs, and a quarter-century of experience, web application development today remains tedious, heavyweight, and unproductive. That is, web development is still an illiterate programming environment. So, for literate programming style of coding and writing, Jupyter is far and away the best tool.
 
-Indeed, you can use Jupyter for all your data experiments and report writing, because it supports Markdown with text and maths typesetting. In this section, I shall describe how effectively to use Jupyter for STEM-related reading and writing. These tools are free, but they are professional-grade software. You can use them in your daily work as a STEM practitioner. So, learn them well.
+Indeed, you can use Jupyter for all your data experiments and report writing, because it supports Markdown with text and maths typesetting. In this section, I shall describe how to use Jupyter for STEM-related reading and writing. These tools are free, but they are professional-grade software. You can use them in your daily work as a STEM practitioner. So, learn them well.
 
 ## *reading tools*
 
 Academia is about knowledge accumulation. But unless the accumulated knowledge is organised systematically, it will be useless to future generations. As a member of the academic community, you too should organise your knowledge acquisition process as well as your amassed knowledge. Sort paper-based textbooks, journals, and articles by subject and by time on bookshelves. Organise PDF documents in folders on your computer's disc.
 
-There are many ways to organise knowledge. Indeed, there is an entire field of study devoted to that: [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)). Philosophers and librarians spend whole careers studying and refining this subject. In computer science (CS), for example, we use the [Association for Computing Machinery](https://www.acm.org/) (ACM) [Computing Classification System](https://dl.acm.org/ccs) (CCS). All computer science textbooks are organised in accordance with this ontology. Let us drill down one branch of CS knowledge: from the top-level of CCS, we follow the **Theory of computation** branch, the **Computational complexity and cryptography** branch, and finally arrive at the **Complexity classes** leaf. On the CS ontological tree, the [complexity class](https://en.wikipedia.org/wiki/Complexity_class) leaf itself is a massive area of specialisation with its own open (unsolved) problems welcoming future generations of researchers.
+There are many ways to organise knowledge. Indeed, there is an entire field of study devoted to that: [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)). Philosophers and librarians spend whole careers studying and refining this subject. In computer science (CS), for example, we use the [Association for Computing Machinery](https://www.acm.org/) (ACM) [Computing Classification System](https://dl.acm.org/ccs) (CCS). All computer science textbooks are organised in accordance with this ontology. Let us drill down one branch of CS knowledge: from the top-level of CCS, we follow the **Theory of computation** branch, the **Computational complexity and cryptography** branch, and finally arrive at the **Complexity classes** leaf. On the CS ontological tree, the [complexity class](https://en.wikipedia.org/wiki/Complexity_class) leaf itself is a massive area of specialisation with its own set of open (unsolved) problems that welcome future generations of researchers.
 
 Your chosen STEM field, too, is organised by the prior generations of scholars. You should follow that established ontology when organising your own notes and thoughts. Start structuring your knowledge as early as you can. This mental map of your field will not only help in your daily studies but also guide your graduate research activities.
 
@@ -177,24 +177,45 @@ The screenshot below is of the sample notebook `Lorenz.ipynb` that came with Jup
 
 ![Lorenz](./figures/JupyterLorenz.jpg)
 
-The text is written using [Markdown](https://www.markdownguide.org/), which is a simple markup language. The Markdown site has a brief introduction to the [syntax](https://www.markdownguide.org/basic-syntax/). The title and the first paragraph of the Lorenz notebook above is marked up as follows:
+*Text* is written using [Markdown](https://www.markdownguide.org/), which is a simple markup language. The Markdown site has a brief introduction to the [syntax](https://www.markdownguide.org/basic-syntax/). The title and the first paragraph of the Lorenz notebook above is marked up as follows:
 
 ```Markdown
 # The Lorenz Differential Equations
 Before we start, we import some preliminary libraries. We will also import (below) the accompanying `lorenz.py` file, which contains the actual solver and plotting routine.
 ```
 
-Equations and other mathematical contents are written using [$\TeX$](https://tug.org/index.html) mathematical typesetting language. There are many online [tutorials](https://sodocumentation.net/latex/topic/5950/typesetting-mathematics) for typesetting in $\TeX$. Find one that suits your needs. You can typeset text, tables, figures, and equations in $\TeX$. Just learn to typeset maths. Jupyter can handle the rest. The Fourier transform $F(\omega) = \frac{1}{2\pi} \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt$, for example, is typeset as follows:
+*Maths* is written using [$\TeX$](https://tug.org/index.html) mathematical typesetting language. There are many online [tutorials](https://sodocumentation.net/latex/topic/5950/typesetting-mathematics) for typesetting in $\TeX$. Find one that suits your needs. You can typeset text, tables, figures, and equations in $\TeX$. Just learn to typeset maths. Jupyter can handle the rest. The Fourier transform $F(\omega) = \frac{1}{2\pi} \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt$, for example, is typeset as follows:
 
 ```TeX
 F(\omega) = \frac{1}{2\pi}
   \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt
 ```
 
+*Code* is written using one of the many programming languages supported by Jupyter. I recommend you stick with Python. Note that although Jupyter supports multiple languages, only one language can be used in a notebook.
+
+The behaviour of the Jupyter notebook UI is a bit different from a typical document UI: you type input into the currently active cell of the notebook, separating lines with the **Enter** key; then, when you press **Shift+Enter**, Jupyter evaluates that cell. The active cell is highlighted with a blue vertical bar in the left margin.
+
+There are three types of cells: text input cell, code input cell, and code output cell. A text input cell may contain ordinary text, Markdown tags, and $\TeX$ tags. Evaluating a cell containing Markdown and $\TeX$ markups renders the resultant text in place. Evaluating a cell containing Python code shows the output, if any, in a read-only output cell immediately below that input cell. Each code input cell is numbered. Dragging the active input cell by its blue vertical marker in the left margin moves it about the notebook. But, of course, if you moved a Python cell containing a dependent statement above another cell upon which the statement depends, you will get an error.
+
 Printout from a well-crafted Jupyter notebook is more than adequate for term papers and lab reports at the high school and college levels. The biggest advantage is that the Python code within the Jupyter notebook can consume CSV, JSON, and other commonly used data formats. The observation data from your experiment can thus be analysed in your report notebook, and the output embedded therein. This workflow is far superior to using word processor and spreadsheet.
 
-***collaboration***—
+***collaboration***—Some classes requires students to work in a group. The aim of a group project is two-fold: to assign a sizeable project and to teach collaboration. If you work in a group, you will soon discover that coordination and collaboration requires substantial amount of effort and time from the participants. Projects that use a word processor devolve to an email battle: participants send each other via email diverging versions of the same document, and soon no one knows which version is the authoritative one.
 
-folder organisation AND progress log AND Git
+A better approach to collaborative writing is to use [GitHub](https://github.com/), a free, hosted document repository. You will need to read the [online manual](https://git-scm.com/docs) to learn to use Git, properly. But the fundamental concepts are these:
+
+- A repository is a directory.
+- Files added to the directory end up in the repository.
+- The Git server maintains the authoritative version of the repository.
+- Each user fetches his own local copy of the repository, in order to make updates.
+- Multiple users can make updates to the repository.
+- An update to a file occurs in two stages: local commit and remote push. A local commit updates the user's local copy of the repository. A comment may accompany every update committed to the local repository. A remote push updates the repository held by the Git server.
+- Updates to each file is tracked individually, and the last update thereto can be reverted, thereby restoring the previous state of the file.
+- Multiple users making simultaneous updates to the same file will give rise to conflicts, which must be resolved manually.
+
+Conflicts arising from simultaneous updates can get downright nasty. The simplest way to avoid conflicts is to break up the project into multiple files, and assign the ownership of each file to a different member. The owner is responsible for adding draft text to the file, and other members serve as editors thereof. And it is advisable to nominate one person as the project coordinator and the chief editor. He is responsible for ensuring stylistic consistency of the text.
+
+Git supports release engineering concepts such as branching, tagging, merging, and the like. But such advanced features are superfluous for a small, one-semester writing project.
 
 # CONCLUSION
+
+I have described in this article how properly to read STEM textbooks and peer-reviewed papers, and how to produce small- and large-scale STEM writings. Both reading and writing require multiple passes. And they require the right tools.
