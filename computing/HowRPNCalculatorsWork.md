@@ -13,7 +13,7 @@ The [microprocessor](https://en.wikipedia.org/wiki/Microprocessor) is the little
 
 The 4004 came about because [Busicom](https://en.wikipedia.org/wiki/Busicom), a Japanese electronic calculator company, asked Intel in 1969 to develop a microprocessor for use in calculators. Naturally, Busicom calculators, like the [141-PF](http://www.vintagecalculators.com/html/busicom_141-pf.html), were the first production electronic devices to be powered by a microprocessor. Although the 141-PF holds the distinction of being the first microprocessor-based calculator, its design was unremarkable; it was an ordinary, large, four-function desk calculator with a few business-friendly features, like memory and percentage.
 
-Then only a year later in 1972, HP introduced their game-changing model, the [HP-35](https://www.hpmuseum.org/hp35.htm), the world's first pocket scientific calculator. And bucking the trend, it uses the RPN input method. At \$395 introductory price (almost \$2,700 in 2021), the HP-35 was a rich man's toy; most engineers just kept using their [slide rules](HowSlideRulesWork.md). But by 1982, an advanced engineering calculator, the [HP-15C](https://www.hpmuseum.org/hp15.htm), costs only \$135 (about \$400 in 2021). And the ultimate HP scientific calculator, the [HP Prime](https://en.wikipedia.org/wiki/HP_Prime), which was introduced in 2015, can be had for a mere \$100 in 2021. That is [Moore's law](https://en.wikipedia.org/wiki/Moore's_law)—in the flesh.
+Then only a year later in 1972, HP introduced their game-changing model, the [HP-35](https://www.hpmuseum.org/hp35.htm), the world's first pocket scientific calculator. And bucking the trend, it uses the RPN input method. At 395 USD introductory price (almost 2,700 USD in 2021), the HP-35 was a rich man's toy; most engineers just kept using their [slide rules](HowSlideRulesWork.md), at least for a few more years, until electronic calculators became more affordable. By 1982, the engineers' favourite advanced scientific calculator, the [HP-15C](https://www.hpmuseum.org/hp15.htm), costs only 135 USD (about 400 USD in 2021). And the ultimate HP scientific calculator, the [HP Prime](https://en.wikipedia.org/wiki/HP_Prime), which was introduced in 2015, can be had for a mere 100 USD in 2021. That is [Moore's law](https://en.wikipedia.org/wiki/Moore's_law)—in the flesh.
 
 # RPN
 
@@ -25,7 +25,7 @@ The HP-35 is a [stack architecture](https://en.wikipedia.org/wiki/Stack_machine)
 
 The HP-35 has 4 stack registers: `x`, `y`, `z`, and `t`. To compute $2 + 3$, for instance, you press the following key sequence:
 
-```
+```Python
 2↵
 3↵
 +
