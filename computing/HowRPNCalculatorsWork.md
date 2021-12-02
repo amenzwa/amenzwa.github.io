@@ -37,7 +37,7 @@ Because mathematical notation is meant to be read by humans, it can be fussy and
         - $2$
     - $8$
 
-Building the symbol tree requires processor cycles and a lot of memory, for the symbol values, pointers, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `ENTER` key on HP RPN calculators. On an RPN calculator, we can simultaneously parse and evaluate this postfix expression using only three memory locations `x`, `y`, and `z`:
+Building the symbol tree requires processor cycles and a lot of memory, for the symbol values, pointers, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `[ENTER]` key on HP RPN calculators. On an RPN calculator, we can simultaneously parse and evaluate this postfix expression using only three memory locations `x`, `y`, and `z`:
 
 - `[2][↵]` → `x←2`
 - `[5][↵]` → `x←5 | y←2`
@@ -47,7 +47,7 @@ Building the symbol tree requires processor cycles and a lot of memory, for the 
 - `[8][+]` → `x←2.5+8=10.5 | y←2`
 - `[-]` → `x←2-10.5=-8.5`
 
-To compute the expression $2^3 = 8$ on an RPN calculator, we press the `2` key, then the `ENTER` key, the `3` key, then the `[`$\color{darkred}{y^x}$`]` key. That is, we enter the operands first, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output. There is no `=` key on an RPN calculator.
+To compute the expression $2^3 = 8$ on an RPN calculator, we press the `2` key, then the `[ENTER]` key, the `3` key, then the `[`$\color{darkred}{y^x}$`]` key. That is, we enter the operands first, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output. There is no `=` key on an RPN calculator.
 
 It is no denying that $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$ is harder for a human to comprehend than $2 - (\frac{5}{4 -2} + 8) = -8.5$. So, when using RPN, we have to perform a bit of mental parsing. But the RPN input method is comparatively much more efficient when the expressions are lengthy and contain many parentheses, such as those that appear in engineering calculations. Hence, we are purchasing mechanical efficiency with a small amount of mental processing.
 
