@@ -71,11 +71,50 @@ The HP-65 from the early 1970s was HP's first programmable pocket calculator. It
 
 ## *RPN Programming*
 
-In terms of interaction, RPN keystroke programming is similar to the macro recording facility of a word processor. To create a programme on a programmable RPN calculator like the HP-15C, you press the `[P/R]` key to enter the programming (record) mode, punch in the desired keystrokes, and terminate the input sequence with the `[RTN]` key. By the `[P/R]` key I mean the key sequence `[g][R/S]`, and by the `[RTN]` key I mean the key sequence `[g][GSB]`. HP RPN calculators have a yellow shift key, labelled `f` or `↰`. Some calculators have an additional blue shift key, labelled `g` or `↱`. The HP-15C has both the shift keys.
-
-In terms of readability, an RPN keystroke programme reads like an assembly code, complete with conditionals, labels, gotos, addresses. To those of us who grew up programming 6502 assembly in the early 1980s, RPN keystroke programming felt natural. But no engineering student today would countenance such hardship—why would they, really.
-
 The HP-15C, the top-of-the-line programmable, scientific, pocket calculator of the the early 1980s, had less than 500 bytes of programme memory, and each instruction takes a couple of bytes on average. So, the largest programme this calculator could store is about 200 or so instructions. They may shock today's tablet users, but it was adequate for engineers of the day. Pray do not pity us; if we needed to write more sophisticated programmes, we had the [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11) minicomputer, the [SUN](https://en.wikipedia.org/wiki/Sun-1) workstation, the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer) personal computer, the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) home computer, and many others.
+
+In terms of interaction, RPN keystroke programming is similar to the macro recording facility of a word processor: just punch in the keystrokes. In terms of readability, however, an RPN keystroke programme reads like an assembly code, complete with labels, jumps, conditionals, etc. To those of us who grew up programming 6502 assembly in the early 1980s, RPN keystroke programming felt natural. But no engineering student today would countenance such hardship—why would they, really.
+
+To create a programme on a programmable RPN calculator like the HP-15C, you press the `[g][P/R]` key to enter the programming (record) mode, punch in the desired keystrokes, and terminate the input sequence with the `[g][RTN]` key. HP RPN calculators have a yellow shift key, labelled `f` or `↰`. Some calculators have an additional blue shift key, labelled `g` or `↱`. The HP-15C has both the shift keys.
+
+Let us key in the programme to convert $°F$ to $°C$. We will use the well-known conversion formula $C = \frac{5}{9}(F - 32)$.
+
+- `[g][P/R]` → Enter the programming mode.
+  - The 10-digit display shows `PRGM` in the lower-right corner.
+  - This indicates that the calculator is now in the programming mode.
+- `[f][PRGM]` →  Clear the entire programme memory.
+  - The display shows `000-`.
+  - This indicates that the current programme line number is `000`.
+- `[f][LBL][C]` → Assign the programme to the label `C`.
+  - The display shows `001-42,21,13`.
+  - The `001-` indicates that 1 byte of programme memory was used for the programme label.
+  - The `42` is the code for the `[f]` key, the `21` for the `[LBL]` key, and the `13` for the `C` key.
+  - The HP-15C has programme labels `A` through `E`.
+- `[3][2][-]` → Enter the subexpression $F - 32$, where the value for $F$ is to be supplied in the register `x`.
+  - The display shows `004-      30`.
+  - The `30` is the code for the `-` key.
+- `[5][×]` → Enter the subexpression $[x] × 5$, where the $[x]$ represents the value held in the register `x`.
+  - The display shows `006-      20`.
+  - The `20` is the code for the `[×]` key.
+- `[9][÷]` → 
+  - The display shows `008-      10`.
+  - The `10` is the code for the `[÷]` key.
+- `[g][RTN]` → End the programme.
+  - The display shows `009-  43  32`.
+  - The `009-` indicates that this programme used 9 bytes of memory, including its label.
+  - The `43` is the code for the `[g]` key and the `[32]` for the `[RTN]` key.
+- `[g][P/R]` → Exit the programming mode.
+  - The `PRGM` symbol disappears from the display, indicating that the calculator is now back in the running mode.
+
+In other words, the first `[g][P/R]` runs the programme editor, and the second `[g][P/R]` exits the programme editor. Let us now run the programme.
+
+- `43[f][C]` → Enter $43°F$ into register `x`, and run the programme `C` on the value `x=43`.
+  - The display flickers `running` while the programme is running.
+  - The display shows the result `6.1111`, after the programme has terminated. So, $43°F = 6.1111°C$.
+
+The programming facilities of the HP-15C look primitive now, but they were in line with computing practices of 1982. And it is simple enough to key in small programmes, like the temperature conversion example above. Such short formulae occur in STEM frequently enough, so it is useful to store oft-used formulae as programmes. It gets tougher as programme complexity increases, though. The only practical way to write longer programmes is to write down the keystrokes, try them out with the calculator in the running mode, then key in the programme.
+
+By 1988, keystroke programming on the HP-32S has become much more sophisticated and user friendly. The 5x7 matrix LCD display of the HP-32S can show 1 line and 12 digits. In terms of readability, this matrix display is far superior to the HP-15C's traditional, 7-segment, 10-digit LCD display. And whereas the HP-15C shows numeric codes for programme instructions, the HP-32S shows variable names and operators in text, making it much easier to read and edit. Indeed, the same programming facilities are still used on the 35th anniversary model, the HP 35s of 2007. But the very decent, 2-line, 14-digit, 5x7 matrix display and the four-way cursor makes keystroke programming on the HP 35s much more civilised.
 
 ## *RPL Programming*
 
@@ -136,11 +175,12 @@ Today, primary school children scurry about with large-screen mobile phones atta
 - [SwissMicros](https://www.swissmicros.com/)
   - SwissMicros is a Swiss company that manufacture modern replicas of classic HP calculators, like the HP-42S, the HP-15C, the HP-41CX, etc. Their calculators have metal bodies, modern hardware, and modern software. Quality of these calculators is superb, but the keys simply do not have the same tactile feel of the original.
 - Emulators
-  - [HP-35](https://hpmuseum.org/simulate/hp35sim/hp35sim.htm)
-  - [HP-11C](https://stendec.io/ctb/hp11c.html)
-  - [HP-15C](https://stendec.io/ctb/hp15c.html)
-  - [HP-16C](https://stendec.io/ctb/hp16c.html)
-  - [HP Prime](https://apps.apple.com/us/app/hp-prime-lite/id1208226883)
+  - [HP-35](https://hpmuseum.org/simulate/hp35sim/hp35sim.htm) web app
+  - [HP-11C](https://stendec.io/ctb/hp11c.html) web app
+  - [HP-15C](https://stendec.io/ctb/hp15c.html) web app
+  - [Retro 15C](https://apps.apple.com/us/app/retro-15c/id583559000) for iPhone
+  - [HP-16C](https://stendec.io/ctb/hp16c.html) web app
+  - [HP Prime](https://apps.apple.com/us/app/hp-prime-lite/id1208226883) for iPhone
 - Manuals
   - [HP-15C](http://h10032.www1.hp.com/ctg/Manual/c03030589.pdf)
   - [HP-32S](https://www.forward.com.au/HP_32S_Manual.pdf)
