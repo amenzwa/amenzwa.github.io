@@ -80,27 +80,27 @@ To create a programme on a programmable RPN calculator like the HP-15C, you pres
 Let us key in the programme to convert $°F$ to $°C$. We will use the well-known conversion formula $C = \frac{5}{9}(F - 32)$.
 
 - `[g][P/R]` → Enter the programming mode.
-  - The 10-digit display shows `PRGM` in the lower-right corner.
+  - The 10-digit display shows the `PRGM` symbol in the lower-right corner.
   - This indicates that the calculator is now in the programming mode.
 - `[f][PRGM]` →  Clear the entire programme memory.
-  - The display shows `000-`.
-  - This indicates that the current programme line number is `000`.
+  - The display shows `000-________`. Here, the `_` represents space.
+  - This indicates that 0 bytes of the programme memory has been used.
 - `[f][LBL][C]` → Assign the programme to the label `C`.
   - The display shows `001-42,21,13`.
   - The `001-` indicates that 1 byte of programme memory was used for the programme label.
   - The `42` is the code for the `[f]` key, the `21` for the `[LBL]` key, and the `13` for the `C` key.
   - The HP-15C has programme labels `A` through `E`.
 - `[3][2][-]` → Enter the subexpression $F - 32$, where the value for $F$ is to be supplied in the register `x`.
-  - The display shows `004-      30`.
+  - The display shows `004-______30`.
   - The `30` is the code for the `-` key.
 - `[5][×]` → Enter the subexpression $[x] × 5$, where the $[x]$ represents the value held in the register `x`.
-  - The display shows `006-      20`.
+  - The display shows `006-______20`.
   - The `20` is the code for the `[×]` key.
 - `[9][÷]` → 
-  - The display shows `008-      10`.
+  - The display shows `008-______10`.
   - The `10` is the code for the `[÷]` key.
 - `[g][RTN]` → End the programme.
-  - The display shows `009-  43  32`.
+  - The display shows `009-__43__32`.
   - The `009-` indicates that this programme used 9 bytes of memory, including its label.
   - The `43` is the code for the `[g]` key and the `[32]` for the `[RTN]` key.
 - `[g][P/R]` → Exit the programming mode.
