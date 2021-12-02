@@ -43,7 +43,7 @@ Building the symbol tree requires processor cycles and a lot of memory, for the 
 - `[5][↵]` → `x←5 | y←2`
 - `[4][↵]` → `x←4 | y←5 | z←2`
 - `[2][-]` → `x←4-2=2 | y←5 | z←2`
-- `[÷]` → ` x←5÷2=2.5 | y←2`
+- `[÷]` → `x←5÷2=2.5 | y←2`
 - `[8][+]` → `x←2.5+8=10.5 | y←2`
 - `[-]` → `x←2-10.5=-8.5`
 
@@ -69,7 +69,7 @@ The HP-65 from the early 1970s was HP's first programmable pocket calculator. It
 
 In terms of user interaction, RPN keystroke programming is similar to the macro recording facility of a word processor. To create a programme on a programmable RPN calculator like the HP-15C, you press the `[P/R]` key to enter the programming (record) mode, punch in the desired keystrokes, and terminate the input sequence with the `[RTN]` key. By the `[P/R]` key I mean the key sequence `[g][R/S]`, and by the `[RTN]` key I mean the key sequence `[g][GSB]`. But in terms of readability, an RPN keystroke programme reads like an assembly code, complete with conditionals, labels, gotos, addresses. To those of us who grew up programming 6502 assembly in the early 1980s, RPN keystroke programming felt natural. But no engineering student today would countenance such hardship—why would they, really.
 
-The HP-15C, the top-of-the-line programmable, scientific, pocket calculator of the the early 1980s, had less than 500 bytes of programme memory, and each instruction takes a couple of bytes on average. So, the largest programme this calculator could store is about 200 or so instructions. They may shock today's tablet users, but it was adequate for engineers of the day. Pray do not pity us; if we needed to write more sophisticated programmes, we had the [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11) minicomputer, the [SUN](https://en.wikipedia.org/wiki/Sun-1) workstation, the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer) personal computer, and many others.
+The HP-15C, the top-of-the-line programmable, scientific, pocket calculator of the the early 1980s, had less than 500 bytes of programme memory, and each instruction takes a couple of bytes on average. So, the largest programme this calculator could store is about 200 or so instructions. They may shock today's tablet users, but it was adequate for engineers of the day. Pray do not pity us; if we needed to write more sophisticated programmes, we had the [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11) minicomputer, the [SUN](https://en.wikipedia.org/wiki/Sun-1) workstation, the [IBM PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer) personal computer, the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) home computer, and many others.
 
 ## *RPL Programming*
 
