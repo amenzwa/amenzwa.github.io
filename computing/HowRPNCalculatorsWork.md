@@ -9,7 +9,7 @@ use_math: true
 
 In the annals of computing, calculators reigned supreme in a period, between early 1970s and early 2000s. The first electronic pocket scientific calculator, the HP-35, came out in 1972, and it displaced the [slide rule](./HowSlideRulesWork.md) in just a few years. The slide rule had been the predominant calculating device for almost 400 years, since its invention by [William Oughtred](https://en.wikipedia.org/wiki/William_Oughtred) in 1622. But in 30 short years, the calculator was outmoded by the touch-screen mobile phone. [Just deserts](https://legal-dictionary.thefreedictionary.com/Just+Desserts), I suppose. Brief though their reign was, scientific calculators did leave an indelible mark on engineering, physics, and other hard sciences of the 20th century.
 
-In this article, I mean by "calculator" a commonly available electronic pocket calculator with a microprocessor. I am excluding from this definition mechanical calculators, valve (vacuum tube) calculators, transistor calculators, and desk calculators. In fact, it is evident from the title of this article that I am focusing narrowly on [Hewlett-Packard](https://en.wikipedia.org/wiki/Hewlett-Packard) (HP) calculators with reverse Polish notation (RPN) input method, in particular the programmable scientific models made in, and after, the 1980s. To an engineer like me, anything less than RPN is insupportable.
+In this article, I mean by "calculator" a commonly available electronic pocket calculator with a microprocessor. I am excluding from this definition mechanical calculators, valve (vacuum tube) calculators, transistor calculators, and desk calculators. In fact, it is evident from the title of this article that I am focusing narrowly on [Hewlett-Packard](https://en.wikipedia.org/wiki/Hewlett-Packard) (HP) calculators with reverse Polish notation (RPN) input method, in particular the programmable scientific models made in, and after, the 1980s. To an electrical engineer like me, anything less than RPN is insupportable.
 
 The [microprocessor](https://en.wikipedia.org/wiki/Microprocessor) is the little engine that powers the modern world. Children in 2021 play games on powerful CPUs, like the 64-bit AMD Ryzen. But only five decades earlier in 1971, the first microprocessor, the 4-bit [Intel 4004](https://en.wikipedia.org/wiki/Intel_4004) was invented. In its day, the 4004, which integrated 2,300 transistors on a single chip, was a massive leap forward in technology. The 4004 came about because [Busicom](https://en.wikipedia.org/wiki/Busicom), a Japanese electronic calculator company, asked Intel in 1969 to develop a microprocessor for use in calculators. Naturally, Busicom calculators, like the [141-PF](http://www.vintagecalculators.com/html/busicom_141-pf.html), were the first production electronic devices to be powered by a microprocessor. Although the 141-PF holds the distinction of being the first microprocessor-based calculator, its design was unremarkable; it was a four-function desk calculator with a few business-friendly features, like memory and percentage.
 
@@ -77,7 +77,20 @@ In terms of interaction, RPN keystroke programming is similar to the macro recor
 
 To create a programme on a programmable RPN calculator like the HP-15C, you press the `[g][P/R]` key to enter the programming (record) mode, punch in the desired keystrokes, and terminate the input sequence with the `[g][RTN]` key. HP RPN calculators have a yellow shift key, labelled `f` or `↰`. Some calculators have an additional blue shift key, labelled `g` or `↱`. The HP-15C has both the shift keys.
 
-Let us key in the programme to convert $°F$ to $°C$. We will use the well-known conversion formula $C = \frac{5}{9}(F - 32)$.
+As an example, we shall write the programme to convert $°F$ to $°C$ , using the well-known conversion formula $C = \frac{5}{9}(F - 32)$.
+
+```text
+[g][P/R]
+[f][PRGM]
+[f][LBL][C]
+[3][2][-]
+[5][×]
+[9][÷]
+[g][RTN]
+[g][P/R]
+```
+
+The above keystrokes store the temperature conversion programme in the label `C`. Let us analyse each keystroke.
 
 - `[g][P/R]` → Enter the programming mode.
   - The 10-digit display shows the `PRGM` symbol in the lower-right corner.
@@ -88,8 +101,7 @@ Let us key in the programme to convert $°F$ to $°C$. We will use the well-know
 - `[f][LBL][C]` → Assign the programme to the label `C`.
   - The display shows `001-42,21,13`.
   - The `001-` indicates that 1 byte of programme memory was used for the programme label.
-  - The `42` is the code for the `[f]` key, the `21` for the `[LBL]` key, and the `13` for the `C` key.
-  - The HP-15C has programme labels `A` through `E`.
+  - The `42` is the code for the `[f]` key, the `21` for the `[LBL]` key, and the `13` for the `[C]` key.
 - `[3][2][-]` → Enter the subexpression $F - 32$, where the value for $F$ is to be supplied in the register `x`.
   - The display shows `004-______30`.
   - The `30` is the code for the `-` key.
@@ -102,21 +114,52 @@ Let us key in the programme to convert $°F$ to $°C$. We will use the well-know
 - `[g][RTN]` → End the programme.
   - The display shows `009-__43__32`.
   - The `009-` indicates that this programme used 9 bytes of memory, including its label.
-  - The `43` is the code for the `[g]` key and the `[32]` for the `[RTN]` key.
+  - The `43` is the code for the `[g]` key and the `32` for the `[RTN]` key.
 - `[g][P/R]` → Exit the programming mode.
   - The `PRGM` symbol disappears from the display, indicating that the calculator is now back in the running mode.
 
-In other words, the first `[g][P/R]` runs the programme editor, and the second `[g][P/R]` exits the programme editor. Let us now run the programme.
+The first `[g][P/R]` runs the programme editor, and the second `[g][P/R]` exits the programme editor. This is reminiscent of editing on UNIX using the  `ed` command-line editor. Next, we run the programme stored in the label `C` on the input value `43` by typing in `43[f][C]`.
 
-- `43[f][C]` → Enter $43°F$ into register `x`, and run the programme `C` on the value `x=43`.
+- `43 [f][C]` → Enter $43°F$ into register `x`, and run the programme `C` on the value `x=43`.
   - The display flickers `running` while the programme is running.
   - The display shows the result `6.1111`, after the programme has terminated. So, $43°F = 6.1111°C$.
 
-The programming facilities of the HP-15C look primitive now, but they were in line with computing practices of 1982. And it is simple enough to key in small programmes, like the temperature conversion example above. Such short formulae occur in STEM frequently enough, so it is useful to store oft-used formulae as programmes. It gets tougher as programme complexity increases, though. The only practical way to write longer programmes is to write down the keystrokes, try them out with the calculator in the running mode, then key in the programme.
+The programming facilities of the HP-15C look primitive now, but they were in line with computing practices of 1982. And it is simple enough to key in small programmes, like the temperature conversion example above. Such short formulae occur in STEM frequently enough, so it is useful to store oft-used formulae as programmes.
 
-By 1988, keystroke programming on the HP-32S has become much more sophisticated and user friendly. The 5x7 matrix LCD display of the HP-32S can show 1 line and 12 digits. In terms of readability, this matrix display is far superior to the HP-15C's traditional, 7-segment, 10-digit LCD display. And whereas the HP-15C shows numeric codes for programme instructions, the HP-32S shows variable names and operators in text, making it much easier to read and edit. Indeed, the same programming facilities are still used on the 35th anniversary model, the HP 35s of 2007. But the very decent, 2-line, 14-digit, 5x7 matrix display and the four-way cursor makes keystroke programming on the HP 35s much more civilised.
+It gets tougher, though, as programme complexity increases: multiple labels `A` through `E`; conditional tests `[g][x=0]` and `[g][x≤y]`; looping tests `[f][DSE]` (decrement and skip if ≤) and `[f][ISG]` (increment and skip if >); branching to a label `[GTO][A..E]`. The only practical way to write long programmes on the HP-15C was to write down the keystrokes on paper, try them out with the calculator in the running mode, then after having confirmed the correctness punch in the keystrokes with the calculator in the programming mode. On device debugging was out of the question.
+
+Essentially, the HP-15C programming language is an assembly language. This assembly language is [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness): it can perform the same computations as the assembly language of a much more powerful 8-bit CPU like the 6502, which was used on popular home computers of the time, like the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64), the [Apple II](https://en.wikipedia.org/wiki/Apple_II), and the [BBC Micro](https://en.wikipedia.org/wiki/BBC_Micro).
+
+By 1988, keystroke programming on the HP-32S has become much more sophisticated and user friendly. The 5x7 matrix LCD display of the HP-32S can show 1 line and 12 digits. In terms of readability, this matrix display is far superior to the 7-segment, 10-digit LCD display on the HP-15C. And whereas the HP-15C shows numeric codes for programme instructions, the HP-32S shows variable names and operators in mathematical symbols, making it much easier to read and edit. Indeed, the same programming facilities are still used on the HP 35s of 2007. The 2-line, 14-digit, 5x7 matrix display and the four-way cursor makes keystroke programming on the HP 35s much more civilised.
 
 ## *RPL Programming*
+
+RPL was introduced on the HP-18C of 1986 as the system programming language. Then with the release of the HP-28C in 1987 and the HP-28S of 1988, users were able to use a constrained version of RPL. The user RPL is constrained in that it cannot access internal system functions. RPL is also used on the revered [HP-48S](https://en.wikipedia.org/wiki/HP_48_series) graphing calculator, which was introduced in 1990.
+
+Being a LISP, RPL has LISPsisms, like recursion and higher-order functions (functionals). For instance, the `IFTE(cond, csq, alt)` (if-then-else) is a functional; `cond` is the conditional expression, `csq` is the consequent function, and the `alt` is the alternative function. In other words, RPL is a bona fide functional programming language. But it departs from LISP in a few ways: its syntax is stack-oriented postfix, like RPN; it uses the the conventional function call syntax `f(x)`; it uses the conventional infix operator syntax.
+
+As an example, let us look at the Fibonacci function.
+
+- $F_n = n$, if $n ≤ 1$
+  - $= F_{n-1} + F_{n-2}$, otherwise
+
+This function can be written in RPL as follows.
+
+```text
+<<
+  → n
+  '
+  IFTE(n ≤ 1,
+       n,
+       FIB(n-1)+FIB(n-2))
+  '
+>>
+[ENTER] ['] FIB [STO]
+```
+
+In the above programme, `→ n` defines the local variable `n`; the `'` symbols delimit the function definition; the `<<` and `>>` delimit the programme. The ending key sequence `[ENTER] ['] FIB [STO]` saves the programme under the name `FIB`. We can run this programme to compute $F_{10} = 55$ by keying in `[USER] 10 FIB`.
+
+The HP-28S has 32 KB of programme memory, which was more than adequate for the time. And armed with a powerful, functional language like the RPL, the HP-28S was an unbeatable pocket powerhouse in 1988. Think of it this way. Students working on a LISP programming class assignment back in 1988 would have wrote the programme on a large minicomputer kept at the college's computer centre, like the [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11) or the [VAX-8600](https://en.wikipedia.org/wiki/VAX_8000#VAX_8600), via a [VT100](https://en.wikipedia.org/wiki/VT100) terminal; most college students of the time could not afford an Apple [Mac](https://en.wikipedia.org/wiki/Macintosh) or an IBM [PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). But if you owned the HP-28S pocket calculator, you could have wrote that programme on the device, and you would have been saved yourself the hassle of having to walk in the snow to the [computer centre](https://bloximages.newyork1.vip.townnews.com/omaha.com/content/tncms/assets/v3/editorial/1/c9/1c9fd664-84b2-5a0e-a06a-cc9ea3596071/5c3f6dcbf01df.image.jpg?resize=1200%2C724) and of having to wait for a free terminal. This is a moot point today, but there is no denying that the HP-28S was an immensely powerful pocket computer in its day.
 
 ## *PPL Programming*
 
