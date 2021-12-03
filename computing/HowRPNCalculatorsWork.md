@@ -53,7 +53,7 @@ To compute the expression $2^3 = 8$ on an RPN calculator, we press the `[2]` key
 
 When using RPN, we must first parse the expression, mentally. But the RPN input method is comparatively much more efficient when the expressions are lengthy and contain many parentheses, such as those that appear in engineering calculations. Hence, we are purchasing mechanical efficiency with a small amount of mental effort. This mental parsing becomes second nature to RPN users within a couple of days.
 
-Computers in the late 1950s had very little processing power and memory storage, parsing mathematical expressions was a very difficult task. To simply parsing, [John McCarthy](https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)) adopted the much simpler s-expression as the syntax for his LISP programming language. The [IBM 704](http://www.columbia.edu/cu/computinghistory/704.html) on which the first LISP implementation ran occupied a large, climate-controlled room. A little over a decade later in the early 1970s, the HP-35 was the most powerful scientific calculator and the first one designed to fit an engineer's shirt pocket. But the HP-35 had a miserly 1-bit serial processor and a meagre 4-register (`x`, `y`, `z`, and `t`) memory. So, the time- and space-efficient RPN input method was not merely a nicety, but a clear necessity. A *register* is a fast, on-chip, temporary storage used by the CPU while performing operations. A collection of registers is called a register *file*. You can read a detailed explanation of how the CPU uses registers in my article *[How Computers Work](HowComputersWork.md)*.
+Computers in the late 1950s had very little processing power and memory storage, parsing mathematical expressions was a very difficult task. To simply parsing, [John McCarthy](https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)) adopted the much simpler s-expression as the syntax for his LISP programming language. The [IBM 704](http://www.columbia.edu/cu/computinghistory/704.html) on which the first LISP implementation ran occupied a large, climate-controlled room. A little over a decade later in the early 1970s, the HP-35 was the most powerful scientific calculator and the first one designed to fit an engineer's shirt pocket. But the HP-35 had a miserly 1-bit serial processor and a meagre 4-register (`x`, `y`, `z`, and `t`) memory. So, the time- and space-efficient RPN input method was not merely a nicety, but a clear necessity. A *register* is a fast, on-chip, temporary storage used by the CPU while performing operations. An assemblage of registers is called a register *file*. You can read a detailed explanation of how the CPU uses registers in my article *[How Computers Work](HowComputersWork.md)*.
 
 Technically speaking, the HP-35 (1972) is a [stack architecture](https://en.wikipedia.org/wiki/Stack_machine) computer, albeit a wee one. The Burroughs [B5000](http://www.retrocomputingtasmania.com/home/projects/burroughs-b5500/b5000_b5500_gallery) (1961) and the Hewlett-Packard [HP 3000](http://www.hpmuseum.net/display_item.php?hw=100) (1972) are stack machines, too, though slightly bigger, each being about the size of a room. But all stack machines operate on the same principle: they all use a stack register file to store temporary values during computations. A *stack* is a data structure that holds values in a last-in, first-out (LIFO) fashion. If we push `[1][ENTER] [2][ENTER] [3][ENTER] [4][ENTER]` onto the stack of the HP-35, its registers would contain the following values: `x=4 | y=3 | z=2 | t=1`. Then, when we operate on those values, the operator consumes the values, starting with the last value, namely `x=4`. But had we pushed one more operand `[5][ENTER]` without performing operations, the stack would become `x=5 | y=4 | z=3 | t=2`, and the oldest value $1$ would have fallen off the bottom of the stack and lost forever. As the newer values are consumed off the top of the stack by operations, the oldest value in the register `t` is replicated upward, one step at a time.
 
@@ -201,25 +201,43 @@ Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wik
 
 # COLLECTION
 
+I present in this section my small collection of HP RPN programmable calculators. With sadness, I watched HP's calculator business dwindled over the years. So, when the 35th anniversary HP 35s RPN model came out in 2007, I snatched one up. Several years ago, I bought the HP Prime for my son, when he entered middle school. The rest, I purchased on eBay.
+
 ## *Voyager*
+
+In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C is a milestone model amongst HP calculators. It was the flagship of the line. Its claim to fame was the external programme memory in the form of magnetic strips. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
 
 #### HP-11C
 
 ![HP-11C](./figures/HPcalculators/DSC00203.JPG)
 
+The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, degree-radian-gradiant angular measures.
+
 #### HP-15C
 
 ![HP-15C](./figures/HPcalculators/DSC00205.JPG)
 
+The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few advanced features like root solver, numerical integration, and matrix computation. Given that Just a year after the omega of the series, the HP-11C, was released and given that the HP-15C sold for the same 135 USD price, it must have been a gut-punch for those who bought the HP-11C. This was not to be the only time HP would do this to the early-adopters, however.
+
+Being an electrical engineer, I have always fancied the HP-15C; it has everything an electrical engineer needs: complex numbers, polar-rectangular conversion, hyperbolic functions, matrices, programmability, and RPN to boot. Its programme memory capacity of less than 500 bytes is laughable by modern standards, but it was considered adequate in its day. I have owned my HP-15C since 1985.
+
 #### HP-16C
 
 ![HP-16C](./figures/HPcalculators/DSC00206.JPG)
+
+The HP-16C came out the same year as the HP-15C, but at 150 USD, it was slightly more expensive. The HP-16C was aimed squarely at computer scientists. It implements binary, octal, decimal, and hexadecimal number systems. It has all the fancy bit-twiddling capabilities: and, or, xor, masking, shifting, 1's complement, 2's complement, and the rest. But the HP-16C lacks trigonometric functions, hyperbolic functions, complex numbers, etc. It is useless for general STEM use.
+
+I do believe the HP-16C was untimely. Its bit-twiddling features would have been an indispensable tool in the 1960s and 1970s, when assembly language was the daily call to prayer for most programmers. But by the 1980s, most programmers had switched to high-level languages like FORTRAN, LISP, Pascal, C, or Smalltalk. Bit manipulation was no longer a prevalent activity amongst programmers by then.
 
 ## ***Pioneer***
 
 #### HP-32S
 
 ![HP-32S](./figures/HPcalculators/DSC00207.JPG)
+
+I bought my HP-32S in 1989, the year after it was introduced. At only 70 USD (160 USD in 2021), it was eminently affordable as a backup (or rather, an upgrade) to my much-loved HP-15C. The HP-32S has all the features the HP-15C has, including root solver and numerical integration, except matrix computation. And it has many of HP-16C features, like base conversions and binary flags.
+
+I bought the HP-32S, because I liked its crisp, 5x7 matrix display, its 32 KB programme memory, and its readable programme text (as opposed to the HP-15C's assembly numeric codes). To be reasonable, I must admit that the HP-32S is much more user friendly than the HP-15C. But I unreasonably remain an ardent fan of the HP-15C.
 
 ## *Clamshell*
 
