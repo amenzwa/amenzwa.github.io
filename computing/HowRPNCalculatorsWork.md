@@ -147,17 +147,17 @@ This function can be written in RPL as follows.
 
 ```text
 <<
-  → n
-  '
-  IFTE(n ≤ 1,
-       n,
-       FIB(n-1)+FIB(n-2))
-  '
+→ n
+'
+IFTE(n ≤ 1,
+     n,
+     FIB(n-1)+FIB(n-2))
+'
 >>
 [ENTER] ['] FIB [STO]
 ```
 
-In the above programme, `→ n` defines the local variable `n`; the `'` symbols delimit the function definition; the `<<` and `>>` delimit the programme. The ending key sequence `[ENTER] ['] FIB [STO]` saves the programme under the name `FIB`. We can run this programme to compute $F_{10} = 55$ by keying in `[USER] 10 FIB`.
+The above programme is a verbatim RPL implementation of the Fibonacci function. The statement `→ n` defines the local variable `n`. The `'` symbols delimit the function definition. The `<<` and `>>` delimit the programme. The ending key sequence `[ENTER] ['] FIB [STO]` saves the programme under the name `FIB`. We can run this programme to compute $F_{10} = 55$ by keying in `[USER] 10 FIB`.
 
 The HP-28S has 32 KB of programme memory, which was more than adequate for the time. And armed with a powerful, functional language like the RPL, the HP-28S was an unbeatable pocket powerhouse in 1988. Think of it this way. Students working on a LISP programming class assignment back in 1988 would have wrote the programme on a large minicomputer kept at the college's computer centre, like the [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11) or the [VAX-8600](https://en.wikipedia.org/wiki/VAX_8000#VAX_8600), via a [VT100](https://en.wikipedia.org/wiki/VT100) terminal; most college students of the time could not afford an Apple [Mac](https://en.wikipedia.org/wiki/Macintosh) or an IBM [PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). But if you owned the HP-28S pocket calculator, you could have wrote that programme on the device, and you would have been saved yourself the hassle of having to walk in the snow to the [computer centre](https://bloximages.newyork1.vip.townnews.com/omaha.com/content/tncms/assets/v3/editorial/1/c9/1c9fd664-84b2-5a0e-a06a-cc9ea3596071/5c3f6dcbf01df.image.jpg?resize=1200%2C724) and of having to wait for a free terminal. This is a moot point today, but there is no denying that the HP-28S was an immensely powerful pocket computer in its day.
 
@@ -165,7 +165,38 @@ The HP-28S has 32 KB of programme memory, which was more than adequate for the t
 
 The HP Prime of 2013 comes with a brand new programming language, the PPL, and an IDE, which has advanced features like code completion and statement templates. A large, colour touchscreen made on-device programme editing rather pleasant. And PPL can render 2D and 3D graphics.
 
-PPL is a BASIC with Pascal-like syntax.
+PPL is a BASIC with Pascal-like syntax. The old name for PPL was HP BASIC, the descendant of the [HP Time-Shared BASIC](https://en.wikipedia.org/wiki/HP_Time-Shared_BASIC) on the HP-2000 minicomputer in the mid 1960s. Naturally, PPL has BASIC instincts: untyped variables; case insensitivity; the lack of pointers; the lack of user-defined types; and so on. But PPL adopted Pascal or ALGOL syntactic elements: no line numbers; required variable declarations; the use of the `;` statement terminator and the `:=` assignment operator; the `begin`-`end` block delimiters; and the like. I believe HP missed the mark by not adopting Python in 2013. In 2014, MicroPython was released. It is a stripped-down version of Python designed for microcontrollers, which are far less capable than the monster CPU that powers the HP Prime. It was not until 2021 that a [beta version](https://edspi31415.blogspot.com/2021/05/hp-prime-firmware-update-beta-python.html) of the HP Prime firmware supported MicroPython.
+
+Since Python is still not fully supported at present, we shall focus on the PPL official language, here. Let us look at a slightly simplified version of the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle) example from the HP manual for PPL. To enter the editor, press `[Shift][Program]` key combination to open the **Program Catalog**, and once there, tap the **New** onscreen button. This opens the **New Program** dialogue. In the **Name:** text box, type in `Sierpinski`, then tap the **OK** onscreen button. This creates a blank programme. Type in the following code.
+
+```Pascal
+export ShowSier() // show Sierpinski triangle on screen
+begin
+  local x1:=160, y1:=0; // p1(160,0)
+  local x2:=299, y2:=240; // p2(299,240)
+  local x3:=21, y3:=240; // p3(21,240)
+  local x:=160, y:=0; // pixel coordinates
+  local black:=rgb(0,0,0); // pixel color
+  local i;
+  rect(); // clear 320x240 screen
+  for i from 1 to 100000 do
+    local r:=randint(2)+1; // random variable r = [1, 3]
+		case
+      if r = 1 then x:=(x+x1)/2; y:=(y+y1)/2; end;
+      if r = 2 then x:=(x+x2)/2; y:=(y+y2)/2; end;
+      if r = 3 then x:=(x+x3)/2; y:=(y+y3)/2; end;
+    end;
+    pixon_p(ip(x),ip(y), black); // show black pixel at (x,y)
+  end;
+  wait; // pause to show graphics
+end;
+```
+
+Check the syntax of the programme by pressing the onscreen button **Check**. When you see the `No errors in the program` message, press the **OK** onscreen button to dismiss the message dialogue. Press the `[🏠]` home key to exit the editor and return to the running mode. To run this programme, the `[🧰]` toolbox key, press the **User** onscreen button, tap the **Sierpinski** onscreen menu item (the programme), then tap the **ShowSier** onscreen menu item (the procedure). Now, press the `[Enter]` key. The following image of the Sierpiński triangle appears on the screen.
+
+![Sierpiński triangle](./figures/HPcalculators/Sierpiński.jpg)
+
+Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. Depending on the value of `r`, the algorithm places the pixel near `(160, 0)`, `(299, 240)`, or `(21, 240)`.
 
 # COLLECTION
 
