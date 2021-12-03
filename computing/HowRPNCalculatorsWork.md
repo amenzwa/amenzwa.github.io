@@ -23,6 +23,8 @@ HP's latest and most advanced scientific calculator, the [HP Prime](https://en.w
 
 Despite the immense capabilities of the latest calculators, their market has been taken over by mobile phones, tablets, and laptops. I expect that calculators will completely disappear from common use soon. But I am certain that there will always be enthusiasts of calculators, especially the RPN variety, among STEMers. I dedicate this article to my fellow RPN fanciers. And I hope that the information provided here will ignite in future generations of STEMers a spark of interest for these fascinating little devices.
 
+Below, I explain how to use the RPN input method and provide a high-level overview of programming HP calculators in three ways: RPN keystrokes, reverse Polish LISP (RPL), and Prime Programming Language (PPL). It is impossible to follow the discussions without an RPN calculator in hand. If yo do not own one, either use a [web-based emulator](https://stendec.io/ctb/hp15c.html) or buy on eBay a [new, inexpensive model](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=hp+35s&_sacat=0).
+
 # RPN
 
 In mathematics, a generic binary function $f$ is written as $f(a, b)$, and a generic binary operator $\bigotimes$ is written as $a \bigotimes b$. In prefix notation, they are written as `f a b` and `⨂ a b`. In postfix notation, they are written as `a b f` and `a b ⨂`. Mathematical notations evolved organically through the centuries. But the prefix notation was invented by the Polish logician [Jan Łukasiewicz](https://en.wikipedia.org/wiki/Jan_%C5%81ukasiewicz) in 1924. Therefore, the prefix notation is called the Polish notation. It is the [s-expression](https://en.wikipedia.org/wiki/S-expression) syntax of LISP programming language. The postfix [reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN) is the opposite of the prefix notation. Both the prefix and the postfix notations are reviled by the uninitiated, but revered by the cognoscenti.
@@ -209,13 +211,13 @@ The Voyager Series includes a business RPN calculator called the HP-12C. It was 
 
 There is also the HP-10C of 1982, the 80 USD crippled version of the HP-11C. No one bothered with this model, since the HP-11C was more capable, and was only slightly more expensive. I do not own an HP-10C.
 
-#### HP-11C (1981)
+### HP-11C (1981)
 
 ![HP-11C](./figures/HPcalculators/DSC00203.JPG)
 
 I bought this HP-11C on eBay, some years ago. The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, degree-radian-gradiant angular measures.
 
-#### HP-15C (1982)
+### HP-15C (1982)
 
 ![HP-15C](./figures/HPcalculators/DSC00205.JPG)
 
@@ -225,7 +227,7 @@ Being an electrical engineer, I have always fancied the HP-15C; it has everythin
 
 In 2011, after many years of supplication by the HP-15C fans, HP relented and introduced the [HP 15c Limited Edition](https://en.wikipedia.org/wiki/HP-15C#HP_15c_Limited_Edition).
 
-#### HP-16C (1982)
+### HP-16C (1982)
 
 ![HP-16C](./figures/HPcalculators/DSC00206.JPG)
 
@@ -239,7 +241,7 @@ The Pioneer Series began with the inimitable HP-32S and the more advanced HP-42S
 
 The Pioneer Series includes the HP-10B (RPN) and the HP-17B (non-RPN) business calculators, the HP-20S (non-RPN), the HP-22S (non-RPN), and the HP-27S (non-RPN) scientific calculators, as well. But I could not be bothered with them.
 
-#### HP-32S (1988)
+### HP-32S (1988)
 
 ![HP-32S](./figures/HPcalculators/DSC00207.JPG)
 
@@ -251,7 +253,7 @@ I bought the HP-32S, because I liked its crisp, 5x7 matrix display, its 32 KB pr
 
 The clamshell line includes the HP-18C non-RPN business calculator and the HP-28C and the HP-28S RPN scientific calculators. They all have the RPL programming language. But whereas the HP-18C uses the RPL for only system programming, the HP-28 models provide user-level RPL programming. Incidentally, RPL is also supported on the HP-48 graphic calculator of 1990, a descendant of the HP-28.
 
-#### HP-28S (1988)
+### HP-28S (1988)
 
 ![HP-28S](./figures/HPcalculators/DSC00208.JPG)
 
@@ -267,7 +269,7 @@ If you want to buy an HP-28S on eBay, pay close attention to the photos for of t
 
 The Anniversary Series has only one model, the HP 35s. I like this calculator, a lot. It is well made but very cheap. And given that it came out relatively recently, there are plenty of new ones available on eBay.
 
-#### HP 35s (2007)
+### HP 35s (2007)
 
 ![HP 35s](./figures/HPcalculators/DSC00209.JPG)
 
@@ -279,7 +281,7 @@ Through the years, I watched with sadness HP's calculator business dwindled, dri
 
 There is only one colour touchscreen HP calculator: the HP Prime. I am not a fan of the HP Prime; I prefer simpler calculators with classic HP designs. Still, this is one great calculator for STEM college students. I would venture to say that there is no technical and logical reason why high school and college students should favour the TI-Nspire over the HP Prime.
 
-#### HP Prime (2013)
+### HP Prime (2013)
 
 ![HP Prime](./figures/HPcalculators/DSC00210.JPG)
 
