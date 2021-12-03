@@ -187,8 +187,9 @@ begin
       if r = 3 then x:=(x+x3)/2; y:=(y+y3)/2; end;
     end;
     pixon_p(ip(x),ip(y), black); // show black pixel at (x,y)
+    wait(0.001); // slow down loop to let image emerge gradually
   end;
-  wait; // pause to show graphics
+  wait; // pause to show final image
 end;
 ```
 
@@ -196,7 +197,7 @@ Check the syntax of the programme by pressing the onscreen button **Check**. Whe
 
 ![Sierpiński triangle](./figures/HPcalculators/Sierpinski.jpg)
 
-Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, or left directions. The initial location of the pixel is at the top corner $(160, 0)$. The $÷2$ in the location expression incrementally shrinks or grows the triangle by $\frac{1}{2}$. Each iteration shows a pixel at a new location depending on the value of `r`, and the pixel hops around inside the outer triangle, and the above self-similar fractal emerges.
+Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, or left directions. The initial location of the pixel is at the top corner $(160, 0)$. The $÷2$ in the location expression incrementally shrinks or grows the triangle by $\frac{1}{2}$. Depending on the value of `r` in each iteration, the pixel hops to a new location, but all the while staying within the bounds of the outer triangle. Because there is the `wait(0.001)` statement at the end of the loop, the self-similar fractal emerges slowly. If you just want to see the final image, comment out this statement. Without the second `wait` statement pause the programme, the final image will disappear from the screen, immediately.
 
 # COLLECTION
 
