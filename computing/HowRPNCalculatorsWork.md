@@ -201,19 +201,21 @@ Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wik
 
 # COLLECTION
 
-I present in this section my small collection of HP RPN programmable calculators. With sadness, I watched HP's calculator business dwindled over the years. So, when the 35th anniversary HP 35s RPN model came out in 2007, I snatched one up. Several years ago, I bought the HP Prime for my son, when he entered middle school. The rest, I purchased on eBay.
-
 ## *Voyager*
 
 In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C is a milestone model amongst HP calculators. It was the flagship of the line. Its claim to fame was the external programme memory in the form of magnetic strips. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
 
-#### HP-11C
+The Voyager Series includes a business RPN calculator called the HP-12C. It was introduced 1981 at 135 USD. It is undoubtedly the most popular business calculator in history. It is still in production. I bought my HP-12C in 1998. But I did not list it here, because the focus of this article is on scientific RPN calculators.
+
+There is also the HP-10C of 1982, the 80 USD crippled version of the HP-11C. No one bothered with this model, since the HP-11C was more capable, and was only slightly more expensive. I do not own an HP-10C.
+
+#### HP-11C (1981)
 
 ![HP-11C](./figures/HPcalculators/DSC00203.JPG)
 
-The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, degree-radian-gradiant angular measures.
+I bought this HP-11C on eBay, some years ago. The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, degree-radian-gradiant angular measures.
 
-#### HP-15C
+#### HP-15C (1982)
 
 ![HP-15C](./figures/HPcalculators/DSC00205.JPG)
 
@@ -221,43 +223,53 @@ The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few a
 
 Being an electrical engineer, I have always fancied the HP-15C; it has everything an electrical engineer needs: complex numbers, polar-rectangular conversion, hyperbolic functions, matrices, programmability, and RPN to boot. Its programme memory capacity of less than 500 bytes is laughable by modern standards, but it was considered adequate in its day. I have owned my HP-15C since 1985.
 
-#### HP-16C
+In 2011, after many years of supplication by the HP-15C fans, HP relented and introduced the [HP 15c Limited Edition](https://en.wikipedia.org/wiki/HP-15C#HP_15c_Limited_Edition).
+
+#### HP-16C (1982)
 
 ![HP-16C](./figures/HPcalculators/DSC00206.JPG)
 
-The HP-16C came out the same year as the HP-15C, but at 150 USD, it was slightly more expensive. The HP-16C was aimed squarely at computer scientists. It implements binary, octal, decimal, and hexadecimal number systems. It has all the fancy bit-twiddling capabilities: and, or, xor, masking, shifting, 1's complement, 2's complement, and the rest. But the HP-16C lacks trigonometric functions, hyperbolic functions, complex numbers, etc. It is useless for general STEM use.
+I bought this HP-11C on eBay, not long ago. The HP-16C came out the same year as the HP-15C, but at 150 USD, it was slightly more expensive. The HP-16C was aimed squarely at computer scientists. It implements binary, octal, decimal, and hexadecimal number systems. It has all the fancy bit-twiddling capabilities: and, or, xor, masking, shifting, 1's complement, 2's complement, and the rest. But the HP-16C lacks trigonometric functions, hyperbolic functions, complex numbers, etc. It is useless for general STEM use.
 
 I do believe the HP-16C was untimely. Its bit-twiddling features would have been an indispensable tool in the 1960s and 1970s, when assembly language was the daily call to prayer for most programmers. But by the 1980s, most programmers had switched to high-level languages like FORTRAN, LISP, Pascal, C, or Smalltalk. Bit manipulation was no longer a prevalent activity amongst programmers by then.
 
 ## ***Pioneer***
 
-#### HP-32S
+The Pioneer Series began with the inimitable HP-32S and the more advanced HP-42S. The HP-32S is very similar in capability to the revered HP-15C, and the HP-42S is close to the respected, but older, HP-41C. The HP-42S is a great device, but I am not attracted to it, mainly because I prefer the simpler HP-32S, which I have owned and adored for decades.
+
+The Pioneer Series includes the HP-10B (RPN) and the HP-17B (non-RPN) business calculators, the HP-20S (non-RPN), the HP-22S (non-RPN), and the HP-27S (non-RPN) scientific calculators, as well. But I could not be bothered with them.
+
+#### HP-32S (1988)
 
 ![HP-32S](./figures/HPcalculators/DSC00207.JPG)
 
-I bought my HP-32S in 1989, the year after it was introduced. At only 70 USD (160 USD in 2021), it was eminently affordable as a backup (or rather, an upgrade) to my much-loved HP-15C. The HP-32S has all the features the HP-15C has, including root solver and numerical integration, except matrix computation. And it has many of HP-16C features, like base conversions and binary flags.
+I bought my HP-32S in 1989, the year after it was introduced. At only 70 USD (160 USD in 2021), it was eminently affordable as a backup (or rather, an upgrade) to my much-loved HP-15C. The HP-32S has all the features the HP-15C has, including root solver and numerical integration, except matrix computation. And it has many of HP-16C features, like base conversions and binary flags. It also has probability and statistics functions, which were not on the Voyager Series calculators.
 
-I bought the HP-32S, because I liked its crisp, 5x7 matrix display, its 32 KB programme memory, and its readable programme text (as opposed to the HP-15C's assembly numeric codes). To be reasonable, I must admit that the HP-32S is much more user friendly than the HP-15C. But I unreasonably remain an ardent fan of the HP-15C.
+I bought the HP-32S, because I liked its crisp, 5x7 matrix display, its 32 KB programme memory, and its textual programme instructions (as opposed to the HP-15C's assembly numeric codes). To be reasonable, I must admit that the HP-32S is much more user friendly than the HP-15C. But I unreasonably remain an ardent fan of the HP-15C.
 
 ## *Clamshell*
 
-#### HP-28S
+#### HP-28S (1988)
 
 ![HP-28S](./figures/HPcalculators/DSC00208.JPG)
 
 ## *Anniversary*
 
-#### HP 35s
+#### HP 35s (2007)
 
 ![HP 35s](./figures/HPcalculators/DSC00209.JPG)
 
+In terms of design, the HP 35s pays homage to the matriarch of the line, the venerable HP-35 of 1972. It has the same [tonneau](https://revolutionwatch.com/the-tonneau-10-barrel-shaped-watches/) body with a wedge profile. Its 2-line, 14-digit, 5x7 matrix display is crisp. The tall keys have the famous HP tactile feel. It has the four-way cursor keys. In terms of capabilities, it has everything previous generation of HP calculators had and much more. In addition to RPN, it supports infix notation. It uses the 8-bit 6502 CPU, my absolute favourite among the CPU architectures. Its keystroke programme memory is just shy of 32 KB.
+
+Through the years, I watched with sadness HP's calculator business dwindled, drip by drip. By mid 2000s, HP had succumbed to the market pressure, and were selling cheap, Chinese-made non-RPN models as rebranded HP calculators. So, when the 35th anniversary HP 35s RPN model came out in 2007, I snatched one up. Its introductory price was 60 USD (80 USD in 2021). A new one costs about 50 USD in 2021. The HP 35s is a decent calculator. If you want an inexpensive, capable, well-made HP RPN calculator, new, the HP 35s is for you. You will not regret it.
+
 ## *CAS*
 
-#### HP Prime
-
-There is a free [HP Prime emulator](https://apps.apple.com/us/app/hp-prime-lite/id1208226883) that runs on the iPhone—a decent app, that is.
+#### HP Prime (2013)
 
 ![HP Prime](./figures/HPcalculators/DSC00210.JPG)
+
+I bought this HP Prime in 2016 for my son, when he entered middle school. At the time, it was the only CAS-capable [calculator permitted by the SAT](https://collegereadiness.collegeboard.org/sat/taking-the-test/calculator-policy). The HP Prime was introduced in 2013. It runs on 500 MHz 32-bit ARM Cortex-A7 CPU, and has 256 MB of SDRAM. Its programme flash memory is 512 MB, more than adequate for the purpose. And it has a 16-bit colour touchscreen, albeit a small one of 320x240 resolution. It has UI theming support. Its computing capabilities were well in excess of most mobile phones of that time. It has 2D and 3D plotting support, computer algebra symbolic computation, highly capable PPL programming language, spreadsheet-based data analysis, installable third-party apps, hardware interface to data collection sensors, WiFi networking, and much more. Even in 2021, if you wanted to make your iPhone 13 as capable as the HP Prime, your only recourse is to install on your phone the [HP Prime emulator](https://apps.apple.com/us/app/hp-prime-lite/id1208226883). That says a lot about this calculator.
 
 # CONCLUSION
 
