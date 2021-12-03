@@ -172,10 +172,10 @@ Since Python is still not fully supported at present, we shall focus on the PPL 
 ```Pascal
 export ShowSier() // show Sierpinski triangle on screen
 begin
-  local x1:=160, y1:=0; // p1(160,0)
-  local x2:=299, y2:=240; // p2(299,240)
-  local x3:=21, y3:=240; // p3(21,240)
-  local x:=160, y:=0; // pixel coordinates
+  local x1:=160, y1:=0; // top corner (160,0)
+  local x2:=299, y2:=240; // right corner (299,240)
+  local x3:=21, y3:=240; // left corner (21,240)
+  local x:=x1, y:=y1; // initial pixel location is top corner
   local black:=rgb(0,0,0); // pixel color
   local i;
   rect(); // clear 320x240 screen
@@ -196,7 +196,7 @@ Check the syntax of the programme by pressing the onscreen button **Check**. Whe
 
 ![Sierpiński triangle](./figures/HPcalculators/Sierpinski.jpg)
 
-Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. Depending on the value of `r`, the algorithm places the pixel near `(160, 0)`, `(299, 240)`, or `(21, 240)`.
+Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, or left directions. The initial location of the pixel is at the top corner $(160, 0)$. Each iteration shows a pixel at a new location depending on the value of `r`, and the pixel hops around inside the outer triangle, and the above self-similar fractal emerges.
 
 # COLLECTION
 
