@@ -203,13 +203,40 @@ Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wik
 
 # COLLECTION
 
+Below, I present my meagre collection of HP RPN programmable scientific calculators. If you are keen on collecting HP calculators, I offer the following (somewhat opinionated) recommendations:
+
+- Stick to the RPN models.
+- The model suffixes have meanings:
+  - B—business calculator
+  - C —continuous memory feature (the built-in, short-term battery used for memory backup)
+  - E—no continuous memory feature
+  - S—scientific calculator
+  - V—5x memory capacity than the base model
+  - X—10x memory capacity than the base model
+- Carefully examine the eBay photos for defects. Some defects are hard to spot, such as a missing segment on a traditional, seven-segment LED or a pen-tip dent on the metal faceplate.
+- Avoid eBay listings with blurry photos.
+- Avoid all calculators with mushy keys, whatever the brand, whatever the price.
+- Avoid the cheap, non-RPN calculators from the 1990s and the 2000s, like the HP 10s, the HP 49, the HP 50, etc. These are not made by HP; they are rebranded models made by other manufacturers. They all have mushy keys.
+- Avoid the HP 15c Limited Edition (LE), the 2011 reboot of the much-loved HP-15C. The HP 15c LE has a number of [hardware and software issues](https://youtu.be/BOpzJRDbAnU?t=585).
+- The following models are universally appreciated:
+  - HP-35 (1972)—the progenitor of the breed; clean ones are extremely rare
+  - HP-41C (1979)—advanced programmable model with magnetic strip programme memory; there are still a few clean ones
+  - HP-11C (1981)—the first of the Voyager Series; solid model for STEM use
+  - HP-15C (1982)—more advanced than the HP-11C; engineers' favourite
+  - HP-28S (1982)—the original CAS-capable graphing HP calculator; beware the broken battery compartment cover
+  - HP-32S (1988)—continuation of the HP-15C; brilliant design
+  - HP-42S (1988)—continuation of the HP-41C; more advanced than the HP-32S
+  - HP-48SX (1990)—continuation of the HP-28S; the object of 1990s engineering students' desires
+  - HP 35s (2007)—35th anniversary model; superb workhorse; nostalgic appeal
+  - HP Prime (2013)—the latest, the most advanced CAS-capable graphing HP calculator; ideal for modern STEM students
+
 ## *Voyager*
 
 In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C is a milestone model amongst HP calculators. It was the flagship of the line. Its claim to fame was the external programme memory in the form of magnetic strips. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
 
 The Voyager Series includes a business RPN calculator called the HP-12C. It was introduced 1981 at 135 USD. It is undoubtedly the most popular business calculator in history. It is still in production. I bought my HP-12C in 1998. But I did not list it here, because the focus of this article is on scientific RPN calculators.
 
-There is also the HP-10C of 1982, the 80 USD crippled version of the HP-11C. No one bothered with this model, since the HP-11C was more capable, and was only slightly more expensive. I do not own an HP-10C.
+There is also the HP-10C of 1982, the 80 USD crippled version of the HP-11C. No one bothered with this model, since the HP-11C was more capable, and was only slightly more expensive. I do not own an HP-10C, since I already have the HP-11C.
 
 ### HP-11C (1981)
 
@@ -225,7 +252,7 @@ The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few a
 
 Being an electrical engineer, I have always fancied the HP-15C; it has everything an electrical engineer needs: complex numbers, polar-rectangular conversion, hyperbolic functions, matrices, programmability, and RPN to boot. Its programme memory capacity of less than 500 bytes is laughable by modern standards, but it was considered adequate in its day. I have owned my HP-15C since 1985.
 
-In 2011, after many years of supplication by the HP-15C fans, HP relented and introduced the [HP 15c Limited Edition](https://en.wikipedia.org/wiki/HP-15C#HP_15c_Limited_Edition).
+In 2011, after many years of supplication by the HP-15C fans, HP relented and introduced the [HP 15c Limited Edition](https://en.wikipedia.org/wiki/HP-15C#HP_15c_Limited_Edition). All is not well with this one. It is unreasonably expensive. It is not the vintage reissue; it is a completely new device, and it has numerous [hardware and software problems](https://youtu.be/BOpzJRDbAnU?t=585).
 
 ### HP-16C (1982)
 
@@ -275,7 +302,7 @@ The Anniversary Series has only one model, the HP 35s. I like this calculator, a
 
 In terms of design, the HP 35s pays homage to the matriarch of the line, the venerable HP-35 of 1972. It has the same [tonneau](https://revolutionwatch.com/the-tonneau-10-barrel-shaped-watches/) body with a wedge profile. Its 2-line, 14-digit, 5x7 matrix display is crisp. The tall keys have the famous HP tactile feel. It has the four-way cursor keys. In terms of capabilities, it has everything previous generation of HP calculators had and much more. In addition to RPN, it supports infix notation. It uses the 8-bit 6502 CPU, my absolute favourite among the CPU architectures. Its keystroke programme memory is just shy of 32 KB.
 
-Through the years, I watched with sadness HP's calculator business dwindled, drip by drip. By mid 2000s, HP had succumbed to the market pressure, and were selling cheap, Chinese-made non-RPN models as rebranded HP calculators. So, when the 35th anniversary HP 35s RPN model came out in 2007, I snatched one up. Its introductory price was 60 USD (80 USD in 2021). A new one costs about 50 USD in 2021. The HP 35s is a decent calculator. If you want an inexpensive, capable, well-made HP RPN calculator, new, the HP 35s is for you. You will not regret it.
+Through the years, I watched with sadness HP's calculator business dwindled, drip by drip. By mid 2000s, HP had succumbed to the market pressure, and they were selling cheap, non-RPN models as rebranded HP calculators. So, when the 35th anniversary HP 35s RPN model came out in 2007, I snatched one up. Its introductory price was 60 USD (80 USD in 2021). A new one costs about 50 USD in 2021. The HP 35s is a decent calculator. If you want an inexpensive, capable, well-made HP RPN calculator, new, the HP 35s is for you. You will not regret it.
 
 ## *Touchscreen*
 
