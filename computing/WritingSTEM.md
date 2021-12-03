@@ -175,7 +175,7 @@ The Jupyter notebook UI is designed for literate programming. In the notebook, y
 
 The screenshot below is of the sample notebook `Lorenz.ipynb` that came with Jupyter, which presents the Lorenz dynamical equations in mathematics, explains them in text, and shows their visual representation. This visual representation is the output from the embedded Python code that was executed in place.
 
-![Lorenz](./figures/JupyterLorenz.jpg)
+![Lorenz](./figures/Jupyter/Lorenz.jpg)
 
 *Text* is written using [Markdown](https://www.markdownguide.org/), which is a simple markup language. The Markdown site has a brief introduction to the [syntax](https://www.markdownguide.org/basic-syntax/). The title and the first paragraph of the Lorenz notebook above is marked up as follows:
 
