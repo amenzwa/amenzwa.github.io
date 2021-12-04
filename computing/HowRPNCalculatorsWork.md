@@ -203,7 +203,7 @@ Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wik
 
 # COLLECTION
 
-Below, I present my meagre collection of HP RPN programmable scientific calculators. If you are keen on collecting HP calculators, I offer the following (somewhat opinionated) recommendations:
+Below, I present my meagre collection of HP RPN programmable scientific calculators. If you are keen on collecting HP calculators, I offer the following (somewhat opinionated) advice:
 
 - Stick to the RPN models.
 - The model suffixes have meanings:
