@@ -29,7 +29,7 @@ Below, I explain how to use the RPN input method and provide a high-level overvi
 
 In mathematics, a generic binary function $f$ is written as $f(a, b)$, and a generic binary operator $\bigotimes$ is written as $a \bigotimes b$. In prefix notation, they are written as `f a b` and `⨂ a b`. In postfix notation, they are written as `a b f` and `a b ⨂`. Mathematical notations evolved organically through the centuries. On the other hand, the prefix notation was invented by the Polish logician [Jan Łukasiewicz](https://en.wikipedia.org/wiki/Jan_%C5%81ukasiewicz) in 1924. Therefore, the prefix notation is known as the Polish notation, in his honour. The prefix [s-expression](https://en.wikipedia.org/wiki/S-expression) syntax of the LISP programming language is in fact the Polish notation. The postfix [reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN) input method is the opposite of the prefix notation, hence, the "reverse". Both the prefix and the postfix notations are reviled by the uninitiated, but revered by the cognoscenti.
 
-Because mathematical notation is meant to be read by humans, it can be fussy and, sometimes, downright quirky. The irregular syntax is quite a chore for a computer to interpret. For instance, the expression $2 - (\frac{5}{4 -2} + 8) = -8.5$ is parsed by building the a symbol tree consisting of nine nodes (one node per symbol) in memory in the first pass, and by reducing the tree to the result $-8.5$ in the second pass:
+Because mathematical notation is meant to be read by humans, the syntax can be fussy and irregular. It is quite a chore for a computer to interpret written mathematics. For instance, the expression $2 - (\frac{5}{4 -2} + 8) = -8.5$ is parsed by building the a symbol tree consisting of nine nodes (one node per symbol) in memory during the first pass, and by reducing the tree to the result $-8.5$ during the second pass:
 
 - $-$
   - $2$
@@ -41,7 +41,7 @@ Because mathematical notation is meant to be read by humans, it can be fussy and
         - $2$
     - $8$
 
-Building the symbol tree requires processor cycles and a lot of memory, for the symbol values, pointers, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `[ENTER]` key on HP RPN calculators. On an RPN calculator, we can simultaneously parse and evaluate this postfix expression using only three memory locations `x`, `y`, and `z`:
+Building the symbol tree requires processor cycles and a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `[ENTER]` key on HP RPN calculators. On an RPN calculator, we can simultaneously parse and evaluate this postfix expression using only three memory locations `x`, `y`, and `z`:
 
 - `[2][ENTER]` → `x←2`
 - `[5][ENTER]` → `x←5 | y←2`
