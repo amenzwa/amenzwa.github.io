@@ -27,9 +27,11 @@ Below, I explain how to use the RPN input method and provide a high-level overvi
 
 # RPN
 
-In mathematics, a generic binary function $f$ is written as $f(a, b)$, and a generic binary operator $\bigotimes$ is written as $a \bigotimes b$. In prefix notation, they are written as `f a b` and `⨂ a b`. In postfix notation, they are written as `a b f` and `a b ⨂`. Mathematical notations evolved organically through the centuries. On the other hand, the prefix notation was invented by the Polish logician [Jan Łukasiewicz](https://en.wikipedia.org/wiki/Jan_%C5%81ukasiewicz) in 1924. Therefore, the prefix notation is known as the Polish notation, in his honour. The prefix [s-expression](https://en.wikipedia.org/wiki/S-expression) syntax of the LISP programming language is in fact the Polish notation. The postfix [reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN) input method is the opposite of the prefix notation, hence, the "reverse". Both the prefix and the postfix notations are reviled by the uninitiated, but revered by the cognoscenti.
+In mathematics, the application of a generic binary function $f$ to arguments $a$ and $b$ is written as $f(a, b)$, and the operation of a generic binary operator $\bigotimes$ to arguments $a$ and $b$ is written as $a \bigotimes b$. In prefix notation, these expressions are written as `f a b` and `⨂ a b`. In postfix notation, they are written as `a b f` and `a b ⨂`.
 
-Because mathematical notation is meant to be read by humans, the syntax can be fussy and irregular. It is quite a chore for a computer to interpret written mathematics. For instance, the expression $2 - (\frac{5}{4 -2} + 8) = -8.5$ is parsed by building the a symbol tree consisting of nine nodes (one node per symbol) in memory during the first pass, and by reducing the tree to the result $-8.5$ during the second pass:
+In mathematics, notations evolve organically through the centuries. On the other hand, the prefix notation was invented by the Polish logician [Jan Łukasiewicz](https://en.wikipedia.org/wiki/Jan_%C5%81ukasiewicz) in 1924. Therefore, it is called the Polish notation, in his honour. The prefix [s-expression](https://en.wikipedia.org/wiki/S-expression) syntax `(f a b)` in LISP programming language is a slightly modified Polish notation where the expression is delimited with parentheses, which simplifies parsing. The postfix [reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN) input method is the opposite of the prefix notation, hence, the "reverse". Both the prefix and the postfix notations are reviled by the uninitiated, but revered by the cognoscenti for their innate efficiency.
+
+Because mathematical notation is meant for the human eye, the syntax is often fussy and irregular. So, it is quite a chore for a computer to interpret written mathematics. For instance, the expression $2 - (\frac{5}{4 -2} + 8) = -8.5$ is parsed by storing in memory a symbol tree consisting of nine nodes (one node per symbol) during the first pass, and by reducing the tree to the result $-8.5$ during the second pass:
 
 - $-$
   - $2$
@@ -41,17 +43,38 @@ Because mathematical notation is meant to be read by humans, the syntax can be f
         - $2$
     - $8$
 
-Building the symbol tree requires processor cycles and a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `[ENTER]` key on HP RPN calculators. On an RPN calculator, we can simultaneously parse and evaluate this postfix expression using only three memory locations `x`, `y`, and `z`:
+Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `[ENTER]` key on HP RPN calculators. Note that I am using the bracket notation `[ENTER]` to mean the calculator key labelled "ENTER". Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression using only three temporary storage locations `x`, `y`, and `z`:
 
-- `[2][ENTER]` → `x←2`
-- `[5][ENTER]` → `x←5 | y←2`
-- `[4][ENTER]` → `x←4 | y←5 | z←2`
-- `[2][-]` → `x←4-2=2 | y←5 | z←2`
-- `[÷]` → `x←5÷2=2.5 | y←2`
-- `[8][+]` → `x←2.5+8=10.5 | y←2`
-- `[-]` → `x←2-10.5=-8.5`
+```text
+[2][ENTER]
+[5][ENTER]
+[4][ENTER]
+[2][-]
+[÷]
+[8][+]
+[-]
+```
 
-To compute the expression $2^3 = 8$ on an RPN calculator, we punch in the keystrokes `[2][ENTER] [3][`$\color{darkred}{y^x}$`]`. That is, we first enter the operands separated by `[ENTER]`, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output. Therefore, the `(` key, the `)` key, and the `[=]` key do not belong on an RPN calculator.
+The above keystroke sequence means the following.
+
+- `[2][ENTER]` → Pressing the `[2]` key places the value `2` in the data entry scratchpad. Pressing the `[ENTER]` key pushes the value `2` in the scratchpad into the register `x` on the stack.
+  - `x←2`: The register `x` now holds `2`.
+- `[5][ENTER]` → Push `5` onto the stack.
+  - `x←5 | y←2`: The old value `2` in the register `x` is pushed down further into register `y`, and the register `x` now holds the new value `5`.
+- `[4][ENTER]` → Push `4` onto the stack.
+  -  `x←4 | y←5 | z←2`: The old values are pushed down further, and the register `x` now holds the new value `4`.
+- `[2][-]` → Place `2` in the scratchpad and, without pushing it onto the stack, immediately subtract it from the value `4` in the register `x`.
+  -  `x←4-2=2 | y←5 | z←2`: The result `2` of the subtraction is accumulated in the register `x`. Other registers are left untouched.
+- `[÷]` → Divide `5` in the register `y` by `2` in the register `x`.
+  - `x←5÷2=2.5 | y←2`: The result `2.5` of the division is accumulated in the register `x`. The value `2` in the register `z` is floated up into the newly cleared register `y`, and the register `z` is cleared.
+- `[8][+]` → Place `8` in the scratchpad and immediately add it to the value `2.5` in the register `x`.
+  - `x←2.5+8=10.5 | y←2`: The result `10.5` of the addition is accumulated in the register `x`. The register `y` is left untouched.
+- `[-]` → Subtract from `2` in the register `y` the `10.5` in the register `x`.
+  - `x←2-10.5=-8.5`: The result `-8.5` of the subtraction is accumulated in the register `x`. The register `y` is cleared.
+
+As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes `[2][ENTER] [3][`$\color{darkred}{y^x}$`]`. That is, we first enter the operands separated by `[ENTER]`, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
+
+The stack registers eliminate the need to use parentheses, and the self-actuating operators eliminate the need to use a distinguished key to initiate computations. Therefore, the `(`, `)`, and `[=]` keys are not needed on an RPN calculator.
 
 The elimination of these separators are partly the reason why the RPN is more efficient than the conventional infix notation. The RPN input method is appreciably more efficient when the expressions are lengthy and contain many parentheses, such as those that appear in engineering calculations. The RPN input method, however, obliges us to rearrange the expression mentally, before we can evaluate it on the calculator. Hence, we are purchasing mechanical efficiency with a small amount of mental effort. But this mental parsing becomes second nature, after a day of use.
 
