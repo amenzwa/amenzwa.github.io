@@ -13,7 +13,7 @@ This topic covers legal education, social justice, and related matters. It is in
 
 # [STEM](stem/index.md)
 
-This topic covers the Computer Science (CS) curriculum, CS theory, programming languages, and the interaction between law and technology. It is intended for high-schoolers interested in CS, parents and counsellors who are advising high-schoolers, and IT practitioners.
+This topic covers the engineering- and computing-related topics. It is intended for high-schoolers interested in STEM, parents and counsellors who are advising high-schoolers, and STEM practitioners.
 
 # [Music](music/index.md)
 
