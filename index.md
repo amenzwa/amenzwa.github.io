@@ -7,11 +7,11 @@ I am Amen Zwa, an ordinary bloke. I work as a technology consultant, focusing on
 - Amazon Author Profile: [http://amazon.com/author/amenzwa](http://amazon.com/author/amenzwa)
 - LinkedIn Profile: [https://www.linkedin.com/in/amenzwa](https://www.linkedin.com/in/amenzwa)
 
-# [Justice](justice/index.md)
+# [Law](law/index.md)
 
 This topic covers legal education, social justice, and related matters. It is intended for those *considering* attending law school and those who are *currently* attending law school.
 
-# [Computing](computing/index.md)
+# [STEM](stem/index.md)
 
 This topic covers the Computer Science (CS) curriculum, CS theory, programming languages, and the interaction between law and technology. It is intended for *high-schoolers* interested in CS, *parents* and *counsellors* who are advising high-schoolers, and IT *practitioners*.
 
