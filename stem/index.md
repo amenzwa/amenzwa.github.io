@@ -2,7 +2,7 @@
 title: "STEM"
 ---
 
-This topic is devoted to computing. It covers computer science curriculum, career guide for computer scientists, programming languages, and the interactions between law and technology.
+This topic is devoted to STEM in general and engineering and computing in particular.
 
 - [Computer Science Curriculum and Career](./CS/index.md)
   - This section presents the computer science (CS) discipline from academic and industrial perspectives. The articles in this section are written for those planning to study CS, and in particular, those who are novice programmers.
