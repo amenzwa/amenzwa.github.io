@@ -11,7 +11,7 @@ This topic is devoted to computing. It covers computer science curriculum, caree
 - [History of Computing Devices](ComputingHistory.md)
   - This section presents the design, construction, uses, and histories of various computing devices, including 8-bit home computers, RPN calculators, and slide rules.
 - [Writing STEM Papers using Jupyter](WritingSTEM.md)
-  - This article describes proper ways to read and write STEM text, and how to use the right tools when reading and writing collaboratively. It is written for high school and undergraduate STEM *students*.
+  - This article describes proper ways to read and write STEM text, and how to use the right tools when reading and writing collaboratively. It is written for high school and undergraduate STEM students.
 - [Law and Technology](LawAndTechnology.md)
-  - This article describes the interaction between law and technology. It covers topics such as regulatory compliance, intellectual property law, and contract law. The target audience is technical *leaders* and *managers*.
+  - This article describes the interaction between law and technology. It covers topics such as regulatory compliance, intellectual property law, and contract law. The target audience is technical leaders and managers.
 
