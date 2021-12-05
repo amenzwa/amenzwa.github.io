@@ -17,7 +17,7 @@ By the way, I test ran AC on a MacBook Pro 15” with 2.6 GHz Core i7 with 16 GB
 
 For an enhanced realism, you should buy a racing seat like the Playseat Evolution. Be sure to get the Gearshift Holder accessory. Mount it on the right side of the seat if you are used to driving left-hand-drive cars, and on the left side if you prefer right- hand-drive cars. The photograph⁠ below shows a G27 mounted on a Playseat.
 
-![G25 & Playseat](./figures/G25-Playseat.jpg)
+![G25 & Playseat](../figures/G25-Playseat.jpg)
 
 Place your tele on a low stand, so that your eye level is about one-half from the bottom edge of the display. Then, place the racing seat as close to the base of the stand as practicable. This arrangement, shown above, complements the cockpit view. An inexpensive but high-quality immersive sound can be obtained using a professional-grade stereo headphone and a digital-to-analogue converter (DAC) headphone amplifier. The Sennheiser HD 600 headphone driven by the FiiO Alpen E17 USB DAC amplifier offers decent sound at an affordable price. You will also need a force feedback USB steering wheel like the Logitech G27 or the older G25.
 
@@ -27,15 +27,15 @@ Download the Steam client from SteamPowered.com, register with the service, purc
 
 AC’s road-going cars have proper seat heights, so you may use the default value for these cars. But the open-wheel models have disconcertingly high seats. So, we need to lower the seat for an open-wheeler, but by how much? Let us have a look at the Lotus Type 125 Exos. It is an F1-like race car that Lotus sells to its elite customers. So, it should have a similar cockpit view as the Lotus F1 car. See the true driver’s eyes view video made by Lucas di Grassi, a Pirelli test driver putting a set of full-wet rain tyres through their paces in a Lotus F1 car on Circuit Paul Ricard in France. Unlike other in-cockpit videos that were shot though helmet-top cameras, di Grassi wore the camera directly in front of his eyes, partially obscuring his vision as a consequence. Also, note how shaky his head got at various parts on the track. And most of the time, di Grassi cannot see the track ahead over the top of his steering wheel, given how low he sits in the cockpit. This is as realistic a view as we mortals can get of an F1 cockpit. The following screenshot⁠ was captured from di Grassi’s video, in order to provide you a baseline against which to compare your seat height in AC.
 
-![Lotus di Grassi](./figures/viewLotus-diGrassi.jpg)
+![Lotus di Grassi](../figures/viewLotus-diGrassi.jpg)
 
 The default seat height for Exos in AC, however, is much too high, as can be seen below.
 
-![Lotus default](./figures/viewExosdefault.jpg)
+![Lotus default](../figures/viewExosdefault.jpg)
 
 Since the Exos is derived from the Lotus F1 car, you should reproduce the F1 driver’s cockpit view. But there is a catch. In real life, the driver can raise his head slightly to see what is ahead, if necessary. You, however, cannot raise your head in AC as readily. So, as a compromise, I recommend that you lower the seat until the two little humps on the side of the nose are barely visible over the top of the steering wheel, as shown below. This position offers the best realism-usability balance.
 
-![Lotus lowered](./figures/viewExoslowered.jpg)
+![Lotus lowered](../figures/viewExoslowered.jpg)
 
 # GRAPHICS SET-UP
 
@@ -43,7 +43,7 @@ Since the Exos is derived from the Lotus F1 car, you should reproduce the F1 dri
 
 The above screenshot of the Lotus Exos cockpit uses AC’s default field of view of $54°$. A spot of trigonometry tells us how far the screen should be from the eyes at a given view angle and screen size. Let us say that a large tele has a usable screen width of about $150\ cm$ (approximately $60\ in$), and you have kept AC’s field of view at the default $54°$. Then, the proper eye-to-screen distance is $(150 ÷ 2) / tan(54 ÷ 2) \approx 150\ cm$. The diagram below shows the top view of the tele, the eyes, and the view cone.
 
-![Screen Distance](./figures/graphicsScreenDistance.jpg)
+![Screen Distance](../figures/graphicsScreenDistance.jpg)
 
 And instead, if you are using a small monitor with a $50\ cm$ (approximately $20\ in$) screen width, it should be placed $25 / tan(27) \approx 50\ cm$ in front of your eyes. That means the monitor should be located just beyond your G25’s wheel, and the centre of the screen should be lined up with your eyes.
 
@@ -61,7 +61,7 @@ Yet another cure for tearing is to turn on vertical synchronisation, which force
 
 When the graphics card is operating in vertical synchronisation mode, it renders a new frame, only when the display demands for one. If the card is labouring at a low frame rate, say $50\ fps$, it takes $20\ ms$ ($1 / 50\ s$) for it to render a frame. But a display operating at $60\ Hz$ demands a new frame once every $16.67\ ms$ ($1 / 60\ s$). As can be seen in the timing diagram below, every other call for refresh (thin red vertical bar) falls on the deaf ears of an overworked card. Consequently, a new image can only be displayed once every $33.33\ ms$ (thick black vertical bar). The effective frame rate thus drops to $30\ fps$ ($1 / 33.33 ÷ 1000\ s$), despite the fact that the card is capable of running at $50\ fps$. The $20\ fps$ loss is caused by the card having to idle after each rendering, waiting for the next frame demand from the display.
 
-![Graphics Stutter](./figures/graphicsStutter.jpg)
+![Graphics Stutter](../figures/graphicsStutter.jpg)
 
 We may remedy the stutter problem by setting the graphics card to adaptive vertical synchronisation, and by setting the simulator to respect vertical synchronisation. When the graphics card is configured to operate in the adaptive vertical synchronisation mode, the graphics card works in normal vertical synchronisation as long as its frame rate is higher than the display’s refresh rate. But the instant the frame rate dips below the refresh rate, the card abandons vertical synchronisation, and operates at the maximum frame rate it can muster. The result is a tear-free, stutter-free, high-quality imagery, with the graphics card that is performing at its peak. The book also covers image-quality-related graphics card configuration parameters such as anti-aliasing, anisotropic texture filtering, shadows, etc.
 

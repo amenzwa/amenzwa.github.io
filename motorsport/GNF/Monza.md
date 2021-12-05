@@ -6,7 +6,7 @@ title: "Monza Track Guide"
 
 My book, *[Going Nowhere Fast](https://www.amazon.com/Going-Nowhere-Assetto-Corsa-2018-01-20-ebook/dp/B00NS918M4/ref=sr_1_4?keywords=amen+zwa&qid=1637678617&qsid=139-4891948-0624130&sr=8-4&sres=B00WNBY3AW%2CB00FRJRAWA%2CB00RJL1GUQ%2CB00NS918M4%2CB007O48QTC%2CB0085P197A%2CB078MFL33P%2CB009Z2H91W%2CB08Q77JRMC%2CB00OFWFV12%2CB075T4VS5F%2CB075T7HYR5%2CB00DJUK8HS%2CB07XYHLQ9C%2CB086PHR52V%2CB075T6BVGZ)*, provides detailed guides for all laser-scanned tracks that came with *[Assetto Corsa](https://www.assettocorsa.it/home-ac/)* racing simulator. Here in this article, I have excerpted one of them: from-the-cockpit description of Autodromo Nazionale Monza, a revered, old track located near Milan, Italy. The original, 10 km track comprises the flat track and the banked oval superimposed atop it. Monza was built in the early 1920s, and annual Grand Prix races are held there to this day. The banked oval fell into disuse in the late 1960s. After having excised the oval section, and the flat section had been decimated with chicanes. Yet, this eviscerated, 5.77 km configuration, as it was modified last in 1995, still stands today as one of the fastest tracks on the series calendar. The track map below shows modern Monza, without the Sopraelevata oval.
 
-![Monza](./figures/Monza/MonzaMap.jpg)
+![Monza](../figures/Monza/MonzaMap.jpg)
 
 # RACING LINE
 
@@ -20,7 +20,7 @@ As you come out of Curva Parabolica in G4, swing wide and shift up to G5. Let th
 
 In the mid 1970s, this chicane was inserted just before the entry of Curva Grande, in order to slow down the cars to a safe speed through Curva Grande. It has gone through several layout changes. In its present form, it is a vexingly sharp and tight right-left chicane. Get on the brake hard just after passing the 50 m board, as shown below. Remember that the front tyres may have cooled down quite a bit, while travelling along the long pits straight. Delay the entry into the right-hander, so as to position yourself to straighten the line through the subsequent left-hander. You need to make a good exit, so as to carry as much speed into Curva Grande as possible. Mount the flat, tricolori apex kerbs, but do not mount or nudge the tall, red-painted hump behind the kerbs. It is there to prevent the cars from cutting the corner—apex guard, if you will. If you hit this hump, you can launch the car high in the air, and damage the suspension. Even if you suffered no damage, your lap would be in tatters.
 
-![](./figures/Monza/MonzaFA-01VariantedelRettifilo.jpg)
+![](../figures/Monza/MonzaFA-01VariantedelRettifilo.jpg)
 
 If you overcooked the chicane, you may avoid locking up the wheels by taking the escape road—the straight bit of road that shunts the chicane. There are foam blocks that chop up this escape road, so it will take longer for you to thread through it than to take the chicane. If you find yourself on this patch of the track occasionally, do not feel bad; even the top drivers make the same mistake, here. The pits straight is the fastest part of the track, and this chicane is the slowest. So, overshoots are inevitable.
 
@@ -32,7 +32,7 @@ Accelerate smoothly but quickly out of the chicane, and take Curva Grande in G5 
 
 This chicane cuts down the old Curva della Roggia. Like Variante del Rettifilo, it is sharp and tight, has tall apex guards, and leads onto a straight. But this chicane goes in the opposite direction: left, then right. Stay on the right edge of the track, and brake hard at the 100 m board, which can be seen in the screenshot below at the right edge of the track, just beyond the grey footbridge. Once again, sacrifice the first part, the left-hander, in order to straighten out the exit line.
 
-![](./figures/Monza/MonzaFA-03VariantedellaRoggia.jpg)
+![](../figures/Monza/MonzaFA-03VariantedellaRoggia.jpg)
 
 ## *Curve di Lesmo 1*
 
@@ -50,7 +50,7 @@ Despite all the changes to Monza, Curva del Serraglio managed to remain the same
 
 This chicane chops up the old Curva del Vialone. It is named after the fast, fat, and famous Italian driver Alberto Ascari, who lost his life at Curva del Vialone in 1955. Befitting the name, this chicane is very fast. It is oxymoronic to say that a chicane is fast, but this chicane is truly fast. It consists of a left flick, a right sweep, then a left flick. Take it in G4, but do not slow down too much, and do not let the car skate about. Thread the car neatly through this complex with a light touch on the steering wheel and a fine sense of timing. Clip the apex kerbs, but do not go too deeply onto the ribs behind the kerbs. They may look small, but they are sharp enough to upset the car, and rob you of the speed you desperately need to carry onto the upcoming straight. In the image below, the driver has just downshifted into G4, and he will soon take the left-hander, after passing the 50 m board that hangs from a fence off to the right. He will then sweep right, flick left, and accelerate onto the straight.
 
-![](./figures/Monza/MonzaFA-07VarianteAscari.jpg)
+![](../figures/Monza/MonzaFA-07VarianteAscari.jpg)
 
 ## *Rettifilo Centro*
 

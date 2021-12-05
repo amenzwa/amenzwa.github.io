@@ -12,7 +12,7 @@ The clutch, a friction device, acts as the buffer between the engine and the gea
 
 The gearbox input shaft is not directly connected to the output shaft. Instead, the two shafts are connected via a layshaft. When the input shaft rotates, the layshaft does, too. The layshaft’s gears are permanently meshed to their counterparts on the output shaft, so when the layshaft rotates, the gears on the output shaft do, too. However, whereas the layshaft gears are splined onto the layshaft, the output shaft gears are mounted on bearings, so they rotate independently of the output shaft. In the diagram below, the layshaft gears are the dark-green rectangles, and the output shaft gears are the dark-blue rectangles. For simplicity, the reverse gear is not shown.
 
-![gearbox](figures/gearbox.jpg)
+![gearbox](../figures/gearbox.jpg)
 
 When the gearbox is in neutral, with the clutch fully engaged and the engine idling, the gears on the output shaft are freely rotating alongside the layshaft, the input shaft, and the crankshaft. But because the output shaft gears are not locked to the output shaft, the output shaft itself is not rotating. When a gear is selected using the shifter, the corresponding [dog clutch](http://en.wikipedia.org/wiki/Dog_clutch), which is splined onto the output shaft, meshes with the selected gear on the output shaft. Previously free spinning output shaft gear is now locked to the output shaft via the dog clutch, so the output shaft now rotates along with the layshaft. The speed of the output shaft is determined by the ratio of the selected gear.
 
