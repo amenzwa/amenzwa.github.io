@@ -206,7 +206,7 @@ begin
   rect(); // clear 320x240 screen
   for i from 1 to 100000 do
     local r:=randint(2)+1; // random variable r = [1, 3]
-		case
+    case
       if r = 1 then x:=(x+x1)/2; y:=(y+y1)/2; end;
       if r = 2 then x:=(x+x2)/2; y:=(y+y2)/2; end;
       if r = 3 then x:=(x+x3)/2; y:=(y+y3)/2; end;
