@@ -197,19 +197,19 @@ Since Python is still not fully supported at present, we shall focus on the PPL 
 ```Pascal
 export ShowSier() // show Sierpinski triangle on screen
 begin
-  local x1:=160, y1:=0; // top corner (160,0)
-  local x2:=299, y2:=240; // right corner (299,240)
-  local x3:=21, y3:=240; // left corner (21,240)
-  local x:=x1, y:=y1; // initial pixel location is top corner
+  local tx:=160, ty:=0; // top corner (160,0)
+  local rx:=299, ry:=240; // right corner (299,240)
+  local lx:=21, ly:=240; // left corner (21,240)
+  local x:=tx, y:=ty; // initial pixel location is top corner
   local black:=rgb(0,0,0); // pixel color
   local i;
   rect(); // clear 320x240 screen
   for i from 1 to 100000 do
     local r:=randint(2)+1; // random variable r = [1, 3]
     case
-      if r = 1 then x:=(x+x1)/2; y:=(y+y1)/2; end;
-      if r = 2 then x:=(x+x2)/2; y:=(y+y2)/2; end;
-      if r = 3 then x:=(x+x3)/2; y:=(y+y3)/2; end;
+      if r = 1 then x:=(x+tx)/2; y:=(y+ty)/2; end; // toward top
+      if r = 2 then x:=(x+rx)/2; y:=(y+ry)/2; end; // toward right
+      if r = 3 then x:=(x+lx)/2; y:=(y+ly)/2; end; // toward left
     end;
     pixon_p(ip(x),ip(y), black); // show black pixel at (x,y)
     wait(0.001); // slow down loop to let image emerge gradually
@@ -222,7 +222,7 @@ Check the syntax of the programme by pressing the onscreen button **Check**. Whe
 
 ![Sierpiński triangle](../figures/HPcalculators/Sierpinski.jpg)
 
-Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, or left corners. The initial location of the pixel can be anywhere inside the triangle, so we chose the convenient top corner $(160, 0)$. Depending on the value of `r` in each iteration, the pixel hops halfway toward that chosen corner, because of the $÷2$ in the location expression. The `wait(0.001)` statement pauses each iteration for $1\ ms$, so the self-similar fractal emerges slowly. If you just want to see the final image, comment out this statement. Without the final `wait` statement to pause the programme, the final image will disappear from the screen immediately. While the programme is running, all keys, except the `[On]` key, are locked out. To interrupt a running programme, press the `[On]` key.
+Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, and left corners. The initial location of the pixel can be anywhere inside the triangle, so we chose the convenient top corner $(160, 0)$. Depending on the value of `r` in each iteration, the pixel hops halfway toward that chosen corner, because of the $÷2$ in the location expression. The `wait(0.001)` statement pauses each iteration for $1\ ms$, so the self-similar fractal emerges slowly. If you just want to see the final image, comment out this statement. Without the final `wait` statement to pause the programme, the final image will disappear from the screen immediately. While the programme is running, all keys, except the `[On]` key, are locked out. To interrupt a running programme, press the `[On]` key.
 
 # COLLECTION
 
