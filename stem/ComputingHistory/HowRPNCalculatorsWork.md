@@ -164,18 +164,6 @@ RPL was introduced on the HP-18C of 1986 as the system programming language. The
 Being a LISP, RPL has LISPsisms, like recursion and higher-order functions (functionals). For instance, the `IFTE(cond, csq, alt)` (if-then-else) is a functional; `cond` is the conditional expression, `csq` is the consequent function, and the `alt` is the alternative function. In other words, RPL is a bona fide functional programming language. But it departs from LISP in a few ways: its syntax is stack-oriented postfix, like RPN; it uses the the conventional function call syntax `f(x)`; it uses the conventional infix operator syntax.
 
 As an example, let us look at the Fibonacci function.
-$$ {Fibonacci}
-\begin{equation}
-  F_n =
-  \begin{cases}
-    n, & \text{if n ≤ 1} \\
-    F_{n-1} + F_{n-2}, & \text{otherwise}
-  \end{cases}
-\end{equation}
-$$
-
-
-
 
 - $F_n = n$, if $n ≤ 1$
   - $= F_{n-1} + F_{n-2}$, otherwise
