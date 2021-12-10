@@ -92,7 +92,7 @@ The above keystroke sequence means the following. Let us assume that all four re
   - The operation subtracts the value $10.5$ in the register `x` from the value $2$ in the register `y`, and accumulates the final result $-8.5$ in the register `x`.
   - The same ripple effect copies the value $2$ into the upper registers. The values in these upper registers are irrelevant, since the computation is now complete.
 
-As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes `[2][ENTER] [3][`$\color{darkred}{y^x}$`]`. That is, we first enter the operands separated by `[ENTER]`, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
+As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes `[2][ENTER] [3][`$\color{red}{y^x}$`]`. That is, we first enter the operands separated by `[ENTER]`, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
 
 The stack registers eliminate the need to use parentheses, and the self-actuating operators eliminate the need to use a distinguished key to initiate computations. Therefore, the `(`, `)`, and `[=]` keys are not needed on an RPN calculator.
 
