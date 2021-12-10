@@ -55,22 +55,42 @@ Building the symbol tree requires processor cycles and quite a lot of memory: sy
 [-]
 ```
 
-The above keystroke sequence means the following.
+The above keystroke sequence means the following. Let us assume that all four registers on the stack are initialised to `0`.
 
-- `[2][ENTER]` → Pressing the `[2]` key places the value `2` in the data entry scratchpad. Pressing the `[ENTER]` key pushes the value `2` in the scratchpad into the register `x` on the stack.
-  - `x←2`: The register `x` now holds `2`.
-- `[5][ENTER]` → Push `5` onto the stack.
-  - `x←5 | y←2`: The old value `2` in the register `x` is pushed down further into register `y`, and the register `x` now holds the new value `5`.
-- `[4][ENTER]` → Push `4` onto the stack.
-  -  `x←4 | y←5 | z←2`: The old values are pushed down further, and the register `x` now holds the new value `4`.
-- `[2][-]` → Place `2` in the scratchpad and, without pushing it onto the stack, immediately subtract it from the value `4` in the register `x`.
-  -  `x←4-2=2 | y←5 | z←2`: The result `2` of the subtraction is accumulated in the register `x`. Other registers are left untouched.
-- `[÷]` → Divide `5` in the register `y` by `2` in the register `x`.
-  - `x←5÷2=2.5 | y←2`: The result `2.5` of the division is accumulated in the register `x`. The value `2` in the register `z` is floated up into the newly cleared register `y`, and the register `z` is cleared.
-- `[8][+]` → Place `8` in the scratchpad and immediately add it to the value `2.5` in the register `x`.
-  - `x←2.5+8=10.5 | y←2`: The result `10.5` of the addition is accumulated in the register `x`. The register `y` is left untouched.
-- `[-]` → Subtract from `2` in the register `y` the `10.5` in the register `x`.
-  - `x←2-10.5=-8.5`: The result `-8.5` of the subtraction is accumulated in the register `x`. The register `y` is cleared.
+- `[2][ENTER]` → Press the `[2]` key, followed by the `[ENTER]` key.
+  - `x←2.0000 | y←2.0000 | z←0.0000 | t←0.0000`
+  - Pressing the `[2]` key places the value $2$ in the register `x`, and pushes its old value $0$ up into the register `y`. In a way, the register `x` is like the data-entry scratchpad.
+  - Pressing the `[ENTER]` key copies the value $2$ in the register `x` up into the register `y`, moving its old value $0$ up further onto the stack.
+  - Now, the registers `x` and `y` each holds the value $2$.
+- `[5][ENTER]` → Press the `[5]` key, followed by the `[ENTER]` key.
+  - `x←5.0000 | y←5.0000 | z←2.0000 | t←0.0000`
+  - Pressing the `[5]` key places the value $5$ in the register `x`, rippling the old values further up onto the stack.
+  - Pressing the `[ENTER]` key populates both the registers `x` and `y` with the value $5$.
+  - The old value $2$ in the register `y` is pushed up further into the register `z`.
+- `[4][ENTER]` → Press the `[4]` key, followed by the `[ENTER]` key.
+  -  `x←4.0000 | y←4.0000 | z←5.0000 | t←2.0000`
+  -  The old values are pushed up further onto the stack.
+  -  The registers `x` and `y` both hold the new value $4$.
+  -  At this point, the stack is full, since all four of its registers hold values involved in the computation.
+- `[2][-]` → Press the `[2]` key followed by the `[-]` key.
+  -  `x←4-2=2.0000 | y←5.0000 | z←2.0000 | t←2.0000`
+  -  Pressing the `[2]` key places the value $2$ in the register `x`, and pushes its old value $4$ up into the register `y`.
+  -  Pressing the `[-]` key performs the subtraction operation using the values in the registers `x` and `y`, subtracting the value $2$ in the register `x` from the value $4$ in the register `y`, and accumulating the result $2$ in the register `x`.
+  -  The subtraction operation cleared the register `y`, which has the ripple effect of copying down the value $5$ from the register `z` down into the register `y` and the value $2$ from the top register `t` down into the register `z`.
+  -  The top register `t` is special: as the operations consume the operands and the operands are popped off the stack, the value in the register `t` is kept the same and is copied down into the lower registers.
+- `[÷]` → Press the `[÷]` key.
+  - `x←5÷2=2.5000 | y←2.0000 | z←2.0000 | t←2.0000`
+  - The operation divides the value $5$ in the register `y` by the value $2$ in the register `x`, and accumulates the result $2.5$ in the register `x`.
+  - Since the value in the register `y` was consumed, the value $2$ in the register `z` is copied down into the newly cleared register `y`, and the register `z` in turn is filled by the replicated value $2$ in the top register `t`.
+- `[8][+]` → Press the `[8]` key followed by the `[+]` key.
+  - `x←2.5+8=10.5000 | y←2.0000 | z←2.0000 | t←2.0000`
+  - Pressing the `[8]` key places the value $8$ in the register `x`, and pushes its old value $2.5$ up into the register `y`.
+  - Pressing the `[+]` key performs the addition operation using the values in the register `x` and `y`, adding the value $8$ in the register `x` to the value $2.5$ in the register `y`, and accumulating the result $10.5$ in the register `x`.
+  - The same ripple effect copies the value $2$ into the upper registers.
+- `[-]` → Press the `[-]` key.
+  - `x←2-10.5=-8.5000 | y←2.0000 | z←2.0000 | t←2.0000`
+  - The operation subtracts the value $10.5$ in the register `x` from the value $2$ in the register `y`, and accumulates the final result $-8.5$ in the register `x`.
+  - The same ripple effect copies the value $2$ into the upper registers. The values in these upper registers are irrelevant, since the computation is now complete.
 
 As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes `[2][ENTER] [3][`$\color{darkred}{y^x}$`]`. That is, we first enter the operands separated by `[ENTER]`, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
 
@@ -80,7 +100,7 @@ The elimination of these separators are partly the reason why the RPN is more ef
 
 Computers in the late 1950s had very little processing power and memory storage, parsing mathematical expressions was a very difficult task. To simply parsing, [John McCarthy](https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)) adopted the much simpler s-expression as the syntax for his LISP programming language. The [IBM 704](http://www.columbia.edu/cu/computinghistory/704.html) on which the first LISP implementation ran occupied a large, climate-controlled room. A little over a decade later in the early 1970s, the HP-35 was the most powerful scientific calculator and the first one designed to fit an engineer's shirt pocket. But the HP-35 had a miserly 1-bit serial processor and a meagre 4-register (`x`, `y`, `z`, and `t`) memory. So, the time- and space-efficient RPN input method was not merely a nicety, but a clear necessity. A *register* is a fast, on-chip, temporary storage used by the CPU while performing operations. An assemblage of registers is called a register *file*. You can read a detailed explanation of how the CPU uses registers in my article *[How Computers Work](HowComputersWork.md)*.
 
-Technically speaking, the HP-35 (1972) is a [stack architecture](https://en.wikipedia.org/wiki/Stack_machine) computer, albeit a wee one. The Burroughs [B5000](http://www.retrocomputingtasmania.com/home/projects/burroughs-b5500/b5000_b5500_gallery) (1961) and the Hewlett-Packard [HP 3000](http://www.hpmuseum.net/display_item.php?hw=100) (1972) are stack machines, too, though slightly bigger, each being about the size of a room. But all stack machines operate on the same principle: they all use a stack register file to store temporary values during computations. A *stack* is a data structure that holds values in a last-in, first-out (LIFO) fashion. If we push `[1][ENTER] [2][ENTER] [3][ENTER] [4][ENTER]` onto the stack of the HP-35, its registers would contain the following values: `x=4 | y=3 | z=2 | t=1`. Then, when we operate on those values, the operator consumes the values, starting with the last value, namely `x=4`. But had we pushed one more operand `[5][ENTER]` without performing operations, the stack would become `x=5 | y=4 | z=3 | t=2`, and the oldest value $1$ would have fallen off the bottom of the stack and lost forever. As the newer values are consumed off the top of the stack by operations, the oldest value in the register `t` is replicated upward, one step at a time.
+Technically speaking, the HP-35 (1972) is a [stack architecture](https://en.wikipedia.org/wiki/Stack_machine) computer, albeit a wee one. The Burroughs [B5000](http://www.retrocomputingtasmania.com/home/projects/burroughs-b5500/b5000_b5500_gallery) (1961) and the Hewlett-Packard [HP 3000](http://www.hpmuseum.net/display_item.php?hw=100) (1972) are stack machines, too, though slightly bigger, each being about the size of a room. But all stack machines operate on the same principle: they all use a stack register file to store temporary values during computations. A *stack* is a data structure that holds values in a last-in, first-out (LIFO) fashion. If we push `[1][ENTER] [2][ENTER] [3][ENTER] [4][ENTER]` onto the stack of the HP-35, its registers would contain the following values: `x=4 | y=3 | z=2 | t=1`. Then, when we operate on those values, the operator consumes the values, starting with the last value, namely `x=4`. But had we pushed one more operand `[5][ENTER]` without performing operations, the stack would become `x=5 | y=4 | z=3 | t=2`, and the oldest value $1$ would have fallen off the top of the stack and would have been lost forever. As the newer values are consumed off the top of the stack by the operations, the oldest value in the top register `t` is replicated down into the lower registers.
 
 RPN is essentially about user interface design and usability. Most people loathed RPN, but engineers back in the day adored it. While we are on the topic of usability, I should mention how we engineers used calculators: we placed on the desk our RPN calculator and our notebook, side by side, writing in the notebook with our dominant hand and operating the calculator with our non-dominant hand. This made the workflow efficient and kept the desk neat.
 
