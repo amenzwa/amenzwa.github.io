@@ -185,8 +185,12 @@ Being a LISP, RPL has LISPsisms, like recursion and higher-order functions (func
 
 As an example, let us look at the Fibonacci function.
 
-- $F_n = n$, if $n ≤ 1$
-  - $= F_{n-1} + F_{n-2}$, otherwise
+$\begin{equation}
+  F_n = \begin{cases}
+    n & \text{if n ≤ 1} \\
+    F_{n-1} + F_{n-2} & \text{otherwise}
+  \end{cases}
+\end{equation}$
 
 This function can be written in RPL as follows.
 
