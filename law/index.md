@@ -4,7 +4,7 @@ title: "Law"
 
 This topic is devoted to legal education, social justice, and related matters.
 
-- [How to Become a Lawyer](BecomeLawyer.md)
+- [How to Become a Lawyer](HowToBecomeLawyer.md)
   - This article is an extract from my book *[How To Become A Lawyer](https://www.amazon.com/How-Become-Lawyer-2015-01-07-Prospective-ebook/dp/B007O48QTC/ref=sr_1_5?keywords=amen+zwa&qid=1637675382&sr=8-5)*, which is a guide for prospective and current law students.
 - [Schemers and Dreamers](SchemersAndDreamers.md)
   - This article is an appeal to Americans' humanity, decency, sympathy, and logic on behalf of the Deferred Action for Childhood Arrivals (DACA) residents of the US.
