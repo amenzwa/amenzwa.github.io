@@ -115,7 +115,7 @@ Common programmes, such as line-of-business applications, social media applicati
 
 ## *philosophy of CS*
 
-CS's reason for being is to solve practical problems using formal, mathematical techniques. Driving forces of CS are curiosity, ingenuity, and utility. Philosophically speaking, even purely theoretical research in CS is motivated by some practical need—to explain, to innovate, to apply, [to have fun](https://en.wikipedia.org/wiki/Slowsort).
+CS's reason for being is to solve practical problems using formal, mathematical techniques. Driving forces of CS are curiosity, ingenuity, and utility. Philosophically speaking, even purely theoretical research in CS is motivated by some practical needs—to explain, to innovate, to apply, [to have fun](https://en.wikipedia.org/wiki/Slowsort).
 
 Solving higher-order problems requires techniques that demand higher-level thinking. The distinguishing feature of higher thinking is the ability to abstract. To abstract something is to understand its essential characteristics, then to give it a name. Named abstractions are reusable generalisations—concepts that apply in many, seemingly-different situations. Reuse yields efficiency and presents opportunities to create by composing various abstractions. Abstract thinking is at the heart of mathematics and, by extension, of CS. The primary means of abstraction are [types](https://en.wikipedia.org/wiki/Data_type), which are named sets of values, and [functions](https://en.wikipedia.org/wiki/Function_(mathematics)), which are operations that manipulate typed values.
 
