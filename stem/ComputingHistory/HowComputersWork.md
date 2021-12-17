@@ -203,3 +203,11 @@ I explained in this article how a computer is built, how it boots up, how it exe
 
 As much as possible, I avoided descending into the low-level details like radiation shielding, clock signal phases, clock skew, signal degradation during bus transfer, serial and parallel I/O protocols, power regulation, heat dissipation, circuit layout, chip fabrication, etc. I also shunned modern, advanced topics like pipelining, branch prediction, vector processing, SIMD, VLIW, multi-core processors, on-chip instruction and data caches, on-chip high-speed buses, NUMA, etc. Those interested in modern processors and microcontrollers should read textbooks like *[Computer Architecture: A Quantitative Approach](https://www.amazon.com/Computer-Architecture-Quantitative-Approach-Kaufmann/dp/0128119055/ref=sr_1_2?dchild=1&keywords=computer+architecture&qid=1614712937&sr=8-2)* and *[The Designer's Guide to the Cortex-M Processor Family: A Tutorial Approach](https://www.amazon.com/Designers-Guide-Cortex-M-Processor-Family/dp/0081006292/ref=sr_1_8?dchild=1&keywords=cortex-m&qid=1614714051&sr=8-8)*.
 
+# RESOURCES
+
+- [6502.org](http://6502.org/)
+  - This site is the most comprehensive repository of 6502 resources. Its [books page](http://6502.org/books) lists many of the classic publications on general assembly programming, as well as those that focus on the 6502.
+- [The Visual 6502](http://visual6502.org/JSSim/index.html)
+  - This web application visualises a 6502, as it executes code. You can run the CPU at full speed or single step it. The single-stepping execution mode is particularly enlightening.
+- [KIM-1 Simulator](http://retro.hansotten.nl/6502-sbc/kim-1-manuals-and-software/kim-1-simulator/)
+  - The [KIM-1](https://en.wikipedia.org/wiki/KIM-1) was the most popular trainer for the 6502. Many people learn microprocessor programming on trainers, back in the day. This web application simulates that learning experience.
