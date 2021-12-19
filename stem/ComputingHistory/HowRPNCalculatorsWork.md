@@ -286,13 +286,13 @@ There is also the HP-10C of 1982, the 80 USD crippled version of the HP-11C. No 
 
 ![HP-11C](../figures/HPcalculators/DSC00203.JPG)
 
-I bought this HP-11C on eBay, some years ago. The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, [degree](https://en.wikipedia.org/wiki/Degree_(angle)) - [radian](https://en.wikipedia.org/wiki/Radian) - [gradian](https://en.wikipedia.org/wiki/Gradian) angular measures.
+I bought this HP-11C on eBay, some years ago. The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, [degree](https://en.wikipedia.org/wiki/Degree_(angle))/[radian](https://en.wikipedia.org/wiki/Radian)/[gradian](https://en.wikipedia.org/wiki/Gradian) angular measures.
 
 ### HP-15C (1982)
 
 ![HP-15C](../figures/HPcalculators/DSC00205.JPG)
 
-The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few advanced features like root solver, numerical integration, and matrix computation. Given that Just a year after the omega of the series, the HP-11C, was released and given that the HP-15C sold for the same 135 USD price, it must have been a gut-punch for those who bought the HP-11C. This was not to be the only time HP would do this to the early-adopters, however.
+The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few, but truly advanced, features: root solver, numerical integration, and matrix computation. Given that Just a year after the omega of the series, the HP-11C, was released and given that the HP-15C sold for the same 135 USD price, it must have been a gut-punch for those who bought the HP-11C. This was not to be the only time HP would do this to the early-adopters, however.
 
 Being an electrical engineer, I have always fancied the HP-15C; it has everything an electrical engineer needs: complex numbers, polar-rectangular conversion, hyperbolic functions, matrices, programmability, and RPN to boot. Its programme memory capacity of less than 500 bytes is laughable by modern standards, but it was considered adequate in its day. I have owned my HP-15C since 1985.
 
