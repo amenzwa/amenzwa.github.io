@@ -338,7 +338,7 @@ If you want to buy an HP-28S on eBay, pay close attention to the photos of the b
 
 ## *Anniversary*
 
-The Anniversary Series has only one model, the HP 35s. I like this calculator, a lot. It is well made but very cheap. And given that it came out relatively recently, there are plenty of new ones available on eBay.
+The Anniversary Series has only one model, the HP 35s. I like this calculator—a lot. It is well made but very cheap. And given that it came out relatively recently, there are plenty of new ones available on eBay.
 
 ### HP 35s (2007)
 
