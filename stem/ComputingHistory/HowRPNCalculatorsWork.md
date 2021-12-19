@@ -175,7 +175,7 @@ It gets tougher, though, as programme complexity increases: multiple labels `A` 
 
 Essentially, the HP-15C programming language is an assembly language. This assembly language is [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness): it can perform the same computations as the assembly language of a much more powerful 8-bit CPU like the 6502, which was used on popular home computers of the time, like the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64), the [Apple II](https://en.wikipedia.org/wiki/Apple_II), and the [BBC Micro](https://en.wikipedia.org/wiki/BBC_Micro).
 
-By 1988, keystroke programming on the HP-32S has become much more sophisticated and user friendly. The 5x7 matrix LCD display of the HP-32S can show 1 line and 12 digits. In terms of readability, this matrix display is far superior to the 7-segment, 10-digit LCD display on the HP-15C. And whereas the HP-15C shows numeric codes for programme instructions, the HP-32S shows variable names and operators in mathematical symbols, making it much easier to read and edit. Indeed, the same programming facilities are still used on the HP 35s of 2007. The 2-line, 14-digit, 5x7 matrix display and the four-way cursor makes keystroke programming on the HP 35s much more civilised.
+By 1988, keystroke programming on the HP-32S has become much more sophisticated and user friendly. The $5×7$ matrix LCD display of the HP-32S can show 1 line and 12 digits. In terms of readability, this matrix display is far superior to the 7-segment, 10-digit LCD display on the HP-15C. And whereas the HP-15C shows numeric codes for programme instructions, the HP-32S shows variable names and operators in mathematical symbols, making it much easier to read and edit. Indeed, the same programming facilities are still used on the HP 35s of 2007. The 2-line, 14-digit, $5×7$ matrix display and the four-way cursor makes keystroke programming on the HP 35s much more civilised.
 
 ## *RPL Programming*
 
@@ -318,7 +318,7 @@ The Pioneer Series includes the HP-10B (RPN) and the HP-17B (non-RPN) business c
 
 I bought my HP-32S in 1989, the year after it was introduced. At only 70 USD (160 USD in 2021), it was eminently affordable as a backup (or rather, an upgrade) to my much-loved HP-15C. The HP-32S has all the features the HP-15C has, including root solver and numerical integration, except matrix computation. And it has many of HP-16C features, like base conversions and binary flags. It also has probability and statistics functions, which were not on the Voyager Series calculators.
 
-I bought the HP-32S, because I liked its crisp, 5x7 matrix display, its 32 KB programme memory, and its textual programme instructions (as opposed to the HP-15C's assembly numeric codes). To be reasonable, I must admit that the HP-32S is much more user friendly than the HP-15C. But I unreasonably remain an ardent fan of the HP-15C.
+I bought the HP-32S, because I liked its crisp, $5×7$ matrix display, its 32 KB programme memory, and its textual programme instructions (as opposed to the HP-15C's assembly numeric codes). To be reasonable, I must admit that the HP-32S is much more user friendly than the HP-15C. But I unreasonably remain an ardent fan of the HP-15C.
 
 ## *Clamshell*
 
@@ -344,7 +344,7 @@ The Anniversary Series has only one model, the HP 35s. I like this calculator, a
 
 ![HP 35s](../figures/HPcalculators/DSC00209.JPG)
 
-In terms of design, the HP 35s pays homage to the matriarch of the line, the venerable HP-35 of 1972. It has the same [tonneau](https://revolutionwatch.com/the-tonneau-10-barrel-shaped-watches/) body with a wedge profile. Its 2-line, 14-digit, 5x7 matrix display is crisp. The tall keys have the famous HP tactile feel. It has the four-way cursor keys. In terms of capabilities, it has everything previous generation of HP calculators had and much more. In addition to RPN, it supports infix notation. It uses the 8-bit 6502 CPU, my absolute favourite among the CPU architectures. Its keystroke programme memory is just shy of 32 KB.
+In terms of design, the HP 35s pays homage to the matriarch of the line, the venerable HP-35 of 1972. It has the same [tonneau](https://revolutionwatch.com/the-tonneau-10-barrel-shaped-watches/) body with a wedge profile. Its 2-line, 14-digit, $5×7$ matrix display is crisp. The tall keys have the famous HP tactile feel. It has the four-way cursor keys. In terms of capabilities, it has everything previous generation of HP calculators had and much more. In addition to RPN, it supports infix notation. It uses the 8-bit 6502 CPU, my absolute favourite among the CPU architectures. Its keystroke programme memory is just shy of 32 KB.
 
 Through the years, I watched with sadness HP's calculator business dwindled, drip by drip. By mid 2000s, HP had succumbed to the market pressure, and they were selling cheap, non-RPN models as rebranded HP calculators. So, when the 35th anniversary HP 35s RPN model came out in 2007, I snatched one up. Its introductory price was 60 USD (80 USD in 2021). A new one costs about 50 USD in 2021. The HP 35s is a decent calculator. If you want an inexpensive, capable, well-made HP RPN calculator, new, the HP 35s is for you. You will not regret it.
 
