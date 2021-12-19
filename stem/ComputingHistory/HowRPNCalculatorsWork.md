@@ -264,7 +264,7 @@ Below, I present my meagre collection of HP RPN programmable scientific calculat
 - Avoid the HP 15c Limited Edition (LE), the 2011 reboot of the much-loved HP-15C. The HP 15c LE has a number of [hardware and software issues](https://youtu.be/BOpzJRDbAnU?t=585).
 - The following models are universally appreciated:
   - HP-35 (1972)—the progenitor of the breed; clean ones are extremely rare
-  - HP-41C (1979)—advanced programmable model with magnetic strip programme memory; there are still a few clean ones
+  - HP-41CX (1979)—advanced programmable model with magnetic strip programme memory; there are still a few clean ones being offered for sale
   - HP-11C (1981)—the first of the Voyager Series; solid model for STEM use
   - HP-15C (1982)—more advanced than the HP-11C; engineers' favourite
   - HP-28S (1982)—the original CAS-capable graphing HP calculator; beware the broken battery compartment cover
