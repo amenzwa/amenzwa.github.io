@@ -259,7 +259,8 @@ Below, I present my meagre collection of HP RPN programmable scientific calculat
 - Carefully examine the eBay photos for defects. Some defects are hard to spot, such as a missing segment on a traditional, seven-segment LED or a pen-tip dent on the metal faceplate.
 - Avoid eBay listings with blurry photos.
 - Avoid all calculators with mushy keys, whatever the brand, whatever the price.
-- Avoid the cheap, non-RPN calculators from the 1990s and the 2000s, like the HP 10s, the HP 49, the HP 50, etc. These are not made by HP; they are rebranded models made by other manufacturers. They all have mushy keys.
+  - Avoid the cheap, non-RPN calculators from the 1990s and the 2000s, like the HP 10s, the HP 49, the HP 50, etc. These are not made by HP; they are rebranded models made by other manufacturers. They all have mushy keys.
+
 - Avoid the HP 15c Limited Edition (LE), the 2011 reboot of the much-loved HP-15C. The HP 15c LE has a number of [hardware and software issues](https://youtu.be/BOpzJRDbAnU?t=585).
 - The following models are universally appreciated:
   - HP-35 (1972)—the progenitor of the breed; clean ones are extremely rare
