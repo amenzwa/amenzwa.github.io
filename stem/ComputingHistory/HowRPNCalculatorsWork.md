@@ -296,7 +296,7 @@ The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few, 
 
 Being an electrical engineer, I have always fancied the HP-15C; it has everything an electrical engineer needs: complex numbers, polar-rectangular conversion, hyperbolic functions, matrices, programmability, and RPN to boot. Its programme memory capacity of less than 500 bytes is laughable by modern standards, but it was considered adequate in its day. I have owned my HP-15C since 1985.
 
-In 2011, after many years of supplication by the HP-15C fans, HP relented and introduced the [HP 15c Limited Edition](https://en.wikipedia.org/wiki/HP-15C#HP_15c_Limited_Edition). All is not well with this one. It is unreasonably expensive. It is not the vintage reissue; it is a completely new device, and it has numerous [hardware and software problems](https://youtu.be/BOpzJRDbAnU?t=585).
+In 2011, after many years of supplication by the HP-15C fans, HP relented and introduced the [HP 15c Limited Edition](https://en.wikipedia.org/wiki/HP-15C#HP_15c_Limited_Edition). All is not well with this one, however: it is unreasonably expensive; it is not the vintage reissue, but is a completely new device; it has numerous [hardware and software problems](https://youtu.be/BOpzJRDbAnU?t=585).
 
 ### HP-16C (1982)
 
