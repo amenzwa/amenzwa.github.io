@@ -302,7 +302,7 @@ In 2011, after many years of supplication by the HP-15C fans, HP relented and in
 
 ![HP-16C](../figures/HPcalculators/DSC00206.JPG)
 
-I bought this HP-16C on eBay, not long ago. The HP-16C came out the same year as the HP-15C, but at 150 USD, it was slightly more expensive. The HP-16C was aimed squarely at computer scientists. It implements binary, octal, decimal, and hexadecimal number systems. It has all the fancy bit-twiddling capabilities: and, or, xor, masking, shifting, 1's complement, 2's complement, and the rest. But the HP-16C lacks trigonometric functions, hyperbolic functions, complex numbers, etc. It is useless for general STEM use.
+I bought this HP-16C on eBay, not long ago. The HP-16C came out the same year as the HP-15C, but at 150 USD, it was slightly more expensive. The HP-16C was aimed squarely at computer scientists. It implements binary, octal, decimal, and hexadecimal number systems. It has all the fancy bit-twiddling capabilities: `and`, `or`, `xor`, masking, shifting, 1's complement, 2's complement, and all that a computer scientist would want. But the HP-16C lacks trigonometric functions, hyperbolic functions, and complex numbers. As such, it is useless for general STEM use.
 
 I do believe the HP-16C was untimely. Its bit-twiddling features would have been an indispensable tool in the 1960s and 1970s, when assembly language was the daily call to prayer for most programmers. But by the 1980s, most programmers had switched to high-level languages like FORTRAN, LISP, Pascal, C, or Smalltalk. Bit manipulation was no longer a prevalent activity amongst programmers by then.
 
