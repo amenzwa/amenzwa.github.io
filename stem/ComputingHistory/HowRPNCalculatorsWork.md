@@ -254,8 +254,8 @@ Below, I present my meagre collection of HP RPN programmable scientific calculat
   - C —continuous memory feature (the built-in, short-term battery used for memory backup)
   - E—no continuous memory feature
   - S—scientific calculator
-  - V—5x memory capacity than the base model
-  - X—10x memory capacity than the base model
+  - V—$5×$ memory capacity than the base model
+  - X—$10×$ memory capacity than the base model
 - Carefully examine the eBay photos for defects. Some defects are hard to spot, such as a missing segment on a traditional, seven-segment LED or a pen-tip dent on the metal faceplate.
 - Avoid eBay listings with blurry photos.
 - Avoid all calculators with mushy keys, whatever the brand, whatever the price.
