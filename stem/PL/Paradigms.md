@@ -524,7 +524,16 @@ val milner : professor =
 
 Algebraic data types may be understood in terms of their cardinalities. A sum type's cardinality is the sum of the cardinalities of its constituent data types, and a product types's cardinality is the product of the cardinalities of its constituent data types. Ordinarily, types should always be designed to admit only those values that are necessary to allow the programme to work properly, and not more. If a type admits extraneous values, the programmer is then obliged to implement runtime checks to ensure that the invalid values do not occur, which increases the possibility of programming errors. It is better to rely on the type system and let the compiler eliminate invalid values at compile time.
 
-Most modern programming language, be they OO or FP, support an incarnation of the Hindley-Milner type system. So, today's programmers are generally familiar with the concepts of this type system. But only those who know the proof-assistant hereditary of the original version of ML, the LCF/ML, recognise that types are propositions, values are theorems, functions on those types are inference rules, and type system is there to guarantee the logical validity of proofs. ML was originally the scripting language (meta language) within the [LCF](https://en.wikipedia.org/wiki/Logic_for_Computable_Functions) (logic for computable functions) system for writing tactics that automate proofs. A tactic is a backward proof procedure that starts with the goal—the proposition being proved—and works backward to reach lemmas and other theorems that have already been proven. This connection between type theory and proof theory is known as [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence).
+Most modern programming language, be they OO or FP, support an incarnation of the Hindley-Milner type system. So, today's programmers are generally familiar with the concepts of this type system. But only those who know the proof-assistant hereditary of the original version of ML, the LCF/ML, recognise that type theory of programming languages corresponds to proof theory of logic. This is referred to as [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence):
+
+- A type is a proposition.
+- A value is a theorem.
+- A function on types is an implication between propositions.
+- An identity function is a tautology.
+- Parametric polymorphism is universal quantification.
+- The type system guarantees the logical validity of proofs.
+
+ML was originally the scripting language (meta language) within the [LCF](https://en.wikipedia.org/wiki/Logic_for_Computable_Functions) (logic for computable functions) system for writing tactics that automate proofs. A tactic is a backward proof procedure that starts with the goal—the proposition being proved—and works backward to reach lemmas and other theorems that have already been proven.
 
 ***exceptions***—Because proof tactics can fail (a dead-end, for instance), higher-order tactics (tacticals) that manipulate tactics employ a failure detection and trapping mechanism, which is equivalent to modern exception handling facilities.
 
