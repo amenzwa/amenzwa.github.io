@@ -315,7 +315,7 @@ Now, let us turn our attention to some FP terms. FP takes delight in giving orna
 
 ***transparency***—Functions do not maintain internal data that they secretly maintain and mutate to make hidden computation decisions. That is, a function's behaviour is defined entirely by the input parameters. The same input always yields the same output. This property of functions is called *referential transparency*.
 
-***first-class functions***—Functions are values, just like characters, integers, reals, lists, and such. This property of functions is known as *first-class*.
+***first-class functions***—Functions are values, just like characters, integers, reals, lists, etc. This property of functions is known as *first-class*.
 
 ***local functions***—Since in FP functions are values, a function can be declared inside another function, and such local functions, like local variables, are visible only inside the enclosing function.
 
@@ -343,15 +343,15 @@ In programming, lists are used to represent sequential data. Trees are used to r
 
 ***bottom***—A computation that does not yield a result (for example, infinite recursion) or one that terminates due to a fatal error (for example, divide by zero) is called *bottom*, written $⊥$.
 
-***strictness***—A function that returns a $⊥$ when given a $⊥$ as an argument is referred to as a *strict* function. Otherwise, that function is deemed *non-strict*.
+***strictness***—A function that returns a $⊥$ as the result when given a $⊥$ as an argument is referred to as a *strict* function. Otherwise, that function is deemed *non-strict*.
 
 ***laziness***—FP languages use either the eager evaluation strategy or the lazy evaluation strategy. The *eager* strategy reduces every expression to its value, before proceeding with the computation. When using paper and pencil to evaluate a complex arithmetic expression, one instinctively begins the reduction from the innermost subexpression, and works outward until the entire expression is reduced to a number. This is an example of eager evaluation. ML is an eager language.
 
 The *lazy* strategy reduces an expression to its value, only if that value is needed in the subsequent computation. Evaluating a complex expression by beginning with the outermost subexpression and proceeding inward only when necessary is an example of lazy evaluation. Lazy evaluation permits the use of infinite data structures, whose values are computed only when the need arises. Haskell is lazy language.
 
-***partial functions***—In mathematics, a *total* function is one that is defined for the entirety of its domain. A *partial* function is a function that is not defined for the entirety of its domain. In other words, if a partial function is given a value from its domain on which it is not defined, the computation is goes to the $⊥$.
+***partial functions***—In mathematics, a *total* function is one that is defined for the entirety of its domain. A *partial* function is a function that is not defined for the entirety of its domain. In other words, if a partial function is given a value on which it is not defined, the computation goes to the $⊥$.
 
-***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. Currying transforms $f : x, y → z$ into $g : x → h$ where $h : y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $g(x)$ that returns another single-argument function $h(y)$ which has value $x$ baked into its body. When the function $h$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of single-argument functions.
+***currying***—Currying is a technique for transforming a multi-argument function into a single-argument version. When the compiler sees the function $f : x, y → z$, it transforms the function into $g : x → h$ where $h : y → z$. That is, the multi-argument function $f(x, y)$ is automatically transformed into a single-argument function $g(x)$ that returns another single-argument function $h(y)$ which has value $x$ baked into its body. This transformation is known as *currying*, named in honour of [Haskell Curry](https://en.wikipedia.org/wiki/Haskell_Curry). When the function $h$ is applied to value $y$, it uses both $x$ and $y$ to compute the result $z$. In FP, a multi-argument function may always be thought of as a pipeline of curried, single-argument functions.
 
 ***partial application***—A partial application of a multi-argument function is a consequence of currying. In the currying example above, the function $h$ is a partially applied version of the original function $f$. Applying the dyadic $f(x, y)$ to only $x$ is referred to as a *partial application* of $f$ to $x$. When $f$ receives only $x$, it knows that it cannot complete the computation, and instead returns $h(y)$, which accepts $y$ and already has $x$ in its body. When $h$ is given $y$, it becomes the fully applied, so it uses both $x$ and $y$ in its computation, and returns the final result $z$.
 
