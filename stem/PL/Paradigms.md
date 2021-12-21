@@ -526,12 +526,11 @@ Algebraic data types may be understood in terms of their cardinalities. A sum ty
 
 Most modern programming language, be they OO or FP, support an incarnation of the Hindley-Milner type system. So, today's programmers are generally familiar with the concepts of this type system. But only those who know the proof-assistant hereditary of the original version of ML, the LCF/ML, recognise that type theory of programming languages corresponds to proof theory of logic. This is referred to as [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence):
 
-- A type is a proposition.
-- A value is a theorem.
-- A function on types is an implication between propositions.
-- An identity function is a tautology.
+- A type is a proposition. A value is a proof of a theorem. The type system guarantees the logical validity of proofs.
+- Constructing a value of a type is a true value. An uninhabited type is a false value.
+- A function on types is an implication between propositions. An identity function is a tautology. Bijection is equivalence.
+- Product type is conjunction. Sum type is disjunction.
 - Parametric polymorphism is universal quantification.
-- The type system guarantees the logical validity of proofs.
 
 ML was originally the scripting language (meta language) within the [LCF](https://en.wikipedia.org/wiki/Logic_for_Computable_Functions) (logic for computable functions) system for writing tactics that automate proofs. A tactic is a backward proof procedure that starts with the goal—the proposition being proved—and works backward to reach lemmas and other theorems that have already been proven.
 
