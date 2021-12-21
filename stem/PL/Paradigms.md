@@ -534,6 +534,8 @@ Most modern programming language, be they OO or FP, support an incarnation of th
 
 ML was originally the scripting language (meta language) within the [LCF](https://en.wikipedia.org/wiki/Logic_for_Computable_Functions) (logic for computable functions) system for writing tactics that automate proofs. A tactic is a backward proof procedure that starts with the goal—the proposition being proved—and works backward to reach lemmas and other theorems that have already been proven.
 
+Proofs are important in CS: as programmers, we are obliged to prove that our algorithms are correct and that our programmes implementing those algorithms are verified. So, every programmer should be familiar with at least one modern proof assistant, like [Isabelle](https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)), [Coq](https://en.wikipedia.org/wiki/Coq), [Epigram](https://en.wikipedia.org/wiki/Epigram_(programming_language)), [Agda](https://en.wikipedia.org/wiki/Agda_(programming_language)), [Idris](https://en.wikipedia.org/wiki/Idris_(programming_language)), [Lean](https://en.wikipedia.org/wiki/Lean_(proof_assistant)), etc.
+
 ***exceptions***—Because proof tactics can fail (a dead-end, for instance), higher-order tactics (tacticals) that manipulate tactics employ a failure detection and trapping mechanism, which is equivalent to modern exception handling facilities.
 
 To summarise, functions represent basic computations; functionals manipulate functions to express complex computations, such as proof tactics; and, tacticals manipulate tactics to express complex control flows involving exceptions and retries.
