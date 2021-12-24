@@ -396,25 +396,31 @@ It turns out that the slide rule performs this trick using the base-$e$ natural 
 <div>
 $$
 \begin{align}
-x^{y/z} &= \color{darkgreen}{ln^{-1}}[y ÷ z × \color{green}{ln}(x)] \\
-  &= \color{darkgreen}{ln^{-1}}[ \color{darkblue}{log^{-1}} [\color{blue}{log} [y ÷ z × \color{green}{ln}(x) ] ] ] \\
-  &= \color{darkgreen}{ln^{-1}} [\color{darkblue}{log^{-1}} [\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log} \circ \color{green}{ln}(x) ] ]
+x^{y/z} &= \color{darkgreen}{ln^{-1}}[y ÷ z × \color{green}{ln}(x)] \nonumber \\
+  &= \color{darkgreen}{ln^{-1}}[ \color{darkblue}{log^{-1}} [\color{blue}{log} [y ÷ z × \color{green}{ln}(x) ] ] ] \nonumber \\
+  &= \color{darkgreen}{ln^{-1}} [\color{darkblue}{log^{-1}} [\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log} \circ \color{green}{ln}(x) ] ] \nonumber
 \end{align}
 $$
 </div>
 
-- $x^{y/z} = \color{darkgreen}{ln^{-1}}[y ÷ z × \color{green}{ln}(x)]$
-  - $= \color{darkgreen}{ln^{-1}}[ \color{darkblue}{log^{-1}} [\color{blue}{log} [y ÷ z × \color{green}{ln}(x) ] ] ]$
-  - $= \color{darkgreen}{ln^{-1}} [\color{darkblue}{log^{-1}} [\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log} \circ \color{green}{ln}(x) ] ]$
-
 So, computing $2^4$ and $\sqrt[4]{16}$ on the slide rule proceed as follows:
 
-- $2^4 = 2^{4/1} = ln^{-1}[4 ÷ 1 × ln(2)]$
-  - $= ln^{-1}[log^{-1} [log(4) - log(1) + log \circ ln(2) ] ] = 16$
-
-- $\sqrt[4]{16} = 16^{1/4} = ln^{-1}[1 ÷ 4 × ln(16)]$
-  - $= ln^{-1}[log^{-1} [log(1) - log(4) + log \circ ln(16) ] ] = 2$
-
+<div>
+$$
+\begin{align}
+2^4 &= 2^{4/1} \nonumber \\
+  &= ln^{-1}[4 ÷ 1 × ln(2)] \nonumber \\
+  &= ln^{-1}[log^{-1} [log(4) - log(1) + log \circ ln(2) ] ] \nonumber \\
+  &= 16 \nonumber
+\end{align}
+\begin{align}
+\sqrt[4]{16} &= 16^{1/4} \nonumber \\
+  &= ln^{-1}[1 ÷ 4 × ln(16)] \nonumber \\
+  &= ln^{-1}[log^{-1} [log(1) - log(4) + log \circ ln(16) ] ] \nonumber \\
+  &= 2 \nonumber
+\end{align}
+$$
+</div>
 
 We now see that the "log-log" nomenclature of engineering slide rules is a not-so-subtle nod to the function composition $\color{blue}{log} \circ \color{green}{ln}$ that appears in the expressions computing $x^{y/z}$.
 
