@@ -596,10 +596,11 @@ In the plot below, the red curve is $cos$ and the blue is $cos^{-1}$.
 $$
 \begin{align}
 tan &: T \rightarrow C \nonumber \\
-tan^{-1} &: C \rightarrow S \nonumber
+tan^{-1} &: C \rightarrow T \nonumber
 \end{align}
 $$
 </div>
+
 
 In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
