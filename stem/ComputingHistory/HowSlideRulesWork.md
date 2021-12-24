@@ -550,8 +550,8 @@ sin(\theta) &= cos(90° - \theta) \nonumber \\
 cos(\theta) &= sin(90° - \theta) \nonumber \\
 tan(\theta) &= cot(90° - \theta) = sin(\theta) / cos(\theta) = 1 / cot(\theta) \nonumber \\
 cot(\theta) &= tan(90° - \theta) = cos(\theta) / sin(\theta) = 1 / tan(\theta) \nonumber \\
-sec(\theta) &= \frac{1}{cos(\theta)} \nonumber \\
-csc(\theta) &= \frac{1}{sin(\theta)} \nonumber
+sec(\theta) &= 1 / cos(\theta) \nonumber \\
+csc(\theta) &= 1 / sin(\theta) \nonumber
 \end{align}
 $$
 </div>
@@ -592,8 +592,14 @@ In the plot below, the red curve is $cos$ and the blue is $cos^{-1}$.
 
 ***black $T$ scale***—The $T$ scale is graduated in degrees from $5.73°$ to $45°$. When $\theta ∈ [5.73°, 45°]$ on the $T$ scale, $tan(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $T$ and the $C$ scales are related by a bijective function $tan$:
 
-- $tan: T \rightarrow C$
-- $tan^{-1}: C \rightarrow S$
+<div>
+$$
+\begin{align}
+tan &: T \rightarrow C \nonumber \\
+tan^{-1} &: C \rightarrow S \nonumber
+\end{align}
+$$
+</div>
 
 In the plot below, the black curve is $tan$ and the blue is $tan^{-1}$.
 
@@ -824,16 +830,26 @@ I adore Darmstadt rules. I said so, often. And of all the Darmstadt rules I won,
 
 ***Hemmi 153 Electrical Engineer***—The Hemmi 153 is a log-log vector duplex rule cherished by electrical power engineers. In terms of capabilities, this slide rule is comparable to the more famous K&E 4083-3 described below in the K&E section. But the Hemmi 153 computes the hyperbolic functions in a rather unique and ingenious way, using the [Gudermannian function](https://en.wikipedia.org/wiki/Gudermannian_function), introduced in 1833 by [Christoph Gudermann](https://en.wikipedia.org/wiki/Christoph_Gudermann), a German mathematician:
 
-- $gd(x) = sin^{-1}(tanh(x)) = tan^{-1}(sinh(x))$
+<div>
+$$
+gd(x) = sin^{-1}(tanh(x)) = tan^{-1}(sinh(x))
+$$
+</div>
 
 The function $gd$, thus, relates trigonometric functions with hyperbolic functions as follows:
 
-- $sin(gd(x)) = tanh(x)$
-- $cos(gd(x)) = sech(x)$
-- $tan(gd(x)) = sinh(x)$
-- $cot(gd(x)) = csch(x)$
-- $sec(gd(x)) = cosh(x)$
-- $csc(gd(x)) = coth(x)$
+<div>
+$$
+\begin{align}
+sin(gd(x)) &= tanh(x) \nonumber \\
+cos(gd(x)) &= sech(x) \nonumber \\
+tan(gd(x)) &= sinh(x) \nonumber \\
+cot(gd(x)) &= csch(x) \nonumber \\
+sec(gd(x)) &= cosh(x) \nonumber \\
+csc(gd(x)) &= coth(x) \nonumber
+\end{align}
+$$
+</div>
 
 The backside of the Hemmi 153 has the $\theta$ angle scale in the range $[0°, 90°]$, the $P$ scale for computing $sin$, and the $Q$ scale for computing $cos$. The frontside has the $T$ scale for computing $tan$ and the $G_\theta$ scale for computing $gd(x)$. Using the $G_\theta$ scale and the $P$, $Q$, and $T$ scales of the Hemmi 153, we can compute all the hyperbolic functions. The $G_\theta$ scale, thus, expands the power of this slide rule by using the real estate for just one extra scale. I am of the opinion that the Hemmi 153 is one of those rare inventions that attained the design ideal of pragmatic minimalism.
 
@@ -907,8 +923,14 @@ The odd feature of this slide rule is the asymmetric design: the lower frame is 
 
 The length and sag of a chain hung from two posts of equal height is expressed thus:
 
-- $l = 2 \frac{H}{w} sinh(\frac{wb}{H})$
-- $s = \frac{H}{w} [cosh(\frac{wb}{H}) - 1]$
+<div>
+$$
+\begin{align}
+l &= 2 \frac{H}{w} sinh(\frac{wb}{H}) \nonumber \\
+s &= \frac{H}{w} [cosh(\frac{wb}{H}) - 1] \nonumber
+\end{align}
+$$
+</div>
 
 Here, $l$ is the length of the chain, $s$ is the sag, $w$ is the weight per unit length, $H$ is the tension at the lowest point, and $2b$ is the distance between the two posts. By the way, the world-famous [Gateway Arch](https://en.wikipedia.org/wiki/Gateway_Arch) in St. Louis, Missouri, is a catenary arch, an inverted catenary curve.
 
@@ -924,12 +946,18 @@ Catenary of chain and impedance of power line can be computed using the $C$, $D$
 
 However, since [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are related to exponential functions, an ordinary log-log duplex slide rule, like the K&E 4081-3, can compute hyperbolic functions using the following identities and the $LL$ scales, albeit rather tediously:
 
-- $sinh(x) = \frac{e^x - e^{-x}}{2}$
-- $cosh(x) = \frac{e^x + e^{-x}}{2}$
-- $tanh(x) = \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1}$
-- $coth(x) = \frac{cosh(x)}{sinh(x)}$
-- $sech(x) = \frac{1}{cosh(x)}$
-- $csch(x) = \frac{1}{sinh(x)}$
+<div>
+$$
+\begin{align}
+sinh(x) &= \frac{e^x - e^{-x}}{2} \nonumber \\
+cosh(x) &= \frac{e^x + e^{-x}}{2} \nonumber \\
+tanh(x) &= \frac{sinh(x)}{cosh(x)} = \frac{e^{2x}-1}{e^{2x}+1} \nonumber \\
+coth(x) &= \frac{cosh(x)}{sinh(x)} \nonumber \\
+sech(x) &= \frac{1}{cosh(x)} \nonumber \\
+csch(x) &= \frac{1}{sinh(x)} \nonumber
+\end{align}
+$$
+</div>
 
 In the plot below, the blue curve is $sinh$, the green is $cosh$, and the red is $tanh$.
 
