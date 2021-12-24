@@ -89,6 +89,7 @@ $$
 sin(a) = \sum_{i=0}^{n} \frac{(-1)^i}{(2i+1)!} a^{2i+1}
 $$
 </div>
+
 The sine algorithm and its constituents, the exponentiation and the factorial, use looping, addition, subtraction, multiplication, and division. In this way, arbitrarily complex computations can be constructed from combinations of simple ones.
 
 Algorithms like these are implemented as functions that take inputs and return results. Functions may be invoked using the `call` instruction from anywhere in the code. A function call, just like a branch, alters programme execution flow. But there is a difference: upon encountering a branch the CPU jumps immediately to the designated code block and the execution continues from there; but when calling a function the CPU must assemble the input values for the function to use and also must arrange for the function to return its result to the calling code, before jumping into the function's code block. And when the function finishes, execution returns to the caller, along with the computed result.
