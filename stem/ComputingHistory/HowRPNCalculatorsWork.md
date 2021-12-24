@@ -367,7 +367,9 @@ Today, primary school children scurry about with large-screen mobile phones glue
 # RESOURCES
 
 - [The Museum of HP Calculators](https://www.hpmuseum.org/)
-  - MoHPC is the site maintained by HP calculator experts. They have the most comprehensive collection of classic HP computing devices. They also have a tonne of interesting historical information on HP.
+  - MoHPC is the site maintained by HP calculator experts. They have the largest collection of classic HP computing devices. They also have a tonne of interesting historical information on HP.
+- [HPCalc.org](https://www.hpcalc.org)
+  - This site is a comprehensive resource for HP calculator users. They have documentation, programming guides, software downloads, and hardware information.
 - [SwissMicros](https://www.swissmicros.com/)
   - SwissMicros is a Swiss company that manufacture modern clones of the classic HP calculators, like the HP-42S, the HP-15C, the HP-41CX, etc. Their calculators have metal bodies, modern hardware, and modern software. Although the keys do not possess the HP magic, their overall build quality is superb. It would be a mistake for you not to at least poke about their site.
 - Emulators

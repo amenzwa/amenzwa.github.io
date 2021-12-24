@@ -10,6 +10,6 @@ This topic is devoted to STEM in general and engineering and computing in partic
   - This section presents programming languages and their respective programming paradigms. The articles in this section are written for STEM practitioners who program, and especially, those who are experienced programmers.
 - [History of Computing Devices](./ComputingHistory/index.md)
   - This section presents the design, construction, uses, and histories of various computing devices, including 8-bit home computers, RPN calculators, and slide rules.
-- [Writing STEM Papers using Jupyter](WritingSTEM.md)
-  - This article describes proper ways to read and write STEM text, and how to use the right tools when reading and writing collaboratively. It is written for high school and undergraduate STEM students.
+- [Writing in STEM](./Writing/index.md)
+  - This section is about technical writing in general and specifically in STEM. Topics range from drafting lab reports and term papers to peer-reviewed papers and books.
 

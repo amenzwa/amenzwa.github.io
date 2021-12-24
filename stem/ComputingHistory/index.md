@@ -4,7 +4,7 @@ title: "History of Computing Devices"
 
 In this section, I describe various computing devices: computers, calculators, slide rules.
 
-- [How 8-bit Computers Work](HowComputersWork.md)
+- [How 8-bit Computers Work](How8bitComputersWork.md)
   - This article explains to software developers how 8-bit computers are built from subsystems, how these subsystems collaborate to perform simple calculations, and how such simple calculations when combined exhibit complex behaviours. This information may make *developers* more mechanically sympathetic programmers.
 - [How RPN Calculators Work](HowRPNCalculatorsWork.md)
   - This article gives a high-level introduction to using HP reverse Polish notation (RPN), programmable, scientific calculators. The focus is on using the RPN input method and on writing programmes using the three supported means: RPN keystrokes, reverse Polish LISP (RPL), and Prime Programming Language (PPL). The target audience are high school and college *students* specialising in STEM.
