@@ -413,6 +413,10 @@ $$
   &= ln^{-1}[log^{-1} [log(4) - log(1) + log \circ ln(2) ] ] \nonumber \\
   &= 16 \nonumber
 \end{align}
+$$
+</div>
+<div>
+$$
 \begin{align}
 \sqrt[4]{16} &= 16^{1/4} \nonumber \\
   &= ln^{-1}[1 ÷ 4 × ln(16)] \nonumber \\
