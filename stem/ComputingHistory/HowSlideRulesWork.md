@@ -80,8 +80,8 @@ Simplex slide rules have use instructions and a few scientific constants on the 
 <div>
 $$
 \begin{align}
-a × b &= log^{-1}[log(a) + log(b)] \\
-a ÷ b &= log^{-1}[log(a) - log(b)]
+a × b &= log^{-1}[log(a) + log(b)] \nonumber \\
+a ÷ b &= log^{-1}[log(a) - log(b)] \nonumber
 \end{align}
 $$
 </div>
