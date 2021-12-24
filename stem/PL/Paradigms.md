@@ -331,7 +331,7 @@ Let us examine the algorithm for computing the length of a list. A *list* is the
 $
 len(l) =
 \begin{cases}
-  0 & \text{if l = \varnothing} \\
+  0 & \text{if l = ∅} \\
   len(hd[l]) + len(tl[l]) & \text{otherwise}
 \end{cases}
 $
