@@ -109,8 +109,8 @@ The logarithmic scale and the logarithm scale are related by a bijective functio
 <div>
 $$
 \begin{align}
-log &: D \rightarrow L \\
-log^{-1} &: L \rightarrow D
+log &: D \rightarrow L \nonumber \\
+log^{-1} &: L \rightarrow D \nonumber
 \end{align}
 $$
 </div>
@@ -395,7 +395,11 @@ It turns out that the slide rule performs this trick using the base-$e$ natural 
 
 <div>
 $$
-log(y ÷ z × log(x)) = log(y) - log(z) + log \circ log(x)
+\begin{align}
+x^{y/z} &= \color{darkgreen}{ln^{-1}}[y ÷ z × \color{green}{ln}(x)] \\
+  &= \color{darkgreen}{ln^{-1}}[ \color{darkblue}{log^{-1}} [\color{blue}{log} [y ÷ z × \color{green}{ln}(x) ] ] ] \\
+  &= \color{darkgreen}{ln^{-1}} [\color{darkblue}{log^{-1}} [\color{blue}{log}(y) - \color{blue}{log}(z) + \color{blue}{log} \circ \color{green}{ln}(x) ] ]
+\end{align}
 $$
 </div>
 
