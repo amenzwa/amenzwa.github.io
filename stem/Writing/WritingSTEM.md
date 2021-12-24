@@ -175,7 +175,7 @@ The Jupyter notebook UI is designed for literate programming. In the notebook, y
 
 The screenshot below is of the sample notebook `Lorenz.ipynb` that came with Jupyter, which presents the Lorenz dynamical equations in mathematics, explains them in text, and shows their visual representation. This visual representation is the output from the embedded Python code that was executed in place.
 
-![Lorenz](./figures/Jupyter/Lorenz.jpg)
+![Lorenz](../figures/Jupyter/Lorenz.jpg)
 
 *Text* is written using [Markdown](https://www.markdownguide.org/), which is a simple markup language. The Markdown site has a brief introduction to the [syntax](https://www.markdownguide.org/basic-syntax/). The title and the first paragraph of the Lorenz notebook above is marked up as follows:
 
@@ -184,11 +184,10 @@ The screenshot below is of the sample notebook `Lorenz.ipynb` that came with Jup
 Before we start, we import some preliminary libraries. We will also import (below) the accompanying `lorenz.py` file, which contains the actual solver and plotting routine.
 ```
 
-*Maths* is written using [$\TeX$](https://tug.org/index.html) mathematical typesetting language. There are many online [tutorials](https://sodocumentation.net/latex/topic/5950/typesetting-mathematics) for typesetting in $\TeX$. Find one that suits your needs. You can typeset text, tables, figures, and equations in $\TeX$. Just learn to typeset maths. Jupyter can handle the rest. The Fourier transform $F(\omega) = \frac{1}{2\pi} \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt$, for example, is typeset as follows:
+*Maths* is written using [$\TeX$](https://tug.org/index.html) mathematical typesetting language. There are many online [tutorials](https://sodocumentation.net/latex/topic/5950/typesetting-mathematics) for typesetting in $\TeX$. Find one that suits your needs. You can typeset text, tables, figures, and equations in $\TeX$. Just learn to typeset maths. Jupyter can handle the rest. The Fourier transform $F(\omega) = \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt$, for example, is typeset as follows:
 
 ```TeX
-F(\omega) = \frac{1}{2\pi}
-  \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt
+F(\omega) = \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}} dt
 ```
 
 *Code* is written using one of the many programming languages supported by Jupyter. I recommend you stick with Python. Note that although Jupyter supports multiple languages, only one language can be used in a notebook.

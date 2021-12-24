@@ -11,9 +11,10 @@ All modern OSs support [Unicode](https://en.wikipedia.org/wiki/Unicode), but ent
 
 <div>
 $$
-F(\omega) = \int_{-\infty}^{+\infty}{f(t) e^{-jwt}\,dt}
+F(\omega) = \int_{-\infty}^{+\infty}{f(t) e^{-i \omega t}}\, dt
 $$
 </div>
+
 First, we must configure the keyboard shortcuts. We start by selecting ` → System Preferences...` menu item, which opens the **System Preferences** dialogue. There, click the `⌨️ Keyboard` icon to open the **Keyboard** dialogue. Once there, select the `[Input Sources]` panel, and select the `☑︎ Show Input menu in menu bar` option item. Now, the new, input selection menu appears on the system menu bar at the top-right corner, near the speaker volume setting menu.
 
 At this point, you can use the `Show Emoji & Symbols` menu item from the input selection menu to open the **Character Viewer**, and start entering symbols into your document at will. The character viewer shows all the Unicode symbols the macOS supports in a well-organised fashion, grouped into categories, like ***Emoji***, ***Arrows***, ***Maths Symbols***, and so on. But we STEMers use many mathematical symbols, Greek letters, special characters, weird arrows, and odd punctuations, every time we write. As such, we are forced to prowl the categories and hunt for the symbols we need. We can copy oft-used symbols into the ***Frequently Used*** category, of course, but this single category soon overflows with hundreds of symbols, and we end up having to hunt for symbols, all over again.
