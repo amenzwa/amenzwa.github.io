@@ -100,6 +100,13 @@ I would like to direct your attention to this potentially confusing terminology.
 
 The logarithmic scale and the logarithm scale are related by a bijective function $log$:
 
+<div>
+$$
+log: D \rightarrow L \\
+log^{-1}: L \rightarrow D
+$$
+</div>
+
 - $log: D \rightarrow L$
 - $log^{-1}: L \rightarrow D$
 

@@ -195,9 +195,6 @@ F_n =
 $$
 </div>
 
-- $F_n = n$, if $n ≤ 1$
-  - $= F_{n-1} + F_{n-2}$, otherwise
-
 This function can be written in RPL as follows.
 
 ```text
