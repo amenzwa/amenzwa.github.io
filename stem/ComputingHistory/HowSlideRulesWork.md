@@ -79,8 +79,10 @@ Simplex slide rules have use instructions and a few scientific constants on the 
 
 <div>
 $$
-a × b = log^{-1}[log(a) + log(b)] \\
-a ÷ b = log^{-1}[log(a) - log(b)]
+\begin{align}
+a × b &= log^{-1}[log(a) + log(b)] \\
+a ÷ b &= log^{-1}[log(a) - log(b)]
+\end{align}
 $$
 </div>
 
@@ -373,13 +375,27 @@ Placing the hairline on $6.4$ in the first cycle of the $K$ scale would compute 
 
 ***logarithmic exponentiation***—General exponentiation of the form $x^{y/z}$ can be reduced to arithmetic operations by applying the $log$ function:
 
-- $log(x^{y/z}) = y ÷ z × log(x)$
+<div>
+$$
+log(x^{y/z}) = y ÷ z × log(x)
+$$
+</div>
 
 Then, $×$ and $÷$ can be further reduced to $+$ and $-$ by applying the $log$ function once more:
 
-- $log(y ÷ z × log(x)) = log(y) - log(z) + log \circ log(x)$
+<div>
+$$
+log(y ÷ z × log(x)) = log(y) - log(z) + log \circ log(x)
+$$
+</div>
 
 It turns out that the slide rule performs this trick using the base-$e$ natural logarithm $ln$ as the inner logarithm and the base-$10$ common logarithm $log$ as the outer logarithm. That is, the function composition is actually $log \circ ln$, not $log \circ log$. The $ln$ is used instead of the $log$ for the inner logarithm, in order to compress the range of the $LL_n$ scale, thereby improving reading precision. Hence, computing $x^{y/z}$ on the slide rule is equivalent to performing the following logarithmic operations:
+
+<div>
+$$
+log(y ÷ z × log(x)) = log(y) - log(z) + log \circ log(x)
+$$
+</div>
 
 - $x^{y/z} = \color{darkgreen}{ln^{-1}}[y ÷ z × \color{green}{ln}(x)]$
   - $= \color{darkgreen}{ln^{-1}}[ \color{darkblue}{log^{-1}} [\color{blue}{log} [y ÷ z × \color{green}{ln}(x) ] ] ]$
