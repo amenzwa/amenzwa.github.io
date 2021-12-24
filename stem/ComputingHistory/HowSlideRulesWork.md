@@ -436,8 +436,10 @@ Recall that reading the result on the $D$ scale implicitly performs $log^{-1}$. 
 
 <div>
 $$
+\begin{align}
 ln &: LL_n \rightarrow D \nonumber \\
 ln^{-1} &: D \rightarrow LL_n \nonumber
+\end{align}
 $$
 </div>
 
