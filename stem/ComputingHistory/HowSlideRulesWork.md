@@ -108,8 +108,10 @@ The logarithmic scale and the logarithm scale are related by a bijective functio
 
 <div>
 $$
-log: D \rightarrow L \\
-log^{-1}: L \rightarrow D
+\begin{align}
+log &: D \rightarrow L \\
+log^{-1} &: L \rightarrow D
+\end{align}
 $$
 </div>
 
