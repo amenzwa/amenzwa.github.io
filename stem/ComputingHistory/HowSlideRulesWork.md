@@ -77,8 +77,12 @@ Simplex slide rules have use instructions and a few scientific constants on the 
 
 ***properties of logarithms***—The base-$10$ common logarithm function $log(x)$ and its inverse, the power-of-10 function $10^x$, give life to the slide rule. The two main properties of logarithms upon which the slide rule relies are these:
 
-- $a × b = log^{-1}[log(a) + log(b)]$
-- $a ÷ b = log^{-1}[log(a) - log(b)]$
+<div>
+$$
+a × b = log^{-1}[log(a) + log(b)] \\
+a ÷ b = log^{-1}[log(a) - log(b)]
+$$
+</div>
 
 That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$.
 
@@ -106,9 +110,6 @@ log: D \rightarrow L \\
 log^{-1}: L \rightarrow D
 $$
 </div>
-
-- $log: D \rightarrow L$
-- $log^{-1}: L \rightarrow D$
 
 In the plot below, the black curve is $log$ and the red is $log^{-1}$.
 
@@ -311,7 +312,11 @@ The impetus for the slide rule's invention was to expedite $×$ and $÷$. These 
 
 In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English excise officer, inverted Gunter's logarithmic scale, thus paving the way for the reciprocal $CI$ and $DI$ scales that run from right to left. Using $D$ and $C$, $a ÷ b$ is computed as $a_D - b_C$. But using $D$ and $CI$, this expression is computed as $a_D + b_{CI}$:
 
-- $a ÷ b = log(a) - log(b) = log(a) + log(\frac{1}{b})$
+<div>
+$$
+a ÷ b = log(a) - log(b) = log(a) + log(\frac{1}{b})
+$$
+</div>
 
 The $CF$, $DF$, $CIF$, and $DIF$ scales are called "folded", because they fold the $C$, $D$, $CI$, and $DI$ scales, respectively, at $\pi$, thereby shifting the $1$ mark to the middle of the scale. The following photograph shows these auxiliary scales on the slide.
 
