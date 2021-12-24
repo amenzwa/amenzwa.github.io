@@ -430,8 +430,12 @@ Recall that reading the result on the $D$ scale implicitly performs $log^{-1}$. 
 
 ***natural logarithm scale***—The black $LL_n$ scale is closely related to the base-$e$ ($e = 2.718$) natural logarithm $ln$. The $LL_n$ and the $D$ scales are related by a bijective function $ln$:
 
-- $ln : LL_n \rightarrow D$
-- $ln^{-1} : D \rightarrow LL_n$
+<div>
+$$
+ln &: LL_n \rightarrow D \nonumber \\
+ln^{-1} &: D \rightarrow LL_n \nonumber
+$$
+</div>
 
 In the plot below, the black curve is $ln$ and the red is $ln^{-1}$.
 
@@ -533,12 +537,18 @@ To compute $0.222^{1.11}$, we manipulate the slide rule as follows:
 
 Trigonometric functions are related to each other by these identities:
 
-- $sin(\theta) = cos(90° - \theta)$
-- $cos(\theta) = sin(90° - \theta)$
-- $tan(\theta) = cot(90° - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)}$
-- $cot(\theta) = tan(90° - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)}$
-- $sec(\theta) = \frac{1}{cos(\theta)}$
-- $csc(\theta) = \frac{1}{sin(\theta)}$
+<div>
+$$
+\begin{align}
+sin(\theta) &= cos(90° - \theta) \nonumber \\
+cos(\theta) &= sin(90° - \theta) \nonumber \\
+tan(\theta) &= cot(90° - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)} \nonumber \\
+cot(\theta) &= tan(90° - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)} \nonumber \\
+sec(\theta) &= \frac{1}{cos(\theta)} \nonumber \\
+csc(\theta) &= \frac{1}{sin(\theta)} \nonumber
+\end{align}
+$$
+</div>
 
 In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $tan$.
 
