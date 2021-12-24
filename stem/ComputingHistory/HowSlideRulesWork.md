@@ -548,8 +548,8 @@ $$
 \begin{align}
 sin(\theta) &= cos(90° - \theta) \nonumber \\
 cos(\theta) &= sin(90° - \theta) \nonumber \\
-tan(\theta) &= cot(90° - \theta) = \frac{sin(\theta)}{cos(\theta)} = \frac{1}{cot(\theta)} \nonumber \\
-cot(\theta) &= tan(90° - \theta) = \frac{cos(\theta)}{sin(\theta)} = \frac{1}{tan(\theta)} \nonumber \\
+tan(\theta) &= cot(90° - \theta) = sin(\theta) / cos(\theta) = 1 / cot(\theta) \nonumber \\
+cot(\theta) &= tan(90° - \theta) = cos(\theta) / sin(\theta) = 1 / tan(\theta) \nonumber \\
 sec(\theta) &= \frac{1}{cos(\theta)} \nonumber \\
 csc(\theta) &= \frac{1}{sin(\theta)} \nonumber
 \end{align}
@@ -562,8 +562,14 @@ In the plot below, the blue curve is $sin$, the green is $cos$, and the red is $
 
 ***black $S$ scale***—The $S$ scale on the slide rule is graduated in degrees from $5.73°$ to $90°$. When $\theta ∈ [5.73°, 90°]$ on the $S$ scale, $sin(\theta) ∈ [0.1, 1.0]$ on the $C$ scale. The $S$ and the $C$ scales are related by a bijective function $sin$:
 
-- $sin: S \rightarrow C$
-- $sin^{-1}: C \rightarrow S$
+<div>
+$$
+\begin{align}
+sin &: S \rightarrow C \nonumber \\
+sin^{-1} &: C \rightarrow S \nonumber
+\end{align}
+$$
+</div>
 
 In the plot below, the black curve is $sin$ and the blue is $sin^{-1}$. Note that the inverse function (here $sin^{-1}$) is a reflection in the $y = x$ line of the original function (here $sin$). In the figure below, the $x$-axis represents the angle $\theta$ in radians.
 
