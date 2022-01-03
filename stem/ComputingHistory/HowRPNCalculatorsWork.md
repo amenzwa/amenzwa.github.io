@@ -275,8 +275,8 @@ Below, I present my meagre collection of HP RPN programmable scientific calculat
   - HP-11C (1981)—the first of the Voyager Series; solid model for STEM use
   - HP-15C (1982)—more advanced than the HP-11C; engineers' favourite
   - HP-28S (1982)—the original CAS-capable graphing HP calculator; beware the broken battery compartment cover
-  - HP-32S (1988)—continuation of the HP-15C; brilliant design
-  - HP-42S (1988)—continuation of the HP-41C; more advanced than the HP-32S
+  - HP-32S (1988)—the first of the Pioneer Series; continuation of the HP-15C; brilliant design
+  - HP-42S (1988)—continuation of the HP-41C; more advanced than the HP-32S; basic graphing
   - HP-48SX (1990)—continuation of the HP-28S; the object of 1990s engineering students' desires
   - HP 35s (2007)—35th anniversary model; superb workhorse; nostalgic appeal
   - HP Prime (2013)—the latest, the most advanced CAS-capable graphing HP calculator; ideal for modern STEM students
