@@ -17,7 +17,7 @@ Then only a year later in 1972, HP introduced their game-changing device, the [H
 
 Only 10 years later in 1982, the [HP-15C](https://www.hpmuseum.org/hp15.htm) shown below, was introduced. It was the engineers' all-time favourite advanced, programmable, scientific pocket calculator. It was an impressive achievement by HP to have crammed so many capabilities into a device the size of a wallet. The HP-15C was priced only 135 USD (about 400 USD in 2021). But even that price was too steep for most engineering students of the era, because it would have required a month's fasting.
 
-![HP-15C](../figures/HPcalculators/DSC00205.JPG)
+![HP-15C](../figures/HPcalculators/DSC00237.JPG)
 
 HP's latest and most advanced scientific calculator, the [HP Prime](https://en.wikipedia.org/wiki/HP_Prime), which was introduced in 2013, is no calculator; it is a screaming computer. The G2 version has a 500 MHz 32-bit ARM Cortex-A7 CPU, 256 MB of SDRAM, 512 MB of flash memory, and a 16-bit colour touchscreen. But it is about the same size as the 2021 iPhone 13. Being almost a decade older, the HP Prime is nowhere near as capable as the iPhone 13, but it can be had for a mere 100 USD in 2021. And it has tonnes of scientific and mathematical software and it has hardware interfacing capabilities—things the iPhone cannot do.
 
@@ -281,6 +281,30 @@ Below, I present my meagre collection of HP RPN programmable scientific calculat
   - HP 35s (2007)—35th anniversary model; superb workhorse; nostalgic appeal
   - HP Prime (2013)—the latest, the most advanced CAS-capable graphing HP calculator; ideal for modern STEM students
 
+## *Palmtop*
+
+In the 1970s, only large corporations and well-endowed universities could afford computers. The 8-bit home computers were still much too expensive and were beyond the reach of most households. The most sophisticated computing device a typical home user could afford was the Japanese-made four-function electronic pocket calculator. In that era, the HP RPN scientific calculators were offering capabilities and precisions that were unattainable even on mainframe computers.
+
+Then in 1979, the HP-41C arrived on the market. Even though its form factor was similar to that of the original HP-35 calculator, the HP-41C was no mere calculator, it was the first palmtop computer system, complete with alphanumeric keyboard, real-time hardware clock, memory expansion slots, and a standardised I/O interface protocol.
+
+The HP-41C was the progenitor of the line of highly-capable portable computers that included the HP-75 and the HP-71 of the 1980s. Indeed, my 1992-model HP 95LX palmtop computer, which I purchased on eBay not long ago, could be considered a descendant of the HP-41C. I chose not to include the HP 95LX in this article because, despite being a calculator-sized device, the HP 95LX is a palmtop computer that runs MS-DOS, not an HP calculator OS.
+
+### HP-41CX (1980)
+
+![HP-41CX](../figures/HPcalculators/DSC00234.JPG)
+
+A year after the introduction of the HP-41C, the most capable model in the line, the HP-41CX came out. At 325 USD (about 1,100 USD in 2021), it was well beyond the reach of engineering college students of the time, including me. But I knew several engineers who went out and bought the HP-41C, the HP-41CV, or the HP-41CX.
+
+HP enthusiasts consider the HP-41C the most refined, the most comprehensive is a significant milestone in the history of HP RPN calculators. It is the first programmable HP pocket calculator with alphanumeric character set. This feature allows functions and variables to be assigned readable names. It is also the first HP calculator to abandon the traditional, red LED display adopting, instead the modern, LCD display. There are four expansion slots beneath the LCD display, which accept peripheral plugs, memory expansion modules, and third-party application modules called "pacs". Via the interface loop ([HP-IL](https://en.wikipedia.org/wiki/HP-IL)) hardware interface, the HP-41C can interact with magnetic card reader for loading and saving code, barcode reader for loading code and data, thermal printer for printouts, and laboratory test equipment.
+
+Expandability was perhaps the biggest selling point of the HP-41C. The HP-41C has 63 internal registers for storing data and code. The user can dynamically partition the memory between data and code. With up to four external memory modules, the memory can be expanded to a total of 319 registers, which is equivalent to a couple of thousand lines of code. That was a staggering amount of memory for a calculator of the time, rivalling the memory capacity of early 8-bit home computers. The HP-41CV has more memory than the HP-41C, and the HP-41CX has more memory than the HP-41CV. The HP-41CX also has an internal real-time clock (RTC) hardware.
+
+Through the decades, many companies have imagined and implemented powerful, portable computers. But the HP-41C was the first practical, palmtop computer. Civil, mechanical, and electrical engineers used it as a design verifying computer. They were not the only users of the HP-41C, however. Pilots used it as an in-cockpit navigation computer. Surveyors used it as an in-the-field pocket computer. Financiers used it as a financial modelling computer. And because the HP-41CX had the built-in time module, loads of people used it as an alarm clock, a stopwatch, or an on-the-job timekeeper. Indeed, the HP-41C preceded by two decades the PDAs and the palmtops of the late 1990s. Moreover, the HP-41CX was the definitive, pocket-sized, process automation computer. The large memory, the built-in RTC, and the HP-IL communication protocol endowed the HP-41CX with the ability to orchestrate time-sensitive laboratory experiments.
+
+My first HP RPN calculator was the HP-15C, a venerable classic, which I purchased in the mid 1980s. This HP-41CX is my first vintage-style HP calculator. I bought it on eBay, recently. Although there are many HP-41C models being offered for sale on eBay, clean units are rare. But this one is extraordinarily clean. It certainly is worth the long wait. The HP-41C's vintage-style body is more bulky and less sturdy, compared to the bodies of the later, slimmer models. Oddly, my "older" vintage HP-41CX was manufactured in 1987. So, it is actually two years younger than my "newer" classic HP-15C, which was manufactured in 1985.
+
+The HP-41CX I have is a halfnut, a later version of the original HP-41C fullnut. The obvious, external difference between the fullnut and the halfnut is the LCD display bezel: the older model has squared-off corners, and the newer one has rounded-out corners. But internally, there are a number of significant differences, the biggest being the circuit board. The newer halfnut's circuit board has fewer discrete components which, arguably, makes it more reliable than the older fullnut. And the halfnut's character set is a bit more expansive.
+
 ## *Voyager*
 
 In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C, even now, is considered a milestone amongst HP calculators. It was the flagship model in its day. Its claim to fame was the external programme memory in the form of magnetic strips. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
@@ -291,13 +315,13 @@ There is also the HP-10C of 1982, the 80 USD crippled version of the HP-11C. No 
 
 ### HP-11C (1981)
 
-![HP-11C](../figures/HPcalculators/DSC00203.JPG)
+![HP-11C](../figures/HPcalculators/DSC00235.JPG)
 
 I bought this HP-11C on eBay, some years ago. The HP-11C was introduced in 1981 as the first of the Voyager Series of revolutionary, compact calculators. In all the essentials, it is similar to top-of-the line HP-15C, only lacking some advanced features. Regardless, it has everything an engineer needed, daily: complex numbers, trigonometric functions, hyperbolic functions, [degree](https://en.wikipedia.org/wiki/Degree_(angle))/[radian](https://en.wikipedia.org/wiki/Radian)/[gradian](https://en.wikipedia.org/wiki/Gradian) angular measures.
 
 ### HP-15C (1982)
 
-![HP-15C](../figures/HPcalculators/DSC00205.JPG)
+![HP-15C](../figures/HPcalculators/DSC00237.JPG)
 
 The HP-15C came out in 1982 as the alpha of the Voyager Series. It added a few, but truly advanced, features: root solver, numerical integration, and matrix computation. Given that Just a year after the omega of the series, the HP-11C, was released and given that the HP-15C sold for the same 135 USD price, it must have been a gut-punch for those who bought the HP-11C. This was not to be the only time HP would do this to the early-adopters, however.
 
@@ -307,7 +331,7 @@ In 2011, after many years of supplication by the HP-15C fans, HP relented and in
 
 ### HP-16C (1982)
 
-![HP-16C](../figures/HPcalculators/DSC00206.JPG)
+![HP-16C](../figures/HPcalculators/DSC00238.JPG)
 
 I bought this HP-16C on eBay, not long ago. The HP-16C came out the same year as the HP-15C, but at 150 USD, it was slightly more expensive. The HP-16C was aimed squarely at computer scientists. It implements binary, octal, decimal, and hexadecimal number systems. It has all the fancy bit-twiddling capabilities: `and`, `or`, `xor`, masking, shifting, 1's complement, 2's complement, and all that a computer scientist would want. But the HP-16C lacks trigonometric functions, hyperbolic functions, and complex numbers. As such, it is useless for general STEM use.
 
@@ -321,7 +345,7 @@ The Pioneer Series includes the HP-10B (RPN) and the HP-17B (non-RPN) business c
 
 ### HP-32S (1988)
 
-![HP-32S](../figures/HPcalculators/DSC00207.JPG)
+![HP-32S](../figures/HPcalculators/DSC00239.JPG)
 
 I bought my HP-32S in 1989, the year after it was introduced. At only 70 USD (160 USD in 2021), it was eminently affordable as a backup (or rather, an upgrade) to my much-loved HP-15C. The HP-32S has all the features the HP-15C has, including root solver and numerical integration, except matrix computation. And it has many of HP-16C features, like base conversions and binary flags. It also has probability and statistics functions, which were not on the Voyager Series calculators.
 
@@ -333,11 +357,11 @@ The clamshell line includes the HP-18C non-RPN business calculator and the HP-28
 
 ### HP-28S (1988)
 
-![HP-28S](../figures/HPcalculators/DSC00208.JPG)
+![HP-28S](../figures/HPcalculators/DSC00240.JPG)
 
 When it came out in 1988, it replaced the one-year-old HP-28C. Both models were expensive at 235 USD (about 570 USD in 2021). But the HP-28C has only 2 KB of programme memory, whereas the HP-28S has 32 KB. If HP-11C owners were upset when the HP-15C came out the following year at the same price of 135 USD, imagine how upset the buyers of the HP-28C would have been.
 
-Because the HP-28S runs on RPL, a LISP variant, we get [symbolic computation](http://www.cs.cmu.edu/~dst/LispBook/book.pdf) for free. That is, we can write programmes that differentiate and integrate symbolically, not numerically. And the HP-28S has a $137×32$ LCD matrix display, which can plot functions fairly well. The HP-28S was HP's first graphing calculator. So, the HP-48 and the HP Prime, the modern CAS-capable graphing calculators, are descendants of the HP-28S.
+Because the HP-28S runs on RPL, a LISP variant, we get [symbolic computation](http://www.cs.cmu.edu/~dst/LispBook/book.pdf) for free. That is, we can write programmes that differentiate and integrate symbolically, not numerically. And the HP-28S has a $137×32$ LCD matrix display, which can plot functions fairly well. The HP-28S was HP's first graphing calculator. So, the HP-48 and the HP Prime, the modern CAS-capable graphing calculators, are direct descendants of the HP-28S.
 
 I purchased this HP-28S on eBay, recently. I appreciate the innovation of the HP-28S, but I do not admire it as well as I do its older, simpler siblings: the HP-15C and the HP-32S. Indeed, I am a bit fearful of having to use the HP-28S. The clamshell design of the HP-18 and the HP-28 have a fatal flaw: the fragile battery compartment beneath the LCD display. The springs inside the compartment are stiff enough to be used as suspension springs on a lorry. These springs push against the batteries with such force that if the compartment cover is popped off, the batteries fly out like spent shell casings from an [AK-47](https://en.wikipedia.org/wiki/AK-47). That is not even the worst bit. The real trouble is the fragile plastic edges of the compartment wall, against which the compartment cover rests. The cover has metal clips, which are held on by the compartment's thin plastic edges. As the plastic ages, the fragile edges get chipped off by the cover's metal clips. At that point, chewing gum and tape are the only remedies.
 
@@ -349,7 +373,7 @@ The Anniversary Series has only one model, the HP 35s. I like this calculator—
 
 ### HP 35s (2007)
 
-![HP 35s](../figures/HPcalculators/DSC00209.JPG)
+![HP 35s](../figures/HPcalculators/DSC00241.JPG)
 
 In terms of design, the HP 35s pays homage to the matriarch of the line, the venerable HP-35 of 1972. It has the same [tonneau](https://revolutionwatch.com/the-tonneau-10-barrel-shaped-watches/) body with a wedge profile. Its 2-line, 14-digit, $5×7$ matrix display is crisp. The tall keys have the famous HP tactile feel. It has the four-way cursor keys. In terms of capabilities, it has everything previous generation of HP calculators had and much more. In addition to RPN, it supports infix notation. It uses the 8-bit 6502 CPU, a favourite CPU architecture of mine. Its keystroke programme memory is just shy of 32 KB.
 
@@ -361,9 +385,25 @@ There is only one colour touchscreen HP calculator: the HP Prime. I am not enamo
 
 ### HP Prime (2013)
 
-![HP Prime](../figures/HPcalculators/DSC00210.JPG)
+![HP Prime](../figures/HPcalculators/DSC00242.JPG)
 
 I bought this HP Prime in 2016 for my son, when he was in middle school, in anticipation of high school and the SAT. At the time, it was the only CAS-capable [calculator permitted by the SAT](https://collegereadiness.collegeboard.org/sat/taking-the-test/calculator-policy). The HP Prime was introduced in 2013. The subsequent G2 version runs on 500 MHz 32-bit ARM Cortex-A7 CPU, and has 256 MB of SDRAM. Its programme flash memory is 512 MB, more than adequate for the purpose. And it has a 16-bit colour touchscreen, albeit a small one of $320×240$ resolution. It has UI theming support. Its computing capabilities were well in excess of most mobile phones of that time. It has 2D and 3D plotting support, CAS symbolic computation, highly capable PPL programming language, spreadsheet-based data analysis, installable third-party apps, hardware interface to data collection sensors, WiFi networking, and much more. Even in 2021, if you want to make your iPhone 13 as capable as the HP Prime, your only recourse is to install on your phone the [HP Prime emulator](https://apps.apple.com/us/app/hp-prime-lite/id1208226883). That says a lot about this calculator.
+
+## *Tribute*
+
+[SwissMicros](https://www.swissmicros.com/company), a boutique Swiss firm founded in 2014 for the express purpose of designing and manufacturing modern, high-quality calculators that celebrate the legacy of HP RPN machines. At a glance, their calculators resemble classic HP models, like the HP-15C or the HP-42S. But up close, it is clear that a SwissMicros device is of a far superior craftsmanship: the rugged, steel body feels substantial; the keys feel just as good as those on HP's classics, if not better; the Gorilla Glass screen protects the high-resolution, high-contrast LCD; the CPU is ARM Cortex-M; the software is fully compatible with the HP original; and the company is very responsive. Naturally, the price reflects the quality. If you are a discerning engineer looking for an ultimate RPN calculator, there is nothing better than a SwissMicros machine. Indeed, their user base is engineers, many of them former HP calculator engineers. SwissMicros: they are a lesson in doing engineering right.
+
+### SwissMicros DM41X (2020)
+
+![SwissMicros DM41X](../figures/HPcalculators/DSC00244.JPG)
+
+The DM41X pays homage to the ultimate vintage RPN calculator, the HP-41CX. I bought this DM41X directly from SwissMicros [online store](https://www.swissmicros.com/product/dm41x) for about 250 USD in 2021. Coincidentally, this DM41X, which was shipped from Switzerland, and my eBay-acquired HP-41CX, which was shipped from Arizona, arrived at my front door on the same day.
+
+The DM41X boasts full software compatibility with HP's legendary HP-41CX. That means all those countless programmes written for the HP-41C during the past 40 years can run unmodified on the DM41X. And the DM41X can interface with HP's [infrared peripherals](https://commerce.hpcalc.org/82240b.php) via its built-in IR interface. The DM41X runs on an 80 MHz ARM Cortex-M4F, a high-end, 32-bit microcontroller with built-in RTC and 128-bit floating-point hardware. The CPU runs at 25 MHz when on battery power, and at full 80 MHz when on USB power. The 6 MB internal flash memory can be accessed from a PC via a Micro-B USB cable.
+
+The high-contrast, black-and-white LCD display has a $400×240$ resolution, which is 20% larger than the HP Prime's colour LCD touchscreen. The large display allows the DM41X to show all four stack registers at once, whereas the HP-41C's display can show only one row of 12 characters. And the DM41X has a modern menu-driven settings screen. When powered off, the DM41X displays a user-selectable black-and-white image, without chewing up the battery. Being true to the HP-41C heritage, the DM41X offers no graphing capabilities, despite having a large screen.
+
+But because the DM41X shares the chassis with the earlier [DM42](https://www.swissmicros.com/product/dm42), which is modelled upon the Pioneer series HP-42S, the key layouts of the DM41X resembles that of the HP-42S, and not that of the HP-41C. Also, the DM41X keys have a flat profile, unlike the HP-41C's wedge-profiled keys. Although the DM41X's keys have an HP-like, satisfying tactile feel, its `[ENTER]` key feels a bit flimsy, compared to the HP-41C. The body of the DM41X is made of steel, so even only a third the thickness of the HP-41C, the DM41X is heavier. Anyone who wants an HP-41CX but cannot find a good, clean one would be eminently happy with the DM41X.
 
 # CONCLUSION
 
