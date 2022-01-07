@@ -319,8 +319,8 @@ In 1775, [Thomas Everard](https://www.si.edu/object/nmah_1127892), an English ex
 <div>
 $$
 \begin{align}
-a ÷ b &= \color{darkred}{log^{-1}}[log(a) - log(b)] \nonumber \\
-  &= \color{darkred}{log^{-1}}[log(a) + log(\frac{1}{b})] \nonumber
+a ÷ b &= log^{-1}[log(a) - log(b)] \nonumber \\
+  &= log^{-1}[log(a) + log(\frac{1}{b})] \nonumber
 \end{align}
 $$
 </div>
