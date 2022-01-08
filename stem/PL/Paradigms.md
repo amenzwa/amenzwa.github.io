@@ -328,13 +328,13 @@ Higher-order functions are also called *functionals*. The term "functional progr
 Let us examine the algorithm for computing the length of a list. A *list* is the tail sublist $tl[⊡]$ with the singleton head element $hd[⊡]$ tacked on at the front: a list $l = hd[l] + tl[l]$. The tail, being a sublist, can be split further in the same manner. Using this hierarchical, self-similar representation, the algorithm computes the length of the list in two cases, as follows:
 
 <div>
-$
+$$
 len(l) =
 \begin{cases}
   0 & \text{if l = ∅} \\
   len(hd[l]) + len(tl[l]) & \text{otherwise}
 \end{cases}
-$
+$$
 </div>
 
 The algorithm states that the length of an empty list is 0, and that the length of a non-empty list is the length of the singleton head element (which is $1$) plus the length of the tail (which is computed recursively on the smaller sublist $tl[l]$). As the algorithm proceeds down the tail, the tail shortens to the empty list. The resultant length is $1 + 1 + ... + 0$, where the $1$s stand for each element of the list, and the $0$ for the terminating empty list.
