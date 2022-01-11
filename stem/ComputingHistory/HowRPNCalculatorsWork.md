@@ -45,12 +45,12 @@ Because mathematical notation is meant for the human eye, the syntax is often fu
 
 Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ in this expression is the operand delimiter, which is represented by the <kbd>ENTER</kbd> key on HP RPN calculators. Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression in one pass, using only four temporary storage locations `x`, `y`, `z`, and `t`:
 
-<kbd>2</kbd><kbd>ENTER</kbd>
-<kbd>5</kbd><kbd>ENTER</kbd>
-<kbd>4</kbd><kbd>ENTER</kbd>
-<kbd>2</kbd><kbd>-</kbd>
-<kbd>÷</kbd>
-<kbd>8</kbd><kbd>+</kbd>
+<kbd>2</kbd><kbd>ENTER</kbd><br/>
+<kbd>5</kbd><kbd>ENTER</kbd><br/>
+<kbd>4</kbd><kbd>ENTER</kbd><br/>
+<kbd>2</kbd><kbd>-</kbd><br/>
+<kbd>÷</kbd><br/>
+<kbd>8</kbd><kbd>+</kbd><br/>
 <kbd>-</kbd>
 
 The above keystroke sequence means the following. Let us assume that all four registers on the stack are initialised to `0`.
