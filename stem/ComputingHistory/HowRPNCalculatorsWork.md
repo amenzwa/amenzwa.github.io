@@ -43,64 +43,62 @@ Because mathematical notation is meant for the human eye, the syntax is often fu
         - $2$
     - $8$
 
-Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ is the operand delimiter, which is represented by the `[ENTER]` key on HP RPN calculators. Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression in one pass, using only four temporary storage locations `x`, `y`, `z`, and `t`:
+Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ in this expression is the operand delimiter, which is represented by the <kbd>ENTER</kbd> key on HP RPN calculators. Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression in one pass, using only four temporary storage locations `x`, `y`, `z`, and `t`:
 
-```text
-[2][ENTER]
-[5][ENTER]
-[4][ENTER]
-[2][-]
-[÷]
-[8][+]
-[-]
-```
+<kbd>2</kbd><kbd>ENTER</kbd>
+<kbd>5</kbd><kbd>ENTER</kbd>
+<kbd>4</kbd><kbd>ENTER</kbd>
+<kbd>2</kbd><kbd>-</kbd>
+<kbd>÷</kbd>
+<kbd>8</kbd><kbd>+</kbd>
+<kbd>-</kbd>
 
-The above keystroke sequence means the following. Let us assume that all four registers on the stack are initialised to `0`.
+The above keystroke sequence means the following. Let us assume that all four registers on the stack are initialised to `0`.
 
-- `[2][ENTER]` → Press the `[2]` key, followed by the `[ENTER]` key.
+- <kbd>2</kbd><kbd>ENTER</kbd> → Press the <kbd>2</kbd> key, followed by the <kbd>ENTER</kbd> key.
   - `x←2.0000 | y←2.0000 | z←0.0000 | t←0.0000`
-  - Pressing the `[2]` key places the value $2$ in the register `x`, and pushes its old value $0$ up into the register `y`. In a way, the register `x` is like the data-entry scratchpad.
-  - Pressing the `[ENTER]` key copies the value $2$ in the register `x` up into the register `y`, moving its old value $0$ up further onto the stack.
+  - Pressing the <kbd>2</kbd> key places the value $2$ in the register `x`, and pushes its old value $0$ up into the register `y`. In a way, the register `x` is like the data-entry scratchpad.
+  - Pressing the <kbd>ENTER</kbd> key copies the value $2$ in the register `x` up into the register `y`, moving its old value $0$ up further onto the stack.
   - Now, the registers `x` and `y` each holds the value $2$.
-- `[5][ENTER]` → Press the `[5]` key, followed by the `[ENTER]` key.
+- <kbd>5</kbd><kbd>ENTER</kbd> → Press the <kbd>5</kbd> key, followed by the <kbd>ENTER</kbd> key.
   - `x←5.0000 | y←5.0000 | z←2.0000 | t←0.0000`
-  - Pressing the `[5]` key places the value $5$ in the register `x`, rippling the old values further up onto the stack.
-  - Pressing the `[ENTER]` key populates both the registers `x` and `y` with the value $5$.
+  - Pressing the <kbd>5</kbd> key places the value $5$ in the register `x`, rippling the old values further up onto the stack.
+  - Pressing the <kbd>ENTER</kbd> key populates both the registers `x` and `y` with the value $5$.
   - The old value $2$ in the register `y` is pushed up further into the register `z`.
-- `[4][ENTER]` → Press the `[4]` key, followed by the `[ENTER]` key.
+- <kbd>4</kbd><kbd>ENTER</kbd> → Press the <kbd>4</kbd> key, followed by the <kbd>ENTER</kbd> key.
   -  `x←4.0000 | y←4.0000 | z←5.0000 | t←2.0000`
   -  The old values are pushed up further onto the stack.
   -  The registers `x` and `y` both hold the new value $4$.
   -  At this point, the stack is full, since all four of its registers hold values involved in the computation.
-- `[2][-]` → Press the `[2]` key followed by the `[-]` key.
+- <kbd>2</kbd><kbd>-</kbd> → Press the <kbd>2</kbd> key followed by the <kbd>-</kbd> key.
   -  `x←4-2=2.0000 | y←5.0000 | z←2.0000 | t←2.0000`
-  -  Pressing the `[2]` key places the value $2$ in the register `x`, and pushes its old value $4$ up into the register `y`.
-  -  Pressing the `[-]` key performs the subtraction operation using the values in the registers `x` and `y`, subtracting the value $2$ in the register `x` from the value $4$ in the register `y`, and accumulating the result $2$ in the register `x`.
+  -  Pressing the <kbd>2</kbd> key places the value $2$ in the register `x`, and pushes its old value $4$ up into the register `y`.
+  -  Pressing the <kbd>-</kbd> key performs the subtraction operation using the values in the registers `x` and `y`, subtracting the value $2$ in the register `x` from the value $4$ in the register `y`, and accumulating the result $2$ in the register `x`.
   -  The subtraction operation cleared the register `y`, which has the ripple effect of copying down the value $5$ from the register `z` down into the register `y` and the value $2$ from the top register `t` down into the register `z`.
   -  The top register `t` is special: as the operations consume the operands and the operands are popped off the stack, the value in the register `t` is kept the same and is copied down into the lower registers.
-- `[÷]` → Press the `[÷]` key.
+- <kbd>÷</kbd> → Press the <kbd>÷</kbd> key.
   - `x←5÷2=2.5000 | y←2.0000 | z←2.0000 | t←2.0000`
   - The operation divides the value $5$ in the register `y` by the value $2$ in the register `x`, and accumulates the result $2.5$ in the register `x`.
   - Since the value in the register `y` was consumed, the value $2$ in the register `z` is copied down into the newly cleared register `y`, and the register `z` in turn is filled by the replicated value $2$ in the top register `t`.
-- `[8][+]` → Press the `[8]` key followed by the `[+]` key.
+- <kbd>8</kbd><kbd>+</kbd> → Press the <kbd>8</kbd> key followed by the <kbd>+</kbd> key.
   - `x←2.5+8=10.5000 | y←2.0000 | z←2.0000 | t←2.0000`
-  - Pressing the `[8]` key places the value $8$ in the register `x`, and pushes its old value $2.5$ up into the register `y`.
-  - Pressing the `[+]` key performs the addition operation using the values in the register `x` and `y`, adding the value $8$ in the register `x` to the value $2.5$ in the register `y`, and accumulating the result $10.5$ in the register `x`.
+  - Pressing the <kbd>8</kbd> key places the value $8$ in the register `x`, and pushes its old value $2.5$ up into the register `y`.
+  - Pressing the <kbd>+</kbd> key performs the addition operation using the values in the register `x` and `y`, adding the value $8$ in the register `x` to the value $2.5$ in the register `y`, and accumulating the result $10.5$ in the register `x`.
   - The same ripple effect copies the value $2$ into the upper registers.
-- `[-]` → Press the `[-]` key.
+- <kbd>-</kbd> → Press the <kbd>-</kbd> key.
   - `x←2-10.5=-8.5000 | y←2.0000 | z←2.0000 | t←2.0000`
   - The operation subtracts the value $10.5$ in the register `x` from the value $2$ in the register `y`, and accumulates the final result $-8.5$ in the register `x`.
   - The same ripple effect copies the value $2$ into the upper registers. The values in these upper registers are irrelevant, since the computation is now complete.
 
-As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes `[2][ENTER] [3][`$\color{red}{y^x}$`]`. That is, we first enter the operands separated by `[ENTER]`, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
+As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes <kbd>2</kbd><kbd>ENTER</kbd><kbd>3</kbd><kbd>$y^x$</kbd>. That is, we first enter the operands separated by <kbd>ENTER</kbd>, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
 
-The stack registers eliminate the need to use parentheses, and the self-actuating operators eliminate the need to use a distinguished key to initiate computations. Therefore, the `(`, `)`, and `[=]` keys are not needed on an RPN calculator.
+The stack registers eliminate the need to use parentheses, and the self-actuating operators eliminate the need to use a distinguished key to initiate computations. Therefore, the <kbd>(</kbd>, <kbd>)</kbd>, and <kbd>=</kbd> keys are not needed on an RPN calculator.
 
 The elimination of these separators are partly the reason why the RPN is more efficient than the conventional infix notation. The RPN input method is appreciably more efficient when the expressions are lengthy and contain many parentheses, such as those that appear in engineering calculations. The RPN input method, however, obliges us to rearrange the expression mentally, before we can evaluate it on the calculator. Hence, we are purchasing mechanical efficiency with a small amount of mental effort. But this mental parsing becomes second nature, after a day of use.
 
 Computers in the late 1950s had very little processing power and memory storage, parsing mathematical expressions was a very difficult task. To simply parsing, [John McCarthy](https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)) adopted the much simpler s-expression as the syntax for his LISP programming language. The [IBM 704](http://www.columbia.edu/cu/computinghistory/704.html) on which the first LISP implementation ran occupied a large, climate-controlled room. A little over a decade later in the early 1970s, the HP-35 was the most powerful scientific calculator and the first one designed to fit an engineer's shirt pocket. But the HP-35 had a miserly 1-bit serial processor and a meagre 4-register (`x`, `y`, `z`, and `t`) memory. So, the time- and space-efficient RPN input method was not merely a nicety, but a clear necessity. A *register* is a fast, on-chip, temporary storage used by the CPU while performing operations. An assemblage of registers is called a register *file*. You can read a detailed explanation of how the CPU uses registers in my article *[How Computers Work](HowComputersWork.md)*.
 
-Technically speaking, the HP-35 (1972) is a [stack architecture](https://en.wikipedia.org/wiki/Stack_machine) computer, albeit a wee one. The Burroughs [B5000](http://www.retrocomputingtasmania.com/home/projects/burroughs-b5500/b5000_b5500_gallery) (1961) and the Hewlett-Packard [HP 3000](http://www.hpmuseum.net/display_item.php?hw=100) (1972) are stack machines, too, though slightly bigger, each being about the size of a room. But all stack machines operate on the same principle: they all use a stack register file to store temporary values during computations. A *stack* is a data structure that holds values in a last-in, first-out (LIFO) fashion. If we push `[1][ENTER] [2][ENTER] [3][ENTER] [4][ENTER]` onto the stack of the HP-35, its registers would contain the following values: `x=4 | y=3 | z=2 | t=1`. Then, when we operate on those values, the operator consumes the values, starting with the last value, namely `x=4`. But had we pushed one more operand `[5][ENTER]` without performing operations, the stack would become `x=5 | y=4 | z=3 | t=2`, and the oldest value $1$ would have fallen off the top of the stack and would have been lost forever. As the newer values are consumed off the top of the stack by the operations, the oldest value in the top register `t` is replicated down into the lower registers.
+Technically speaking, the HP-35 (1972) is a [stack architecture](https://en.wikipedia.org/wiki/Stack_machine) computer, albeit a wee one. The Burroughs [B5000](http://www.retrocomputingtasmania.com/home/projects/burroughs-b5500/b5000_b5500_gallery) (1961) and the Hewlett-Packard [HP 3000](http://www.hpmuseum.net/display_item.php?hw=100) (1972) are stack machines, too, though slightly bigger, each being about the size of a room. But all stack machines operate on the same principle: they all use a stack register file to store temporary values during computations. A *stack* is a data structure that holds values in a last-in, first-out (LIFO) fashion. If we push <kbd>1</kbd><kbd>ENTER</kbd><kbd>2</kbd><kbd>ENTER</kbd><kbd>3</kbd><kbd>ENTER</kbd><kbd>4</kbd><kbd>ENTER</kbd> onto the stack of the HP-35, its registers would contain the following values: `x=4 | y=3 | z=2 | t=1`. Then, when we operate on those values, the operator consumes the values, starting with the last value, namely `x=4`. But had we pushed one more operand <kbd>5</kbd><kbd>ENTER</kbd> without performing operations, the stack would become `x=5 | y=4 | z=3 | t=2`, and the oldest value $1$ would have fallen off the top of the stack and would have been lost forever. As the newer values are consumed off the top of the stack by the operations, the oldest value in the top register `t` is replicated down into the lower registers.
 
 RPN is essentially about user interface design and usability. Most people loathed RPN, but engineers back in the day adored it. While we are on the topic of usability, I should mention how we engineers used calculators: we placed on the desk our RPN calculator and our notebook, side by side, writing in the notebook with our dominant hand and operating the calculator with our non-dominant hand. This made the workflow efficient and kept the desk neat.
 
@@ -120,58 +118,56 @@ The HP-15C, the top-of-the-line programmable, scientific, pocket calculator of t
 
 In terms of interaction, RPN keystroke programming is similar to the macro recording facility of a word processor: just punch in the keystrokes. In terms of readability, however, an RPN keystroke programme reads like an assembly code, complete with labels, jumps, conditionals, etc. To those of us who grew up programming 6502 assembly in the early 1980s, RPN keystroke programming felt natural. But no engineering student today would countenance such hardship—why would they, really.
 
-To create a programme on a programmable RPN calculator like the HP-15C, you press the `[g][P/R]` key to enter the programming (record) mode, punch in the desired keystrokes, and terminate the input sequence with the `[g][RTN]` key. HP RPN calculators have a yellow shift key, labelled `f` or `↰`. Some calculators have an additional blue shift key, labelled `g` or `↱`. The HP-15C has both the shift keys.
+To create a programme on a programmable RPN calculator like the HP-15C, you press the <kbd>g</kbd><kbd>P/R</kbd> key to enter the programming (record) mode, punch in the desired keystrokes, and terminate the input sequence with the <kbd>g</kbd><kbd>RTN</kbd> key. HP RPN calculators have a gold shift key <kbd>f</kbd> or <kbd>↰</kbd>. Some calculators have an additional blue shift key <kbd>g</kbd> or <kbd>↱</kbd>. The HP-15C has both the shift keys.
 
 As an example, we shall write the programme to convert $°F$ to $°C$ , using the well-known conversion formula $C = \frac{5}{9}(F - 32)$.
 
-```text
-[g][P/R]
-[f][PRGM]
-[f][LBL][C]
-[3][2][-]
-[5][×]
-[9][÷]
-[g][RTN]
-[g][P/R]
-```
+<kbd>g</kbd><kbd>P/R</kbd>
+<kbd>f</kbd><kbd>PRGM</kbd>
+<kbd>f</kbd><kbd>LBL</kbd><kbd>C</kbd>
+<kbd>3</kbd><kbd>2</kbd><kbd>-</kbd>
+<kbd>5</kbd><kbd>×</kbd>
+<kbd>9</kbd><kbd>÷</kbd>
+<kbd>g</kbd><kbd>RTN</kbd>
+<kbd>g</kbd><kbd>P/R</kbd>
 
 The above keystrokes store the temperature conversion programme in the label `C`. Let us analyse each keystroke.
 
-- `[g][P/R]` → Enter the programming mode.
+- <kbd>g</kbd><kbd>P/R</kbd> → Enter the programming mode.
   - The 10-digit display shows the `PRGM` symbol in the lower-right corner.
   - This indicates that the calculator is now in the programming mode.
-- `[f][PRGM]` →  Clear the entire programme memory.
+- <kbd>f</kbd><kbd>PRGM</kbd> →  Clear the entire programme memory.
   - The display shows `000-________`. Here, the `_` represents space.
   - This indicates that 0 bytes of the programme memory has been used.
-- `[f][LBL][C]` → Assign the programme to the label `C`.
+- <kbd>f</kbd><kbd>LBL</kbd><kbd>C</kbd> → Assign the programme to the label `C`.
   - The display shows `001-42,21,13`.
   - The `001-` indicates that 1 byte of programme memory was used for the programme label.
-  - The `42` is the code for the `[f]` key, the `21` for the `[LBL]` key, and the `13` for the `[C]` key.
-- `[3][2][-]` → Enter the subexpression $F - 32$, where the value for $F$ is to be supplied in the register `x`.
+  - The `42` is the code for the <kbd>f</kbd> key, the `21` for the <kbd>LBL</kbd> key, and the `13` for the <kbd>C</kbd> key.
+- <kbd>3</kbd><kbd>2</kbd><kbd>-</kbd> → Enter the subexpression $F - 32$, where the value for the variable $F$ is to be supplied in the register `x`.
   - The display shows `004-______30`.
-  - The `30` is the code for the `-` key.
-- `[5][×]` → Enter the subexpression $[x] × 5$, where the $[x]$ represents the value held in the register `x`.
+  - The `30` is the code for the <kbd>-</kbd> key.
+- <kbd>5</kbd><kbd>×</kbd> → Enter the subexpression $x × 5$, where the $x$ represents the value held in the register `x`.
   - The display shows `006-______20`.
-  - The `20` is the code for the `[×]` key.
-- `[9][÷]` → 
+  - The `20` is the code for the <kbd>×</kbd> key.
+- <kbd>9</kbd><kbd>÷</kbd> → 
   - The display shows `008-______10`.
-  - The `10` is the code for the `[÷]` key.
-- `[g][RTN]` → End the programme.
+  - The `10` is the code for the <kbd>÷</kbd> key.
+- <kbd>g</kbd><kbd>RTN</kbd> → End the programme.
   - The display shows `009-__43__32`.
   - The `009-` indicates that this programme used 9 bytes of memory, including its label.
-  - The `43` is the code for the `[g]` key and the `32` for the `[RTN]` key.
-- `[g][P/R]` → Exit the programming mode.
+  - The `43` is the code for the <kbd>g</kbd> key and the `32` for the <kbd>RTN</kbd> key.
+- <kbd>g</kbd><kbd>P/R</kbd> → Exit the programming mode.
   - The `PRGM` symbol disappears from the display, indicating that the calculator is now back in the running mode.
 
-The first `[g][P/R]` runs the programme editor, and the second `[g][P/R]` exits the programme editor. This is reminiscent of editing on UNIX using the  `ed` command-line editor. Next, we run the programme stored in the label `C` on the input value `43` by typing in `43[f][C]`.
+The first <kbd>g</kbd><kbd>P/R</kbd> runs the programme editor, and the second <kbd>g</kbd><kbd>P/R</kbd> exits the programme editor. This is reminiscent of editing on UNIX using the  `ed` command-line editor. Next, we run the programme stored in the label `C` on the input value `43` by typing in <kbd>4</kbd><kbd>3</kbd><kbd>f</kbd><kbd>C</kbd>.
 
-- `43 [f][C]` → Enter $43°F$ into register `x`, and run the programme `C` on the value `x=43`.
+- <kbd>4</kbd><kbd>3</kbd><kbd>f</kbd><kbd>C</kbd> → Enter $43°F$ into register `x`, and run the programme labelled `C` on the value `x=43`.
   - The display flickers `running` while the programme is running.
   - The display shows the result `6.1111`, after the programme has terminated. So, $43°F = 6.1111°C$.
 
 The programming facilities of the HP-15C look primitive now, but they were in line with computing practices of 1982. And it is simple enough to key in small programmes, like the temperature conversion example above. Such short formulae occur in STEM frequently enough, so it is useful to store oft-used formulae as programmes.
 
-It gets tougher, though, as programme complexity increases: multiple labels `A` through `E`; conditional tests `[g][x=0]` and `[g][x≤y]`; counting loop tests `[f][DSE]` (decrement and skip if ≤) and `[f][ISG]` (increment and skip if >); branching to a label `[GTO][A..E]`. The only practical way to write long programmes on the HP-15C was to write down the keystrokes on paper, try them out with the calculator in the running mode, then after having confirmed the correctness punch in the keystrokes with the calculator in the programming mode. On device debugging was out of the question.
+It gets tougher, though, as programme complexity increases: multiple labels `A` through `E`; conditional tests <kbd>g</kbd><kbd>x=0</kbd> and <kbd>g</kbd><kbd>x≤y</kbd>; counting loop tests <kbd>f</kbd><kbd>DSE</kbd> (decrement and skip if $≤$) and <kbd>f</kbd><kbd>ISG</kbd> (increment and skip if $>$); branching to a label <kbd>GTO</kbd><kbd>A</kbd>...<kbd>E</kbd>. The only practical way to write long programmes on the HP-15C was to write down the keystrokes on paper, try them out with the calculator in the running mode, then after having confirmed the correctness punch in the keystrokes with the calculator in the programming mode. On device debugging was out of the question.
 
 Essentially, the HP-15C programming language is an assembly language. This assembly language is [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness): it can perform the same computations as the assembly language of a much more powerful 8-bit CPU like the 6502, which was used on popular home computers of the time, like the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64), the [Apple II](https://en.wikipedia.org/wiki/Apple_II), and the [BBC Micro](https://en.wikipedia.org/wiki/BBC_Micro).
 
@@ -209,7 +205,7 @@ IFTE(n ≤ 1,
 [ENTER] ['] FIB [STO]
 ```
 
-The above programme is a verbatim RPL implementation of the Fibonacci function. The statement `→ n` defines the local variable `n`. The `'` symbols delimit the function definition. The `<<` and `>>` delimit the programme. The ending key sequence `[ENTER] ['] FIB [STO]` saves the programme under the name `FIB`. We can run this programme to compute $F_{10} = 55$ by keying in `[USER] 10 FIB`.
+The above programme is a verbatim RPL implementation of the Fibonacci function. The statement `→ n` defines the local variable `n`. The `'` symbols delimit the function definition. The `<<` and `>>` delimit the programme. The ending key sequence <kbd>ENTER</kbd><kbd>'</kbd><kbd>F</kbd><kbd>I</kbd><kbd>B</kbd><kbd>STO</kbd> saves the programme under the name `FIB`. We can run this programme to compute $F_{10} = 55$ by keying in <kbd>USER</kbd><kbd>1</kbd><kbd>0</kbd><kbd>F</kbd><kbd>I</kbd><kbd>B</kbd>.
 
 The HP-28S has 32 KB of programme memory, which was more than adequate for the time. And armed with a powerful, functional language like the RPL, the HP-28S was an unbeatable pocket powerhouse in 1988. Think of it this way. Students working on a LISP programming class assignment back in 1988 would have wrote the programme on a large minicomputer kept at the college's computer centre, like the [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11) or the [VAX-8600](https://en.wikipedia.org/wiki/VAX_8000#VAX_8600), via a [VT100](https://en.wikipedia.org/wiki/VT100) terminal; most college students of the time could not afford an Apple [Mac](https://en.wikipedia.org/wiki/Macintosh) or an IBM [PC](https://en.wikipedia.org/wiki/IBM_Personal_Computer). But if you owned the HP-28S pocket calculator, you could have wrote that programme on the device, and you would have been saved yourself the hassle of having to walk in the snow to the [computer centre](https://bloximages.newyork1.vip.townnews.com/omaha.com/content/tncms/assets/v3/editorial/1/c9/1c9fd664-84b2-5a0e-a06a-cc9ea3596071/5c3f6dcbf01df.image.jpg?resize=1200%2C724) and of having to wait for a free terminal. This is a moot point today, but there is no denying that the HP-28S was an immensely powerful pocket computer in its day.
 
@@ -219,7 +215,7 @@ The HP Prime of 2013 comes with a brand new programming language, the PPL, and a
 
 PPL is a BASIC with Pascal-like syntax. The old name for PPL was HP BASIC, the descendant of the [HP Time-Shared BASIC](https://en.wikipedia.org/wiki/HP_Time-Shared_BASIC) on the HP-2000 minicomputer in the mid 1960s. Naturally, PPL has BASIC instincts: untyped variables; case insensitivity; the lack of pointers; the lack of user-defined types; and so on. But PPL adopted Pascal or ALGOL syntactic elements: no line numbers; required variable declarations; the use of the `;` statement terminator and the `:=` assignment operator; the `begin`-`end` block delimiters; and the like. In my view, HP missed a huge opportunity in 2013 by not adopting Python. In 2014, [MicroPython](http://micropython.org/) was released. It is a stripped-down version of Python designed for microcontrollers, which are far less capable than the monster CPU that powers the HP Prime. Today, school children round the world program in Python on microcontrollers like the [BBC micro:bit](https://www.microbit.org/). It was not until 2021 that a [beta version](https://edspi31415.blogspot.com/2021/05/hp-prime-firmware-update-beta-python.html) of the HP Prime firmware supported MicroPython.
 
-Since Python is still not fully supported at present, we shall focus on the PPL official language, here. Let us look at a slightly modified version of the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle) example from the HP manual for PPL. To enter the editor, press `[Shift][Program]` key combination to open the **Program Catalog**, and once there, tap the **New** onscreen button. This opens the **New Program** dialogue. In the **Name:** text box, type in `Sierpinski`, then tap the **OK** onscreen button. This creates a blank programme. Type in the following code.
+Since Python is still not fully supported at present, we shall focus on the PPL official language, here. Let us look at a slightly modified version of the [Sierpiński triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle) example from the HP manual for PPL. To enter the editor, press <kbd>Shift</kbd><kbd>Program</kbd> key combination to open the **Program Catalog**, and once there, tap the **New** onscreen button. This opens the **New Program** dialogue. In the **Name:** text box, type in `Sierpinski`, then tap the **OK** onscreen button. This creates a blank programme. Type in the following code.
 
 ```Pascal
 export ShowSier() // show Sierpinski triangle on screen
@@ -245,11 +241,11 @@ begin
 end;
 ```
 
-Check the syntax of the programme by pressing the onscreen button **Check**. When you see the `No errors in the program` message, press the **OK** onscreen button to dismiss the message dialogue. Press the `[🏠]` home key to exit the editor and return to the running mode. To run this programme, the `[🧰]` toolbox key, press the **User** onscreen button, tap the **Sierpinski** onscreen menu item (the programme), then tap the **ShowSier** onscreen menu item (the procedure). Now, press the `[Enter]` key. The following image of the Sierpiński triangle appears on the screen.
+Check the syntax of the programme by pressing the onscreen button **Check**. When you see the `No errors in the program` message, press the **OK** onscreen button to dismiss the message dialogue. Press the <kbd>🏠</kbd> home key to exit the editor and return to the running mode. To run this programme, the <kbd>🧰</kbd> toolbox key, press the **User** onscreen button, tap the **Sierpinski** onscreen menu item (the programme), then tap the **ShowSier** onscreen menu item (the procedure). Now, press the <kbd>Enter</kbd> key. The following image of the Sierpiński triangle appears on the screen.
 
 ![Sierpiński triangle](../figures/HPcalculators/Sierpinski.jpg)
 
-Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, and left corners. The initial location of the pixel can be anywhere inside the triangle, so we chose the convenient top corner $(160, 0)$. Depending on the value of `r` in each iteration, the pixel hops halfway toward that chosen corner, because of the $÷2$ in the location expression. The `wait(0.001)` statement pauses each iteration for $1\ ms$, so the self-similar fractal emerges gradually. If you just want to see the final image, comment out this statement. Without the final `wait` statement to pause the programme, the final image will disappear from the screen immediately after the programme completes execution. While the programme is running, all keys, except the `[On]` key, are locked out. To interrupt a running programme, press the `[On]` key.
+Named in honour of the Polish mathematician [Wacław Sierpiński](https://en.wikipedia.org/wiki/Wac%C5%82aw_Sierpi%C5%84ski), the Sierpiński triangle is a [fractal](https://en.wikipedia.org/wiki/Fractal_curve). Being an algorithm from [chaos theory](https://en.wikipedia.org/wiki/Chaos_theory), there is a repetitive random element in the code. The `for` loop repeats $100,000$ times and shows a black pixel at a location on screen at each iteration. Smaller number of iterations produce a sparser image, and larger number of iterations produce a denser image. The pixel's location is determined by the random variable `r`, which ranges over $[1, 3]$. The values $1$, $2$, and $3$ represent top, right, and left corners. The initial location of the pixel can be anywhere inside the triangle, so we chose the convenient top corner $(160, 0)$. Depending on the value of `r` in each iteration, the pixel hops halfway toward that chosen corner, because of the $÷2$ in the location expression. The `wait(0.001)` statement pauses each iteration for $1\ ms$, so the self-similar fractal emerges gradually. If you just want to see the final image, comment out this statement. Without the final `wait` statement to pause the programme, the final image will disappear from the screen immediately after the programme completes execution. While the programme is running, all keys are locked out, except the <kbd>On</kbd> key, which can be used to interrupt the running programme.
 
 # COLLECTION
 
@@ -403,7 +399,7 @@ The DM41X boasts full software compatibility with HP's legendary HP-41CX. That m
 
 The high-contrast, black-and-white LCD display has a $400×240$ resolution, which is 20% larger than the HP Prime's colour LCD touchscreen. The large display allows the DM41X to show all four stack registers at once, whereas the HP-41C's display can show only one row of 12 characters. And the DM41X has a modern menu-driven settings screen. When powered off, the DM41X displays a user-installable black-and-white image, without chewing up the battery. Being true to the HP-41C heritage, however, the DM41X offers no graphing capabilities, not withstanding a large screen.
 
-But because the DM41X shares the chassis with the earlier [DM42](https://www.swissmicros.com/product/dm42), which is modelled upon the Pioneer Series HP-42S, the key layouts of the DM41X resembles that of the HP-42S, and not the HP-41C. Also, the DM41X keys have a flat profile, unlike the HP-41C's wedge-profiled keys. Although the DM41X's keys have an HP-like tactile feel, its `[ENTER]` key feels a bit flimsy, compared to the HP-41C. The body of the DM41X is made of steel, so despite being only a third as thick as the HP-41C, the DM41X feels heftier.
+But because the DM41X shares the chassis with the earlier [DM42](https://www.swissmicros.com/product/dm42), which is modelled upon the Pioneer Series HP-42S, the key layouts of the DM41X resembles that of the HP-42S, and not the HP-41C. Also, the DM41X keys have a flat profile, unlike the HP-41C's wedge-profiled keys. Although the DM41X's keys have an HP-like tactile feel, its <kbd>ENTER</kbd> key feels a bit rickety, compared to the HP-41C. The body of the DM41X is made of steel, so despite being only a third as thick as the HP-41C, the DM41X feels heftier.
 
 Who should buy the SwissMicros DM41X calculator? Well, a better question is, "Who should buy *all* devices made by SwissMicros?". The answer is simple: anyone who admires the quality and the functionality of HP RPN calculators, especially the classics—the HP-41CX, the HP-42S, or the HP-15C—should buy SwissMcros calculators—any model, really. SwissMicros represents functionality, performance, quality, and passion.
 

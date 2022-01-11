@@ -23,7 +23,7 @@ Since we use the $\TeX$ typesetter when we publish papers, we are already well a
 
 ![Keyboard dialogue](../figures/Writing/KeyboardTextPanel.jpg)
 
-Press the `[+]` button at the bottom to create a new pair. Enter `\alpha` in the ***Replace*** column. Next, press the `TAB` key to move to the ***With*** column. To enter the 𝛼 symbol in this column, we must open the **Character Viewer** shown in the screenshot below. There, navigate to the ***Maths Symbols*** category, scroll down toward the bottom of the symbols page, and select the 𝛼 symbol, which is named `MATHEMATICAL ITALIC SMALL ALPHA`. Double clicking on the 𝛼 symbol inserts it into the column. Now, press the `ENTER` key.
+Press the <kbd>+</kbd> button at the bottom of the dialogue to create a new pair. Enter `\alpha` in the ***Replace*** column. Next, press the <kbd>TAB</kbd> key to move to the ***With*** column. To enter the 𝛼 symbol in this column, we must open the **Character Viewer** shown in the screenshot below. There, navigate to the ***Maths Symbols*** category, scroll down toward the bottom of the symbols page, and select the 𝛼 symbol, which is named `MATHEMATICAL ITALIC SMALL ALPHA`. Double clicking on the 𝛼 symbol inserts it into the column. Now, press the <kbd>ENTER</kbd> key.
 
 ![Character Viewer](../figures/Writing/CharacterViewer.jpg)
 
