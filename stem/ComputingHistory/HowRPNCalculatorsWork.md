@@ -122,13 +122,13 @@ To create a programme on a programmable RPN calculator like the HP-15C, you pres
 
 As an example, we shall write the programme to convert $°F$ to $°C$ , using the well-known conversion formula $C = \frac{5}{9}(F - 32)$.
 
-<kbd>g</kbd><kbd>P/R</kbd>
-<kbd>f</kbd><kbd>PRGM</kbd>
-<kbd>f</kbd><kbd>LBL</kbd><kbd>C</kbd>
-<kbd>3</kbd><kbd>2</kbd><kbd>-</kbd>
-<kbd>5</kbd><kbd>×</kbd>
-<kbd>9</kbd><kbd>÷</kbd>
-<kbd>g</kbd><kbd>RTN</kbd>
+<kbd>g</kbd><kbd>P/R</kbd><br/>
+<kbd>f</kbd><kbd>PRGM</kbd><br/>
+<kbd>f</kbd><kbd>LBL</kbd><kbd>C</kbd><br/>
+<kbd>3</kbd><kbd>2</kbd><kbd>-</kbd><br/>
+<kbd>5</kbd><kbd>×</kbd><br/>
+<kbd>9</kbd><kbd>÷</kbd><br/>
+<kbd>g</kbd><kbd>RTN</kbd><br/>
 <kbd>g</kbd><kbd>P/R</kbd>
 
 The above keystrokes store the temperature conversion programme in the label `C`. Let us analyse each keystroke.
