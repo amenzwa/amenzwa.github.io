@@ -1,5 +1,5 @@
 ---
-title: "Overview of Artificial Intelligence"
+title: "How Artificial Intelligence Works"
 tags:
   - mathjax
 use_math: true
