@@ -9,7 +9,7 @@ use_math: true
 
 In this article, I present a high-level overview of artificial intelligence (AI). I describe what constitutes AI, its inner workings, its uses, and its social and ethical implications.
 
-# PARADIGMS
+# APPROACHES
 
 There are two main AI paradigms: connectionist and rule-based. *Connectionist* AI is commonly known as neural networks. *Rule-based* AI is traditionally associated with the LISP programming language.
 
@@ -53,14 +53,6 @@ Another substantial advantage of modern DLs over classic BPs is feature extracti
 
 For almost a quarter century, our shopping habits, social media propensities, blogging activities, email communications, cloud-borne personal data—just about every aspect of our lives, both personal and professional—have been collected, analysed, categorised, tracked, and predicted by Internet Giants' DLs. Despite their significance in modern society, however, DLs are but a small part of a much broader category of powerful modern methods known collectively as [machine learning](https://en.wikipedia.org/wiki/Machine_learning) (ML) algorithms, which in turn are a subfield within AI.
 
-# TECHNIQUES
-
-classic techniques
-
-modern techniques
-
-data collection, analysis, cleansing
-
 # APPLICATIONS
 
 classification
@@ -73,9 +65,17 @@ control
 
 composition—text, music, painting
 
-# ETHICS
+# ALGORITHMS
 
-dangers
+classic techniques
+
+modern techniques
+
+data collection, analysis, cleansing
+
+# AWARENESS
+
+dangers—privacy, liberty, life, democracy
 
 ethical guidelines
 
