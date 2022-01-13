@@ -75,9 +75,9 @@ data collection, analysis, cleansing
 
 # AWARENESS
 
-dangers—privacy, liberty, life, democracy
+dangers—lack of moral and ethical grounding, inability to explain discriminatory decisions
 
-ethical guidelines
+ethical implications—privacy, liberty, life, democracy
 
 regulations
 

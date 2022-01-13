@@ -272,7 +272,7 @@ Below, I present my meagre collection of HP RPN programmable scientific calculat
   - HP-15C (1982)—more advanced than the HP-11C; engineers' favourite
   - HP-28S (1982)—the original CAS-capable graphing HP calculator; beware the broken battery compartment cover
   - HP-32S (1988)—the first of the Pioneer Series; continuation of the HP-15C; brilliant design
-  - HP-42S (1988)—continuation of the HP-41C; more advanced than the HP-32S; basic graphing
+  - HP-42S (1988)—programme compatible with HP-41C but without any expandability; more advanced than the HP-32S; basic graphing
   - HP-48SX (1990)—continuation of the HP-28S; the object of 1990s engineering students' desires
   - HP 35s (2007)—35th anniversary model; superb workhorse; nostalgic appeal
   - HP Prime (2013)—the latest, the most advanced CAS-capable graphing HP calculator; ideal for modern STEM students
@@ -303,7 +303,7 @@ The HP-41C's vintage-style plastic body is more bulky and less sturdy, compared 
 
 ## *Voyager*
 
-In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C, even now, is considered a milestone amongst HP calculators. It was the flagship model in its day. Its claim to fame was the external programme memory in the form of magnetic strips. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
+In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C, even now, is considered a milestone amongst HP calculators. It was the flagship model in its day. Its claim to fame was the expandability. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
 
 The Voyager Series includes a business RPN calculator called the HP-12C. It was introduced 1981 at 135 USD. It is undoubtedly the most popular business calculator in history. It is still in production. I bought my HP-12C in 1998. But I did not list it here, because the focus of this article is on scientific RPN calculators.
 
@@ -335,9 +335,11 @@ I do believe the HP-16C was untimely. Its bit-twiddling features would have been
 
 ## ***Pioneer***
 
-The Pioneer Series began with the inimitable HP-32S and the more advanced HP-42S. The HP-32S is very similar in capability to the revered HP-15C, and the HP-42S is close to the respected, but older, HP-41C. The HP-42S is a great device, but I am not attracted to it, mainly because I prefer the simpler HP-32S, which I have owned and adored for decades.
+The Pioneer Series began with the inimitable HP-32S and the more advanced HP-42S. The HP-32S is very similar in capability to the much-loved HP-15C, and the HP-42S is the revival of the revered HP-41C. The HP-42S is a great device; it has basic graphing functionality, and it is programme compatible with the HP-41C, which was perhaps the best selling HP calculator of all times. But the HP-42S has none of the expandability of the HP-41C, and there is no way for the HP-42S to load HP-41C programmes, neither from the expansion cards nor the storage strips. Despite the sophistication of the HP-42S, I still prefer the simpler HP-32S, which I have owned and adored for decades.
 
 The Pioneer Series includes the HP-10B (RPN) and the HP-17B (non-RPN) business calculators, the HP-20S (non-RPN), the HP-22S (non-RPN), and the HP-27S (non-RPN) scientific calculators, as well. But I could not be bothered with them.
+
+By the way, although the Pioneer Series calculators do not have the HP-41C's expandability, they all have a built-in IR transmitter, which can be used to print programme source code and results to a thermal printer, like the [HP 82240](https://commerce.hpcalc.org/82240b.php).
 
 ### HP-32S (1988)
 
@@ -349,7 +351,7 @@ I bought the HP-32S, because I liked its crisp, $5×7$ matrix display, its 32 KB
 
 ## *Clamshell*
 
-The clamshell line includes the HP-18C non-RPN business calculator and the HP-28C and the HP-28S RPN scientific calculators. They all have the RPL programming language. But whereas the HP-18C uses the RPL for only system programming, the HP-28 models provide user-level RPL programming. Incidentally, RPL is also supported on the HP-48 graphic calculator of 1990, a descendant of the HP-28.
+The clamshell line includes the HP-18C non-RPN business calculator and the HP-28C and the HP-28S RPN scientific calculators. They all have the RPL programming language. But whereas the HP-18C uses the RPL for only system programming, the HP-28 models provide user-level RPL programming. Incidentally, RPL is also supported on the HP-48 graphic calculator of 1990, a descendant of the HP-28. All clamshell models have IR interface.
 
 ### HP-28S (1988)
 
@@ -399,7 +401,7 @@ The DM41X boasts full software compatibility with HP's legendary HP-41CX. That m
 
 The high-contrast, black-and-white LCD display has a $400×240$ resolution, which is 20% larger than the HP Prime's colour LCD touchscreen. The large display allows the DM41X to show all four stack registers at once, whereas the HP-41C's display can show only one row of 12 characters. And the DM41X has a modern menu-driven settings screen. When powered off, the DM41X displays a user-installable black-and-white image, without chewing up the battery. Being true to the HP-41C heritage, however, the DM41X offers no graphing capabilities, not withstanding a large screen.
 
-But because the DM41X shares the chassis with the earlier [DM42](https://www.swissmicros.com/product/dm42), which is modelled upon the Pioneer Series HP-42S, the key layouts of the DM41X resembles that of the HP-42S, and not the HP-41C. Also, the DM41X keys have a flat profile, unlike the HP-41C's wedge-profiled keys. Although the DM41X's keys have an HP-like tactile feel, its <kbd>ENTER</kbd> key feels a bit rickety, compared to the HP-41C. The body of the DM41X is made of steel, so despite being only a third as thick as the HP-41C, the DM41X feels heftier.
+But because the DM41X shares the chassis with the earlier [DM42](https://www.swissmicros.com/product/dm42), which is modelled upon the Pioneer Series HP-42S, the key layouts of the DM41X resembles that of the HP-42S, and not the HP-41C. Also, the DM41X keys have a flat profile, unlike the HP-41C's wedge-profiled keys. Although the DM41X's keys have an HP-like tactile feel, its <kbd>ENTER</kbd> key feels a bit rickety, compared to the HP-41C. The body of the DM41X is made of steel, so despite being only a third as thick as the HP-41C, the DM41X feels heftier. The DM41X, like its predecessor DM42, have an IR interface.
 
 Who should buy the SwissMicros DM41X calculator? Well, a better question is, "Who should buy *all* devices made by SwissMicros?". The answer is simple: anyone who admires the quality and the functionality of HP RPN calculators, especially the classics—the HP-41CX, the HP-42S, or the HP-15C—should buy SwissMcros calculators—any model, really. SwissMicros represents functionality, performance, quality, and passion.
 
