@@ -29,7 +29,7 @@ So, by convention, the $o_i$ is an upstream neuron $n_i$'s output signal that ar
 
 ![McCulloch-Pitts neuron](../figures/AI/McCullochPitts.jpg)
 
-Neurons are assembled into a neural network by arranging them in layers. Classic NNs typically used one or two layers of neurons, along with their weighted connections, as shown below. Learning involves presenting a list of input pattern vectors to the network and then modifying its connection weights in accordance with how well the network recognises each pattern. This weight adjustment method is referred as the *learning algorithm*. The final weight values produced by the algorithm encode the salient features present in the training patterns. A *feature* is an entity's distinctive attribute that can be represented compactly. It could be breadth, curvature, texture, colour, brightness, timbre, position, orientation—anything the network can use reliably to identify the entity in the context of the problem.
+Neurons are assembled into a neural network by arranging them in layers. Classic NNs typically used one or two layers of neurons, along with their weighted connections, as shown below. Learning involves presenting a list of input pattern vectors to the network and then modifying its connection weights in accordance with how well the network recognises each pattern. This weight adjustment method is referred as the *learning algorithm*. The final weight values produced by the algorithm encode the salient features present in the training patterns.
 
 ![neural network](../figures/AI/NeuralNetwork.jpg)
 
@@ -65,7 +65,7 @@ Most folks today are unaware that there was a AI Mini Ice Age during the mid 199
 
 ## ***deep learning***
 
-Then came the age of Internet Giants—the early 2000s. Massive, simultaneous advances in computing power, storage capacity, network connectivity, graphics technology, and software techniques conspired to create the fastest growth in the history of human invention. The Web came of age. Online shopping became the norm. Billion-user social media platforms became a reality. The Internet Giants saw gold in the users' private data, which they procured by giving away free online services. [Big data](https://en.wikipedia.org/wiki/Big_data) was born. By 2010s, everything converged: massive amounts of collected data, advances in NN algorithms, huge rise in processing power. It was in this Era of Data that people began recognising the true potential of BP, or rather its descendant—[deep learning](https://en.wikipedia.org/wiki/Deep_learning) (DL).
+Then came the age of Internet Giants—the early 2000s. Massive, simultaneous advances in computing power, storage capacity, network connectivity, graphics technology, and software techniques conspired to create the fastest growth in the history of human invention. The Web came of age. Online shopping and social media became the norm. Billion-user platforms became commonplace. The Internet Giants saw gold to be mined in the private data that the users willingly exchanged for free access to frivolous social media services. [Big data](https://en.wikipedia.org/wiki/Big_data) was thus born. By 2010s, everything converged: massive amounts of collected data, advances in NN algorithms, huge rise in processing power. It was in this Era of Data that people began recognising the true potential of BP, or rather its descendant—[deep learning](https://en.wikipedia.org/wiki/Deep_learning) (DL).
 
 Whereas the classic BPs of the 1990s could only use two or three layers of neurons due to hardware limitations, the DLs of the 2010s routinely employ many layers and many different types of neurons. Today, home users of DLs train their networks on powerful, but inexpensive, graphics cards, like the [nVIDIA RTX](https://www.nvidia.com/en-us/design-visualization/desktop-graphics/) so as to exploit the GPU's built-in support for parallel matrix operations across tens of thousands of cores. The "deep" in deep learning refers to the many layers of neurons, as shown below in grey boxes.
 
@@ -79,9 +79,11 @@ Over the past quarter century, our shopping habits, social media propensities, b
 
 There are three broad categories of AI applications: approximating, classifying, and forecasting. Each category has multiple subcategories, which we shall examine, below.
 
-Just as there are applications, there are appliers, the users of AI: the practitioners. Researchers invent AI algorithms. AI software designers use those algorithms to build industry-scale systems. Coders use published libraries to implement pieces of code that are composed into large systems. Companies employ researchers, designers, and coders to exploit AI. In terms of skills, it does not take much to become an AI practitioner: calculus, linear algebra, probability, and statistics. But an AI practitioner earns his keep by analysing and understanding complex, dynamic behaviours of large systems from the massive amounts of collected raw data. That is difficult, even for the skilled and the experienced.
+AI applications exists because there are users. Note that by "user", I mean those who use the AI technology: researchers, designers, and coders. Researchers invent AI algorithms. AI software designers use those algorithms to design large, industrial systems. Coders use published libraries to implement small software components that are composed into large systems. Companies employ researchers, designers, and coders to exploit AI for profit.
 
-The Internet Giants who exploit AI technologies often state that the real beneficiaries of AI are the members of the public. A closer look, however, reveals that the public is the victim.
+I use the term "practitioner" to refer to researchers and designers. Some practitioners are coders as well, but not all coders are practitioners. In terms of skills, it does not take much to become an AI practitioner: calculus, linear algebra, probability, statistics—run-of-the-mill undergraduate subjects in STEM. But an AI practitioner earns his keep by analysing the massive amounts of collected raw data so as to understand the complex, dynamic behaviours of large systems. That bit is hard, even for the skilled and the experienced.
+
+The Internet Giants who exploit AI technologies often puff that the true beneficiaries of AI are the members of the public. A closer look, however, reveals that the public is their victim.
 
 ## *approximating*
 
@@ -95,9 +97,9 @@ In such situations, NNs can efficiently learn to approximate the complex behavio
 
 A variant of classifying is *clustering*, where we do not know the input classes, a priori. Clustering can be used as a preprocessing stage: a representative subset of the unknown data set can clustered to discover the number of classes present in the data, for example. Traditional, $k$-means clustering technique can solve this problem, but it requires the user to select the total number of classes as a limit and it falters when the number of input samples are extremely large. An unsupervised NN algorithm, like Kohonen's SOM, can solve this problem much more efficiently, and without any user intervention. The output of SOM is a 2D projection of the $n$-dimensional input data set.
 
-Another variant of classifying is *identifying*, for example, to identify the faces in a photograph or to identify a person by his voice. Rosenblatt's Perceptron was perhaps the first practical system capable of identifying individual English letters from images.
+Another variant of classifying is *identifying*, for example, to identify a person by his fingerprint or his face. Rosenblatt's Perceptron was perhaps the first practical system capable of identifying individual English letters from images. And, of course, all modern mobile phones now have fingerprint and face biometric authentication capabilities.
 
-Still another variant of classifying is *recognising*: text recognition, speech recognition, and so on. Recognition is much more difficult than identification. Whereas a computer can identify the letter "a" in an image or a phoneme "a" in an audio clip relatively easily, but recognising the word that comprises several letters or an utterance containing multiple phonemes is orders of magnitude harder for the computer. This difficulty is due to context dependency. To recognise a word, the computer must not only identify the constituent letters, it must also recognise their relationships within the word. In the 1980s, several researchers, Kohonen, Grossberg, LeCun, and others, invented NNs capable of simple speech recognition. Those systems required lots of manual preprocessing of audio. Today, however, DL networks can perform sophisticated speech recognition, with little or no preprocessing.
+Yet another variant of classifying is *recognising*: text recognition, speech recognition, face recognition, and so on. Recognition is much more difficult than identification. Whereas a computer can identify the letter "a" in an image or a phoneme "a" in an audio clip relatively easily, but recognising the word that comprises several letters or an utterance containing multiple phonemes is orders of magnitude harder for the computer. This difficulty is due to context dependency. To recognise a word, the computer must not only identify the constituent letters, it must also recognise their relationships within the word. In the 1980s, several researchers, Kohonen, Grossberg, LeCun, and others, invented NNs capable of simple speech recognition. Those systems required lots of manual preprocessing of audio. Today, however, DL networks can perform sophisticated speech recognition, with little or no preprocessing.
 
 Note that NNs, despite their powers, are incapable of explaining how and why they produced the results. There are applications where that information is necessary. For example, if the bank denies a loan, the bank must justify its actions and explain to the applicant that the actions comply with the law. The intractability of large NNs precludes detailed analyses.
 
@@ -107,19 +109,37 @@ Note that NNs, despite their powers, are incapable of explaining how and why the
 
 The massive amounts of data now available makes forecasting possible, even if it is still not an easy problem. If forecasting were easy, we would not suffer from hurricanes, tsunamis, earthquakes, volcano eruptions, and other "unforeseen" natural disasters. Such problems are difficult, even for NNs, because they are chaotic. A chaotic system, like a storm, is not random. A storm's present behaviour can be analysed using deterministic physical laws, without resort to randomness. But its behaviour is so sensitive to the initial conditions that it is impossible to predict the exact path of the storm. This is why weather forecasting is as much an art as it is a science. NNs are no panacea to solving chaotic problems.
 
-But NNs can indeed be used to make predictions in deterministic systems, such as in the *control* of robots and other autonomous vehicles. Control systems are used to govern the dynamic behaviours of mechanical systems: from a two-limb, laboratory robot arm to a large, automated factory floor; from a self-driving car to a spacecraft reentry system. In large, complex applications, the control system cannot simply react to the current conditions; it must be capable of learning from past events, predicting future events, and reacting to novel events that it has never seen before. It is extremely difficult to built into the system this level of flexibility, using conventional techniques. NN-based systems, though, are capable of orders of magnitude greater flexibility.
+But NNs can indeed be used to make reliable predictions in deterministic *control* systems, such as those that operate robots and autonomous vehicles. Control systems are used to govern the dynamic behaviour of mechanical systems: from a two-limb, laboratory robot arm to a large, automated factory; from a self-driving car to a spacecraft reentry guidance system. In large, complex applications, the control system cannot simply react to the current conditions as they emerge; it must be capable of learning from past events, predicting possible future events and planning for them, and reacting to novel events that it has never seen before. It is well-neigh impossible to built conventional systems with that level of flexibility. NN-based systems, though, are capable of adapting to such eventualities.
 
-A more recent use of NNs is in *composition*. It is now possible to train an NN on the text of a dead, famous author, and have the network generate new writings in the style of that author. Similarly, new musical compositions and new paintings can be generated, automatically. [Deepfakes](https://youtu.be/T76bK2t2r8g) that permeate social media today are a compositional, as well. Still in their nascent stage, they have already demonstrated their ability to fool the gullible.
+A more recent use of NNs is in *composition*. It is now possible to train an NN on the works of a dead, famous author, and have the network generate new text in his writing style. Similarly, new musical compositions and new paintings can be generated by NNs. [Deepfakes](https://youtu.be/T76bK2t2r8g) that permeate social media today are another example. Though still in its infancy, this technology has already demonstrated its ability to fool the gullible.
 
 # ALGORITHMS
 
-categories—statistics, connectionist, hybrid, etc.
+There are many variants of NN architectures and algorithms, and there are endless varieties of non-NN AI techniques. But as I mentioned above, this article is not a survey of the state-of-the-art; it focuses on the fundamental NN concepts that will enable you to comprehend how modern AI work. To that end, I describe in this section two classic networks, one unsupervised and the other supervised, and a handful of commonly used DL architectures. I also explain below a few important feature extraction techniques.
 
-classic techniques—SOM, BP, analogue VLSI
+## *feature extraction*
 
-modern techniques—DL
+Classic networks that preceded DLs were shallow (a few layers) and narrow (a few neurons per layer). The limited size constrained their computational abilities, and they loads of manual assistance from the user. In particular, classic NNs were unable to handle raw data, like audio and image. The user must preprocess and transform the raw data into a form that the network can accept.
 
-data collection, analysis, cleansing—statistics, projection, DSP, DIP, wavelets
+Many NN algorithms expect input values to be normalised to fall within the open range $(0.0, 1.0)$. Merely normalising the inputs is insufficient; distinctive features in the raw data must first be extracted by preprocessing the data. A *feature* is an entity's distinctive attribute that can be represented compactly. It could be size, weight, curvature, edge, texture, colour, opacity, brightness, timbre, position, orientation, anything.
+
+A face identification network, for example, cannot be fed the raw image. Various digital image processing (DIP) techniques must be used to highlight the salient facial features, like forehead, eyes, nose, lips, ears, and so on, then distances must be measured between key points, such as inter-pupillary distance, nose ridge length, mouth width, etc. Then, only after these feature values have been normalised, can the network learn from the data. Similarly, for a speech recognition application, speech samples must first be preprocessed using digital signal processing (DSP) to segment and extract the phonemes, prosody, pitch, and myriad speech patterns, and normalise those values, before feeding them to the network. In fact, since speech comprehension is context sensitive, time dependance of the individual sounds must also be part of the feature set. Such speech-related processing is called natural language processing (NLP).
+
+In general, data preprocessing is a necessary step in all applications using classic NNs, and each technique involves highly specialised advanced techniques. For example, NLP, DSP, DIP, and other similar techniques, in those days, were deemed too advanced to be taught to undergraduate electrical engineering (EE) and computer science (CS) students. Suffice it to say, the biggest hurdle in using classic NNs were not the training algorithms, but the preprocessing techniques.
+
+Today, DLs have all but eliminated this hurdle. Many powerful feature extraction techniques have been developed over the past two decades. Typically, the first several layers of a DL are devoted to automatic feature extraction. Hence, DLs can now be implemented and trained by coders using a popular API, even without a background in AI theories and techniques. Just being able to use an API, however, does not make one an AI practitioner.
+
+## *unsupervised learning*
+
+???
+
+## *supervised learning*
+
+???
+
+## *deep learning*
+
+???
 
 # ALERTNESS
 
