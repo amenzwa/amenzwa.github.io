@@ -31,7 +31,7 @@ So, by convention, the $o_i$ is an upstream neuron $n_i$'s output signal that ar
 
 Neurons are assembled into a neural network by arranging them in layers. Classic NNs typically used one or two layers of neurons, along with their weighted connections, as shown below. Learning involves presenting a list of input pattern vectors to the network and then modifying its connection weights in accordance with how well the network recognises each pattern. This weight adjustment method is referred as the *learning algorithm*. The final weight values produced by the algorithm encode the salient features present in the training patterns.
 
-![multi-layer neural network](../figures/AI/NeuralNetwork.jpg)
+![neural network](../figures/AI/NeuralNetwork.jpg)
 
 The two main types of learning algorithms are the supervised and the unsupervised varieties. A *supervised* learning algorithm requires the user to create a set of target (desired output) patterns, one for each input pattern, whereas an *unsupervised* learning algorithm does not require target patterns.
 
@@ -131,11 +131,9 @@ Today, DLs have all but eliminated this hurdle. Many powerful feature extraction
 
 ## *unsupervised learning*
 
-Unsupervised learning is called as such, because it does not require the user to include in the training data the desired targets. Perhaps the best known unsupervised learning algorithm is Kohonen's self-organising map (SOM).
+Unsupervised learning is called as such, because it does not require the user to include in the training data the desired targets. Perhaps the best known unsupervised learning algorithm is Kohonen's self-organising map (SOM). In simple terms, SOM is an unsupervised clustering algorithm. Its neurons are organised in an $m × n$ grid, as shown below. The input is a set of normalised pattern vectors: $I = \{i\ |\ i\ \text{is a feature vector}\}$. A pattern vector's elements are the features extracted during the earlier preprocessing phase. A pattern with $D$ elements is, thus, a vector in a $D$-dimensional vector space: $i \in R^D$. Every element of the input pattern vector is connected to every neuron via a weighted connection. Hence, a neuron $j$'s' input weights form a vector $w_j$. Obviously, the lengths of the vectors $i$ and $w_j$ are the same: $|i| = |w_j| = D$.
 
-In simple terms, SOM is an unsupervised clustering algorithm. Its neurons are organised in an $m × n$ grid, as shown below. The input is a set of normalised pattern vectors: $I = \{i\ |\ i\ \text{is a feature vector}\}$. A pattern vector's elements are the features extracted during the earlier preprocessing phase. A pattern with $D$ elements is, thus, a vector in a $D$-dimensional vector space: $i \in R^D$. Every element of the input pattern vector is connected to every neuron via a weighted connection. Hence, a neuron $j$'s' input weights form a vector $w_j$. Obviously, the lengths of the vectors $i$ and $w_j$ are the same: $|i| = |w_j| = D$.
-
-![Self-Organising Map](../figures/AI/SelfOrganisingMap.jpg)
+![self-organising map](../figures/AI/SelfOrganisingMap.jpg)
 
 All weight values in the network are initialised to small random values. During the learning phase, the network computes the distance $dist(i, w_{j})$ between an input pattern $i$ and the weight vector $w_j$ of all neurons. There are many distance measures, but a common choice is the [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance): $dist(i, w_j) = \sqrt{(i - w_j)^2}$. The network then chooses the neuron $n_c$, the winner, whose weights are the closest to the input pattern, and updates the weights $w_c$ with a tiny value that is proportional to the distance $d_c$, so as to nudge $w_c$ a little closer to $i$, but all other neurons' weights are left untouched. When this select-and-update process is completed for all patterns in the input data set, the network is said to have completed one *cycle* of learning. As learning progresses cycle by cycle, the pattern-neuron associations become stronger and more stable. A typical SOM requires tens of thousands of cycles to learn a sizeable data set.
 
@@ -151,7 +149,13 @@ In its day, SOM's powerful clustering abilities were used to analyse the local s
 
 Rumelhart's Backpropagation (BP) is, without doubt, the best known supervised learning algorithm. BP extends Rosenblatt's Perceptron by employing non-linear neurons in multiple layers. A classic BP network comprises three layers—input layer, hidden layer, and output layer—as shown below. For this reason, BP is sometimes referred to as a multi-layer Perceptron network. The input-layer comprises dummy neurons; they are there only to accept input vectors. The weights of the hidden-layer neurons collectively, and cumulatively, form internal representations of the input vectors. The weights of the output-layer neurons map internal representations to output values.
 
-![multi-layer neural network](../figures/AI/NeuralNetwork.jpg)
+![backpropagation](../figures/AI/Backpropagation.jpg)
+
+In keeping with the supervised learning tradition, BP's training data contains the input vectors and the associated desired outputs, the target vectors. Initially, all the weight are set to small, random values. Training comprises two distinct phases: forward pass and backward pass.
+
+In the *forward pass*, each input vector is fed to the network, and the network propagates the input toward the output, each neuron computing its output value: $o_j = f_j(i_j)$, where the transfer function $f_j$ is defined as $f_j(x) = 1 / (1 + e^{-x})$.
+
+When an input vector reaches the output layer, the *backward pass* commences. First, the error associated with the current input vector is computed: $E = ∑𝛿^2_j$, where $𝛿_j = t_j - o_j$. Learning occurs when this error is propagated backward from the output layer toward the input layer, and the weights are updated in such a way as to reduce this error.
 
 ## *deep learning*
 
