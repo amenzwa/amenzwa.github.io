@@ -91,7 +91,7 @@ I use the term "practitioner" to refer to researchers and designers. Some practi
 
 In such situations, NNs can efficiently learn to approximate the complex behaviour of difficult problems. Both conventional algorithms and NNs yield approximate solutions that are acceptable, but not necessarily optimal. But NNs are computationally more efficient.
 
-## ***classifying***
+## *classifying*
 
 *Classifying* means the AI algorithm organises its input patterns into predefined classes. An instance of classification problem is sorting bananas into A, B, or C grades, in accordance with their cultivar, grower, shape, size, weight, colour, and ripeness. A conventional system might cast this as a multi-dimensional constraint satisfaction problem, a rather hard problem to solve. An NN-based system can solve this problem with ease and speed.
 
@@ -121,7 +121,7 @@ There are many variants of NN architectures and algorithms, and there are endles
 
 Before we delve into the algorithms, I would like to digress into the matter of implementation. Modern implementations of NN algorithms use first-order tensors (vectors), second-order tensors (matrices), and higher-order tensors. Conventionally, 1D data (audio signal, seismic signal, etc.) are represented with column vectors, 2D data (photographs, satellite images, etc.) are represented with matrices, and 3D data (volumetric simulation state, CT scan, etc.) are represented with tensors. Hence, a data set of 1D vectors forms a 2D matrix, a data set of 2D matrices forms a 3D tensor, and a data set of 3D tensors form a 4D tensor. Furthermore, the weights $w_{ji}$ of a layer of neurons is represented with a matrix, and multiple layers of weights thus form a 3D tensor.
 
-Say, we have a layer of neurons $n_j$, whose weights $w_{ji}$ are represented with the matrix $W$. The row vector $W_j$ represents the weights associated with the connections coming from all the neurons $n_i$ in the upstream layer into the single neuron $n_j$ in the current layer. The scalar $W_{ji}$ is the weight associated with a single connection. So, we may compute the net input $i_j = ∑_i w_{ji} o_i$ of all the neurons $n_j$ in the current layer with a single matrix multiplication: $i = W\, o$.
+Say, we have a layer of neurons $n_j$, whose weights $w_{ji}$ are represented with the matrix $W$. The row vector $W_j$ represents the weights associated with the connections coming from all the neurons $n_i$ in the upstream layer into the single neuron $n_j$ in the current layer. The scalar $W_{ji}$ is the weight associated with a single connection. So, we may compute the net inputs of all the neurons $n_j$ in the current layer with a single matrix multiplication: $i = W\, o$.
 
 Let us look at a concrete example. If the upstream layer has 3 neurons and the current layer has 2, as shown in the figure below, then the outputs of the neurons in the upstream layer are represented with a $3 × 1$ vector $o$, the weights between the two layers are represented with a $2 × 3$ matrix $W$, and the net inputs of the neurons in the current layer are represented with a $2 × 1$ vector $i$.
 
