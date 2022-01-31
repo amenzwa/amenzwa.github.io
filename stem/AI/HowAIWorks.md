@@ -250,4 +250,36 @@ Lastly, the public must recognise that the founders and directors of Internet Gi
 
 ## *resources*
 
-for current and aspiring practitioners
+The resources listed here are for current and aspiring practitioners. To become a proficient and conscientious practitioner, one must first study the fundamental concepts from theory books, and thereafter progress to practice books. The books below are listed in that approximate order, classic works first, followed by modern texts.
+
+### CLASSIC TEXTS
+
+- *[Neurocomputing Foundations of Research](https://www.amazon.com/Neurocomputing-Foundations-Research-v-1/dp/0262010976/ref=sr_1_1?crid=XVY9I1QLVB8Q&keywords=Neurocomputing+Foundations+of+Research&qid=1643658723&s=books&sprefix=neurocomputing+foundations+of+research%2Cstripbooks%2C28&sr=1-1)*, Anderson
+  - This is the definitive compendium of neuro computing, circa 1988. In the late 1980s, there were many interesting ideas floating about in academia. This collection of papers paints a vivid picture of that fertile landscape, and it should be read by a serious practitioner, for that reason. Depressingly, every modern text on neuro computing is just a creative rephrasing of deep learning.
+- *[Introduction to Artificial Neural Systems](https://www.amazon.com/Introduction-to-Artificial-Neural-Systems/dp/B01N5OC7NB/ref=sr_1_1?crid=29P7Q4KXDLQPE&keywords=zurada+Artificial+Neural+Systems&qid=1643658667&s=books&sprefix=zurada+artificial+neural+systems%2Cstripbooks%2C34&sr=1-1)*, Zurada
+  - Written by an electrical engineering professor, this text presents neuro computing from the perspective of circuits. There is no clearer, simpler, better text on neuro computing for engineers. Its matrix-oriented presentation is the precursor to the modern tensor notation.
+
+### MODERN TEXTS
+
+- *[The Deep Learning Revolution](https://www.amazon.com/Deep-Learning-Revolution-audiobook/dp/B07MM8F42R/ref=sr_1_1?crid=1QVLDREHD0F5Z&keywords=The+Deep+Learning+Revolution&qid=1643658890&s=audible&sprefix=the+deep+learning+revolution%2Caudible%2C34&sr=1-1)*, Sejnowski
+  - Neuro computing researchers can be grouped into three generations: 1950s to 1970s; 1980s to 2000s; and 2010s to present. Rosenblatt was from the first generation, Rumelhart from the second, and all modern practitioners are from the third. Sejnowski, a contemporary of Rumelhart, is from the second generation—one of the pioneers who revived neuron computing from its ashes. His presentation of deep learning is full of historical details, and it is one of the very few books on the subject that can be read by non-STEMers.
+- *[Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618/ref=sr_1_1?keywords=deep+learning+goodfellow&qid=1643659040&sprefix=Deep+Learning+goodfe%2Caps%2C32&sr=8-1)*, Goodfellow
+  - This is a comprehensive, modern text on neuro computing. It is suited to undergraduate and graduate students specialising in the subject.
+
+### FEATURE EXTRACTION
+
+- *[Digital Signal Processing](https://www.amazon.com/Digital-Signal-Processing-Alan-Oppenheim/dp/0132146355/ref=sr_1_3?crid=1AZ3QBW3H6U64&keywords=oppenheim+Digital+Signal+Processing&qid=1643661034&sprefix=oppenheim+digital+signal+processing%2Caps%2C38&sr=8-3)*, Oppenheim
+  - There are loads of DSP books, given that the subject has been around since the 1950s. But this is the classic text on DSP.
+- *[Digital Image Processing](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/9353062985/ref=sr_1_2?crid=1A9S47RTQNB7K&keywords=gonzalez+Digital+Image+Processing&qid=1643661144&sprefix=gonzalez+digital+image+processing%2Caps%2C63&sr=8-2)*, Gonzalez
+  - Gonzalez's book is to DIP what Oppenheim's is to DSP. This is a must-read book on DIP.
+- *[Speech and Language Processing](https://www.amazon.com/gp/product/B00XIGSJQK/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0)*, Jurafsky
+  - Many consider this book a fine introduction to NLP. It is written by a linguistics professor from Stanford.
+
+### IMPLEMENTATION GUIDES
+
+- *[Deep Learning with Python](https://www.amazon.com/Deep-Learning-with-Python-audiobook/dp/B07H5RKKB6/ref=sr_1_1?crid=1H0J6SFUSZV2U&keywords=Chollet+-+Deep+Learning+with+Python&qid=1643658906&s=audible&sprefix=chollet+-+deep+learning+with+python%2Caudible%2C26&sr=1-1)*, Chollet
+  - Today, there are two popular Python APIs for neuro computing: Keras and PyTorch. Python is popular with data scientists and neuro computing researchers, because it is a simple language, it is fast enough for experimental computation, and it has libraries for just about every application domain. This book covers Keras, but it also presents the fundamentals in clear, concise way.
+- *[Deep Learning with PyTorch](https://www.amazon.com/Deep-Learning-PyTorch-Neural-Networks/dp/B097R3TBLR/ref=sr_1_6?crid=3VBA7IM1HHWM9&keywords=Deep+Learning&qid=1643658959&s=audible&sprefix=deep+learning+%2Caudible%2C30&sr=1-6)*, Stevens
+  - This book covers PyTorch, which is a lower level Python API than Keras. Lower level API means the user has greater control over the architecture and the behaviour of the network.
+- *[TinyML](https://www.amazon.com/TinyML-Learning-TensorFlow-Ultra-Low-Power-Microcontrollers/dp/1492052043/ref=sr_1_3?crid=1BV2TXBE1PMYG&keywords=Machine+Learning+on+Microcontrollers&qid=1643661999&s=books&sprefix=machine+learning+on+microcontrollers%2Cstripbooks%2C30&sr=1-3)*, Warden
+  - This book explores machine learning implementations on microcontrollers. Microcontrollers are small, low-power processors commonly used on household appliances, automobiles, and IoT devices. Being able to bring the power of neuro computing to that class of devices opens up countless opportunities for AI software designers.
