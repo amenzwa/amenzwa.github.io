@@ -179,7 +179,7 @@ Rumelhart's Backpropagation (BP) is, without doubt, the best known supervised le
 
 In keeping with the supervised learning tradition, BP's training data contains the input vectors and the associated desired outputs, the target vectors. Initially, all the weight are set to small, random values. Training comprises two distinct phases: forward pass and backward pass.
 
-In the *forward pass*, each input pattern vector $p$ is fed to the network, and the network propagates the input toward the output layer. Each neuron computes its output value excited by this input pattern vector: $ o_{pj} = f_j(∑_i w_{ji} o_{pi}) $, where the transfer function $f_j$ of the neuron is defined as $ f_j(x) = 1 / (1 + e^{-x}) $, called the sigmoid function.
+In the *forward pass*, each input pattern vector $p$ is fed to the network, and the network propagates the input toward the output layer. Each neuron computes its output value excited by this input pattern vector: $ o_{pj} = f_j(\sum_i w_{ji} o_{pi}) $, where the transfer function $f_j$ of the neuron is defined as $ f_j(x) = 1 / (1 + e^{-x}) $, called the sigmoid function.
 
 When an input pattern vector $p$ reaches the output layer, the *backward pass* commences. The error contributed by this input pattern vector is $ E_p = ∑_j [t_{pj} - o_{pj}]^2 $, where the $ t_{pj} - o_{pj} $ term measures how far off the output of neuron $n_j$ is from the target. So, the total error across all the input patterns in the data set is $ E = ∑_p E_p $. The algorithm minimises $E$ by adjusting the individual weights, because $\Delta_p w_{ji} ∝ -\frac{\part E_p}{\part w_{ji}}$.
 
