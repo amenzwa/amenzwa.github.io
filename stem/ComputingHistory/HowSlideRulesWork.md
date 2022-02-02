@@ -258,7 +258,7 @@ The backside of the Aristo 967 U's slide has the $L$ and the three $LL_n$ scales
 
 ***log-log duplex type***—Modern engineering slide rules generally are of the log-log duplex type. The duplex scale layout was invented by [William Cox](https://mccoys-kecatalogs.com/KECollection/1744/ke_1744family.htm) in 1895 for K&E. The models used by engineering students have three black $LL_n$ scales ($LL_1$, $LL_2$, and $LL_3$ running from left to right) for cases where $x > 1$ and three red $LL_{0n}$ scales ($LL_{01}$, $LL_{02}$, and $LL_{03}$ running from right to left) for cases where $x < 1$. More advanced models used by professional engineers have four black-red pairs of $LL$ scales.
 
-The Faber-Castell (FC) 2/83 N Novo Duplex slide rule, shown below, is a late model, advanced engineering rule from the mid 1970s. It was designed and manufactured at the close of the slide rule era. It was especially popular outside the US. It is a rather long and wide slide rule. And it was arguably one of the most aesthetically pleasing slid rules ever made.
+The Faber-Castell (FC) 2/83 N Novo Duplex slide rule, shown below, is a late model, advanced engineering rule from the mid 1970s. It was designed and manufactured at the close of the slide rule era. It was especially popular outside the US. It is a rather long and wide slide rule. And it was arguably one of the most aesthetically pleasing slide rules ever made.
 
 ![FC 2/83 N](../figures/SlideRules/FC2-83N/DSC00194.JPG)
 
