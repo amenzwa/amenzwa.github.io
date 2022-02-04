@@ -11,7 +11,7 @@ In this article, I present a high-level overview of artificial intelligence (AI)
 
 # APPROACHES
 
-There are tonnes of approaches used in AI: genetic algorithms, support vector machines, Bayesian networks, decision trees, stochastic methods, deterministic rules—the list is long. It is also important to realise that there are many classical approaches, such as signal processing, principal components analysis, and so on, that are capable of solving many of the same set of problems that AI can solve.
+There are tonnes of approaches used in AI: fuzzy logic, genetic algorithms, support vector machines, Bayesian networks, decision trees, stochastic methods, deterministic rules—the list is long. It is also important to realise that there are many classical approaches, such as signal processing, principal components analysis, and so on, that are capable of solving many of the same set of problems that AI can solve.
 
 In this article, we concentrate on the two historically significant AI traditions: connectionist and rule-based. *Connectionist* AI is commonly known as neural networks. *Rule-based* AI is traditionally associated with the LISP programming language. The most prevalent approaches currently in use are of the connectionist variety, which shall be our primary focus, here.
 
