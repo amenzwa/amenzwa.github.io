@@ -15,7 +15,7 @@ There are tonnes of approaches used in AI: fuzzy logic, genetic algorithms, supp
 
 In this article, we concentrate on the two historically significant AI traditions: connectionist and rule-based. *Connectionist* AI is commonly known as neural networks. *Rule-based* AI is traditionally associated with the LISP programming language. The most prevalent approaches currently in use are of the connectionist variety, which shall be our primary focus, here.
 
-## *connectionist*
+## *connectionist approach*
 
 The myriad AI techniques that are in popular use today, different as they may appear, all share a common foundation: they all come under the umbrella term *artificial neural network* (NN). NN is a computational approach inspired by the quintessential biological neural network—the [brain](https://en.wikipedia.org/wiki/Brain). The most basic processing unit in the brain is the [neuron](https://en.wikipedia.org/wiki/Neuron). See the figure below. The [dendrites](https://en.wikipedia.org/wiki/Dendrite) of the neuron receive electrochemical signal inputs as weighted outputs from the upstream neurons. The weight can be negative, zero, or positive. The [soma](https://en.wikipedia.org/wiki/Soma_(biology)), the cell body, sums up the weighted input signals. The neuron also receives activation signals via the dendrites. Inhibitory (negative) activation signal keeps the neuron inactive. Excitatory (positive) activation signal causes the neuron to fire its output, which is derived from the weighted sum of its inputs. The [axon](https://en.wikipedia.org/wiki/Axon) trunk carries the output signal to the [synapses](https://en.wikipedia.org/wiki/Synapse), which make electrochemical connections to the input dendrites of downstream neurons. Learning involves establishing, strengthening, weakening, and removing signal pathways among the neurons. Although the structure and functions of the brain are far more intricate and complex, the simply-butchered description above suffices for our purposes, here.
 
@@ -39,7 +39,7 @@ There have been many classic NN learning algorithms. The first was the unsupervi
 
 Many in IT today are of the opinion that AI is a simple matter of programming to an API published by an Internet Giant. In truth, psychologists, neuroscientists, mathematicians, electrical engineers, computer scientists, and STEMers of all stripes participated in establishing and advancing the NN subfield of AI: psychologists brought forth the concept of connectionism; mathematicians provided the theoretical foundation; electrical engineers built the first neuro computers; computer scientists implemented the early simulations. Hence, AI is definitively a multi-disciplinary field of study.
 
-## *rule-based*
+## *rule-based approach*
 
 The main weakness of the Perceptron was its dogged linearity: it can only learn to discern patterns if they are linearly separable—that is, their classifier boundary is a straight line. The Perceptron's inability to learn even the simplest of non-linear classifiers, like the one required to implement the [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or) (XOR) function shown in the figure below as a dotted curve, led to its eventual downfall.
 
@@ -53,7 +53,7 @@ An [expert system](https://en.wikipedia.org/wiki/Expert_system) is an AI applica
 
 But few things in nature exhibit such orderly behaviour. Moreover, humans understand even fewer things in nature at such a level of detail. Even if we manage to grasp the dynamics of a large problem, the rules and their interactions would be intractable. Unfortunately, the purveyors of expert systems over promised and the media over reported the hype. By the early 1980s, the users and the public had lost interest in expert systems, and the funding spigot was shut. This period is now known as [AI Winter](https://en.wikipedia.org/wiki/AI_winter).
 
-## *backpropagation*
+## *backpropagation approach*
 
 A few researchers who saw the true strengths of AI continued working in the field—underground. Then, in 1986, [Rumelhart](https://en.wikipedia.org/wiki/David_Rumelhart), [Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton), and [Williams](https://en.wikipedia.org/wiki/Ronald_J._Williams) published their seminal paper, *[Learning representations by back-propagating errors](https://www.nature.com/articles/323533a0)*. Their learning algorithm became known as *backpropagation* (BP). BP is a supervised learning algorithm that modifies the network's weights in proportion to the amount of representation error the network commits in each training pass through the data set. In that respect, BP's learning process is no different in kind than that of the Perceptron: find the optimal set of weights that minimise representation errors. But BP's main advantage over the Perceptron is its ability to learn non-linear classifiers. Indeed, non-linearity was why BP works and Perceptron did not.
 
@@ -69,7 +69,7 @@ Most users of NNs simulate on the then-high-end, mainstream computing hardware, 
 
 Most folks today are unaware that there was an AI Mini Ice Age during the late 1990s. Although the processing capabilities had increased leaps and bounds by then, the storage technology was still limited. Disc sizes were still measured in MB, albeit in hundreds thereof. Most data sets used in AI were only a few MBs in size. The lack of storage capacity necessarily constrained the completeness of data sets. So, neither humans nor networks could analyse the true nature of massive, complex, dynamical systems. The lack of data, thus, stunted the growth of AI. To get around some of the limitations, many experimented melding rule-based and connectionist techniques. But for the most part, NNs were confined to academic research and to small-scale commercial use during this period. The [dot-com collapse](https://en.wikipedia.org/wiki/Dot-com_bubble) at the end of the 1990s and the subsequent economic stagnation did no favours to AI research.
 
-## ***deep learning***
+## *deep learning approach*
 
 Then came the age of Internet Giants—around mid 2000s. Massive, simultaneous advances in computing capability, storage capacity, network connectivity, graphics coprocessors, and parallel-processing software techniques gelled together to fuel what turned out to be the fastest growth in the history of human inventions. The Web came of age. Online shopping and social media became the norm. Billion-user platforms became commonplace. The Internet Giants saw gold to be mined in the private data that the users willingly exchanged for free access to frivolous social media services. [Big data](https://en.wikipedia.org/wiki/Big_data) was thus born. By 2010s, everything had converged: massive amounts of collected data, advances in NN algorithms, huge rise in computing power. It was in this Era of Data that people began recognising the true potential of BP, or rather its descendant—[deep learning](https://en.wikipedia.org/wiki/Deep_learning) (DL).
 
