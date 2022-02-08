@@ -339,7 +339,9 @@ The Pioneer Series began with the inimitable HP-32S and the more advanced HP-42S
 
 The Pioneer Series includes the HP-10B (RPN) and the HP-17B (non-RPN) business calculators, the HP-20S (non-RPN), the HP-22S (non-RPN), and the HP-27S (non-RPN) scientific calculators, as well. But I could not be bothered with them.
 
-By the way, although the Pioneer Series calculators do not have the HP-41C's expandability, they all have a built-in IR transmitter, which can be used to print programme source code and results to a thermal printer, like the [HP 82240](https://commerce.hpcalc.org/82240b.php).
+In terms of the famous "HP feel" of the keys, I rank the Pioneer Series calculators' keys as having the best tactile feel, and Voyager Series and the Clamshell calculators a close second. The other calculators in my collection, the HP-41CX, the new HP 35s, and the Prime are solid, but not quite as good as the Pioneer Series.
+
+By the way, although the Pioneer Series calculators lack the  expandability of the HP-41C, they all have a built-in IR transmitter, which can be used to print programme source code and results to a thermal printer, like the [HP 82240](https://commerce.hpcalc.org/82240b.php).
 
 ### HP-32S (1988)
 
