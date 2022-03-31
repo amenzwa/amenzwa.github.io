@@ -143,12 +143,14 @@ Together, Objective-C and C++ dominated the software development industry throug
 
 Smalltalk is now all but confined to a few remaining legacy business applications. Nevertheless, Smalltalk is considered by OO aficionados as the definitive OO language. After all, Smalltalk inspired Objective-C, Java, C#, Scala, Ruby, and loads of other OO languages in popular use, at present. Although most modern programmer knows Smalltalk is OO, not many know that Smalltalk has a decent FP support, owing to its LISP influence:
 
+- Smalltalk, like LISP, has a weak, dynamic type system
+- Smalltalk `#xyz` symbol is LISP `'xyz` quote
 - Smalltalk `[...]` block is LISP `lambda` function
-- Smalltalk method that manipulates other methods is LISP functional
 - Smalltalk `collect:` method is LISP `map` functional
 - Smalltalk `select:` method is LISP  `filter` functional
 - Smalltalk `inject:into:` method is LISP `foldl` functional
 - Smalltalk `currentDo:` method is LISP `call/cc` continuation
+- Smalltalk reflection is the dynamic version of LISP macro
 
 Despite its pedigree and power, Smalltalk, as the name suggests, is a small, simple language endowed with a clean, cogent syntax. This makes Smalltalk a very good first language, even for young children. The compact syntax is easy to learn, and the pure OO nature is quick to grasp. Experienced programmers in the industry cannot escape OO, and they cannot shrug their responsibility to teach the less experienced. Smalltalk simplifies the teacher's job, when teaching OO concepts to novices.
 

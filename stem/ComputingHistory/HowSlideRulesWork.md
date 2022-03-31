@@ -88,15 +88,15 @@ $$
 
 That is, to compute $a × b$, we first compute the sum of $log(a)$ and $log(b)$, then compute the $log^{-1}$ of the sum. Likewise, $a ÷ b$ is computed as the $log^{-1}$ of the difference between $log(a)$ and $log(b)$.
 
-***logarithmic scale***—The slide rule mechanises these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). Gunter's logarithmic scale is derived from a ruler-like linear scale in the following manner. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments labelled $0.0, 0.1, 0.2, 0.3, ..., 1.0$, similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source linear scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments labelled $1, 2, 3, ..., 1$, starting with $1$ and, again, ending with $1$. The division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by reference to the linear scale:
+***logarithmic scale***—The slide rule mechanises these calculations by using two identical logarithmic scales, commonly labelled $C$ (on the slide) and $D$ (on the frame). Gunter's logarithmic scale is derived from a ruler-like linear scale in the following manner. We begin with a 25-cm-long blank strip of wood and mark it up with $10$ equally spaced segments labelled $0, 1, 2, 3, ..., 10$, similar to an ordinary ruler, but labelling the ending $10$ as $1$, instead. This first piece of wood has now become the source linear scale. We then line up the second 25-cm long blank strip of wood with the first one, and mark up that second piece of wood with $9$ unequally spaced segments labelled $1, 2, 3, ..., 1$, starting with $1$ and, again, ending with $1$. The division marks of the second piece of wood is placed non-linearly in accordance with their $log$ values and by reference to the linear scale:
 
-- $log(1) = 0.0$, so $1$ on the second scale is lined up with $0.0$ on the linear scale
-- $log(2) = 0.301$, so $2$ on the second scale is lined up with $0.301$ on the linear scale
-- $log(3) = 0.477$, so $3$ on the second scale is lined up with $0.477$ on the linear scale
+- $log(1) = 0.0$, so $1$ on the non-linear scale is lined up with $0.0$ on the linear scale
+- $log(2) = 0.301$, so $2$ on the non-linear scale is lined up with $0.301$ on the linear scale
+- $log(3) = 0.477$, so $3$ on the non-linear scale is lined up with $0.477$ on the linear scale
 - $...$
-- $log(10) = 1.0$, so $10$ (which is labelled $1$) on the second scale is lined up with $1.0$ on the linear scale
+- $log(10) = 1.0$, so $10$ (which is labelled $1$) on the non-linear scale is lined up with $1.0$ on the linear scale
 
-The second scale thus obtained is the logarithmic scale. In the figure below, the upper one is the source linear scale and the lower one is the derived logarithmic scale.
+The second scale thus obtained is the non-linear, logarithmic scale. In the figure below, the upper one is the source linear scale and the lower one is the derived logarithmic scale.
 
 ![L & D scales](../figures/SlideRules/scale-L-D.jpg)
 
