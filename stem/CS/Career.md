@@ -54,7 +54,7 @@ Every STEMer eventually rises to a technical leadership position. Engineers beco
 
 A long, productive career endows a STEMer with knowledge, experience, and skills. Inner drive inspires creativity and vision in him. His innate nature informs his ethics. But to most STEMers, business acumen is not a natural talent. Some manage to pick up business skills along their career paths, but most do not get the opportunities. As such, many mid-career STEMers study part-time for the MBA, in preparation for a leadership role in the future. More education never hurts. But attending evening graduate school as a business unit manager, who also has family and social responsibilities, is not for the average person. More importantly, an MBA degree certificate, by itself, does not make one an effective leader of other technologists.
 
-Years of experiences in academia and industry inform me that only hands-on STEMers with fresh skills can manage other STEMers effectively in-the-small, and that only seasoned STEMers with business acumen can lead other STEMers effectively in-the-large. Do note that despite its apparent breadth, this carefully crafted statement is narrowly scoped.
+Years of experiences in academia and industry inform me that only hands-on STEMers with fresh skills can manage other STEMers effectively in-the-small and that only seasoned STEMers with business acumen can lead other STEMers effectively in-the-large. Do note that despite its apparent breadth, this carefully crafted statement is narrowly scoped.
 
 ## *business entrepreneurs*
 
