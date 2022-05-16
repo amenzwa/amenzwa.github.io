@@ -189,10 +189,12 @@ Despite the humble beginnings, however, OO has, over the years, amassed an exasp
 
 The core concepts of Smalltalk are inheritance, class, object, method, and message, which are the fundamental concepts of OO; nothing is special, there. What makes Smalltalk special is the understated way it achieves its express power through simple design and harmonious philosophy.
 
-The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the class `Stratocaster`, one sends the `new:` message to the global object that represents this class which, incidentally, is named `Stratocaster`:
+The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the class `Stratocaster`, one sends the `new` instance creation message to the global object that represents this class which, incidentally, is named `Stratocaster`:
 
 ```
-redStrat := Stratocaster new: 'Fender Custom Shop' color: 'Fiesta Red'
+redStrat := Stratocaster new
+  model: 'Fender Custom Shop';
+  color: 'Fiesta Red'
 ```
 
 Likewise, sending the `subclass:` message to an existing class creates a derived class with the specified name:
@@ -214,30 +216,32 @@ Computation is performed by sending messages to objects. For example, `5 factori
 The conditional expression, too, is implemented as a message:
 
 ```Smalltalk
-b ifTrue: [csq] ifFalse: [alt]
+b
+  ifTrue: [ csq ]
+  ifFalse: [ alt ]
 ```
 
-Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[csq]` and `[alt]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[csq]` block is evaluated, and otherwise, the `[alt]` is evaluated.
+Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[ csq ]` and `[ alt ]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[csq]` block is evaluated, and otherwise, the `[alt]` is evaluated.
 
 A count-up loop over integers is written as follows:
 
 ```Smalltalk
-1 to: 10 do: [:i | i printNl]
+1 to: 10 do: [ :i | i print ]
 ```
 
-Here, the receiver is the `Integer` object `1`, the message is `to:do:`, and the message parameters are the `10` and the `[...]` block. Each time through the loop, the receiver's current value is passed to the block as the argument `i`, and the receiver is then automatically incremented. An equivalent loop in C is this:
+Here, the receiver is the `Integer` object `1`, the message is `to:do:`, and the message parameters are the `10` and the `[ ... ]` block. Each time through the loop, the receiver's current value is passed to the block as the argument `i`, and the receiver is then automatically incremented. An equivalent loop in C is this:
 
 ```c
 for (int i = 1; i <= 10; i++) printf("%d\n", i + 1);
 ```
 
-The condition method and the loop method above are analogous to higher-order functions in FP, and the blocks are analogous to λ functions. Other FP influences in Smalltalk include  `collect:`, `select:`, `inject:into:`, whose FP equivalents are `map`, `filter`, `foldl`. It is not only possible, but also quite natural, to program in Smalltalk using FP techniques, such as λ functions and these higher-order functional operators.
+Yes, Smalltalk uses the human-centric 1-based counting scheme, unlike C, which uses the machine-centric 0-based counting. The condition method and the loop method above are analogous to higher-order functions in FP, and the blocks are analogous to λ functions. Other FP influences in Smalltalk include  `collect:`, `select:`, `inject:into:`, whose FP equivalents are `map`, `filter`, `foldl`. It is not only possible, but also quite idiomatic, to program in Smalltalk using λ functions and the standard higher-order functional operators.
 
-***advice***—In the late 1980s, I had the opportunity to observe, up-close, the many struggles that experienced PP programmers faced when adopting OO. They were my colleagues. They were C experts. They read the excellent [*The C++ Programming Language, 1ed*](https://stroustrup.com/1st.html) (Brown Book) by Stroustrup, as we all did, in those days. C++ was but a small extension of C then, having only classes, visibility modifiers, and multiple inheritance. For a Smalltalking, C programmer like me, adopting C++ was a simple matter of learning a few syntactic quirks. But my C-is-my-life colleagues went through a year-long ordeal. They learned easily the syntactic elements, but they struggled with OO design concepts; they kept falling back into familiar C idioms, and ended up using C++ to write C programmes.
+***advice***—In the late 1980s, I had the opportunity to observe, up-close, the many struggles that experienced PP programmers faced when adopting OO. They were my colleagues. They were C experts. They read the excellent [*The C++ Programming Language, 1ed*](https://stroustrup.com/1st.html) (Brown Book) by Stroustrup, as we all did, in those days. C++ was but a small extension of C then, having only classes, multiple inheritance, and operator overloading. For a Smalltalking, C hacker like me, adopting C++ (and Objective-C) was a simple matter of learning a few syntactic quirks. But my C-is-a-god colleagues went through a year-long ordeal. They learned easily the syntactic elements, but they struggled with OO design concepts; they kept falling back into familiar C idioms, and ended up writing C programmes in C++ syntax.
 
-Like my colleagues, I was versed in C and assembly, when I learned Smalltalk a few years before they began learning C++. I did not experience that shocking ordeal my colleagues faced, however, because Smalltalk was a small, simple, strictly OO language without pointers, `goto`, and other PP paraphernalia to distract and derail me. And because, by then, I had already learnt some LISP, I was able to cognise and exploit Smalltalk's FP idioms. It was not an easy transition for me, going from PP to OO, but it certainly was an enjoyable learning experience, not an ordeal.
+Like my colleagues, I was versed in C and assembly, when I learned Smalltalk a few years before they began learning C++. However, when I learned OO in Smalltalk, I did not experience that shocking ordeal my colleagues had to endure, because Smalltalk was a small, simple, strictly OO language, without pointers, `goto`, and other PP paraphernalia to distract and derail me. And because, by the time I began learning Smalltalk, I had already learnt LISP, I was able to recognise, and exploit, Smalltalk's FP idioms. Learning OO was by no means an easy transition for me, but it certainly was an enjoyable learning process, not an ordeal.
 
-This experience taught me that when learning something wholly new it is best to check prejudices and predilections, and that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is an exercise in assiduity while being receptive. Humility is the trait from which both hard work and open mind sprang. Do not be seduced by the "my way is the only way" mentality. The best way sways in the blistering winds of trend and it is soon buried under the drifting sands of time. Humility does not. So, strive to be humble. Learn.
+This experience taught me that when learning something new and distinct it is best to check one's prejudices and predilections, and that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is an exercise in assiduity while being receptive. Humility is the trait from which both hard work and open mind sprang. Do not be seduced by the "my way is the only way" mentality. The arrogance born of "my best way" sways in the blistering winds of trend and it is soon buried under the wind-blown sands of time; humility, however, is unburdened and it glides above the trendy waves. So, strive to be humble. Learn, continuously.
 
 # FUNCTIONAL
 
