@@ -79,7 +79,7 @@ The newer Nim language has a clean syntax, a static type system, and a customisa
 
 To master C and the PP paradigm, study these:
 
-- The de factor industry standard C compiler has long been the GNU `gcc`, which comes with macOS, a modern UNIX, and Linux. To prevent developing mental disorders in the future, one should not learn C programming on Windows.
+- The de facto industry standard C compiler has long been the GNU `gcc`, which comes with macOS, a modern UNIX, and Linux. To prevent developing mental disorders in the future, one should not learn C programming on Windows.
 - Study computer architecture fundamentals, such as CPU microarchitecture, instruction set architecture, computer organisation, and the like.
   - *[Learning Computer Architecture with Raspberry Pi](https://www.amazon.com/Learning-Computer-Architecture-Raspberry-Pi/dp/1119183936/ref=sr_1_12?dchild=1&keywords=computer+architecture&qid=1634399945&sr=8-12)*, Upton (Raspberry Pi SoC designer)
 - Read a UNIX user guide to learn about processes, file system, devices, command-line tools, etc. Do realise that UNIX was the 1970s version of the IDE. UNIX was designed by programmers as an integrated programming environment to be used by programmers via a text terminal.
