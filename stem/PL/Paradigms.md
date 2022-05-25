@@ -145,7 +145,7 @@ Smalltalk is now all but confined to a few remaining legacy business application
 
 - Smalltalk, like LISP, has a weak, dynamic type system
 - Smalltalk `#xyz` symbol is LISP `'xyz` quote
-- Smalltalk `[...]` block is LISP `lambda` function
+- Smalltalk `[ ... ]` block is LISP `lambda` function
 - Smalltalk `collect:` method is LISP `map` functional
 - Smalltalk `select:` method is LISP  `filter` functional
 - Smalltalk `inject:into:` method is LISP `foldl` functional
@@ -187,7 +187,7 @@ Despite the humble beginnings, however, OO has, over the years, amassed an exasp
 
 ## *Smalltalk concepts*
 
-The core concepts of Smalltalk are inheritance, class, object, method, and message, which are the fundamental concepts of OO; nothing is special, there. What makes Smalltalk special is the understated way it achieves its express power through simple design and harmonious philosophy.
+The core concepts of Smalltalk are inheritance, class, object, method, and message, which are the fundamental OO concepts familiar to modern programmers; nothing special there. What makes Smalltalk special, however, is the understated way in which it achieves express power: clear vision, pure purpose, simple design, and harmonious philosophy.
 
 The unifying principle in Smalltalk is that everything is an object. Primitive values like characters and numbers are objects. Even classes are objects. For instance, to create a new object of the class `Stratocaster`, one sends the `new` instance creation message to the global object that represents this class which, incidentally, is named `Stratocaster`:
 
@@ -197,7 +197,7 @@ redStrat := Stratocaster new
   color: 'Fiesta Red'
 ```
 
-Likewise, sending the `subclass:` message to an existing class creates a derived class with the specified name:
+Likewise, sending the `subclass:` message to an existing class (which is an object) creates a derived class (a new object) with the specified name:
 
 ```Smalltalk
 MusicalInstrument subclass: #Guitar
@@ -221,7 +221,7 @@ b
   ifFalse: [ alt ]
 ```
 
-Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[ csq ]` and `[ alt ]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[csq]` block is evaluated, and otherwise, the `[alt]` is evaluated.
+Here, the receiver `b` is an object of the `Boolean` class, the message is `ifTrue:ifFalse:`, and the message parameters `[ csq ]` and `[ alt ]` are the consequent and the alternative blocks. If `b` evaluates to a `true` value, the `[ csq ]` block is evaluated, and otherwise, the `[ alt ]` is evaluated.
 
 A count-up loop over integers is written as follows:
 
@@ -241,7 +241,7 @@ Yes, Smalltalk uses the human-centric 1-based counting scheme, unlike C, which u
 
 Like my colleagues, I was versed in C and assembly, when I learned Smalltalk a few years before they began learning C++. However, when I learned OO in Smalltalk, I did not experience that shocking ordeal my colleagues had to endure, because Smalltalk was a small, simple, strictly OO language, without pointers, `goto`, and other PP paraphernalia to distract and derail me. And because, by the time I began learning Smalltalk, I had already learnt LISP, I was able to recognise, and exploit, Smalltalk's FP idioms. Learning OO was by no means an easy transition for me, but it certainly was an enjoyable learning process, not an ordeal.
 
-This experience taught me that when learning something new and distinct it is best to check one's prejudices and predilections, and that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is an exercise in assiduity while being receptive. Humility is the trait from which both hard work and open mind sprang. Do not be seduced by the "my way is the only way" mentality. The arrogance born of "my best way" sways in the blistering winds of trend and it is soon buried under the wind-blown sands of time; humility, however, is unburdened and it glides above the trendy waves. So, strive to be humble. Learn, continuously.
+This experience taught me that when learning something new and distinct it is best to check one's prejudices and predilections, and that early exposure to different perspectives is vital in one's continuing intellectual development. Learning is an exercise in assiduity while being receptive. Humility is the trait from which both hard work and open mind sprang. Do not be seduced by the "my way is the only way" mentality. The arrogance born of "my best way" sways in the blistering winds of trend and it is soon buried under the wind-blown sands of time; humility, however, is unburdened and it glides above tempests of trends. So, strive to be humble. Learn, continuously.
 
 # FUNCTIONAL
 
