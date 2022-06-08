@@ -226,7 +226,7 @@ Ongoing research aims to go beyond simple memorisation and to augment RNNs with 
 
 # ALERTNESS
 
-Life is full of dangers, and every new and useful invention comes complete with its own set of attendant dangers. Knives and scissors and hammers are dangerous. So are [trains and boats and planes](https://www.youtube.com/watch?v=BlbS0JNFMIM). But they are all essential to modern life. AI is no different; it is a sharp tool that, if mishandled, will gouge the user's hand.
+Life is full of dangers, and every new and useful invention comes complete with its own set of attendant dangers. Knives and scissors and hammers are dangerous. So are [trains and boats and planes](https://www.youtube.com/watch?v=BlbS0JNFMIM). But they are all essential to modern life. AI is no different; it is a sharp tool which, if mishandled, will gouge the user's hand.
 
 AI as a research discipline has been around for nearly a century. But as a practical tool, AI is only about a decade old. Despite its youth, however, AI already controls many key aspects of our lives. But the fact that the most successful uses of AI have been privacy invasion, [election influencing](https://en.wikipedia.org/wiki/Foreign_electoral_intervention), and deepfaking—not tackling homelessness, global pandemics, or climate change—speaks volumes about us humans.
 
