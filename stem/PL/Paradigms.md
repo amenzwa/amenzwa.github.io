@@ -470,6 +470,8 @@ fun constant x = 9;
 
 In an eager language like ML, if this function is invoked as `constant (1/0)`, the computation yields the $⊥$, because the eager evaluation strategy reduces the input expression `1/0` first, before invoking the `constant` function. That reduction immediately produces the divide-by-zero error. But in a lazy language like Haskell, this computation results in `9`, because the lazy evaluation strategy passes to the `constant` function the unevaluated input expression `1/0`. Being a constant function, `constant` simply ignores the input expression, and returns `9`. Hence, functions are strict in an eager language, and they are non-strict in a lazy language.
 
+Programmers often confuse "strictness" with "eagerness". The term "strict" describes the nature of functions, whereas the term "eager" describes the nature of evaluation strategy for function arguments. This confusion springs from the fact that in a language that employs eager evaluation strategy, the behaviour of functions is strict. These finer points may appear trivial to programmers who implement business applications; but the differences are significant to programmers who implement compilers. By way of analogy, a schoolmarm who runs her institution unwaveringly by the book is strict, whereas her pupil who, at lunch time, scoffs down everything on his plate regardless of whether he is hungry or not is eager.
+
 ***types***—A type is a set of values. FP programmers aspire to craft types that admit only those values that are valid in the context of the programme. In a statically typed FP language like ML, validity checks are performed during compilation.
 
 ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like `'a list`, to hold values of different types: `int list` is a list of integers; `real list` is a list of reals.
@@ -498,7 +500,7 @@ Just as functions can be recursive in ML, types can be cursively defined, too. T
 datatype 'a list = [] | :: of 'a * 'a list;
 ```
 
-Here, the `list` type is defined as either an empty list `[]` or a list constructed by using the cons operator `::` to prepend an element of type `'a` to a list of `'a` typed elements. In prefix-function form, this construction is written `op :: ('a, 'a list)`. In an equivalent infix-operator form, it is written `'a :: 'a list`. The appearance of the `list` data constructor on the right side of the definition of the `list` type makes this a recursive type.
+Here, the `list` type is defined as either an empty list `[]` or a list constructed by using the cons operator `::` to prepend an element of type `'a` to a list of `'a` typed elements. In prefix-function form, this construction is written `op :: ('a, 'a list)`. In an equivalent infix-operator form, it is written `'a :: 'a list`. The appearance of the `list` type constructor on the right side of the definition of the `list` type makes this a recursive type.
 
 An oft-used *product type* is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows:
 
@@ -512,7 +514,7 @@ The use of the `*` operator in the definition emphatically states that a tuple t
 val c = (0.25, 0.0) : complex;
 ```
 
-Above, we assigned the tuple (0.25, 0.0)—the cusp of the Mandelbrot set—the `: complex` type. Another commonly used product types is the record type, which can be aliased like this:
+Above, we assigned the `: complex` type to the tuple `(0.25, 0.0)`—which represents the complex number $0.25 + i\ 0.0$, the cusp of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set). Another commonly used product types is the record type, which can be aliased like this:
 
 ```
 type professor =
@@ -557,7 +559,7 @@ There are a few general guidelines for modelling unusual situations:
 - *absence*: If a value is missing and such a situation is a matter of course, represent the missing value using the `option` type. For example, the middle name field in a `person` record would be assigned the `middle : string option` type, since it is not uncommon for people to not have the middle name.
 - *salvageable*: When an undesirable, but not unexpected, situation arises where it is sensible for the programme to attempt to resolve the issue, raise an exception, trap it, and try a slightly another tack. For example, if a graph algorithm encounters a dead end along a search path, it would raise an exception, and the control logic, upon trapping the exception, would backtrack to the previous successful step, and try a different search path.
 - *unsalvageable*: When an undesirable, but not unexpected, situation arises where it is impossible for the programme to proceed, raise an exception and let the user cope with the matter. For example, a necessary configuration file is missing, and there is nothing the programme could do.
-- *bug*: Upon encountering unexpected and irrecoverable situations—a bug—like divide-by-zero or out-of-stack-space fatal error, let the programme $⊥$, let the programmer fix the bug.
+- *bug*: Upon encountering unexpected and irrecoverable situations—a bug—like divide-by-zero or out-of-stack-space fatal error, let the programme $⊥$, and force the programmer to fix the bug.
 
 Do keep in mind that these are mere guidelines. The programmer must use his technical judgement and his domain knowledge to represent exceptional situations precisely and logically to suit the application.
 
