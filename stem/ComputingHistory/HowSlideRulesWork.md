@@ -5,6 +5,8 @@ tags:
 use_math: true
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 The survival of our species owes much to our brain, specifically, its ability to observe, analyse, and plan. Planting crops and storing grains for the winter were some of the earliest uses of these abilities. Measuring and calculating are foundational elements of observation, analysis, and planning. Computation, upon which our modern society depends, is but an extension of those ancient measurement and calculation techniques.

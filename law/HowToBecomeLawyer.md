@@ -4,6 +4,8 @@ title: "How to Become a Lawyer"
 
 ## *a guide for prospective and current law students*
 
+[TOC]
+
 It is generally thought that getting into law school is not easy, getting through law school is hard, and passing the bar is harder. I admit that studying the law is somewhat more difficult than learning to ride a bicycle, but I maintain that it is not an impossibly difficult task. Any intelligent person can get into law school. However, only those who are assiduous become lawyers, and only those who are ethical can remain in the profession.
 
 This article is an extract from my book *[How To Become A Lawyer: A Guide for Prospective and Current Law Students](https://www.amazon.com/How-Become-Lawyer-2015-01-07-Prospective-ebook/dp/B007O48QTC/ref=sr_1_5?keywords=amen+zwa&qid=1637675382&sr=8-5)*. I start off that book with a high-level description of the process of becoming a lawyer. The focus of this chapter, though, is on getting into law school. I then explain the legal study areas and studying techniques—reading cases, taking class notes, making outlines, and writing exams, among other things—a law school survival kit, as it were. Next, I discuss the bar admission process, the most important milestone on the journey. I saved the best for last—legal ethics; it is difficult to overemphasize its importance to the profession. And a lawyer’s ethical career begins in law school.

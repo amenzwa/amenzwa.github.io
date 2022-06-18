@@ -2,6 +2,8 @@
 title: "Gender Bias in STEM"
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 There are those who say that boys are more adroit than girls at science, technology, engineering, and mathematics (STEM). They are wrong! There are differences between the genders, but STEM aptitude is not one among them. It is, however, undeniable that men outnumber women in these fields at pre- sent, and that there still is a salary gap, nay a salary gash, that runs along the gender line. These inequities were not born of the differences in aptitude, but of the biases that laid the foundation of society. All of us—corporate executives, mentors, teachers, parents, siblings, and most importantly school-age girls and boys—must do our part to eliminate these biases.

@@ -2,6 +2,8 @@
 title: "Law and Technology"
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 An engineer—like a doctor or a lawyer—is a licensed professional, who must possess both university degrees and a state license, in order to be allowed to design bridges and ships. So, engineering curricula offer electives on professional ethics and government regulations. But computer scientists—even those who work in heavily-regulated fields—are not licensed professionals. As such, no CS curriculum offers law-related electives. Yet, IT practitioners, too, interact with laws on a routine basis, directly or indirectly, knowingly or unknowingly:

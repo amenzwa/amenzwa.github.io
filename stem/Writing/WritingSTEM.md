@@ -5,6 +5,8 @@ tags:
 use_math: true
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 This is a guide to STEM writing for high school and undergraduate students. Writing anything longer than a few sentences requires planning and aforethought. Thinking requires knowledge, and this knowledge is acquired through reading—lots of it. Indeed, reading and writing cannot be separated: the more you read, the better will your foundational knowledge required for writing become and also the more refined will your writing style become. And the more you write, the more you will need to read and the deeper will your understanding of the subject become. So, reading-writing is a virtuous cycle—the more you do, the better you become. Read on.

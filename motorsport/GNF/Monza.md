@@ -2,6 +2,8 @@
 title: "Monza Track Guide"
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 My book, *[Going Nowhere Fast](https://www.amazon.com/Going-Nowhere-Assetto-Corsa-2018-01-20-ebook/dp/B00NS918M4/ref=sr_1_4?keywords=amen+zwa&qid=1637678617&qsid=139-4891948-0624130&sr=8-4&sres=B00WNBY3AW%2CB00FRJRAWA%2CB00RJL1GUQ%2CB00NS918M4%2CB007O48QTC%2CB0085P197A%2CB078MFL33P%2CB009Z2H91W%2CB08Q77JRMC%2CB00OFWFV12%2CB075T4VS5F%2CB075T7HYR5%2CB00DJUK8HS%2CB07XYHLQ9C%2CB086PHR52V%2CB075T6BVGZ)*, provides detailed guides for all laser-scanned tracks that came with *[Assetto Corsa](https://www.assettocorsa.it/home-ac/)* racing simulator. Here in this article, I have excerpted one of them: from-the-cockpit description of Autodromo Nazionale Monza, a revered, old track located near Milan, Italy. The original, 10 km track comprises the flat track and the banked oval superimposed atop it. Monza was built in the early 1920s, and annual Grand Prix races are held there to this day. The banked oval fell into disuse in the late 1960s. After having excised the oval section, and the flat section had been decimated with chicanes. Yet, this eviscerated, 5.77 km configuration, as it was modified last in 1995, still stands today as one of the fastest tracks on the series calendar. The track map below shows modern Monza, without the Sopraelevata oval.

@@ -5,6 +5,8 @@ tags:
 use_math: true
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 This article is an extract from my book, *[Going Nowhere Fast In Assetto Corsa: Race Driving On A Simulator](https://www.amazon.com/Going-Nowhere-Assetto-Corsa-2018-01-20-ebook/dp/B00NS918M4/ref=sr_1_4?keywords=amen+zwa&qid=1637678617&qsid=139-4891948-0624130&sr=8-4&sres=B00WNBY3AW%2CB00FRJRAWA%2CB00RJL1GUQ%2CB00NS918M4%2CB007O48QTC%2CB0085P197A%2CB078MFL33P%2CB009Z2H91W%2CB08Q77JRMC%2CB00OFWFV12%2CB075T4VS5F%2CB075T7HYR5%2CB00DJUK8HS%2CB07XYHLQ9C%2CB086PHR52V%2CB075T6BVGZ)*. Assetto Corsa (AC) is not a game; it is a simulator. And with well over 100,000 words of boffinry, my book is not a gaming guide. I wrote it for the serious simulator drivers interested in learning about motorsport and race driving. What you will find in this book are technical topics covering graphics card tweaking, simulator configuration, race car dynamics, racing components, car set- up, driving techniques, racing rules, race strategies, and race tactics. I also present the cornering lines for all the tracks supported in the current (mid 2014) version, which are laser scans of the real racing circuits. I describe each track, corner-by- corner and bump-by-bump, with the cockpit view screenshots.

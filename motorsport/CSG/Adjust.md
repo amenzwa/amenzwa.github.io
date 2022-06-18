@@ -4,6 +4,8 @@ title: "Adjust"
 
 ## *adjust car set-up to rectify handling problems*
 
+[TOC]
+
 Race cars are like prescription spectacles. Just as the spectacles have to be custom made for the wearer, a race car must be custom fitted to the driver and the track for the prevailing weather conditions. Before a car can be set up, the driver must test drive it in its factory set-up, and identify the handling problems, if any. This section describes how to identify handling problems during testing and how to rectify them upon returning to the pit. Drivers prefer a car that behaves predictably: follows the straights, feels stable during corner-entry braking, turns in crisply at corner entry, feels balanced mid corner, oversteers slightly at corner exit, and accelerates quickly along the subsequent straight.
 
 The *driving phases* are defined as follows:

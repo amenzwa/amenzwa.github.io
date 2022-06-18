@@ -2,6 +2,8 @@
 title: "Programming Languages"
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 Young people often ask me which programming language is the best one to learn. To that, I give a lawyerly answer: it depends. The truth is, there is no such thing as the best programming language. But there are many good languages from which to choose for each endeavour. And choose we must, for there are many languages, and every one was created to solve a specific set of problems. Even those so-called general-purpose languages were designed with a bias toward one set of problems or another. So, no one language can suit every imaginable problem.

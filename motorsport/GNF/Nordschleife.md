@@ -2,6 +2,8 @@
 title: "Nordschleife Track Guide"
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 This article is an extract from my book [*Round The Ring: Driving The Nordschleife On A Simulator*](http://www.amazon.com/Round-The-Ring-Nordschleife-ebook/dp/B0085P197A/ref=sr_1_2?ie=UTF8&qid=1338250215&sr=8-2). The book covers simulator set-up, car set-up, race component functions, race car dynamics (load transfer, tyre traction circle, tyre slip angle, etc.), and driving techniques (cornering lines, heel-and-toe downshifting, Scandinavian flick, etc.), in addition to learning how to drive on the Nordschleife. The bonus chapter in the book talks about the Nürburgring Formula 1 Grand Prix track and the ADAC 24h Rennen Nürburgring endurance race configuration. In this article, however, we shall focus only on the racing line round The Ring.

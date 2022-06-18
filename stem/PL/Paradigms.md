@@ -5,6 +5,8 @@ tags:
 use_math: true
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 To be an efficient programmer, one must master the art of software design and the science of computing (CS). To be an effective thinker, he must learn multiple programming languages from different programming paradigms. In the article *[Programming Languages](ProgrammingLanguages.md)*, I described the different programming paradigms and enumerated a representative list of languages to learn within each paradigm. That article gave a broad overview of programming languages that are currently popular in the IT industry. In this article, I show a way to go beyond merely knowing a few programming languages to mastering various programming paradigms. My goal is to provide programmers with the rudiments of programming paradigms so as to enable them to learn any new programming language.

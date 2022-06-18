@@ -5,6 +5,8 @@ tags:
 use_math: true
 ---
 
+[TOC]
+
 # INTRODUCTION
 
 In the annals of computing, calculators reigned supreme in a period, between early 1970s and early 2000s. The first electronic pocket scientific calculator, the HP-35, came out in 1972, and it displaced the [slide rule](./HowSlideRulesWork.md) in just a few years. The slide rule stood as the predominant calculating device for almost 400 years, since its invention by [William Oughtred](https://en.wikipedia.org/wiki/William_Oughtred) in 1622. But in 30 short years, the calculator itself was outmoded by the touchscreen mobile phone. [Just deserts](https://legal-dictionary.thefreedictionary.com/Just+Desserts), I suppose. Brief though their reign was, scientific calculators left an indelible mark on engineering, physics, and other hard sciences of the 20th century.
@@ -25,7 +27,7 @@ Despite the immense capabilities of the latest generation of scientific calculat
 
 Below, I explain how to use the RPN input method and provide a high-level overview of programming HP calculators in three ways: RPN keystrokes, reverse Polish LISP (RPL), and Prime Programming Language (PPL). It is impossible to follow the discussions without an RPN calculator in hand. If yo do not own one, either use a [web-based emulator](https://stendec.io/ctb/hp15c.html) or buy on eBay a [new, inexpensive model](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=hp+35s&_sacat=0).
 
-# RPN
+# REVERSE POLISH NOTATION
 
 In mathematics, the application of a generic binary function $f$ to arguments $a$ and $b$ is written as $f(a, b)$, and the operation of a generic binary operator $\bigotimes$ to arguments $a$ and $b$ is written as $a \bigotimes b$. In prefix notation, these expressions are written as `f a b` and `⨂ a b`. In postfix notation, they are written as `a b f` and `a b ⨂`.
 
@@ -42,6 +44,8 @@ Because mathematical notation is meant for the human eye, the syntax is often fu
         - $4$
         - $2$
     - $8$
+
+## *Post-Fix Notation*
 
 Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ in this expression is the operand delimiter, which is represented by the <kbd>ENTER</kbd> key on HP RPN calculators. Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression in one pass, using only four temporary storage locations `x`, `y`, `z`, and `t`:
 
@@ -93,6 +97,8 @@ The above keystroke sequence means the following. Let us assume that all four re
 As another example, we may compute the exponentiation $2^3 = 8$ by punching in the keystrokes <kbd>2</kbd><kbd>ENTER</kbd> <kbd>3</kbd><kbd>$y^x$</kbd>. That is, we first enter the operands separated by <kbd>ENTER</kbd>, then we press the operator key to obtain the result. A binary operator, like $y^x$, uses the `y` register as the first operand and the `x` register as the second operand, and accumulates the result in the `x` register, clearing the `y` register in the process. A unary operator, like $x^2$, uses the `x` register both as the input and as the output.
 
 The stack registers eliminate the need to use parentheses, and the self-actuating operators eliminate the need to use a distinguished key to initiate computations. Therefore, the <kbd>(</kbd>, <kbd>)</kbd>, and <kbd>=</kbd> keys are not needed on an RPN calculator.
+
+## *Efficiency*
 
 The elimination of these separators are partly the reason why the RPN is more efficient than the conventional infix notation. The RPN input method is appreciably more efficient when the expressions are lengthy and contain many parentheses, such as those that appear in engineering calculations. The RPN input method, however, obliges us to rearrange the expression mentally, before we can evaluate it on the calculator. Hence, we are purchasing mechanical efficiency with a small amount of mental effort. But this mental parsing becomes second nature, after a day of use.
 
