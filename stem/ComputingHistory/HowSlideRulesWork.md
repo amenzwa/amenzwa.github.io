@@ -893,7 +893,7 @@ When using the $T$ scale on the Hemmi 153 where the angle $\theta$ scale goes al
 
 The Hemmi 153 is marketed as a speciality electrical engineering slide rule. But it would be a crime not to include it in this article, due to its innovative $G_\theta$ scale-based hyperbolic function computations.
 
-***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log vector duplex rule, compared to the older Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D employs the more conventional hyperbolic $Sh$ and $Th$ scales. In terms of capabilities, the Hemmi 255D is comparable to other log-log vector duplex rules, like the Pickett N4-ES.
+***Hemmi 255D Expert Electrical Engineer***—As the name suggests the Hemmi 255D is a newer, more advanced electrical engineering log-log vector duplex rule, compared to the older Hemmi 153. But whereas the Hemmi 153 uses the ingenious, but unconventional, $G_\theta$ scale to compute the hyperbolic functions via the trigonometric functions, the Hemmi 255D employs the more direct way to compute hyperbolic functions via the conventional $Sh$ and $Th$ scales. In terms of capabilities, the Hemmi 255D is comparable to other log-log vector duplex rules, like the Pickett N4-ES.
 
 ![Hemmi 255D](../figures/SlideRules/Hemmi255D/DSC00186.JPG)
 
@@ -925,7 +925,7 @@ This slide rule was the most popular slide rule in America. Although it is a ver
 
 The odd feature of this slide rule is the asymmetric design: the lower frame is very narrow, the slide is quite wide, and the upper frame is unusually wide. The wide upper frame allows all four $LL_{0n}$ scales to fit on the frontside and on the backside all four $LL_n$ scales. This scale layout is much more convenient to use. But to those of us who are used to the common, symmetric design, the lopsided frame feels awkward in the hands. Many collectors admire this advanced engineering rule, but I am no fan of it.
 
-***K&E 4083-3 Log Log Duplex Vector***—Hyperbolic functions are analogous to trigonometric functions. Whereas [trigonometric functions](https://en.wikipedia.org/wiki/Trigonometric_functions) are defined using the unit circle, [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are defined using the hyperbola. Hyperbolic functions are popular with mechanical and civil engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
+***K&E 4083-3 Log Log Duplex Vector***—Hyperbolic functions are complex domain analogues of real domain trigonometric functions. Whereas [trigonometric functions](https://en.wikipedia.org/wiki/Trigonometric_functions) are defined using the unit circle, [hyperbolic functions](https://en.wikipedia.org/wiki/Hyperbolic_functions) are defined using the hyperbola. Hyperbolic functions are popular with mechanical and civil engineers, who use it to compute the [catenary](https://en.wikipedia.org/wiki/Catenary) of chains (or, heavy-duty power transmission lines)—the sag that results when hanging a chain of a certain length from two equal-height posts.
 
 ![catenary](../figures/SlideRules/catenary.jpg)
 
