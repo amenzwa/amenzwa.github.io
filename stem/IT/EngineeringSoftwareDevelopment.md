@@ -298,11 +298,19 @@ Not long ago, a typical embedded programme is implemented by one person, the har
 
 A process is an expansive term that encompasses people, products, and projects. This term is as loaded as it is vague. In large organisations, including governmental organs, IT departments make a big show of designing and documenting extensive, rigid processes, which are used by the overseers to prod the labouring masses. On the other hand, there is no real process to speak of, in small organisations. A process's purpose is to control chaos. When it controls nothing, or when it over controls everything, the process loses its reason for existence. It is better to avoid such extremes and to take a balanced, nuanced approach to process.
 
+## *people*
+
+Embedded system projects should be led and managed by a seasoned EE. The role of software in embedded systems have been expanding quickly over the past few years. This means the project manager must also be familiar with software development tools and techniques. Moreover, he must know how to manage software developers who have no hardware engineering background.
+
+Licensed, experienced EEs know how to manage hardware projects and lead hardware engineers. So I will focus here on managing and leading software developers. Unlike the programmers of the past decades, many modern coders do not have a background in mathematics, engineering, or computer science. As such, they may have difficulties in understanding EE-specific topics, like DSP, DIP, radar, etc. It is, therefore, advisable to pair each coder with a hardware engineer, and have each pair work on a specific component. Often, the engineer will design the hardware and the associated algorithms, and the coder will convert a prototype implementation of the algorithm into a production software. In due course, this pair will cross train each other.
+
+The important thing that the chief hardware designer, namely you, must do is to not let the software design slip out of your grasp. Left unchecked, coders will create software design without regard to hardware. Once REST APIs, web servers, containers, and load balancers took hold in your project, you are about to lose control, or have lost it. If you do choose to use those software technologies, do so because you recognise their utility, not because the coders in your team demand so. Above all, document all design choices, and keep the software design up to date, just as you would the hardware design.
+
 ## *tools*
 
 At a minimum, a software development team should have a repository that holds tested code. Note that no code base is devoid of bugs. Still, the team should hold the code base sacred and endeavour to keep it as pristine as possible.
 
-If the code repository is sacred, the production system is divine. Nothing should be deployed to production without a review by at least a couple of different persons who possess the requisite skills and knowledge. This human touch is the most important—the last line of defence—for embedded systems that impact life and limb. Teams developing safety-critical systems should not flirt with [CI/CD](CI/CD).
+If the code repository is sacred, the production system is divine. Nothing should be deployed to production without a review by at least a couple of different persons who possess the requisite skills and knowledge. This human touch is most important: it is the last line of defence for embedded systems that impact life and limb. Teams developing safety-critical systems should not flirt with [CI/CD](CI/CD).
 
 Today, [GitHub](https://github.com/) is a most popular choice for repository and deployment. GitHub has many tools for managing massive projects. If your team is small, trying to use every available tool on GitHub would make your process burdensome. And know this: many process-related issues spring not from a lack of tools that control the process but from the lack of respect for the process.
 
@@ -411,6 +419,7 @@ I want EEs who read this article to take away the following points about medium-
 - Trends are ephemeral, principles are perennial.
 - Keep it small; keep it simple; keep it elegant.
 - Do right by your successors.
+- Do right by your team.
 - Do right by your clients.
 
 ## *resources*
