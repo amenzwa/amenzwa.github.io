@@ -412,7 +412,7 @@ The high-contrast, black-and-white LCD display has a $400×240$ resolution, whic
 
 But because the DM41X shares the chassis with the earlier [DM42](https://www.swissmicros.com/product/dm42), which is modelled upon the Pioneer Series HP-42S, the key layouts of the DM41X resembles that of the HP-42S, and not the HP-41C. Also, the DM41X keys have a flat profile, unlike the HP-41C's wedge-profiled keys. Although the DM41X's keys have an HP-like tactile feel, its <kbd>ENTER</kbd> key feels a bit rickety, compared to the HP-41C. The body of the DM41X is made of steel, so despite being only a third as thick as the HP-41C, the DM41X feels heftier. The DM41X, like its predecessor DM42, have an IR interface.
 
-Who should buy the SwissMicros DM41X calculator? Well, a better question is, "Who should buy *all* devices made by SwissMicros?". The answer is simple: anyone who admires the quality and the functionality of HP RPN calculators, especially the classics—the HP-41CX, the HP-42S, or the HP-15C—should buy SwissMcros calculators—any model, really. SwissMicros represents functionality, performance, quality, and passion.
+Who should buy the SwissMicros DM41X calculator? Well, a better question is, "Who should buy *all* devices made by SwissMicros?". The answer is simple: anyone who admires the quality and the functionality of HP RPN calculators, especially the classics—the HP-41CX, the HP-42S, or the HP-15C—should buy SwissMcros calculators. Which model? Any and all. SwissMicros represents functionality, performance, quality, and passion.
 
 # CONCLUSION
 
