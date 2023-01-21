@@ -310,7 +310,7 @@ The HP-41C's vintage-style plastic body is more bulky and less sturdy, compared 
 
 ## *Voyager*
 
-In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C, even now, is considered a milestone amongst HP calculators. It was the flagship model in its day. Its claim to fame was the expandability. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach to many.
+In 1981, HP launched the Voyager Series of affordable, compact, programmable, scientific RPN calculators. The design was revolutionary, compared to the model, the HP-41C, which was introduced a couple of years earlier in 1979. The HP-41C, even now, is considered a milestone amongst HP calculators. It was the flagship model in its day. Its claim to fame was the expandability. But at 295 USD (almost 1,200 USD in 2021), it was not accessible to most engineers and engineering students. The 135 USD (over 400 USD in 2021) HP-11C, though still expensive, was within reach for many.
 
 The Voyager Series includes a business RPN calculator called the HP-12C. It was introduced 1981 at 135 USD. It is undoubtedly the most popular business calculator in history. It is still in production. I bought my HP-12C in 1998. But I did not list it here, because the focus of this article is on scientific RPN calculators.
 
