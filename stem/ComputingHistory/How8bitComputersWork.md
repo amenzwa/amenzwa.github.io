@@ -112,7 +112,7 @@ By its very name, "artificial intelligence" is not intelligence, but an imitatio
 
 # SOFTWARE
 
-In this section, we explore the software aspects of computing, in particular the software that is the closest to hardware—the machine code. Machine code is all  `0`s and `1`s. It is generated from assembly language, which is in human-readable mnemonics, like `add`, `sub`, `jump`, `call`, and so on. There is one-to-one correspondence between machine instructions and assembly mnemonics. That is, an assembly programme can be assembled into its equivalent machine code programme, and the machine code programme can be disassembled back into the original assembly programme.
+In this section, we explore the software aspects of computing, in particular the software that is the closest to hardware—the machine code. Machine code consists of only  `0`s and `1`s. It is generated from assembly language, which is represented in human-readable mnemonics, like `add`, `sub`, `jump`, `call`, and so on. There is one-to-one correspondence between machine instructions and assembly mnemonics. That is, an assembly programme can be assembled into its equivalent machine code programme, and the machine code programme can be disassembled back into the original assembly programme.
 
 Every CPU family implements its own set of instructions. This is known as the [instruction set architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture) (ISA) of the CPU. A typical ISA comprises instructions for clock and peripheral configuration, for arithmetic and logic, for memory access, and for input and output. The ISA is the programmer-visible aspects of the hardware.
 
