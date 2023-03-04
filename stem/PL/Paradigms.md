@@ -476,7 +476,7 @@ Programmers often confuse "strictness" with "eagerness". The term "strict" descr
 
 ***types***—A type is a set of values. FP programmers aspire to craft types that admit only those values that are valid in the context of the programme. In a statically typed FP language like ML, validity checks are performed during compilation.
 
-ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like `'a list`, to hold values of different types: `int list` is a list of integers; `real list` is a list of reals.
+ML was the first FP language to use the Hindley-Milner type system. This type system is static, strong, inferencing, and polymorphic. A *static* type system performs type checking at compile time. A *strong* type system prohibits runtime changing of variables' types. An *inferencing* type system discovers types of variables automatically during compilation, which relieves the programmer from having to supply types manually, as is the case in C and Pascal. And a *polymorphic* type system allows containers, like `'a list`, to hold values of different types: `int list` is a list of integers; `real list` is a list of reals. Take `int list`, for example. Here, when the parameterised type constructor `'a list` is applied `int`, the type value `int` is substituted into the type parameter `'a` and yields `int list`, which is a list that holds integers. By way of analogy, a type constructor is applied to a type value to obtain the result type value, just as a function is applied to a value to obtain the result value.
 
 ML was the first popular FP language to provide support for algebraic data types (not the same thing as abstract data types). *Algebraic data types* is a fancy name for sum and product types from category theory. The term "algebraic" derives from the fact that these types allow the programmer to construct complex types from simpler types using sum and product operators, not unlike using $+$ and $×$ operators to form complex arithmetic expressions.
 
@@ -486,7 +486,7 @@ The simplest *sum type* is the Boolean type `bool`, which consists of two distin
 datatype bool = False | True
 ```
 
-The `datatype` declaration defines a new sum type as a disjoint (non-overlapping) union of the specified cases. The "or" `|` operator separating the cases indicates that a value of the `option` type can be only one case, and that the set of all values representable by the type is the union of all the values representable by the individual disjoint cases. Therefore, a variable of type `bool` can hold either a `False` or a `True`, but not both at once. The `bool` above is referred to as *type constructor*. The `False` and the `True` are known as *data constructors*.
+The `datatype` declaration defines a new sum type as a disjoint (non-overlapping) union of the specified cases. The "or" `|` operator separating the cases indicates that a value of the `option` type can be only one case, and that the set of all values representable by the type is the union of all the values representable by the individual disjoint cases. Therefore, a variable of type `bool` can hold either a `False` or a `True`, but not both at once. The `bool` above is referred to as *type constructor*. The `False` and the `True` are known as *value constructors*.
 
 The well-known `option` type is a sum type, too:
 
@@ -494,7 +494,7 @@ The well-known `option` type is a sum type, too:
 datatype 'a option = None | Some of 'a;
 ```
 
-In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that accesses a file would return `Some file` if the file exists, but would return `None` if it does not exist.
+In the `option` type above, the `None` case carries no data, but the `Some` wraps around a type represented by the type parameter `'a`. A function that sometimes fails to return a valid result returns an `option` result. For example, a function that loads data from a file would return `Some data` if data are successfully read, but would return `None` if not.
 
 Just as functions can be recursive in ML, types can be cursively defined, too. The `list` type is perhaps the simplest *recursive type*:
 
@@ -502,7 +502,7 @@ Just as functions can be recursive in ML, types can be cursively defined, too. T
 datatype 'a list = [] | :: of 'a * 'a list;
 ```
 
-Here, the `list` type is defined as either an empty list `[]` or a list constructed by using the cons operator `::` to prepend an element of type `'a` to a list of `'a` typed elements. In prefix-function form, this construction is written `op :: ('a, 'a list)`. In an equivalent infix-operator form, it is written `'a :: 'a list`. The appearance of the `list` type constructor on the right side of the definition of the `list` type makes this a recursive type.
+Here, the `list` type is defined as either an empty list `[]` or a list constructed by using the cons operator `::` to prepend an element of type `'a` to a list of `'a` typed elements. In prefix-function form, this construction is written `op :: ('a, 'a list)`. In equivalent infix-operator form, it is written `'a :: 'a list`. The appearance of the `list` type constructor on the right side of the definition of the `list` type makes this a recursive type.
 
 An oft-used *product type* is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows:
 
