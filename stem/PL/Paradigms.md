@@ -22,7 +22,7 @@ A novice programmer learns his first programming language this way:
 - Study the language manual written by the language designer, focusing on the syntax
 - Implement small programmes in the end-of-chapter exercises that were assigned by the professor
 
-The goal of a novice, at this early stage, is to learn how to use the language, especially the syntactic elements of the language. This practical knowhow, alone, will not make him a good programmer, however. To become a well-rounded programmer, the novice must additionally study CS theory: discrete mathematics, algorithms, complexity theory, computer architecture, and so on. Those interested in CS education may read my article, *[Computer Science Curriculum](CSCurriculum.md)*.
+The goal of a novice, at this early stage, is to learn how to use the language, especially the syntactic elements of the language. This practical knowhow, alone, will not make him a good programmer, however. To become a well-rounded programmer, the novice must additionally study CS theories: discrete mathematics, algorithms, complexity theory, computer architecture, and so on. Those interested in CS education may read my article, *[Computer Science Curriculum](CSCurriculum.md)*.
 
 An experienced programmer picks up a new programming language in a very different way:
 
@@ -30,7 +30,7 @@ An experienced programmer picks up a new programming language in a very differen
 - Implement small projects, either from the exercises or from his repertoire of favourite problems
 - Apply the language in a commercial setting, thereby deepening his understanding
 
-When a conscientious programmer studies a new programming language, he not only learns the static, syntactic structures of programming languages, but also absorbs the dynamic, semantic behaviours of various programming paradigms to which these languages belong. And he takes in a bit of historical background of both the paradigm and the language. He reads the texts (yes, plural) that have been written about that language, preferably by the one who designed the language or by those who are active in that community. He does the end-of-chapter exercises in the texts. His reading list includes definitive textbooks, academic papers, and official online documentation. For a more effective learning, he additionally employs the paradigm's prescribed design concepts and the language's preferred implementation idioms to solve a few pet problems that are substantive but not too complicated, for instance, graph algorithms, neural network algorithms, computer graphics algorithms, or comparable ones. This is the most effective, proven way, regardless of whether one is learning the language in a formal, classroom setting or in an informal, bedroom setting.
+When a conscientious programmer studies a new programming language, he not only learns the static, syntactic structures of the language, but also absorbs the dynamic, semantic behaviours of the paradigm to which this language belongs. And he takes in a bit of historical background of both the paradigm and the language. He reads the texts (yes, plural) that have been written about that language, preferably by the one who designed the language or by those who are active in that community. He does the end-of-chapter exercises in the texts. His reading list includes definitive textbooks, academic papers, and official online documentation. For a more effective learning, he additionally employs the paradigm's prescribed design concepts and the language's preferred implementation idioms to solve a few pet problems that are substantive but not too complicated, for instance, graph algorithms, neural network algorithms, computer graphics algorithms, or comparable ones. This is the most effective, proven way, regardless of whether one is learning the language in a formal, classroom setting or in an informal, bedroom setting.
 
 An expert programmer masters a programming paradigm as follows:
 
@@ -41,11 +41,11 @@ An expert programmer masters a programming paradigm as follows:
 
 One learns a programming language for these reasons: because it is commercially *successful* in the industry; because it is intellectually *influential* in academia among programming language designers; or because it is *both* influential and successful. Below, I suggest a way to master four languages in four paradigms. These four paradigms are the ones used extensively in the IT industry. And these languages are canonical languages in their respective paradigms, all have been successful, and all continue to be influential. Absorbing these languages and their respective paradigms will equip one with the fundamentals necessary to pick up any language—either existing or yet to be invented—in those paradigms.
 
-Before we proceed, I would like to reemphasise the following oft-overlooked, but important, points. Knowing how to use a language is not the same as understanding how to use it well. To use a language properly in an application environment (scientific, engineering, business, etc.), one must have done these in advance:
+Before we proceed, I would like to reemphasise the following oft-overlooked, but important, points. Knowing how to use a language is not the same as understanding how to use it well. To use a language properly in an application domain (scientific, engineering, business, etc.), one must have done these in advance:
 
 - Learn the language's idioms
 - Master the paradigm's concepts
-- Grasp the environment's drivers
+- Grasp the domain's drivers
 
 # PARADIGMS
 
