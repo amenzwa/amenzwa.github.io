@@ -196,7 +196,7 @@ The primary function of the CPU is to run programmes. Programmes are sequences o
 
 ## *fetch*
 
-—For the CPU to execute an instruction, it must first fetch the instruction from memory. System service procedures and interrupt service procedures are stored in the ROM and user programmes are stored in the RAM. The address of the instruction to be fetched must already be held in the PC. At the start of the fetch stage, the CU transmits the instruction address held in the PC along the address bus. The address decoder of the ROM (or that of the RAM) recognises this address as being one of its own, retrieves the contents of the addressed byte, and transmits the contents along the data bus. The CU knows that the transmitted byte is an instruction, so it loads the instruction into the IR.
+For the CPU to execute an instruction, it must first fetch the instruction from memory. System service procedures and interrupt service procedures are stored in the ROM and user programmes are stored in the RAM. The address of the instruction to be fetched must already be held in the PC. At the start of the fetch stage, the CU transmits the instruction address held in the PC along the address bus. The address decoder of the ROM (or that of the RAM) recognises this address as being one of its own, retrieves the contents of the addressed byte, and transmits the contents along the data bus. The CU knows that the transmitted byte is an instruction, so it loads the instruction into the IR.
 
 ## *decode*
 
