@@ -41,7 +41,7 @@ Before we explore the CS curriculum, we shall first examine non-CS fields whose 
 - ***physics***—Physics models are essential to 3D games and simulators. Simulators are used by professional engineers in specialities such as aerospace, automotive, and civil engineering. Today, quantum computing is a reality. Once quantum computing becomes prevalent, programmers will have to possess a solid background in quantum mechanics.
 - ***neuroscience***—Modern artificial intelligence (AI) is based on neural networks (NN). When NN as a speciality emerged in the early 1940s, the [models](https://en.wikipedia.org/wiki/Artificial_neuron) were inspired by the brain and its neuronal activities, as explained by neuroscience. Today, neuroscience continues to inform and inspire AI researchers.
 - ***psychology***—Graphical user interface (GUI) design is guided by human-machine interaction, a speciality of psychology. And auditory, tactile, and visual perception all play key roles in the design of useful, safe user interfaces in industrial systems. And information visualisation (InfoVis) relies heavily on visual perception and computer graphics.
-- ***economics***—The design of systems that perform financial modelling, actuarial modelling, real-time trading, etc., are guided by mathematical economics.
+- ***economics***—The design of systems that perform economic and financial modelling, actuarial modelling, real-time trading, etc., are guided by mathematical economics and finance.
 
 ## *technology*
 
