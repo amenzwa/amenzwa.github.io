@@ -156,7 +156,7 @@ mem = dbl(13);
 ...
 ```
 
-Every time a procedure is called, requisite memory for use by the called procedure is allocated on the stack and the current state of the CPU (the contents of its registers) is also pushed onto the stack. Upon the return from the procedure, the preserved state is popped off the stack to restore the CPU to its pre-call state. If a called procedure calls another procedure, more memory will be consumed to enable that subsequent call. Hence, a runaway recursive call will very quickly exhaust the stack memory, and will throw the [stack overflow exception](https://en.wikipedia.org/wiki/Stack_buffer_overflow).
+Every time a procedure is called, requisite memory for use by the called procedure is allocated on the stack and the current state of the CPU (the contents of its registers) is also pushed onto the stack. When the procedure is finished, the state preserved on the procedure's stack frame is used to restore the CPU to its pre-call state, and the stack frame is deallocated to reclaim the memory. If a called procedure calls another procedure, more memory will be consumed to enable that subsequent call. Hence, a runaway recursive call will quickly exhaust the stack memory, and will throw the [stack overflow exception](https://en.wikipedia.org/wiki/Stack_buffer_overflow).
 
 ## *input/output*
 
