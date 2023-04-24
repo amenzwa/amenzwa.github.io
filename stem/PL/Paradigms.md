@@ -307,7 +307,7 @@ From the perspective of state management, OO is but a gloss on PP. PP holds all 
 
 FP eschews the store-and-mutate way of working. Instead, FP propels computation by applying functions to input data and by producing transformed output data to be passed to the next function in the pipeline. The programme state is whatever the result happens to be at a particular moment, be it intermediate or final. If necessary, copies of the sequence of intermediate states could be saved, say for "undo" operations.
 
-Form the programme design point of view, the whole FP programme is just a function. This top-level function accepts input data, and passes the data to other functions which it invokes, and these functions in turn invoke other lower-tier functions. The bottom tier consists of functions that implement simple expressions.
+From the programme design point of view, the whole FP programme is just a function. This top-level function accepts input data, and passes the data to other functions which it invokes, and these functions in turn invoke other lower-tier functions. The bottom tier consists of functions that implement simple expressions.
 
 The key concepts behind FP are simple, minimalist. But FP derives immense expressive powers by composing these simple, individual concepts in a uniform way. This readily composable nature of concepts distinguishes FP from other programming paradigms, when things get complicated.
 
