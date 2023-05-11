@@ -204,8 +204,8 @@ Modern game-playing algorithms that have resoundingly beaten humans—[TD-Gammon
 By way of analogies—and admittedly very crude ones at that—we may view the knowledge acquisition approaches of these learning paradigms as follows:
 
 - Reinforcement learning is like how experts improve by repetitious trials and self assessments
-- Supervised learning is like how kindergarteners learn their letters from the teacher
-- Unsupervised learning is like how turtle hatchlings instinctively head down to the sea
+- Supervised learning is like how kindergarteners learn their letters from the teacher, through repetition
+- Unsupervised learning is like how iron filings self organise themselves in the presence of magnetic field
 
 
 ## *deep learning*
