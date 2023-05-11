@@ -201,6 +201,12 @@ And the differentiator between dynamic programming and reinforcement learning is
 
 Modern game-playing algorithms that have resoundingly beaten humans—[TD-Gammon](https://en.wikipedia.org/wiki/TD-Gammon) (backgammon), [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo) (go), [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero) (go, chess, and other games), and the like—are reinforcement learning algorithms. A training method common to these game-playing systems is that they improve themselves by playing millions of games against copies of themselves. Hence, reinforcement learning algorithms mimic the way human experts learn.
 
+By way of analogies—admittedly very crude ones at that—we may view the knowledge acquisition approaches of these learning paradigms as follows:
+
+- Reinforcement learning is like how self-taught people learn by trial and error
+- Supervised learning is like how kindergarteners learn their letters at school
+- Unsupervised learning is like how turtle hatchlings instinctively head down to the sea
+
 
 ## *deep learning*
 
