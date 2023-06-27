@@ -173,15 +173,15 @@ If you work in a maths-heavy field like DSP, DIP, sonar, radar, and the like, it
 
 ### TIME AND SPACE COMPLEXITY
 
-In CS, algorithmic complexity is the analytical technique used to estimate the time and space costs the algorithm incurs on the computer. Algorithmic complexity is expressed using the $O$-notation. The $O$ stands for "order", which is an estimate of cost. Between the parentheses appears an order function, which can be constant, logarithmic, linear, polynomial, or exponential. The runtime of algorithms can be ranked as follows, from slowest to fastest:
+In CS, algorithmic complexity is the analytical technique used to estimate the time and space costs the algorithm incurs on the computer. Algorithmic complexity is expressed using the $O$-notation. The $O$ stands for "order", which is an estimate of cost. Between the parentheses appears an order function, which can be constant, logarithmic, linear, polynomial, exponential, factorial, and so on. The runtime of algorithms can be ranked as follows, from fastest to slowest:
 
-- *slowest*—$O(c^n)$ means exponential order, where $c$ is a constant and $n$ represents the number of input data elements; exponential order algorithms are impracticable, so approximating tricks have to be employed
-- *slower*—$O(n^c)$ means polynomial order; many difficult algorithms in CS are polynomial order
-- *slow*—$O(nm)$ means quadratic order in the $n \times m$ 2D input, but linear order in the total number of elements $nm$ of the input; matrix algorithms and some graph algorithms are 2D, and both dimensions of the data structure independently affect the runtime of the algorithm that manipulates it
-- *acceptable*—$O(n)$ means linear order; several common algorithms that walk the list, like counting the elements of the list or reading records from a CSV file, are linear order
+- *practically immediate*—$O(1)$ means constant runtime; element lookups for arrays and hashtables, as well as some priority queues, are linear order
+- *very fast*—$O(lg(n))$ means logarithmic order; binary search algorithm and others that divide the problem into two parts are logarithmic order
 - *fast*—$O(n\ lg(n)$ means $log_2$ logarithmic order repeated $n$ times; the most famous algorithm in this order is the [quicksort](https://en.wikipedia.org/wiki/Quicksort)
-- *faster*—$O(lg(n))$ means logarithmic order; binary search algorithm and others that divide the problem into two parts are logarithmic order
-- *fastest*—$O(1)$ means constant runtime; element lookups for arrays and hashtables, as well as some priority queues, are linear order
+- *acceptable*—$O(n)$ means linear order; several common algorithms that walk the list, like counting the elements of the list or reading records from a CSV file, are linear order
+- *slow*—$O(nm)$ means quadratic order in the $n \times m$ 2D input, but linear order in the total number of elements $nm$ of the input; matrix algorithms and some graph algorithms are 2D, and both dimensions of the data structure independently affect the runtime of the algorithm that manipulates it
+- *very slow*—$O(n^c)$ means polynomial order; many difficult algorithms in CS are polynomial order
+- *practically crawling*—$O(c^n)$ means exponential order, where $c$ is a constant and $n$ represents the number of input data elements; exponential order algorithms are impracticably slow (and even slower ones, say $O(n!)$ factorial order), so approximating tricks have to be employed
 
 Time complexity is the time it takes for the algorithm to complete the task. It is measured in steps. A step is equivalent to a recursive step or a loop iteration. The maximum time complexity of the binary search algorithm above is $O(lg(n))$. A naïve linear search algorithm that walks the length of the array, on the other hand, would take $O(n)$. Space complexity is the amount of memory the algorithm consumes in performing the task. It is a function of the number of elements of a data structure. Both the binary search and the linear search algorithms work with an array of size $n$, so they both have space complexity of $O(n)$.
 
