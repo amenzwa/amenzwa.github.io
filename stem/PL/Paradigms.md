@@ -323,7 +323,7 @@ Now, let us turn our attention to some FP terms. FP takes delight in giving orna
 
 ***transparency***—Functions do not maintain internal data that they secretly maintain and mutate to make hidden computation decisions. That is, a function's behaviour is transparent and is defined entirely by the input parameters. The same input always yields the same output. That is, if a function $f$ applied to an input value $x$ yields an output value $y$, as in $y = f(x)$, then the value $y$ can always be used in place of the function application $f(x)$, and vice versa. This property of functions is called *referential transparency*.
 
-***first-class functions***—Functions are values, just like characters, integers, reals, lists, tuples, records, etc. This property of functions is known as *first-class*.
+***first-class functions***—Functions are values, just like characters, integers, reals, lists, tuples, records, etc. As such, a function $f$ can be passed as an argument to another function $g(f)$, and a function $f$ can be returned as a result from another function $f = h(x)$. This property of functions is known as *first-class*.
 
 ***local functions***—Since in FP functions are values, a function can be declared inside another function, and such local functions, like local variables, are visible only inside the enclosing function.
 
