@@ -384,7 +384,7 @@ fun fac 0 = 1
 
 When this function is invoked as `fac 3`, it computes the following sequence of function invocations that yields the result $6$:
 
-```ocaml
+```
 fac 3
   3 * fac (3 - 1 ⇒ 2)
     (3 * 2 ⇒ 6) * fac (2 - 1 ⇒ 1)
@@ -406,7 +406,7 @@ fun fac n =
 
 This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent quantities that are similar, but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$:
 
-```ocaml
+```
 fac 3
   fac' a=1 n=3
   fac' a=(1 * 3 ⇒ 3) n=(3 - 1 ⇒ 2)
