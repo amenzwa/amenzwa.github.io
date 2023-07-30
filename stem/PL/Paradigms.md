@@ -377,14 +377,14 @@ Note that many programmers confuse the term "partially applied function" with "p
 
 ***recursion***—ML uses recursion for repetition. Let us examine the factorial function. In mathematics, factorial of $n$ is defined as $n! = n × (n-1)!$ and $0! = 1$ by fiat. In Standard ML, this function can be implemented as an almost-verbatim of its mathematical definition, using a *primitive recursion*:
 
-```Haskell
+```ocaml
 fun fac 0 = 1
   | fac n = n * fac (n - 1);
 ```
 
 When this function is invoked as `fac 3`, it computes the following sequence of function invocations that yields the result $6$:
 
-```Haskell
+```ocaml
 fac 3
   3 * fac (3 - 1 ⇒ 2)
     (3 * 2 ⇒ 6) * fac (2 - 1 ⇒ 1)
@@ -397,7 +397,7 @@ Each step in the evaluation of `fac` contains a call to itself. This is the simp
 
 This primitive recursion can be transformed into *tail recursion*. In a tail recursion, the final step in the function is a recursive invocation of itself without additional computation. In the primitive recursion version above, the final step in the `else` branch is `n * fac (n - 1)`. That means the result of the recursive invocation `fac (n - 1)` is an intermediate step, not the final step. The tail-recursive version of `fac` is this:
 
-```Haskell
+```ocaml
 fun fac n =
   let fun fac' a 0 = a
         | fac' a n = fac' (a * n) (n - 1)
@@ -406,7 +406,7 @@ fun fac n =
 
 This version of factorial defines a local, auxiliary function `fac'`. In mathematics, the prime symbol $⊡'$ is used sometimes to represent quantities that are similar, but subtly different. ML family of languages—Haskell, OCaml, F#, Reason, etc.—use this mathematical convention. When this version of `fac` is evaluated as `fac 3`, the tail recursion proceeds as follows, yielding the same result $6$:
 
-```Haskell
+```ocaml
 fac 3
   fac' a=1 n=3
   fac' a=(1 * 3 ⇒ 3) n=(3 - 1 ⇒ 2)
@@ -421,12 +421,18 @@ I have written the consecutive calls to `fac'` without indentation to highlight 
 
 There are algorithms in which each step contains multiple recursions. For instance, the famous quicksort algorithm uses *double recursion*.
 
-```Haskell
+```ocaml
 fun qsort [] = []
   | qsort (x::xs) =
     let val less = List.filter (fn e => e < x) xs
         val more = List.filter (fn e => e >= x) xs
     in (qsort less) @ [x] @ (qsort more) end;
+```
+
+Now, if we apply `qsort` to an unsorted list, we get a sorted list as a result.
+
+```ocaml
+qsort [5, 2, 6, 9, 0, 1, 8]; (* result = [0, 1, 2, 5, 6, 8, 9] *)
 ```
 
 The recursive step of `qsort` recur once for the elements of `xs` that are less than the pivot `x` and once more for the elements of `xs` that are greater than or equal to `x`. Hence, `qsort` is doubly recursive. This algorithm states that a sorted list is a concatenation of the sorted sublist of values less than the pivot, the sublist containing only the pivot, and the sorted sublist of values more than the pivot. Like most recursive algorithms, quicksort is mathematically intuitive, and its meaning is evident in the code.
@@ -439,14 +445,14 @@ The higher-order function `foldr` (fold right) captures this monoidal operation.
 
 The list length algorithm mentioned above can be implemented in Standard ML like this:
 
-```Haskell
+```ocaml
 fun len [] = 0
   | len (x::xs) = 1 + len xs;
 ```
 
 The primitive-recursive solution structure of `len` can be captured using `foldr` monoidal operator like this:
 
-```Haskell
+```ocaml
 List.foldr (fn (_, a) => 1 + a) 0 xs;
 ```
 
@@ -454,19 +460,19 @@ The expression `fn (_, a) => 1 + a` is the collapsing λ function, which ignores
 
 Another oft-used functional operator is `map`, which applies the supplied λ function to the list. Whereas `fold` collapses the list into a single value, `map` preserves the original structure of the list. This is how to apply a squaring λ function `fn x ⇒ x * x` to the each element of the list `xs`:
 
-```Haskell
+```ocaml
 List.map (fn x => x * x) xs;
 ```
 
 The `filter` functional operator, too, is commonly used in daily programming. It applies the supplied λ function predicate to the list to select the desired elements. For example, we can filter out elements of `xs` that are greater than $5$ like this:
 
-```Haskell
+```ocaml
 List.filter (fn x => x > 5) xs;
 ```
 
 ***strictness and eagerness***—The language's evaluation strategy determines the strictness of the functions defined in that language. Consider a Standard ML constant function, a function that returns a constant, no matter the value of the argument:
 
-```Haskell
+```ocaml
 fun constant x = 9;
 ```
 
@@ -486,7 +492,7 @@ ML was the first popular FP language to provide support for algebraic data types
 
 The simplest *sum type* is the Boolean type `bool`, which consists of two distinct cases:
 
-```Haskell
+```ocaml
 datatype bool = False | True
 ```
 
@@ -494,7 +500,7 @@ The `datatype` declaration defines a new sum type as a disjoint (non-overlapping
 
 The well-known `option` type is a sum type, too:
 
-```haskell
+```ocaml
 datatype 'a option = None | Some of 'a;
 ```
 
@@ -502,7 +508,7 @@ In the `option` type above, the `None` case carries no data, but the `Some` wrap
 
 Just as functions can be recursive in ML, types can be cursively defined, too. The `list` type is perhaps the simplest *recursive type*:
 
-```Haskell
+```ocaml
 datatype 'a list = [] | :: of 'a * 'a list;
 ```
 
@@ -510,19 +516,19 @@ Here, the `list` type is defined as either an empty list `[]` or a list construc
 
 An oft-used *product type* is the tuple type. For example, a complex number can be defined as an alias of a tuple (pair, to be precise) of real numbers as follows:
 
-```
+```ocaml
 type complex = real * real;
 ```
 
 The use of the `*` operator in the definition emphatically states that a tuple type is a product type. The elements of the tuple type are unlabelled, and their order matters: `int * string` is a different type from `string * int`, even though that they both have the same information content. A tuple literal is written like this:
 
-```
+```ocaml
 val c = (0.25, 0.0) : complex;
 ```
 
 Above, we assigned the `: complex` type to the tuple `(0.25, 0.0)`—which represents the complex number $0.25 + i\ 0.0$, the cusp of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set). Another commonly used product types is the record type, which can be aliased like this:
 
-```
+```ocaml
 type professor =
   { first : string
   , last : string
@@ -531,7 +537,7 @@ type professor =
 
 Above, `string list` is the list of strings, which is the `list` type parameterised with the element type `string`. Record types have labelled elements and their order does not matter: `{ id: int, name: string }` is identical to `{ name: string, id: int }`. A record literal is written as follows:
 
-```haskell
+```ocaml
 val milner : professor =
 { first = "Robin"
 , last = "Milner"
