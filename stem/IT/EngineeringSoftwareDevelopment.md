@@ -247,7 +247,7 @@ Given the above `Vec` type and the `outerprod()` function declarations, the prog
 Pointer aliases hinder the compiler's ability to optimise. If the implementer of the vector library wishes to optimise the implementation of the function `outerprod()`, he may designate the arguments with the `restrict` qualifier. In that case, reusing one of the argument pointers as a result pointer will result in a compiler error.
 
 ```c
-extern void outerprod(const Vec* restrict u, const Vec* restrict v, Vec* restruct r);
+extern void outerprod(const Vec* restrict u, const Vec* restrict v, Vec* restrict r);
 ```
 
 I mentioned above that `struct` values in C are passed by copying. To eliminate this inefficiency, most C functions accept and return pointers to `struct` values. This we saw earlier in the implementation of the `bst()` binary search tree function.
