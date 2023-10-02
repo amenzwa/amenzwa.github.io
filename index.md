@@ -6,7 +6,7 @@ I am Amen Zwa, an ordinary bloke. I work as a technology consultant, focusing on
 
 - Amazon Author Profile: [http://amazon.com/author/amenzwa](http://amazon.com/author/amenzwa)
 - LinkedIn Profile: [https://www.linkedin.com/in/amenzwa](https://www.linkedin.com/in/amenzwa)
-- Open-Source Projects: https://github.com/amenzwa
+- Open-Source Projects: [https://github.com/amenzwa](https://github.com/amenzwa)
 
 # [Law](law/index.md)
 
