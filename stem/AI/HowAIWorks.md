@@ -280,7 +280,7 @@ The resources listed here are for current and aspiring practitioners. To become 
 - *[The Deep Learning Revolution](https://www.amazon.com/Deep-Learning-Revolution-audiobook/dp/B07MM8F42R/ref=sr_1_1?crid=1QVLDREHD0F5Z&keywords=The+Deep+Learning+Revolution&qid=1643658890&s=audible&sprefix=the+deep+learning+revolution%2Caudible%2C34&sr=1-1)*, Sejnowski
   - Neurocomputing researchers can be ordered into three generations: 1950s to 1970s; 1980s to 2000s; and 2010s to present. Rosenblatt is from the first generation, Rumelhart from the second, and all modern practitioners are from the third. Sejnowski, a contemporary of Rumelhart, is from the second generation—one of the pioneers who brought back neurocomputing from the verge of death. His presentation of deep learning is full of historical details, and it is one of the very few books on the subject that can be read by non-STEMers.
 - *[Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618/ref=sr_1_1?keywords=deep+learning+goodfellow&qid=1643659040&sprefix=Deep+Learning+goodfe%2Caps%2C32&sr=8-1)*, Goodfellow
-  - This is a comprehensive, modern text on neurocomputing. It is suited to undergraduate and graduate students starting out in the speciality.
+  - This is a comprehensive, modern textbook on deep learning. It is suited to undergraduate and graduate students starting out in the speciality.
 
 ### FEATURE EXTRACTION
 
