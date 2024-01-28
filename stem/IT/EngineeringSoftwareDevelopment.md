@@ -108,9 +108,9 @@ The simplest type of tree is a binary tree which, in EE, is used to implement th
 The "binary" in binary tree refers to the two sub-trees: the left sub-tree and the right sub-tree. A branch node's sub-tree pointers are `ltree` and `rtree`. Leaf nodes' sub-tree pointers are set to `NULL`. All nodes hold data which, in this case, is an integer `value`. A binary tree is built, node by node, starting with the root node. CS folk draw trees upside down, with the root node at the top and leaves at the bottom.
 
 ```c
-typedef struct BNode BNode;
+typedef struct BNode BNode; // forward declaration needed for recursive pointer
 struct BNode {
-  BNode *ltree, *rtree;
+  BNode *ltree, *rtree; // recursive pointer
   int value;
 };
 ```
@@ -124,7 +124,7 @@ The following figure shows a binary tree built out of `BNode` objects. The root 
 The tree shape is a common data structure, and it appears in function implementations, as well. The binary search algorithm, shown below, has a recursive call stack. It finds a value stored in a binary search tree, like the one shown above.
 
 ```c
-bool bst(const BNode* n, const int v) { // recursive
+bool bst(const BNode* n, const int v) { // recursive function
   if (n == NULL) return false;
   if (v == n->value) return true;
   return v < n->value ? bst(n->ltree, v) : bst(n->rtree, v);
@@ -260,9 +260,9 @@ But by the late 1960s, both hardware and software technologies had advanced enou
 
 The 1970s saw the rise of modern computers ([CRAY-1](https://en.wikipedia.org/wiki/Cray-1), [VAX-11/780](https://en.wikipedia.org/wiki/VAX-11), [8080](https://en.wikipedia.org/wiki/Intel_8080)), modern OSs ([MVS](https://en.wikipedia.org/wiki/MVS), [UNIX](https://en.wikipedia.org/wiki/Unix), [VMS](https://en.wikipedia.org/wiki/OpenVMS)), and modern languages ([ML](https://en.wikipedia.org/wiki/Standard_ML), [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk), [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language))). These seemingly "ancient" technologies are actually modern; today's computers, OSs, and languages are their direct descendants.
 
-C is a from that era of imagination and innovation. And it is the only technology that is still in widespread use, yet has remained essentially unchanged from its original design. C became publicly available in 1972 (although it was born in 1969). It was also around this time that modular software practices were established and virtual memory became a standard OS facility. On a computer equipped with 32-bit memory hardware (VAX-11/780) and under a virtual memory capable OS (UNIX), the C compiler is able to link multiple modules and generate a single, large programme that could address $2^{32} = 4,294,967,296$ bytes, that is 4 GB. A typical VAX-11 in those days had no more than 256 KB of RAM. The memory controller hardware aids the OS's virtual memory service map the 4 GB address space down to the actual physical memory space. The virtual memory facility eliminated the need to implement the error-prone, custom module swapper. To assembly programmer of the day, the ability to program in a human-readable language like C without having to worry about module swapping—all without sacrificing runtime performance—was almost a miracle.
+C is from that era of imagination and innovation. And it is the only technology from that time that is still in widespread use today, yet has remained essentially unchanged from its original design. C became publicly available in 1972 (although it was born in 1969). It was also around this time that modular software practices were established and virtual memory became a standard OS facility. On a computer equipped with 32-bit memory hardware (VAX-11/780) and under a virtual memory capable OS (UNIX), the C compiler is able to link multiple modules and generate a single, large programme that could address $2^{32} = 4,294,967,296$ bytes, that is 4 GB. A typical VAX-11 in those days had no more than 256 KB of RAM. The memory controller hardware aids the OS's virtual memory service map the 4 GB address space down to the actual physical memory space. The virtual memory facility eliminated the need to implement the error-prone, custom module swapper. To assembly programmer of the day, the ability to program in a human-readable language like C without having to worry about module swapping—all without sacrificing runtime performance—was almost a miracle.
 
-Under modern software organisation practices, a *module* is a file that contains conceptually related data and code. Implementations of data structures, like list, queue, and hashtable, are organised in individual modules. In C, module implementation comprises the `.h` header file that represents the module's external interface and the `.c` file that represents the module's internal implementation. The implementer expressly publishes those elements that are publicly accessible using the `extern` modifier in the `.h` file, and tags those elements that must be hidden from the public with the `static` modifier in the `.c` file.
+Under modern software organisation practices, a *module* is an organisational unit that contains conceptually related data and code. Typically, a module corresponds to a file, and the file name matches the module name. Implementations of data structures, like list, queue, hashtable, tree, graph, etc., and the associated code that manipulate them, are organised in individual modules. In C, module implementation comprises the `.h` header file that represents the module's external interface and the `.c` file that represents the module's internal implementation. The implementer expressly publishes those elements that are publicly accessible using the `extern` modifier in the `.h` file, and tags those elements that must be hidden from the public with the `static` modifier in the `.c` file.
 
 ### LIBRARIES
 
