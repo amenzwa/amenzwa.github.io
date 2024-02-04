@@ -569,7 +569,7 @@ Algebraic data types may be understood in terms of their cardinalities. A sum ty
 Most modern programming language, be they OO or FP, support an incarnation of the Hindley-Milner type system. So, today's programmers are generally familiar with the concepts of this type system. But only those who know the proof-assistant hereditary of the original version of ML, the LCF/ML, recognise that type theory of programming languages corresponds to proof theory of mathematical logic. This is referred to as [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence):
 
 - A type is a proposition. A typed value is a proof of a theorem. The type system guarantees the logical validity of proofs.
-- Constructing a value of a type is an assertion of truth. An uninhabited type is a falsehood.
+- Constructing a value of a type is an assertion of truth. An uninhabited type, the empty set $\empty$, is a falsum, the [absurdity](https://en.wikipedia.org/wiki/Absurdity) $\bot$.
 - A function on types is an implication. An identity function is a tautology. A bijection is an equivalence. A recursive function is an inductive proof. (Recall, from above, that a function is a product type, namely a set of pairs.)
 - A product type is conjunction. A sum type is disjunction.
 - A [generalised product type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A0_type) $\Pi$ is universal quantification. A [generalised sum type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A3_type) $\Sigma$ is existential quantification. ($\Pi$ and $\Sigma$ are concepts of the dependent type theory discussed below).
