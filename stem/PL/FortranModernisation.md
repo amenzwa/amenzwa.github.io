@@ -180,7 +180,7 @@ p = point3d(3.0, 2.0, 1.0)
 
 This verbosity is gratuitous, tedious, confusing, illegible, and error-prone. The above code could be reduced to the following Haskell-like syntax.
 
-```haskell
+```
 Point3D : Point3D {x, y, z : ℝ} ## declare a record type
 p = Point3D {3.0, 2.0, 1.0} ## define a record value
 ```
@@ -207,7 +207,7 @@ allocate(a, 2, 3) ! allocate a 2x3 matrix of uninitialised real elements
 
 The following is an equivalent array defined in the new syntax, using the standard library's [dependently typed](https://en.wikipedia.org/wiki/Dependent_type) `Matrix ℝ 2 3` (aliased as`[ℝ 2 3]`), which is parameterised with the element type $ℝ$ and is doubly indexed with size values of type $ℕ$. Note that in the code snippet below, the elements of the matrix `y` are automatically initialised to $0.0$.
 
-```haskell
+```
 y : [ℝ 2 3] ## define a 2x3 matrix of ℝ type elements initialised to 0.0
 ```
 
@@ -229,7 +229,7 @@ end function qsort
 
 As can be seen above, there is much crud in the syntax of this simple function. By contrast, the following equivalent implementation in the new syntax is succinct and, more importantly, comprehensible.
 
-```haskell
+```
 qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]
   | [] → []
   | x:xx → qsort [l | l ← xx, l < x] + [x] + qsort [g | g ← xx, g ≥ x]
@@ -239,9 +239,9 @@ The type declaration `qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]` states that the
 
 In fact, the type system can automatically infer the type of this function, so the type declaration could be omitted, altogether. Thus, a minimalist implementation of `qsort`, shown below, consists of just two clauses: the base case and the recursive step.
 
-```haskell
+```
 qsort [] → []
-qsort x:xx → qsort [l | l ← xx, l < x] + [x] + qsort [g | g ← xx, g ≥ x]
+qsort x:xx → qsort [l | l←xx, l<x] + [x] + qsort [g | g←xx, g≥x]
 ```
 
 In this `qsort` implementation, the formal parameter `[]` of the first clause pattern matches an empty vector argument. Since a sorted version of an empty vector is just an empty vector, the first clause simply returns the value `[]`. The formal parameter `x:xx` of the second clause pattern matches a non-empty vector argument, with the variable `x` bound to the first element, and the variable `xx` bound to the rest of the elements. The `[l | l ← xx, l < x]` is the vector comprehension syntax that is an analogue of the [set comprehension](https://en.wikipedia.org/wiki/Set-builder_notation) notation in mathematics. This phrase dynamically constructs a vector that holds the filtered elements of `xx` that are less than `x`. Likewise, the vector `[g | g ← xx, g ≥ x]` holds the filtered elements of `xx` that are greater than or equal to `x`. Then, the sorted lesser vector, the singleton vector  `[x]` that contains the pivot element `x`, and the sorted greater vector are concatenated into the resultant vector using the `+` operator, and this result is returned.
@@ -282,7 +282,7 @@ Also, avoid superfluous, in-your-face comments, like the one shown below.
 
 Subtly is a virtue. It is better to cite a readily accessible, authoritative source for the algorithm in the module's block comment, without cramming in a shallow, meandering explanation thereof.
 
-```haskell
+```
 #< GraphSearch.f
 This module implements bread-first and depth-first
 graph searching algorithms as described in
@@ -294,7 +294,7 @@ Chapter 20 Elementary Graph Algorithms of
 
 And the [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
 
-```haskell
+```
 Rational : Rational {n, d : ℤ}
 ℚ : Rational
 
@@ -339,7 +339,7 @@ Many languages today allow programmers to define their own symbolic operators. I
 
 In our new language, an operator is introduced using the Agda-style [mixfix](https://agda.readthedocs.io/en/latest/language/mixfix-operators.html) syntax. Here, the `_` is an argument placeholder.
 
-```haskell
+```
 Bol : | False | True
 𝔹 : Bol
 
@@ -364,7 +364,7 @@ p ∨ q
 
 Above, we defined the $\neg$ prefix operator and the $\land$ and $\lor$ infix operators. And we can define the postfix factorial operator `!` like so.
 
-```haskell
+```
 _! : ℕ → ℕ
   | 0 → 1
   | n → n * (n - 1)!
@@ -384,15 +384,16 @@ _! : ℕ → ℕ
 
 Anonymous functions that are created on-the-fly (𝜆 functions) are also an integral part of FP. Likewise, function composition operators—pipe-left `<|` (same as mathematical composition operator `∘`), and pipe-right `|>` (same as Unix shell pipe operator `|`)—are indispensable. The following code shows the use of the 𝜆 function feature in our new language. The `foldl` fold-left standard library functional takes a 𝜆 function, an initial value, and a vector. The 𝜆 function takes as arguments the accumulator `a` and the element `x`.
 
-```haskell
-foldl (𝜆 a x → a + x) 0 [3, 5, 7, 4, 9] ## returns 0 + 3 + 5 + 7 + 4 + 9 = 28
+```
+## returns 0 + 3 + 5 + 7 + 4 + 9 = 28
+foldl (𝜆 a x → a + x) 0 [3, 5, 7, 4, 9]
 ```
 
 Note the function application syntax shown above. The function `foldl` is applied to three arguments: a 𝜆 function, the initial value `0`, and the vector `[3, 5, 7, 4, 9]`. No parentheses are needed when applying a function to its arguments. So, whereas in mathematics function application is written $f(x)$, in Haskell it is written `f x`. This syntax is clear, succinct, and quiet. By the way, the vector, the initial value, and the 𝜆 function, together, form an algebraic structure called a *[monoid](https://en.wikipedia.org/wiki/Monoid)*.
 
 The `<|` and `|>` composition operators as used as follows.
 
-```haskell
+```
 g <| f x ## same as g ∘ f, which is read "g after f"
 f x |> g ## same as f ; g, which is read "f then g"
 ```
@@ -407,7 +408,7 @@ packed = pack(xx, xx > 5) ! returns (/ 9, 6, 7, 8 /)
 
 And this is the equivalent code in the new syntax. The `filter` standard library functional takes a 𝜆 function and a vector. The 𝜆 function takes an argument `x`, which is an element of the vector `xx`.
 
-```haskell
+```
 xx = [9, 1, 6, 3, 7, 4, 8, 5, 2, 0] ## inferred type is [ℕ 10]
 filtered = filter (𝜆 x → x > 5) xx ## returns [9, 6, 7, 8]
 ```
@@ -416,7 +417,7 @@ As a full-fledged scientific DSL, our new language must support FP, fully. So, i
 
 ***support clausal functions***—Functions can also be defined by multi-clause pattern matching in the new language.
 
-```haskell
+```
 modulus : ℂ → ℝ
   | Rectangular {x, y} → √ (x^2 + y^2)
   | Polar {r, _} → r
@@ -432,21 +433,21 @@ The code for `modulus` can be read as follows:
 
 The `modulus` function is an example of a multi-clause function. It could also be shortened as follows, by letting the type system infer its type as $\mathbb{C} \to \mathbb{R}$.
 
-```haskell
+```
 modulus Rectangular {x, y} → √ (x^2 + y^2)
 modulus Polar {r, _} → r
 ```
 
 The `id` function defined below is an example of a uni-clause function. Although there is but one clause here, we nevertheless use the indented begin-clause symbol `|`, for visual consistency of function definitions.
 
-```haskell
+```
 id : 𝛼 → 𝛼
   | x → x
 ```
 
 We could, of course, shorten this code like this, and the type system would infer its type as $𝛼 \to \alpha$.
 
-```haskell
+```
 id x → x
 ```
 
@@ -471,7 +472,7 @@ end function external
 
 Compare that grotesque, bloated Fortran code to the equivalent, svelte code in the new syntax.
 
-```haskell
+```
 external : ℝ → ℝ
   | i → internal i - 2.0 where internal x → x^3.0
 ```
@@ -480,13 +481,13 @@ Here, too, the type system can automatically infer the type of the function `int
 
 The type system can also infer the type of the function `external` as $\mathbb{R} \to \mathbb{R}$, so we could further compact the above code like this.
 
-```haskell
+```
 external i → internal i - 2.0 where internal x → x^3.0
 ```
 
 Note that, instead of the `where` clause, the `let-in` binding can be used to introduce the `internal` function.
 
-```haskell
+```
 external i → let internal x → x^3.0 in internal i - 2.0
 ```
 
@@ -499,7 +500,7 @@ The differences between `let-in` and `where` are these:
 
 Impure functions—those with side effects—must be marked with the `!` symbol, which hints at the surprising (unpredictable) nature of effectful functions. This is the convention used in Scheme, but it is mandatory in our new language: if the programmer left out the `!` symbol at the end of an impure function, the compiler automatically appends it. Below, the `print!` function causes a side effect by printing a message to the console. And the `time!` function causes a side effect by returning `Time` object representing the current time, because time changes from call to call and, hence, is a side effect by definition. The `now!` function that calls these impure functions also becomes tainted by association.
 
-```haskell
+```
 time! : () → Time
   | () → ...
 
@@ -513,7 +514,7 @@ The type expression `() → IO ()` of the function `now!` means that the functio
 
 ***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is the convention used in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions `is...`, as is the convention in most languages. The following is a declaration for a predicate function that checks if a non-zero natural number $\mathbb{N}^+$ argument is a prime number.
 
-```haskell
+```
 prime? : ℕ+ → 𝔹
 ...
 n : ℕ+
@@ -529,7 +530,7 @@ Our new language uses the operator `:` to assign types to variables, instead of 
 
 Our new language uses a strong, static, dependent, inferencing type system based on dependent type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
 
-```haskell
+```
 Vector 𝛼 (n : ℕ) : [𝛼 n]
 ```
 
@@ -537,13 +538,13 @@ In the above type declaration, the type constructor `Vector` on the left side is
 
 Using the `Vector` dependent type, we can define a size-$3$ vector of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, like this.
 
-```haskell
+```
 x = [ℝ 3] ## elements automatically initialised to 0.0
 ```
 
 We may declare a vector concatenation operator `+` as follows.
 
-```haskell
+```
 _+_ : [ℝ m] → [ℝ n] → [ℝ (m + n)]
 ```
 
@@ -551,7 +552,7 @@ This dependent type enables the compiler to make a guarantee that concatenating 
 
 We may define the `head` and `tail` vector functions as follows.
 
-```haskell
+```
 head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
   | x:_ → x
 
@@ -566,7 +567,7 @@ In the definition of the vector type above, the index variable `n` has the zero-
 
 Do note that it is also possible to declare the `head` function as follows, without relying on the $\mathbb{N}^+$ type constraint. Since the compiler knows that the type of  `n` is the zero-based natural number $\mathbb{N}$, it interprets the type `[𝛼 (n + 1)]` to mean a non-zero size vector. But using the type $\mathbb{N^+}$ is more succinct and mathematically elegant.
 
-```haskell
+```
 head : [𝛼 (n + 1)] → 𝛼
 ```
 
@@ -576,7 +577,7 @@ The standard library defines the primitive type $\mathbb{N}$ and its operators. 
 
 Next, using the `Matrix` dependent type from the standard library, we can define a $2 \times 3$ matrix of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, as follows.
 
-```haskell
+```
 Matrix 𝛼 (m, n : ℕ) : [𝛼 m n]
 
 y = [ℝ 2 3] ## elements automatically initialised to 0.0
@@ -584,7 +585,7 @@ y = [ℝ 2 3] ## elements automatically initialised to 0.0
 
 The transpose `⊤` and the addition `+` matrix operators are declared this way.
 
-```haskell
+```
 _⊤ : [𝛼 m n] → [𝛼 n m]
 _+_ : [𝛼 m n] → [𝛼 m n] → [𝛼 m n]
 ```
@@ -603,7 +604,7 @@ The modern trend in programming languages is the gradual shift toward typefulnes
 
 Our new language should support structural pattern matching via the `case` control mechanism.
 
-```haskell
+```
 c : ℂ
 ...
 case c
@@ -613,7 +614,7 @@ case c
 
 Another use of pattern matching is record field extraction, as shown below.
 
-```haskell
+```
 c = Rectangular {x = 2.0, y = 3.0}
 ...
 {x, y} = c ## c is destructured; x is bound to 2.0 and y to 3.0
@@ -621,7 +622,7 @@ c = Rectangular {x = 2.0, y = 3.0}
 
 Sometimes, it is convenient to be able to refer to a part or the whole of a matched pattern by name. This is called the as-pattern, and we use the `@` symbol for it.
 
-```haskell
+```
 f (x:xs) @ v → ... ## vector v can be used in the body of function f
 ```
 
@@ -629,14 +630,14 @@ f (x:xs) @ v → ... ## vector v can be used in the body of function f
 
 A type class roughly corresponds to an extensible interface in OO languages: it defines a collection of functions (behaviours) which can be inherited through a mechanism called type instantiation. Below, we declare the `Show` type class that converts a value of some type $𝛼$ to a Unicode string representation.
 
-```haskell
+```
 Show 𝛼 :: ## declare Show type class
   show : 𝛼 → 𝕌 ## declare show function
 ```
 
 We may now make the complex number type $\mathbb{C}$ an instance of the `Show` type class, and implement the `show` function that converts a complex value to a formatted string representation. Note the syntax: just as we use the single-colon syntax `value : Type` to assign a value to a type, we use the double-colon syntax `Type :: Class` to instantiate a type in a type class. This forms a type hierarchy: $value ∈ Type ∈ Class$.
 
-```haskell
+```
 ℂ :: Show ## make complex type an instance of Show type class
   show : ℂ → 𝕌 ## implement show function for complex type
     | Rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
@@ -656,14 +657,14 @@ Fortran does support polymorphism, both parametric and ad hoc varieties. Paramet
 
 ***vectors***—A vector is a fixed-size 1D sequence of values. The `Vector` dependent type is defined in the standard library. It is parameterised with a type variable $𝛼$ and it is indexed with size `n`. A zero-sized vector is written as `[]`, similar to the empty list in other FP languages. And in keeping with the FP tradition, we add elements to the head of the vector with the syntax `x:xx`, where `x` is the new element and the `xx` is the existing vector.
 
-```haskell
+```
 Vector 𝛼 (n : ℕ) : [𝛼 n]
 𝕍 : Vector
 ```
 
 The following is the literal syntax for creating a vector. The type system infers the type of the variable `v` to be `[ℝ 3]` or `𝕍 ℝ 3`, a $1 \times 3$ row vector of $\mathbb{R}$-typed elements. Note that a 1D sequence is conventionally treated as a column vector in mathematics, but modern programming languages treat such a sequence as a row vector.
 
-```haskell
+```
 e0, e1, e2 : ℝ
 ...
 x = [e0, e1, e2]
@@ -671,7 +672,7 @@ x = [e0, e1, e2]
 
 We may declare `inner` and `outer` vector product functions like this. Both functions take as arguments two size-$n$ vectors of $𝛼$-typed elements. The result of `inner` is a scalar of type $𝛼$, and the result of `outer` is an $n \times n$ matrix of $𝛼$-typed elements. Note the `(𝛼 : Num) ⇒` type constraint on the type parameter $𝛼$.
 
-```haskell
+```
 inner : (𝛼 : Num) ⇒ [𝛼 n] → [𝛼 n] → 𝛼
 outer : (𝛼 : Num) ⇒ [𝛼 n] → [𝛼 n] → [𝛼 n n]
 ```
@@ -680,44 +681,44 @@ Since the type parameter $𝛼$ is unconstrained in the vector data constructor 
 
 Array processing languages, like Fortran, APL, and Matlab support convenient syntax for accessing ranges and elements. Python, Julia, Mojo, and other modern languages have adopted this array access syntax. So do we. Our 1D sequence access syntax is shown below.
 
-```haskell
+```
 x[i] ## ith vector element where n is size of x and i ≤ n-1
 x[-i] ## (n-1)-ith vector element where i ≤ n-1
-x[ia..ib] ## subvector of elements from x[ia] upto and including x[ib]
-x[i..] ## subvector of elements from x[i] upto and including the last element
-x[..i] ## subvector of elements from x[0] upto and including x[i]
+x[ia..ib] ## subvector of elements from x[ia] to x[ib]
+x[i..] ## subvector of elements from x[i] to the last
+x[..i] ## subvector of elements from x[0] to x[i]
 ```
 
 ***matrices***—A matrix is a fixed-size 2D grid of values.
 
-```haskell
+```
 Matrix 𝛼 (m, n : ℕ) : [𝛼 m n]
 𝕄 : Matrix
 ```
 
 The literal syntax for a matrix extends the vector literal syntax. For real-valued elements, the inferred type of the variable `y` is `[ℝ 2 3]` or `𝕄 ℝ 2 3`, a $2 \times 3$ matrix of $\mathbb{R}$-typed elements.
 
-```haskell
+```
 y = [ [e00, e01, e02] ## vector [e00 .. e02]
     , [e10, e11, e12] ] ## matrix [e00 .. e12]
 ```
 
 Our 2D sequence access syntax is as follows.
 
-```haskell
+```
 y[i, *] ## ith row vector where m is row-size of y and i ≤ m-1
 y[-i, *] ## (m-1)-ith row vector where i ≤ m-1
-y[ia..ib, *] ## submatrix of elements from y[ia, *] upto and including y[ib, *]
+y[ia..ib, *] ## submatrix of elements from y[ia, *] to y[ib, *]
 y[*, j] ## jth column vector
 y[*, -j] ## (n-1)-jth column vector
-y[*, ja..jb] ## submatrix of elements from y[*, ja] upto and including y[*, jb]
+y[*, ja..jb] ## submatrix of elements from y[*, ja] to y[*, jb]
 y[i, j] ## matrix element
 y[-i, -j] ## matrix element
 ```
 
 ***tensors***—A tensor is a fixed-size, multi-dimensional sequence of values. A 3D cube tensor is defined thus.
 
-```haskell
+```
 Tensor3 𝛼 (l, m, n : ℕ) : [𝛼 l m n]
 𝕋3 : Tensor3
 ```
@@ -757,7 +758,7 @@ Because the tensor access syntax is just an extension of the matrix access synta
 
 ***records***—A record is a named product type that holds unordered, labelled fields of varying types: `RecordName {i : ℤ, r : ℝ, s : 𝕌}`. Records are frequently used together with enumerations. The fields of a record are accessed using the `.` operator, as in `x.s` for the value of the $\mathbb{U}$-typed field, or using pattern matching, as in `{i, r, s} = x` where `i : ℤ`, `r : ℝ`, and `s : 𝕌`. A new record can be created from an existing one using the record update syntax `{... | ...}`.
 
-```haskell
+```
 c = Rectangular {x = 2.0, y = 3.0} ## c is (2.0, i3.0)
 ...
 c' = {c | y = -3.0} ## c' is (2.0, -i3.0)
@@ -779,7 +780,7 @@ The PP module-based abstraction mechanism was the precursor to the OO class-base
 
 In imperative PP languages, this hide-by-default behaviour is safer than the export-by-default behaviour, because it prevents users of the module from directly mutating the internal data representations of the abstract data type. But in declarative FP languages, data structures are not only simpler, they are also immutable. Immutability obviates the need obsessively to hide the representations of data structures. Hence, in the new language, we shall employ the implicit export behaviour, so as to minimise cluttering the code with `export` markers sprinkled throughout the module. If a particular declaration or definition must be hidden, we explicitly mark it with the `--` symbol, as shown below.
 
-```haskell
+```
 #< Distance.f
 This module implements distance measures. #>
 
@@ -793,7 +794,7 @@ _≈_ : `near?`
 
 The code above is contained in the file `Distance.f`, and the associated module is automatically given the name `Distance`. Hence, there is no `module ModuleName` construct in our language; it is unnecessary. The constant $\delta$ is defined for use by the module implementer but it is hidden from the module users, since it is marked with the `--` symbol. But the export-by-default behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix operator `_≈_` is aliased to the back-quoted version of `near?`. In Haskell, a binary function `f a b` can be converted to an infix operator by back-quoting.
 
-```haskell
+```
 f a b → ...
 ...
 m `f` n ## same as f m n
@@ -801,19 +802,19 @@ m `f` n ## same as f m n
 
 The `Distance` module is used from the main module as follows.
 
-```haskell
+```
 #< Main.f #>
 
 use Distance
 
 main! : () → IO ()
-  | () → if a ≈ b then "near" else "far "| print! ## "far" appears on the console
+  | () → if a ≈ b then "near" else "far "| print!
          where a = -3.2; b = 6.8
 ```
 
 The `use` construct imports all non-hidden declarations and definitions from the designated module into the current module. But this could cause name collisions. So, the as-module construct can be used to give a name to the imported module. Here, again, we use the `@` symbol. If a module is imported using the as-module construct, we must use the `.` operator to access its contents.
 
-```haskell
+```
 use Distance @ D
 ...
 if D.near? a b then ... else ...
@@ -866,7 +867,7 @@ There are about as many parallel programming models as there are parallel proces
 
 In our new language, we use the `@[p]` syntax to index processor cores.
 
-```haskell
+```
 c@[p] ## scalar variable c in programme running on core p
 x[i]@[p] ## ith element of vector x on core p
 x[*]@[*] ## the vector x on all cores
@@ -879,19 +880,19 @@ Our version of the coarray syntax is compact and natural. Python-style indexing 
 
 Remote data can be received into a local variable using the left double-arrow operator `⇐`. Note that `c[*]` refers to all the copies of the scalar variable ` c` on all the processors. When used without the coarray index, as in `c`, it refers to its local value.
 
-```haskell
+```
 c ⇐ c@[p] ## retrieve the scalar value c from core p
 ```
 
 Local data can be sent to a remote variable using the right double-arrow operator `⇒`.
 
-```haskell
+```
 c ⇒ c@[*] ## distribute the local scalar value c to all other cores
 ```
 
 Control coordination is performed by the `sync` construct.
 
-```haskell
+```
 sync@[*] ## synchronise all cores running programmes
 sync@[p] ## synchronise local core with remote core p
 sync@[p..q] ## synchronise local core with remote cores in range p..q
@@ -907,14 +908,14 @@ Our new, dependently typed Fortran, too, is a programming language and a proof a
 
 The vector `head` function mentioned above is an example of internal verification. The type `(n : ℕ+) ⇒ [𝛼 n] → 𝛼` encodes the specification that `head` does not accept zero-length vectors.
 
-```haskell
+```
 head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
   | x:_ → x
 ```
 
 And the following is an example of external verification. The numeric `+` operators computes the addition of numbers. The proof of associativity, `+assoc◻`, and proofs of other properties accompany the implementation of `+` in the standard library. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will. It stands for "quod erat demonstrandum" ([QED](https://en.wikipedia.org/wiki/Q.E.D.)), which appears at the end of a proof in mathematics. The symbol $\forall$ means "for all", as usual. The symbol $\equiv$ stands for [propositional equality](https://en.wikipedia.org/wiki/Type_theory#Equality_types) in type theory.
 
-```haskell
+```
 _+_ : (𝛼 : Num) ⇒ 𝛼 → 𝛼 → 𝛼
   | ...
 +assoc◻ → ∀ (x, y, z : ℕ) → x + (y + z) ≡ (x + y) + z
