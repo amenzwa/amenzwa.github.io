@@ -284,8 +284,9 @@ Subtly is a virtue. It is better to cite a readily accessible, authoritative sou
 
 ```haskell
 #< GraphSearch.f
-This module implements bread-first and depth-first graph searching algorithms
-as described in Chapter 20 Elementary Graph Algorithms,
+This module implements bread-first and depth-first
+graph searching algorithms as described in
+Chapter 20 Elementary Graph Algorithms of
 "Introduction to Algorithms", 4ed (2022), Cormen et al. #>
 ```
 
@@ -298,13 +299,13 @@ Rational : Rational {n, d : ℤ}
 ℚ : Rational
 
 Complex :
-	| Rectangular {x, y : ℝ}
-	| Polar {r, 𝜑 : ℝ}
+  | Rectangular {x, y : ℝ}
+  | Polar {r, 𝜑 : ℝ}
 ℂ : Complex
 
 Quaternion :
-	| Rectangular {a : ℝ, v : [ℝ 3]}
-	| Polar {m, 𝜃 : ℝ, n : [ℝ 3]}
+  | Rectangular {a : ℝ, v : [ℝ 3]}
+  | Polar {m, 𝜃 : ℝ, n : [ℝ 3]}
 ℍ : Quaternion
 ```
 
@@ -343,16 +344,16 @@ Bol : | False | True
 𝔹 : Bol
 
 ¬_ : 𝔹 → 𝔹 → 𝔹
-	| False → True
+  | False → True
   | True → False
 
 _∧_ : 𝔹 → 𝔹 → 𝔹
-	| False ∧ _ = False
-	| True ∧ b = b
+  | False ∧ _ = False
+  | True ∧ b = b
 
 _∨_ : 𝔹 → 𝔹 → 𝔹
-	| False ∨ b = b
-	| True ∨ _ = True
+  | False ∨ b = b
+  | True ∨ _ = True
 
 p, q : 𝔹
 ...
@@ -361,12 +362,12 @@ p ∧ q
 p ∨ q
 ```
 
-Above, we defined the $\neg$ prefix operator and the $\and$ and $\or$ infix operators. And we can define the postfix factorial operator `!` like so.
+Above, we defined the $\neg$ prefix operator and the $\land$ and $\lor$ infix operators. And we can define the postfix factorial operator `!` like so.
 
 ```haskell
 _! : ℕ → ℕ
-	| 0 → 1
-	| n → n * (n - 1)!
+  | 0 → 1
+  | n → n * (n - 1)!
 ```
 
 ***access record fields using the . operator***—Use the de facto standard `.` operator to access a record's fields, not the `%` operator as Fortran does. In modern languages, the `%` symbol represents the modulo operator. Besides, the Fortran syntax `object%field%subfield` is an eyesore, compared to the common syntax `object.field.subfield`.
@@ -427,7 +428,7 @@ The code for `modulus` can be read as follows:
 
 - The function `modulus` takes an argument of type $\mathbb{C}$, and returns a value of type $\mathbb{R}$
 - If the argument is in the `Rectangular` form $x + iy$, the result is $\sqrt{x^2 + y^2}$
-- But if the argument is in the `Polar` form $r\ang{\phi}$, the result is $r$
+- But if the argument is in the `Polar` form $r\angle{\phi}$, the result is $r$
 
 The `modulus` function is an example of a multi-clause function. It could also be shortened as follows, by letting the type system infer its type as $\mathbb{C} \to \mathbb{R}$.
 
@@ -440,7 +441,7 @@ The `id` function defined below is an example of a uni-clause function. Although
 
 ```haskell
 id : 𝛼 → 𝛼
-	| x → x
+  | x → x
 ```
 
 We could, of course, shorten this code like this, and the type system would infer its type as $𝛼 \to \alpha$.
@@ -472,7 +473,7 @@ Compare that grotesque, bloated Fortran code to the equivalent, svelte code in t
 
 ```haskell
 external : ℝ → ℝ
-	| i → internal i - 2.0 where internal x → x^3.0
+  | i → internal i - 2.0 where internal x → x^3.0
 ```
 
 Here, too, the type system can automatically infer the type of the function `internal` to be $\mathbb{R} \to \mathbb{R}$ based on its implementation and its usage within the body of the function `external`, so there is no need explicitly to provide the type of the function `internal`. The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The visibility of the function `internal` is the body of the function `external`.
@@ -500,10 +501,10 @@ Impure functions—those with side effects—must be marked with the `!` symbol,
 
 ```haskell
 time! : () → Time
-	| () → ...
+  | () → ...
 
 now! : () → IO ()
-	| () → time! () |> show |> print!
+  | () → time! () |> show |> print!
 
 now! () ## current time appears on the console
 ```
@@ -552,11 +553,11 @@ We may define the `head` and `tail` vector functions as follows.
 
 ```haskell
 head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
-	| x:_ → x
+  | x:_ → x
 
 tail : [𝛼 n] → [𝛼 (n - 1)]
-	| [] → []
-	| _:xx → xx
+  | [] → []
+  | _:xx → xx
 ```
 
 In simply typed languages like ML, OCaml, or Haskell, the `head` function throws a $\bot$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type of `head` prevents the user from passing an empty vector `[]` during compilation. Let us see how this works.
@@ -630,19 +631,19 @@ A type class roughly corresponds to an extensible interface in OO languages: it 
 
 ```haskell
 Show 𝛼 :: ## declare Show type class
-	show : 𝛼 → 𝕌 ## declare show function
+  show : 𝛼 → 𝕌 ## declare show function
 ```
 
 We may now make the complex number type $\mathbb{C}$ an instance of the `Show` type class, and implement the `show` function that converts a complex value to a formatted string representation. Note the syntax: just as we use the single-colon syntax `value : Type` to assign a value to a type, we use the double-colon syntax `Type :: Class` to instantiate a type in a type class. This forms a type hierarchy: $value ∈ Type ∈ Class$.
 
 ```haskell
 ℂ :: Show ## make complex type an instance of Show type class
-	show : ℂ → 𝕌 ## implement show function for complex type
+  show : ℂ → 𝕌 ## implement show function for complex type
     | Rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
     | Polar {r, 𝜑} → "Polar " + strOf(r) + "∠" + strOf(𝜑)
 
 log! : ℂ → IO ()
-	| c → show c |> print! ## formatted complex value appears on the console
+  | c → show c |> print! ## formatted complex value appears on the console
 ```
 
 Fortran does support polymorphism, both parametric and ad hoc varieties. Parametric polymorphism in Fortran is called *generics*. For example, using the `selected real kind()` procedure, the programmer may select the floating-point precision—`real` or `double precision`—within a data structure or a procedure. And with the addition of OO, it is now possible for Fortran to support something akin to C++ virtual pointers, which is an OO way of implementing sum type ADTs. Ad hoc polymorphism in Fortran is called *overloading*. It is comparable to C++ operator overloading. Nevertheless, polymorphism was retrofitted into Fortran in a convoluted manner, making it rather clunky to use.
@@ -698,7 +699,7 @@ The literal syntax for a matrix extends the vector literal syntax. For real-valu
 
 ```haskell
 y = [ [e00, e01, e02] ## vector [e00 .. e02]
-		, [e10, e11, e12] ] ## matrix [e00 .. e12]
+    , [e10, e11, e12] ] ## matrix [e00 .. e12]
 ```
 
 Our 2D sequence access syntax is as follows.
@@ -725,14 +726,14 @@ The 3D tensor literal can be defined as follows. The inferred type of the variab
 
 ```haskell
 z = [ [ [e00, e01, e02]
-			, [e10, e11, e12]
-			, [e20, e21, e22] ]
-		, [ [f00, f01, f02] ## 1x3 vector [f00 .. f02]
-			, [f10, f11, f12]
-			, [f20, f21, f22] ] ## 3x3 matrix [f00 .. f22]
-		, [ [g00, g01, g02]
-			, [g10, g11, g12]
-			, [g20, g21, g22] ] ] ## 3x3x3 tensor [e00 .. g22]
+      , [e10, e11, e12]
+      , [e20, e21, e22] ]
+    , [ [f00, f01, f02] ## 1x3 vector [f00 .. f02]
+      , [f10, f11, f12]
+      , [f20, f21, f22] ] ## 3x3 matrix [f00 .. f22]
+    , [ [g00, g01, g02]
+      , [g10, g11, g12]
+      , [g20, g21, g22] ] ] ## 3x3x3 tensor [e00 .. g22]
 ```
 
 An element of a 3D tensor is accessed as follows.
@@ -786,7 +787,7 @@ This module implements distance measures. #>
 
 ## check if a and b are near each other
 near? : ℝ → ℝ → 𝔹
-	| a b → |b - a| < 𝛿
+  | a b → |b - a| < 𝛿
 _≈_ : `near?`
 ```
 
@@ -806,8 +807,8 @@ The `Distance` module is used from the main module as follows.
 use Distance
 
 main! : () → IO ()
-	| () → if a ≈ b then "near" else "far "| print! ## "far" appears on the console
-				 where a = -3.2; b = 6.8
+  | () → if a ≈ b then "near" else "far "| print! ## "far" appears on the console
+         where a = -3.2; b = 6.8
 ```
 
 The `use` construct imports all non-hidden declarations and definitions from the designated module into the current module. But this could cause name collisions. So, the as-module construct can be used to give a name to the imported module. Here, again, we use the `@` symbol. If a module is imported using the as-module construct, we must use the `.` operator to access its contents.
@@ -908,14 +909,14 @@ The vector `head` function mentioned above is an example of internal verificatio
 
 ```haskell
 head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
-	| x:_ → x
+  | x:_ → x
 ```
 
 And the following is an example of external verification. The numeric `+` operators computes the addition of numbers. The proof of associativity, `+assoc◻`, and proofs of other properties accompany the implementation of `+` in the standard library. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will. It stands for "quod erat demonstrandum" ([QED](https://en.wikipedia.org/wiki/Q.E.D.)), which appears at the end of a proof in mathematics. The symbol $\forall$ means "for all", as usual. The symbol $\equiv$ stands for [propositional equality](https://en.wikipedia.org/wiki/Type_theory#Equality_types) in type theory.
 
 ```haskell
 _+_ : (𝛼 : Num) ⇒ 𝛼 → 𝛼 → 𝛼
-	| ...
+  | ...
 +assoc◻ → ∀ (x, y, z : ℕ) → x + (y + z) ≡ (x + y) + z
 ```
 
