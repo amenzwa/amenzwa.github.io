@@ -163,7 +163,7 @@ The syntactic and semantic modifications proposed in this section, like all such
 
 This feature should have been excised long ago through the planned obsolescence process employed by countless other languages, including C and C++. For instance, the original C syntax that appeared in *[The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language)*, 1ed (1978) continued to be used well into the early 1990s, but it is no longer accepted by modern C compilers in the early 2020s—as they ought not. Indeed, most modern C programmers cannot understand the 1970s style C code any more. But the irrational adherence to absolute backward compatibility obliges modern Fortran programmers to inject `implicit none` into every module.
 
-The `implicit none` is an instance of the many poor design decisions that littered Fortran's long trek to modernity. Disabling implicit typing should have been cued off a file name extension (`.f90` for instance) or a compiler flag (say `--ImplicitNone`), and it should have been excised from the language a long time ago. But the designers opted to keep this superfluous feature in perpetuity and to force the programmer manually to disable implicit typing in every single module. Consequently, this statement is almost as prevalent in code as `do` and `if`, yet it performs no substantive work. Such pointless and arcane incantations not only make modern Fortran verbose, they also diminish its readability, without offering any countervailing benefits.
+The `implicit none` is an instance of the many poor design decisions that littered Fortran's long trek to modernity. Disabling implicit typing should have been cued off a file name extension (`.f90` for instance) or a compiler flag (say `--ImplicitNone`), and it should have been excised from the language a long time ago. But the designers opted to keep this superfluous feature in perpetuity and to force the programmer manually to disable implicit typing in every single module. Consequently, this statement is almost as prevalent in code as `do` and `if`, yet it performs no substantive work. Such pointless and arcane incantations not only make modern Fortran verbose, they also diminish its legibility, without offering any countervailing benefits.
 
 ## *trim the bloat*
 
@@ -272,9 +272,9 @@ The most obvious alternative to explicit pointers is, of course, implicit refere
 
 ## *embrace modernity*
 
-***use modern comment styles***—Delimit a documentation comment with `#<` and `#>`, and delimit a block comment with `#{` and `#}`. Imagine that `<` and `>` resemble open books 📖 and that `{` and `}` resemble C code blocks `{ ... }`. Note that both the open- and the close-comment markers begin with the `#` symbol; this is for consistency. And begin an in-line comment with `##`. Doubling the `#` symbol makes it stand out visually against the backdrop of code and it also makes all comment symbols twin characters, another mark of consistency.
+***use modern comment styles***—Delimit a documentation comment with `#<` and `#>`; `<` and `>` are evocative of open books. Delimit a block comment with `#{` and `#}`; `{` and `}` remind one of C code blocks. Note that both the open- and the close-comment markers begin with the `#` symbol; this is for consistency. And begin an in-line comment with `##`. Doubling the `#` symbol makes it stand out visually against the backdrop of code and it also makes all comment symbols twin characters, another mark of consistency.
 
-Also, avoid superfluous, in-your-face comments, like the one shown below.
+Also, avoid superfluous, in-your-face comments. The shouting comment shown below may well be impossible to ignore, but it imparts no insightful information to the reader.
 
 ```fortran
 !*********************************************************************
@@ -284,7 +284,7 @@ Also, avoid superfluous, in-your-face comments, like the one shown below.
 !*********************************************************************
 ```
 
-Subtly is a virtue. It is better to cite a readily accessible, authoritative source for the algorithm in the module's block comment, without cramming in a shallow, meandering explanation thereof.
+Subtly is a virtue. When it comes to commenting code, it is better to cite a readily accessible, authoritative source of the algorithm in the module's block comment, without cramming in a incomprehensible, perfunctory description thereof.
 
 ```
 #< GraphSearch.f
@@ -294,7 +294,7 @@ Chapter 20 Elementary Graph Algorithms of
 "Introduction to Algorithms", 4ed (2022), Cormen et al. #>
 ```
 
-***use common primitive types***—Many modern high-level languages use only these primitive types: boolean, character, integer, natural number, and floating-point. The boolean is a one-byte quantity, the character is a variable-byte quantity represented using Unicode, the natural number is an unsigned 64-bit quantity represented using binary, the integer is a signed 64-bit quantity represented using 2's compliment binary, and the floating-point is a 64-bit quantity represented using the IEEE 754 standard. These primitive data types suffice for scientific applications. We shall call these primitive data types `Bol`, `Chr`, `Nat`, `Int`, and `Flt`, respectively. Larger data types could be implemented in the standard library: infinite-precision integer as `Integer`, 128-bit integer as `Int128`, and 128-bit floating-point as `Flt128`. The types `Nat`, `Int`, `Int128`, `Integer`, `Flt`, and `Flt128` belong to the number class `Num`.
+***use common primitive types***—Many modern high-level languages use only these primitive types: boolean, character, integer, natural number, and floating-point number. The boolean is a one-byte quantity, the character is a variable-byte quantity represented using Unicode, the natural number is an unsigned 64-bit quantity represented using binary, the integer is a signed 64-bit quantity represented using 2's compliment binary, and the floating-point number is a 64-bit quantity represented using the IEEE 754 format. These primitive data types suffice for scientific applications. We shall call them `Bol`, `Chr`, `Nat`, `Int`, and `Flt`, respectively. Larger data types with greater precisions are defined in the standard library: infinite-precision integer as `Integer`, 128-bit integer as `Int128`, and 128-bit floating-point number as `Flt128`. The types `Nat`, `Int`, `Int128`, `Integer`, `Flt`, and `Flt128` belong to the number class `Num`.
 
 And the [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
 
@@ -313,17 +313,17 @@ Quaternion :
 ℍ : Quaternion
 ```
 
-The above syntax defines the type `Rational` as an alias of the record `{n, d : ℤ}`, representing the mathematical quantity $n/d$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes the record `{n, d : ℤ}`. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
+Above, we defined the type `Rational` as an alias of the record `{n, d : ℤ}`, representing the mathematical quantity $n/d$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes the record `{n, d : ℤ}`. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
 
-For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulations in systems GPLs like C, are useless in scientific DSLs like Fortran, except to represent natural numbers $\mathbb{N}$ and counting (non-zero) numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not general-purpose `unsigned` quantities.
+For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and non-zero counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the `unsigned` type modifier, as C does.
 
-The Unicode symbols can be used in the code for identifier names: $\pi$, $\epsilon$, $𝜎$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts, of course.
+The Unicode symbols can be used in the code for identifier names: $\pi$, $𝜎$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts.
 
-***rename derived type***—Calling a user-defined product type a "derived type" is courting trouble, because it is a term of art in OO and most newcomers to Fortran today already know OO quite well, most likely. Instead, simply call the user-defined product type a "record", just like every other modern language. Redefining buzzwords just to be different causes confusion without offering benefits.
+***rename derived type***—Calling a user-defined product type a "derived type" is courting trouble, because it is a term of art in OO, and most newcomers to Fortran today would already know OO quite well. Instead, simply call the user-defined product type a "record", just like every other modern language. Redefining buzzwords just to be different causes confusion without offering benefits.
 
-***remove case insensitivity***—Modern Fortran, like other mid-century languages, is case insensitive. This is not in keeping with modern programming language conventions. Case insensitivity, more precisely all-caps, was the norm in the early days of computing, because teleprinters could only print all-caps letters. Today, though, all-caps are stridently contrarian, at best.
+***remove case insensitivity***—Modern Fortran, like other mid-century languages, is case insensitive. This is not in keeping with modern programming language conventions. Case insensitivity, more precisely the use of all-caps characters, was the norm in the early days of computing, because teleprinters could only print capital letters. Today, though, all-caps are shunned, due to their illegibility.
 
-***standardise naming conventions***—There is no consistent, industry-wide naming convention for Fortran. So, we shall adopt a consistent naming convention for the new language. For readability, we adopt the naming convention similar to Smalltalk, Java, and Haskell. This convention has proven itself over the decades to be concise, consistent, cogent, and comprehensible.
+***standardise naming conventions***—There is no consistent, industry-wide naming convention for Fortran. So, we shall adopt a consistent naming convention for our new Fortran. For legibility, we adopt the naming convention similar to Smalltalk, Java, and Haskell. This convention has proven itself over the decades by being concise, consistent, cogent, and comprehensible.
 
 - Avoid using `-` separators, `_` separators, ALL_CAPS, and other noisy naming conventions; instead, use the more legible PascalCase and [camelCase](https://en.wikipedia.org/wiki/Camel_case)
 - Use PascalCase for type names: `Vector`, `Matrix`, `Point2D`
@@ -333,18 +333,20 @@ The Unicode symbols can be used in the code for identifier names: $\pi$, $\epsil
 - Retire the tired FORTRAN 1977 fixed format
 - Reclaim the `.f` file name extension for the new language
 
-***standardise formatting***—When indenting, use 2 spaces, not 4, not tabs. Modern IDEs show vertical lines that demarcate indented code, so the traditional, deeper indentations are no longer necessary. Avoid blank lines as much as possible. They do not aide clarity; they just rob screen real estate.
+***standardise formatting***—When indenting, use 2 spaces, not 4, not tabs. Modern IDEs show vertical lines that demarcate indented code, so the traditional, deeper indentations are no longer necessary for legibility. Avoid blank lines as much as possible. They do not aide clarity; they just rob screen real estate.
 
-These guidelines help contract the code in both the horizontal and the vertical directions, thus fitting more code per screen. Being able to see more code on the screen at once raises cognition and reduces the need for scrolling.
+These guidelines help contract the code in both the horizontal and the vertical directions, thus fitting more code per screen. Being able to see more code on the screen at once improves cognition and reduces the need for scrolling.
 
-***allow user-defined symbolic operators***—As the first high-level language, Fortran invented arithmetic, relational, and logic operators, but it employed `.LT.` for `<`, `.EQ.` for `==`, `.GT.` for `>`, and so on, which look strange to modern eyes. In due course, newer languages have invented their own symbolic conventions for operators. Even Fortran eventually had to abandon its old style dotted operators and adopt modern symbolic operators.
+***allow user-defined symbolic operators***—As the first high-level language, Fortran invented arithmetic, relational, and logic operators, but it employed `.LT.` for `<`, `.EQ.` for `==`, `.GT.` for `>`, and so on. These dotted operators may look strange to modern eyes, but they were necessary, because early teleprinters had no support for mathematical symbols. In due course, languages converged on the modern, symbolic conventions for operators. Even Fortran eventually had to abandon its old style dotted operators and adopt modern symbolic operators.
 
-Many languages today allow programmers to define their own symbolic operators. In Haskell, for example, many standard operators are not baked into the language, but are defined in standard library modules, as is done with the famous monad `bind` operator and its symbolic alias `>>=`. But Fortran insists upon using the old convention of the dotted words for overloaded operators, which is verbose, unnecessarily constraining, and offers no real benefits.
+Many languages today allow programmers to define their own symbolic operators. In Haskell, for example, many standard operators are not baked into the language, but are defined in standard library modules, like the famous monad `bind` operator and its symbolic alias `>>=`. But Fortran insists upon using the old convention of the dotted words for user-defined operators, which is verbose, unnecessarily constraining, and offers no real benefits.
 
-In our new language, an operator is introduced using the Agda-style [mixfix](https://agda.readthedocs.io/en/latest/language/mixfix-operators.html) syntax. Here, the `_` is an argument placeholder.
+In our new language, an operator is introduced using the Agda-style [mixfix](https://agda.readthedocs.io/en/latest/language/mixfix-operators.html) syntax. Here, the `_` symbol represents an argument placeholder.
 
 ```
-Bol : | False | True
+Bol :
+  | False
+  | True
 𝔹 : Bol
 
 ¬_ : 𝔹 → 𝔹 → 𝔹
@@ -366,7 +368,7 @@ p ∧ q
 p ∨ q
 ```
 
-Above, we defined the $\neg$ prefix operator and the $\land$ and $\lor$ infix operators. And we can define the postfix factorial operator `!` like so.
+Above, we defined the prefix operator $\neg$ and the infix operators $\land$ and $\lor$. And we can implement the postfix factorial user-defined operator `!` like so.
 
 ```
 _! : ℕ → ℕ
@@ -374,9 +376,11 @@ _! : ℕ → ℕ
   | n → n * (n - 1)!
 ```
 
-***access record fields using the . operator***—Use the de facto standard `.` operator to access a record's fields, not the `%` operator as Fortran does. In modern languages, the `%` symbol represents the modulo operator. Besides, the Fortran syntax `object%field%subfield` is an eyesore, compared to the common syntax `object.field.subfield`.
+***access record fields using the . operator***—Use the de facto industry standard `.` operator to access a record's fields, not the `%` operator as Fortran does. In modern languages, the `%` symbol represents the modulo operator. Besides, the Fortran syntax `object%field%subfield` is an eyesore, compared to the common syntax `object.field.subfield`.
 
-***use row-major ordering***—All popular, modern languages use the [row-major ordering](https://en.wikipedia.org/wiki/Row-_and_column-major_order) for multi-dimensional arrays. That is, the rightmost index of a multi-dimensional array changes the fastest, in a similar way the rightmost digit of an odometer changes the fastest. Fortran's adherence to its old, column-major ordering—which harkens back to the early days when there were no established conventions in computing—is a source of confusion for newcomers who are already fluent in modern languages that employ row-major ordering.
+***use row-major ordering***—All popular, modern languages use the [row-major ordering](https://en.wikipedia.org/wiki/Row-_and_column-major_order) for multi-dimensional arrays. That is, the rightmost index of a multi-dimensional array changes the fastest, in a similar way the rightmost digit of an odometer changes the fastest or the cursor on a terminal moves across the screen horizontally first and vertically thereafter.
+
+Fortran's adherence to its old, column-major ordering—which harkens back to the early days when there were no established memory arrangement conventions in computing—is a source of confusion for newcomers who are already fluent in modern languages that employ row-major ordering.
 
 ## *fixate on functions*
 
