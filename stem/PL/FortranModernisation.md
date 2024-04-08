@@ -125,7 +125,7 @@ Today, a common practice in programming language design is to target "low-enough
 
 It is important to note, though, that transpilation is not bidirectional: transpiling a low-abstraction language, like C, up to a high-abstraction language, like Haskell, is a practical impossibility, whereas transpiling Haskell down to C is far simpler by comparison. This is because down-transpilation is abstraction lossy. One way to mitigate abstraction loss is to inject metadata into the AST from which the high-level abstractions can be recovered. But those techniques are neither foolproof nor optimal. Within a paradigm, however, it is straightforward to translate between languages that are semantically proximate, say between C and Pascal, between Java and C#, or between OCaml and Reason. Fortran is a low-abstraction language, compared to modern FP languages. And Fortran's domain, scientific computing, is intensely mathematical. Hence, existing FP languages, like Haskell, OCaml, and F#, could target Fortran with relative ease. In fact, these languages already target C and JavaScript, so down-transpilation is not a foreign practice to them.
 
-The new higher-abstraction language that targets Fortran will incorporate the cherished features of modern FP languages like Haskell and OCaml. This new language will also emulate their clean syntax and functional semantics. But it is but a thin veneer of palatable, alternative syntax atop the Fortran 2023 syntax. This is analogous to what [Rason](https://reasonml.github.io/) is to [OCaml](https://ocaml.org/). The compiler will handle transpiling down to Fortran, then invoke the Fortran compiler to produce the native binary. And just as C++ is able to interact with existing C code, this new language will interact with existing Fortran code.
+The new higher-abstraction language that targets Fortran will incorporate the cherished features of modern FP languages like Haskell and OCaml. This new language will also emulate their clean syntax and functional semantics. But it is but a thin veneer of palatable, alternative syntax atop the Fortran 2023 syntax. This is analogous to what [Reason](https://reasonml.github.io/) is to [OCaml](https://ocaml.org/). The compiler will handle transpiling down to Fortran, then invoke the Fortran compiler to produce the native binary. And just as C++ is able to interact with existing C code, this new language will interact with existing Fortran code.
 
 Programmers always chase new languages with attractive, succinct, elegant syntax. So, they would have no qualms about learning this fresh, new language, even if they have to work within the mouldy, old Fortran ecosystem. This, too, could be a win-win situation. But it is not without challenges. Designing a brand new language is not for the faint of heart. I would also caution against anointing the canonical language. DoD's efforts with the [High Order Language Working Group](https://en.wikipedia.org/wiki/High_Order_Language_Working_Group) that culminated in Ada; DARPA's efforts with [High Productivity Computing Systems](https://en.wikipedia.org/wiki/High_Productivity_Computing_Systems) that produced X10, Chapel, and Fortress; and other similar efforts have proved conclusively that languages developed by government-sponsored committees inevitably fails, not because the language is poor, but because the bureaucracy that surrounds it is poisonous and, more importantly, programmers detest being forced to use the sacred language forced upon them by government officials and corporate executives. It is better to take a gentler approach and leave language evolution to the [marketplace of ideas](https://en.wikipedia.org/wiki/Marketplace_of_ideas).
 
@@ -384,13 +384,13 @@ Fortran's adherence to its old, column-major ordering—which harkens back to th
 
 ## *fixate on functions*
 
-***remove imperative***—One of the most important aspects of an FP language is its support for pure, side-effect-free expressions, from which pure functions are constructed. Effectful, imperative statements must be excised, for they do not play well with effect-free, declarative expressions. Hence, Fortran's imperative control statements must be converted into expressions, and its imperative looping constructs must be replaced with recursion. And `goto`, that ultimate imperative construct, must go to the bin.
+***remove imperative***—One of the most important aspects of an FP language is its support for pure, side-effect-free expressions, from which pure functions are constructed. It has long been established that pure functions are easier to understand for programmers and are easier to parallelise for compilers. Effectful, imperative statements must be shunned, for they do not play well with effect-free, declarative expressions.  Fortran's imperative control statements must be converted into expressions, and its imperative looping constructs must be replaced with recursion. And `goto`, that ultimate imperative construct, must go to the bin.
 
-***embrace declarative***—In his 1977 ACM [Turing award acceptance lecture](https://cs.wellesley.edu/~cs251/s19/notes/backus-turing-lecture.pdf), Backus, the father of FORTRAN, said that for programming to ascend to the next higher level, we must abandon the imperative PP and adopt the declarative FP. This was also the year the second standard, FORTRAN 1977, was published. Yet, after 50 years, Fortran remains resolutely PP, while most modern languages have already migrated to FP, either partially or fully.
+***embrace declarative***—In his 1977 ACM [Turing award acceptance lecture](https://cs.wellesley.edu/~cs251/s19/notes/backus-turing-lecture.pdf), Backus, the father of FORTRAN which is a perennial imperative language, said that for programming to advance to a higher plane, we must abandon the imperative PP and adopt the declarative FP. This was also the year the second standard, FORTRAN 1977, was published. Yet, after 50 years, Fortran remains resolutely PP, while most modern languages have already migrated to FP, either partially or fully.
 
 ***support functionals***—Embracing FP means supporting higher-order functions (functionals): functions that accept and return functions as first-class values. An ordinary function $f : x \to y$ accepts and returns *ordinary values* $x$ and $y$, which can be primitives, tuples, records, or enumerations. And a functional $h : f \to g$ accepts and returns *function values* $f$ and $g$. In calculus, for example, applying the differential operator $\frac{d}{dx}$ to the $sin(x)$ function yields as the result the $cos(x)$ function. The differential operator, which takes some function and returns another function, is a functional.
 
-Anonymous functions that are created on-the-fly (𝜆 functions) are also an integral part of FP. Likewise, function composition operators—pipe-left `<|` (same as mathematical composition operator `∘`), and pipe-right `|>` (same as Unix shell pipe operator `|`)—are indispensable. The following code shows the use of the 𝜆 function feature in our new language. The `foldl` fold-left standard library functional takes a 𝜆 function, an initial value, and a vector. The 𝜆 function takes as arguments the accumulator `a` and the element `x`.
+Anonymous functions that are created on-the-fly (𝜆 functions) are also an integral part of FP. Likewise, function composition operators—pipe-left `<|` (same as mathematical composition operator `∘`), and pipe-right `|>` (same as Unix shell pipe operator `|`)—are essential parts of the FP idiom. The following code shows the use of the 𝜆 function construct supported by our new language. The fold-left standard library functional `foldl` takes a 𝜆 function, an initial value, and a vector. The 𝜆 function takes as arguments the accumulator `a` and the element `x`.
 
 ```
 ## returns 0 + 3 + 5 + 7 + 4 + 9 = 28
@@ -414,14 +414,14 @@ integer, allocatable :: packed(:)
 packed = pack(xx, xx > 5) ! returns (/ 9, 6, 7, 8 /)
 ```
 
-And this is the equivalent code in the new syntax. The `filter` standard library functional takes a 𝜆 function and a vector. The 𝜆 function takes an argument `x`, which is an element of the vector `xx`.
+And this is the equivalent code in the new syntax. The `filter` standard library functional takes a 𝜆 function and a vector. The 𝜆 function takes an argument `x`, which is an element sequentially pulled from the vector `xx`.
 
 ```
 xx = [9, 1, 6, 3, 7, 4, 8, 5, 2, 0] ## inferred type is [ℕ 10]
 filtered = filter (𝜆 x → x > 5) xx ## returns [9, 6, 7, 8]
 ```
 
-As a full-fledged scientific DSL, our new language must support FP, fully. So, it provides syntactically concise and convenient means for defining (abstracting) and calling (applying) functions. But Fortran's current support for FP leaves much to be desired: there is no lambda abstraction and no function composition operators in Fortran.
+As a scientific DSL, our new language must support FP, fully. So, it provides concise and convenient syntax for defining (abstracting) and calling (applying) functions. Fortran's current support for FP, though, leaves much to be desired: no support for lambda abstraction, no support for function composition operators, and what little functional facilities supported is syntactically burdensome.
 
 ***support clausal functions***—Functions can also be defined by multi-clause pattern matching in the new language.
 
@@ -446,14 +446,14 @@ modulus Rectangular {x, y} → √ (x^2 + y^2)
 modulus Polar {r, _} → r
 ```
 
-The `id` function defined below is an example of a uni-clause function. Although there is but one clause here, we nevertheless use the indented begin-clause symbol `|`, for visual consistency of function definitions.
+The `id` function defined below is an example of a uni-clause function. Although there is but one clause here, we nevertheless use the begin-clause symbol `|`, for visual consistency of function definitions.
 
 ```
 id : 𝛼 → 𝛼
   | x → x
 ```
 
-We could, of course, shorten this code like this, and the type system would infer its type as $𝛼 \to \alpha$.
+Here, too, we could shorten this code like this, and the type system would infer its type as $𝛼 \to \alpha$.
 
 ```
 id x → x
@@ -461,7 +461,7 @@ id x → x
 
 ***support pure functions***—Fortran does allow marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
 
-***support inner functions***—Fortran also provides a way to define inner functions, which it calls *internal procedures*. But its internal procedure syntax is more trouble than it is worth. The following concocted example shows how an internal function is defined and called in Fortran.
+***support inner functions***—Fortran also provides a way to define inner functions, which are useful for avoiding polluting the namespace with small functions. In Fortran, inner functions are called *internal procedures*. But its internal procedure syntax is more trouble than it is worth. The following concocted example shows how an internal function is defined and called in Fortran.
 
 ```fortran
 pure function external(i) result(o)
@@ -478,22 +478,22 @@ pure function external(i) result(o)
 end function external
 ```
 
-Compare that grotesque, bloated Fortran code to the equivalent, svelte code in the new syntax.
+Compare that grotesque, bloated Fortran code to the equivalent, svelte code in the new language.
 
 ```
 external : ℝ → ℝ
   | i → internal i - 2.0 where internal x → x^3.0
 ```
 
-Here, too, the type system can automatically infer the type of the function `internal` to be $\mathbb{R} \to \mathbb{R}$ based on its implementation and its usage within the body of the function `external`, so there is no need explicitly to provide the type of the function `internal`. The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The visibility of the function `internal` is the body of the function `external`.
+The type system can automatically infer the type of the function `internal` to be $\mathbb{R} \to \mathbb{R}$ based on its implementation and its usage within the body of the function `external`, so there is no need explicitly to provide the type of the function `internal`. The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The scope of the function `internal` is the body of the function `external`.
 
-The type system can also infer the type of the function `external` as $\mathbb{R} \to \mathbb{R}$, so we could further compact the above code like this.
+The type system can also infer the type of the function `external` as $\mathbb{R} \to \mathbb{R}$, so we could further contract the above code like this.
 
 ```
 external i → internal i - 2.0 where internal x → x^3.0
 ```
 
-Note that, instead of the `where` clause, the `let-in` binding can be used to introduce the `internal` function.
+Note that, instead of the `where` clause, the `let-in` construct can be used to introduce the `internal` function.
 
 ```
 external i → let internal x → x^3.0 in internal i - 2.0
@@ -504,9 +504,9 @@ The differences between `let-in` and `where` are these:
 - `let-in` creates a new block within the current scope, and the scope of the local definitions introduced is that new block.
 - `where` can only be used inside functions, and the scope of the local definitions introduced is the entire body of the function.
 
-***mark impure functions***—As mentioned, all functions are pure by default in our new language. But impure functions that exchange data between various data structures is a common programming practice in scientific computing. So, our new language supports impure functions.
+***mark impure functions***—As mentioned, all functions are pure by default in our new language. But impure functions that exchange data between various data structures is a common programming practice in scientific computing. So, our new language supports impure functions. But since they reduce parallelisation, impure functions should be used only sparingly.
 
-Impure functions—those with side effects—must be marked with the `!` symbol, which hints at the surprising (unpredictable) nature of effectful functions. This is the convention used in Scheme, but it is mandatory in our new language: if the programmer left out the `!` symbol at the end of an impure function, the compiler automatically appends it. Below, the `print!` function causes a side effect by printing a message to the console. And the `time!` function causes a side effect by returning `Time` object representing the current time, because time changes from call to call and, hence, is a side effect by definition. The `now!` function that calls these impure functions also becomes tainted by association.
+Impure functions—those with side effects—must be marked with the `!` symbol, which hints at the surprising (unpredictable) nature of such effectful functions. This is a convention in Scheme, but it is mandatory in our new language: if the programmer left out the `!` symbol at the end of an impure function, the compiler automatically appends it. Below, the `print!` function causes a side effect by printing a message to the console. And the `time!` function causes a side effect by returning `Time` object representing the current time, because time changes from call to call and, hence, is a side effect by definition. The `now!` function that calls these impure functions also becomes tainted by association.
 
 ```
 time! : () → Time
@@ -518,13 +518,19 @@ now! : () → IO ()
 now! () ## current time appears on the console
 ```
 
-The type expression `() → IO ()` of the function `now!` means that the function takes an argument of the unit type and returns a value of the type `IO ()`. The unit type has only one occupant, the unit value; both the type and the value are written as `()`. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO ()` represents an I/O side effect. Thus, the type expression `() → IO ()` states that the function `now!` takes no meaningful argument and it does not return a useful value, but causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the `()` value as the argument is invoked thus: `now! ()`.
+The type expression `() → IO ()` of the function `now!` means that the function takes an argument of the unit type and returns a value of the type `IO ()`. The unit type has only one occupant, the unit value; both the type and the value are written as `()`, by FP convention. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO ()`—the `IO` type parameterised with the unit type—represents an I/O side effect. Thus, the type expression `() → IO ()` states that the function `now!` takes no meaningful argument and it does not return a useful value but causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `()` as the argument is invoked thus: `now! ()`.
 
-***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is the convention used in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions `is...`, as is the convention in most languages. The following is a declaration for a predicate function that checks if a non-zero natural number $\mathbb{N}^+$ argument is a prime number.
+***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is a convention in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions with the `is...` prefix, which is the convention in most languages.
+
+The following is a declaration for the predicate function `prime?` that checks if a non-zero natural number $\mathbb{N}^+$ argument is a prime number.
 
 ```
 prime? : ℕ+ → 𝔹
-...
+```
+
+This predicate can be used in an `if-then-else` conditional.
+
+```
 n : ℕ+
 ...
 if prime? n then ... else ...
