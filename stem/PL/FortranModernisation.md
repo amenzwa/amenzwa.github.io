@@ -594,13 +594,7 @@ In simply typed languages like ML, OCaml, or Haskell, the `head` function throws
 
 In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ+) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, since that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector without a runtime size check. This is an example of using dependent types to specify precisely the *precondition* of functions.
 
-Do note that it is also possible to declare the `head` function as follows, without relying on the $\mathbb{N}^+$ type constraint. Since the compiler knows that the type of  `n` is zero-based natural number $\mathbb{N}$, it interprets the type `[𝛼 (n + 1)]` to mean a vector of non-zero size. But using the type $\mathbb{N^+}$ is syntactically concise and mathematically elegant.
-
-```
-head : [𝛼 (n + 1)] → 𝛼
-```
-
-In the like manner, the type of the `tail` function guarantees that if the argument vector is of size $n$, the result vector will be of size $n - 1$. This is an example of using dependent types to specify precisely the *postcondition* of functions.
+Similarly, the type of the `tail` function guarantees that if the argument vector is of size $n$, the result vector will be of size $n - 1$. This is an example of using dependent types to specify precisely the *postcondition* of functions.
 
 There is a finer point about the way the standard library defines the primitive type $\mathbb{N}$ and its subtraction operator `-`. The definition of $\mathbb{N}$'s  `-` operator clamps the minimum result to $0$. Hence, $0 - k = 0$, by definition. That means applying `tail` to an empty vector `[]` type checks: the type of the argument vector is `[𝛼 0]` where $n = 0$, and the type of the result vector is also `[𝛼 0]` where $n - 1 = 0 - 1 = 0$ by the definition of the `-` operator.
 
