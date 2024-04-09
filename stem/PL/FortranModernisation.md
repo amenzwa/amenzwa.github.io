@@ -303,7 +303,7 @@ Chapter 20 Elementary Graph Algorithms of
 And the [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
 
 ```
-Rational : Rational {n, d : ℤ}
+Rational : Rational {n : ℤ, q : ℤ-|ℤ+}
 ℚ : Rational
 
 Complex :
@@ -317,7 +317,7 @@ Quaternion :
 ℍ : Quaternion
 ```
 
-Above, we defined the type `Rational` as an alias of the record `{n, d : ℤ}`, representing the mathematical quantity $n/d$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes the record `{n, d : ℤ}`. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
+Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ-|ℤ+}`, representing the mathematical quantity $n/d$, where $d \neq 0$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes the record `{n : ℤ, q : ℤ-|ℤ+}`. The type of `q` is $\mathbb{Z}^- | \mathbb{Z}^+$, which is a sum type of non-zero integers. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
 
 For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and non-zero counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the `unsigned` type modifier, as C does.
 
