@@ -406,8 +406,7 @@ Fortran's adherence to its old, column-major ordering—which harkens back to th
 Anonymous functions that are created on-the-fly (𝜆 functions) are also an integral part of FP. Likewise, function composition operators—pipe-left `<|` (same as mathematical composition operator `∘`), and pipe-right `|>` (same as Unix shell pipe operator `|`)—are essential parts of the FP idiom. The following code shows the use of the 𝜆 function construct supported by our new language. The fold-left standard library functional `foldl` takes a 𝜆 function, an initial value, and a vector. The 𝜆 function takes as arguments the accumulator `a` and the element `x`.
 
 ```
-## returns 0 + 3 + 5 + 7 + 4 + 9 = 28
-foldl (𝜆 a x → a + x) 0 [3, 5, 7, 4, 9]
+foldl (𝜆 a x → a + x) 0 [3, 5, 7, 4, 9] ## returns 28
 ```
 
 Note the function application syntax shown above. The function `foldl` is applied to three arguments: a 𝜆 function, the initial value `0`, and the vector `[3, 5, 7, 4, 9]`. No parentheses are needed when applying a function to its arguments. So, whereas in mathematics function application is written $f(x)$, in Haskell it is written `f x`. This syntax is clear, succinct, and quiet. By the way, the vector, the initial value, and the 𝜆 function, together, form an algebraic structure called a *[monoid](https://en.wikipedia.org/wiki/Monoid)*.
@@ -535,16 +534,16 @@ The type expression `() → IO ()` of the function `now!` means that the functio
 
 ***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is a convention in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions with the `is...` prefix, which is the convention in most languages.
 
-The following is a declaration for the predicate function `prime?` that checks if a non-zero natural number $\mathbb{N}^+$ argument is a prime number.
+The following is a declaration for the predicate function `prime?` that checks if the argument `n` of dependent type `(n : ℕ) > 1` (a natural number greater than $1$) is a prime number.
 
 ```
-prime? : ℕ+ → 𝔹
+prime? : (n : ℕ) > 1 → 𝔹
 ```
 
 This predicate can be used in an `if-then-else` conditional.
 
 ```
-n : ℕ+
+n = 7
 ...
 if prime? n then ... else ...
 ```
