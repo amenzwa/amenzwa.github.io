@@ -7,7 +7,7 @@ use_math: true
 
 [TOC]
 
-# INTRODUCTION
+## *a proposal for a dependently typed Fortran*
 
 For decades, people in IT had taken delight in drafting Fortran's obituary. Yet, this old language lives on. But in recent years, the Fortran user community has begun sounding alarms: Fortran shops are having difficulty finding young programmers to replace those who are leaving the workforce, because the young are not willing to devote their careers to this ancient language. At present, no language can rival, let alone surpass, Fortran when it comes to implementing long-lived, large-scale, massively-parallel scientific and engineering applications; not even C and C++. Yet, modern programmers know nothing about Fortran, nor have they any interest in it. Suffice it to say, Fortran has an image problem.
 
@@ -22,6 +22,8 @@ My intended audience include the following groups:
 - Computer scientists maintaining the Fortran language standard
 - Scientists and engineers who implement scientific software using Fortran
 - STEMers interested in parallel processing and scientific programming
+
+Given the breadth and depth of topics involved, the reader is expected to be an experienced parallel programmer in both procedural and functional languages and possess a working knowledge of simple type theory, parametric type theory, and dependent type theory.
 
 It would seem that trying to shore up this mid-century language for the grind of the 21st Century verges on insanity. Not so. I contend that Fortran modernisation is worthwhile and necessary. I admit, though, that refreshing Fortran for the 2020s is but a [forlorn hope](https://en.wikipedia.org/wiki/Forlorn_hope#:~:text=A%20forlorn%20hope%20is%20a,to%20save%20a%20retreating%20army%2C), at present.
 
@@ -73,7 +75,7 @@ There are only a handful of possible courses of action, but ignoring the problem
 - Automatically translate Fortran into a new language
 - Embrace Fortran by systematically promoting it in academia and in industry
 - Create new, future-proof languages that target Fortran
-- Truly modernise Fortran and shed all emotional attachments to the days of yore
+- Thoroughly modernise Fortran and shed all emotional attachments to the days of yore
 
 We shall now explore these options, in depth.
 
@@ -125,9 +127,9 @@ Today, a common practice in programming language design is to target "low-enough
 
 It is important to note, though, that transpilation is not bidirectional: transpiling a low-abstraction language, like C, up to a high-abstraction language, like Haskell, is a practical impossibility, whereas transpiling Haskell down to C is far simpler by comparison. This is because down-transpilation is abstraction lossy. One way to mitigate abstraction loss is to inject metadata into the AST from which the high-level abstractions can be recovered. But those techniques are neither foolproof nor optimal. Within a paradigm, however, it is straightforward to translate between languages that are semantically proximate, say between C and Pascal, between Java and C#, or between OCaml and Reason. Fortran is a low-abstraction language, compared to modern FP languages. And Fortran's domain, scientific computing, is intensely mathematical. Hence, existing FP languages, like Haskell, OCaml, and F#, could target Fortran with relative ease. In fact, these languages already target C and JavaScript, so down-transpilation is not a foreign practice to them.
 
-The new higher-abstraction language that targets Fortran will incorporate the cherished features of modern FP languages like Haskell and OCaml. This new language will also emulate their clean syntax and functional semantics. But it is but a thin veneer of palatable, alternative syntax atop the Fortran 2023 syntax. This is analogous to what [Reason](https://reasonml.github.io/) is to [OCaml](https://ocaml.org/). The compiler will handle transpiling down to Fortran, then invoke the Fortran compiler to produce the native binary. And just as C++ is able to interact with existing C code, this new language will interact with existing Fortran code.
+Programmers always chase new languages with elegant syntax and cogent semantics. So, they would have no objections to learning fresh, new scientific programming languages that target Fortran, even if they have to work within the mouldy, old Fortran ecosystem. This, too, could be a win-win situation. But it is not without challenges.
 
-Programmers always chase new languages with attractive, succinct, elegant syntax. So, they would have no qualms about learning this fresh, new language, even if they have to work within the mouldy, old Fortran ecosystem. This, too, could be a win-win situation. But it is not without challenges. Designing a brand new language is not for the faint of heart. I would also caution against anointing the canonical language. DoD's efforts with the [High Order Language Working Group](https://en.wikipedia.org/wiki/High_Order_Language_Working_Group) that culminated in Ada; DARPA's efforts with [High Productivity Computing Systems](https://en.wikipedia.org/wiki/High_Productivity_Computing_Systems) that produced X10, Chapel, and Fortress; and other similar efforts have proved conclusively that languages developed by government-sponsored committees inevitably fails, not because the language is poor, but because the bureaucracy that surrounds it is poisonous and, more importantly, programmers detest being forced to use the sacred language forced upon them by government officials and corporate executives. It is better to take a gentler approach and leave language evolution to the [marketplace of ideas](https://en.wikipedia.org/wiki/Marketplace_of_ideas).
+Designing a brand new language is not for the faint of heart. I would also caution against anointing the canonical language. DoD's efforts with the [High Order Language Working Group](https://en.wikipedia.org/wiki/High_Order_Language_Working_Group) that culminated in Ada; DARPA's efforts with [High Productivity Computing Systems](https://en.wikipedia.org/wiki/High_Productivity_Computing_Systems) that produced X10, Chapel, and Fortress; and other similar efforts have proved conclusively that languages developed by government-sponsored committees inevitably fails, not because the language is poor, but because the bureaucracy that surrounds it is poisonous and, more importantly, programmers detest being forced to use the sacred language forced upon them by government officials and corporate executives. It is better to take a gentler approach and leave language evolution to the [marketplace of ideas](https://en.wikipedia.org/wiki/Marketplace_of_ideas).
 
 ## *modernise fortran*
 
@@ -137,9 +139,11 @@ But much has changed in computing, since 1957. As explained above, backward comp
 
 Despite the successive standards' attempts to modernise Fortran and to expand its application domain, there is no denying that Fortran is not a [general-purpose language](https://en.wikipedia.org/wiki/General-purpose_programming_language) (GPL), a systems language, an enterprise language, a web development language, nor a mobile development language; it is a scientific programming language, through and through. Indeed, it is the only standardised programming language with parallel programming facilities baked into the syntax. Fortran is, thus, the ultimate scientific [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL).
 
-All modern software development projects employ several different programming languages, each put to a particular purpose. For instance, the following division of labour amongst the languages would be entirely normal in any large scientific computing project, today: use HTML and JavaScript, TypeScript, or ReScript for web UI; use industrial-strength high-level languages that target WebAssembly for front-end background services and back-end remote services; use Python and Jupyter for interactive data analysis; use C, C++, Rust, or Zig for systems integration; use GraphQL for data wrangling; use SQL for data warehousing; and use Fortran for scientific parallel programming. In this scenario, Fortran's core could be excised of the inessentials that it had acquired through the decades, and be restored to its former svelte self. Much of Fortran's present bloat came from attempts to keep pace with modernity and to turn it into a GPL. Accepting Fortran's lot in life as the ultimate scientific DSL will make the language more compact, thereby making it better suited to its original purpose, once again.
+All modern software development projects employ several different programming languages, each put to a particular purpose. For instance, the following division of labour amongst the languages would be entirely normal in any large scientific computing project, today: use HTML and JavaScript, TypeScript, or ReScript for web UI; use industrial-strength high-level languages that target WebAssembly for front-end background services and back-end remote services; use Python and Jupyter for interactive data analysis; use C, C++, Rust, or Zig for systems integration; use GraphQL for data wrangling; use SQL for data warehousing; and use Fortran for scientific parallel programming. In this scenario, Fortran's core could be excised of the inessentials that it had acquired through the decades, and be restored to its former svelte self, and its syntax will be overhauled to reflect modern thinking in language design. Much of Fortran's present bloat came from attempts to keep pace with modernity and to turn it into a GPL. Accepting Fortran's lot in life as the ultimate scientific DSL will make the language more compact, thereby making it better suited to its original purpose, once again.
 
-After such a modernisation effort, the resultant language is still very much Fortran in essence, but without the decades-old crust and with the modern accoutrements that young programmers adore. Simplifying Fortran's syntax in this way is not only feasible, it is also the most sensible among the options.
+Trimming the verbose syntax and the extraneous features of Fortran is not only feasible, it is also the most sensible option. This new Fortran, as it were, will employ the syntax and semantics of modern FP languages, like Haskell, OCaml, and F#, and incorporate features from modern proof assistants, like Agda, Idris, and Lean. But it will retain Fortran's array manipulation and parallel programming facilities. Yet, it is but a thin veneer of palatable, alternative syntax atop the Fortran 2023 syntax. In terms of syntactic differences, this effort is analogous to what [Reason](https://reasonml.github.io/) is to [OCaml](https://ocaml.org/). And in terms of semantics, it is like what [Agda](https://agda.readthedocs.io/en/latest/index.html) is to [Haskell](https://www.haskell.org). The compiler transpiles this new, higher-abstraction language down to Fortran, then invokes the Fortran compiler to produce the native binary. And just as C++ is able to interact natively with the existing C binaries, this new language will interact with the existing Fortran binaries.
+
+After this modernisation, the resultant language is still Fortran in essence—a scientific DSL with built-in parallel programming facilities—but without the decades-old crust. And it provides familiar modern comforts and accoutrements that young programmers adore.
 
 # MODERNISATION
 
@@ -317,7 +321,7 @@ Above, we defined the type `Rational` as an alias of the record `{n, d : ℤ}`, 
 
 For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and non-zero counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the `unsigned` type modifier, as C does.
 
-The Unicode symbols can be used in the code for identifier names: $\pi$, $𝜎$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts.
+The Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts.
 
 ***rename derived type***—Calling a user-defined product type a "derived type" is courting trouble, because it is a term of art in OO, and most newcomers to Fortran today would already know OO quite well. Instead, simply call the user-defined product type a "record", just like every other modern language. Redefining buzzwords just to be different causes confusion without offering benefits.
 
@@ -518,7 +522,7 @@ now! : () → IO ()
 now! () ## current time appears on the console
 ```
 
-The type expression `() → IO ()` of the function `now!` means that the function takes an argument of the unit type and returns a value of the type `IO ()`. The unit type has only one occupant, the unit value; both the type and the value are written as `()`, by FP convention. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO ()`—the `IO` type parameterised with the unit type—represents an I/O side effect. Thus, the type expression `() → IO ()` states that the function `now!` takes no meaningful argument and it does not return a useful value but causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `()` as the argument is invoked thus: `now! ()`.
+The type expression `() → IO ()` of the function `now!` means that the function takes an argument of the unit type and returns a value of the type `IO ()`. The [unit type](https://en.wikipedia.org/wiki/Unit_type) has only one occupant, the unit value; both the type and the value are written as `()`, by FP convention. Its analogue in PP languages is the C `void` type. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO ()`—the `IO` type parameterised with the unit type—represents an I/O side effect. Thus, the type expression `() → IO ()` states that the function `now!` takes no meaningful argument and it does not return a useful value but causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `()` as the argument is invoked thus: `now! ()`.
 
 ***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is a convention in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions with the `is...` prefix, which is the convention in most languages.
 
@@ -538,17 +542,19 @@ if prime? n then ... else ...
 
 ## *depend on dependent types*
 
-***support dependent types***—In an FP language, functions are first class. In a language with [dependent types](https://en.wikipedia.org/wiki/Dependent_type), types are first class. As such, types can be held in variables and be manipulated by functions. In a [parametric type](https://en.wikipedia.org/wiki/Parametric_polymorphism) system, types can be parameterised with other types. That is, types can depend on other types: `Vector 𝛼` means "an arbitrary-length vector of $𝛼$-typed elements". In a dependent type system, types can additionally depend on values: `Vector 𝛼 n`, where `n` is a value of type $\mathbb{N}$, means "a size-$n$ vector of $𝛼$-typed elements". By convention, we name type parameters of a dependent type using Greek letters $𝛼$, $𝛽$, etc., and values indices of a dependent type using English letters `m`, `n`, etc.
+***support dependent types***—In an FP language, functions are first class, so functions can be held in variables and be manipulated by other functions. In a language with [dependent types](https://en.wikipedia.org/wiki/Dependent_type), types are first class, so types can be held in variables and be manipulated by functions.
+
+In a [parametric type](https://en.wikipedia.org/wiki/Parametric_polymorphism) system, types can be parameterised with other types. That is, types can depend on other types: `Vector 𝛼` means "an arbitrary-length vector of $𝛼$-typed elements"—in other words, a list. In a dependent type system, types can additionally depend on values: `Vector 𝛼 n`, where `n` is a value of type $\mathbb{N}$, means "a size-$n$ vector of $𝛼$-typed elements". By convention, we name type parameters of a dependent type using Greek letters $\alpha$, $\beta$, etc., and values indices of a dependent type using English letters `m`, `n`, etc.
 
 Our new language uses the operator `:` to assign types to variables, instead of using `::` as in Fortran and Haskell. In dependently typed languages, types are first-class values and there are many expressions involving types. As such, we use the less noisy `:` for type assignment. This convention is common among dependently typed languages, including Coq, Agda, and Idris.
 
-Our new language uses a strong, static, dependent, inferencing type system based on dependent type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
+We use a strong, static, dependent, inferencing type system based on dependent type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
 
 ```
 Vector 𝛼 (n : ℕ) : [𝛼 n]
 ```
 
-In the above type declaration, the type constructor `Vector` on the left side is parameterised with the type variable $𝛼$ for the element type and is indexed by the numeric value `n` for the size. Here, $𝛼$ is an unconstrained type parameter, and `n` is of the natural number type $ℕ$. The data constructor `[𝛼 n]` on the right side takes a concrete type and a size value. Calling this data constructor creates a vector of size $n$. The $i$-th element of a vector `v` is written `v[i]`, where $i ∈ [0, n)$, and the type of the element `v[i]` is $𝛼$. Invoking the data constructor with a value $0$ for `n` creates an empty vector `[]`.
+In the above type declaration, the type constructor `Vector` on the left side is parameterised with the type variable $𝛼$ for the element type and is indexed by the numeric value `n` for the size. Here, $𝛼$ is an unconstrained type parameter, and `n` is a value of the natural number type $ℕ$. The data constructor `[𝛼 n]` on the right side takes a concrete type and a size value. Invoking this data constructor creates a vector of size $n$. The $i$-th element of a vector `x` is written `x[i]`, where $i ∈ [0, n)$, and the type of that element is $𝛼$. Passing $0$ for `n` to the data constructor creates a size-$0$ (empty) vector `[]`.
 
 Using the `Vector` dependent type, we can define a size-$3$ vector of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, like this.
 
@@ -562,7 +568,7 @@ We may declare a vector concatenation operator `+` as follows.
 _+_ : [ℝ m] → [ℝ n] → [ℝ (m + n)]
 ```
 
-This dependent type enables the compiler to make a guarantee that concatenating a vector of size $m$ and a vector of size $n$ yields a vector of size $m + n$​; the programme need not include runtime size checks.
+The above dependently typed function declaration enables the compiler to make a guarantee that concatenating a vector of size $m$ and a vector of size $n$ yields a vector of size $m + n$​; the programme need not include runtime size checks.
 
 We may define the `head` and `tail` vector functions as follows.
 
@@ -577,17 +583,17 @@ tail : [𝛼 n] → [𝛼 (n - 1)]
 
 In simply typed languages like ML, OCaml, or Haskell, the `head` function throws a $\bot$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type of `head` prevents the user from passing an empty vector `[]` during compilation. Let us see how this works.
 
-In the definition of the vector type above, the index variable `n` has the zero-based natural number type $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ+) ⇒` in the type expression of `head` locally alters the type of `[𝛼 n]` to be indexed with a non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, since that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector without a runtime size check. This is an example of using dependent types to specify precisely the *precondition* of functions.
+In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ+) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, since that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector without a runtime size check. This is an example of using dependent types to specify precisely the *precondition* of functions.
 
-Do note that it is also possible to declare the `head` function as follows, without relying on the $\mathbb{N}^+$ type constraint. Since the compiler knows that the type of  `n` is the zero-based natural number $\mathbb{N}$, it interprets the type `[𝛼 (n + 1)]` to mean a non-zero size vector. But using the type $\mathbb{N^+}$ is more succinct and mathematically elegant.
+Do note that it is also possible to declare the `head` function as follows, without relying on the $\mathbb{N}^+$ type constraint. Since the compiler knows that the type of  `n` is zero-based natural number $\mathbb{N}$, it interprets the type `[𝛼 (n + 1)]` to mean a vector of non-zero size. But using the type $\mathbb{N^+}$ is syntactically concise and mathematically elegant.
 
 ```
 head : [𝛼 (n + 1)] → 𝛼
 ```
 
-In the like manner, the type of the `tail` function guarantees that if the non-empty argument vector is of size $n$, the result vector will be of size $n - 1$. This is an example of using dependent types to specify precisely the *postcondition* of functions.
+In the like manner, the type of the `tail` function guarantees that if the argument vector is of size $n$, the result vector will be of size $n - 1$. This is an example of using dependent types to specify precisely the *postcondition* of functions.
 
-The standard library defines the primitive type $\mathbb{N}$ and its operators. The definition of the subtraction operator `-` for $\mathbb{N}$ clamps the minimum result to $0$. That is, $0 - k = 0$, by the definition of the $\mathbb{N}$ type. That means when `tail []` returns `[]`, this function application type checks: the type of the argument vector is `[𝛼 0]` where $n = 0$, and the type of the result vector is also `[𝛼 0]` where $n - 1 = 0 - 1 = 0$ by the definition of the `-` operator of the $\mathbb{N}$ type.
+There is a finer point about the way the standard library defines the primitive type $\mathbb{N}$ and its subtraction operator `-`. The definition of $\mathbb{N}$'s  `-` operator clamps the minimum result to $0$. Hence, $0 - k = 0$, by definition. That means applying `tail` to an empty vector `[]` type checks: the type of the argument vector is `[𝛼 0]` where $n = 0$, and the type of the result vector is also `[𝛼 0]` where $n - 1 = 0 - 1 = 0$ by the definition of the `-` operator.
 
 Next, using the `Matrix` dependent type from the standard library, we can define a $2 \times 3$ matrix of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, as follows.
 
@@ -604,19 +610,19 @@ _⊤ : [𝛼 m n] → [𝛼 n m]
 _+_ : [𝛼 m n] → [𝛼 m n] → [𝛼 m n]
 ```
 
-The compiler can verify that transposing a matrix `y` of size $m \times n$, as in `y⊤`, yields a matrix of size $n \times m$. And the compiler will ensure that the element types and the sizes of the argument matrices are matched, for the matrix addition expression `y1 + y2`. But in languages with simple type systems, these verifications can only be performed by runtime size checks.
+The compiler can verify that transposing a matrix `y` of size $m \times n$, as in `y⊤`, yields a matrix of size $n \times m$. And the compiler will ensure that the element types and the sizes of the argument matrices are matched for the matrix addition expression `y1 + y2`. But in languages with simple type systems, these verifications can only be performed by runtime size checks.
 
-A dependent type system additionally provides advanced types that a simple type system like the [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) cannot. A [dependent product type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A0_type) (dependent function type) $\Pi$ corresponds to logical universal quantification $∀$ of predicate logic. A [dependent sum type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A3_type) (dependent pair type) $\Sigma$ corresponds to logical existential quantification $∃$ of predicate logic. The $\Pi$ type is a function whose result type depends on (indexed by) the argument value: $f : (x : \alpha) \to 𝛽[x]$. The $\Sigma$ type is a pair whose right-element type depends on (indexed by) the left-element value: $(x : 𝛼, 𝛽[x])$. Dependent types allow the programmer to state specifications with a high level of precision, and the type system automatically guarantees that the code that type checks meets these specifications.
+A dependent type system additionally provides advanced types that a simpler type system like the [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) cannot. A [dependent product type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A0_type) (dependent function type) $\Pi$ corresponds to universal quantification $∀$ of predicate logic. A [dependent sum type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A3_type) (dependent pair type) $\Sigma$ corresponds to existential quantification $∃$ of predicate logic. The $\Pi$ type is a function whose result type depends on (indexed by) the argument value: $f : (x : \alpha) \to \beta[x]$. The $\Sigma$ type is a pair whose right-element type depends on (indexed by) the left-element value: $((x : \alpha), \beta[x])$. These advanced types allow the programmer to state specifications with a high level of precision, and the type system automatically guarantees that the code that type checks meets these specifications.
 
-Note that Fortran has shades of dependent types. Its fixed-size arrays, for instance, can be considered to be dependently typed. In the definition `real, dimension(3) :: x`, the variable `x` is a size-$3$ array that holds elements of type `real`.
+Note that some types in Fortran have a tinge of dependent types. Its fixed-size arrays, for instance, can be seen as dependently typed. In the definition `real, dimension(3) :: x`, the variable `x` is a size-$3$ array that holds elements of type `real`.
 
-The modern trend in programming languages is the gradual shift toward typefulness. Types are no longer the simple classification of values that prohibit conflating a value of one type with a value of another type; types are now deeply enmeshed with all aspects of programming: code completion, code refactoring, correctness verification, runtime safety, and performance optimisation. As such, we programmers must change our perspective about types: we must no longer view types as combative *guards* who stand in our way just to keep us in line, but instead learn to depend on them as helpful *guides* who help us produce faster, safer, verified software that are easier to comprehend and to maintain.
+The modern trend in programming languages is a gradual shift toward typefulness. Types are no longer simple classifications of values that prohibit mixing a value of one type with a value of another type; types are now deeply enmeshed with all aspects of programming: code completion, code refactoring, correctness verification, runtime safety, and performance optimisation. As such, we programmers must change our perspective about types: we must no longer view types as combative *guards* who restrain our freedom and diminish our productivity, but instead learn to depend on them as helpful *guides* who help us produce faster, safer, verified software that are easier to comprehend and to maintain.
 
-***support algebraic data types***—We discussed above the record and the tuple product types and the enumeration sum type. Because product type and sum type can be interpreted as algebraic operations on types, they are called [algebraic data types](https://en.wikipedia.org/wiki/Algebraic_data_type) (ADTs).
+***support algebraic data types***—We discussed above the record and the tuple product types and the enumeration sum type. Because the product type and the sum type can be interpreted as algebraic operations on types, they are called [algebraic data types](https://en.wikipedia.org/wiki/Algebraic_data_type) (ADTs).
 
-***support pattern matching***—The term "pattern matching" in FP means using the structure of the ADTs to analyse (dissect) a data structure into its constituent components. If we consider data structures to be "alive" at runtime, then runtime pattern matching is not a dissection, but a vivisection, of data.
+***support pattern matching***—The term "pattern matching" in FP means using the structure of the ADTs to dissect (analyse ) a data structure into its constituent components. If we consider data structures to be "alive" at runtime, then runtime pattern matching is not a dissection, but a vivisection, of data.
 
-Our new language should support structural pattern matching via the `case` control mechanism.
+Our new language should support structural pattern matching via the `case` control construct.
 
 ```
 c : ℂ
@@ -626,7 +632,7 @@ case c
   | Polar {r, 𝜑} → ...
 ```
 
-Another use of pattern matching is record field extraction, as shown below.
+Another use of pattern matching is for record field extraction, as shown below.
 
 ```
 c = Rectangular {x = 2.0, y = 3.0}
@@ -634,25 +640,25 @@ c = Rectangular {x = 2.0, y = 3.0}
 {x, y} = c ## c is destructured; x is bound to 2.0 and y to 3.0
 ```
 
-Sometimes, it is convenient to be able to refer to a part or the whole of a matched pattern by name. This is called the as-pattern, and we use the `@` symbol for it.
+Sometimes, it is convenient to be able to refer by name the whole of the pattern matched data structure. This is called the as-pattern, and we use the `@` symbol for it.
 
 ```
-f (x:xs) @ v → ... ## vector v can be used in the body of function f
+f (x:xs) @ v → ... ## whole vector v can be used in body of f
 ```
 
-***support type classes, not classes***—No one should use Fortran to write a business application, an enterprise-grade web server, an optimising compiler, or an event-driven simulator. Anyone could, but none should. Fortran is, after all, a scientific DSL, and dependent algebraic data types are more than adequate for modelling scientific data. As such, there is no need for Fortran to provide object modelling facilities. Instead of classes with fine-grained visibility modifiers, such as private, protected, and public, we rely on coarser but simpler alternative: modules containing selectively exported types and values. And instead of object inheritance, we use Haskell-style type classes.
+***support type classes, not classes***—Fortran is a scientific DSL, and dependent algebraic data types are more than adequate for modelling scientific data. As such, there is no need for Fortran to provide object modelling facilities. Instead of classes with fine-grained visibility modifiers, such as private, protected, and public, we rely on coarser but simpler alternative: modules containing selectively exported types and values. And instead of object inheritance, we support Haskell-style type classes.
 
-A type class roughly corresponds to an extensible interface in OO languages: it defines a collection of functions (behaviours) which can be inherited through a mechanism called type instantiation. Below, we declare the `Show` type class that converts a value of some type $𝛼$ to a Unicode string representation.
+A type class roughly corresponds to Java `interface`. It defines a collection of functions (behaviours) which can be reused (inherited) by making a type an instance of the desired type class. Below, we declare the `Show` type class whose primary behaviour is to convert a value of some type $\alpha$ to a Unicode string representation.
 
 ```
 Show 𝛼 :: ## declare Show type class
   show : 𝛼 → 𝕌 ## declare show function
 ```
 
-We may now make the complex number type $\mathbb{C}$ an instance of the `Show` type class, and implement the `show` function that converts a complex value to a formatted string representation. Note the syntax: just as we use the single-colon syntax `value : Type` to assign a value to a type, we use the double-colon syntax `Type :: Class` to instantiate a type in a type class. This forms a type hierarchy: $value ∈ Type ∈ Class$.
+We now make the complex number type $\mathbb{C}$ an instance of the `Show` type class, and implement the `show` function that converts a complex value to a formatted string representation. This mechanism is conceptually similar to Java `implements`. Note the syntax: just as we use the single-colon syntax `value : Type` to assign a value to a type, we use the double-colon syntax `Type :: Class` to make a type an instance of a type class. This forms a type hierarchy: $value ∈ Type ∈ Class$.
 
 ```
-ℂ :: Show ## make complex type an instance of Show type class
+ℂ :: Show ## make ℂ type an instance of Show type class
   show : ℂ → 𝕌 ## implement show function for complex type
     | Rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
     | Polar {r, 𝜑} → "Polar " + strOf(r) + "∠" + strOf(𝜑)
@@ -661,9 +667,9 @@ log! : ℂ → IO ()
   | c → show c |> print! ## formatted complex value appears on the console
 ```
 
-Fortran does support polymorphism, both parametric and ad hoc varieties. Parametric polymorphism in Fortran is called *generics*. For example, using the `selected real kind()` procedure, the programmer may select the floating-point precision—`real` or `double precision`—within a data structure or a procedure. And with the addition of OO, it is now possible for Fortran to support something akin to C++ virtual pointers, which is an OO way of implementing sum type ADTs. Ad hoc polymorphism in Fortran is called *overloading*. It is comparable to C++ operator overloading. Nevertheless, polymorphism was retrofitted into Fortran in a convoluted manner, making it rather clunky to use.
+Note that Fortran supports polymorphism. Parametric polymorphism in Fortran is called *generics*. For example, using the `selected_real_kind()` procedure, the programmer may select the floating-point precision for a data structure or a procedure. Ad hoc polymorphism in Fortran is called *overloading*. It is comparable to C++ operator overloading. And with the addition of OO in the Fortran 2003 standard, it is now possible in Fortran to implement something akin to C++ *inheritance*, which is an OO way of implementing polymorphic sum type ADTs. Nevertheless, polymorphism was retrofitted into Fortran in a convoluted manner, making it rather clunky to use.
 
-***remove mandatory explicit typing***—Just about every Fortran programmer today knows at least one other modern language, so they are no strangers to modern programming concepts and practices. Hence, there should be no philosophical objections against discarding explicit typing and adopting a strong, static, dependent, inferencing type system presented in this article.
+***remove mandatory explicit typing***—Just about every Fortran programmer today knows at least one other modern language, so they are no strangers to modern programming concepts and practices. Hence, there should be no philosophical objections against discarding explicit typing and adopting a strong, static, dependent type system that automatically infers types, thereby alleviating the burden of manual typing.
 
 ## *provide container types*
 
