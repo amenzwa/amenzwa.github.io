@@ -300,10 +300,19 @@ Chapter 20 Elementary Graph Algorithms of
 
 ***use common primitive types***—Many modern high-level languages use only these primitive types: boolean, character, integer, natural number, and floating-point number. The boolean is a one-byte quantity, the character is a variable-byte quantity represented using Unicode, the natural number is an unsigned 64-bit quantity represented using binary, the integer is a signed 64-bit quantity represented using 2's compliment binary, and the floating-point number is a 64-bit quantity represented using the IEEE 754 format. These primitive data types suffice for scientific applications. We shall call them `Bol`, `Chr`, `Nat`, `Int`, and `Flt`, respectively. Larger data types with greater precisions are defined in the standard library: infinite-precision integer as `Integer`, 128-bit integer as `Int128`, and 128-bit floating-point number as `Flt128`. The types `Nat`, `Int`, `Int128`, `Integer`, `Flt`, and `Flt128` belong to the number class `Num`.
 
-And the [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
+The standard library defines some type aliases for convenience. $\mathbb{N}^+$ is the type of non-zero natural numbers (counting numbers).  $\mathbb{Z}^-$ is the type of non-zero negative integers. $\mathbb{Z}^+$ is the type of non-zero positive integers. $\mathbb{Z}^\pm$ is the type of non-zero integers.
 
 ```
-Rational : Rational {n : ℤ, q : ℤ-|ℤ+}
+ℕ+ : (n : ℕ) > 0
+ℤ- : (n : ℤ) < 0
+ℤ+ : (n : ℤ) > 0
+ℤ± : (n : ℤ) ≠ 0
+```
+
+The [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
+
+```
+Rational : Rational {n : ℤ, q : ℤ±}
 ℚ : Rational
 
 Complex :
@@ -317,9 +326,9 @@ Quaternion :
 ℍ : Quaternion
 ```
 
-Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ-|ℤ+}`, representing the mathematical quantity $n/d$, where $d \neq 0$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes the record `{n : ℤ, q : ℤ-|ℤ+}`. The type of `q` is $\mathbb{Z}^- | \mathbb{Z}^+$, which is a sum type of non-zero integers. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
+Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
 
-For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and non-zero counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the `unsigned` type modifier, as C does.
+For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the `unsigned` type modifier, as C does.
 
 The Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts.
 
