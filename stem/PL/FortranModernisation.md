@@ -675,16 +675,18 @@ Note that Fortran supports polymorphism. Parametric polymorphism in Fortran is c
 
 ## *provide container types*
 
-***containers***—From the very beginning, FP languages relied on lists. Indeed, LISP stands for "list processor". But FORTRAN has always relied on sequences, which it calls *arrays*. At the hardware level, an array is a contiguous sequence of memory cells. Arrays are friendly to caches and vector processors. In scientific programming, almost all data are represented as sequences; complicated record hierarchies are rare used, if at all. Consequently, array processing is the central tenet of Fortran. Our new language, too, fully embraces sequence processing. But unlike other FP languages that rely on lists, we use vectors in place of arrays and lists. Vectors naturally extend to matrices and tensors, and all three data structures are commonly used throughout scientific computing.
+***containers***—From the very beginning, FP languages relied on sequences, represented with the list data structure. Indeed, LISP stands for "list processor". But FORTRAN has always relied on sequences, which it calls *arrays*. At the hardware level, an array is a contiguous sequence of memory cells. Array data structures are friendly to caches and vector processors. In scientific programming, almost all data are represented as sequences; complicated record hierarchies endemic to business computing are rare used, if at all, in scientific computing. Consequently, array processing is the central tenet of Fortran. Our new language, too, embraces sequence processing.
 
-***vectors***—A vector is a fixed-size 1D sequence of values. The `Vector` dependent type is defined in the standard library. It is parameterised with a type variable $𝛼$ and it is indexed with size `n`. A zero-sized vector is written as `[]`, similar to the empty list in other FP languages. And in keeping with the FP tradition, we add elements to the head of the vector with the syntax `x:xx`, where `x` is the new element and the `xx` is the existing vector.
+But unlike Fortran that uses arrays exclusively and unlike other FP languages that use lists exclusively, we use fixed-size vectors exclusively to represent sequences. Vectors naturally extend to matrices and tensors, and all three data structures are commonly used throughout scientific computing. Our sequence data structures are fixed size, per the FP ethos of immutability.
+
+***vectors***—A vector is a fixed-size 1D sequence of values. The `Vector` dependent type is defined in the standard library. It is parameterised with a type variable $𝛼$ and it is indexed with size `n`. A zero-sized vector is written as `[]`, similar to the empty list in other FP languages. And in keeping with the FP tradition, we add elements to the head of the vector with the syntax `x:xx`, where `x` is the new element and the `xx` is the existing vector of the same element type.
 
 ```
 Vector 𝛼 (n : ℕ) : [𝛼 n]
 𝕍 : Vector
 ```
 
-The following is the literal syntax for creating a vector. The type system infers the type of the variable `v` to be `[ℝ 3]` or `𝕍 ℝ 3`, a $1 \times 3$ row vector of $\mathbb{R}$-typed elements. Note that a 1D sequence is conventionally treated as a column vector in mathematics, but modern programming languages treat such a sequence as a row vector.
+The following is the literal syntax for creating a vector. The type system infers the type of the variable `x` to be `[ℝ 3]` or `𝕍 ℝ 3`, a $1 \times 3$ row vector of $\mathbb{R}$-typed elements. Note that a 1D sequence is viewed as a column vector in mathematics, but modern programming languages treat such a sequence as a row vector.
 
 ```
 e0, e1, e2 : ℝ
@@ -692,20 +694,20 @@ e0, e1, e2 : ℝ
 x = [e0, e1, e2]
 ```
 
-We may declare `inner` and `outer` vector product functions like this. Both functions take as arguments two size-$n$ vectors of $𝛼$-typed elements. The result of `inner` is a scalar of type $𝛼$, and the result of `outer` is an $n \times n$ matrix of $𝛼$-typed elements. Note the `(𝛼 : Num) ⇒` type constraint on the type parameter $𝛼$.
+We may declare `inner` and `outer` vector product functions like this. Both functions take as arguments two size-$n$ vectors of $\alpha$-typed elements. The result of `inner` is a scalar of type $𝛼$, and the result of `outer` is an $n \times n$ matrix of $\alpha$-typed elements.
 
 ```
 inner : (𝛼 : Num) ⇒ [𝛼 n] → [𝛼 n] → 𝛼
 outer : (𝛼 : Num) ⇒ [𝛼 n] → [𝛼 n] → [𝛼 n n]
 ```
 
-Since the type parameter $𝛼$ is unconstrained in the vector data constructor `[𝛼 n]`, it is possible to create a vector of non-numeric elements. But the compiler will raise a type error, when the user attempts to pass a non-numeric vector to `inner` or `outer`, which expects the argument to be vectors of numeric elements.
+Note the type constraint `(𝛼 : Num) ⇒`. The the declaration of the `Vector` type, the type parameter $\alpha$ is unconstrained. But in these functions, $\alpha$ is constrained to be a type in the `Num` class. Since the type parameter $𝛼$ is unconstrained in the vector data constructor `[𝛼 n]`, it is possible to create a vector of non-numeric elements. But the compiler will raise a type error, when the user attempts to pass a non-numeric vector to `inner` or `outer`, which expects the argument to be vectors of numeric elements.
 
 Array processing languages, like Fortran, APL, and Matlab support convenient syntax for accessing ranges and elements. Python, Julia, Mojo, and other modern languages have adopted this array access syntax. So do we. Our 1D sequence access syntax is shown below.
 
 ```
 x[i] ## ith vector element where n is size of x and i ≤ n-1
-x[-i] ## (n-1)-ith vector element where i ≤ n-1
+x[-i] ## (n-1-i)th vector element where i ≤ n-1
 x[ia..ib] ## subvector of elements from x[ia] to x[ib]
 x[i..] ## subvector of elements from x[i] to the last
 x[..i] ## subvector of elements from x[0] to x[i]
@@ -718,7 +720,7 @@ Matrix 𝛼 (m, n : ℕ) : [𝛼 m n]
 𝕄 : Matrix
 ```
 
-The literal syntax for a matrix extends the vector literal syntax. For real-valued elements, the inferred type of the variable `y` is `[ℝ 2 3]` or `𝕄 ℝ 2 3`, a $2 \times 3$ matrix of $\mathbb{R}$-typed elements.
+The literal syntax for a matrix extends the vector literal syntax. For real-valued elements, the inferred type of the variable `y` in the example below is `[ℝ 2 3]` or `𝕄 ℝ 2 3`, a $2 \times 3$ matrix of $\mathbb{R}$-typed elements.
 
 ```
 y = [ [e00, e01, e02] ## vector [e00 .. e02]
@@ -729,10 +731,10 @@ Our 2D sequence access syntax is as follows.
 
 ```
 y[i, *] ## ith row vector where m is row-size of y and i ≤ m-1
-y[-i, *] ## (m-1)-ith row vector where i ≤ m-1
+y[-i, *] ## (m-1-i)th row vector where i ≤ m-1
 y[ia..ib, *] ## submatrix of elements from y[ia, *] to y[ib, *]
 y[*, j] ## jth column vector
-y[*, -j] ## (n-1)-jth column vector
+y[*, -j] ## (n-1-j)th column vector
 y[*, ja..jb] ## submatrix of elements from y[*, ja] to y[*, jb]
 y[i, j] ## matrix element
 y[-i, -j] ## matrix element
@@ -745,9 +747,9 @@ Tensor3 𝛼 (l, m, n : ℕ) : [𝛼 l m n]
 𝕋3 : Tensor3
 ```
 
-The 3D tensor literal can be defined as follows. The inferred type of the variable `z` is `[ℝ 3 3 3]` or `𝕋3 ℝ 3 3 3`, a $3 \times 3 \times 3$ tensor of $\mathbb{R}$-typed elements.
+A 3D tensor literal can be defined as follows. The inferred type of the variable `z` is `[ℝ 3 3 3]` or `𝕋3 ℝ 3 3 3`, a $3 \times 3 \times 3$ tensor of $\mathbb{R}$-typed elements.
 
-```haskell
+```
 z = [ [ [e00, e01, e02]
       , [e10, e11, e12]
       , [e20, e21, e22] ]
@@ -759,36 +761,54 @@ z = [ [ [e00, e01, e02]
       , [g20, g21, g22] ] ] ## 3x3x3 tensor [e00 .. g22]
 ```
 
-An element of a 3D tensor is accessed as follows.
+An element of a 3D tensor is accessed as follows. Because the tensor access syntax is just a natural extension of the matrix access syntax, it need not be further elaborated.
 
-```haskell
+```
 z[2, 1, 0] ## element g10
 ```
 
-It is important to note that we are using the `[..., ...]` syntax in two distinct senses: sequence literal constructor and sequence element accessor. In the constructor sense, we use the symbols `[` and `]` to delimit the dimensions and the symbol `,` to separate the dimensions as well as the elements within each dimension. In the accessor sense, we use the symbols `[` and `]` to group the dimensional indices and the symbol `,` to separate the dimensional indices. Our syntax is less noisy and more legible than C's `t[3][2][1]` syntax. Recall that, in contrast to Fortran, we follow the row-major element order, which is employed by all the popular languages, today.
+It is important to note that we are using the comma-separated  `[..., ...]` syntax in two distinct senses: sequence literal constructor and sequence element accessor. In the constructor sense, we use the symbols `[` and `]` to delimit the dimensions and the symbol `,` to separate the dimensions as well as the elements within each dimension. In the accessor sense, we use the symbols `[` and `]` to group the dimensional indices and the symbol `,` to separate the dimensional indices. Our syntax is less noisy and more legible than C's `z[2][1][0]` syntax. Recall that, in contrast to Fortran, we follow the row-major element order, which is employed by all popular languages, today.
 
-A higher-dimensional tensor is defined by augmenting a lower-dimensional tensor with an additional dimension. For example, a 4D tensor is defined as follows.
-
-```haskell
-Tensor4 𝛼 (k, l, m, n : ℕ) : [𝛼 k l m n]
-𝕋4 : Tensor4
-```
-
-Because the tensor access syntax is just an extension of the matrix access syntax, it need not be elaborated.
-
-***tuples***—A tuple is an unnamed product type that holds ordered, unlabelled fields of varying types, such as `(ℤ, ℝ, 𝕌)`. Tuples are a convenient way to return multiple values from a function. In mathematics and in FP, functions can return only one value, so to return multiple results, we must wrap those disparate values into a tuple. But trying to squeeze tens of values into a tuple is tickling danger. The fields of a tuple `x` are accessed by positional indexing, as in `x(2)` for the value of the $\mathbb{U}$-typed third field, or by pattern matching, as in `i, r, s = x` where `i : ℤ`, `r : ℝ`, and `s : 𝕌`.
-
-***records***—A record is a named product type that holds unordered, labelled fields of varying types: `RecordName {i : ℤ, r : ℝ, s : 𝕌}`. Records are frequently used together with enumerations. The fields of a record are accessed using the `.` operator, as in `x.s` for the value of the $\mathbb{U}$-typed field, or using pattern matching, as in `{i, r, s} = x` where `i : ℤ`, `r : ℝ`, and `s : 𝕌`. A new record can be created from an existing one using the record update syntax `{... | ...}`.
+The sequence syntax extends to higher dimensions. For example, a 6D tensor is defined as follows.
 
 ```
-c = Rectangular {x = 2.0, y = 3.0} ## c is (2.0, i3.0)
+Tensor6 𝛼 (i, j, k, l, m, n : ℕ) : [𝛼 i j k l m n]
+𝕋6 : Tensor6
+```
+
+***tuples***—A tuple is an unnamed product type that holds ordered, unlabelled fields of varying types. For example, a duple type is `(𝛼, 𝛽)` and a triple type is `(𝛼, 𝛽, 𝛾)`.
+
+A musical note can be represented with a tuple literal as follows. The first element is the name of the note (`"C4"` for middle C), the second is the frequency ($261.624$ Hz), and the third is the MIDI number ($60$).
+
+```
+Note : (𝕌, ℝ, ℕ) ## musical note; name, freq, MIDI
 ...
-c' = {c | y = -3.0} ## c' is (2.0, -i3.0)
+c4 = ("C4", 261.624, 60) ## middle C
+...
+freq = c4(1) ## 261.624 Hz
+...
+(name, freq, midi) = c4 ## name="C4", freq=261.624, midi=60
 ```
 
-***enumerations***—An enumeration (disjoint union) is a named sum type that holds ordered, unlabelled fields of varying types. For example, the boolean $\mathbb{B}$ type is a sum type with nullary data constructors `True` and `False`: `𝔹 : False | True`. On the other hand, the complex $\mathbb{C}$ type is a sum type with data constructors `Rectangular` and `Polar`, each taking record product types: `ℂ : Rectangular{x,y:ℝ} | Polar{r,𝜑:ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. The data elements of an enumeration are accessed by pattern matching, like in `case b | False → ... | True → ...`.
+Tuples are a convenient way to pack a few pieces of data into a small bundle. For instance, a tuple can be used to return multiple values from a function. In mathematics and in FP, functions can return only one value, so to return multiple results, we must bundle those disparate values into a tuple. But trying to squeeze tens of values into a tuple is tickling danger. In such a case, a record is the better type to use.
 
-***hashes***—A hash is a collection of values `v` of some type $\beta$, each value associated with a unique key `k` of some type $\alpha$: `<k:𝛼 # v:𝛽>`. The symbol `#` separates the key and its value. The elements of a hash are accessed by key indexing, as in `h<k>` for the value associated with the key `k`, or by pattern matching, as in `x#xx = h` with `x` bound to the first key-value pair in `h` and the rest of the pairs bound to `xx`.
+***records***—A record is a named product type that holds unordered, labelled fields of varying types. The `Rectangular` and the `Polar` product types defined above are examples of records. The fields of a record are accessed using the `.` operator, as in `p.𝜑`. A new record can be created from an existing one using the record update syntax `{... | ...}`.
+
+```
+c = Rectangular {x = 2.0, y = 3.0} ## c is 2.0+𝒾3.0 of type ℂ
+...
+c' = {c | y = -c.y} ## c' is complex conjugate is 2.0-𝒾3.0
+```
+
+***enumerations***—An enumeration (disjoint union) is a named sum type. For example, the boolean $\mathbb{B}$ type is a sum type with nullary data constructors `True` and `False`: `𝔹 : False | True`. On the other hand, the complex $\mathbb{C}$ type is a sum type with data constructors `Rectangular` and `Polar`, each taking a record product type: `ℂ : Rectangular{x,y:ℝ} | Polar{r,𝜑:ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. Enumerations are frequently used in conjunction with records to form sum-of-product types. The data elements of an enumeration are accessed by pattern matching.
+
+```
+case b
+  | False → ...
+  | True → ...
+```
+
+***hashes***—A hash is a collection of pairs. Each such pair comprises a value `v` associated with a unique key `k`: `<k:𝛼 # v:𝛽>`. Here, the key type is $𝛼$ and the value type is $𝛽$. The symbol `#` separates the key and its value. The elements of a hash are accessed by key indexing, as in `h<k>` for the value associated with the key `k`, or by pattern matching, as in `x#xx = h` with `x` bound to the first key-value pair in `h` and the rest of the collection bound to `xx`.
 
 ## *leverage modules*
 
