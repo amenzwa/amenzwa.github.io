@@ -919,7 +919,7 @@ a@[*, q] ## scalar a on column q of cores in grid
 
 Our version of the coarray syntax is compact and natural. Python-style indexing also works for all primitive and structured data types distributed across the cores.
 
-Remote data can be received into a local variable using the left double-arrow operator `⇐`. Note that the syntax `a@[*]` refers to all the copies of the scalar variable ` a` on all the processors. The syntax `a@[.]` refers to the local copy of `a`.
+Remote data can be received into a local variable using the left double-arrow operator `⇐`. Note that the syntax `a@[*]` refers to all the copies of the scalar variable `a` on all the processors. The syntax `a@[.]` refers to the local copy of `a`.
 
 ```
 a@[.] ⇐ a@[p] ## retrieve remote scalar a from core p
