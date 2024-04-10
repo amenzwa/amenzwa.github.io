@@ -5,8 +5,6 @@ tags:
 use_math: true
 ---
 
-[TOC]
-
 ## *a proposal for a dependently typed Fortran*
 
 For decades, people in IT had taken delight in drafting Fortran's obituary. Yet, this old language lives on. But in recent years, the Fortran user community has begun sounding alarms: Fortran shops are having difficulty finding young programmers to replace those who are leaving the workforce, because the young are not willing to devote their careers to this ancient language. At present, no language can rival, let alone surpass, Fortran when it comes to implementing long-lived, large-scale, massively-parallel scientific and engineering applications; not even C and C++. Yet, modern programmers know nothing about Fortran, nor have they any interest in it. Suffice it to say, Fortran has an image problem.
@@ -912,25 +910,25 @@ We now adapt CAF's coarray syntax to our new language. We use the `@[p]` syntax 
 
 ```
 a@[p] ## scalar a in programme running on core p
-x[i]@[p] ## ith element of vector x on core p
+x[i]@[p] ## vector element x[i] on core p
 x[*]@[*] ## whole vector x on all cores
-x[i]@[p, q] ## ith element of vector x on core (p, q) in grid
+x[i]@[p, q] ## vector element x[i] on core (p, q) in grid of cores
 a@[p, *] ## scalar a on row p of cores in grid
 a@[*, q] ## scalar a on column q of cores in grid
 ```
 
 Our version of the coarray syntax is compact and natural. Python-style indexing also works for all primitive and structured data types distributed across the cores.
 
-Remote data can be received into a local variable using the left double-arrow operator `⇐`. Note that `a[*]` refers to all the copies of the scalar variable ` a` on all the processors. The syntax `a[.]` refers to the local copy of `a`.
+Remote data can be received into a local variable using the left double-arrow operator `⇐`. Note that the syntax `a@[*]` refers to all the copies of the scalar variable ` a` on all the processors. The syntax `a@[.]` refers to the local copy of `a`.
 
 ```
-a ⇐ a@[p] ## retrieve remote scalar a from core p
+a@[.] ⇐ a@[p] ## retrieve remote scalar a from core p
 ```
 
-Local data can be sent to a remote core using the right double-arrow operator `⇒`.
+Local data can be sent to a remote core using the right double-arrow operator `⇒`. When used with coarrays, this operator sends data to remote cores. When used in type declarations, this operator constrains the types of type variables and value variables that later appear in the declaration. It is clear from the context in which sense the operator is being used.
 
 ```
-a ⇒ a@[*] ## send local scalar a to all other cores
+a@[.] ⇒ a@[*] ## send local scalar a to all remote cores
 ```
 
 Control coordination is done by the `sync` construct.
