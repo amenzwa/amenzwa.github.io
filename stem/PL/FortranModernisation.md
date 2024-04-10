@@ -143,7 +143,7 @@ All modern software development projects employ several different programming la
 
 Trimming the verbose syntax and the extraneous features of Fortran is not only feasible, it is also the most sensible option. This new Fortran, as it were, will employ the syntax and semantics of modern FP languages, like Haskell, OCaml, and F#, and incorporate features from modern proof assistants, like Agda, Idris, and Lean. But it will retain Fortran's array manipulation and parallel programming facilities. Yet, it is but a thin veneer of palatable, alternative syntax atop the Fortran 2023 syntax. In terms of syntactic differences, this effort is analogous to what [Reason](https://reasonml.github.io/) is to [OCaml](https://ocaml.org/). And in terms of semantics, it is like what [Agda](https://agda.readthedocs.io/en/latest/index.html) is to [Haskell](https://www.haskell.org). The compiler transpiles this new, higher-abstraction language down to Fortran, then invokes the Fortran compiler to produce the native binary. And just as C++ is able to interact natively with the existing C binaries, this new language will interact with the existing Fortran binaries.
 
-After this modernisation, the resultant language is still Fortran in essence—a scientific DSL with built-in parallel programming facilities—but without the decades-old crust. And it provides familiar modern comforts and accoutrements that young programmers adore.
+After this modernisation, the resultant language is still Fortran in essence—a scientific DSL with built-in parallel programming facilities—but without the decades-old crust. And it provides familiar modern comforts and accoutrements that young programmers adore. Those who find it irksome to call this language the "new Fortran" may refer to it simply as $𝓕$ or $\Phi$, after its functional roots.
 
 # MODERNISATION
 
@@ -387,6 +387,15 @@ Above, we defined the prefix operator $\neg$ and the infix operators $\land$ and
 _! : ℕ → ℕ
   | 0 → 1
   | n → n * (n - 1)!
+```
+
+The backquote operator can be used to convert an ordinary, binary function `func a b` to an infix function. This infix function can then be alias to a symbolic operator.
+
+```
+func a b → ...
+_⊛_ : `func`
+...
+x ⊛ y ## same as calling func x y
 ```
 
 ***access record fields using the . operator***—Use the de facto industry standard `.` operator to access a record's fields, not the `%` operator as Fortran does. In modern languages, the `%` symbol represents the modulo operator. Besides, the Fortran syntax `object%field%subfield` is an eyesore, compared to the common syntax `object.field.subfield`.
@@ -639,7 +648,7 @@ Another use of pattern matching is for record field extraction, as shown below.
 ```
 c = Rectangular {x = 2.0, y = 3.0}
 ...
-{x, y} = c ## c is destructured; x is bound to 2.0 and y to 3.0
+{x, y} = c ## c is destructured; x=2.0, y=3.0
 ```
 
 Sometimes, it is convenient to be able to refer by name the whole of the pattern matched data structure. This is called the as-pattern, and we use the `@` symbol for it.
@@ -795,9 +804,9 @@ Tuples are a convenient way to pack a few pieces of data into a small bundle. Fo
 ***records***—A record is a named product type that holds unordered, labelled fields of varying types. The `Rectangular` and the `Polar` product types defined above are examples of records. The fields of a record are accessed using the `.` operator, as in `p.𝜑`. A new record can be created from an existing one using the record update syntax `{... | ...}`.
 
 ```
-c = Rectangular {x = 2.0, y = 3.0} ## c is 2.0+𝒾3.0 of type ℂ
+c = Rectangular {x = 2.0, y = 3.0} ## c of type ℂ is 2.0+𝒾3.0
 ...
-c' = {c | y = -c.y} ## c' is complex conjugate is 2.0-𝒾3.0
+c' = {c | y = -c.y} ## c' complex conjugate is 2.0-𝒾3.0
 ```
 
 ***enumerations***—An enumeration (disjoint union) is a named sum type. For example, the boolean $\mathbb{B}$ type is a sum type with nullary data constructors `True` and `False`: `𝔹 : False | True`. On the other hand, the complex $\mathbb{C}$ type is a sum type with data constructors `Rectangular` and `Polar`, each taking a record product type: `ℂ : Rectangular{x,y:ℝ} | Polar{r,𝜑:ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. Enumerations are frequently used in conjunction with records to form sum-of-product types. The data elements of an enumeration are accessed by pattern matching.
@@ -812,21 +821,21 @@ case b
 
 ## *leverage modules*
 
-***hold one module per file***—A module is a container of closely related types and values. Every cohesive unit of code is a module. Many modern languages allow the programmer to define multiple modules in one file. This could be convenient when implementing large, complex business data structures built out of many substructures. But scientific data are far simpler. As such, a straightforward one module per file approach is used for our new language. For added simplicity, the name of the module is the same as the name of the containing file. Recall the naming conventions defined earlier.
+***hold one module per file***—A module is a container of closely related types and values. Every cohesive unit of code is a candidate for a module. Many modern languages allow the programmer to define multiple modules in one file. This could be convenient when implementing business applications with large, complex data structures built out of many intertwined substructures. But scientific data structures are far simpler. As such, a straightforward one module per file approach is used in the new language. For added simplicity, the name of the contained module is the same as the name of the container file. Recall the earlier-defined naming conventions for modules and files.
 
-***support abstract data types***—An [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type) (also confusingly called "ADT", but is a wholly distinct concept from algebraic data types) is a data structure whose international representation is hidden and can be manipulated only through a collection of published interface functions. An abstract data type is implemented using the module construct.
+***support abstract data types***—An [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type) (also goes by the "ADT" label, but is a wholly distinct concept from algebraic data types) is a data structure whose internal representation is hidden and can be manipulated only through a collection of published accessor functions. An abstract data type is implemented using the module construct.
 
-The PP module-based abstraction mechanism was the precursor to the OO class-based abstraction mechanism. As IT grew rapidly in the 1980s, the complexity of business applications began to eclipse the abstraction powers of abstract data types, and classes became the standard abstraction mechanism in enterprise software development. But scientific applications have far humbler abstraction needs, and module-based abstract data types are well matched for those simpler needs.
+The PP module-based abstraction mechanism was the precursor to the OO class-based abstraction mechanism. As IT grew rapidly in the 1980s, the complexity of business applications began to eclipse the abstraction powers of abstract data types so classes, with their multi-tiered data hiding mechanisms, became the standard abstraction mechanism in enterprise software development. But since scientific applications have far humbler data abstraction needs, module-based abstract data types are the right match for scientific applications.
 
-***use implicit export***—In most modern programming languages, the declarations and definitions contained in a module are hidden by default, and the programmer must manually mark the specific items he wishes to export. The alternative, of course, is to export by default.
+***use implicit export***—In most modern programming languages, the declarations and the definitions contained in a module are hidden by default, and the programmer must manually mark the specific items he wishes to export. The alternative, of course, is automatic export.
 
-In imperative PP languages, this hide-by-default behaviour is safer than the export-by-default behaviour, because it prevents users of the module from directly mutating the internal data representations of the abstract data type. But in declarative FP languages, data structures are not only simpler, they are also immutable. Immutability obviates the need obsessively to hide the representations of data structures. Hence, in the new language, we shall employ the implicit export behaviour, so as to minimise cluttering the code with `export` markers sprinkled throughout the module. If a particular declaration or definition must be hidden, we explicitly mark it with the `--` symbol, as shown below.
+In imperative PP languages, the hide-by-default behaviour is safer than the export-by-default behaviour, because it prevents users of the module from directly mutating the internal data representations of the abstract data type. But in declarative FP languages, data structures are not only simpler, they are also immutable. Immutability obviates the need obsessively to hide the representations of data structures. Hence, in the new language, we shall employ the implicit export behaviour, so as to minimise cluttering the code with `export` markers sprinkled throughout the module. If a particular declaration or definition must be hidden, we explicitly mark it with the `--` symbol, as shown below.
 
 ```
 #< Distance.f
 This module implements distance measures. #>
 
--- 𝛿 = 0.0001 ## a module-internal constant
+-- 𝛿 = 0.0001 ## module-internal constant
 
 ## check if a and b are near each other
 near? : ℝ → ℝ → 𝔹
@@ -834,13 +843,7 @@ near? : ℝ → ℝ → 𝔹
 _≈_ : `near?`
 ```
 
-The code above is contained in the file `Distance.f`, and the associated module is automatically given the name `Distance`. Hence, there is no `module ModuleName` construct in our language; it is unnecessary. The constant $\delta$ is defined for use by the module implementer but it is hidden from the module users, since it is marked with the `--` symbol. But the export-by-default behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix operator `_≈_` is aliased to the back-quoted version of `near?`. In Haskell, a binary function `f a b` can be converted to an infix operator by back-quoting.
-
-```
-f a b → ...
-...
-m `f` n ## same as f m n
-```
+The code above is contained in the file `Distance.f`, and the associated module is automatically given the name `Distance`. Hence, there is no `module ModuleName` construct in our language; it is unnecessary. The constant $\delta$ is defined for use by the module implementer but it is hidden from the module users, since it is marked with the `--` symbol. But the export-by-default behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix operator `_≈_` is aliased to the back-quoted version of `near?`.
 
 The `Distance` module is used from the main module as follows.
 
@@ -854,7 +857,7 @@ main! : () → IO ()
          where a = -3.2; b = 6.8
 ```
 
-The `use` construct imports all non-hidden declarations and definitions from the designated module into the current module. But this could cause name collisions. So, the as-module construct can be used to give a name to the imported module. Here, again, we use the `@` symbol. If a module is imported using the as-module construct, we must use the `.` operator to access its contents.
+The `use` construct imports all non-hidden declarations and definitions from the designated module into the current module. This could cause name collisions, sometimes. So, the as-module construct can be used to give a name to the imported module. Again, we use the `@` symbol, here. If a module is imported using the as-module construct, we must use the `.` operator to access its contents. In this case, module's mixfix operators are forbidden, for they would create incongruities: `if a D.≠ b then ... else ...`.
 
 ```
 use Distance @ D
