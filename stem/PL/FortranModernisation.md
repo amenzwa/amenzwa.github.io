@@ -250,7 +250,7 @@ The overloaded operator `:`, when used in the context of vector operations, is n
 
 As can be seen above, the quicksort algorithm immediately pops out at the reader in our new syntax, without him having to traipse over Fortran's syntactic spikes.
 
-## *let go of old memories*
+## *forget old memories*
 
 ***remove manual memory management***—Manual memory management has long been known to be the primary source of runtime errors. Manual memory management was essential in the days before the advent of modern, efficient [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) (GC) techniques, when the high-level programming languages were just a thin coating atop assembly language and when computers had but a few kilobytes of memory. Note that LISP was the first to employ a GC. But it was not until the 1990s that GCs became fast enough to be used with mainstream industrial languages.
 
