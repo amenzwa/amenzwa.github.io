@@ -476,18 +476,16 @@ Compare that grotesque, bloated Fortran code to the equivalent, svelte code in t
 ```
 external : ℝ → ℝ
   | i → internal i - 2.0
-    where internal : ℝ → ℝ
-            | x → x^3.0
+    where internal : ℝ → ℝ | x → x^3.0
 ```
 
-The type system can automatically infer the type of the function `internal` to be $\mathbb{R} \to \mathbb{R}$ based on its implementation and its usage within the body of the function `external`, so there is no need explicitly to provide the type of the function `internal`. The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The scope of the function `internal` is the body of the function `external`.
+The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The scope of the function `internal` is the body of the function `external`.
 
 Note that, instead of the `where` clause, the `let-in` construct can be used to introduce the `internal` function.
 
 ```
 external : ℝ → ℝ
-  | i → let internal : ℝ → ℝ
-              | x → x^3.0
+  | i → let internal : ℝ → ℝ | x → x^3.0
         in internal i - 2.0
 ```
 
@@ -651,7 +649,7 @@ log! : ℂ → IO ()
 
 Note that Fortran supports polymorphism. Parametric polymorphism in Fortran is called *generics*. For example, using the `selected_real_kind()` procedure, the programmer may select the floating-point precision for a data structure or a procedure. Ad hoc polymorphism in Fortran is called *overloading*. It is comparable to C++ operator overloading. And with the addition of OO in the Fortran 2003 standard, it is now possible in Fortran to implement something akin to C++ *inheritance*, which is an OO way of implementing polymorphic sum type ADTs. Nevertheless, polymorphism was retrofitted into Fortran in a convoluted manner, making it rather clunky to use.
 
-***remove mandatory explicit typing***—Just about every Fortran programmer today knows at least one other modern language, so they are no strangers to modern programming concepts and practices. Hence, there should be no philosophical objections against discarding explicit typing and adopting a strong, static, dependent type system that automatically infers types for simple values in some circumstances, thereby alleviating the burden of manual typing.
+***remove mandatory explicit typing***—Just about every Fortran programmer today knows at least one other modern language, so they are no strangers to modern programming concepts and practices. Hence, there should be no philosophical objections against discarding explicit typing and adopting a strong, static, dependent type system that automatically infers types for simple values, thereby alleviating the burden of explicit typing.
 
 ## *provide container types*
 
