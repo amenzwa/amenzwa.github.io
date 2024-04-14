@@ -237,13 +237,6 @@ qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]
 
 The type declaration `qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]` states that the function `qsort` takes an integer vector of size `n` as argument and returns an integer vector of the same size. Here, `[ℤ n]` is the shorthand syntax for the dependent type `Vector ℤ n`. And the double-arrow syntax `(n : ℕ) ⇒` constrains the type of `n` to be $\mathbb{N}$. Hence, this vector type, which is defined in the standard library, is parameterised with the type $ℤ$ and is indexed with the value of the variable `n` whose type is $\mathbb{N}$​. This single line not only replaces three lines of rather busy Fortran code.
 
-In fact, the type system can automatically infer the type of this function, so the type declaration could be omitted, altogether. Thus, a minimalist implementation of `qsort`, shown below, consists of just two clauses: the base case and the recursive step.
-
-```
-qsort [] → []
-qsort x:xx → qsort [l | l←xx, l<x] + [x] + qsort [g | g←xx, g≥x]
-```
-
 In this `qsort` implementation, the formal parameter `[]` in the first clause pattern matches an empty vector argument. Since a sorted version of an empty vector is just an empty vector, the first clause simply returns the value `[]`. The formal parameter `x:xx` in the second clause pattern matches a non-empty vector argument, with the variable `x` bound to the first element, and the variable `xx` bound to the rest of the elements. The `[l | l ← xx, l < x]` is the vector comprehension syntax that is an analogue of the [set comprehension](https://en.wikipedia.org/wiki/Set-builder_notation) notation in mathematics. This phrase dynamically constructs a vector that holds the filtered elements of `xx` that are less than `x`. Likewise, the vector `[g | g ← xx, g ≥ x]` holds the filtered elements of `xx` that are greater than or equal to `x`. Then, the sorted lesser vector, the singleton vector  `[x]` that contains the pivot element `x`, and the sorted greater vector are concatenated into the resultant vector using the `+` operator, and this result is returned. This version of `qsort` reads like a mathematical description of the algorithm. Proximity to mathematical discourse, not hardware bits, is the driving force behind FP languages.
 
 The overloaded operator `:`, when used in the context of vector operations, is not acting as the typing operator. Instead, it is aliased to the standard library vector constructor function `cons`. Applying this function to the element `x` and the vector `xx`, as in `cons x xx`, prepends `x` to the head of `xx`. Because this construction occurs frequently in FP, we have the shorthand syntax `x:xx` for it. Also, the overloaded operator `+` is aliased to the standard library vector concatenation function `cat`. Hence, `cat u v` is the same as `u + v`. We pronounce `:` as *cons* (per LISP tradition) and `+`  as *cat* (per UNIX tradition), when these symbols appear in the context of vector operations.
@@ -452,24 +445,11 @@ The code for `modulus` can be read as follows:
 - If the argument is in the `Rectangular` form $x + iy$, the result is $\sqrt{x^2 + y^2}$
 - But if the argument is in the `Polar` form $r\angle{\phi}$, the result is $r$
 
-The `modulus` function is an example of a multi-clause function. It could also be shortened as follows, by letting the type system infer its type as $\mathbb{C} \to \mathbb{R}$.
-
-```
-modulus Rectangular {x, y} → √ (x^2 + y^2)
-modulus Polar {r, _} → r
-```
-
 The `id` function defined below is an example of a uni-clause function. Although there is but one clause here, we nevertheless use the begin-clause symbol `|`, for visual consistency of function definitions.
 
 ```
 id : 𝛼 → 𝛼
   | x → x
-```
-
-Here, too, we could shorten this code like this, and the type system would infer its type as $𝛼 \to \alpha$.
-
-```
-id x → x
 ```
 
 ***support pure functions***—Fortran does allow marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
@@ -495,21 +475,20 @@ Compare that grotesque, bloated Fortran code to the equivalent, svelte code in t
 
 ```
 external : ℝ → ℝ
-  | i → internal i - 2.0 where internal x → x^3.0
+  | i → internal i - 2.0
+    where internal : ℝ → ℝ
+            | x → x^3.0
 ```
 
 The type system can automatically infer the type of the function `internal` to be $\mathbb{R} \to \mathbb{R}$ based on its implementation and its usage within the body of the function `external`, so there is no need explicitly to provide the type of the function `internal`. The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The scope of the function `internal` is the body of the function `external`.
 
-The type system can also infer the type of the function `external` as $\mathbb{R} \to \mathbb{R}$, so we could further contract the above code like this.
-
-```
-external i → internal i - 2.0 where internal x → x^3.0
-```
-
 Note that, instead of the `where` clause, the `let-in` construct can be used to introduce the `internal` function.
 
 ```
-external i → let internal x → x^3.0 in internal i - 2.0
+external : ℝ → ℝ
+  | i → let internal : ℝ → ℝ
+              | x → x^3.0
+        in internal i - 2.0
 ```
 
 The differences between `let-in` and `where` are these:
@@ -557,7 +536,7 @@ In a [parametric type](https://en.wikipedia.org/wiki/Parametric_polymorphism) sy
 
 Our new language uses the operator `:` to assign types to variables, instead of using `::` as in Fortran and Haskell. In dependently typed languages, types are first-class values and there are many expressions involving types. As such, we use the less noisy `:` for type assignment. This convention is common among dependently typed languages, including Coq, Agda, and Idris.
 
-We use a strong, static, dependent, inferencing type system based on dependent type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
+We use a strong, static, dependent type system based on dependent type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
 
 ```
 Vector 𝛼 (n : ℕ) : [𝛼 n]
@@ -615,7 +594,7 @@ _+_ : [𝛼 m n] → [𝛼 m n] → [𝛼 m n]
 
 The compiler can verify that transposing a matrix `y` of size $m \times n$, as in `y⊤`, yields a matrix of size $n \times m$. And the compiler will ensure that the element types and the sizes of the argument matrices are matched for the matrix addition expression `y1 + y2`. But in languages with simple type systems, these verifications can only be performed by runtime size checks.
 
-A dependent type system additionally provides advanced types that a simpler type system like the [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) cannot. A [dependent product type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A0_type) (dependent function type) $\Pi$ corresponds to universal quantification $∀$ of predicate logic. A [dependent sum type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A3_type) (dependent pair type) $\Sigma$ corresponds to existential quantification $∃$ of predicate logic. The $\Pi$ type is a function whose result type depends on (indexed by) the argument value: $f : (x : \alpha) \to \beta[x]$. The $\Sigma$ type is a pair whose right-element type depends on (indexed by) the left-element value: $((x : \alpha), \beta[x])$. These advanced types allow the programmer to state specifications with a high level of precision, and the type system automatically guarantees that the code that type checks meets these specifications.
+A dependent type system additionally provides advanced types that a simpler type system like the [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) cannot. A [dependent product type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A0_type) (dependent function type) $\Pi$ corresponds to universal quantification $∀$ of predicate logic. A dependent functional is a function that accepts and returns dependent functions. A [dependent sum type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A3_type) (dependent pair type) $\Sigma$ corresponds to existential quantification $∃$ of predicate logic. The $\Pi$ type is a function whose result type depends on (indexed by) the argument value: $f : (x : \alpha) \to \beta[x]$. The $\Sigma$ type is a pair whose right-element type depends on (indexed by) the left-element value: $((x : \alpha), \beta[x])$. Dependent types allow the programmer to perform type-level computations. Programmer can also use dependent types to state programme specifications with a high degree of precision, and the type system automatically guarantees that the code that type checks meets these specifications.
 
 Note that some types in Fortran have a tinge of dependent types. Its fixed-size arrays, for instance, can be seen as dependently typed. In the definition `real, dimension(3) :: x`, the variable `x` is a size-$3$ array that holds elements of type `real`.
 
@@ -672,7 +651,7 @@ log! : ℂ → IO ()
 
 Note that Fortran supports polymorphism. Parametric polymorphism in Fortran is called *generics*. For example, using the `selected_real_kind()` procedure, the programmer may select the floating-point precision for a data structure or a procedure. Ad hoc polymorphism in Fortran is called *overloading*. It is comparable to C++ operator overloading. And with the addition of OO in the Fortran 2003 standard, it is now possible in Fortran to implement something akin to C++ *inheritance*, which is an OO way of implementing polymorphic sum type ADTs. Nevertheless, polymorphism was retrofitted into Fortran in a convoluted manner, making it rather clunky to use.
 
-***remove mandatory explicit typing***—Just about every Fortran programmer today knows at least one other modern language, so they are no strangers to modern programming concepts and practices. Hence, there should be no philosophical objections against discarding explicit typing and adopting a strong, static, dependent type system that automatically infers types, thereby alleviating the burden of manual typing.
+***remove mandatory explicit typing***—Just about every Fortran programmer today knows at least one other modern language, so they are no strangers to modern programming concepts and practices. Hence, there should be no philosophical objections against discarding explicit typing and adopting a strong, static, dependent type system that automatically infers types for simple values in some circumstances, thereby alleviating the burden of manual typing.
 
 ## *provide container types*
 
@@ -687,7 +666,7 @@ Vector 𝛼 (n : ℕ) : [𝛼 n]
 𝕍 : Vector
 ```
 
-The following is the literal syntax for creating a vector. The type system infers the type of the variable `x` to be `[ℝ 3]` or `𝕍 ℝ 3`, a $1 \times 3$ row vector of $\mathbb{R}$-typed elements. Note that a 1D sequence is viewed as a column vector in mathematics, but modern programming languages treat such a sequence as a row vector.
+The following is the literal syntax for creating a vector. Below, the type system infers the type of the variable `x` to be `[ℝ 3]` or `𝕍 ℝ 3`, a $1 \times 3$ row vector of $\mathbb{R}$-typed elements. Note that a 1D sequence is viewed as a column vector in mathematics, but modern programming languages treat such a sequence as a row vector.
 
 ```
 e0, e1, e2 : ℝ
@@ -835,7 +814,7 @@ near? : ℝ → ℝ → 𝔹
 _≈_ : `near?`
 ```
 
-The code above is contained in the file `Distance.f`, and the associated module is automatically given the name `Distance`. Hence, there is no `module ModuleName` construct in our language; it is unnecessary. The constant $\delta$ is defined for use by the module implementer but it is hidden from the module users, since it is marked with the `--` symbol. But the export-by-default behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix operator `_≈_` is aliased to the back-quoted version of `near?`.
+The code above is contained in the file `Distance.f`, and the associated module is automatically given the name `Distance`. Hence, there is no `module ModuleName` construct in our language; it is unnecessary. The constant $\delta$ is defined for use by the module implementer but it is hidden from the module users, since it is marked with the `--` symbol. Note that values are immutable, so there is no need for the `const` keyword in our new language. But the export-by-default behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix operator `_≈_` is aliased to the back-quoted version of `near?`.
 
 The `Distance` module is used from the main module as follows.
 
