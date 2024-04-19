@@ -181,8 +181,8 @@ p = point3d(3.0, 2.0, 1.0)
 This verbosity is gratuitous, tedious, confusing, illegible, and error-prone. The above code could be reduced to the following Haskell-like syntax in our new language.
 
 ```
-Point3D : Point3D {x, y, z : ℝ} ## declare a record type
-p = Point3D {3.0, 2.0, 1.0} ## define a record value
+Point3D : Point3D {x, y, z : ℝ} ## declare record type
+p = Point3D {x = 3.0, y = 2.0, z = 1.0} ## define record value
 ```
 
 In the above declaration `Point3D : Point3D {x, y, z : ℝ}`, the left-side `Point3D` is the type constructor and the right-side `Point3D` is the data constructor that takes a record of the shape `{x, y, z : ℝ}`. For simplicity, this same syntax is used for type aliases, too. In the second line, the data constructor `Point3D` is applied to the data value `{3.0, 2.0, 1.0}` to construct the record `p`. The fields of this record are accessed as `p.x`, `p.y`, and `p.z`.
@@ -374,10 +374,10 @@ _! : ℕ → ℕ
   | n → n * (n - 1)!
 ```
 
-The backquote operator can be used to convert an ordinary, binary function `func a b` to an infix function. This infix function can then be alias to a symbolic operator.
+The backquote operator can be used to convert an ordinary, binary function `func` to an infix function. This infix function can then be alias to a symbolic operator.
 
 ```
-func a b → ...
+func : 𝛼 → 𝛼 → 𝛼 | a b → ...
 _⊛_ : `func`
 ...
 x ⊛ y ## same as calling func x y
@@ -429,21 +429,28 @@ filtered = filter (𝜆 x → x > 5) xx ## returns [9, 6, 7, 8]
 
 As a scientific DSL, our new language must support FP, fully. So, it provides concise and convenient syntax for defining (abstracting) and calling (applying) functions. Fortran's current support for FP, though, leaves much to be desired: no support for lambda abstraction, no support for function composition operators, and what little functional facilities supported is syntactically burdensome.
 
-***support clausal functions***—Functions can also be defined by multi-clause pattern matching in the new language.
+***support clausal functions***—Functions can also be defined by multi-clause pattern matching in the new language. The following is a definition of the [complex modulus operator](https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers), which uses the [real modulus operator]() (absolute value). Both operators are multi-clause functions. The standard library aliases the operator `√` to the function `sqrt`. Since we do not need to use the $\phi$ field of the `Polar` record in the second clause above, we ignore it using the `_` symbol.
 
 ```
-modulus : ℂ → ℝ
+## real modulus operator
+|_| : ℝ → ℝ
+  | a < 0.0 → 0.0 - a
+  | _ → a
+
+## complex modulus operator
+|_| : ℂ → ℝ
   | Rectangular {x, y} → √ (x^2 + y^2)
-  | Polar {r, _} → r
+  | Polar {r, _} → |r|
+
+c = Rectangular {x = 4.0, y = 3.0}
+mod = |c| ## 5.0
 ```
 
-The standard library aliases the operator `√` to the function `sqrt`. Since we do not need to use the $\phi$ field of the `Polar` record in the second clause above, we ignore it using the `_` symbol.
+The code for the complex modulus operator `|_|` can be read as follows:
 
-The code for `modulus` can be read as follows:
-
-- The function `modulus` takes an argument of type $\mathbb{C}$, and returns a value of type $\mathbb{R}$
+- The complex modulus operator `|_|` takes an argument of type $\mathbb{C}$, and returns a value of type $\mathbb{R}$
 - If the argument is in the `Rectangular` form $x + iy$, the result is $\sqrt{x^2 + y^2}$
-- But if the argument is in the `Polar` form $r\angle{\phi}$, the result is $r$
+- But if the argument is in the `Polar` form $r\angle{\phi}$, the result is $\lvert r \rvert$
 
 The `id` function defined below is an example of a uni-clause function. Although there is but one clause here, we nevertheless use the begin-clause symbol `|`, for visual consistency of function definitions.
 
