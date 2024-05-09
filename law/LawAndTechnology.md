@@ -19,7 +19,9 @@ An engineer—like a doctor or a lawyer—is a licensed professional, who must p
 - Large IT companies have a habit of entangling themselves with anti-trust regulations.
 - Senior IT executives must sign non-compete and non-disclosure agreements when joining a company.
 
-It is, therefore, advisable that CS students and practitioners alike endeavour to gain a basic understanding of how law, technology, and your conduct interact. This article introduces at a high level the aspects of American law that pertain to the IT industry and its practitioners. The introduction provided herein is neither legal training nor legal advice.
+This article introduces at a high level the aspects of American law that pertain to technical leaders and mid-level IT managers. As such, I elected to forego discussing overarching laws, such as corporate law, employment law, tax law, health and safety law, administrative law, privacy law, national security law, international law, etc. Also, CS students and junior practitioners with career aspirations in IT should seek a basic understanding of the interaction between law and technology.
+
+Note that the high-level overview provided herein amounts neither to legal training nor to legal advice.
 
 # SOURCES OF LAW
 
@@ -31,7 +33,7 @@ By Article VI, Clause 2, the Constitution asserts itself [the supreme law of the
 
 # REGULATORY COMPLIANCE
 
-Regulatory compliance is a fact of life for IT practitioners, especially those who work in heavily regulated industries like transportation, financial, communication, environmental, and energy sectors. IT-related laws cover a vast array of issues: tax compliance, national security, privacy protection, handicap accessibility, export restriction, government contracts, and countless others. Most IT-related laws are named after specific statutes (Sarbanes–Oxley, FISMA, HIPAA, etc.) enacted by Congress. But the laws that actually govern the industry on a day-to-day basis are the rules in the regulations that were promulgated by the various departments, pursuant to those statutes. From a practical perspective, government regulations demand compliance reporting, compliance reporting requires data aggregation, and data aggregation begets a cottage industry of IT companies making software tools. Penalty for non-compliance can be as benign as remediation orders to as severe as steep fines or even incarceration. In addition to federal regulations, there is also a bevy of state regulations, too.
+Regulatory compliance is a fact of life for IT practitioners, especially those who work in heavily regulated industries like transportation, financial, communication, environmental, and energy sectors. IT-related laws cover a vast array of issues: tax compliance, national security, privacy protection, handicap accessibility, export restriction, government contracts, and countless others. Some well-known IT-related laws include Sarbanes–Oxley, FISMA, HIPAA, etc. These are statutes enacted by Congress. But the laws that actually govern the industry on a day-to-day basis are the regulations that were promulgated by the various executive agencies, pursuant to authorising statutes. From a practical perspective, government regulations demand compliance reporting, compliance reporting requires data aggregation, and data aggregation begets a cottage industry of IT companies making software tools. Consequences of non-compliance can be as benign as remediation orders to as severe as steep fines or even incarceration. In addition to federal regulations, there is also a bevy of state regulations, too.
 
 # AGENCY LAW
 
