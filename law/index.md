@@ -11,4 +11,4 @@ This topic is devoted to legal education, social justice, and related matters.
 - [Gender Bias in STEM](STEMGenderBias.md)
   - This article examines gender bias and sexist attitudes that permeate STEM fields, especially the IT sector, and how an enlightened society can eradicate such injustice.
 - [Law and Technology](LawAndTechnology.md)
-  - This article describes the interaction between law and technology. It covers topics such as regulatory compliance, intellectual property law, and contract law. The target audience is technical leaders and mid-level managers.
+  - This article describes the interaction between law and technology. It covers topics such as regulatory compliance, intellectual property law, and contract law. The target audience is the technologists working in IT.

@@ -19,7 +19,7 @@ An engineer—like a doctor or a lawyer—is a licensed professional, who must p
 - Large IT companies have a habit of entangling themselves with anti-trust regulations.
 - Senior IT executives must sign non-compete and non-disclosure agreements when joining a company.
 
-This article introduces at a high level the aspects of American law that pertain to technical leaders and mid-level IT managers. As such, I elected to forego discussing overarching laws, such as corporate law, employment law, tax law, health and safety law, administrative law, privacy law, national security law, international law, etc. Also, CS students and junior practitioners with career aspirations in IT should seek a basic understanding of the interaction between law and technology.
+This article introduces at a high level the aspects of American law that pertain to technologists working in IT. As such, I elected to forego discussing overarching laws, such as corporate law, employment law, tax law, health and safety law, administrative law, privacy law, national security law, international law, etc. Also, CS students with career aspirations in IT should, as early as maybe, seek a basic understanding of the interaction between law and technology.
 
 Note that the high-level overview provided herein amounts neither to legal training nor to legal advice.
 
