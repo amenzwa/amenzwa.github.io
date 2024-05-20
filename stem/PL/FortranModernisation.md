@@ -200,9 +200,9 @@ The key feature introduced by the Fortran 2003 standard was objects. OO was the 
 ***trim variable declarations***—The following is a way to declare and define a two-dimensional, floating-point array in modern Fortran.
 
 ```fortran
-real, dimension(:, :), allocatable :: a ! declare a matrix
+real, dimension(:, :), allocatable :: y ! declare a matrix
 
-allocate(a, 2, 3) ! allocate an uninitialised 2x3 matrix
+allocate(y, 2, 3) ! allocate an uninitialised 2x3 matrix
 ```
 
 The following is an equivalent array defined in the new syntax, using the standard library's [dependently typed](https://en.wikipedia.org/wiki/Dependent_type) `Matrix ℝ 2 3` (aliased as`[ℝ 2 3]`), which is parameterised with the element type $ℝ$ and is doubly indexed with size values of type $ℕ$. Note that in the code snippet below, the elements of the matrix `y` are automatically initialised to $0.0$.
@@ -956,7 +956,7 @@ Fortran is indispensable, and there are no viable contenders, at present, who co
 
 Clearly, the most practical remedy to Fortran's image problem is the following parallel approach: simultaneously embrace Fortran in both academia and industry and rejuvenate its image; make popular languages target Fortran; and rescue Fortran from its mid 20th Century cage by modernising its syntax and semantics. This multi-pronged approach gives the organisations the freedom to continue using traditional Fortran, transition to the modernised Fortran syntax, or target Fortran using modern languages, all without incurring undue risks and without being harried by the sense of impending doom.
 
-Permit me to recapitulate. Fortran is here to say; there is no better DSL for scientific parallel computing. But Fortran cannot revel in its past successes, counting on the fact that it still works exactly as it was originally designed nearly 70 years. A language's maturity and stability are necessary, but they are insufficient; modernity and appeal are just as important for it not only to survive but thrive.
+Permit me to recapitulate. Fortran is here to stay; there is no better DSL for scientific parallel computing. But Fortran cannot revel in its past successes, counting on the fact that it still works exactly as it was originally designed nearly 70 years. A language's maturity and stability are necessary, but they are insufficient; modernity and appeal are just as important for it not only to survive but thrive.
 
 ## *references*
 

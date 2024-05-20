@@ -21,7 +21,7 @@ An engineer—like a doctor or a lawyer—is a licensed professional, who must p
 
 This article presents a high level introduction to the aspects of American law that pertain to hands-on technologists practising in IT. This article is also of interest to CS students with career aspirations in IT, because they should, as early as maybe, seek a basic understanding of the interaction between law and technology.
 
-Given the target audience, I elected to forego discussing overarching laws that are of interest to senior corporate executives, such as corporate law, employment law, tax law, securities law, health and safety law, administrative law, privacy law, national security law, international law, etc.
+Given the target audience, I elected to forego discussing many other areas of the law that are of interest to the C-level executives, such as corporate law, employment law, occupational safety law, commerce law, franchise law, tax law, securities law, antitrust laws, administrative law, privacy law, national security law, campaign finance law, international law, and the like.
 
 Note that the high-level overview provided herein amounts neither to legal training nor to legal advice.
 

@@ -16,4 +16,6 @@ This topic is devoted to STEM in general and engineering and computing in partic
   - This section presents the design, construction, uses, and histories of various computing devices, including 8-bit home computers, RPN calculators, and slide rules.
 - [Writing in STEM](./Writing/index.md)
   - This section is about technical writing in general and specifically in STEM. Topics range from drafting lab reports and term papers to peer-reviewed papers and books.
+- [Gender Bias in STEM](../law/GenderBiasSTEM.md)
+  - This article examines gender bias and sexist attitudes that permeate STEM fields, especially the IT sector, and how an enlightened society can eradicate such injustice.
 
