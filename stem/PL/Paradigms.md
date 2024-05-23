@@ -650,7 +650,7 @@ The relational model, the mathematical foundation of relational databases, is bu
 
 In *relational algebra*, operands are relations and operators manipulate relations. Relational operators include $∪$ (union), $∩$ (intersection), $×$ (cross product), $-$ (difference), $σ$ (tuple selection), $π$ (attribute projection), several variants of $⋈$ (join), and $ ρ$ (renaming). A relation, an operand, can be viewed as a 2D data grid. The $σ$ operator extracts the specified tuples (rows) form the grid, and the $π$ operator extracts the specified attributes (columns) from the grid.
 
-In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartesian product. In relational theory, a relation $R$ is a set of $(a_1, a_2, ...)$ tuples where each attribute $a_i$ is a member of some domain $D_i$: $R = \{(a_1, a_2, ...)\ :\ a_1 ∈ D_1, a_2 ∈ D_2, ...\}$.
+In mathematics, a relation $R$ over sets $X$ and $Y$ is a subset of their Cartesian product. In relational theory, a relation $R$ is a set of $(a_1, a_2, ...)$ tuples where each attribute $a_i$ is a member of some domain $D_i$.
 
 In database practice, a table (relation) `t` that contains a collection of records `r[i]`. Each record (tuple), in turn, contains a collection of field values (elements) `f[j]` drawn from their respective columns (sets) `C[j]`:
 
