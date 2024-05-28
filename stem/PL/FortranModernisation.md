@@ -956,7 +956,7 @@ Fortran is indispensable, and there are no viable contenders, at present, who co
 
 Clearly, the most practical remedy to Fortran's image problem is the following parallel approach: simultaneously embrace Fortran in both academia and industry and rejuvenate its image; make popular languages target Fortran; and rescue Fortran from its mid 20th Century cage by modernising its syntax and semantics. This multi-pronged approach gives the organisations the freedom to continue using traditional Fortran, transition to the modernised Fortran syntax, or target Fortran using modern languages, all without incurring undue risks and without being harried by the sense of impending doom.
 
-Permit me to recapitulate. Fortran is here to stay; there is no better DSL for scientific parallel computing. But Fortran cannot revel in its past successes, counting on the fact that it still works exactly as it was originally designed nearly 70 years. A language's maturity and stability are necessary, but they are insufficient; modernity and appeal are just as important for it not only to survive but thrive.
+Permit me to recapitulate. Fortran is here to stay; there is no better DSL for scientific parallel computing. But Fortran cannot revel in its past successes, counting on the fact that it still works exactly as it was originally designed nearly 70 years. A language's maturity and stability are necessary, but they are insufficient; modernity and appeal are just as important for it not merely survive but thrive.
 
 ## *references*
 
