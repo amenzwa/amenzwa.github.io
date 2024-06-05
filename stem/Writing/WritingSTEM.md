@@ -53,7 +53,7 @@ This is the seeking pass. The whole process should take about 3 hours or so, per
 
 Also, do not overlook online resources such as [YouTube](https://www.youtube.com/) videos, [Wikipedia](https://www.wikipedia.org/) articles, [Khan Academy](https://www.khanacademy.org/) tutorials, etc. Just remember that online materials vary drastically in terms of quality, YouTube being the least trustworthy and Khan Academy the most trustworthy.
 
-Eventually, you will have progressed in your chosen field of study to the point where some concepts are not only deep but also broad, connecting to topics well outside your own field. When you are grappling with such unfamiliar concepts, it is vital to be patient and humble, and study like a novice.
+Eventually, you will have progressed in your chosen field of study to the point where you will encounter  concepts that are not only deep but also broad, with connections to knowledge well outside your own field. When you come upon such unfamiliar concepts, it is vital to be patient and humble, and revert to studying as if you were a novice, all over again.
 
 ## *graduate school*
 
