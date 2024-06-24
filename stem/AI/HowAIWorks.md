@@ -246,7 +246,9 @@ The key innovation of the Transformer is that, instead of convolution and recurr
 
 # ALERTNESS
 
-Life is full of dangers, and every new and useful invention comes complete with its own set of attendant dangers. Knives and scissors and hammers are dangerous. So are [trains and boats and planes](https://www.youtube.com/watch?v=BlbS0JNFMIM). But they are all essential to modern life. AI is no different; it is a sharp tool which, if mishandled, will gouge the user's hand.
+Everyday life is full of dangers. And every new and useful invention comes complete with its own set of attendant dangers. Knives and scissors and hammers are dangerous. So are [trains and boats and planes](https://www.youtube.com/watch?v=BlbS0JNFMIM). But they are all essential to modern life. AI is no different; it is a sharp tool which, if mishandled, will gouge the user's hand.
+
+In the past, the prognostications of futurists and visionaries had been overly optimistic, both with respect to the progress of technology and to the inclination of humans. The famous inventor [Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) recently predicted the [singularity](https://youtu.be/-w4KmXE_ChY?si=3J2kOsXqNASSDUCo), the merger of man and machine. In the face of [NeuraLink](https://neuralink.com/) and other paddlers, even ordinary bloke like me can see that Kurzweil may well have his thumb on the pulse—this time round. But before we all line up round the block to implant in each of us an LLM-driven code-generating chip, let us realistically reassess the our "progress".
 
 AI as a research discipline has been around for nearly a century. But as a practical tool, AI is only about a decade old. Despite its youth, however, AI already controls many key aspects of our lives. But the fact that the most successful uses of AI have been privacy invasion, [election influencing](https://en.wikipedia.org/wiki/Foreign_electoral_intervention), and deepfaking—not tackling homelessness, global pandemics, or climate change—speaks volumes about us humans.
 
