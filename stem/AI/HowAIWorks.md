@@ -248,7 +248,7 @@ The key innovation of the Transformer is that, instead of convolution and recurr
 
 Everyday life is full of dangers. And every new and useful invention comes complete with its own set of attendant dangers. Knives and scissors and hammers are dangerous. So are [trains and boats and planes](https://www.youtube.com/watch?v=BlbS0JNFMIM). But they are all essential to modern life. AI is no different; it is a sharp tool which, if mishandled, will gouge the user's hand.
 
-In the past, the prognostications of futurists and visionaries had been overly optimistic, both with respect to the progress of technology and to the inclination of humans. The famous inventor [Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) recently predicted the [singularity](https://youtu.be/-w4KmXE_ChY?si=3J2kOsXqNASSDUCo), the merger of man and machine. In the face of [NeuraLink](https://neuralink.com/) and other paddlers, even ordinary bloke like me can see that Kurzweil may well have his thumb on the pulse—this time round. But before we all line up round the block to implant in each of us an LLM-driven code-generating chip, let us realistically reassess the our "progress".
+In the past, the prognostications of futurists and visionaries had been overly optimistic, both with respect to the progress of technology and to the inclination of humans. The famous inventor [Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) recently predicted the [singularity](https://youtu.be/-w4KmXE_ChY?si=3J2kOsXqNASSDUCo), the merger of man and machine. In the face of [NeuraLink](https://neuralink.com/) and other paddlers, even ordinary bloke like me can see that Kurzweil may well have his thumb on the pulse—this time round. But before we all line up round the block to implant in each of us an LLM-driven code-generating chip, let us assess our "progress", thus far.
 
 AI as a research discipline has been around for nearly a century. But as a practical tool, AI is only about a decade old. Despite its youth, however, AI already controls many key aspects of our lives. But the fact that the most successful uses of AI have been privacy invasion, [election influencing](https://en.wikipedia.org/wiki/Foreign_electoral_intervention), and deepfaking—not tackling homelessness, global pandemics, or climate change—speaks volumes about us humans.
 
@@ -285,8 +285,6 @@ The resources listed here are for current and aspiring practitioners. To become 
 
 ### MODERN TEXTS
 
-- *[The Deep Learning Revolution](https://www.amazon.com/Deep-Learning-Revolution-audiobook/dp/B07MM8F42R/ref=sr_1_1?crid=1QVLDREHD0F5Z&keywords=The+Deep+Learning+Revolution&qid=1643658890&s=audible&sprefix=the+deep+learning+revolution%2Caudible%2C34&sr=1-1)*, Sejnowski
-  - Neurocomputing researchers can be ordered into three generations: 1950s to 1970s; 1980s to 2000s; and 2010s to present. Rosenblatt is from the first generation, Rumelhart from the second, and all modern practitioners are from the third. Sejnowski, a contemporary of Rumelhart, is from the second generation—one of the pioneers who brought back neurocomputing from the verge of death. His presentation of deep learning is full of historical details, and it is one of the very few books on the subject that can be read by non-STEMers.
 - *[Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618/ref=sr_1_1?keywords=deep+learning+goodfellow&qid=1643659040&sprefix=Deep+Learning+goodfe%2Caps%2C32&sr=8-1)*, Goodfellow
   - This is a comprehensive, modern textbook on deep learning. It is suited to undergraduate and graduate students starting out in the speciality.
 - [*Speech and Language Processing*](https://web.stanford.edu/~jurafsky/slp3/ed3bookfeb3_2024.pdf), Jurafsky
@@ -299,8 +297,6 @@ The resources listed here are for current and aspiring practitioners. To become 
   - There are loads of DSP books, given that the subject has been around since the 1950s. But this is the definitive text on DSP, a genuine classic.
 - *[Digital Image Processing](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/9353062985/ref=sr_1_2?crid=1A9S47RTQNB7K&keywords=gonzalez+Digital+Image+Processing&qid=1643661144&sprefix=gonzalez+digital+image+processing%2Caps%2C63&sr=8-2)*, Gonzalez
   - Gonzalez's book is to DIP what Oppenheim's is to DSP. This is a must-read book for aspiring DIP practitioner.
-- *[Speech and Language Processing](https://www.amazon.com/gp/product/B00XIGSJQK/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0)*, Jurafsky
-  - Many consider this book a fine introduction to NLP. It is written by a linguistics professor from Stanford.
 
 ### IMPLEMENTATION GUIDES
 
@@ -308,5 +304,3 @@ The resources listed here are for current and aspiring practitioners. To become 
   - Today, there are two popular Python APIs for neurocomputing: Keras and PyTorch. Python is popular with data scientists and neurocomputing researchers, because it is a simple language, it is fast enough for experimental and exploratory work, and it has libraries for just about every application domain. This book covers [Keras](https://keras.io/), but it also presents the fundamentals in clear, concise way.
 - *[Deep Learning with PyTorch](https://www.amazon.com/Deep-Learning-PyTorch-Neural-Networks/dp/B097R3TBLR/ref=sr_1_6?crid=3VBA7IM1HHWM9&keywords=Deep+Learning&qid=1643658959&s=audible&sprefix=deep+learning+%2Caudible%2C30&sr=1-6)*, Stevens
   - This book covers [PyTorch](https://pytorch.org/), which is a lower level Python API compared to Keras. Lower level means the user has greater control over the architecture and the behaviour of the network. Those who seek full control over the behaviour of their networks should forego PyTorch, and instead adopt [TensorFlow](https://www.tensorflow.org/) or write their own custom implementations.
-- *[TinyML](https://www.amazon.com/TinyML-Learning-TensorFlow-Ultra-Low-Power-Microcontrollers/dp/1492052043/ref=sr_1_3?crid=1BV2TXBE1PMYG&keywords=Machine+Learning+on+Microcontrollers&qid=1643661999&s=books&sprefix=machine+learning+on+microcontrollers%2Cstripbooks%2C30&sr=1-3)*, Warden
-  - This book explores machine learning implementations on microcontrollers. [Microcontrollers](https://en.wikipedia.org/wiki/Microcontroller) are small, low-power processors commonly used on household appliances, automobiles, and IoT devices. Being able to bring the power of neurocomputing to this class of devices opens up countless opportunities for AI software designers.
