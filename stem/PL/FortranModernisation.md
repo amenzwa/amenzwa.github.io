@@ -181,11 +181,13 @@ p = point3d(3.0, 2.0, 1.0)
 This verbosity is gratuitous, tedious, confusing, illegible, and error-prone. The above code could be reduced to the following Haskell-like syntax in our new language.
 
 ```
-Point3D : Point3D {x, y, z : ℝ} ## declare record type
-p = Point3D {x = 3.0, y = 2.0, z = 1.0} ## define record value
+Point3D : point3D {x, y, z : ℝ} ## declare record type
+p = point3D {x = 3.0, y = 2.0, z = 1.0} ## define record value
 ```
 
-In the above declaration `Point3D : Point3D {x, y, z : ℝ}`, the left-side `Point3D` is the type constructor and the right-side `Point3D` is the data constructor that takes a record of the shape `{x, y, z : ℝ}`. For simplicity, this same syntax is used for type aliases, too. In the second line, the data constructor `Point3D` is applied to the data value `{3.0, 2.0, 1.0}` to construct the record `p`. The fields of this record are accessed as `p.x`, `p.y`, and `p.z`.
+In the above declaration `Point3D : point3D {x, y, z : ℝ}`, the left-side `Point3D` is the type constructor and the right-side `point3D` is the value constructor that takes a record of the shape `{x, y, z : ℝ}`. For simplicity, this same syntax is used for type aliases, too. In the second line, the value constructor `point3D` is applied to the tuple $(3.0, 2.0, 1.0)$ to construct the record `p` of type `Point3D`. The fields of this record are accessed as `p.x`, `p.y`, and `p.z`.
+
+Because in a simply typed language, like Haskell, types and values exist in different domains, the same name (`Point3D`) can be given to the type constructor and its associated value constructor. But in a dependently typed language like ours where types can depend on values, the two coexist in the same domain and, as such, we must use different names for the type constructor (`Point3D`) and its associated value constructor (`point3D`). By convention, we capitalise type constructors, but not the value constructors.
 
 ***remove kinds***—For historical reasons, Fortran supports several different number representations via a convoluted, and convulsive, mechanism it calls *kind selection*. In the `point3d` example above, `selected_real_kind(8)` is used to defines an 8-byte floating-point kind selector named `k8`, whose type is `integer`, and `k8` in turn is used to define three double-precision floating-point variables named `x`, `y`, and `z` . This syntax is excessive, to say the least. The main purpose of this mess is to allow the programmer to choose the smallest number of bytes necessary for the desired precision, thereby conserving memory use. But allowing multiple representations for a number type could create incompatibilities across different hardware platforms. And these byte-level concerns are superfluous in modern programming practice, where memory conservation is no longer the utmost priority.
 
@@ -297,21 +299,21 @@ The standard library defines some type aliases for convenience. $\mathbb{N}^+$ i
 The [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
 
 ```
-Rational : Rational {n : ℤ, q : ℤ±}
+Rational : rational {n : ℤ, q : ℤ±}
 ℚ : Rational
 
 Complex :
-  | Rectangular {x, y : ℝ}
-  | Polar {r, 𝜑 : ℝ}
+  | rectangular {x, y : ℝ}
+  | polar {r, 𝜑 : ℝ}
 ℂ : Complex
 
 Quaternion :
-  | Rectangular {a : ℝ, v : [ℝ 3]}
-  | Polar {m, 𝜃 : ℝ, n : [ℝ 3]}
+  | rectangular {a : ℝ, v : [ℝ 3]}
+  | polar {m, 𝜃 : ℝ, n : [ℝ 3]}
 ℍ : Quaternion
 ```
 
-Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `Rational` is the data constructor that takes a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `Rectangular` and the `Polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
+Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `rational` is the value constructor that takes a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `rectangular` and the `polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
 
 For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the `unsigned` type modifier, as C does.
 
@@ -325,7 +327,7 @@ The Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma
 
 - Avoid using `-` separators, `_` separators, ALL_CAPS, and other noisy naming conventions; instead, use the more legible PascalCase and [camelCase](https://en.wikipedia.org/wiki/Camel_case)
 - Use PascalCase for type names: `Vector`, `Matrix`, `Point2D`
-- Use lower-case single Greek letter for type variable names: `Point2D (𝛼 : Num)` where 𝛼 could be substituted with a number type in the class `Num` comprising the types `Nat`, `Int`, `Int128`, `Flt`, `Flt128`, or `Integer`
+- Use a lower-case Greek letter for type variable names: `Point2D (𝛼 : Num)` where 𝛼 could be substituted with a number type in the class `Num` comprising the types `Nat`, `Int`, `Int128`, `Flt`, `Flt128`, or `Integer`
 - Use camelCase for variable names and function names
 - Use PascalCase for file names, and module names will be automatically given the name of the file
 - Retire the tired FORTRAN 1977 fixed format
@@ -343,21 +345,21 @@ In our new language, an operator is introduced using the Agda-style [mixfix](htt
 
 ```
 Bol :
-  | False
-  | True
+  | false
+  | true
 𝔹 : Bol
 
 ¬_ : 𝔹 → 𝔹 → 𝔹
-  | False → True
-  | True → False
+  | false → true
+  | true → false
 
 _∧_ : 𝔹 → 𝔹 → 𝔹
-  | False ∧ _ = False
-  | True ∧ b = b
+  | false ∧ _ = false
+  | true ∧ b = b
 
 _∨_ : 𝔹 → 𝔹 → 𝔹
-  | False ∨ b = b
-  | True ∨ _ = True
+  | false ∨ b = b
+  | true ∨ _ = true
 
 p, q : 𝔹
 ...
@@ -439,18 +441,18 @@ As a scientific DSL, our new language must support FP, fully. So, it provides co
 
 ## complex modulus operator
 |_| : ℂ → ℝ
-  | Rectangular {x, y} → √ (x^2 + y^2)
-  | Polar {r, _} → |r|
+  | rectangular {x, y} → √ (x^2 + y^2)
+  | polar {r, _} → |r|
 
-c = Rectangular {x = 4.0, y = 3.0}
+c = rectangular {x = 4.0, y = 3.0}
 mod = |c| ## 5.0
 ```
 
 The code for the complex modulus operator `|_|` can be read as follows:
 
 - The complex modulus operator `|_|` takes an argument of type $\mathbb{C}$, and returns a value of type $\mathbb{R}$
-- If the argument is in the `Rectangular` form $x + iy$, the result is $\sqrt{x^2 + y^2}$
-- But if the argument is in the `Polar` form $r\angle{\phi}$, the result is $\lvert r \rvert$
+- If the argument is in the `rectangular` form $x + iy$, the result is $\sqrt{x^2 + y^2}$
+- But if the argument is in the `polar` form $r\angle{\phi}$, the result is $\lvert r \rvert$
 
 The `id` function defined below is an example of a uni-clause function. Although there is but one clause here, we nevertheless use the begin-clause symbol `|`, for visual consistency of function definitions.
 
@@ -547,7 +549,7 @@ We use a strong, static, dependent type system based on dependent type theories,
 Vector 𝛼 (n : ℕ) : [𝛼 n]
 ```
 
-In the above type declaration, the type constructor `Vector` on the left side is parameterised with the type variable $𝛼$ for the element type and is indexed by the numeric value `n` for the size. Here, $𝛼$ is an unconstrained type parameter, and `n` is a value of the natural number type $ℕ$. The data constructor `[𝛼 n]` on the right side takes a concrete type and a size value. Invoking this data constructor creates a vector of size $n$. The $i$-th element of a vector `x` is written `x[i]`, where $i ∈ [0, n)$, and the type of that element is $𝛼$. Passing $0$ for `n` to the data constructor creates a size-$0$ (empty) vector `[]`.
+In the above type declaration, the type constructor `Vector` on the left side is parameterised with the type variable $𝛼$ for the element type and is indexed by the numeric value `n` for the size. Here, $𝛼$ is an unconstrained type parameter, and `n` is a value of the natural number type $ℕ$. The value constructor `[𝛼 n]` on the right side takes a concrete type and a size value. Invoking this value constructor creates a vector of size $n$. The $i$-th element of a vector `x` is written `x[i]`, where $i ∈ [0, n)$, and the type of that element is $𝛼$. Passing $0$ for `n` to the value constructor creates a size-$0$ (empty) vector `[]`.
 
 Using the `Vector` dependent type, we can define a size-$3$ vector of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, like this.
 
@@ -615,14 +617,14 @@ Our new language should support structural pattern matching via the `case` contr
 c : ℂ
 ...
 case c
-  | Rectangular {x, y} → ...
-  | Polar {r, 𝜑} → ...
+  | rectangular {x, y} → ...
+  | polar {r, 𝜑} → ...
 ```
 
 Another use of pattern matching is for record field extraction, as shown below.
 
 ```
-c = Rectangular {x = 2.0, y = 3.0}
+c = rectangular {x = 2.0, y = 3.0}
 ...
 {x, y} = c ## c is destructured; x=2.0, y=3.0
 ```
@@ -647,8 +649,8 @@ We now make the complex number type $\mathbb{C}$ an instance of the `Show` type 
 ```
 ℂ :: Show ## make ℂ type an instance of Show type class
   show : ℂ → 𝕌 ## implement show function for complex type
-    | Rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
-    | Polar {r, 𝜑} → "Polar " + strOf(r) + "∠" + strOf(𝜑)
+    | rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
+    | polar {r, 𝜑} → "Polar " + strOf(r) + "∠" + strOf(𝜑)
 
 log! : ℂ → IO ()
   | c → show c |> print! ## print formatted complex value
@@ -686,7 +688,7 @@ inner : (𝛼 : Num) ⇒ [𝛼 n] → [𝛼 n] → 𝛼
 outer : (𝛼 : Num) ⇒ [𝛼 n] → [𝛼 n] → [𝛼 n n]
 ```
 
-Note the type constraint `(𝛼 : Num) ⇒`. The the declaration of the `Vector` type, the type parameter $\alpha$ is unconstrained. But in these functions, $\alpha$ is constrained to be a type in the `Num` class. Since the type parameter $𝛼$ is unconstrained in the vector data constructor `[𝛼 n]`, it is possible to create a vector of non-numeric elements. But the compiler will raise a type error, when the user attempts to pass a non-numeric vector to `inner` or `outer`, which expects the argument to be vectors of numeric elements.
+Note the type constraint `(𝛼 : Num) ⇒`. The the declaration of the `Vector` type, the type parameter $\alpha$ is unconstrained. But in these functions, $\alpha$ is constrained to be a type in the `Num` class. Since the type parameter $𝛼$ is unconstrained in the vector value constructor `[𝛼 n]`, it is possible to create a vector of non-numeric elements. But the compiler will raise a type error, when the user attempts to pass a non-numeric vector to `inner` or `outer`, which expects the argument to be vectors of numeric elements.
 
 Array processing languages, like Fortran, APL, and Matlab support convenient syntax for accessing ranges and elements. Python, Julia, Mojo, and other modern languages have adopted this array access syntax. So do we. Our 1D sequence access syntax is shown below.
 
@@ -780,17 +782,17 @@ Tuples are a convenient way to pack a few pieces of data into a small bundle. Fo
 ***records***—A record is a named product type that holds unordered, labelled fields of varying types. The `Rectangular` and the `Polar` product types defined above are examples of records. The fields of a record are accessed using the `.` operator, as in `p.𝜑`. A new record can be created from an existing one using the record update syntax `{... | ...}`.
 
 ```
-c = Rectangular {x = 2.0, y = 3.0} ## c of type ℂ is 2.0+𝒾3.0
+c = rectangular {x = 2.0, y = 3.0} ## c of type ℂ is 2.0+𝒾3.0
 ...
 c' = {c | y = -c.y} ## c' complex conjugate is 2.0-𝒾3.0
 ```
 
-***enumerations***—An enumeration (disjoint union) is a named sum type. For example, the boolean $\mathbb{B}$ type is a sum type with nullary data constructors `True` and `False`: `𝔹 : False | True`. On the other hand, the complex $\mathbb{C}$ type is a sum type with data constructors `Rectangular` and `Polar`, each taking a record product type: `ℂ : Rectangular{x,y:ℝ} | Polar{r,𝜑:ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. Enumerations are frequently used in conjunction with records to form sum-of-product types. The data elements of an enumeration are accessed by pattern matching.
+***enumerations***—An enumeration (disjoint union) is a named sum type. For example, the boolean $\mathbb{B}$ type is a sum type with nullary value constructors `false` and `true`: `𝔹 : false | true`. On the other hand, the complex $\mathbb{C}$ type is a sum type with value constructors `rectangular` and `polar`, each taking a record product type: `ℂ : rectangular{x,y:ℝ} | polar{r,𝜑:ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. Enumerations are frequently used in conjunction with records to form sum-of-product types. The data elements of an enumeration are accessed by pattern matching.
 
 ```
 case b
-  | False → ...
-  | True → ...
+  | false → ...
+  | true → ...
 ```
 
 ***hashes***—A hash is a collection of pairs. Each such pair comprises a value `v` associated with a unique key `k`: `<k:𝛼 # v:𝛽>`. Here, the key type is $𝛼$ and the value type is $𝛽$. The symbol `#` separates the key and its value. The elements of a hash are accessed by key indexing, as in `h<k>` for the value associated with the key `k`, or by pattern matching, as in `x#xx = h` with `x` bound to the first key-value pair in `h` and the rest of the collection bound to `xx`.
