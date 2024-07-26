@@ -351,7 +351,7 @@ Bol :
   | true
 𝔹 : Bol
 
-¬_ : 𝔹 → 𝔹 → 𝔹
+¬_ : 𝔹 → 𝔹
   | false → true
   | true → false
 
