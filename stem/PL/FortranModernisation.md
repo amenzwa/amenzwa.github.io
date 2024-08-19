@@ -7,6 +7,8 @@ use_math: true
 
 ## *a proposal for a dependently typed Fortran*
 
+[TOC]
+
 For decades, people in IT had taken delight in drafting Fortran's obituary. Yet, this old language lives on. But in recent years, the Fortran user community has begun sounding alarms: Fortran shops are having difficulty finding young programmers to replace those who are leaving the workforce, because the young are not willing to devote their careers to this ancient language. At present, no language can rival, let alone surpass, Fortran when it comes to implementing long-lived, large-scale, massively-parallel scientific and engineering applications; not even C and C++. Yet, modern programmers know nothing about Fortran, nor have they any interest in it. Suffice it to say, Fortran has an image problem.
 
 In this article, I explore the causes of Fortran's diminished popularity and discuss potential remedies. The key points I make here are these:
@@ -236,8 +238,10 @@ As can be seen above, there is much crud in the syntax of this simple function. 
 ```
 qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]
   | [] → []
-  | x:xx → qsort [l | l ← xx, l < x] + [x] + qsort [g | g ← xx, g ≥ x]
+  | x,xx → qsort [l | l ← xx, l < x] + [x] + qsort [g | g ← xx, g ≥ x]
 ```
+
+The notation `x,xx` above refers to the vector whose head is `x` element and whose tail is the `xx` sub-vector. Because we use the `:` for type annotation and `::` for class instantiation (see below), we use the `,` for vector representation, specifically to separate the elements of the vector.
 
 The type declaration `qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]` states that the function `qsort` takes an integer vector of size `n` as argument and returns an integer vector of the same size. Here, `[ℤ n]` is the shorthand syntax for the dependent type `Vector ℤ n`. And the double-arrow syntax `(n : ℕ) ⇒` constrains the type of `n` to be $\mathbb{N}$. Hence, this vector type, which is defined in the standard library, is parameterised with the type $ℤ$ and is indexed with the value of the variable `n` whose type is $\mathbb{N}$​. This single line not only replaces three lines of rather busy Fortran code.
 
@@ -289,13 +293,16 @@ Chapter 20 Elementary Graph Algorithms of
 
 ***use common primitive types***—Many modern high-level languages use only these primitive types: boolean, character, integer, natural number, and floating-point number. The boolean is a one-byte quantity, the character is a variable-byte quantity represented using Unicode, the natural number is an unsigned 64-bit quantity represented using binary, the integer is a signed 64-bit quantity represented using 2's compliment binary, and the floating-point number is a 64-bit quantity represented using the IEEE 754 format. These primitive data types suffice for scientific applications. We shall call them `Bol`, `Chr`, `Nat`, `Int`, and `Flt`, respectively. Larger data types with greater precisions are defined in the standard library: infinite-precision integer as `Integer`, 128-bit integer as `Int128`, and 128-bit floating-point number as `Flt128`. The types `Nat`, `Int`, `Int128`, `Integer`, `Flt`, and `Flt128` belong to the number class `Num`.
 
-The standard library defines some type aliases for convenience. $\mathbb{N}^+$ is the type of non-zero natural numbers (counting numbers).  $\mathbb{Z}^-$ is the type of non-zero negative integers. $\mathbb{Z}^+$ is the type of non-zero positive integers. $\mathbb{Z}^\pm$ is the type of non-zero integers.
+In our new language, $\mathbb{N}$ is the infinite set of natural numbers $[0, -\infty]$, and $\mathbb{R}$ is the infinite set of real numbers $[-∞, +∞]$. The standard library defines additional type aliases for convenience. $\mathbb{N}^+$ is the type of non-zero natural numbers (counting numbers).  $\mathbb{Z}^-$ is the type of non-zero negative integers. $\mathbb{Z}^+$ is the type of non-zero positive integers. $\mathbb{Z}^\pm$ is the type of non-zero integers. $\mathbb{R}^-$ is tye type of non-zero negative reals. $\mathbb{R}^+$ is tye type of non-zero positive reals. $\mathbb{R}^\pm$ is the type of non-zero reals.
 
 ```
 ℕ+ : (n : ℕ) > 0
 ℤ- : (n : ℤ) < 0
 ℤ+ : (n : ℤ) > 0
 ℤ± : (n : ℤ) ≠ 0
+ℝ- : (r : ℝ) < 0.0
+ℝ+ : (r : ℝ) > 0.0
+ℝ± : (r : ℝ) ≠ 0.0
 ```
 
 The [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
@@ -571,11 +578,11 @@ We may define the `head` and `tail` vector functions as follows.
 
 ```
 head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
-  | x:_ → x
+  | x,_ → x
 
 tail : [𝛼 n] → [𝛼 (n - 1)]
   | [] → []
-  | _:xx → xx
+  | _,xx → xx
 ```
 
 In simply typed languages like ML, OCaml, or Haskell, the `head` function throws a $\bot$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type of `head` prevents the user from passing an empty vector `[]` during compilation. Let us see how this works.
@@ -631,10 +638,10 @@ c = rectangular {x = 2.0, y = 3.0}
 {x, y} = c ## c is destructured; x=2.0, y=3.0
 ```
 
-Sometimes, it is convenient to be able to refer by name the whole of the pattern matched data structure. This is called the as-pattern, and we use the `@` symbol for it.
+Sometimes, it is convenient to be able to refer by name the whole of the pattern matched data structure. This is called the *as-pattern*, and we use the `@` symbol for it.
 
 ```
-f (x:xs) @ v → ... ## whole vector v can be used in body of f
+f (x,xs) @ v → ... ## whole vector v can be referenced in body of f
 ```
 
 ***support type classes, not classes***—Fortran is a scientific DSL, and dependent algebraic data types are more than adequate for modelling scientific data. As such, there is no need for Fortran to provide object modelling facilities. Instead of classes with fine-grained visibility modifiers, such as private, protected, and public, we rely on coarser but simpler alternative: modules containing selectively exported types and values. And instead of object inheritance, we support Haskell-style type classes.
@@ -642,8 +649,16 @@ f (x:xs) @ v → ... ## whole vector v can be used in body of f
 A type class roughly corresponds to Java `interface`. It defines a collection of functions (behaviours) which can be reused (inherited) by making a type an instance of the desired type class. Below, we declare the `Show` type class whose primary behaviour is to convert a value of some type $\alpha$ to a Unicode string representation.
 
 ```
-Show 𝛼 :: ## declare Show type class
+Show 𝛼 :: ## declare Show class
   show : 𝛼 → 𝕌 ## declare show function
+```
+
+Recall the type declaration syntax for the `Bol` type. The syntax of type declaration and that of class declaration are very similar, differing only in the use of `:` and `::`.
+
+```
+Bol : ## declare Bol type
+  | false
+  | true
 ```
 
 We now make the complex number type $\mathbb{C}$ an instance of the `Show` type class, and implement the `show` function that converts a complex value to a formatted string representation. This mechanism is conceptually similar to Java `implements`. Note the syntax: just as we use the single-colon syntax `value : Type` to assign a value to a type, we use the double-colon syntax `Type :: Class` to make a type an instance of a type class. This forms a type hierarchy: $value ∈ Type ∈ Class$.
@@ -835,7 +850,7 @@ The `Distance` module is used from the main module as follows.
 use Distance
 
 main! : () → IO ()
-  | () → if a ≈ b then "near" else "far "| print!
+  | () → if a ≈ b then "near" else "far " |> print!
          where a = -3.2; b = 6.8
 ```
 
@@ -941,7 +956,7 @@ The implementation of the vector `head` function mentioned above is an example o
 
 ```
 head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
-  | x:_ → x
+  | x,_ → x
 ```
 
 And the following is an example of external verification that accompanies the numeric `+` operator implementation defined in the standard library. The proof of associativity, `+assoc◻`, as well as the proofs of other properties, accompany the implementation of `+`. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will. It stands for "quod erat demonstrandum" ([QED](https://en.wikipedia.org/wiki/Q.E.D.)), which appears at the end of a proof in mathematics. The symbol $\forall$ means "for all", as usual. The symbol $\equiv$ stands for [propositional equality](https://en.wikipedia.org/wiki/Type_theory#Equality_types) in type theory.
@@ -972,7 +987,7 @@ Permit me to recapitulate. Fortran is here to stay; there is no better DSL for s
 - *[Parallel Programming with Coarrays](https://www.amazon.com/Parallel-Programming-Co-arrays-Chapman-Computational-ebook/dp/B07HGGK9XS/ref=sr_1_5?crid=29Z4WY15VFASS&dib=eyJ2IjoiMSJ9.83EdggKMXCDCxiuB7OPMzZonPk7FyDhusQSSmK-7N1aHKNF3ptKcEaKWD-81Yp1Td3PqoXjd1gvOEmrl8QqUqRqZXpfLdUfZVPJMNWO9B5YRDfEvXGEGuuvc8R2hN3oSs-A1RI-IV6poyZ6B8AIxAOaXAqN7enIh27jJvI2lP-JgOecGyEQhGK3topBbgtaD.88ht4QQGAvwFIqpvScb9g4CQ_PTX3Fz3RGUUtEcbQ74&dib_tag=se&keywords=Coarray+Fortran+for+Parallel+Programming&qid=1712266905&sprefix=%2Caps%2C60&sr=8-5)*, Numrich
 - *[Modern Fortran: Building Efficient Parallel Applications](https://www.amazon.com/Modern-Fortran-Building-Efficient-Applications/dp/1617295280/ref=sr_1_1?crid=2PABKLJAG0NB3&dib=eyJ2IjoiMSJ9.ZZ8Gi0ZQRNtvol7rlw6YbCBTHNYKtWXlqB3wFBScWGtTBuJlkBYbCnpnv-5oGyLTCKbNCVdPx80lxu8vWQUWFWsvg2cAZRItnkjgKWGMC4D3p6V0tKMRIug2sugkMkS4LmuCCXeFryJhVhiQGuqIGogfHd4YWE4qKsCWgfTz_YH2vNH6ROHIbNz3Z7PgOgpb8hSWwjVm5ny-CDwR1CiGfuzKnUl7F9NeMqxXZQRcPA4.hbtwTWli6jfDhut3EphTaW68y_XuZjeNfpDYcQry5Fw&dib_tag=se&keywords=Modern+Fortran%3A+Building+Efficient+Parallel+Applications&qid=1712267035&sprefix=modern+fortran+building+efficient+parallel+applications%2Caps%2C61&sr=8-1)*, Curcic
 
-## PROOF ASSISTANTS
+### PROOF ASSISTANTS
 
 - Agda
   - *[Agda User Manual](https://my-agda.readthedocs.io/_/downloads/en/latest/pdf/)*, Agda Team
