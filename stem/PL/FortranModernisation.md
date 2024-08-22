@@ -309,10 +309,18 @@ In our new language, $\mathbb{N}$ is the infinite set of natural numbers $[0, -\
 ℝ± : (r : ℝ) ≠ 0.0
 ```
 
+Using the above convenience types, we may compute the reciprocal of the real number `x`, without worrying about the $\bot$ due to an accidental division by zero.
+
+```
+x : ℝ± ## x cannot be 0.0
+...
+1 / x ## no danger of ⊥
+```
+
 The [rational](https://en.wikipedia.org/wiki/Rational_number), [complex](https://en.wikipedia.org/wiki/Complex_number), and [quaternion](https://en.wikipedia.org/wiki/Quaternion) data types are implemented as records in the standard library.
 
 ```
-Rational : rational {n : ℤ, q : ℤ±}
+Rational : rational {n : ℤ, q : ℤ±} ## q cannot be 0
 ℚ : Rational
 
 Complex :
