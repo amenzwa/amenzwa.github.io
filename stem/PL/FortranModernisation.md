@@ -488,6 +488,8 @@ id : 𝛼 → 𝛼
   | x → x
 ```
 
+What is the utility of `id`, a function that performs no transformation of its argument? A functional programming language manipulates both data and code. That is, the language is an algebra of values and functions, where `id` is the identity function of the functionals (higher-order functions), just like $0$ is the identity value of the $+$ operator and $1$ is of the $\times$ operator.
+
 ***support pure functions***—Fortran does allow marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
 
 ***support inner functions***—Fortran also provides a way to define inner functions, which are useful for avoiding polluting the namespace with small functions. In Fortran, inner functions are called *internal procedures*. But its internal procedure syntax is more trouble than it is worth. The following concocted example shows how an internal function is defined and called in Fortran.
@@ -561,6 +563,8 @@ n = 7
 ...
 if prime? n then ... else ...
 ```
+
+***stylistic convention***—In functional languages, a value being manipulated is passed to a function as the last argument, after the parameters that control the way the function operates: `f p1 p2 value`. This analogous to the way Unix commands are applied to files: `cmd -p1 -p2 file`. This convention allows the creation of data processing pipelines in which functions are partially applied with their respective control parameters, and are then composed into a pipeline. There prebuilt pipelines may then be applied to the value, as in `value |> f p1 p2 |> g p1 p2 p3` or `g p1 p2 p3 <| f p1 p2 <| value`, either of which is easier to read than the equivalent, `g p1 p2 p3 (f p1 p2 value)`.
 
 ## *depend on dependent types*
 
