@@ -27,7 +27,7 @@ Slight is semantically close to [Smalltalk](https://en.wikipedia.org/wiki/Smallt
 
 Slight adopts a handful of time-tested concepts from these languages, including the prototype concept, but with a twist. Slight discards the class-object syntactic distinction, because every linguistic element—type, object, method, function, operator, constant—is an object. Hence, declaring a new type is just creating a new object and so too is defining a new method.
 
-That data and code are both objects makes Slight [homoiconic](https://en.wikipedia.org/wiki/Homoiconicity). Furthermore, because types are also objects, this is no distinction between type-level code and value-level code. Hence, type expressions can be written in the same language as value expressions. This uniformity considerably increases the expressivity and the comprehensibility of type expressions.
+That data and code are both objects makes Slight [homoiconic](https://en.wikipedia.org/wiki/Homoiconicity). Furthermore, because types are also objects, this is no distinction between type-level code and value-level code. As such, like other dynamically type checked languages, Slight does not distinguish between type expressions and value expressions. This uniformity considerably increases the expressivity and the comprehensibility of type expressions.
 
 ## *objects*
 
@@ -39,9 +39,9 @@ Like Smalltalk, Slight employs *live objects*. A Slight application automaticall
 
 Unlike Smalltalk, but like Self, there are no classes in Slight; we use the term *type*, instead. But a type is just a prototype object. So, types in Slight are just objects. The `Type` is the primordial prototype object, the ancestor of all objects and, by extension, the ancestor of all types, too.
 
-Every type in Slight inherits from one existing type, and this single inheritance chain terminates at the root `Type`. Multiple inheritance is simulated using [traits](https://en.wikipedia.org/wiki/Trait_(computer_programming)), which are also objects, naturally.
+Slight is strongly typed and dynamically checked. And every type inherits from one existing type, and this single inheritance chain terminates at the root `Type`. Multiple inheritance is simulated using [traits](https://en.wikipedia.org/wiki/Trait_(computer_programming)), which are also objects, naturally.
 
-During compilation, Slight's type system can infer the types of most expressions. So, there are only a few places in the code where explicit typing is necessary. This freedom from mandatory typing increases programmer productivity and code readability, without diminishing type safety. The type system also enables the IDE to provide the usual coding assistive technologies.
+Slight's type system can infer the types of most expressions. So, there are only a few places in the code where explicit typing is necessary. This freedom from mandatory typing increases programmer productivity and code readability, without diminishing type safety. The type system also enables the IDE to provide the usual coding assistive technologies.
 
 ## *safety*
 

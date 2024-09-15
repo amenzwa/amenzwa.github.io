@@ -245,7 +245,7 @@ qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]
   | x,xx → qsort [l | l ← xx, l < x] + [x] + qsort [g | g ← xx, g ≥ x]
 ```
 
-The notation `x,xx` above refers to the vector whose head is `x` element and whose tail is the `xx` sub-vector. Because we use the `:` for type annotation and `::` for class instantiation (see below), we use the `,` for vector representation, specifically to separate the elements of the vector.
+The notation `x,xx` above refers to the vector whose head is `x` element and whose tail is the `xx` sub-vector. Because we use the `:` for type annotation and `::` for class instantiation (see below), we use the `,` for separating elements of a vector.
 
 The type declaration `qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]` states that the function `qsort` takes an integer vector of size `n` as argument and returns an integer vector of the same size. Here, `[ℤ n]` is the shorthand syntax for the dependent type `Vector ℤ n`. And the double-arrow syntax `(n : ℕ) ⇒` constrains the type of `n` to be $\mathbb{N}$. Hence, this vector type, which is defined in the standard library, is parameterised with the type $ℤ$ and is indexed with the value of the variable `n` whose type is $\mathbb{N}$​. This single-line, function type declaration not only replaces the following three lines of busy Fortran code, it is also readable.
 
