@@ -5,84 +5,128 @@ tags:
 use_math: true
 ---
 
-## *a Smalltalk-Light that targets JavaScript*
+## *a Scheme-Light that targets JavaScript*
 
 [TOC]
 
-*Slight* is a proposal for a new programming language with a Smalltalk-like purely-objective semantics. Being still in the proposal stage, there is no implementation of Slight, at present.
+*Slight* is a proposal for a lightweight, purely-functional programming language with a Scheme-like semantics and a Haskell-like syntax. Being still in the proposal stage, there is no implementation of Slight, at present.
 
-Slight supports Unicode symbols. It seamlessly interoperates with the JavaScript ecosystem via either Node or Deno. Its syntax is modelled after Haskell. With additional effort, Slight can also generate byte-code for Wasm, CLR, JVM, Beam, and other VMs, as well as native binary for various CPUs.
+Slight supports Unicode symbols, both in data and in code. It seamlessly interoperates with the JavaScript ecosystem via either Node or Deno. With additional effort, Slight can also generate byte-code for Wasm, CLR, JVM, Beam, and other VMs, as well as native binary for various CPUs via LLVM.
 
 # STANCE
 
-Slight is designed primarily for rapid development of back-office operations management applications intended to be used by a small number of in-house business experts. Secondary uses of this language are infrastructure automation and scientific simulation. And given its compact size, it could also be used to implement embedded software that run on low-power MCUs.
+Slight is designed primarily for rapid development of back-office operations management applications intended to be used by in-house software developers and business analysts. Secondary uses of this language are infrastructure automation and data manipulation. And given its compact size, it could also be used to implement embedded software that runs on low-power MCUs in IoT applications.
 
-Slight introduces no new programming concepts, and it provides no new syntactic constructs. Its distinguishing characteristic, though, is its strong stance on being a simple, svelte language with a narrow purpose, which amounts to a novelty in today's practice of designing complex, colossal languages that try to be everything to everyone. Slight's pure, OO semantics is well matched to the business applications domain.
+Slight introduces no new programming concepts, and it provides no new syntactic constructs. Its distinguishing characteristic, though, is its strong stance on being a simple, svelte language with a narrow purpose, which counts as a novelty in today's practice of designing complex, colossal languages that try to be everything to everyone. Slight's pure FP semantics is well matched to the target application domains.
 
-Slight's compact nature reflects its design philosophy: there is no such thing as a "large application"—at least it ought not—only numerous well-isolated "small components" that interact with one another through a simple, shared protocol, quietly and without fanfare. This is the philosophy that underpins [Unix](https://en.wikipedia.org/wiki/Unix) commands. The applications implemented in Slight, too, adhere to this philosophy of being humble in size, being conservative in design, and being deliberate in interaction.
+Slight's compact nature reflects its design philosophy: there is no such thing as a "large application"—at least it ought not—only numerous well-isolated "small components" that interact with one another through a simple, shared protocol, without fanfare. This is the philosophy that underpins [Unix](https://en.wikipedia.org/wiki/Unix) commands. The applications implemented in Slight, too, adhere to this philosophy of being humble in size, being conservative in design, and being deliberate in interaction. In that sense, Slight does at least as much as that which is done by the combination of the Unix Bourne shell, the AWK scripting language, and the system commands, but with less clatter and more culture.
 
 # SEMANTICS
 
-Slight is semantically close to [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk) and [Self](https://en.wikipedia.org/wiki/Self_(programming_language)), both purely objective, single inheritance languages in which multiple inheritance is simulated with [traits](https://en.wikipedia.org/wiki/Trait_(computer_programming)). Smalltalk's object system is class-based, whereas Self's is prototype-based. JavaScript, a descendant of Self, also employs prototypal inheritance.
+Slight is semantically close to [Scheme](https://en.wikipedia.org/wiki/Scheme). Slight adopted a handful of time-tested concepts from this classic FP languages, but nots its more advanced facilities and its imperative constructs.
 
-Slight adopts a handful of time-tested concepts from these languages, including the prototype concept, but with a twist. Slight discards the class-object syntactic distinction, because every linguistic element—type, object, method, function, operator, constant—is an object. Hence, declaring a new type is just creating a new object and so too is defining a new method.
+Slight is statically, strongly, simply typed. All linguistic elements—types, data, code, and modules—are functions. Hence, declaring a new type is just creating a new object and so too is defining a new method.
 
-That data and code are both objects makes Slight [homoiconic](https://en.wikipedia.org/wiki/Homoiconicity). Furthermore, because types are also objects, this is no distinction between type-level code and value-level code. As such, like other dynamically type checked languages, Slight does not distinguish between type expressions and value expressions. This uniformity considerably increases the expressivity and the comprehensibility of type expressions.
+That data and code are both functions makes Slight [homoiconic](https://en.wikipedia.org/wiki/Homoiconicity). Furthermore, because types are also functions, there is no barrier between type-level code and value-level code. This is like Agda, but unlike Haskell. This uniformity heightens the expressivity and the comprehensibility of type expressions.
 
-## *objects*
+## *uniformity*
 
-As a pure OO language with imperative semantics, computations in Slight generally are the side effects of object interactions. An object interacts with another object via a *message*. The name of the message is called the *selector*. A message is sent to an object using the conventional `.` syntax. The target object of a message is called its *receiver*. A message's behaviour is implemented by the receiver object's *method*, whose name matches the message selector. In other words, the method responds to the message. A type's data contents are held in *data slots* and the code of its methods are held in *code slots*. There is no `null` in Slight.
+A type in Slight is just a piece of data that annotates another piece of data. The *integer type* is a piece of data that marks the data value `9` as an integer, and the *string type* is a piece of data that marks the data value `"hello"` as a string. And a data value is just a function. For example, this is how built-in natural numbers in Slight are defined in terms of [Church encoding](https://en.wikipedia.org/wiki/Church_encoding).
 
-Like Smalltalk, Slight employs *live objects*. A Slight application automatically and incrementally persists its runtime state to disc, and the application automatically restores the saved state from disc when it resumes. As such, a Slight application is inherently crash-resistant, though not crash-proof. Live objects are ideal persistence mechanism for implementing small applications—Slight's intended use. ORM can, of course, be implemented as a library, if database storage mechanism is necessary.
+```Slight
+ℕ :
+  zero : ℕ
+  succ : ℕ → ℕ
+```
 
-## *types*
+***types***—There is the `Type` type constructor function that creates the primordial type that represents all other types. The natural number defined above is thus implicitly typed thus: `ℕ : Type`. The `zero` is the data constructor function that constructs the `0` data value, and the `succ` is the data constructor that constructs the successor data value of its argument: `succ 0` returns `1`, `succ 1` returns `2`, and so on.
 
-Unlike Smalltalk, but like Self, there are no classes in Slight; we use the term *type*, instead. But a type is just a prototype object. So, types in Slight are just objects. The `Type` is the primordial prototype object, the ancestor of all objects and, by extension, the ancestor of all types, too.
+Slight's [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) simple type system can infer the types of most expressions. So, there are only a few places in the code where manual typing is necessary. This freedom from mandatory typing increases programmer productivity and code readability, without diminishing type safety. The type system also enables the IDE to provide the usual coding assistive technologies.
 
-Slight is strongly typed and dynamically checked. And every type inherits from one existing type, and this single inheritance chain terminates at the root `Type`. Multiple inheritance is simulated using [traits](https://en.wikipedia.org/wiki/Trait_(computer_programming)), which are also objects, naturally.
+Slight has no constructs that threaten type safety. There are no `nil`, `null`, `undefined`, and sundry [billion-dollar *naughts*](https://en.wikipedia.org/wiki/Tony_Hoare). A possible absence of a value must be indicated with the `Opt` option type. There is no `Any` type that pierces the type shield. There is no implicit type conversion. Type conversions must either be implemented with functions like the integer type's `toStr` and `ofStr`. Slight's standard `prelude` provides implementations for the built-in types.
 
-Slight's type system can infer the types of most expressions. So, there are only a few places in the code where explicit typing is necessary. This freedom from mandatory typing increases programmer productivity and code readability, without diminishing type safety. The type system also enables the IDE to provide the usual coding assistive technologies.
+***data and code***—Since Slight is a pure FP language, there are no statements and procedures, only expressions and functions. An expression is a piece of textual data that represents its evaluated value. A function is a piece of textual data that represents its yet-unevaluated value, which is evaluated when the function is applied to a data value. Like other pure FP languages, all variables and data structures in Slight are immutable.
 
-## *safety*
-
-Slight has no constructs that threaten type safety. There are no `nil`, `null`, `undefined`, and sundry [billion-dollar *naughts*](https://en.wikipedia.org/wiki/Tony_Hoare). A possible absence of a value must be indicated with the `Opt` option type. There is no `Any` type that pierces the type shield. There is no implicit type conversion. Type conversions must either be inherited or it must be implemented with methods like `asStr`, `asInt`, etc.
+***modules***—And since Slight supports inner functions, a module is just an outer function whose definition contains inner functions that represent types, data, and code. In the interest of simplicity, Slight only supports one module per file. And modules are Slight's means for implementing abstract data types (with data hiding), as described later.
 
 ## *built-ins*
 
-Because everything in Slight is an object, there are no "primitive types", per se. But Slight supports the following built-in types:
+Slight's standard `prelude`, the module that is automatically imported into every file, provides the following built-in types:
 
-- `Type` is the mutable, primordial type from which every type descends
-- `(x : T, ...)` is a mutable tuple
-- `{x : T, ...}` is a mutable object (a record)
-- `[T]` is a mutable list of `T`-typed elements
-- `<Str#T>` is a mutable hash with `Str`-typed keys and `T`-typed values
-- `Str` is a mutable Unicode string
-- `Chr` is an immutable Unicode character
-- `Bol` is an immutable boolean flag
-- `Int` is an immutable 64-bit integer
-- `Flt` is an immutable 64-bit IEEE 754 floating-point number
-- `Opt 𝛼` is the option type whose value is either `none` or `value : 𝛼`
-- `Rsl 𝛼` is the result type whose value is either `error` or `value : 𝛼`
+- `Type` is the primordial type, the implicit type of all other types
+- `(x : T, y : U, ...)` is the tuple type
+- `{x : T, y : U, ...}` is the record type
+- `[𝛼]` is the list type with `𝛼`-typed elements (`𝛼` is a type variable)
+- `<𝛼 # 𝛽>` is the hash type with `𝛼`-typed keys and `𝛽`-typed values
+- `Str`  (`𝕊`) is the Unicode string type
+- `Uni`  (`𝕌`) is the Unicode symbol type
+- `Bol` (`𝔹`) is the boolean type
+- `Nat` (`ℕ`) is the natural number type
+- `Int` (`ℤ`) is a 64-bit integer
+- `Flt` (`ℝ`) is a 64-bit IEEE 754 floating-point
+- `Opt 𝛼` is the option type which contains either a `none` or a value of type `some 𝛼`
+- `Ret 𝛼 𝛽` is the function return type which contains either an `err 𝛼` or a value of type `ok 𝛽`
 
-Although objects are mutable in general, it is nonsensical to mutate objects that represent constant values, such as `true`, `'ॐ'`, `9`, `1.618`, and the like. However, a variable holding such a constant value can be mutated using the `←` assignment operator.
+The `prelude` contains these definitions, among many others.
 
 ```Slight
-vowel ← 'अ'
-...
-vowel ← 'इ'
+## convenience number types
+ℕ+ : (n : ℕ) > 0
+ℤ- : (n : ℤ) < 0
+ℤ+ : (n : ℤ) > 0
+ℤ± : (n : ℤ) ≠ 0
+ℝ- : (r : ℝ) < 0.0
+ℝ+ : (r : ℝ) > 0.0
+ℝ± : (r : ℝ) ≠ 0.0
+
+## rational record type
+ℚ : {n : ℤ, d : ℤ±} ## denominator d is never 0
+
+## complex record type
+ℂ :
+  | rectangular {x, y : ℝ}
+  | polar {r, 𝜑 : ℝ}
+
+## option type
+Opt 𝛼 :
+  | none
+  | some 𝛼
+
+## return type
+Ret 𝛼 𝛽 :
+  | error 𝛼
+  | result 𝛽
 ```
 
-Above, the mutable, `Chr`-typed variable `vowel` is initialised to the value `'अ'` and is subsequently updated to the value `'इ'`. The objects that represent the Unicode character literals अ and इ are, of course, immutable.
+Being a pure FP language, Slight's variables are immutable. A variable is bound to a value using the `=` operator. But a variable can be rebound to a new value, later in the same scope. Rebinding mitigates namespace pollution.
+
+```Slight
+vowel = 'अ' ## original binding of type Chr
+...
+vowel = 'इ' ## rebinding (not mutating)
+```
+
+## *sequencing*
+
+Unlike other pure FP languages, Slight allows expression sequencing.
+
+```Slight
+a = ...
+b = ... a ...
+c = ... b ...
+```
+
+In Haskell, the above sequencing has to be expressed using the `do` monadic construct. But in Slight, this monadic sequencing construct is implicit in the syntax.
 
 # SYNTAX
 
-The Slight syntax strives to be concise, consistent, and cogent. Syntactically, Slight is slimmer than both Smalltalk and JavaScript. It relies on the type system, the Unicode symbols, and the IDE assistive technologies to keep the syntactic constructs to a minimum, without compromising code legibility.
+The Slight syntax strives to be concise, consistent, and cogent. Syntactically, Slight is slimmer than both Scheme and JavaScript. It relies on the type system, the Unicode symbols, and the IDE assistive technologies to keep the syntactic constructs to a minimum, without compromising code legibility.
 
 Note, though, that as there exists no Slight implementation at the moment, the code examples below appear unadorned with syntax colouring, alignment bars, and other visual aids that enhance legibility.
 
 ## *documentation*
 
-Slight's IDE subtly, but persistently, chides the developers to document non-trivial definitions. The IDE also enforces the standard documentation format and it automatically inserts appropriate documentation templates for various code sections which can be filled out by programmers and technical writers. The Slight IDE is a [literate programming](https://en.wikipedia.org/wiki/Literate_programming) environment, like the iPython [Jupyter](https://jupyter.org/), and it is also a live object explorer, like the Smalltalk [Browser](https://pharo.org/).
+Slight's IDE subtly, but persistently, chides the developers to document non-trivial definitions. The IDE also enforces the standard documentation format and it automatically inserts appropriate documentation templates for various code sections which can be filled out by programmers and technical writers. The Slight IDE is a [literate programming](https://en.wikipedia.org/wiki/Literate_programming) environment, like the iPython [Jupyter](https://jupyter.org/), and it is also a live object explorer, like the Scheme [Browser](https://pharo.org/).
 
 In-code documentation is written as either inline comments or as block comments. Inline comments start with `##` and spans until the end of the line. Block comments start with `#{` and end with `#}`. Both inline and block comments consistently begin with the `#` character. Block comments can wrap other comments. So, a block comment can temporarily blank out a section of commented code.
 
@@ -92,11 +136,11 @@ As a matter of style, in-code comments should be used sparingly; they should onl
 
 Slight software could be implemented as a command-line application or as an interactive [TUI](https://en.wikipedia.org/wiki/Text-based_user_interface) application. Ideally, though, it should be implemented as an IDE-based literate programme with each `.sl` source file serving as a section of *executable manual*.
 
-During development, the programmers implement the code in the IDE's expanded code cells and technical writers inject the user's manual in the text cells. Once deployed, much of the embedded code is hidden from the end users, who see only the manual text and a few essential UI components. These UI components, too, are live objects, just like in Smalltalk. So, they always reflect the current application state.
+During development, the programmers implement the code in the IDE's expanded code cells and technical writers inject the user's manual in the text cells. Once deployed, much of the embedded code is hidden from the end users, who see only the manual text and a few essential UI components. These UI components, too, are live objects, just like in Scheme. So, they always reflect the current application state.
 
 ## *names*
 
-Slight follows the Smalltalk [camel case](https://en.wikipedia.org/wiki/Camel_case) naming convention: types use capitalised camel case names; values use uncapitalised camel case names. Slight's naming scheme is not a convention, though; it is a dictum of the compiler. This strong stance on naming improves code consistency and readability.
+Slight follows the Scheme [camel case](https://en.wikipedia.org/wiki/Camel_case) naming convention: types use capitalised camel case names; values use uncapitalised camel case names. Slight's naming scheme is not a convention, though; it is a dictum of the compiler. This strong stance on naming improves code consistency and readability.
 
 All-caps names are frowned upon by the Slight IDE, which would suggest naming the [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) type  `Uuid`, not `UUID` . This is a convention whose purpose is to eliminate a potential source of inconsistency that often leads to disputes and confusion.
 
@@ -148,7 +192,7 @@ X = { x1 : T, x2 : T }
 Y = X - { x2 } + { y1 : U } ## Y = { X.x1, Y.y1 }
 ```
 
-Although Slight employs a Smalltalk-like single inheritance, it simulates multiple inheritance using its prototypal inheritance mechanism. Inheriting from multiple types often causes property name collisions. Slight automatically resolves name collisions by overwriting the earlier inherited property with the later inherited property of the same name. Note that the property types are elided from the example below for clarity.
+Although Slight employs a Scheme-like single inheritance, it simulates multiple inheritance using its prototypal inheritance mechanism. Inheriting from multiple types often causes property name collisions. Slight automatically resolves name collisions by overwriting the earlier inherited property with the later inherited property of the same name. Note that the property types are elided from the example below for clarity.
 
 ```Slight
 X = { a, b }
@@ -269,7 +313,7 @@ The type signature `foldr : (𝛼 → 𝛽 → 𝛽) → 𝛽 → [𝛼] → �
 
 Here, `𝛼` and `𝛽` are type variables into which actual types are substituted at the call site of `foldr`. And the syntax `x::xx` represents a list with the head element `x` and the tail elements `xx`.
 
-In addition to module-level functions, Slight also supports LISP-like [*lambda functions*](https://en.wikipedia.org/wiki/Anonymous_function). These are analogous to *blocks* in Smalltalk and Self.
+In addition to module-level functions, Slight also supports LISP-like [*lambda functions*](https://en.wikipedia.org/wiki/Anonymous_function). These are analogous to *blocks* in Scheme and Self.
 
 ```Slight
 xx ← [5, 9, 1]
@@ -287,9 +331,13 @@ s + t = s.concat t
 
 We may concatenate the strings `s` and `t` as `s.concat t`, as `_+_ s t`, or more idiomatically as `s + t`.
 
+
+
+**** Slight does not deafen the programmer with  `val`, `var`,  `let`, `let rec`, `def`, `fun`, and other syntactic noises found in other FP languages.
+
 ## *inheritance*
 
-Recall that types in Slight are declared by attaching object literals to capitalised names and, because every linguistic construct is an object, the same syntax applies to both types and to objects. Consequently, Slight's prototypal type declaration syntax is more succinct and comprehensible than the class declaration syntax of classical languages like Smalltalk, C++, Python, Java, etc. The compactness of this syntax does not detract from its legibility, especially in the presence of IDE syntax colouring.
+Recall that types in Slight are declared by attaching object literals to capitalised names and, because every linguistic construct is an object, the same syntax applies to both types and to objects. Consequently, Slight's prototypal type declaration syntax is more succinct and comprehensible than the class declaration syntax of classical languages like Scheme, C++, Python, Java, etc. The compactness of this syntax does not detract from its legibility, especially in the presence of IDE syntax colouring.
 
 ```Slight
 ## organization

@@ -12,4 +12,5 @@ This topic is devoted to set-up and configuration of Akai [EWI USB](https://www.
 
 - [EWI5000 Saxophone Fingering for the Visually Impaired Players](EWI5000VisuallyImpaired.md)
   - This article provides a detailed description of the EWI5000 fingerings and basic configurations for the visually impaired.
-
+- [*chord*: A Simple Jazz Chord Generator in TypeScript](https://github.com/amenzwa/chord)
+  - This project implements the simplest, smallest possible jazz chord generator in TypeScript. The purpose is to show the IT practitioners the software development process from mathematical analysis of a problem to the technical synthesis of a solution.
