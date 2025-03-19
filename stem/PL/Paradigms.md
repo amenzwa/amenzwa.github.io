@@ -321,7 +321,7 @@ Now, let us turn our attention to some FP terms. FP takes delight in giving orna
 
 ***immutability***—Because functions are pure and they do not mutate data structures, when a a function makes a modification to a data structure, it always produces a new copy of the data structure containing that modification. This property of FP data structures is known as *immutability*.
 
-***transparency***—Functions do not maintain internal data that they secretly maintain and mutate to make hidden computation decisions. That is, a function's behaviour is transparent and is defined entirely by the input parameters. The same input always yields the same output. That is, if a function $f$ applied to an input value $x$ yields an output value $y$, as in $y = f(x)$, then the value $y$ can always be used in place of the function application $f(x)$, and vice versa. This property of functions is called *referential transparency*.
+***transparency***—Functions do not maintain internal data that they covertly mutate through hidden computations. That is, a function's behaviour is transparent and is defined entirely by the input parameters. The same input always yields the same output: if a function $f$ applied to an input value $x$ yields an output value $y$, as in $y = f(x)$, then the value $y$ can always be used in place of the function application $f(x)$, and vice versa. This property of functions is called *referential transparency*.
 
 ***first-class functions***—Functions are values, just like characters, integers, reals, lists, tuples, records, etc. As such, a function $f$ can be passed as an argument to another function $g(f)$, and a function $f$ can be returned as a result from another function $f = h(x)$. This property of functions is known as *first-class*.
 
