@@ -249,7 +249,7 @@ This experience taught me that when learning something new and distinct, it is b
 
 Fortunes of FP seem to wax and wane in decennial cycles. LISP, the world's second high-level language (after FORTRAN) and the first FP language, came out in the 1950s. Naturally, there was much enthusiasm for both FORTRAN and LISP, because most programmers at the time were programming in various assembly languages.
 
-But by the 1960s, COBOL held the business computing market and FORTRAN the scientific computing market, the two largest applications of computers in those early days. Programming language researchers in academia were preoccupied with ALGOL, in those days. This was not FP's time to shine.
+But by the 1960s, COBOL held the business computing market and FORTRAN the scientific computing market, the two largest applications of computers in those early days. Programming language researchers in academia were preoccupied with ALGOL, then. This was not FP's time to shine.
 
 The 1970s saw the rebirth of LISP as the definitive language for the AI expert system, which was the IT industry's obsession of the day. ML emerged during this period, too. Its strong, static type system with inferencing ([Hindley-Milner type system](https://en.wikipedia.org/wiki/Hindley–Milner_type_system)), its clean syntax, and its theoretical foundations seduced many CS university programmes into adopting ML as their teaching language. It appears FP was on the rise again, both in academia and in industry.
 
