@@ -143,7 +143,7 @@ Around the same time, Bell Labs hatched C++ by injecting Simula's OO concepts in
 
 Together, Objective-C and C++ dominated the software development industry throughout the 1990s. Today, Objective-C is still used on the modern macOS, the descendant of NeXTSTEP, but it is rapidly bing displaced by Apple's new language, Swift, a derivative of ML, Smalltalk, and C. And C++ is still used extensively throughout the industry, especially in performance-critical applications like VR games.
 
-Smalltalk is now all but confined to a few remaining legacy business applications. Nevertheless, Smalltalk is considered by OO aficionados as the definitive OO language. After all, Smalltalk inspired Objective-C, Java, C#, Scala, Ruby, and loads of other OO languages in popular use, at present. Although most modern programmer knows Smalltalk is OO, not many know that Smalltalk has a decent FP support, owing to its LISP influence:
+Smalltalk is now all but confined to a few remaining legacy business applications. Nevertheless, Smalltalk is considered by OO aficionados as the definitive OO language. After all, Smalltalk inspired Objective-C, Java, C#, Scala, Ruby, and loads of other OO languages in popular use, at present. Although most modern programmers are aware that Smalltalk is OO, not many know that Smalltalk has a decent FP support, owing to its LISP influence:
 
 - Smalltalk, like LISP, has a weak, dynamic type system
 - Smalltalk `#xyz` symbol is LISP `'xyz` quote
