@@ -280,7 +280,7 @@ In truth, any new language in popular use today can be used to study FP, because
 
 On the other hand, OCaml, Haskell, and especially Standard ML, have extensive collection of books written by CS professors and IT practitioners alike. These books span the gamut: gentle introductions, heavy-duty industrial applications, compiler constructions, explorations of category theory, the lot.
 
-Haskell has a reputation for being difficult to learn and even more difficult to teach. Indeed, one cannot write a "Hello, World!" in Haskell, unless one understands the concept of *monad*, which is a rather high bar for novice FP programmers.
+Haskell has a reputation for being difficult to learn and even more difficult to teach. Indeed, one cannot write a "Hello, World!" in Haskell, unless one understands the concept of [*monad*](https://en.wikipedia.org/wiki/Monad_(functional_programming)), which is a rather high bar for novice FP programmers.
 
 OCaml is easier to learn, but its OO facilities may distract novices who are endeavouring to learn FP. And both Haskell and OCaml are large, complex languages that are continually evolving.
 
