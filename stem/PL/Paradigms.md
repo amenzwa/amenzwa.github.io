@@ -270,7 +270,7 @@ In the 2010s, JavaScript did to Java what Java did to C++, a decade prior. But J
 - JavaScript  `async`-`await` concurrency is LISP `call/cc` continuation
 - The much-maligned JavaScript  `eval` function is LISP `eval` function
 
-This period also saw the resurgence of interest in FP due, in part, to many JavaScripters having adopted functional reactive programming (FRP) as a means to control the complexities associated with HTTP-based distributed computing. This renewed interest in FP, in turn, heightened the industry's awareness and respect for existing FP languages like OCaml, Haskell, Scala, and Clojure, and additionally created a demand for new FP-inspired languages, like Rust, Kotlin, and Swift. If the 1990s were the era of the OO hype, the 2010s were certainly the time of the FP hype.
+This period also saw the resurgence of interest in FP due, in part, to many JavaScripters having adopted functional reactive programming (FRP) as a means to control the complexities associated with HTTP-based distributed computing. This renewed interest in FP, in turn, heightened the industry's awareness and respect for existing FP languages like OCaml, Haskell, Scala, and Clojure, and additionally created a demand for new FP-inspired languages, like Rust, Kotlin, and Swift. If the 2000s were the era of the OO hype, the 2010s were certainly the time of the FP hype.
 
 Now, in the 2020s, new languages are cropping up seemingly every few hours. The designers of these new languages keep injecting FP facilities into their languages, but it is plain to see that most programmers continue to use the OO facilities with which they are familiar. It is too early to say whether FP will be snubbed by the industry, again, in this decade.
 
