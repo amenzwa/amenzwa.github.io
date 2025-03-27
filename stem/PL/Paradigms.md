@@ -274,7 +274,7 @@ This period also saw the resurgence of interest in FP due, in part, to many Java
 
 Now, in the 2020s, new languages are cropping up seemingly every few hours. The designers of these new languages keep injecting FP facilities into their languages, but it is plain to see that most programmers continue to use the OO facilities with which they are familiar. It is too early to say whether FP will be snubbed by the industry, again, in this decade.
 
-For the time being, though, much enthusiasm for FP permeates the industry, especially in domains such as mathematical computing, parallel computing, and FRP. Hence, it is advisable for an experienced programmer to take up the FP paradigm.
+For the time being, though, much enthusiasm for FP permeates the industry, especially in domains such as mathematical formalisation, scientific parallel computing, quantitative analysis, and the like. Hence, it is advisable for an experienced programmer to take up the FP paradigm.
 
 In truth, any new language in popular use today can be used to study FP, because they all support FP, to varying degrees. But there are scant few academic textbooks for these languages. Many new languages do not have books written about them. Some have blogs. Some have a README. Some have only undocumented, uncommented, buggy code. Although a few have books, they are written by, and for, those who view programming as a trade, not a mathematical, intellectual pursuit. This situation makes it rather difficult to acquire deep insight into FP, while trying to learn one of those newfangled languages.
 
