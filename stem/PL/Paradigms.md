@@ -259,7 +259,7 @@ Again, FP returned in the 1990s, in the guises of OCaml and Haskell, both descen
 
 However, the 2000s were undoubtedly the age of Java. Almost overnight, Java displaced C++ in enterprise computing. Indeed, the original Web was fuelled by Java: web programmes ran on instances of Java VM, and web programmers ran on cups of Java. Java gave birth to C# and Scala directly, and it indirectly influenced many modern languages, including Kotlin and Swift.
 
-In the 2010s, JavaScript did to Java what Java did to C++, a decade prior. But JavaScript is Java only syntactically; semantically JavaScript is a derivative of Self and Scheme. Self is a dialect of Smalltalk, and Scheme a dialect of LISP. Although JavaScript is known in the industry as an OO language, owing to its adoption of Self's class system and prototype-based inheritance, JavaScript possesses a LISP-influenced FP core:
+In the 2010s, JavaScript did to Java what Java did to C++, a decade prior. But JavaScript is Java only syntactically; semantically JavaScript is a derivative of Self and Scheme. Self is a dialect of Smalltalk, and Scheme a dialect of LISP. Owing to its adoption of Self's class system and prototype-based inheritance, JavaScript is known in the industry as an OO language. But JavaScript possesses a LISP-influenced FP core, due to its Scheme lineage:
 
 - JavaScript, like LISP, has a weak, dynamic type system
 - JavaScript `Symbol` class is LISP `quote` function
