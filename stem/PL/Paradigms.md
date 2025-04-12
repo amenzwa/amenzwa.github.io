@@ -147,7 +147,7 @@ Smalltalk is now all but confined to a few remaining legacy business application
 
 - Smalltalk, like LISP, has a weak, dynamic type system
 - Smalltalk `#xyz` symbol is LISP `'xyz` quote
-- Smalltalk `[ ... ]` block is LISP `lambda` function
+- Smalltalk `[...]` block is LISP `lambda` function
 - Smalltalk `collect:` method is LISP `map` functional
 - Smalltalk `select:` method is LISP  `filter` functional
 - Smalltalk `inject:into:` method is LISP `foldl` functional
