@@ -6,7 +6,7 @@ title: "Publications of Amen Zwa, Esq."
 
 - Amazon Author Profile: [http://amazon.com/author/amenzwa](http://amazon.com/author/amenzwa)
 - LinkedIn Profile: [https://www.linkedin.com/in/amenzwa](https://www.linkedin.com/in/amenzwa)
-- Peer-Reviewed Academic Papers: https://tinyurl.com/3bvwv2cw
+- Academic Papers: [https://tinyurl.com/3bvwv2cw](https://tinyurl.com/3bvwv2cw)
 - Open-Source Projects: [https://github.com/amenzwa](https://github.com/amenzwa)
 
 # [Law](law/index.md)
