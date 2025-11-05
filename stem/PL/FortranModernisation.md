@@ -856,7 +856,7 @@ case b
   | true → ...
 ```
 
-***hashes***—A hash is a collection of pairs. Each such pair comprises a value `v` associated with a unique key `k`: `<k:𝛼 # v:𝛽>`. Here, the key type is $𝛼$ and the value type is $𝛽$. The symbol `#` separates the key and its value. The elements of a hash are accessed by key indexing, as in `h<k>` to retrieve the value associated with the key `k`, or by pattern matching, as in `x#xx = h` with `x` bound to the first key-value pair in `h` and the rest of the collection bound to `xx`.
+***hashes***—A hash is a collection of pairs. Each such pair comprises a value `v` associated with a unique key `k`: `<k:𝛼 # v:𝛽>`. Here, the key type is $𝛼$ and the value type is $𝛽$. The symbol `#` separates the key and its value. The elements of a hash are accessed by key indexing, as in `h<k>` to retrieve the value associated with the key `k`, or by pattern matching, as in `x,xx = h` with `x` bound to the first key-value pair in `h` and the rest of the collection bound to `xx`.
 
 ## *leverage modules*
 
