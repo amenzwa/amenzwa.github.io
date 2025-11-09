@@ -906,7 +906,7 @@ use Distance @ D
 if D.near? a b then ... else ...
 ```
 
-## *promote parallelism*
+## *appreciate parallelism*
 
 ***hardware***—Over the past 70 years, countless varieties of parallel processing hardware had been designed and equally many parallel programming models targeting those machines had been created. By and large, parallel programming facilities were added to existing sequential programming languages, post hoc. Writing parallel code in these languages, therefore, can feel unnatural and strained.
 
@@ -995,7 +995,7 @@ sync@p,q ## synchronise local core with remote core [p,q] in grid of cores
 
 Do note that the coarray facility can be transparently extended to perform hybrid computing using GPUs and TPUs. The compiler can be instructed to target those coprocessors by automatically generating coprocessor-specific instructions, without extra effort from the programmer.
 
-## *value verification*
+## *cherish verification*
 
 ***formal proofs***—In mathematics, the term "formal proof" does not mean a proof written in stodgy King's English by a tuxedo-clad mathematician; it means a fully worked out proof that does not skip any steps. Formal proofs are tedious and error prone for humans, but computers can easily verify large formal proofs. For this reason, computer scientists have obsessed over formalising mathematics, since the birth of high-level programming languages. Indeed, the invention of LISP was, in part, motivated by the desire to automate formal, mathematical proofs. But fully automated proofs are still the stuff of dreams. So, proof assistants were created as an intermediary. Proof assistants provide the means to automate the tedious, mechanical aspects of proof writing and rely on human intuition and creativity to guide the partially automated proof towards its goal. Proof assistants, like Coq, Lean, Agda, and Idris are also dependently typed functional programming languages, thanks to [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence) between logic and computing: propositions are types, and proofs of those propositions are values of those types. For a more details discussion of this important idea, see the *ML concepts* section of my article [*Programming Paradigms*](./Paradigms.md).
 
@@ -1008,7 +1008,7 @@ head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
   | x,_ → x
 ```
 
-And the following is an example of external verification that accompanies the numeric `+` operator implementation defined in the standard library. The proof of associativity, `+assoc◻`, as well as the proofs of other properties, accompany the implementation of `+`. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will do so. It stands for [*quod erat demonstrandum*](https://en.wikipedia.org/wiki/Q.E.D.) (QED), which appears at the end of each proof in mathematics. The symbol $\forall$ means "for all", as usual. The symbol $\equiv$ stands for [propositional equality](https://en.wikipedia.org/wiki/Type_theory#Equality_types) in type theory.
+And the following is an example of external verification that accompanies the numeric `+` operator implementation defined in the standard library. The proof of associativity, `+assoc◻`, as well as the proofs of other properties, accompany the implementation of `+`. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will do so. It stands for [*quod erat demonstrandum*](https://en.wikipedia.org/wiki/Q.E.D.) (QED), which appears at the end of each proof in mathematics. The symbol $\forall$ means "for all", as usual. Following Agda's convention, we use the symbol $\equiv$ stands for the type theoretic [propositional equality](https://www.math.fsu.edu/~ealdrov/teaching/2020-21/fall/MAS5932/agda/simplethms-1.html), below. Likewise, we use the $=$ symbol to represent the type theoretic definitional equality.
 
 ```
 _+_ : (𝛼 : Num) ⇒ 𝛼 → 𝛼 → 𝛼
