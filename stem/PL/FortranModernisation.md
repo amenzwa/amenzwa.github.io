@@ -959,38 +959,38 @@ There are about as many parallel programming models as there are parallel proces
 
 To put it another way, coarray is a natural extension of the sequential array processing syntax of Fortran with a parallel array processing semantics. In classic Fortran, arrays are accessed as `x(i)`, where `x` is a 1D array indexed by an integer `i`. In CAF, this array access syntax is extended with `x(i)[p]`, where the `[p]` references a copy of the array element `x(i)` in the programme running on the $p$th core. The coarray syntax similarly handles scalar values and multi-dimensional arrays. For instance, `a[p]` is the value of the scalar variable `a` in the programme running on the $p$th core, and `y(i, j)[p]` is the value of the matrix element `y(i, j)` in the programme running on the $p$th core. This syntax also allows the cores to be arranged conceptually in multiple dimensions. Hence, `a[p, q]`refers to the value of the scalar `a` in the programme running on the $(p, q)$th core in a 2D grid of cores. CAF also provides built-in facilities for data distribution and control coordination, like `sync all` and `sync p`.
 
-We now adapt CAF's coarray syntax for our new language. We use the `@[p]` syntax to index the processor cores, relying on the `@` symbol, again.
+We now adapt CAF's coarray syntax for our new language. We use the `@p` syntax to index the processor cores, relying on the `@` symbol, again. As can be seen below, we have dropped the unnecessary `[...]` indexing syntax after the `@` separator. But since we no longer have delimiters, we must avoid using the blank space: `...@p,q`, instead of `...@p, q`.
 
 ```
-a@[p] ## scalar a in programme running on core p
-x[i]@[p] ## vector element x[i] on core p
-x[~]@[~] ## whole vector x on all cores
-x[i]@[p,q] ## vector element x[i] on core [p,q] in grid of cores
-a@[p,~] ## scalar a on row p of cores in grid
-a@[~,q] ## scalar a on column q of cores in grid
+a@p ## scalar a in programme running on core p
+x[i]@p ## vector element x[i] on core p
+x[~]@~ ## whole vector x on all cores
+x[i]@p,q ## vector element x[i] on core [p,q] in grid of cores
+a@p,~ ## scalar a on row p of cores in grid
+a@~,q ## scalar a on column q of cores in grid
 ```
 
 Our version of the coarray syntax is compact and natural. Python-style negative-indexing also works for all primitive and structured data types distributed across the cores.
 
-Remote data can be received into a local variable using the left double-arrow operator `⇐`. The syntax `a@[~]` refers to all the copies of the scalar variable `a` on all the processors. And the syntax `a@[.]` refers to the local copy of `a`.
+Remote data can be received into a local variable using the left double-arrow operator `⇐`. The syntax `a@~` refers to all the copies of the scalar variable `a` on all the processors. And the syntax `a@.` refers to the local copy of `a`.
 
 ```
-a@[.] ⇐ a@[p] ## retrieve remote scalar a from core p
+a@. ⇐ a@p ## retrieve remote scalar a from core p
 ```
 
 Local data can be sent to a remote core using the right double-arrow operator `⇒`. When used with coarrays, this operator sends data to remote cores. When used in type declarations, this operator constrains the types of type parameters and value variables that later appear in the declaration. It is clear from the context in which overloaded sense the operator is being used.
 
 ```
-a@[.] ⇒ a@[~] ## send local scalar a to all remote cores
+a@. ⇒ a@~ ## send local scalar a to all remote cores
 ```
 
 Control coordination is done by the `sync` construct.
 
 ```
-sync@[~] ## synchronise all cores running programmes
-sync@[p] ## synchronise local core with remote core p
-sync@[p~q] ## synchronise local core with remote cores p~q
-sync@[p,q] ## synchronise local core with remote core [p,q] in grid of cores
+sync@~ ## synchronise all cores running programmes
+sync@p ## synchronise local core with remote core p
+sync@p~q ## synchronise local core with remote cores p~q
+sync@p,q ## synchronise local core with remote core [p,q] in grid of cores
 ```
 
 Do note that the coarray facility can be transparently extended to perform hybrid computing using GPUs and TPUs. The compiler can be instructed to target those coprocessors by automatically generating coprocessor-specific instructions, without extra effort from the programmer.
