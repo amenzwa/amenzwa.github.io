@@ -532,7 +532,7 @@ external : ℝ → ℝ
         in internal i - 2.0
 ```
 
-In accordance with the Haskell syntactic rules, the differences between `let-in` and `where` are these:
+Just like in Haskell, there is a subtle difference between `let-in` and `where`:
 
 - `let-in` creates a new block within the current scope, and the scope of the local definitions introduced is that new block.
 - `where` can only be used inside functions, and the scope of the local definitions introduced is the entire body of the function.
