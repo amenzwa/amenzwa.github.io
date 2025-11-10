@@ -555,10 +555,10 @@ now! 𝟙 ## print the current time
 
 The type `Unit → IO Unit` of the function `now!` means that the function takes an argument of the type `Unit` and returns a value of the type `IO Unit`. The [`Unit`](https://en.wikipedia.org/wiki/Unit_type) type has only one occupant, the unit value `𝟙`. That is, `𝟙 : Unit`. In Haskell, both the unit type and the unit value are written as `()`. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO Unit`—the `IO` type parameterised with the `Unit` type—represents an I/O side effect. Thus, the type expression `Unit → IO Unit` indicates that the function `now!` takes no meaningful argument and it does not return a useful value. It only causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `𝟙` as the argument is invoked thus: `now! 𝟙`. The unit value `𝟙` is defined in the standard library.
 
-Like in Haskell, our new language has the type `Void`. By definition, this type has no value inhabitants. As such, there is no such value as `𝟘 : Void`. The function `abserd`, which represents [*ex falso quodlibet*](https://en.wikipedia.org/wiki/Principle_of_explosion), has the following type.
+Like in Haskell, our new language has the type `Void`. By definition, this type has no value inhabitants. As such, there is no such value as `𝟘 : Void`. The function `absurd`, which represents [*ex falso quodlibet*](https://en.wikipedia.org/wiki/Principle_of_explosion), has the following type.
 
 ```
-abserd : Void → 𝛼
+absurd : Void → 𝛼
 ```
 
 By the way, in [category theory](https://en.wikipedia.org/wiki/Initial_and_terminal_objects), the `Void` type is called the *initial* object, and the `Unit` type is called the *terminal* object. And it is important to note that the `void` type in PP languages, like C, corresponds to the `Unit` type, and that there is no analogue of the `Void` type in PP languages.
