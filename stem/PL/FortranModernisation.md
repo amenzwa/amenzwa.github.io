@@ -565,7 +565,7 @@ By the way, in [category theory](https://en.wikipedia.org/wiki/Initial_and_termi
 
 ***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is a convention in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions with the `is...` prefix, which is the convention in most languages.
 
-The following is the type declaration of the predicate function `prime?` that checks if the argument `n` of the dependent type `(n : ℕ) > 1` (a natural number greater than $1$) is a prime number. Note that calling this function with an argument that is $\lt 1$, as in `prime? 1`, would not compile, due to type error.
+The following is the type declaration of the predicate function `prime?` that checks if the argument `n` of the dependent type `(n : ℕ) > 1` (a natural number greater than $1$) is a prime number. Note that calling this function with an argument that is $\le 1$, as in `prime? 1` or `prime? 0`, would not compile, due to type error.
 
 ```
 prime? : (n : ℕ) > 1 → 𝔹
