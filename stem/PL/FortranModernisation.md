@@ -532,10 +532,12 @@ external : ℝ → ℝ
         in internal i - 2.0
 ```
 
-The differences between `let-in` and `where` are these:
+In accordance with the Haskell syntactic rules, the differences between `let-in` and `where` are these:
 
 - `let-in` creates a new block within the current scope, and the scope of the local definitions introduced is that new block.
 - `where` can only be used inside functions, and the scope of the local definitions introduced is the entire body of the function.
+
+Incidentally, `let-in` is similar to JavaScript `let` declaration, and `where` is similar to JavaScript `var` declaration.
 
 ***mark impure functions***—As mentioned, all functions are pure by default in our new language. But impure functions that exchange data between various data structures is a common programming practice in scientific computing. So, our new language supports impure functions. But since they reduce parallelisation, impure functions should be used sparingly.
 
