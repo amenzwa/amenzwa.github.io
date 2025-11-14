@@ -346,7 +346,7 @@ Quaternion :
 
 Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `rational` is the value constructor that returns a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `rectangular` and the `polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
 
-For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the bit-level `unsigned` type, as C does.
+For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{S}$ for Unicode `Str`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The standard library defined the `Str` string type as a `Vector` of `Chr` values. The `unsigned` types, though useful for bit manipulation in a systems GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the bit-level `unsigned` type, as C does.
 
 Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts, of course.
 
@@ -691,7 +691,7 @@ A type class roughly corresponds to Java `interface`. It defines a collection of
 
 ```
 Show 𝛼 :: ## declare Show class
-  show : 𝛼 → 𝕌 ## declare show function
+  show : 𝛼 → 𝕊 ## declare show function
 ```
 
 The syntax of type class declaration and that of type declaration are very similar: we use `::` to declare a type class, but `:` to declare a type. Recall the type declaration syntax for the `Complex` type.
@@ -707,7 +707,7 @@ We now make the complex number type $\mathbb{C}$ an instance of the `Show` type 
 
 ```
 ℂ :: Show ## make ℂ type an instance of Show type class
-  show : ℂ → 𝕌 ## implement show function for complex type
+  show : ℂ → 𝕊 ## implement show function for complex type
     | rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
     | polar {r, 𝜑} → "Polar " + strOf(r) + "∠" + strOf(𝜑)
 
