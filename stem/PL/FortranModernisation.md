@@ -257,7 +257,7 @@ recursive function qsort(x) result(y)
 
 In this `qsort` implementation, the formal parameter `[]` in the first clause pattern matches an empty vector argument. Since a sorted version of an empty vector is just an empty vector, the first clause simply returns the value `[]`. The formal parameter `x,xx` in the second clause pattern matches a non-empty vector argument, with the variable `x` bound to the first element, and the variable `xx` bound to the rest of the elements. The `[l | l ← xx, l < x]` is the vector comprehension syntax that is an analogue of the $L =$ {$ l \mid l ∈ X, l \lt x$} [set comprehension](https://en.wikipedia.org/wiki/Set-builder_notation) notation in mathematics. This phrase dynamically constructs a vector that holds the filtered elements of `xx` that are less than the pivot element `x`. Likewise, the vector `[g | g ← xx, g ≥ x]`, or its analogue the set $G = ${$g \mid g ∈ X, g \ge x$}, holds the filtered elements of `xx` that are greater than or equal to `x`. Then, the sorted lesser vector, the singleton vector  `[x]` that contains the pivot element `x`, and the sorted greater vector are concatenated into the resultant vector using the `+` operator, and this result is returned from the second clause. This version of `qsort` reads like a mathematical description of the algorithm. Proximity to mathematical discourse, not hardware bits, is the driving force behind FP languages. And a scientific DSL, like Fortran, should adopt this design.
 
-In the `x,xx` syntax above, the operator `,` is aliased to the standard library vector constructor function `cons`. Applying this function to the element `x` and the vector `xx`, as in `cons x xx`, prepends `x` to the head of `xx`, as is conventionally done in FP languages since LISP. Because this construction occurs frequently in FP, we have the shorthand syntax `x,xx` for it. Note that `,` is overloaded as the vector literal constructor, as in `[1, 2, 3]`. The arithmatic operator `+` is overloaded, as well. It aliased to the standard library vector concatenation function `cat`. Hence, `cat u v` is the same as `u + v`. We pronounce `,` as *cons* (per LISP tradition) and `+`  as *cat* (per UNIX tradition), when these symbols appear in the context of vector operations.
+In the `x,xx` syntax above, the operator `,` is aliased to the standard library vector constructor function `cons`. Applying this function to the element `x` and the vector `xx`, as in `cons x xx`, prepends `x` to the head of `xx`, as is conventionally done in FP languages since LISP. Because this construction occurs frequently in FP, we have the shorthand syntax `x,xx` for it. Note that `,` is overloaded as the vector literal constructor, as in `[1, 2, 3]`. The arithmetic operator `+` is overloaded, as well. It is aliased to the standard library vector concatenation function `cat`. Hence, `cat u v` is the same as `u + v`. We pronounce `,` as *cons* (per LISP tradition) and `+`  as *cat* (per UNIX tradition), when these symbols appear in the context of vector operations.
 
 ## *forget old memories*
 
@@ -344,7 +344,7 @@ Quaternion :
 ℍ : Quaternion
 ```
 
-Above, we defined the type `Rational` as an alias of the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `rational` is the value constructor that returns a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `rectangular` and the `polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
+Above, we defined the type `Rational` as the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `rational` is the value constructor that returns a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `rectangular` and the `polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
 
 For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{S}$ for Unicode `String`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The standard library defines the `String` type as a `Vector` of `Chr` values. By convention, we use short names like `Int` and `Chr` for primitive types, but longer names like `Integer` and `String` for non-primitive types.
 
@@ -635,7 +635,7 @@ There is a finer point about the way the standard library defines the primitive 
 Next, using the `Matrix` dependent type from the standard library, we can define a $2 \times 3$ matrix of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, as follows.
 
 ```
-Matrix 𝛼 (m, n : ℕ) : [𝛼 m n]
+[𝛼 m n] : Matrix 𝛼 (m, n : ℕ)
 
 y = [ℝ 2 3] ## elements automatically initialised to 0.0
 ```
@@ -736,7 +736,7 @@ But unlike Fortran that uses arrays exclusively and unlike other FP languages th
 ***vectors***—A vector is a fixed-size 1D sequence of values. The `Vector` dependent type is defined in the standard library. It is parameterised with a type parameter $𝛼$ and it is indexed with size `n`. A zero-size vector, written `[]`, is like the empty list in other FP languages. A zero-size vector can be used like the common, variable-length list. And in keeping with the FP tradition, we add elements to the head of the vector with the syntax `x,xx` (syntactic sugar for `cons x xx`), where `x` is the new element and the `xx` is the existing vector of the same element type.
 
 ```
-Vector 𝛼 (n : ℕ) : [𝛼 n]
+[𝛼 n] : Vector 𝛼 (n : ℕ)
 𝕍 : Vector
 ```
 
@@ -772,7 +772,7 @@ x[~i] ## subvector of elements from x[0] to x[i]
 ***matrices***—A matrix is a fixed-size 2D grid of values.
 
 ```
-Matrix 𝛼 (m, n : ℕ) : [𝛼 m n]
+[𝛼 m n] : Matrix 𝛼 (m, n : ℕ)
 𝕄 : Matrix
 ```
 
@@ -799,7 +799,7 @@ y[-i,-j] ## matrix element
 ***tensors***—A tensor is a fixed-size, multi-dimensional sequence of values. A 3D cube tensor is defined thus.
 
 ```
-Tensor3 𝛼 (l, m, n : ℕ) : [𝛼 l m n]
+[𝛼 l m n] : Tensor3 𝛼 (l, m, n : ℕ)
 𝕋3 : Tensor3
 ```
 
@@ -828,7 +828,7 @@ Because the tensor access syntax is just a natural extension of the matrix acces
 The sequence syntax extends to higher dimensions. For example, a 6D tensor is defined as follows.
 
 ```
-Tensor6 𝛼 (i, j, k, l, m, n : ℕ) : [𝛼 i j k l m n]
+[𝛼 i j k l m n] : Tensor6 𝛼 (i, j, k, l, m, n : ℕ)
 𝕋6 : Tensor6
 ```
 
