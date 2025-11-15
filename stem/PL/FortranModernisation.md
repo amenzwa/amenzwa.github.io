@@ -837,7 +837,7 @@ The sequence syntax extends to higher dimensions. For example, a 6D tensor is de
 A musical note can be represented with a tuple literal as follows. The first element is the name of the note (`"C4"` for middle C), the second is the frequency ($261.624$ Hz), and the third is the MIDI number ($60$).
 
 ```
-Note : (𝕌, ℝ, ℕ) ## musical note; name, freq, MIDI
+Note : (𝕊, ℝ, ℕ) ## musical note; name, freq, MIDI
 ...
 c4 = ("C4", 261.624, 60) ## middle C
 ...
