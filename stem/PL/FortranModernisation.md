@@ -594,12 +594,14 @@ Our new language uses the operator `:` to assign types to variables, instead of 
 Our language employs a strong, static, dependent type system based on type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
 
 ```
-Vector 𝛼 (n : ℕ) : [𝛼 n]
+Vector 𝛼 (n : ℕ) :
+  | [] : Vector 𝛼 0
+  | _,_ : (n : ℕ) ⇒ 𝛼 → Vector 𝛼 n → Vector 𝛼 (n+1)
 ```
 
-Above, the type constructor `Vector` on the left side is parameterised with the type parameter $𝛼$ for the element type and is indexed by the numeric value `n` for the size. Here, $𝛼$ is an unconstrained type parameter, and `n` is a value of the natural number type $ℕ$. The value constructor `[𝛼 n]` on the right side takes a concrete type and a size value. Invoking this value constructor creates a vector of size $n$. The $i$-th element of a vector `x` is written `x[i]`, where the zero-based index $i ∈ [0, n)$, and the type of that element `x[i]` is $𝛼$. Passing $0$ for `n` to the value constructor creates a size-$0$ (empty) vector `[]`.
+Above, the type constructor `Vector` is parameterised with the type parameter $𝛼$ for the element type and is indexed by the numeric value `n` for the size. Here, $\alpha$ is an unconstrained type parameter, and `n` is a value of the natural number type $ℕ$. The value constructor `[]` creates a size-$0$ vector. The value constructor `_,_` prepends an $𝛼$-type value to a size-$n$ vector and returns a new vector of size $n + 1$. The $i$-th element of a vector `x` is written `x[i]`, where the $0$-based index $i ∈ [0, n)$ and the type of that element `x[i]` is $\alpha$.
 
-Using the `Vector` dependent type, we can define a size-$3$ vector of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, like this.
+Using the `Vector` dependent type, which is aliased to `[𝛼 n]`, we can define a size-$3$ vector of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, like this.
 
 ```
 x = [ℝ 3] ## elements automatically initialised to 0.0
@@ -632,7 +634,7 @@ Note that the type and the clausal implementation of the `tail` function, togeth
 
 There is a finer point about the way the standard library defines the primitive type $\mathbb{N}$ and its subtraction operator `-`. The definition of $\mathbb{N}$'s  `-` operator clamps the minimum result to $0$. Hence, $0 - k = 0$, by definition. That means applying `tail` to an empty vector `[]` (a vector of length $0$) type checks: the type of the argument vector is `[𝛼 0]`, and the type of the result vector is also `[𝛼 0]` where $n - 1 = 0 - 1 = 0$ by the definition of the `-` operator on $\mathbb{N}$.
 
-Next, using the `Matrix` dependent type from the standard library, we can define a $2 \times 3$ matrix of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, as follows.
+Next, using the `Matrix` dependent type from the standard library, which is aliased to `[𝛼 m n]`, we can define a $2 \times 3$ matrix of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, as follows.
 
 ```
 [𝛼 m n] : Matrix 𝛼 (m, n : ℕ)
@@ -659,7 +661,7 @@ Some types in Fortran do have a tinge of dependent types. For instance, the fixe
 
 The modern trend in programming languages is a gradual shift toward more and more typefulness. Types are no longer simple classifications of values that prohibit mixing a value of one type with a value of another incompatible type; types are now deeply enmeshed with all aspects of computing: code completion, code refactoring, correctness verification, runtime safety, and performance optimisation. As such, we programmers must change our perspective about types: we must no longer view types as combative *guards* that restrain our freedom and diminish our productivity, but instead learn to depend on them as helpful *guides* that help us produce faster, safer, verified software that are easier to comprehend and to maintain.
 
-Right, so here is a little confession: when I presented `qsort` above, I declared its type as `qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]`, which is simply typed, not dependently typed, because the main point of that earlier paragraph was the concision and clarity of our new language, not its dependent type system. That simple type, though valid, cannot express the fact that `qsort` returns a sorted version of its input vector. A fully, dependently typed version that asserts this fact is `qsort : (n : ℕ) ⇒ [ℤ n] → (xx : [ℤ n], Sorted? xx)`. Here, the return type `(xx : [ℤ n], Sorted? xx)` specifies that `qsort` returns a dependent sum $∑$, a dependent pair. The first element of the pair `xx : [ℤ n]` is a vector value of length `n`. The second element `Sorted? xx` is the dependent type indexed by the vector value `xx`, asserting that the value of this dependent type is a sorted version of `xx`, which must necessarily have the same length. The standard library defines the predicate type `Sorted?`.
+Right, so here is a little confession: when I presented `qsort` above, I declared its type as `qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]`, which is not fully, dependently typed in that it does not express the fact that `qsort` returns a sorted version of its input vector. I used a less complicated type there, because the main point of that earlier paragraph was the concision and clarity of our new language, not its dependent type system. A fully, dependently typed version that asserts the result's sorted nature is `qsort : (n : ℕ) ⇒ [ℤ n] → (xx : [ℤ n], Sorted? xx)`. Here, the return type `(xx : [ℤ n], Sorted? xx)` specifies that `qsort` returns a dependent pair. The first element of the pair `xx : [ℤ n]` is a size-$n$ vector value. The second element `Sorted? xx` is the dependent type indexed by the vector value `xx`, asserting that the value of this dependent type is a sorted version of `xx`, which must necessarily have the same length. The standard library defines the predicate type `Sorted?`.
 
 Note also that we can *check* the primality of a natural number by applying the predicate function to it as in `prime? n`, and we can *assert* the primality by creating a value whose type is `Prime?`. Thus, `p : Prime? 7` type checks, but `n : Prime? 10` does not.
 
@@ -733,7 +735,7 @@ But unlike the simple type theory, the dependent type theory has no type inferen
 
 But unlike Fortran that uses arrays exclusively and unlike other FP languages that use lists exclusively, we use fixed-size *vectors* exclusively to represent sequences. Vectors naturally extend to matrices and tensors, all of which are commonly used throughout scientific computing. Our sequence data structures are fixed size, per the FP ethos of immutability.
 
-***vectors***—A vector is a fixed-size 1D sequence of values. The `Vector` dependent type is defined in the standard library. It is parameterised with a type parameter $𝛼$ and it is indexed with size `n`. A zero-size vector, written `[]`, is like the empty list in other FP languages. A zero-size vector can be used like the common, variable-length list. And in keeping with the FP tradition, we add elements to the head of the vector with the syntax `x,xx` (syntactic sugar for `cons x xx`), where `x` is the new element and the `xx` is the existing vector of the same element type.
+***vectors***—A vector is a fixed-size 1D sequence of values. The `Vector` dependent type is defined in the standard library. It is parameterised with a type parameter $\alpha$ and it is indexed with size `n`. The standard library also defines short aliases for convenience.
 
 ```
 [𝛼 n] : Vector 𝛼 (n : ℕ)
