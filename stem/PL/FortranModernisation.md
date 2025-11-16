@@ -716,8 +716,8 @@ We now make the complex number type $\mathbb{C}$ an instance of the `Show` type 
 ```
 ℂ :: Show ## make ℂ type an instance of Show type class
   show : ℂ → 𝕊 ## implement show function for complex type
-    | rectangular {x, y} → "Rectangular " + strOf(x) + "+𝒾" + strOf(y)
-    | polar {r, 𝜑} → "Polar " + strOf(r) + "∠" + strOf(𝜑)
+    | rectangular {x, y} → "Rectangular " + show x + "+𝒾" + show y
+    | polar {r, 𝜑} → "Polar " + show r + "∠" + show 𝜑
 
 log! : ℂ → IO Unit
   | c → show c |> print! ## print formatted complex value
@@ -730,11 +730,11 @@ Incidentally, our new language supports a convenience feature commonly known in 
 ```
 ℂ :: Show
   show : ℂ → 𝕊
-    | rectangular {x, y} → "Rectangular `strOf(x)`+𝒾`strOf(y)`"
-    | polar {r, 𝜑} → "Polar `strOf(r)`∠`strOf(𝜑)`"
+    | rectangular {x, y} → "Rectangular `show x`+𝒾`show y`"
+    | polar {r, 𝜑} → "Polar `show r`∠`show 𝜑`"
 ```
 
-In languages that support string interpolation, the `{...}` syntax is used to evaluate, convert to string, and inject the resulting sub-string into the surrounding string. But the `{` and `}` are often used in printed messages to group values, thereby necessitating the braces to be escaped, as in `\{...\}`, thus degrading the convenience of string interpolation. So, in our language, we use the less-frequently used back quotes, just like in Unix bash shell.
+In languages that support string interpolation, the `{...}` syntax is used to evaluate, convert to string, and inject the resulting sub-string into the surrounding string. But the `{` and `}` are often used in printed messages to group values, thereby necessitating the braces to be escaped, as in `\{...\}`, thus degrading the convenience of string interpolation. So, in our language, we use the less-frequently used back quotes, just like in the Unix bash shell.
 
 ***remove mandatory explicit typing***—Discard the old-school explicit typing, and adopt a strong, static, dependent type system that automatically infers types for simple values, thereby alleviating the burden of explicit typing.
 
