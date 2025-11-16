@@ -725,6 +725,17 @@ log! : ℂ → IO Unit
 
 Note that Fortran supports polymorphism. Parametric polymorphism in Fortran is called *generics*. For example, using the `selected_real_kind()` procedure, the programmer may select the floating-point precision for a data structure or a procedure. Ad hoc polymorphism in Fortran is called *overloading*. It is comparable to C++ operator overloading. And with the addition of OO in the Fortran 2003 standard, it is now possible in Fortran to implement something akin to C++ *inheritance*, which is an OO way of implementing polymorphic sum type ADTs. Nevertheless, polymorphism was retrofitted into Fortran in a convoluted manner, making it rather clunky to use.
 
+Incidentally, our new language supports a convenience feature commonly known in modern languages as *string interpolation*, using which we may implement the above `show` string conversion function like this.
+
+```
+ℂ :: Show
+  show : ℂ → 𝕊
+    | rectangular {x, y} → "Rectangular `strOf(x)`+𝒾`strOf(y)`"
+    | polar {r, 𝜑} → "Polar `strOf(r)`∠`strOf(𝜑)`"
+```
+
+In languages that support string interpolation, the `{...}` syntax is used to evaluate, convert to string, and inject the resulting sub-string into the surrounding string. But the `{` and `}` are often used in printed messages to group values, thereby necessitating the braces to be escaped, as in `\{...\}`, thus degrading the convenience of string interpolation. So, in our language, we use the less-frequently used back quotes, just like in Unix bash shell.
+
 ***remove mandatory explicit typing***—Discard the old-school explicit typing, and adopt a strong, static, dependent type system that automatically infers types for simple values, thereby alleviating the burden of explicit typing.
 
 But unlike the simple type theory, the dependent type theory has no type inferencing, per se. But in practice, dependently typed languages, like Agda, Idris, and others, employ [bidirectional type checking](https://plfa.github.io/Inference/) where the type system infers types for the lower-level values based on the types of the top-level functions, which are provided by the programmer. So, in those languages, and in our new language too, the top level functions must be explicitly typed. This is no burden, however, since even in the ML family of simply typed functional languages with type inferencing, programmers, as a matter of form, provide types for functions, in order to improve readability.
