@@ -750,7 +750,11 @@ Not all is lost, however. A dependent type system does not demand blind obedienc
 - Dependent, parameterised, indexed typed—`qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]`
 - Fully-dependent, parameterised, indexed, predicated type—`qsort : (n : ℕ) ⇒ [ℤ n] → (xx : [ℤ n], Sorted? xx)`
 
-Of course, the farther we retreat from full dependence, the less precise our type specifications become and the weaker their correctness guarantees. So, wielding the power of a dependent type system is an exercise in judgement, that of balancing precision against practicality. Broadly speaking, abstract, higher-level concepts should be typed more coarsely, but concrete, lower-level concepts should be typed more finely.
+Of course, the farther we retreat from full dependence, the less precise our type specifications and the weaker their correctness guarantees.
+
+As to abstraction breaches, we may mitigate their deleterious effects on code maintenance by relying on an age-old software design principle: make higher-level concepts more abstract (less specific), but make lower-level concepts more concrete (more specific).
+
+Thus, wielding the power of a dependent type system is an exercise in judgement—that of balancing precision against practicality. This is something experienced programmers do, as a matter of course.
 
 ## *provide container types*
 
