@@ -746,7 +746,13 @@ But unlike the simple type theory, the dependent type theory has no type inferen
 
 I thank @XY@mastodon.mit.edu for taking to time to review this article and for offering this insight about the attendant difficulties of dependent types.
 
-The alternative, of course, is to adopt the strong, static, inferencing type system based on [simply typed $\lambda$-calculus](https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus), like the Hindley-Milner, used in popular languages like OCaml and Haskell. But even this apparent retrenchment offers numerous advantages over Fortran's current type system.
+But we need not despair. A dependent type system does not demand blind obedience: there is no dictum that every type must be adorned with full dependence. That is, a dependent type system permits graduated specificity. For example, we may type `qsort` with progressively finer specificity, as follows:
+
+- Simply typed (coarse)—`qsort : [ℤ] → [ℤ]`
+- Dependently typed (fine)—`qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]`
+- Fully, dependently typed (finer)—`qsort : (n : ℕ) ⇒ [ℤ n] → (xx : [ℤ n], Sorted? xx)`
+
+Of course, the farther we retreat from full dependence, the less precise our type specifications become. So, using a dependent type system is a matter of exercising judgement in balancing precision against practicality.
 
 ## *provide container types*
 
