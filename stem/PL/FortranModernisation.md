@@ -746,7 +746,7 @@ But unlike the simple type theory, the dependent type theory has no type inferen
 
 I thank @XY@mastodon.mit.edu for taking to time to review this article and for offering this insight about the attendant difficulties of dependent types.
 
-The alternative, of course, is to adopt a simple type system, like the Hindley-Milner, used in popular languages like OCaml and Haskell. But even this apparent retrenchment offers numerous advantages over Fortran's current type system.
+The alternative, of course, is to adopt the strong, static, inferencing type system based on [simply typed $\lambda$-calculus](https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus), like the Hindley-Milner, used in popular languages like OCaml and Haskell. But even this apparent retrenchment offers numerous advantages over Fortran's current type system.
 
 ## *provide container types*
 
