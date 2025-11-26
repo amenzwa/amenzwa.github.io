@@ -1067,7 +1067,7 @@ Clearly, the most practical remedy to Fortran's image problem is the following p
 
 Permit me to recapitulate. Fortran is here to stay; there is no better DSL for scientific parallel computing. But Fortran cannot revel in its past successes, touting the fact that it still works exactly as it was originally designed nearly 70 years. A language's maturity and stability are necessary, but they are insufficient; modernity and appeal are just as important for it not merely to survive but to thrive.
 
-***subversion and sedition***—Right so, I now divulge my most subversive idea regarding programming language syntax: every programmer on every project ought to be free to choose the syntax he favours. Just imagine the chaos that would spew forth, if the project manager were to permit such seditious behaviour. Well, not quite. Let me explain.
+***subversion and sedition***—Right so, I now divulge my most subversive idea regarding programming language syntax: every programmer on every project ought to be free to choose the syntax he favours. Just imagine the chaos that would spew forth, if the project manager were to countenance such seditious conduct. Well, not necessarily so. Let me explain.
 
 In the early 1980s, when IT software project sizes began to grow exponentially, we used to have fierce fights over which code formatting style was superior—tabs or spaces for indentation, how many spaces to indent, end-of-line brackets or next-line brackets, on and on. Modern customisable code formatters made those pointless disagreements moot. Something akin to this approach could be applied equally well to defuse the present religious wars over languages.
 
