@@ -1067,6 +1067,18 @@ Clearly, the most practical remedy to Fortran's image problem is the following p
 
 Permit me to recapitulate. Fortran is here to stay; there is no better DSL for scientific parallel computing. But Fortran cannot revel in its past successes, touting the fact that it still works exactly as it was originally designed nearly 70 years. A language's maturity and stability are necessary, but they are insufficient; modernity and appeal are just as important for it not merely to survive but to thrive.
 
+***subversion and sedition***—Right so, I now divulge my most subversive idea regarding programming language syntax: every programmer on every project ought to be free to choose the syntax he favours. Just imagine the chaos that would spew forth, if the project manager were to permit such seditious behaviour. Well, not quite. Let me explain.
+
+In the early 1980s, when IT software project sizes began to grow exponentially, we used to have fierce fights over which code formatting style was superior—tabs or spaces for indentation, how many spaces to indent, end-of-line brackets or next-line brackets, on and on. Modern customisable code formatters made those pointless disagreements moot. Something akin to this approach could be applied equally well to defuse the present religious wars over languages.
+
+Most language implementations now employ some form of internal representation, which is used to hold in memory the [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) (AST) structure of the code. Custom compiler frontend plug-ins transform various concrete-syntax source codes into the AST. Custom compiler backend plug-ins then transform the AST into different CPU-specific binary executables. The well-known LLVM compiler toolchain employs this strategy. This AST-borne unity hints at the possibility of mixing many different high-level languages in one project. When there is semantic proximity amongst the languages—like OCaml, F#, Reason—syntax mixing via the AST is almost a trivial matter. But it is entirely possible to mix semantically farther languages, like Rust, Swift, TypeScript, etc., with OCaml, F#, and Reason, too.
+
+Note, though, that what I am proposing goes far beyond merely mixing languages at the binary-linking level, as is commonly done today: Python code calling existing Fortran-compiled libraries, C++ code linking existing C libraries, and so on. What I envision is that, one day, every programmer on the project may choose his favourite language from a set of semantically not-too-dissimilar languages, and work on the entire code repository in his favourite syntax. This is analogous to the way we now automatically reformats the code into our preferred style, whenever we load a source file into an IDE.
+
+For example, say a project began as an OCaml project. But an experienced Rust programmer who does not know OCaml can still join this project. The IDE will transform the OCaml code into the AST and transform the AST into Rust, then present the Rust code to the programmer. The additions and modifications he makes are, of course, in Rust. But when an OCaml programmer opens his own IDE, he sees and works with only OCaml code.
+
+In that future utopia, the syntax I proposed above would be just one of countless many. I imagine that this line of technology may eventually progress to the stage where every programmer can define his own custom syntax just like he customises his own code format. This level of syntactic unity would end language lock-in, the chief cause of many a code rot throughout history.
+
 ## *references*
 
 ### FORTRAN
