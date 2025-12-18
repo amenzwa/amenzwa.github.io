@@ -420,7 +420,7 @@ In this section, I enumerate a list of books that I recommend for CS students. I
 - *[Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)*, Milewski
   - This book is perhaps the most down-to-earth introduction to category theory. It is freely downloadable. Milewski is a physicist turned programmer. His extraordinary insights into theory and practice of programming is of immense value to all CS practitioners.
 - *[Introduction to the Theory of Computation](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/ref=sr_1_1?dchild=1&keywords=computability+theory&qid=1611697616&s=books&sr=1-1)*, Sipser
-  - This book is one of the more readable books on theory of computation. It could be read by senior CS students and graduate students.
+  - This book is one of the more readable books on theory of computation. It could be read by upper-level CS undergraduate students and beginning graduate students.
 - *[Computational Complexity](https://www.amazon.com/Computational-Complexity-Perspective-Oded-Goldreich/dp/052188473X/ref=sr_1_1?dchild=1&keywords=computational+complexity+theory&qid=1611697663&s=books&sr=1-1)*, Goldreich
   - Most books on complexity theory tend to be overly complex. This book is an exception in that it is written in an accessible style. It is a good introductory book on the subject, and could be read by senior CS students and graduate students.
 - *[The Little Typer](https://www.amazon.com/Little-Typer-MIT-Press/dp/0262536439/ref=sr_1_1?dchild=1&keywords=The+Little+Typer&qid=1612639929&sr=8-1)*, Friedman
