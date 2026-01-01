@@ -44,6 +44,7 @@ Flt ## 64-bit
 
 Chracter ## Unicode character
 𝕌 : Character
+
 String ## Unicode string
 𝕊 : String
 ```
@@ -60,21 +61,44 @@ UdpHead : udpHead { src dst : Port, ## source and destination ports
 
 ```
 Complex :
-  | rectangular {x, y : ℝ}
-  | polar {r, 𝜑 : ℝ}
+  | rectangular {x y : ℝ}
+  | polar {r 𝜑 : ℝ}
 ℂ : Complex
 ```
 
 ## *expressions*
 
-- infix arithmetic and logic operators
-- condition → consequent | alternative (condition : Bol)
+```
+a × (b + c)
+
+condition : 𝔹
+...
+condition ⇒ consequent | alternative
+```
 
 ## *functions*
 
 ```
+## naïve version
 len : [𝛼] → Int
   | [] → 0
   | x,xx → 1 + len xx
+
+## tail-recursive version
+len : [𝛼] → Int
+  | xx →
+    let len' : Int → [𝛼] → Int
+          | a [] → a
+          | a x,xx → len' (a + 1) xx
+    len' 0 xx
+
+xx = [1, 2, 3, 4, 5]
+len xx ## 5
+```
+
+## *operators*
+
+```
+
 ```
 

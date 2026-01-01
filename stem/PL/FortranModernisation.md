@@ -83,7 +83,7 @@ We shall now explore these options, in depth.
 
 # OPTIONS
 
-This document was written with a design to promote discussion, but it is not a design document for a new Fortran. In other words, the recommendations given here are fragmentary ideas, not firm dicta. My aim is to lay the foundation upon which to think, talk, and transmit about the looming gloom of Fortran code rot.
+This document was written with a design to promote discussion, but it is not a design document for a new Fortran. In other words, the recommendations given here are fragmentary ideas, not firm dicta. Indeed, there may well be ambiguities in the grammar presented below. My aim here is not to be precise, but to lay the foundation upon which to think, talk, and transmit about the looming gloom of Fortran code rot.
 
 ## *translate manually*
 
