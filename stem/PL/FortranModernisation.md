@@ -187,11 +187,11 @@ p = point3d(3.0, 2.0, 1.0)
 This verbosity is gratuitous, tedious, confusing, illegible, and error-prone. The above code could be reduced to the following Haskell-like syntax in our new language.
 
 ```
-Point3D : point3d {x, y, z : ℝ} ## declare record type
+Point3D : point3d {x y z : ℝ} ## declare record type
 p = point3d {x = 3.0, y = 2.0, z = 1.0} ## define record value
 ```
 
-In the above declaration `Point3D : point3d {x, y, z : ℝ}`, the left-side `Point3D` is the type constructor and the right-side `point3d` is the value constructor that takes a record of the shape `{x, y, z : ℝ}`. For simplicity, this same syntax is used for type aliases, too. In the second line, the value constructor `point3d` is applied to the tuple $(3.0, 2.0, 1.0)$ to construct the record value `p` of type `Point3D`. The fields of this record are accessed as `p.x`, `p.y`, and `p.z`.
+In the above declaration `Point3D : point3d {x y z : ℝ}`, the left-side `Point3D` is the type constructor and the right-side `point3d` is the value constructor that takes a record of the shape `{x y z : ℝ}`, which is a record of three named $\mathbb{R}$-typed values. For simplicity, this same syntax is used for type aliases, too. In the second line, the value constructor `point3d` is applied to the value $\{3.0, 2.0, 1.0\}$ to construct the record value `p` of type `Point3D`. The fields of this record are accessed as `p.x`, `p.y`, and `p.z`.
 
 Because in a language with a simple type system, like Haskell, types and values exist in different domains, the same name (`Point3D`) can be given to the type constructor and its associated value constructor. But in a dependently typed language like ours where types can depend on values, the two coexist in the same domain and, as such, we must use different names for the type constructor (`Point3D`) and its associated value constructor (`point3d`).
 
@@ -334,17 +334,19 @@ Rational : rational {n : ℤ, q : ℤ±} ## q cannot be 0
 ℚ : Rational
 
 Complex :
-  | rectangular {x, y : ℝ}
-  | polar {r, 𝜑 : ℝ}
+  | rectangular {x y : ℝ}
+  | polar {r 𝜑 : ℝ}
 ℂ : Complex
 
 Quaternion :
   | rectangular {a : ℝ, v : [ℝ 3]}
-  | polar {m, 𝜃 : ℝ, n : [ℝ 3]}
+  | polar {m 𝜃 : ℝ, n : [ℝ 3]}
 ℍ : Quaternion
 ```
 
 Above, we defined the type `Rational` as the record `{n : ℤ, q : ℤ±}`, representing the mathematical quantity $n/d$, where $n ∈ \mathbb{Z}$ and non-zero $d ∈ \mathbb{Z}^\pm$. The left-side `Rational` is the type constructor, and the right-side `rational` is the value constructor that returns a record of the shape `{n : ℤ, q : ℤ±}`. The type `Complex` is defined to be the sum of two product types, the `rectangular` and the `polar`. That is, `Complex` is a sum-of-products type. Likewise, the type `Quaternion`.
+
+Note the use of the `,` separator to declare the elements of a record type. In the `Complex` type above, for example, like `x` and `y` elements of the `rectangular` record can be declared as `{x : ℝ, y : ℝ}`, or more succinctly as `{x y : ℝ}` without the `,` separator between the two identically typed elements.
 
 For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Chr`, $\mathbb{S}$ for Unicode `String`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The standard library defines the `String` type as a `Vector` of `Chr` values. By convention, we use short names like `Int` and `Chr` for primitive types, but longer names like `Integer` and `String` for non-primitive types.
 
@@ -612,7 +614,7 @@ x = [ℝ 3] ## elements automatically initialised to 0.0
 We may declare the type of the vector concatenation operator `+` as follows.
 
 ```
-_+_ : (n, m : ℕ) ⇒ [ℝ m] → [ℝ n] → [ℝ (m + n)]
+_+_ : (n m : ℕ) ⇒ [ℝ m] → [ℝ n] → [ℝ (m + n)]
 ```
 
 The above dependently typed function declaration enables the compiler to make a guarantee that concatenating a vector of size $m$ and a vector of size $n$ yields a vector of size $m + n$​; the code need not include runtime size checks that rob performance.
@@ -639,7 +641,7 @@ There is a finer point about the way the standard library defines the primitive 
 Next, using the `Matrix` dependent type from the standard library, which is aliased to `[𝛼 m n]`, we can define a $2 \times 3$ matrix of $\mathbb{R}$-typed elements that are automatically initialised to $0.0$, as follows.
 
 ```
-[𝛼 m n] : Matrix 𝛼 (m, n : ℕ)
+[𝛼 m n] : Matrix 𝛼 (m n : ℕ)
 
 y = [ℝ 2 3] ## elements automatically initialised to 0.0
 ```
@@ -647,8 +649,8 @@ y = [ℝ 2 3] ## elements automatically initialised to 0.0
 The transpose `⊤` and the addition `+` matrix operators are declared this way.
 
 ```
-_⊤ : (m, n : ℕ) ⇒ [𝛼 m n] → [𝛼 n m]
-_+_ : (m, n : ℕ) ⇒ [𝛼 m n] → [𝛼 m n] → [𝛼 m n]
+_⊤ : (m n : ℕ) ⇒ [𝛼 m n] → [𝛼 n m]
+_+_ : (m n : ℕ) ⇒ [𝛼 m n] → [𝛼 m n] → [𝛼 m n]
 ```
 
 The compiler can verify that transposing a matrix `y` of size $m \times n$, by invoking `y⊤`, yields a matrix of size $n \times m$. Also, the compiler will ensure that the element types and the sizes of the argument matrices are matched for the matrix addition expression `y1 + y2`. But in languages with simple type systems, these verifications can only be done by performance-sapping runtime size checks.
@@ -708,8 +710,8 @@ The syntax of type class declaration and that of type declaration are very simil
 
 ```
 Complex : ## declare Complex type
-  | rectangular {x, y : ℝ}
-  | polar {r, 𝜑 : ℝ}
+  | rectangular {x y : ℝ}
+  | polar {r 𝜑 : ℝ}
 ℂ : Complex ## alias ℂ type
 ```
 
@@ -774,7 +776,7 @@ But unlike Fortran that uses arrays exclusively and unlike other FP languages th
 The following is the syntax for creating a vector literal.
 
 ```
-e0, e1, e2 : ℝ
+e0 e1 e2 : ℝ
 ...
 x = [e0, e1, e2]
 ```
@@ -803,7 +805,7 @@ x[~i] ## subvector of elements from x[0] to x[i]
 ***matrices***—A matrix is a fixed-size 2D grid of values.
 
 ```
-[𝛼 m n] : Matrix 𝛼 (m, n : ℕ)
+[𝛼 m n] : Matrix 𝛼 (m n : ℕ)
 𝕄 : Matrix
 ```
 
@@ -830,7 +832,7 @@ y[-i,-j] ## matrix element
 ***tensors***—A tensor is a fixed-size, multi-dimensional sequence of values. A 3D cube tensor is defined thus.
 
 ```
-[𝛼 l m n] : Tensor3 𝛼 (l, m, n : ℕ)
+[𝛼 l m n] : Tensor3 𝛼 (l m n : ℕ)
 𝕋3 : Tensor3
 ```
 
@@ -859,7 +861,7 @@ Because the tensor access syntax is just a natural extension of the matrix acces
 The sequence syntax extends to higher dimensions. For example, a 6D tensor is defined as follows.
 
 ```
-[𝛼 i j k l m n] : Tensor6 𝛼 (i, j, k, l, m, n : ℕ)
+[𝛼 i j k l m n] : Tensor6 𝛼 (i j k l m n : ℕ)
 𝕋6 : Tensor6
 ```
 
@@ -887,7 +889,7 @@ c = rectangular {x = 2.0, y = 3.0} ## c of type ℂ is 2.0+𝒾3.0
 c' = {c | y = -c.y} ## c' complex conjugate is 2.0-𝒾3.0
 ```
 
-***enumerations***—An enumeration (disjoint union) is a named sum type. For example, the boolean $\mathbb{B}$ type is a sum type with nullary value constructors `false` and `true`, as in `𝔹 : false | true`. On the other hand, the complex $\mathbb{C}$ type is a sum type with value constructors `rectangular` and `polar`, each taking a record product type, as in `ℂ : rectangular{x,y:ℝ} | polar{r,𝜑:ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. Enumerations are frequently used in conjunction with records to form sum-of-product types. The data elements of an enumeration are accessed by pattern matching.
+***enumerations***—An enumeration (disjoint union) is a named sum type. For example, the boolean $\mathbb{B}$ type is a sum type with nullary value constructors `false` and `true`, as in `𝔹 : false | true`. On the other hand, the complex $\mathbb{C}$ type is a sum type with value constructors `rectangular` and `polar`, each taking a record product type, as in `ℂ : rectangular{x y : ℝ} | polar{r 𝜑 : ℝ}`. More precisely, $\mathbb{C}$ is a sum-of-products type. Enumerations are frequently used in conjunction with records to form sum-of-product types. The data elements of an enumeration are accessed by pattern matching.
 
 ```
 case b
@@ -1052,7 +1054,7 @@ And the following is an example of external verification that accompanies the nu
 ```
 _+_ : (𝛼 : Num) ⇒ 𝛼 → 𝛼 → 𝛼
   | ...
-+assoc◻ → ∀ (x, y, z : ℕ) → x + (y + z) ≡ (x + y) + z
++assoc◻ → ∀ (x y z : ℕ) → x + (y + z) ≡ (x + y) + z
 ```
 
 Using dependent types, it is possible to express programme specifications with a very high degree of precision and at the same time give correctness proofs guaranteeing that the implementation meets its specifications. This, then, is the foundation upon which verified software can be built. Both type theory and software verification are broad, deep topics well outside the bounds of this short article on Fortran modernisation. See the *references* section at the end of this article for some suggested reading on these topics.
