@@ -52,9 +52,10 @@ String ## Unicode string
 ### PRODUCT TYPES
 
 ```
-Udp : { head : UdpHead, body : U08 }
+## UDP packet
 UdpHead : udpHead { src dst : Port, ## source and destination ports
                     len chk : ℕ } ## length and checksum
+Udp : { head : UdpHead, body : U08 }
 ```
 
 ### SUM TYPES
@@ -69,11 +70,18 @@ Complex :
 ## *expressions*
 
 ```
+## arithmetic expressions
 a × (b + c)
+(b + c) ÷ a
 
-condition : 𝔹
-...
-condition ⇒ consequent | alternative
+## conditional expression
+cond ⇒ csq | alt ## cond : 𝔹, csq alt : 𝛼
+
+## case expression
+c : ℂ
+case c
+  | rectangular {x, y} → ...
+  | polar {r, 𝜑} → ...
 ```
 
 ## *functions*
@@ -86,11 +94,10 @@ len : [𝛼] → Int
 
 ## tail-recursive version
 len : [𝛼] → Int
-  | xx →
-    let len' : Int → [𝛼] → Int
-          | a [] → a
-          | a x,xx → len' (a + 1) xx
-    len' 0 xx
+  | xx → let len' : Int → [𝛼] → Int
+           | a [] → a
+           | a x,xx → len' (a + 1) xx
+         len' 0 xx
 
 xx = [1, 2, 3, 4, 5]
 len xx ## 5
@@ -99,6 +106,34 @@ len xx ## 5
 ## *operators*
 
 ```
+## logical operators
+p q : 𝔹
+¬p ## boolean not
+p ∧ q ## boolean and
+p ∨ q ## boolean or
+p ⊕ q ## boolean xor
+p = q ## boolean equal
+p ≠ q ## boolean not equal
 
+## bit manipulation operators
+a b : U08
+n : ℕ
+¬a ## unsigned 1's complement
+a ∧ b ## unsigned and
+a ∨ b ## unsigned or
+a ⊕ b ## unsigned xor
+b ↤ n ## unsignedleft shift
+b ⟲ n ## unsignedleft rotate
+b ↦ n ## unsignedright shift
+b ⟳ n ## unsignedright rotate
+a = b ## unsigned equal
+a ≠ b ## unsigned not equal
+
+## complex modulus operator
+|_| : ℂ → ℝ
+  | rectangular {x, y} → √ (x^2 + y^2)
+  | polar {r, _} → |r|
+c = rectangular {x=4.0, y=3.0} ## 4.0 + i3.0
+|c| ## 5.0
 ```
 

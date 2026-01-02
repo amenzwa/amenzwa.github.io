@@ -47,7 +47,9 @@ Because mathematical notation is meant for the human eye, the syntax is often fu
 
 ## *Post-Fix Notation*
 
-Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ in this expression is the operand delimiter, which is represented by the <kbd>ENTER</kbd> key on HP RPN calculators. Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression in one pass, using only four temporary storage locations `x`, `y`, `z`, and `t`:
+Building the symbol tree requires processor cycles and quite a lot of memory: symbol values, pointers, housekeeping information, etc. Evaluating the symbol tree to obtain the result requires additional processor cycles. However, if this mathematical expression is rewritten in the postfix notation, we get $2↵\ 5↵\ 4↵\ 2\ -\ ÷\ 8\ +\ -$. The symbol $↵$ in this expression is the operand delimiter, which is represented by the <kbd>ENTER</kbd> key on HP RPN calculators. Using an RPN calculator, we can simultaneously parse and evaluate this postfix expression in one pass, using only four temporary storage locations `x`, `y`, `z`, and `t`. The `x` register is also the display register. The `t` register is the stack-top register. As the operations consume the operands and the operands are popped off the stack, the value in the register `t` is kept the same and is copied down into the lower registers.
+
+Let us examine how the stack is used in calculations.
 
 <kbd>2</kbd><kbd>ENTER</kbd><br/>
 <kbd>5</kbd><kbd>ENTER</kbd><br/>
@@ -79,7 +81,6 @@ The above keystroke sequence means the following. Let us assume that all four re
   -  Pressing the <kbd>2</kbd> key places the value $2$ in the register `x`, and pushes its old value $4$ up into the register `y`.
   -  Pressing the <kbd>-</kbd> key performs the subtraction operation using the values in the registers `x` and `y`, subtracting the value $2$ in the register `x` from the value $4$ in the register `y`, and accumulating the result $2$ in the register `x`.
   -  The subtraction operation cleared the register `y`, which has the ripple effect of copying down the value $5$ from the register `z` down into the register `y` and the value $2$ from the top register `t` down into the register `z`.
-  -  The top register `t` is special: as the operations consume the operands and the operands are popped off the stack, the value in the register `t` is kept the same and is copied down into the lower registers.
 - <kbd>÷</kbd> → Press the <kbd>÷</kbd> key.
   - `x←5÷2=2.5000 | y←2.0000 | z←2.0000 | t←2.0000`
   - The operation divides the value $5$ in the register `y` by the value $2$ in the register `x`, and accumulates the result $2.5$ in the register `x`.
