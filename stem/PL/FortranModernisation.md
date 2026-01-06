@@ -465,7 +465,7 @@ filtered = filter (𝜆 x → x > 5) xx ## return [6, 7, 8, 9]
 
 As a scientific DSL, our new language must support FP, fully. So, it provides concise and convenient syntax for defining (abstracting) and calling (applying) functions. Fortran's current support for FP, though, leaves much to be desired: no support for lambda abstraction, no support for function composition operators, and what little functional facilities supported is syntactically cumbersome.
 
-***support clausal functions***—Named functions can be defined by multi-clause pattern matching in the new language. The following is a definition of the [complex modulus operator](https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers), which uses the [real modulus operator](https://en.wikipedia.org/wiki/Absolute_value) (absolute value).
+***support clausal functions***—Named functions can be defined by multi-clause pattern matching, in a manner similar to how Standard ML functions are defined. The following is a definition of the [complex modulus operator](https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers), which uses the [real modulus operator](https://en.wikipedia.org/wiki/Absolute_value) (absolute value).
 
 ```
 ## real modulus operator
@@ -498,6 +498,29 @@ id : 𝛼 → 𝛼
 ```
 
 What is the utility of `id`, a function that performs no transformation of its argument? A functional programming language manipulates both data and code. That is, the language is an algebra of values and functions, where `id` is the identity function of the functionals (higher-order functions), just like $0$ is the identity value of the $+$ operator and $1$ is of the $\times$ operator.
+
+***support labelled arguments***—OCaml-style labelled function arguments are useful to elucidate the meaning of those arguments at the call site.
+
+```
+filter : selector~(𝛼 → 𝔹) → vin~[𝛼] → vout~[𝛼]
+...
+filter selector~(𝜆 x → x > 5) vin~xx
+```
+
+The other use of labelled arguments is with partial applications. Below, we created multiple filtered lists (`children` and `longshanks`) by applying different selector predicates (`child?` and `tall?`) to the same partially-applied function (`selectedPeople`).
+
+```
+pp : [Person]
+...
+selectedPeople = filter vin~pp
+child? = 𝜆 p → p.age < 18 ## less than 18 years of age
+tall? = 𝜆 p → p.height >= 1.8 ## at least 1.8 m in height
+...
+children = selectedPeople selector~child?
+longshanks = selectedPeople selector~tall?
+```
+
+Above, the labelled argument syntax enables us to skip over the first-position lambda function `selector`, and apply the `pp` list of persons to the second-position `vin` to create the `selectedPeople` partially-applied function. In other words, labelled arguments add flexibility to the Haskell-style, ordered function arguments, in an analogous way labelled record fields add flexibility to the ordered tuple fields.
 
 ***support pure functions***—Fortran allows marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
 
