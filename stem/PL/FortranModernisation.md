@@ -507,7 +507,7 @@ filter : selector~(𝛼 → 𝔹) → vin~[𝛼] → vout~[𝛼]
 filter selector~(𝜆 x → x > 5) vin~xx
 ```
 
-The other use of labelled arguments is with partial applications. Below, we created multiple filtered lists (`children` and `longshanks`) by applying different selector predicates (`child?` and `tall?`) to the same partially-applied function (`selectedPeople`).
+The other use of labelled arguments is with partial applications. Below, we created multiple filtered lists (`children` and `longshanks`) by passing different selector predicates (`child?` and `tall?`) to the same partially-applied function (`selectedPeople`).
 
 ```
 pp : [Person]
@@ -520,7 +520,7 @@ children = selectedPeople selector~child?
 longshanks = selectedPeople selector~tall?
 ```
 
-Above, the labelled argument syntax enables us to skip over the first-position lambda function `selector`, and apply the `pp` list of persons to the second-position `vin` to create the `selectedPeople` partially-applied function. In other words, labelled arguments add flexibility to the Haskell-style, ordered function arguments, in an analogous way labelled record fields add flexibility to the ordered tuple fields.
+Above, the labelled argument syntax enables us to skip over the first-position argument `selector` and apply the `pp` list of persons to the second-position argument `vin`, to create the `selectedPeople` partially-applied function. Labelled arguments add flexibility to the otherwise rigidly-ordered function arguments, in an analogous way labelled record fields add flexibility to the ordered tuple fields.
 
 ***support pure functions***—Fortran allows marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
 
