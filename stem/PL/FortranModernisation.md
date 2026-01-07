@@ -348,7 +348,7 @@ Above, we defined the type `Rational` as the record `{n : ℤ, q : ℤ±}`, repr
 
 Note the use of the `,` separator to declare the elements of a record type. In the `Complex` type above, for example, like `x` and `y` elements of the `rectangular` record can be declared as `{x : ℝ, y : ℝ}`, or more succinctly as `{x y : ℝ}` without the `,` separator between the two identically typed elements.
 
-For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Character`, $\mathbb{S}$ for Unicode `String`, $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The standard library defines the `String` type as a `Vector` of `Character` values. By convention, we use short names like `Bol` and `Int` for primitive types, but longer names like `Integer` and `Vector` for non-primitive types.
+For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Character`, $\mathbb{S}$ for Unicode `String` (a list of Unicode characters `[𝕌]`), $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The standard library defines the `String` type as a `Vector` of `Character` values. By convention, we use short names like `Bol` and `Int` for primitive types, but longer names like `Integer` and `Vector` for non-primitive types.
 
 The `unsigned` types, though useful for bit manipulation in a system GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the bit-level `unsigned` type, as C does.
 
@@ -502,9 +502,9 @@ What is the utility of `id`, a function that performs no transformation of its a
 ***support labelled arguments***—OCaml-style labelled function arguments are useful to elucidate the meaning of those arguments at the call site.
 
 ```
-filter : selector~(𝛼 → 𝔹) → vin~[𝛼] → vout~[𝛼]
+filter : selector~(𝛼 → 𝔹) → vector~[𝛼] → [𝛼]
 ...
-filter selector~(𝜆 x → x > 5) vin~xx
+filter selector~(𝜆 x → x > 5) vector~xx
 ```
 
 The other use of labelled arguments is with partial applications. Below, we created multiple filtered lists (`children` and `longshanks`) by passing different selector predicates (`child?` and `tall?`) to the same partially-applied function (`selectedPeople`).
@@ -512,7 +512,7 @@ The other use of labelled arguments is with partial applications. Below, we crea
 ```
 pp : [Person]
 ...
-selectedPeople = filter vin~pp
+selectedPeople = filter vector~pp
 child? = 𝜆 p → p.age < 18 ## less than 18 years of age
 tall? = 𝜆 p → p.height >= 1.8 ## at least 1.8 m in height
 ...
@@ -520,7 +520,17 @@ children = selectedPeople selector~child?
 longshanks = selectedPeople selector~tall?
 ```
 
-Above, the labelled argument syntax enables us to skip over the first-position argument `selector` and apply the `pp` list of persons to the second-position argument `vin`, to create the `selectedPeople` partially-applied function. Labelled arguments add flexibility to the otherwise rigidly-ordered function arguments, in an analogous way labelled record fields add flexibility to the ordered tuple fields.
+Above, the labelled argument syntax enables us to skip over the first-position argument `selector` and apply the `pp` list of persons to the second-position argument `vector`, to create the `selectedPeople` partially-applied function. Labelled arguments add flexibility to the otherwise rigidly-ordered function arguments, in an analogous way labelled record fields add flexibility to the ordered tuple fields.
+
+***support optional arguments***—Another OCaml-ism our language supports is the optional arguments (with default values). Below, the function `words` breaks up the input list of characters into a list of words. The default separator is the space. The caller may supply a list of separator characters.
+
+```
+words : separator~[𝕌]=[' '] → stream~[𝕌] → [𝕊]
+...
+cc = ... ## stream of Unicode characters
+words stream~cc ## use the default ' ' separator
+words [' ', ',', ';', ':', '.'] cstr ## use the supplied separators
+```
 
 ***support pure functions***—Fortran allows marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
 
