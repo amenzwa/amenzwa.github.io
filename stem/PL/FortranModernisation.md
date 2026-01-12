@@ -83,7 +83,7 @@ We shall now explore these options, in depth.
 
 # OPTIONS
 
-This document was written with a design to promote discussion, but it is not a design document for a new Fortran. In other words, the recommendations given here are fragmentary ideas, not firm dicta. Indeed, there may well be ambiguities in the grammar presented below. My aim here is not to be precise, but to lay the foundation upon which to think, talk, and transmit about the looming gloom of Fortran code rot.
+This document was written with a design to promote discussion, but it is not a design document for a new Fortran. In other words, the recommendations given here are fragmentary ideas, not firm dicta. Indeed, there may well be ambiguities in the grammar of the syntax presented below. My aim here is not to be precise, but to lay the foundation upon which to think, talk, and transmit concerns about the looming gloom of Fortran code rot.
 
 ## *translate manually*
 
@@ -203,9 +203,9 @@ Moreover, the word "kind" is a term of art in modern type theory. It refers to a
 
 ***remove bit twiddling***—System programming languages like C, C++, Odin, and Zig need to manipulate bits, but a scientific DSL like Fortran does not need bit twiddling operators like `&`, `|`, `~`, and so on. Bits are, after all, hardware-level concepts.
 
-***remove objects***—A scientific DSL like Fortran has no need for OO. Modules, sum types, product types, functions, and functionals are more than capable of modelling mathematical and scientific concepts. Objects are commonly used to model massive tangles of interacting business processes and for hiding their convoluted, mutual mutations of each other's states. Objects are convenient (that is, expedient) for representing concepts and organising code that implements a large, sequential business application running on a uniprocessor. But objects' very nature—their propensity to hide mutating interactions—make them unsuited to implementing a large, parallel scientific application running on a multiprocessor.
+***remove objects***—A scientific DSL like Fortran has no need for OO. The usual assortment of sum types, product types, functions, functionals, type classes, and modules are more than capable of modelling mathematical and scientific concepts. Objects are commonly used to model massive tangles of interacting business processes and for hiding their convoluted, mutual mutations of each other's states. Objects are convenient (that is, expedient) for representing concepts and organising code that implements a large, sequential business application running on a uniprocessor. But objects' very nature—their propensity to hide mutating interactions—make them unsuited to implementing a large, parallel scientific application running on a multiprocessor.
 
-The key feature introduced by the Fortran 2003 standard was objects. OO was the dominant paradigm in the early 2000s, so this extension to the standard was welcomed, at the time. Today, though, it has been well established that hidden state mutations of OO are detrimental to comprehensibility of code and parallelism of execution. In my view, Fortran's adoption of OO was a mistake. Fortran has never been known for its OO prowess, unlike Simula, Smalltalk, Objective-C, C++, Java, Python, and loads of other modern languages that are ab initio objective. Moreover, just tossing objects into the standard does not make the language OO; the syntax must make creating and manipulating objects convenient and effortless. Smalltalk and Python excel in that, but Fortran fell way short. Be that as it may, given Fortran's mathematical propensities, FP is the superior suitor for Fortran than OO ever could be.
+The key feature introduced by the Fortran 2003 standard was objects. OO was the dominant paradigm in the early 2000s, so this extension to the standard was welcomed, at the time. Today, though, it has been well established that hidden state mutations of OO are detrimental to code readability and to execution parallelism. In my view, Fortran's adoption of OO was a misstep. Fortran has never been known for its OO prowess, unlike Simula, Smalltalk, Objective-C, C++, Java, Python, and loads of other modern languages that are ab initio objective. Moreover, just tossing objects into the standard does not make the language OO; the syntax must make creating and manipulating objects convenient and effortless. Smalltalk and Python excel in that, but Fortran fell way short. Be that as it may, given Fortran's mathematical propensities, FP is the superior suitor for Fortran than OO ever could be.
 
 ***trim variable declarations***—The following is a way to declare and define a two-dimensional, floating-point array in modern Fortran.
 
@@ -367,9 +367,9 @@ Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $
 - Use PascalCase for file names, and module names will be automatically given the name of the file
 - Reclaim the `.f` file name extension for the new language
 
-***standardise formatting***—When indenting, use 2 spaces, not 4 spaces, not tabs. Modern IDEs show vertical lines that demarcate indented code, so the traditional, deeper indentations are no longer necessary for legibility. Avoid blank lines as much as possible. They do not aide clarity; they just rob screen real estate.
+***standardise formatting***—When indenting, use 2 spaces, not 4 spaces, not tabs. Modern IDEs show vertical lines that demarcate indented code, so the traditional, deeper indentations are no longer necessary for legibility; they just rob horizontal screen real estate. Avoid blank lines as much as possible. They do not aide clarity; they just rob vertical screen real estate.
 
-These guidelines help contract the code in both the horizontal and the vertical directions, thus fitting more code per screen. Being able to see more code on the screen at once reduces cognitive load and excessive scrolling.
+These formatting guidelines help contract the code in both the horizontal and the vertical directions, thus fitting more code per screen. Being able to see more code on the screen at once reduces cognitive load and excessive scrolling.
 
 ***allow user-defined symbolic operators***—As the first high-level language, Fortran invented arithmetic, relational, and logic operators, but it employed `.LT.` for `<`, `.EQ.` for `==`, `.GT.` for `>`, and so on. These dotted operators may look strange to modern eyes, but they were necessary, because the teleprinters in use then had no support for mathematical symbols nor lower-case letters. In due course, languages converged on the modern, symbolic conventions for operators. Even Fortran eventually had to abandon its old style dotted operators and adopt modern symbolic operators.
 
@@ -529,7 +529,7 @@ words : separator~[𝕌]=[' '] → stream~[𝕌] → [𝕊]
 ...
 cc = ... ## stream of Unicode characters
 words stream~cc ## use the default ' ' separator
-words [' ', ',', ';', ':', '.'] cstr ## use the supplied separators
+words [' ', ',', ';', ':', '.'] cc ## use these supplied separators
 ```
 
 ***support pure functions***—Fortran allows marking functions with the `pure` keyword. In the new language, all functions are pure, by default.
@@ -616,7 +616,7 @@ n = 7
 if prime? n then ... else ...
 ```
 
-***stylistic convention***—In functional languages, the value being manipulated is passed to a function as the last argument, after the parameters that control the way the function operates: `f p1 p2 value`. This is analogous to the way Unix commands are applied to files: `cmd -p1 -p2 file`. This convention allows the creation of data processing pipelines in which functions are partially applied ([curried](https://en.wikipedia.org/wiki/Currying)) with their respective control parameters, and are then composed into a pipeline. There prebuilt pipelines may then be applied to the value, as in `value |> f p1 p2 |> g p1 p2 p3` or, equivalently, `g p1 p2 p3 <| f p1 p2 <| value`, either of which is easier to read than `g p1 p2 p3 (f p1 p2 value)`.
+***stylistic convention***—In functional languages, the value being manipulated is passed to a function as the last argument, after the parameters that control the way the function operates: `f p1 p2 value`. This is analogous to the way Unix commands are applied to files: `cmd -p1 -p2 file`. This convention allows the creation of data processing pipelines in which functions are partially applied ([curried](https://en.wikipedia.org/wiki/Currying)) with their respective control parameters, and are then composed into a pipeline. This prebuilt pipeline may then be applied to the value, as in `value |> f p1 p2 |> g p1 p2 p3` or, equivalently, `g p1 p2 p3 <| f p1 p2 <| value`, either of which is easier to read than `g p1 p2 p3 (f p1 p2 value)`.
 
 ***free methods***—Ours being a purely functional language, we have the ability to hold function values in variables. That means we may define a record whose fields are function values: methods, as it were. But FP languages do not rely on such OO techniques to model data. So, instead of implementing the `drive` method on the `Car` type and invoking it on a `car` object, as in `car.drive`, we implement the `drive` function in the `Car` module and we apply it to a `car` record, as in `drive car`. Also, we do not rely on OO class inheritance to share behaviour; instead, we use sum-of-products and type classes.
 
@@ -730,7 +730,7 @@ Sometimes, it is convenient to be able to refer by name the whole of the pattern
 f x,xx @ v → ... ## whole argument vector can be referenced in f as v
 ```
 
-***support type classes, not classes***—Fortran is a scientific DSL, and dependent algebraic data types are more than adequate for modelling scientific data. As such, there is no need for Fortran to provide object modelling facilities. To implement data hiding with abstract data types, instead of OO classes with fine-grained visibility modifiers (private, protected, and public), we rely on coarser but simpler alternative: modules containing selectively exported types and values. And to implement ad hoc polymorphism, instead of OO object inheritance, we rely on the equally-expressive, Haskell-style type classes.
+***support type classes, not object classes***—Fortran is a scientific DSL, and dependent algebraic data types are more than adequate for modelling scientific data. As such, there is no need for Fortran to provide object modelling facilities. To implement data hiding with abstract data types, instead of OO classes with fine-grained visibility modifiers (private, protected, and public), we rely on coarser but simpler alternative: modules containing selectively exported types and values. And to implement ad hoc polymorphism, instead of OO object inheritance, we rely on the equally-expressive, Haskell-style type classes.
 
 A type class roughly corresponds to Java `interface`. It defines a collection of functions (behaviours) which can be reused (inherited) by making a type an instance (implementation) of the desired type class (interface). Below, we declare the `Show` type class whose primary behaviour is to convert a value of some type $\alpha$ to a Unicode string representation.
 
@@ -777,11 +777,11 @@ In languages that support string interpolation, the `{...}` syntax is used to ev
 
 But unlike in the simple type theory, type inferencing in the dependent type theory is a difficult task. This difficulty is a consequence of the expressive power of the dependent type system: lifting complicated, runtime computations up to the type level has the effect of making type inferencing undecidable at compile-time, which is analogous to how halting is undecidable at runtime. Technically, this issue stems from the lack of an equality-deciding general algorithm in the dependent type theory.
 
-In practice, though, dependently typed languages, like Agda, Idris, and others, employ [bidirectional type checking](https://plfa.github.io/Inference/) where the type system infers types for the lower-level values based on how those values are manipulated by the top-level functions and, consequently, the programmer must specify the types of those top-level functions. So, in those languages, and in our new language too, the top-level functions must be explicitly typed. This is no burden, however, since even in the ML family of functional languages with simple, inferencing type systems, programmers, as a matter of form, provide types for top-level functions, to aid readability.
+In practice, though, dependently typed languages, like Agda, Idris, Lean, and others, employ [bidirectional type checking](https://plfa.github.io/Inference/) where the type system infers types for the lower-level values based on how those values are manipulated by the top-level functions and, consequently, the programmer must specify the types of those top-level functions. So, in those languages, and in our new language too, the top-level functions must be explicitly typed. This is no burden, however, since even in the ML family of functional languages with simple, inferencing type systems, programmers, as a matter of form, provide types for top-level functions, to aid readability.
 
 ***difficulties of dependence***—No gains in computing come free. Dependent types, too, come with their own clutch of ills. Strong type disciplines tend to detract from programming by robbing simplicity and convenience. Dependent type systems are perhaps the most complicated of type systems in use today. Even basic dependent types, like vectors and matrices, [can trip up programmers](https://lecopivo.github.io/scientific-computing-lean/Working-with-Arrays/Tensor-Operations/#Scientific-Computing-in-Lean--Working-with-Arrays--Tensor-Operations). It has also been pointed out that dependence, the very concept that is the source of the power of dependent types, [breaches the abstraction barrier](https://leanprover.github.io/functional_programming_in_lean/dependent-types/pitfalls.html) between the implementation and the interface. The correctness burden of proof, despite the aid of the proof assistant, remains squarely upon the programmers' shoulders, and dependent type systems can make it more burdensome, under some circumstances. Regardless, dependent types offer many advantages to scientific computing, and their use is, therefore, worthy of further investigation. I thank @XY@mastodon.mit.edu for taking to time to [review this article](https://mathstodon.xyz/@xy@mastodon.mit.edu/115539820242197498) and for offering this insight about the difficulties attendant to the specificity of dependent types.
 
-Not all is lost, however. A dependent type system does not demand blind obedience from the programmer: not all types need be adorned with fully-dependent regalia. That is, the programmer selects the desired level of type specificity. For example, we may type `qsort` with progressively finer specificity, as follows:
+But there is hope. A dependent type system does not demand blind obedience from the programmer: not all types need be adorned with fully-dependent regalia. That is, the programmer selects the desired level of type specificity. For example, we may type `qsort` with progressively finer specificity, as follows:
 
 - Simple, parameterised typed—`qsort : [ℤ] → [ℤ]`
 - Dependent, parameterised, indexed typed—`qsort : (n : ℕ) ⇒ [ℤ n] → [ℤ n]`
@@ -789,9 +789,9 @@ Not all is lost, however. A dependent type system does not demand blind obedienc
 
 Of course, the farther we retreat from full dependence, the less precise our type specifications and the weaker their correctness guarantees.
 
-As to abstraction breaches, we may mitigate their deleterious effects on code maintenance by relying on an age-old software design principle: make higher-level concepts more abstract (less specific), but make lower-level concepts more concrete (more specific).
+As to abstraction leakages, we may mitigate their deleterious effects on code maintenance by relying on an age-old software design principle: make broader, higher-level concepts more abstract (less specific), but make narrower, lower-level concepts more concrete (more specific).
 
-Thus, wielding the power of a dependent type system is an exercise in judgement—that of balancing precision against practicality. This is something experienced programmers do, as a matter of course.
+Thus, wielding the power of a dependent type system is an exercise in judgement—that of balancing precision against practicality. This is something experienced programmers do, as a matter of course. Moreover, our new language is a scientific DSL, with a narrowly focused use. Hence, it is entirely possible for the designers of the standard library to amass a canonical collection of dependent types and predicate types, along with the requisite proofs and prescribed usages. The reuse afforded by the standard library, coupled with the above-mentioned  design principle of graduated specificity, would alleviate much of the drudgery when implementing everyday scientific applications.
 
 ## *provide container types*
 
