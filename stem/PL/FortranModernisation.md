@@ -139,7 +139,7 @@ All modern software development projects employ several different programming la
 
 In this scenario, Fortran's core could be excised of the inessentials that it had accumulated through the decades, and be restored to its former svelte self, and its syntax will be overhauled to reflect modern thinking in language design. Much of Fortran's present bloat came from the desperate attempts to keep pace with modernity and the misguided endeavours to turn it into a GPL. Accepting Fortran's lot in life as the ultimate scientific DSL will make the language more compact, thereby making it better suited to its original purpose, once again. Indeed, it would fit the scientific DSL role better than Python, C++, or any other modern GPL.
 
-Trimming the verbose syntax and the extraneous features of Fortran is not only feasible, it is also the most sensible option. This "new Fortran" will employ the syntax and semantics of modern FP languages, like Haskell, OCaml, and F#, and incorporate features from modern proof assistants, like Agda, Idris, and Lean. But it will retain Fortran's array manipulation and parallel programming facilities. Yet, it is but a thin veneer of palatable, alternative syntax atop Fortran's core semantics. In terms of syntactic differences, this effort is analogous to what C++ is to C. And in terms of semantic differences, it is like what Agda is to Haskell. The compiler transpiles this new, higher-abstraction language down to core Fortran, then invokes the Fortran compiler to produce high-quality native binary. This is how Agda compiles its code, via Haskell, into a binary executable. And just as C++ is able to interact natively with the existing C libraries, this new language will interact natively with existing Fortran libraries.
+Trimming the verbose syntax and the extraneous features of Fortran is not only feasible, it is also the most sensible option. This "new Fortran" will employ the syntax and semantics of modern FP languages, like Haskell, OCaml, and F#, and incorporate features from modern proof assistants, like Agda, Idris, Coq, F*, and Lean. But it will retain Fortran's array manipulation and parallel programming facilities. Yet, it is but a thin veneer of palatable, alternative syntax atop Fortran's core semantics. In terms of syntactic differences, this effort is analogous to what C++ is to C. And in terms of semantic differences, it is like what Agda is to Haskell. The compiler transpiles this new, higher-abstraction language down to core Fortran, then invokes the Fortran compiler to produce high-quality native binary. This is how Agda compiles its code, via Haskell, into a binary executable. And just as C++ is able to interact natively with the existing C libraries, this new language will interact natively with existing Fortran libraries.
 
 After this modernisation, the resultant language is still Fortran in essence—a strongly, statically typed scientific DSL with built-in parallel programming facilities—only without the decades-old crust. And it provides familiar modern comforts and accoutrements that today's programmers adore. More importantly, its cohabitation with Fortran helps sustain Fortran, long into the future. Those who find it irksome to call this language the "new Fortran" may refer to it simply as $𝓕$ or $\Phi$, after its Fortran and functional roots.
 
@@ -153,7 +153,7 @@ There have been examples of languages dramatically altering their syntactic appe
 
 To the programmer, the syntax is the intimate touchpoint with a language. So, programmers grow emotionally attached to a language, mainly for its attractive, intuitive syntax. Of course, semantics is important to programmers, too, to do the job right. During the three-quarters of a century over which high-level programming languages have been in use, a handful of design philosophies and implementation practices have emerged as dominant ones. Modern languages must adhere to those good principles, to promote execution efficiency and programmer productivity. It is, therefore, important to modernise both the dated syntactic jerks and the antiquated semantics quirks of Fortran.
 
-In this section, I propose a modernised Fortran syntax that resembles the syntax of the ML family of FP languages. This choice is deliberate. First, the ML family uses the clutter-free offside rule (meaningful whitespace) of [ISWIM](https://en.wikipedia.org/wiki/ISWIM), a seminal FP research language. Although Python is of the OO lineage, it follows the offside rule. Marks for Python, there. Secondly, Fortran leans heavily towards mathematics, much like FP languages, and the most established languages in the FP paradigm belong to the ML family. Thirdly, the offside rule, together with a small collection of carefully chosen syntactic rules, yield a clean, clear, cogent syntax without parentheses, braces, commas, semicolons, and other syntactic noises, as demonstrated by Hope, Clean, Miranda, Haskell, Agda, Idris, and other descendants of ML.
+In this section, I propose a modernised Fortran syntax that resembles the syntax of the ML family of FP languages. This choice is deliberate. First, the ML family uses the clutter-free offside rule (meaningful whitespace) of [ISWIM](https://en.wikipedia.org/wiki/ISWIM), a seminal FP research language. Although Python is of the OO lineage, it follows the offside rule. Marks for Python, there. Secondly, Fortran leans heavily towards mathematics, much like FP languages, and the most established languages in the FP paradigm belong to the ML family. Thirdly, the offside rule, together with a small collection of carefully chosen syntactic rules, yield a clean, clear, cogent syntax without parentheses, braces, commas, semicolons, and other syntactic noises, as demonstrated by Hope, Clean, Miranda, Haskell, Agda, Idris, Caml, OCaml, Coq, F*, Lean, and other descendants of ML.
 
 The syntactic and semantic modifications proposed in this section, like all such proposals, are always susceptible to being dismissed as "mere preferences". The conversation, then, quickly devolves into a fight over who has a better taste. To avoid that, I have provided my reasoning behind every choice, so that it could be subjected to a reasoned critique. However, rejecting a proposal by saying, "We reject the *new*, because we have always done it the *old* way" is neither reasonable nor valid. Also, the proposal to remove the unnecessary, irrelevant, old syntax cannot be countered with, "We want that", because wants are not needs. And earlier, I have already refuted the claimed supremacy of absolute backward compatibility.
 
@@ -308,12 +308,12 @@ In our new language, $\mathbb{N}$ represents the set of zero-based natural numbe
 The standard library defines additional type aliases for convenience.
 
 ```
-ℕ+ : (n : ℕ) > 0
-ℤ- : (n : ℤ) < 0
-ℤ+ : (n : ℤ) > 0
+ℕ⁺ : (n : ℕ) > 0
+ℤ⁻ : (n : ℤ) < 0
+ℤ⁺ : (n : ℤ) > 0
 ℤ± : (n : ℤ) ≠ 0
-ℝ- : (r : ℝ) < 0.0
-ℝ+ : (r : ℝ) > 0.0
+ℝ⁻ : (r : ℝ) < 0.0
+ℝ⁺ : (r : ℝ) > 0.0
 ℝ± : (r : ℝ) ≠ 0.0
 ```
 
@@ -475,7 +475,7 @@ As a scientific DSL, our new language must support FP, fully. So, it provides co
 
 ## complex modulus operator
 |_| : ℂ → ℝ
-  | rectangular {x, y} → √ (x^2 + y^2)
+  | rectangular {x, y} → √ (x² + y²) ## _² is written _^2
   | polar {r, _} → |r|
 
 c = rectangular {x = 4.0, y = 3.0}
@@ -590,9 +590,9 @@ now! : Unit → IO Unit
 now! 𝟙 ## print the current time
 ```
 
-The type `Unit → IO Unit` of the function `now!` means that the function takes an argument of the type `Unit` and returns a value of the type `IO Unit`. The [`Unit`](https://en.wikipedia.org/wiki/Unit_type) type (sometimes referred to as $⊤$ type) has only one inhabitant, the unit value `𝟙`. That is, `𝟙 : Unit`. In Haskell, both the unit type and the unit value are written as `()`. This works, because Haskell's simple type system segregates types from values. Since our dependent type system melds types and values, we must necessarily employ different names for those concepts. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO Unit`—the `IO` type parameterised with the `Unit` type—represents an I/O side effect. Thus, the type expression `Unit → IO Unit` indicates that the function `now!` takes no meaningful argument and it does not return a useful value. It only causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `𝟙` as the argument is invoked thus: `now! 𝟙`. The unit value `𝟙` is defined in the standard library.
+The type `Unit → IO Unit` of the function `now!` means that the function takes an argument of the type `Unit` and returns a value of the type `IO Unit`. The [`Unit`](https://en.wikipedia.org/wiki/Unit_type) type (sometimes referred to as the $⊤$ type) has only one inhabitant, the unit value `𝟙`. That is, `𝟙 : Unit`. In Haskell, both the unit type and the unit value are written as `()`. This works, because Haskell's simple type system segregates types from values. Since our dependent type system melds types and values, we must necessarily employ different names for those concepts. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO Unit`—the `IO` type parameterised with the `Unit` type—represents an I/O side effect. Thus, the type expression `Unit → IO Unit` indicates that the function `now!` takes no meaningful argument and it does not return a useful value. It only causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `𝟙` as the argument is invoked thus: `now! 𝟙`. The unit value `𝟙` is defined in the standard library.
 
-Like in Haskell, our new language has the type `Void`. By definition, the `Void` type (sometimes referred to as $⊥$ type) has no value inhabitants. As such, there is no such value as `𝟘 : Void`. The function `absurd`, which represents [*ex falso quodlibet*](https://en.wikipedia.org/wiki/Principle_of_explosion), has the following type.
+Like in Haskell, our new language has the type `Void`. By definition, the `Void` type (sometimes referred to as the $⊥$ type) has no value inhabitants. As such, there is no such value as `𝟘 : Void`. The function `absurd`, which represents [*ex falso quodlibet*](https://en.wikipedia.org/wiki/Principle_of_explosion), has the following type.
 
 ```
 absurd : Void → 𝛼
@@ -602,10 +602,10 @@ By the way, in [category theory](https://en.wikipedia.org/wiki/Initial_and_termi
 
 ***mark predicate functions***—Predicate functions—those that check a condition on the argument and return a $\mathbb{B}$ value—must be marked with the `?` symbol, which indicates the interrogatory nature of predicate functions. This, too, is a convention in Scheme, but it is mandatory in our new language. Visually, it is more succinct and more distinctive than naming predicate functions with the `is...` prefix, which is the convention in most languages.
 
-The following is the type declaration of the predicate function `prime?` that checks if the argument `n` of the dependent type `(n : ℕ) > 1` (a natural number greater than $1$) is a prime number. Note that calling this function with an argument that is $\le 1$, as in `prime? 1` or `prime? 0`, would not compile, due to type error.
+The following is the type declaration of the predicate function `prime?` that checks if the argument `n` of the dependent type `(n : ℕ) ⇒ n > 1` (a natural number greater than $1$) is a prime number. Note that calling this function with an argument that is $\le 1$, as in `prime? 1` or `prime? 0`, would not compile, due to type error.
 
 ```
-prime? : (n : ℕ) > 1 → 𝔹
+prime? : (n : ℕ) ⇒ n > 1 → 𝔹
 ```
 
 This predicate can be used in an `if-then-else` conditional.
@@ -626,7 +626,7 @@ if prime? n then ... else ...
 
 In a [parametric type](https://en.wikipedia.org/wiki/Parametric_polymorphism) system, types can be parameterised with other types. That is, types can depend on other types: `Vector 𝛼` means "an arbitrary-length vector of $𝛼$-typed elements"—essentially, a list. In a dependent type system, types can additionally depend on (be indexed with) values of some type: `Vector 𝛼 n`, where `n` is a value of type $\mathbb{N}$, means "a size-$n$ vector of $𝛼$-typed elements". By convention, we name type parameters of a dependent type using lower-case Greek letters $\alpha$, $\beta$, etc., and values indices of a dependent type using lower-case Roman letters `m`, `n`, etc. We computer scientists admire the classicists, sometimes a bit too much.
 
-Our new language uses the operator `:` to assign types to variables, instead of using `::` as in Fortran and Haskell. In dependently typed languages, types are first-class values, so expressions involving types are quite common. As such, we use the less noisy `:` for type assignment. This convention is common among dependently typed languages, including Coq, Lean, Agda, and Idris.
+Our new language uses the operator `:` to assign types to variables, instead of using `::` as in Fortran and Haskell. In dependently typed languages, types are first-class values, so expressions involving types are quite common. As such, we use the less noisy `:` for type assignment. This convention is common among dependently typed languages, including Coq, F*, Lean, Agda, and Idris.
 
 Our language employs a strong, static, dependent type system based on type theories, such as Martin-Löf's [Intuitionistic Type Theory](https://en.wikipedia.org/wiki/Intuitionistic_type_theory), Girard's [System F](https://en.wikipedia.org/wiki/System_F), or Coquand's [Calculus of Constructions](https://en.wikipedia.org/wiki/Calculus_of_constructions). The standard library `Vector` type is an example of a dependent type.
 
@@ -655,7 +655,7 @@ The above dependently typed function declaration enables the compiler to make a 
 We may define the `head` and `tail` vector functions as follows.
 
 ```
-head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
+head : (n : ℕ⁺) ⇒ [𝛼 n] → 𝛼
   | x,_ → x
 
 tail : (n : ℕ) ⇒ [𝛼 n] → [𝛼 (n - 1)]
@@ -665,7 +665,7 @@ tail : (n : ℕ) ⇒ [𝛼 n] → [𝛼 (n - 1)]
 
 In languages that employ the simple type system, like ML, OCaml, or Haskell, the `head` function throws a $⊥$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type expression prevents the user from passing an empty vector `[]` to `head`, during compilation, thus eliminating performance-sapping runtime checks. Let us see how this works.
 
-In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ+) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, because that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector, without a runtime size check. This is an example of using dependently typed arguments to specify precisely the *preconditions* of functions.
+In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ⁺) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, because that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector, without a runtime size check. This is an example of using dependently typed arguments to specify precisely the *preconditions* of functions.
 
 Note that the type and the clausal implementation of the `tail` function, together, guarantee the following: if the argument vector is of size $n = 0$, the result vector will be `[]`; but if the argument vector is of size $n > 1$, the result vector will be of size $n - 1$. This is an example of using dependently typed results to specify precisely the *postconditions* of functions.
 
@@ -777,7 +777,7 @@ In languages that support string interpolation, the `{...}` syntax is used to ev
 
 But unlike in the simple type theory, type inferencing in the dependent type theory is a difficult task. This difficulty is a consequence of the expressive power of the dependent type system: lifting complicated, runtime computations up to the type level has the effect of making type inferencing undecidable at compile-time, which is analogous to how halting is undecidable at runtime. Technically, this issue stems from the lack of an equality-deciding general algorithm in the dependent type theory.
 
-In practice, though, dependently typed languages, like Agda, Idris, Lean, and others, employ [bidirectional type checking](https://plfa.github.io/Inference/) where the type system infers types for the lower-level values based on how those values are manipulated by the top-level functions and, consequently, the programmer must specify the types of those top-level functions. So, in those languages, and in our new language too, the top-level functions must be explicitly typed. This is no burden, however, since even in the ML family of functional languages with simple, inferencing type systems, programmers, as a matter of form, provide types for top-level functions, to aid readability.
+In practice, though, dependently typed languages, like Agda, Idris, Coq, F*, Lean, and others, employ [bidirectional type checking](https://plfa.github.io/Inference/) where the type system infers types for the lower-level values based on how those values are manipulated by the top-level functions and, consequently, the programmer must specify the types of those top-level functions. So, in those languages, and in our new language too, the top-level functions must be explicitly typed. This is no burden, however, since even in the ML family of functional languages with simple, inferencing type systems, programmers, as a matter of form, provide types for top-level functions, to aid readability.
 
 ***difficulties of dependence***—No gains in computing come free. Dependent types, too, come with their own clutch of ills. Strong type disciplines tend to detract from programming by robbing simplicity and convenience. Dependent type systems are perhaps the most complicated of type systems in use today. Even basic dependent types, like vectors and matrices, [can trip up programmers](https://lecopivo.github.io/scientific-computing-lean/Working-with-Arrays/Tensor-Operations/#Scientific-Computing-in-Lean--Working-with-Arrays--Tensor-Operations). It has also been pointed out that dependence, the very concept that is the source of the power of dependent types, [breaches the abstraction barrier](https://leanprover.github.io/functional_programming_in_lean/dependent-types/pitfalls.html) between the implementation and the interface. The correctness burden of proof, despite the aid of the proof assistant, remains squarely upon the programmers' shoulders, and dependent type systems can make it more burdensome, under some circumstances. Regardless, dependent types offer many advantages to scientific computing, and their use is, therefore, worthy of further investigation. I thank @XY@mastodon.mit.edu for taking to time to [review this article](https://mathstodon.xyz/@xy@mastodon.mit.edu/115539820242197498) and for offering this insight about the difficulties attendant to the specificity of dependent types.
 
@@ -1071,14 +1071,14 @@ Do note that the coarray facility can be transparently extended to perform hybri
 
 ## *cherish verification*
 
-***formal proofs***—In mathematics, the term "formal proof" does not mean a proof written in stodgy King's English by a tuxedo-clad mathematician; it means a fully worked out proof that does not skip any steps. Formal proofs are tedious and error prone for humans, but computers can easily verify large formal proofs. For this reason, computer scientists have obsessed over formalising mathematics, since the birth of high-level programming languages. Indeed, the invention of LISP was, in part, motivated by the desire to automate formal, mathematical proofs. But fully automated proofs are still the stuff of dreams. So, proof assistants were created as an intermediary. Proof assistants provide the means to automate the tedious, mechanical aspects of proof writing and rely on human intuition and creativity to guide the partially automated proof towards its goal. Proof assistants, like Coq, Lean, Agda, and Idris are also dependently typed functional programming languages, thanks to [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence) between logic and computing: propositions are types, and proofs of those propositions are values of those types. For a more details discussion of this important idea, see the *ML concepts* section of my article [*Programming Paradigms*](./Paradigms.md).
+***formal proofs***—In mathematics, the term "formal proof" does not mean a proof written in stodgy King's English by a tuxedo-clad mathematician; it means a fully worked out proof that does not skip any steps. Formal proofs are tedious and error prone for humans, but computers can easily verify large formal proofs. For this reason, computer scientists have obsessed over formalising mathematics, since the birth of high-level programming languages. Indeed, the invention of LISP was, in part, motivated by the desire to automate formal, mathematical proofs. But fully automated proofs are still the stuff of dreams. So, proof assistants were created as an intermediary. Proof assistants provide the means to automate the tedious, mechanical aspects of proof writing and rely on human intuition and creativity to guide the partially automated proof towards its goal. Proof assistants, like Coq, F*, Lean, Agda, and Idris are also dependently typed functional programming languages, thanks to [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence) between logic and computing: propositions are types, and proofs of those propositions are values of those types. For a more details discussion of this important idea, see the *ML concepts* section of my article [*Programming Paradigms*](./Paradigms.md).
 
 Our new dependently typed functional language, too, is both an FP language and a proof assistant. That means we can write both the algorithm and the formal proof that verifies its correctness in the same piece of code. There are two kinds of formal verifications: internal and external. In internal verification, the proof is built into the code that implements the algorithm, whereas in external verification, a separate proof code accompanies the algorithm implementation.
 
-The implementation of the vector `head` function mentioned above is an example of internal verification. The type `(n : ℕ+) ⇒ [𝛼 n] → 𝛼` encodes the specification that `head` does not accept zero-length vectors.
+The implementation of the vector `head` function mentioned above is an example of internal verification. The type `(n : ℕ⁺) ⇒ [𝛼 n] → 𝛼` encodes the specification that `head` does not accept zero-length vectors.
 
 ```
-head : (n : ℕ+) ⇒ [𝛼 n] → 𝛼
+head : (n : ℕ⁺) ⇒ [𝛼 n] → 𝛼
   | x,_ → x
 ```
 
