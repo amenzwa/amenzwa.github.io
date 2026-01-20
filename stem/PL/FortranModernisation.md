@@ -319,7 +319,7 @@ The standard library defines additional type aliases for convenience.
 
 $\mathbb{N}^+$ represents the set of non-zero natural numbers (counting numbers), $\mathbb{Z}^-$ represents the set of non-zero negative integers, $\mathbb{Z}^+$ represents the set of non-zero positive integers, and $\mathbb{Z}^\pm$ represents the set of non-zero integers. Similarly, $\mathbb{R}^-$ represents the set of non-zero negative reals, $\mathbb{R}^+$ represents the set of non-zero positive reals, and $\mathbb{R}^\pm$ represents the set of non-zero reals.
 
-Using the $\mathbb{R}^\pm$ type, for example, we may express the reciprocal of the real number `x`, without worrying about the $\bot$ at runtime, because the type system guarantees so.
+Using the $\mathbb{R}^\pm$ type, for example, we may express the reciprocal of the real number `x`, without worrying about the $⊥$ at runtime, because the type system guarantees so.
 
 ```
 x : ℝ± ## x cannot be 0.0
@@ -352,7 +352,7 @@ For convenience and concision, the following shorthand type aliases are provided
 
 The `unsigned` types, though useful for bit manipulation in a system GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the bit-level `unsigned` type, as C does.
 
-Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $\le$, $\ge$, $\sqrt{}$, $\infty$, $\bot$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts, of course.
+Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $\le$, $\ge$, $\sqrt{}$, $∞$, $⊥$, $⊤$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts, of course.
 
 ***rename derived type***—Calling a user-defined product type a "derived type" is courting trouble, because it is a term of art in OO, and most newcomers to Fortran today would already know OO quite well. Instead, simply call the user-defined product type a "record", just like every other modern language. Redefining buzzwords just to be different causes confusion without offering benefits.
 
@@ -590,9 +590,9 @@ now! : Unit → IO Unit
 now! 𝟙 ## print the current time
 ```
 
-The type `Unit → IO Unit` of the function `now!` means that the function takes an argument of the type `Unit` and returns a value of the type `IO Unit`. The [`Unit`](https://en.wikipedia.org/wiki/Unit_type) type has only one occupant, the unit value `𝟙`. That is, `𝟙 : Unit`. In Haskell, both the unit type and the unit value are written as `()`. This works, because Haskell's simple type system segregates types from values. Since our dependent type system melds types and values, we must necessarily employ different names for those concepts. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO Unit`—the `IO` type parameterised with the `Unit` type—represents an I/O side effect. Thus, the type expression `Unit → IO Unit` indicates that the function `now!` takes no meaningful argument and it does not return a useful value. It only causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `𝟙` as the argument is invoked thus: `now! 𝟙`. The unit value `𝟙` is defined in the standard library.
+The type `Unit → IO Unit` of the function `now!` means that the function takes an argument of the type `Unit` and returns a value of the type `IO Unit`. The [`Unit`](https://en.wikipedia.org/wiki/Unit_type) type (sometimes referred to as $⊤$ type) has only one inhabitant, the unit value `𝟙`. That is, `𝟙 : Unit`. In Haskell, both the unit type and the unit value are written as `()`. This works, because Haskell's simple type system segregates types from values. Since our dependent type system melds types and values, we must necessarily employ different names for those concepts. The unit value cannot be manipulated. That is, it cannot be used to perform meaningful computation. Its only use is to cause side effects. The return type `IO Unit`—the `IO` type parameterised with the `Unit` type—represents an I/O side effect. Thus, the type expression `Unit → IO Unit` indicates that the function `now!` takes no meaningful argument and it does not return a useful value. It only causes an I/O side effect, which in this case is to print today's date to the console. A function, like `now!`, that takes the unit value `𝟙` as the argument is invoked thus: `now! 𝟙`. The unit value `𝟙` is defined in the standard library.
 
-Like in Haskell, our new language has the type `Void`. By definition, this type has no value inhabitants. As such, there is no such value as `𝟘 : Void`. The function `absurd`, which represents [*ex falso quodlibet*](https://en.wikipedia.org/wiki/Principle_of_explosion), has the following type.
+Like in Haskell, our new language has the type `Void`. By definition, the `Void` type (sometimes referred to as $⊥$ type) has no value inhabitants. As such, there is no such value as `𝟘 : Void`. The function `absurd`, which represents [*ex falso quodlibet*](https://en.wikipedia.org/wiki/Principle_of_explosion), has the following type.
 
 ```
 absurd : Void → 𝛼
@@ -663,11 +663,11 @@ tail : (n : ℕ) ⇒ [𝛼 n] → [𝛼 (n - 1)]
   | _,xx → xx
 ```
 
-In languages that employ the simple type system, like ML, OCaml, or Haskell, the `head` function throws a $\bot$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type expression prevents the user from passing an empty vector `[]` to `head`, during compilation, thus eliminating performance-sapping runtime checks. Let us see how this works.
+In languages that employ the simple type system, like ML, OCaml, or Haskell, the `head` function throws a $⊥$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type expression prevents the user from passing an empty vector `[]` to `head`, during compilation, thus eliminating performance-sapping runtime checks. Let us see how this works.
 
-In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ+) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, because that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector, without a runtime size check. This is an example of using dependent types to specify precisely the *precondition* of functions.
+In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ+) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, because that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector, without a runtime size check. This is an example of using dependently typed arguments to specify precisely the *preconditions* of functions.
 
-Note that the type and the clausal implementation of the `tail` function, together, guarantee the following: if the argument vector is of size $n = 0$, the result vector will be `[]`; but if the argument vector is of size $n > 1$, the result vector will be of size $n - 1$. This is an example of using dependent types to specify precisely the *postcondition* of functions.
+Note that the type and the clausal implementation of the `tail` function, together, guarantee the following: if the argument vector is of size $n = 0$, the result vector will be `[]`; but if the argument vector is of size $n > 1$, the result vector will be of size $n - 1$. This is an example of using dependently typed results to specify precisely the *postconditions* of functions.
 
 There is a finer point about the way the standard library defines the primitive type $\mathbb{N}$ and its subtraction operator `-`. The definition of $\mathbb{N}$'s  `-` operator clamps the minimum result to $0$. Hence, $0 - k = 0$, by definition. That means applying `tail` to an empty vector `[]` (a vector of length $0$) type checks: the type of the argument vector is `[𝛼 0]`, and the type of the result vector is also `[𝛼 0]` where $n - 1 = 0 - 1 = 0$ by the definition of the `-` operator on $\mathbb{N}$.
 
@@ -679,14 +679,14 @@ Next, using the `Matrix` dependent type from the standard library, which is alia
 y = [ℝ 2 3] ## elements automatically initialised to 0.0
 ```
 
-The transpose `⊤` and the addition `+` matrix operators are declared this way.
+The transpose `ᵀ` and the addition `+` matrix operators are declared this way.
 
 ```
-_⊤ : (m n : ℕ) ⇒ [𝛼 m n] → [𝛼 n m]
+_ᵀ : (m n : ℕ) ⇒ [𝛼 m n] → [𝛼 n m]
 _+_ : (m n : ℕ) ⇒ [𝛼 m n] → [𝛼 m n] → [𝛼 m n]
 ```
 
-The compiler can verify that transposing a matrix `y` of size $m \times n$, by invoking `y⊤`, yields a matrix of size $n \times m$. Also, the compiler will ensure that the element types and the sizes of the argument matrices are matched for the matrix addition expression `y1 + y2`. But in languages with simple type systems, these verifications can only be done by performance-sapping runtime size checks.
+The compiler can verify that transposing a matrix `y` of size $m \times n$, by invoking `yᵀ`, yields a matrix of size $n \times m$. Also, the compiler will ensure that the element types and the sizes of the argument matrices are matched for the matrix addition expression `y1 + y2`. But in languages with simple type systems, these verifications can only be done by performance-sapping runtime size checks.
 
 A dependent type system additionally provides advanced types that a simpler type system like the [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) cannot. A [dependent product type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A0_type) $\Pi$ (that is, a dependent function type) corresponds to universal quantification $∀$ of predicate logic. A [dependent sum type](https://en.wikipedia.org/wiki/Dependent_type#%CE%A3_type) $\Sigma$ (dependent pair type) corresponds to existential quantification $∃$ of predicate logic.
 
