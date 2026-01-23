@@ -308,7 +308,6 @@ In our new language, $\mathbb{N}$ represents the set of zero-based natural numbe
 The standard library defines additional type aliases for convenience.
 
 ```
-ℕ⁺ : (n : ℕ) > 0
 ℤ⁻ : (n : ℤ) < 0
 ℤ⁺ : (n : ℤ) > 0
 ℤ± : (n : ℤ) ≠ 0
@@ -317,7 +316,7 @@ The standard library defines additional type aliases for convenience.
 ℝ± : (r : ℝ) ≠ 0.0
 ```
 
-$\mathbb{N}^+$ represents the set of non-zero natural numbers (counting numbers), $\mathbb{Z}^-$ represents the set of non-zero negative integers, $\mathbb{Z}^+$ represents the set of non-zero positive integers, and $\mathbb{Z}^\pm$ represents the set of non-zero integers. Similarly, $\mathbb{R}^-$ represents the set of non-zero negative reals, $\mathbb{R}^+$ represents the set of non-zero positive reals, and $\mathbb{R}^\pm$ represents the set of non-zero reals.
+$\mathbb{Z}^-$ represents the set of non-zero negative integers, $\mathbb{Z}^+$ represents the set of non-zero positive integers (counting numbers), and $\mathbb{Z}^\pm$ represents the set of non-zero integers. Similarly, $\mathbb{R}^-$ represents the set of non-zero negative reals, $\mathbb{R}^+$ represents the set of non-zero positive reals, and $\mathbb{R}^\pm$ represents the set of non-zero reals.
 
 Using the $\mathbb{R}^\pm$ type, for example, we may express the reciprocal of the real number `x`, without worrying about the $⊥$ at runtime, because the type system guarantees so.
 
@@ -350,7 +349,7 @@ Note the use of the `,` separator to declare the elements of a record type. In t
 
 For convenience and concision, the following shorthand type aliases are provided: $\mathbb{B}$ for `Bol`, $\mathbb{U}$ for Unicode `Character`, $\mathbb{S}$ for Unicode `String` (a list of Unicode characters `[𝕌]`), $\mathbb{N}$ for `Nat`, $\mathbb{Z}$ for `Int`, $\mathbb{Q}$ for `Rational`, $\mathbb{R}$ for `Flt`, $\mathbb{C}$ for `Complex`, $\mathbb{H}$ for Hamiltonian `Quaternion`, $\mathbb{V}$ for `Vector`, $\mathbb{M}$ for `Matrix`, and $\mathbb{T}$ for `Tensor` of three or more dimensions. The standard library defines the `String` type as a `Vector` of `Character` values. By convention, we use short names like `Bol` and `Int` for primitive types, but longer names like `Integer` and `Vector` for non-primitive types.
 
-The `unsigned` types, though useful for bit manipulation in a system GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{N}^+$. Our new language supports both natural numbers and counting numbers, but not the bit-level `unsigned` type, as C does.
+The `unsigned` types, though useful for bit manipulation in a system GPL like C, are useless in a scientific DSL like Fortran, except to represent natural numbers $\mathbb{N}$ and counting numbers $\mathbb{Z}^+$. Our new language supports both natural numbers and counting numbers, but not the bit-level `unsigned` type, as C does.
 
 Unicode symbols can be used in the code for identifier names: $\pi$, $\sigma$, $\le$, $\ge$, $\sqrt{}$, $∞$, $⊥$, $⊤$, $\lnot$, $\land$, $\lor$, $\emptyset$, $\otimes$, $\oplus$, etc. These symbols are entered using standard [$\LaTeX$](https://en.wikipedia.org/wiki/LaTeX) commands, as is done in Agda. IDEs can provide keyboard shortcuts, of course.
 
@@ -556,7 +555,7 @@ Compare that grotesque, bloated Fortran code to the equivalent, svelte code in t
 ```
 external : ℝ → ℝ
   | i → internal i - 2.0
-    where internal : ℝ → ℝ | x → x^3.0
+    where internal : ℝ → ℝ | x → x³
 ```
 
 The `where` clause in this code is analogous to the $where$ clause in mathematics—it provides a succinct way to create local definitions. The scope of the function `internal` is the body of the function `external`.
@@ -565,7 +564,7 @@ Note that, instead of the `where` clause, the `let-in` construct can be used to 
 
 ```
 external : ℝ → ℝ
-  | i → let internal : ℝ → ℝ | x → x^3.0
+  | i → let internal : ℝ → ℝ | x → x³
         in internal i - 2.0
 ```
 
@@ -655,7 +654,7 @@ The above dependently typed function declaration enables the compiler to make a 
 We may define the `head` and `tail` vector functions as follows.
 
 ```
-head : (n : ℕ⁺) ⇒ [𝛼 n] → 𝛼
+head : (n : ℤ⁺) ⇒ [𝛼 n] → 𝛼
   | x,_ → x
 
 tail : (n : ℕ) ⇒ [𝛼 n] → [𝛼 (n - 1)]
@@ -665,7 +664,7 @@ tail : (n : ℕ) ⇒ [𝛼 n] → [𝛼 (n - 1)]
 
 In languages that employ the simple type system, like ML, OCaml, or Haskell, the `head` function throws a $⊥$ at runtime, when passed an empty list `[]`. But in our dependently typed language, the type expression prevents the user from passing an empty vector `[]` to `head`, during compilation, thus eliminating performance-sapping runtime checks. Let us see how this works.
 
-In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℕ⁺) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero natural number $\mathbb{N}^+$. As such, passing a zero-size vector to `head` is a type error, because that makes the size value $n = 0 ∉ \mathbb{N}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector, without a runtime size check. This is an example of using dependently typed arguments to specify precisely the *preconditions* of functions.
+In the definition of the vector type above, the index variable `n` is zero-based, because its type is natural number $\mathbb{N}$. But the double-arrow type constraint syntax `(n : ℤ⁺) ⇒` in the type expression of `head` locally alters the type of `n` to be non-zero integers $\mathbb{Z}^+$. As such, passing a zero-size vector to `head` is a type error, because that makes the size value $n = 0 ∉ \mathbb{Z}^+$. Since the compiler has already guaranteed the argument vector `[𝛼 n]` passed to `head` is non-empty, `head` can safely extract the first element `x` from the argument vector, without a runtime size check. This is an example of using dependently typed arguments to specify precisely the *preconditions* of functions.
 
 Note that the type and the clausal implementation of the `tail` function, together, guarantee the following: if the argument vector is of size $n = 0$, the result vector will be `[]`; but if the argument vector is of size $n > 1$, the result vector will be of size $n - 1$. This is an example of using dependently typed results to specify precisely the *postconditions* of functions.
 
@@ -1075,10 +1074,10 @@ Do note that the coarray facility can be transparently extended to perform hybri
 
 Our new dependently typed functional language, too, is both an FP language and a proof assistant. That means we can write both the algorithm and the formal proof that verifies its correctness in the same piece of code. There are two kinds of formal verifications: internal and external. In internal verification, the proof is built into the code that implements the algorithm, whereas in external verification, a separate proof code accompanies the algorithm implementation.
 
-The implementation of the vector `head` function mentioned above is an example of internal verification. The type `(n : ℕ⁺) ⇒ [𝛼 n] → 𝛼` encodes the specification that `head` does not accept zero-length vectors.
+The implementation of the vector `head` function mentioned above is an example of internal verification. The type `(n : ℤ⁺) ⇒ [𝛼 n] → 𝛼` encodes the specification that `head` does not accept zero-length vectors.
 
 ```
-head : (n : ℕ⁺) ⇒ [𝛼 n] → 𝛼
+head : (n : ℤ⁺) ⇒ [𝛼 n] → 𝛼
   | x,_ → x
 ```
 
