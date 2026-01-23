@@ -1081,13 +1081,15 @@ head : (n : ℤ⁺) ⇒ [𝛼 n] → 𝛼
   | x,_ → x
 ```
 
-And the following is an example of external verification that accompanies the numeric `+` operator implementation defined in the standard library. The proof of associativity, `+assoc◻`, as well as the proofs of other properties, accompany the implementation of `+`. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will do so. It stands for [*quod erat demonstrandum*](https://en.wikipedia.org/wiki/Q.E.D.) (QED), which appears at the end of each proof in mathematics. The symbol $\forall$ means "for all", as usual. Following Agda's convention, we use the symbol $\equiv$ stands for the type theoretic [propositional equality](https://www.math.fsu.edu/~ealdrov/teaching/2020-21/fall/MAS5932/agda/simplethms-1.html), below. Likewise, we use the $=$ symbol to represent the type theoretic definitional equality.
+And the following is an example of external verification that accompanies the numeric `+` operator implementation defined in the standard library. The proof of associativity, `+assoc◻`, as well as the proofs of other properties, accompany the implementation of `+`. The symbol $\square$ at the end of the proof name is mandatory. If the programmer neglects to append this symbol to the proof name, the compiler will do so. It stands for [*quod erat demonstrandum*](https://en.wikipedia.org/wiki/Q.E.D.) (QED), which appears at the end of each proof in mathematics. The symbol $\forall$ means "for all", as usual. Following Agda's convention, we use the symbol $\equiv$ stands for [propositional equality](https://xenaproject.wordpress.com/2020/07/03/equality-specifications-and-implementations/) (provable equality in mathematics), below. Likewise, we use the $=$ symbol to represent definitional equality (reducible equality in type theory). The $=$ symbol subsumes syntactic equality (textual equality in computation).
 
 ```
 _+_ : (𝛼 : Num) ⇒ 𝛼 → 𝛼 → 𝛼
   | ...
-+assoc◻ → ∀ (x y z : ℕ) → x + (y + z) ≡ (x + y) + z
++assoc◻ → ∀ (x y z : Num) → x + (y + z) ≡ (x + y) + z
 ```
+
+In mathematical writing, the symbol $\equiv$ means "defined as" and $=$ means "equals to". But we swapped the meanings of these two symbols in our language. Because definitional equality is used everywhere in programme implementations we attach to it the more familiar symbol $=$, whereas propositional equality is used only in correctness proofs so we attach to it the less common symbol $\equiv$.
 
 Using dependent types, it is possible to express programme specifications with a very high degree of precision and at the same time give correctness proofs guaranteeing that the implementation meets its specifications. This, then, is the foundation upon which verified software can be built. Both type theory and software verification are broad, deep topics well outside the bounds of this short article on Fortran modernisation. See the *references* section at the end of this article for some suggested reading on these topics.
 
