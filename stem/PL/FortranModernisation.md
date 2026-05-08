@@ -772,6 +772,10 @@ Incidentally, our new language supports a convenience feature commonly known in 
 
 In languages that support string interpolation, the `{...}` syntax is used to evaluate, convert to string, and inject the resulting sub-string into the surrounding string. But the `{` and `}` are often used in printed messages to group values, thereby necessitating the braces to be escaped, as in `\{...\}`, thus degrading the convenience of string interpolation. So, in our language, we use the less-frequently used back quotes, just like in the Unix bash shell.
 
+***support units of measure***—Of the popular ones, F# is the only GPL with a built-in support for units of measure. In scientific computing and engineering applications, units are of a fundamental importance. This is especially true in safety-critical applications that potential for loss of life, limb, or lolly. Measurement units can be implemented as a library of dependent types. Such typed measurements would eliminate common errors, such as mixing metre and feet, or litre with gallon.
+
+But the existing implementations of measurement units in various languages tend to be syntactically burdensome, and their use often obscure the semantics of the computation. I shall update this section, when I have discovered a units library that affords adequate ease of use.
+
 ***remove mandatory explicit typing***—Discard the old-school explicit typing, and adopt a strong, static, dependent type system that automatically infers types for simple values, thereby alleviating the burden of explicit typing.
 
 But unlike in the simple type theory, type inferencing in the dependent type theory is a difficult task. This difficulty is a consequence of the expressive power of the dependent type system: lifting complicated, runtime computations up to the type level has the effect of making type inferencing undecidable at compile-time, which is analogous to how halting is undecidable at runtime. Technically, this issue stems from the lack of an equality-deciding general algorithm in the dependent type theory.
