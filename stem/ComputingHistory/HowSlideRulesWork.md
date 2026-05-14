@@ -160,7 +160,7 @@ Multiplication and division operations start and end with the cursor hairline on
 
 ## *accuracy and precision*
 
-In slide rule parlance, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated. And *precision* means how many significant figures the user can reliably read off the scale.
+In slide rule parlance, *accuracy* refers to how consistently the device operates—that is, how well it was manufactured and how finely it was calibrated—and *precision* means how many significant figures a user with a normal eyesight can read off the scale with consistency.
 
 Professional-grade slide rules are made exceedingly well, so they are very accurate. Yet, they all allow the user to calibrate the device. Even a well-made slide rule, like the K&E 4081-3 can go out of alignment if mistreated, say by exposing it to sun, solvent, or shock (mechanical or thermal). Misaligned slide rule can be recalibrated using the procedure described in the maintenance section, later in this article. And prolonged exposure to moisture and heat can deform a wood rule, like the K&E 4081-3, thereby damaging it, permanently. The accuracy of a warped wood rule can no longer be restored by recalibrating. So, be kind to your slide rule.
 
