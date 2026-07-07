@@ -9,7 +9,8 @@ use_math: true
 
 [TOC]
 
-- for the exclusive use to implement small system programmes (the way C was originally used to implement UNIX commands)
+- for the exclusive use to implement small system software (the way C was originally used to implement UNIX commands)
+- not for implementing real-time embedded software
 - C-style semantics with the following differences:
   - No pointers
   - No manual memory management, but with automatic GC
@@ -32,17 +33,15 @@ Bol
 
 U08, U16, U32, U64
 I08, I16, I32, I64
+F32, F64
 
-Nat : U64
-ℕ : Nat
+ℕ : U64
 
-Int : I64
-ℤ : Int
+ℤ : I64
 
-Flt ## 64-bit
-ℝ : Flt
+ℝ : F64
 
-Chracter ## Unicode character
+Chracter ## UTF8 Unicode character
 𝕌 : Character
 
 String ## Unicode string
