@@ -1,5 +1,8 @@
 ---
 title: "Programming Languages"
+tags:
+  - mathjax
+use_math: true
 ---
 
 [TOC]
@@ -460,7 +463,7 @@ Microsoft’s multi-platform, open-source [Visual Studio Code](https://code.visu
 - Scala—Eclipse
 - F#—[Visual Studio](http://visualstudio.microsoft.com/), [Rider](https://www.jetbrains.com/rider/)
 - Erlang—Eclipse
-- Haskell—Eclipse, Emacs 
+- Haskell—Eclipse, Emacs
 - Mathematica—[Mathematica](http://www.wolfram.com/mathematica/)
 - R—[RStudio](http://www.rstudio.com)
 
