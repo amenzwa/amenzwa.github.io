@@ -961,7 +961,7 @@ _≈_ : `near?`
 
 The code above is contained in the file `Distance.f`, and the associated module is automatically given the name `Distance`. Hence, there is no need for the `module ModuleName` construct in our language. The constant $\delta$ is defined for use by the module implementer, but it is hidden from the module users, since it is marked with the `--` symbol. Also, because values are immutable, so there is no need for the `const` keyword in our new language.
 
-The automatic export behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix operator `_≈_` is aliased to the back-quoted version of `near?`.
+The automatic export behaviour of modules makes available to the users the predicate function `near?`, which checks if the absolute distance between the measures `a` and `b` is less than $\delta$, and hence the two measures are deemed to be near each other. The mixfix approximate-equality operator `_≈_` is aliased to the back-quoted version of `near?`.
 
 The `Distance` module is used from the main module as follows.
 
