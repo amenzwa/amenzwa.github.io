@@ -4,6 +4,8 @@ title: "Publications of Amen Zwa, Esq."
 
 <img src="./AmenZwa.jpeg" alt="Amen restaurant BW" style="float:right;margin:20px;padding:10px" />I am Amen Zwa, an ordinary bloke. I work as a technology consultant, focusing on business development, technology law, and algorithm design. My degrees are in law, computer science, and electrical engineering. In my spare time, I write about law, technology, music, and motorsport. Please feel free to contact me on <a rel="me" href="https://mathstodon.xyz/@AmenZwa">MathsTodon.XYZ@AmenZwa</a>.
 
+JD ⊥ MSCS ⏚ BSEE • GPS +38.89 -77.01 • CO₂ low 320s
+
 - Amazon Author Profile: [http://amazon.com/author/amenzwa](http://amazon.com/author/amenzwa)
 - LinkedIn Profile: [https://www.linkedin.com/in/amenzwa](https://www.linkedin.com/in/amenzwa)
 - Papers and Patents: [https://tinyurl.com/2bf3p46m](https://tinyurl.com/2bf3p46m)
