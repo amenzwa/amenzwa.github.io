@@ -23,7 +23,7 @@ My intended audience include the following groups:
 - Scientists and engineers who implement scientific software using Fortran
 - STEMers interested in parallel processing and scientific programming
 
-Given the breadth and depth of topics involved, the reader is expected to be an experienced parallel programmer in both procedural and functional languages and possess a working knowledge of simple type theory, parametric type theory, and dependent type theory.
+Note that this article is aimed exclusively at scientists and engineers who make a living with mathematics, to whom programming is but a means to a mathematical end. And given the breadth and depth of topics involved, the reader is expected to be an experienced parallel programmer in both procedural and functional languages and possess a working knowledge of simple type theory, parametric type theory, and dependent type theory.
 
 It would seem that trying to shore up this mid-century language for the grind of the 21st Century verges on insanity. Not so. I contend that Fortran modernisation is worthwhile and necessary. I admit, though, that refreshing Fortran for the 2020s is but a [forlorn hope](https://en.wikipedia.org/wiki/Forlorn_hope#:~:text=A%20forlorn%20hope%20is%20a,to%20save%20a%20retreating%20army%2C), at present.
 
